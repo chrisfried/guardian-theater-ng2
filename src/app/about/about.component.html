@@ -1,3 +1,32 @@
-<p>
-  about works!
-</p>
+<h3>About</h3>
+<p>Guardian Theater is a mash up of Destiny activity history with publicly shared Xbox One Game DVR and Twitch gameplay clips.</p>
+<p>Searching for a Guardian's Gamertag or PSN ID retrieves a list of recent activities that Guardian has participated in. Then for each activity, the site seeks out to display all gameplay clips recorded by any of the participating Guardians which overlap with the timespan in which the activity took place.</p>
+<p>Guardian Theater was created by <a href="/gamertag/chrisfried">Chris Fried</a> with invaluable assistance from <a href="/gamertag/RealAngryMonkey">Dustin Rue</a>.</p>
+<h3>Contact</h3>
+<p>Suggestions? Did it break? We're experimenting with using <a href='https://discord.gg/0lADdhKdnv0jxTNP' target='_blank'>this Discord server</a> to centralize feedback and support issues.</p>
+<p>You can find us on Twitter as <a href="https://twitter.com/chrisfried" target='_blank'>@chrisfried</a> and <a href="https://twitter.com/MonkeyStream" target='_blank'>@MonkeyStream</a>.</p>
+<p>You're also welcome to send a message or a party invite on Xbox One. We can chat while you carry us to the Lighthouse: <a href='https://account.xbox.com/en-US/Profile?gamerTag=chrisfried' target='_blank'><span class='fi-social-xbox'></span> chrisfried</a> and <a href='https://account.xbox.com/en-US/Profile?gamerTag=RealAngryMonkey'><span class='fi-social-xbox'></span> RealAngryMonkey</a></p>
+<h3>FAQ</h3>
+<h5 style='font-weight: bold'>How can I support Guardian Theater?</h5>
+<h5 style='font-weight: bold'>Donate to Guardian Theater</h5>
+<p>We accept donations via <a href='https://www.patreon.com/chrisfried' target='_blank'>Patreon</a> and <a href='https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8GLMLFEGR5TFU' target='_blank'>PayPal</a>. If you have a few dollars in your possession that you just don't want, please send them our way!</p>
+<h5 style='font-weight: bold'>Share Guardian Theater</h5>
+<p>Find an embarrassing clip of your teammate and yourself getting sniped by the same bullet in Trials? Share the link with your friends/clanmates/parents!</p>
+<h5 style='font-weight: bold'>Provide Feedback</h5>
+<p>Some great features (game mode filters, start date picker>have already been implemented based on community suggestions. Have an idea of your own for the site? Let us know on <a href='https://discord.gg/0lADdhKdnv0jxTNP' target='_blank'>our Discord server</a> or Twitter or Xbox or wherever else you find us.</p>
+<h5 style='font-weight: bold'>Just Xbox One? Why don't you support PS4?</h5>
+<p>UPDATE: As of November 13, 2016, with the addition of Twitch videos, we now support PS4 Guardians! It's a bit sparser than on the Xbox side, but it works!</p>
+<p>In Xbox world, every clip a user records is uploaded to the cloud, stamped with the time it was recorded and the game that was being played. This makes it easy for us to pull in Destiny clips and compare them with Destiny activity timestamps pulled from Bungie.</p>
+<p>In PlayStation world, clips are only available if a user chooses to upload them to an external website, such as YouTube. These clips are often tagged with the game they were played in, but they contain no information about when the clip was recorded. This renders support for PS4 clips on Guardian Theater next to impossible.</p>
+<p>We'd support PS4 clips if we could. If you have any bright ideas on how we might, please get in touch!</p>
+<h5 style='font-weight: bold'>This is cool, but what is it actually doing?</h5>
+<p>When you land on a Guardian's page, Guardian Theater asks Bungie's API for the 25 most recent activities the active character has participated in. You'll see a big spinning gear replaced by a list of greyed out activities with spinning gears.</p>
+<p>For each activity visible on your screen, Guardian Theater will ask Bungie's API for that activity's Post Game Carnage Report. This contains the list of players. The spinning gear will dissappear and a list of players will appear below the activity.</p>
+<p>Then for each player visible, Guardian Theater will ask the Xbox API for clips that player has recorded in Destiny. Guardian Theater will check if any of the clips received occurred during the activity. The player's name will dissappear, replaced by any matching clips that may have been found.</p>
+<p>As you scroll down the page, more activities and players will come into view, triggering more players and clips to load. Reaching the bottom of the page will load in the next 25 most recent activities for the character.</p>
+<h5 style='font-weight: bold'>Why is the site so slow right now?</h5>
+<p>There are a number of factors that contribute to the actual and perceived speed of the site, but there are two big factors that actually slow the site down:</p>
+<p>It could be that could be that the site is experiencing heavy traffic and is having a hard time keeping up. As we continue to optimize our server code, this should become less of an issue.</p>
+<p>It might also be that either Bungie or Xbox's servers are responding slowly. The chart below displays the average response time over the past 24 hours to retrieve clips data from Xbox. This is our slowest request, and we make it a lot—once for each player in each activity. Ideally, this will be well under a second (1000 ms), but it tends to fluctuate throughout the day.</p>
+<iframe src="https://rpm.newrelic.com/public/charts/iZxB0swvotm" width="100%" height="300" scrolling="no" frameborder="no">
+<p>The chart might not display if you're blocking analytics tracking. Here's <a href='https://rpm.newrelic.com/public/charts/iZxB0swvotm' target='_blank'>a link</a> if you can't see it.</p>
