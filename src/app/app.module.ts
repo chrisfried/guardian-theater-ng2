@@ -5,27 +5,27 @@ import { HttpModule } from '@angular/http';
 
 import { RoutesModule } from './routes/routes.module';
 
+import { BungieHttpService } from './services/bungie-http.service';
+import { SearchService } from './services/search.service';
+import { GuardianService } from './services/guardian.service';
+
 import { AppComponent } from './app.component';
-import { SearchComponent } from './search/search.component';
+import { NavComponent } from './nav/nav.component';
 import { FrontPageComponent } from './front-page/front-page.component';
-import { PlayerPageComponent } from './player-page/player-page.component';
-import { ClipPageComponent } from './clip-page/clip-page.component';
-import { ConsoleComponent } from './console/console.component';
 import { AboutComponent } from './about/about.component';
 import { SettingsComponent } from './settings/settings.component';
-
-import { SearchService } from './search.service';
+import { GuardianComponent } from './guardian/guardian.component';
+import { ClassTypePipe, RaceHashPipe } from './bungie-pipes.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchComponent,
+    NavComponent,
     FrontPageComponent,
-    PlayerPageComponent,
-    ClipPageComponent,
-    ConsoleComponent,
     AboutComponent,
-    SettingsComponent
+    SettingsComponent,
+    GuardianComponent,
+    ClassTypePipe, RaceHashPipe
   ],
   imports: [
     BrowserModule,
@@ -33,7 +33,11 @@ import { SearchService } from './search.service';
     HttpModule,
     RoutesModule
   ],
-  providers: [SearchService],
+  providers: [
+    BungieHttpService,
+    SearchService,
+    GuardianService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

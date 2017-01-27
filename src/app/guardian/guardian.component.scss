@@ -1,0 +1,79 @@
+
+.profile {
+  background: rgba(30,36,43,0.75);
+  background-size: cover;
+  color: #f5f5f5;
+  height: 75px;
+  margin-bottom: .5em;
+  position: relative;
+
+  .supporter-tag {
+    animation: spin 15s infinite linear;
+    display: inline-block;
+    height: 25px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+
+  .emblem {
+    background-color: rgba(0, 0, 0, .2);
+    background-size: cover;
+    height: 46px;
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    width: 46px;
+  }
+
+  .active-character {
+    font-size: 1.2em;
+    height: 50px;
+    padding: 0 0 0 55px;
+  }
+
+  .gamertag {
+    font-weight: bold;
+    height: 30px;
+    line-height: 40px;
+  }
+
+  .character-details {
+    color: #999;
+    font-size: 10px;
+    font-weight: bold;
+    height: 14px;
+    letter-spacing: 2px;
+    line-height: 14px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+}
+
+.character {
+  background-position: center;
+  background-size: cover;
+  font-size: .9em;
+  padding: 0;
+
+  a {
+    display: block;
+    height: 25px;
+    padding: 2px 5px;
+  }
+
+  .class-name {
+    color: white;
+  }
+}
+
+.power-level {
+  color: rgba(245, 220, 86, 1);
+
+  &::before {
+    content: '\2726';
+    display: inline-block;
+    font-size: 50%;
+    vertical-align: 15%;
+  }
+}

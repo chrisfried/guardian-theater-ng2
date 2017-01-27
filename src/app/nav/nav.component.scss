@@ -1,0 +1,71 @@
+.discord,
+.patreon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  display: inline-block;
+  height: 30px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 30px;
+}
+
+.patreon {
+  background-image: url('/assets/images/patreon.png');
+}
+
+.discord {
+  background-image: url('/assets/images/discord.png');
+}
+
+.search-box {
+  border-right-width: 0;
+  max-width: calc(100% - 35px);
+}
+
+.search-bar {
+  margin: 0;
+}
+
+.search-form {
+  margin-bottom: .5em;
+}
+
+.icon-menu {
+  color: rgba(30,36,43,0.75);
+  display: flex;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  line-height: 30px;
+  margin: 0 0 .5em !important;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.icon-menu a {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: rgba(30,36,43,0.75);
+}
+
+.twitter, .twitter:hover, .twitter:active, .twitter:visited {
+  color: #55acee !important;
+}
+
+ins.adsbygoogle {
+  text-align: center;
+}
+
+.ad {
+  margin-bottom: .5em !important;
+}
+
+.logo-wrap {
+  text-align: center;
+}
+.logo {
+  max-height: 10em;
+  margin-bottom: .5em;
+}
