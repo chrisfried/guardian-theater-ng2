@@ -6,8 +6,8 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 
 @Injectable()
 export class GuardianService {
-  private _searchResults: Observable<bungie.SearchDestinyPlayer>;
-  private _accountResults: Observable<bungie.Account>;
+  private _searchResults: Observable<bungie.SearchDestinyPlayerResponse>;
+  private _accountResults: Observable<bungie.AccountResponse>;
 
   constructor(
     private bHttp: BungieHttpService,
@@ -73,11 +73,11 @@ export class GuardianService {
       .do((x) => console.log(x));
   }
 
-  get searchResults(): Observable<bungie.SearchDestinyPlayer> {
+  get searchResults(): Observable<bungie.SearchDestinyPlayerResponse> {
     return this._searchResults;
   }
 
-  get accountResults(): Observable<bungie.Account> {
+  get accountResults(): Observable<bungie.AccountResponse> {
     return this._accountResults;
   }
 

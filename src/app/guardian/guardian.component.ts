@@ -18,7 +18,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
   private _params: Subscription;
   private _searchResults: Subscription;
   private _accountResults: Subscription;
-  public searchResults: bungie.SearchDestinyPlayer;
+  public searchResults: bungie.SearchDestinyPlayerResponse;
   public displayName: string;
   public characters: bungie.Character[];
   public activeCharacter: bungie.Character;
@@ -48,7 +48,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
       .subscribe(res => {
 
         if (res.Response) {
-          this.searchResults = res.Response;
+          this.searchResults = res;
 
           if (res.Response.length === 1) {
             try {
@@ -61,7 +61,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
             this.displayName = '';
           }
         } else {
-          this.searchResults = {};
+          this.searchResults = { Response: []};
         }
       });
 
