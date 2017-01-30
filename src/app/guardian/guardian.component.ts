@@ -33,6 +33,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this._params = this.route.params
       .subscribe((params: Params) => {
+        this.activeCharacter = null;
         if (params['guardian']) {
           this._guardian = params['guardian'];
         }

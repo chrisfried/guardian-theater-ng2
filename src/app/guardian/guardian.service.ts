@@ -76,7 +76,7 @@ export class GuardianService {
     .do((x) => console.log(x));
 
     this._searchResults = this._queryUrl
-      .flatMap((url, i) => {
+      .switchMap((url, i) => {
         if (url.length) {
           return this.bHttp.get(url)
             .map((res: Response) => res.json())
@@ -148,7 +148,7 @@ export class GuardianService {
     .do((x) => console.log(x));
 
     this._accountResults = this._accountUrl
-      .flatMap((url, i) => {
+      .switchMap((url, i) => {
         if (url.length) {
           return this.bHttp.get(url)
             .map((res: Response) => res.json())
