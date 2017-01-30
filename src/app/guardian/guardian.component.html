@@ -1,4 +1,4 @@
-<p *ngIf="searchResults && searchResults.length === 2">
+<p *ngIf="searchResults && searchResults.length > 1">
   <button class="button" (click)="selectPlatform(1)">Xbox</button>
   <button class="button" (click)="selectPlatform(2)">PlayStation</button>
 </p>

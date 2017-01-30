@@ -6,8 +6,6 @@ import { HttpModule } from '@angular/http';
 import { RoutesModule } from './routes/routes.module';
 
 import { BungieHttpService } from './services/bungie-http.service';
-import { SearchService } from './services/search.service';
-import { GuardianService } from './services/guardian.service';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -34,9 +32,7 @@ import { ClassTypePipe, RaceHashPipe } from './bungie-pipes.pipe';
     RoutesModule
   ],
   providers: [
-    BungieHttpService,
-    SearchService,
-    GuardianService
+    BungieHttpService
   ],
   bootstrap: [AppComponent]
 })
