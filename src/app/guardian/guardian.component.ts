@@ -14,15 +14,14 @@ import { Subscription } from 'rxjs/Rx';
 export class GuardianComponent implements OnInit, OnDestroy {
   private _guardian: string;
   private _platform: number;
+  private _characterId: string;
   private _params: Subscription;
-  private _results: Subscription;
-  private _characters: Subscription;
-  private _characterId: Subscription;
-  private _activeCharacter: Subscription;
-  public searchResults: {};
+  private _searchResults: Subscription;
+  private _accountResults: Subscription;
+  public searchResults: bungie.SearchDestinyPlayer;
   public displayName: string;
-  public characters: {}[];
-  public activeCharacter: {};
+  public characters: bungie.Character[];
+  public activeCharacter: bungie.Character;
 
   constructor(
     private router: Router,
@@ -44,7 +43,8 @@ export class GuardianComponent implements OnInit, OnDestroy {
           this._platform = params['platform'];
         }
       });
-    this._results = this.guardianService.searchResults
+
+    this._searchResults = this.guardianService.searchResults
       .subscribe(res => {
 
         if (res.Response) {
@@ -53,6 +53,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
           if (res.Response.length === 1) {
             try {
               this.displayName = res.Response[0].displayName;
+              this._platform = res.Response[0].membershipType;
             } catch (e) {
               this.displayName = '';
             }
@@ -63,26 +64,25 @@ export class GuardianComponent implements OnInit, OnDestroy {
           this.searchResults = {};
         }
       });
-    this._characters = this.guardianService.characters
-      .subscribe(
-        characters => {
-          this.characters = characters;
+
+    this._accountResults = this.guardianService.accountResults
+      .subscribe(res => {
+        this.characters = res.Response.data.characters;
+        if (this._characterId) {
+          let characterId = this._characterId;
+          this.activeCharacter = this.characters.find(function (character) {
+            return character.characterBase.characterId === characterId;
+          });
+        } else {
+          this.activeCharacter = this.characters[0];
         }
-      );
-    this._activeCharacter = this.guardianService.activeCharacter
-      .subscribe(character => {
-        this.activeCharacter = character;
-        try {
-          this._platform = character.characterBase.membershipType;
-        } catch (e) {}
       });
   }
 
   ngOnDestroy() {
     this._params.unsubscribe();
-    this._results.unsubscribe();
-    this._characters.unsubscribe();
-    this._activeCharacter.unsubscribe();
+    this._searchResults.unsubscribe();
+    this._accountResults.unsubscribe();
   }
 
   selectPlatform(platform) {
