@@ -8,6 +8,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 export class GuardianService {
   private _searchResults: Observable<bungie.SearchDestinyPlayerResponse>;
   private _accountResults: Observable<bungie.AccountResponse>;
+  private _activitiesResults: Observable<bungie.ActivityHistoryResponse>;
 
   constructor(
     private bHttp: BungieHttpService,
@@ -71,6 +72,47 @@ export class GuardianService {
       })
       .distinctUntilChanged()
       .do((x) => console.log(x));
+
+    this._activitiesResults = Observable.combineLatest(
+      this.route.params,
+      this._accountResults
+    ).map(combined => {
+      try {
+        let activeCharacter = combined[1].Response.data.characters[0];
+        if (combined[0]['character']) {
+          let characterId = combined[0]['character'];
+          activeCharacter = combined[1].Response.data.characters.find(function (character) {
+            return character.characterBase.characterId === characterId;
+          });
+        }
+        let mode = 'None';
+        if (combined[0]['gamemode']) {
+          mode = combined[0]['gamemode'];
+        }
+        let page = '0';
+        if (combined[0]['page']) {
+          page = combined[0]['page'];
+        }
+        let membershipType = activeCharacter.characterBase.membershipType;
+        let membershipId = activeCharacter.characterBase.membershipId;
+        let characterId = activeCharacter.characterBase.characterId;
+        return 'https://www.bungie.net/Platform/Destiny/Stats/ActivityHistory/'
+          + membershipType + '/' + membershipId + '/' + characterId + '/?mode=' + mode + '&count=10&page=' + page;
+      } catch (e) {
+        return '';
+      }
+    })
+      .switchMap((url) => {
+        if (url.length) {
+          return this.bHttp.get(url)
+            .map((res: Response) => res.json())
+            .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
+        } else {
+          return Observable.empty();
+        }
+      })
+      .distinctUntilChanged()
+      .do((x) => console.log(x));
   }
 
   get searchResults(): Observable<bungie.SearchDestinyPlayerResponse> {
@@ -79,6 +121,10 @@ export class GuardianService {
 
   get accountResults(): Observable<bungie.AccountResponse> {
     return this._accountResults;
+  }
+
+  get activitiesResults(): Observable<bungie.ActivityHistoryResponse> {
+    return this._activitiesResults;
   }
 
 }

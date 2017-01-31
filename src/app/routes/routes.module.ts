@@ -9,6 +9,8 @@ import { GuardianComponent } from '../guardian/guardian.component';
 const appRoutes: Routes = [
   { path: 'settings', component: SettingsComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'guardian/:guardian/:platform/:character/:gamemode/:page', component: GuardianComponent },
+  { path: 'guardian/:guardian/:platform/:character/:gamemode', component: GuardianComponent },
   { path: 'guardian/:guardian/:platform/:character', component: GuardianComponent },
   { path: 'guardian/:guardian/:platform', component: GuardianComponent },
   { path: 'guardian/:guardian', component: GuardianComponent },

@@ -13,7 +13,8 @@ import { FrontPageComponent } from './front-page/front-page.component';
 import { AboutComponent } from './about/about.component';
 import { SettingsComponent } from './settings/settings.component';
 import { GuardianComponent } from './guardian/guardian.component';
-import { ClassTypePipe, RaceHashPipe } from './bungie-pipes.pipe';
+import { ClassTypePipe, RaceHashPipe, ActivityModePipe } from './bungie-pipes.pipe';
+import { GuardianActivitiesComponent } from './guardian/guardian-activities/guardian-activities.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ClassTypePipe, RaceHashPipe } from './bungie-pipes.pipe';
     AboutComponent,
     SettingsComponent,
     GuardianComponent,
-    ClassTypePipe, RaceHashPipe
+    ClassTypePipe, RaceHashPipe, ActivityModePipe,
+    GuardianActivitiesComponent
   ],
   imports: [
     BrowserModule,
