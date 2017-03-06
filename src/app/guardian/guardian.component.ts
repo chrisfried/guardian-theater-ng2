@@ -12,13 +12,15 @@ import { Subscription } from 'rxjs/Rx';
   ]
 })
 export class GuardianComponent implements OnInit, OnDestroy {
+  private subDisplayName: Subscription;
+  private subMembershipType: Subscription;
+  private subSearch: Subscription;
+  private subCharacters: Subscription;
+  private subActiveCharacter: Subscription;
+
   private _guardian: string;
   private _platform: number;
-  private _characterId: string;
-  private _params: Subscription;
-  private _searchResults: Subscription;
-  private _accountResults: Subscription;
-  public searchResults: bungie.SearchDestinyPlayerResponse;
+
   public displayName: string;
   public characters: bungie.Character[];
   public activeCharacter: bungie.Character;
@@ -30,66 +32,46 @@ export class GuardianComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit() {
-    this._params = this.route.params
-      .subscribe((params: Params) => {
-        this.activeCharacter = null;
-        if (params['guardian']) {
-          this._guardian = params['guardian'];
-        }
-        if (params['character']) {
-          this._characterId = params['character'];
-        }
-        if (params['platform']) {
-          this._platform = params['platform'];
-        }
+
+    this.subDisplayName = this.guardianService.displayName
+      .subscribe(name => {
+        this.displayName = name;
       });
 
-    this._searchResults = this.guardianService.searchResults
-      .subscribe(res => {
-
-        if (res.Response) {
-          this.searchResults = res;
-
-          if (res.Response.length === 1) {
-            try {
-              this.displayName = res.Response[0].displayName;
-              this._platform = res.Response[0].membershipType;
-            } catch (e) {
-              this.displayName = '';
-            }
-          } else {
-            this.displayName = '';
-          }
-        } else {
-          this.searchResults = { Response: []};
-        }
+    this.subMembershipType = this.guardianService.membershipType
+      .subscribe(type => {
+        this._platform = type;
       });
 
-    this._accountResults = this.guardianService.accountResults
-      .subscribe(res => {
-        this.characters = res.Response.data.characters;
-        if (this._characterId) {
-          let characterId = this._characterId;
-          this.activeCharacter = this.characters.find(function (character) {
-            return character.characterBase.characterId === characterId;
-          });
-        } else {
-          this.activeCharacter = this.characters[0];
-        }
+    this.subSearch = this.guardianService.searchName
+      .subscribe(name => {
+        this._guardian = name;
+      });
+
+    this.subCharacters = this.guardianService.characters
+      .subscribe(characters => {
+        this.characters = characters;
+      });
+
+    this.subActiveCharacter = this.guardianService.activeCharacter
+      .subscribe(character => {
+        this.activeCharacter = character;
       });
   }
 
   ngOnDestroy() {
-    this._params.unsubscribe();
-    this._searchResults.unsubscribe();
-    this._accountResults.unsubscribe();
+    this.subDisplayName.unsubscribe();
+    this.subMembershipType.unsubscribe();
+    this.subSearch.unsubscribe();
+    this.subCharacters.unsubscribe();
+    this.subActiveCharacter.unsubscribe();
   }
 
   selectPlatform(platform) {
     this.router.navigate(['/guardian', this._guardian, platform]);
   }
 
-  selectCharacter(character) {
-    this.router.navigate(['/guardian', this._guardian, this._platform, character]);
+  selectCharacter(characterId) {
+    this.router.navigate(['/guardian', this._guardian, this._platform, characterId]);
   }
 }

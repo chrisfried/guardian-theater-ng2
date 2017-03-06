@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 import { GuardianService } from '../guardian.service';
 import { Subscription } from 'rxjs/Rx';
 
@@ -8,7 +8,10 @@ import { Subscription } from 'rxjs/Rx';
   styleUrls: ['./guardian-activities.component.scss']
 })
 export class GuardianActivitiesComponent implements OnInit, OnDestroy {
-  private _activitiesResults: Subscription;
+  private subActiveCharacter: Subscription;
+  private subActivities: Subscription;
+
+  public activeCharacter: bungie.Character;
   public activities: bungie.Activity[];
 
   constructor(
@@ -16,14 +19,20 @@ export class GuardianActivitiesComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit() {
-    this._activitiesResults = this.guardianService.activitiesResults
-      .subscribe(res => {
-        this.activities = res.Response.data.activities;
+    this.subActiveCharacter = this.guardianService.activeCharacter
+      .subscribe(character => {
+        this.activeCharacter = character;
+      });
+
+    this.subActivities = this.guardianService.activities
+      .subscribe(activities => {
+        this.activities = activities;
       });
   }
 
   ngOnDestroy() {
-    this._activitiesResults.unsubscribe();
+    this.subActiveCharacter.unsubscribe();
+    this.subActivities.unsubscribe();
   }
 
 }
