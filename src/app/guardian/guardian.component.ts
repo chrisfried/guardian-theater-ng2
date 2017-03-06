@@ -13,6 +13,7 @@ import { Subscription } from 'rxjs/Rx';
 })
 export class GuardianComponent implements OnInit, OnDestroy {
   private subDisplayName: Subscription;
+  private subSelectPlatform: Subscription;
   private subMembershipType: Subscription;
   private subSearch: Subscription;
   private subCharacters: Subscription;
@@ -22,6 +23,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
   private _platform: number;
 
   public displayName: string;
+  public needToSelectPlatform: boolean;
   public characters: bungie.Character[];
   public activeCharacter: bungie.Character;
 
@@ -36,6 +38,11 @@ export class GuardianComponent implements OnInit, OnDestroy {
     this.subDisplayName = this.guardianService.displayName
       .subscribe(name => {
         this.displayName = name;
+      });
+
+    this.subSelectPlatform = this.guardianService.selectPlatform
+      .subscribe(bool => {
+        this.needToSelectPlatform = bool;
       });
 
     this.subMembershipType = this.guardianService.membershipType
@@ -61,6 +68,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.subDisplayName.unsubscribe();
+    this.subSelectPlatform.unsubscribe();
     this.subMembershipType.unsubscribe();
     this.subSearch.unsubscribe();
     this.subCharacters.unsubscribe();

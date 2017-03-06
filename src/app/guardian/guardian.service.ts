@@ -11,6 +11,7 @@ export class GuardianService {
   private _activityPage: BehaviorSubject<number>;
 
   public searchName: BehaviorSubject<string>;
+  public selectPlatform: BehaviorSubject<boolean>;
   public membershipType: BehaviorSubject<number>;
   public displayName: BehaviorSubject<string>;
   public characters: BehaviorSubject<bungie.Character[]>;
@@ -28,6 +29,7 @@ export class GuardianService {
     this._activityPage = new BehaviorSubject(0);
 
     this.searchName = new BehaviorSubject('');
+    this.selectPlatform = new BehaviorSubject(false);
     this.membershipType = new BehaviorSubject(-1);
     this.displayName = new BehaviorSubject('');
     this.characters = new BehaviorSubject([]);
@@ -83,6 +85,7 @@ export class GuardianService {
       .distinctUntilChanged()
       .switchMap((url) => {
         this._membershipId.next('');
+        this.selectPlatform.next(false);
         if (url.length) {
           return this.bHttp.get(url)
             .map((res: Response) => res.json())
@@ -99,6 +102,9 @@ export class GuardianService {
             this._membershipId.next(Response[0].membershipId);
             this.displayName.next(Response[0].displayName);
             this.membershipType.next(Response[0].membershipType);
+          }
+          if (Response.length > 1) {
+            this.selectPlatform.next(true);
           }
         } catch (e) {
           console.log(e);
