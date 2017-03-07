@@ -2,10 +2,10 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class TwitchService {
-  public twitchIds: {};
+  public twitch: {};
 
   constructor() {
-    this.twitchIds = {};
+    this.twitch = {};
   }
 
 }

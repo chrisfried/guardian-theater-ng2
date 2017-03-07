@@ -1,5 +1,6 @@
 import { Injectable, OnDestroy } from '@angular/core';
 import { BungieHttpService } from './bungie-http.service';
+import { Http } from '@angular/http';
 import { TwitchService } from './twitch.service';
 import { Observable, BehaviorSubject, Subscription } from 'rxjs/Rx';
 import { Response } from '@angular/http';
@@ -8,7 +9,7 @@ import { Response } from '@angular/http';
 export class ActivityService implements OnDestroy {
   private subPGCR: Subscription;
   private subTimes: Subscription;
-  private subTwitchIds: Subscription;
+  private subTwitch: Subscription;
   private subsTwitch: Subscription[];
 
   private _activity: BehaviorSubject<bungie.Activity>;
@@ -16,6 +17,7 @@ export class ActivityService implements OnDestroy {
   public pgcr: BehaviorSubject<bungie.PostGameCarnageReport>;
 
   constructor(
+    private http: Http,
     private bHttp: BungieHttpService,
     private twitchService: TwitchService
   ) {
@@ -58,19 +60,18 @@ export class ActivityService implements OnDestroy {
         if (pgcr) {
           try {
             let period = new Date(pgcr.period);
-            console.log('Match start', period);
             pgcr.entries.forEach(entry => {
               let remainingSeconds = 0;
               try {
                 remainingSeconds = entry.extended.values.remainingTimeAfterQuitSeconds.basic.value;
               } catch (e) {}
-              entry.startTime = new Date(pgcr.period).setSeconds(period.getSeconds()
+              entry.startTime = period.getTime() / 1000
                + entry.values.activityDurationSeconds.basic.value
                - remainingSeconds
-               - entry.extended.values.secondsPlayed.basic.value);
-              entry.stopTime = new Date(pgcr.period).setSeconds(period.getSeconds()
+               - entry.extended.values.secondsPlayed.basic.value;
+              entry.stopTime = period.getTime() / 1000
                + entry.values.activityDurationSeconds.basic.value
-               - remainingSeconds);
+               - remainingSeconds;
             });
           } catch (e) {
             console.log(e);
@@ -78,28 +79,35 @@ export class ActivityService implements OnDestroy {
         }
       });
 
-    this.subTwitchIds = this.pgcr
+    this.subTwitch = this.pgcr
       .subscribe(pgcr => {
         if (pgcr) {
           try {
             pgcr.entries.forEach(entry => {
               if (entry.player.bungieNetUserInfo) {
+
                 let membershipId = entry.player.bungieNetUserInfo.membershipId;
-                if (!this.twitchService.twitchIds[membershipId]) {
-                  this.twitchService.twitchIds[membershipId] = new BehaviorSubject({
-                    checked: false,
+
+                if (!this.twitchService.twitch[membershipId]) {
+                  this.twitchService.twitch[membershipId] = new BehaviorSubject({
+                    checkedId: false,
                     twitchId: '',
-                    bungieId: membershipId
+                    bungieId: membershipId,
+                    checkedResponse: false,
+                    response: null
                   });
                 }
+
                 this.subsTwitch.push(
-                  this.twitchService.twitchIds[membershipId]
+                  this.twitchService.twitch[membershipId]
                     .map((subject: {
-                      checked: boolean,
+                      checkedId: boolean,
                       twitchId: string,
-                      bungieId: string
+                      bungieId: string,
+                      checkedResponse: boolean,
+                      response: {}
                     }) => {
-                      if (!subject.checked) {
+                      if (!subject.checkedId) {
                         return 'https://www.bungie.net/Platform/User/' + subject.bungieId + '/Partnerships/';
                       } else {
                         return '';
@@ -117,20 +125,96 @@ export class ActivityService implements OnDestroy {
                     })
                     .subscribe((res: bungie.PartnershipResponse) => {
                       if (res.Response.length) {
-                        this.twitchService.twitchIds[membershipId].next({
-                          checked: true,
+                        this.twitchService.twitch[membershipId].next({
+                          checkedId: true,
                           twitchId: res.Response[0].name,
-                          bungieId: membershipId
+                          bungieId: membershipId,
+                          checkedResponse: false,
+                          response: null
                         });
                       } else {
-                        this.twitchService.twitchIds[membershipId].next({
-                          checked: true,
+                        this.twitchService.twitch[membershipId].next({
+                          checkedId: true,
                           twitchId: '',
-                          bungieId: membershipId
+                          bungieId: membershipId,
+                          checkedResponse: true,
+                          response: null
                         });
                       }
                     })
                 );
+
+                let twitchId = '';
+
+                this.subsTwitch.push(
+                  this.twitchService.twitch[membershipId]
+                    .map((subject: {
+                      checkedId: boolean,
+                      twitchId: string,
+                      bungieId: string,
+                      checkedResponse: boolean,
+                      response: {}
+                    }) => {
+                      if (subject.twitchId && !subject.checkedResponse) {
+                        twitchId = subject.twitchId;
+                        return 'https://api.twitch.tv/kraken/channels/' + twitchId + '/videos'
+                         + '?client_id=o8cuwhl23x5ways7456xhitdm0f4th0&limit=100&offset=0&broadcast_type=archive,highlight';
+                      } else {
+                        return '';
+                      }
+                    })
+                    .distinctUntilChanged()
+                    .switchMap(url => {
+                      if (url.length) {
+                        return this.http.get(url)
+                          .map((res: Response) => res.json())
+                          .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
+                      } else {
+                        return Observable.empty();
+                      }
+                    })
+                    .subscribe((res) => {
+                      if (res) {
+                        this.twitchService.twitch[membershipId].next({
+                          checkedId: true,
+                          twitchId: twitchId,
+                          bungieId: membershipId,
+                          checkedResponse: true,
+                          response: res
+                        });
+                      }
+                    })
+                );
+
+                this.subsTwitch.push(
+                  this.twitchService.twitch[membershipId]
+                    .map((subject: {
+                      checkedId: boolean,
+                      twitchId: string,
+                      bungieId: string,
+                      checkedResponse: boolean,
+                      response: twitch.Response
+                    }) => {
+                      if (subject.response && subject.response._total > 0) {
+                        subject.response.videos.forEach(video => {
+                          let recordedStart = new Date(video.recorded_at).getTime() / 1000;
+                          let recordedStop = recordedStart + video.length;
+                          if (recordedStart > entry.stopTime) {
+                            return;
+                          }
+                          if (recordedStop < entry.startTime) {
+                            return;
+                          }
+                          if (!entry.twitchClips) {
+                            entry.twitchClips = [];
+                          }
+                          entry.twitchClips.push(video);
+                        });
+                      }
+                    })
+                    .subscribe()
+                );
+
               }
             });
           } catch (e) {
@@ -144,7 +228,7 @@ export class ActivityService implements OnDestroy {
   ngOnDestroy() {
     this.subPGCR.unsubscribe();
     this.subTimes.unsubscribe();
-    this.subTwitchIds.unsubscribe();
+    this.subTwitch.unsubscribe();
     this.subsTwitch.forEach(sub => sub.unsubscribe());
   }
 

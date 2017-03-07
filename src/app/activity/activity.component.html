@@ -8,8 +8,13 @@
   <div *ngIf="pgcr">
     <div *ngFor="let entry of pgcr.entries">
       {{ entry.player.destinyUserInfo.displayName }} | {{ entry.startTime | date:'mediumTime' }} - {{ entry.stopTime | date:'mediumTime' }}
-      <span *ngIf="entry.player.bungieNetUserInfo"> | {{ entry.player.bungieNetUserInfo.membershipId }}</span>
-      <span *ngIf="entry.player.bungieNetUserInfo && twitchService.twitchIds[entry.player.bungieNetUserInfo.membershipId] && (twitchService.twitchIds[entry.player.bungieNetUserInfo.membershipId] | async).twitchId"> | {{ (twitchService.twitchIds[entry.player.bungieNetUserInfo.membershipId] | async).twitchId}}</span>
+      <span *ngIf="entry.player.bungieNetUserInfo"> | {{ entry.player.bungieNetUserInfo.displayName }}</span>
+      <span *ngIf="entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && (twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedId"> | {{ (twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).twitchId || '---'}}</span>
+      <span *ngIf="!entry.player.bungieNetUserInfo"> | --- | ---</span>
+      <span *ngIf="entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && (twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).response"> | {{ (twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).response._total }}</span>
+      <ul *ngIf="entry.twitchClips">
+        <li *ngFor="let clip of entry.twitchClips">{{ clip.title }}</li>
+      </ul>
     </div>
   </div>
 </div>
