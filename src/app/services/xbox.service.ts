@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class TwitchService {
-  public twitch: {};
+export class XboxService {
+  public xbox: {};
 
   constructor() {
-    this.twitch = {};
+    this.xbox = {};
   }
 }

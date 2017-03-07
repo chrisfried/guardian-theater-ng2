@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { GuardianService } from '../services/guardian.service';
 import { TwitchService } from '../services/twitch.service';
+import { XboxService } from '../services/xbox.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs/Rx';
 
@@ -10,7 +11,8 @@ import { Subscription } from 'rxjs/Rx';
   styleUrls: ['./guardian.component.scss'],
   providers: [
     GuardianService,
-    TwitchService
+    TwitchService,
+    XboxService
   ]
 })
 export class GuardianComponent implements OnInit, OnDestroy {

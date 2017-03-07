@@ -49,18 +49,18 @@
   opacity: 1;
 }
 
-.videogular-container, .clip-wrapper {
+.clip-wrapper {
 	position: relative;
   margin-bottom: .5em;
   overflow: hidden;
 }
-.videogular-container:before, .clip-wrapper:before {
+.clip-wrapper:before {
   display: block;
   content: "";
   width: 100%;
   padding-top: 56.25%;
 }
-.videogular-container > .videogular-player, .clip-wrapper > div, .twitch-embed {
+.clip-wrapper > div, .twitch-embed {
   position: absolute;
   margin-left: 0 !important;
   top: 0;

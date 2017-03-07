@@ -12,6 +12,7 @@
       <span *ngIf="entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && (twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedId"> | {{ (twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).twitchId || '---'}}</span>
       <span *ngIf="!entry.player.bungieNetUserInfo"> | --- | ---</span>
       <span *ngIf="entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && (twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).response"> | {{ (twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).response._total }}</span>
+      <span *ngIf="xboxService.xbox[entry.player.destinyUserInfo.displayName] && (xboxService.xbox[entry.player.destinyUserInfo.displayName] | async).response && (xboxService.xbox[entry.player.destinyUserInfo.displayName] | async).response.gameClips"> | {{ (xboxService.xbox[entry.player.destinyUserInfo.displayName] | async).response.gameClips.length }}</span>
       <div *ngFor="let clip of entry.twitchClips">
         <img class="clip-thumbnail" (click)="entry.play = !entry.play" *ngIf="!entry.play" [src]="clip.thumbnails[0].url">
         <div class="clip-wrapper" *ngIf="entry.play">
@@ -22,6 +23,13 @@
             scrolling="no"
             allowfullscreen="true">
           </iframe>
+        </div>
+      </div>
+      <div *ngFor="let clip of entry.xboxClips">
+        <div class="clip-wrapper">
+          <video id="my-video" class="video-js twitch-embed" controls preload="metadata" [poster]="clip.thumbnails[0].uri" data-setup="{}">
+            <source [src]="clip.gameClipUris[0].uri" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>

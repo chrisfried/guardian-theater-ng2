@@ -45,7 +45,6 @@ export class GuardianService implements OnDestroy {
 
     this.subParams = this.route.params
       .subscribe((params: Params) => {
-        console.log('Sub: Params', params);
         if (params['platform']) {
           this.membershipType.next(+params['platform']);
         } else {
@@ -101,7 +100,6 @@ export class GuardianService implements OnDestroy {
         }
       })
       .subscribe((res: bungie.SearchDestinyPlayerResponse) => {
-        console.log('Sub: SearchResponse', res);
         try {
           let Response = res.Response;
           if (Response.length === 1) {
@@ -144,7 +142,6 @@ export class GuardianService implements OnDestroy {
         }
       })
       .subscribe((res: bungie.AccountResponse) => {
-        console.log('Sub: AccountResponse', res);
         try {
           this.characters.next(res.Response.data.characters);
         } catch (e) {
@@ -171,7 +168,6 @@ export class GuardianService implements OnDestroy {
       })
       .distinctUntilChanged()
       .subscribe((character: bungie.Character) => {
-        console.log('Sub: ActiveCharacter', character);
         this.activeCharacter.next(character);
       });
 
@@ -204,7 +200,6 @@ export class GuardianService implements OnDestroy {
         }
       })
       .subscribe((res: bungie.ActivityHistoryResponse) => {
-        console.log('Sub: ActivityHistory', res);
         try {
           this.activities.next(res.Response.data.activities);
         } catch (e) {
