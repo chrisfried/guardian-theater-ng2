@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { GuardianService } from './guardian.service';
-import { Router, ActivatedRoute, Params } from '@angular/router';
+import { GuardianService } from '../services/guardian.service';
+import { TwitchService } from '../services/twitch.service';
+import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs/Rx';
 
 @Component({
@@ -8,7 +9,8 @@ import { Subscription } from 'rxjs/Rx';
   templateUrl: './guardian.component.html',
   styleUrls: ['./guardian.component.scss'],
   providers: [
-    GuardianService
+    GuardianService,
+    TwitchService
   ]
 })
 export class GuardianComponent implements OnInit, OnDestroy {
@@ -18,6 +20,9 @@ export class GuardianComponent implements OnInit, OnDestroy {
   private subSearch: Subscription;
   private subCharacters: Subscription;
   private subActiveCharacter: Subscription;
+  private subActivities: Subscription;
+  private subGamemode: Subscription;
+  private subPage: Subscription;
 
   private _guardian: string;
   private _platform: number;
@@ -26,6 +31,9 @@ export class GuardianComponent implements OnInit, OnDestroy {
   public needToSelectPlatform: boolean;
   public characters: bungie.Character[];
   public activeCharacter: bungie.Character;
+  public activities: bungie.Activity[];
+  public gamemode: string;
+  public page: number;
 
   constructor(
     private router: Router,
@@ -64,6 +72,21 @@ export class GuardianComponent implements OnInit, OnDestroy {
       .subscribe(character => {
         this.activeCharacter = character;
       });
+
+    this.subActivities = this.guardianService.activities
+      .subscribe(activities => {
+        this.activities = activities;
+      });
+
+    this.subGamemode = this.guardianService.activityMode
+      .subscribe(gamemode => {
+        this.gamemode = gamemode;
+      });
+
+    this.subPage = this.guardianService.activityPage
+      .subscribe(page => {
+        this.page = page;
+      });
   }
 
   ngOnDestroy() {
@@ -73,6 +96,9 @@ export class GuardianComponent implements OnInit, OnDestroy {
     this.subSearch.unsubscribe();
     this.subCharacters.unsubscribe();
     this.subActiveCharacter.unsubscribe();
+    this.subActivities.unsubscribe();
+    this.subGamemode.unsubscribe();
+    this.subPage.unsubscribe();
   }
 
   selectPlatform(platform) {
@@ -80,6 +106,22 @@ export class GuardianComponent implements OnInit, OnDestroy {
   }
 
   selectCharacter(characterId) {
-    this.router.navigate(['/guardian', this._guardian, this._platform, characterId]);
+    this.router.navigate(['/guardian', this._guardian, this._platform, characterId, this.gamemode]);
+  }
+
+  selectGamemode(gamemode) {
+    this.router.navigate(['/guardian', this._guardian, this._platform, this.activeCharacter.characterBase.characterId, gamemode]);
+  }
+
+  nextPage() {
+    this.router.navigate([
+      '/guardian', this._guardian, this._platform, this.activeCharacter.characterBase.characterId, this.gamemode, this.page + 1
+    ]);
+  }
+
+  prevPage() {
+    this.router.navigate([
+      '/guardian', this._guardian, this._platform, this.activeCharacter.characterBase.characterId, this.gamemode, this.page - 1
+    ]);
   }
 }

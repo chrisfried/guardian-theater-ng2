@@ -20,4 +20,36 @@
   </div>
 </div>
 
-<app-guardian-activities></app-guardian-activities>
+<div *ngIf="displayName && activeCharacter" class="small-12 large-6">
+  <select class="mode-selector" [ngModel]="gamemode" (change)="selectGamemode($event.target.value)">
+    <option label="All" value="None" selected="selected">All</option>
+    <option label="All PvE" value="AllPvE">All PvE</option>
+    <option label="All PvP" value="AllPvP">All PvP</option>
+    <option label="All Private Matches" value="PrivateMatchesAll">All Private Matches</option>
+    <option label="Trials of Osiris" value="TrialsOfOsiris">Trials of Osiris</option>
+    <option label="Iron Banner" value="IronBanner">Iron Banner</option>
+    <option label="Raid" value="Raid">Raid</option>
+    <option label="Prison of Elders" value="AllArena">Prison of Elders</option>
+    <option label="Nightfall" value="Nightfall">Nightfall</option>
+    <option label="Story" value="Story">Story</option>
+    <option label="Strike" value="AllStrikes">Strike</option>
+    <option label="Patrol" value="Patrol">Patrol</option>
+    <option label="Control" value="Control">Control</option>
+    <option label="Clash" value="Team">Clash</option>
+    <option label="Supremacy" value="Supremacy">Supremacy</option>
+    <option label="Rumble" value="FreeForAll">Rumble</option>
+    <option label="Rift" value="Rift">Rift</option>
+    <option label="Zone Control" value="ZoneControl">Zone Control</option>
+    <option label="Mayhem" value="Mayhem">Mayhem</option>
+    <option label="Skirmish" value="ThreeVsThree">Skirmish</option>
+    <option label="Salvage" value="Lockdown">Salvage</option>
+    <option label="Doubles" value="Doubles">Doubles</option>
+    <option label="Elimination" value="Elimination">Elimination</option>
+    <option label="Sparrow Racing League" value="Racing">Sparrow Racing League</option>
+  </select>
+</div>
+
+<button class="btn btn-primary small-6 large-3" (click)="prevPage()" *ngIf="page > 0">Previous</button>
+<button class="btn small-6 large-3" (click)="nextPage()">Next</button>
+
+<app-activity *ngFor="let activity of activities" [activity]="activity"></app-activity>

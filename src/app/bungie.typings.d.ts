@@ -33,6 +33,17 @@ declare namespace bungie {
     } 
   }
 
+  interface PartnershipResponse extends Response {
+    Response: Partnership[]
+  }
+
+  interface Partnership {
+    icon: string,
+    identifier: string,
+    name: string,
+    partnerType: number
+  }
+
   interface Definitions {
     items: {},
     buckets: {},
@@ -208,7 +219,10 @@ declare namespace bungie {
       completionReason: ActivityStat,
       playerCount: ActivityStat,
       raceCompletionMilliseconds: ActivityStat
-    }
+    },
+
+    pgcr?: PostGameCarnageReport,
+    loadingPgcr?: boolean
   }
 
   interface PostGameCarnageReport {
@@ -264,9 +278,13 @@ declare namespace bungie {
             }
           }[],
           values: {
-            secondsPlayed?: BasicStat
+            secondsPlayed?: BasicStat,
+            remainingTimeAfterQuitSeconds?: BasicStat
           }
-        }
+        },
+
+        startTime?: number,
+        stopTime?: number
       }[],
       teams: {
         teamId: number,

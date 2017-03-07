@@ -14,7 +14,7 @@ import { AboutComponent } from './about/about.component';
 import { SettingsComponent } from './settings/settings.component';
 import { GuardianComponent } from './guardian/guardian.component';
 import { ClassTypePipe, RaceHashPipe, ActivityModePipe } from './bungie-pipes.pipe';
-import { GuardianActivitiesComponent } from './guardian/guardian-activities/guardian-activities.component';
+import { ActivityComponent } from './activity/activity.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import { GuardianActivitiesComponent } from './guardian/guardian-activities/guar
     SettingsComponent,
     GuardianComponent,
     ClassTypePipe, RaceHashPipe, ActivityModePipe,
-    GuardianActivitiesComponent
+    ActivityComponent
   ],
   imports: [
     BrowserModule,

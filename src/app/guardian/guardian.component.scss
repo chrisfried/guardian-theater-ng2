@@ -77,3 +77,26 @@
     vertical-align: 15%;
   }
 }
+
+
+.mode-selector {
+  margin-bottom: .5em;
+  background: rgba(48,56,65,1);
+  color: white;
+  border: none;
+}
+.mode-selected-AllPvP, .mode-selected-Control, .mode-selected-Team, .mode-selected-ThreeVsThree, .mode-selected-Lockdown, .mode-selected-FreeForAll, .mode-selected-Elimination, .mode-selected-Rift, .mode-selected-ZoneControl, .mode-selected-IronBanner, .mode-selected-TrialsOfOsiris, .mode-selected-MayhemClash, .mode-selected-MayhemRumble, .mode-selected-Racing, .mode-selected-Supremacy, .mode-selected-PrivateMatchesAll {
+  background: rgba(159,52,47,1) !important;
+}
+.mode-selected-Story {
+  background: rgb(212, 110, 55) !important;
+}
+.mode-selected-Strike, .mode-selected-Nightfall, .mode-selected-Heroic, .mode-selected-AllStrikes {
+  background: rgba(85,124,190,1) !important;
+}
+.mode-selected-AllPvE, .mode-selected-Raid, .mode-selected-AllArena, .mode-selected-Arena, .mode-selected-ArenaChallenge {
+  background: rgba(82,119,181,1) !important;
+}
+.mode-selected-Patrol {
+  background: rgba(80,124,65,1) !important;
+}

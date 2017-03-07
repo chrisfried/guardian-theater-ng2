@@ -1,14 +1,18 @@
-import { Injectable } from '@angular/core';
-import { Observable, BehaviorSubject } from 'rxjs/Rx';
+import { Injectable, OnDestroy } from '@angular/core';
+import { Observable, BehaviorSubject, Subscription } from 'rxjs/Rx';
 import { Response } from '@angular/http';
-import { BungieHttpService } from '../services/bungie-http.service';
+import { BungieHttpService } from './bungie-http.service';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
 @Injectable()
-export class GuardianService {
+export class GuardianService implements OnDestroy {
+  private subParams: Subscription;
+  private subSearch: Subscription;
+  private subAccount: Subscription;
+  private subCharacter: Subscription;
+  private subActivityHistory: Subscription;
+
   private _membershipId: BehaviorSubject<string>;
-  private _activityMode: BehaviorSubject<string>;
-  private _activityPage: BehaviorSubject<number>;
 
   public searchName: BehaviorSubject<string>;
   public selectPlatform: BehaviorSubject<boolean>;
@@ -18,6 +22,8 @@ export class GuardianService {
   public characterId: BehaviorSubject<string>;
   public activeCharacter: BehaviorSubject<bungie.Character>;
   public activities: BehaviorSubject<bungie.Activity[]>;
+  public activityMode: BehaviorSubject<string>;
+  public activityPage: BehaviorSubject<number>;
 
   constructor(
     private bHttp: BungieHttpService,
@@ -25,8 +31,8 @@ export class GuardianService {
     private route: ActivatedRoute
   ) {
     this._membershipId = new BehaviorSubject('');
-    this._activityMode = new BehaviorSubject('None');
-    this._activityPage = new BehaviorSubject(0);
+    this.activityMode = new BehaviorSubject('None');
+    this.activityPage = new BehaviorSubject(0);
 
     this.searchName = new BehaviorSubject('');
     this.selectPlatform = new BehaviorSubject(false);
@@ -37,7 +43,7 @@ export class GuardianService {
     this.activeCharacter = new BehaviorSubject(null);
     this.activities = new BehaviorSubject([]);
 
-    this.route.params
+    this.subParams = this.route.params
       .subscribe((params: Params) => {
         console.log('Sub: Params', params);
         if (params['platform']) {
@@ -59,19 +65,19 @@ export class GuardianService {
         }
 
         if (params['gamemode']) {
-          this._activityMode.next(params['gamemode']);
+          this.activityMode.next(params['gamemode']);
         } else {
-          this._activityMode.next('None');
+          this.activityMode.next('None');
         }
 
         if (params['page']) {
-          this._activityPage.next(+params['page']);
+          this.activityPage.next(+params['page']);
         } else {
-          this._activityPage.next(0);
+          this.activityPage.next(0);
         }
       });
 
-    Observable.combineLatest(
+    this.subSearch = Observable.combineLatest(
       this.membershipType,
       this.searchName
     )
@@ -111,7 +117,7 @@ export class GuardianService {
         }
       });
 
-    Observable.combineLatest(
+    this.subAccount = Observable.combineLatest(
       this.membershipType,
       this._membershipId
     )
@@ -146,7 +152,7 @@ export class GuardianService {
         }
       });
 
-    Observable.combineLatest(
+    this.subCharacter = Observable.combineLatest(
       this.characters,
       this.characterId
     )
@@ -169,10 +175,10 @@ export class GuardianService {
         this.activeCharacter.next(character);
       });
 
-    Observable.combineLatest(
+    this.subActivityHistory = Observable.combineLatest(
       this.activeCharacter,
-      this._activityMode,
-      this._activityPage
+      this.activityMode,
+      this.activityPage
     )
       .map(([character, mode, page]) => {
         try {
@@ -181,7 +187,7 @@ export class GuardianService {
           let characterId = character.characterBase.characterId;
           this.characterId.next(characterId);
           return 'https://www.bungie.net/Platform/Destiny/Stats/ActivityHistory/'
-            + membershipType + '/' + membershipId + '/' + characterId + '/?mode=' + mode + '&count=10&page=' + page;
+            + membershipType + '/' + membershipId + '/' + characterId + '/?mode=' + mode + '&count=7&page=' + page;
         } catch (e) {
           return '';
         }
@@ -205,6 +211,14 @@ export class GuardianService {
           console.log(e);
         }
       });
+  }
+
+  ngOnDestroy() {
+    this.subParams.unsubscribe();
+    this.subSearch.unsubscribe();
+    this.subAccount.unsubscribe();
+    this.subCharacter.unsubscribe();
+    this.subActivityHistory.unsubscribe();
   }
 
 }

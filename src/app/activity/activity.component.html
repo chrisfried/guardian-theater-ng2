@@ -1,0 +1,15 @@
+<div class="activity">
+  <div class="columns small-12">
+    <div class="mode row align-justify mode-no-clips">
+      <span class="ng-binding">{{ activity.activityDetails.mode | activityMode }} </span>
+      <span class="activity-time">{{ activity.period | date:'medium' }}</span>
+    </div>
+  </div>
+  <div *ngIf="pgcr">
+    <div *ngFor="let entry of pgcr.entries">
+      {{ entry.player.destinyUserInfo.displayName }} | {{ entry.startTime | date:'mediumTime' }} - {{ entry.stopTime | date:'mediumTime' }}
+      <span *ngIf="entry.player.bungieNetUserInfo"> | {{ entry.player.bungieNetUserInfo.membershipId }}</span>
+    </div>
+  </div>
+</div>
+
