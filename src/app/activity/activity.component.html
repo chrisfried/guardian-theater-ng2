@@ -12,9 +12,18 @@
       <span *ngIf="entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && (twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedId"> | {{ (twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).twitchId || '---'}}</span>
       <span *ngIf="!entry.player.bungieNetUserInfo"> | --- | ---</span>
       <span *ngIf="entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && (twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).response"> | {{ (twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).response._total }}</span>
-      <ul *ngIf="entry.twitchClips">
-        <li *ngFor="let clip of entry.twitchClips">{{ clip.title }}</li>
-      </ul>
+      <div *ngFor="let clip of entry.twitchClips">
+        <img class="clip-thumbnail" (click)="entry.play = !entry.play" *ngIf="!entry.play" [src]="clip.thumbnails[0].url">
+        <div class="clip-wrapper" *ngIf="entry.play">
+          <iframe
+            class="twitch-embed"
+            [src]="clip.embedUrl"
+            frameborder="0"
+            scrolling="no"
+            allowfullscreen="true">
+          </iframe>
+        </div>
+      </div>
     </div>
   </div>
 </div>

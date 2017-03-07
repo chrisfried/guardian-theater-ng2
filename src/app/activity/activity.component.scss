@@ -48,3 +48,28 @@
 .activity-permalinks a:hover, .activity-permalinks a:active, .activity-permalinks a:visited {
   opacity: 1;
 }
+
+.videogular-container, .clip-wrapper {
+	position: relative;
+  margin-bottom: .5em;
+  overflow: hidden;
+}
+.videogular-container:before, .clip-wrapper:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 56.25%;
+}
+.videogular-container > .videogular-player, .clip-wrapper > div, .twitch-embed {
+  position: absolute;
+  margin-left: 0 !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.clip-thumbnail {
+  cursor: pointer
+}

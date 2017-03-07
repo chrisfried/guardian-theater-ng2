@@ -1,6 +1,7 @@
 import { Injectable, OnDestroy } from '@angular/core';
 import { BungieHttpService } from './bungie-http.service';
 import { Http } from '@angular/http';
+import { DomSanitizer } from '@angular/platform-browser';
 import { TwitchService } from './twitch.service';
 import { Observable, BehaviorSubject, Subscription } from 'rxjs/Rx';
 import { Response } from '@angular/http';
@@ -19,7 +20,8 @@ export class ActivityService implements OnDestroy {
   constructor(
     private http: Http,
     private bHttp: BungieHttpService,
-    private twitchService: TwitchService
+    private twitchService: TwitchService,
+    private sanitizer: DomSanitizer
   ) {
     this._activity = new BehaviorSubject(null);
     this.pgcr = new BehaviorSubject(null);
@@ -208,6 +210,15 @@ export class ActivityService implements OnDestroy {
                           if (!entry.twitchClips) {
                             entry.twitchClips = [];
                           }
+                          let offset = entry.startTime - recordedStart;
+                          let hms = '0h0m0s';
+                          if (offset > 0) {
+                            hms = Math.floor(offset / 3600) + 'h'
+                            + Math.floor(offset % 3600 / 60) + 'm'
+                            + Math.floor(offset % 3600 % 60) + 's';
+                          }
+                          video.embedUrl = this.sanitizer.bypassSecurityTrustResourceUrl('http://player.twitch.tv/?video='
+                           + video._id + '&time=' + hms);
                           entry.twitchClips.push(video);
                         });
                       }

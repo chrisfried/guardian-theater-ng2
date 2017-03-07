@@ -49,27 +49,6 @@
 100% {transform: rotate(360deg);}  
 }
 
-.videogular-container, .clip-wrapper {
-	position: relative;
-  margin-bottom: .5em;
-  overflow: hidden;
-}
-.videogular-container:before, .clip-wrapper:before {
-  display: block;
-  content: "";
-  width: 100%;
-  padding-top: 56.25%;
-}
-.videogular-container > .videogular-player, .clip-wrapper > div, .twitch-embed {
-  position: absolute;
-  margin-left: 0 !important;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-}
 .activeCharacter a, .activeCharacter a:visited, .activeCharacter a:hover, .activeCharacter a:active {
   display: block;
   color: white;
@@ -145,9 +124,6 @@
 }
 
 .thumbnail-link {
-  width: 100%;
-}
-.clip-thumbnail {
   width: 100%;
 }
 
