@@ -1,14 +1,11 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs/Rx';
 
 @Injectable()
 export class TwitchService {
-  public twitchIds: BehaviorSubject<any>;
+  public twitchIds: {};
 
   constructor() {
-    this.twitchIds = new BehaviorSubject({
-      Placeholder: 0
-    });
+    this.twitchIds = {};
   }
 
 }
