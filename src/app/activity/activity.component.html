@@ -46,7 +46,7 @@
     </span>
     <div *ngFor="let entry of pgcr.entries">
       <div *ngFor="let clip of entry.twitchClips">
-        <span (click)="toGuardian(entry.player.destinyUserInfo.displayName, entry.characterId)">{{ entry.player.destinyUserInfo.displayName }}</span>
+        <span style="cursor: pointer" (click)="toGuardian(entry.player.destinyUserInfo.displayName, entry.characterId)">{{ entry.player.destinyUserInfo.displayName }}</span>
         <div class="clip-wrapper" *ngIf="!entry.play">
           <img class="clip-thumbnail" (click)="entry.play = !entry.play" [src]="clip.thumbnails[0].url">
         </div>
@@ -61,9 +61,9 @@
         </div>
       </div>
       <div *ngFor="let clip of entry.xboxClips">
-        <span (click)="toGuardian(entry.player.destinyUserInfo.displayName, entry.characterId)">{{ entry.player.destinyUserInfo.displayName }}</span>
+        <span style="cursor: pointer" (click)="toGuardian(entry.player.destinyUserInfo.displayName, entry.characterId)">{{ entry.player.destinyUserInfo.displayName }}</span>
         <div class="clip-wrapper">
-          <video id="my-video" class="video-js twitch-embed" controls preload="metadata" [poster]="clip.thumbnails[0].uri" data-setup="{}">
+          <video id="my-video" class="video-js twitch-embed" controls preload="none" [poster]="clip.thumbnails[0].uri" data-setup="{}">
             <source [src]="clip.gameClipUris[0].uri" type="video/mp4">
           </video>
         </div>
