@@ -30,7 +30,6 @@ export class RaceHashPipe implements PipeTransform {
   }
 }
 
-
 @Pipe({
   name: 'activityMode'
 })

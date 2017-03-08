@@ -124,11 +124,13 @@ export class ActivityService implements OnDestroy {
                 if (entry.player.bungieNetUserInfo) {
 
                   let membershipId = entry.player.bungieNetUserInfo.membershipId;
+                  let displayName = entry.player.destinyUserInfo.displayName;
 
                   entry.iconUrl = this.sanitizer.bypassSecurityTrustResourceUrl('//www.bungie.net' + entry.player.destinyUserInfo.iconPath);
 
                   if (!this.twitchService.twitch[membershipId]) {
                     this.twitchService.twitch[membershipId] = new BehaviorSubject({
+                      displayName: displayName,
                       checkedId: false,
                       twitchId: '',
                       bungieId: membershipId,
@@ -140,6 +142,7 @@ export class ActivityService implements OnDestroy {
                   this.subs.push(
                     this.twitchService.twitch[membershipId]
                       .map((subject: {
+                        displayName: string,
                         checkedId: boolean,
                         twitchId: string,
                         bungieId: string,
@@ -165,6 +168,7 @@ export class ActivityService implements OnDestroy {
                       .subscribe((res: bungie.PartnershipResponse) => {
                         if (res.Response.length) {
                           this.twitchService.twitch[membershipId].next({
+                            displayName: displayName,
                             checkedId: true,
                             twitchId: res.Response[0].name,
                             bungieId: membershipId,
@@ -173,6 +177,7 @@ export class ActivityService implements OnDestroy {
                           });
                         } else {
                           this.twitchService.twitch[membershipId].next({
+                            displayName: displayName,
                             checkedId: true,
                             twitchId: '',
                             bungieId: membershipId,
@@ -188,6 +193,7 @@ export class ActivityService implements OnDestroy {
                   this.subs.push(
                     this.twitchService.twitch[membershipId]
                       .map((subject: {
+                        displayName: string,
                         checkedId: boolean,
                         twitchId: string,
                         bungieId: string,
@@ -215,6 +221,7 @@ export class ActivityService implements OnDestroy {
                       .subscribe((res) => {
                         if (res) {
                           this.twitchService.twitch[membershipId].next({
+                            displayName: displayName,
                             checkedId: true,
                             twitchId: twitchId,
                             bungieId: membershipId,
@@ -228,6 +235,7 @@ export class ActivityService implements OnDestroy {
                   this.subs.push(
                     this.twitchService.twitch[membershipId]
                       .subscribe((subject: {
+                        displayName: string,
                         checkedId: boolean,
                         twitchId: string,
                         bungieId: string,
@@ -247,6 +255,9 @@ export class ActivityService implements OnDestroy {
                             if (!entry.twitchClips) {
                               entry.twitchClips = [];
                             }
+                            if (!pgcr.clips) {
+                              pgcr.clips = [];
+                            }
                             let offset = entry.startTime - recordedStart;
                             let hms = '0h0m0s';
                             if (offset > 0) {
@@ -256,7 +267,15 @@ export class ActivityService implements OnDestroy {
                             }
                             video.embedUrl = this.sanitizer.bypassSecurityTrustResourceUrl('//player.twitch.tv/?video='
                               + video._id + '&time=' + hms);
-                            entry.twitchClips.push(video);
+                            pgcr.clips.push({
+                              type: 'twitch',
+                              start: recordedStart,
+                              entry: entry,
+                              video: video
+                            });
+                            pgcr.clips.sort(function (a, b) {
+                              return a.start - b.start;
+                            });
                           });
                         }
                       })
@@ -345,7 +364,18 @@ export class ActivityService implements OnDestroy {
                           if (!entry.xboxClips) {
                             entry.xboxClips = [];
                           }
-                          entry.xboxClips.push(video);
+                          if (!pgcr.clips) {
+                            pgcr.clips = [];
+                          }
+                          pgcr.clips.push({
+                            type: 'xbox',
+                            start: recordedStart,
+                            entry: entry,
+                            video: video
+                          });
+                          pgcr.clips.sort(function (a, b) {
+                            return a.start - b.start;
+                          });
                         });
                       }
                     })

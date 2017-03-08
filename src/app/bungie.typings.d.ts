@@ -23,14 +23,14 @@ declare namespace bungie {
     Response: {
       data: ActivityHistory,
       definitions?: Definitions
-    } 
+    }
   }
 
   interface PostGameCarnageReportResponse extends Response {
     Response: {
       data: PostGameCarnageReport,
       definitions?: Definitions
-    } 
+    }
   }
 
   interface PartnershipResponse extends Response {
@@ -190,7 +190,7 @@ declare namespace bungie {
     grimoireScore: number,
     versions: number
   }
-  
+
   interface ActivityHistory {
     activities: Activity[]
   }
@@ -226,74 +226,102 @@ declare namespace bungie {
   }
 
   interface PostGameCarnageReport {
-      period: string,
-      activityDetails: ActivityDetails,
-      entries: {
-        standing: number,
-        score: BasicStat,
-        player: {
-          destinyUserInfo: {
-            iconPath: string,
-            membershipType: number,
-            membershipId: string,
-            displayName: string
-          },
-          characterClass: string,
-          characterLevel: number,
-          lightLevel: number,
-          bungieNetUserInfo?: {
-            iconPath: string,
-            membershipType: number,
-            membershipId: string,
-            displayName: string
-          }
-        },
-        characterId: string,
-        values: {
-          assists: BasicStat,
-          score: BasicStat,
-          kills: BasicStat,
-          averageScorePerKill: BasicStat,
-          deaths: BasicStat,
-          averageScorePerLife: BasicStat,
-          completed: BasicStat,
-          killsDeathsRatio: BasicStat,
-          killsDeathsAssists: BasicStat,
-          activityDurationSeconds: BasicStat,
-          standing: BasicStat,
-          team: BasicStat,
-          completionReason: BasicStat,
-          fireTeamId: BasicStat,
-          playerCount: BasicStat,
-          teamScore: BasicStat,
-          leaveRemainingSeconds: BasicStat
-        },
-        extended: {
-          weapons?: {
-            referenceId: number,
-            values: {
-              uniqueWeaponKills: BasicStat,
-              uniqueWeaponPrecisionKills: BasicStat,
-              uniqueWeaponKillsPrecissionKills: BasicStat
-            }
-          }[],
-          values: {
-            secondsPlayed?: BasicStat,
-            remainingTimeAfterQuitSeconds?: BasicStat
-          }
-        },
+    period: string,
+    activityDetails: ActivityDetails,
+    entries: Entry[],
+    teams: {
+      teamId: number,
+      standing: BasicStat,
+      score: BasicStat,
+      teamName: string
+    }[],
 
-        startTime?: number,
-        stopTime?: number,
-        twitchClips?: twitch.Video[],
-        xboxClips?: xbox.Video[],
-        iconUrl?: any
+    clips?: {
+      type: string,
+      start: number,
+      video: (xbox.Video | twitch.Video),
+      entry: Entry
+    }[],
+
+    loading?: {
+      message: string,
+      twitch: boolean,
+      bungie: boolean,
+      xbox: boolean
+    }
+  }
+
+  interface Entry {
+    standing: number,
+    score: BasicStat,
+    player: {
+      destinyUserInfo: {
+        iconPath: string,
+        membershipType: number,
+        membershipId: string,
+        displayName: string
+      },
+      characterClass: string,
+      characterLevel: number,
+      lightLevel: number,
+      bungieNetUserInfo?: {
+        iconPath: string,
+        membershipType: number,
+        membershipId: string,
+        displayName: string
+      }
+    },
+    characterId: string,
+    values: {
+      assists: BasicStat,
+      score: BasicStat,
+      kills: BasicStat,
+      averageScorePerKill: BasicStat,
+      deaths: BasicStat,
+      averageScorePerLife: BasicStat,
+      completed: BasicStat,
+      killsDeathsRatio: BasicStat,
+      killsDeathsAssists: BasicStat,
+      activityDurationSeconds: BasicStat,
+      standing: BasicStat,
+      team: BasicStat,
+      completionReason: BasicStat,
+      fireTeamId: BasicStat,
+      playerCount: BasicStat,
+      teamScore: BasicStat,
+      leaveRemainingSeconds: BasicStat
+    },
+    extended: {
+      weapons?: {
+        referenceId: number,
+        values: {
+          uniqueWeaponKills: BasicStat,
+          uniqueWeaponPrecisionKills: BasicStat,
+          uniqueWeaponKillsPrecissionKills: BasicStat
+        }
       }[],
-      teams: {
-        teamId: number,
-        standing: BasicStat,
-        score: BasicStat,
-        teamName: string
-      }[]
+      values: {
+        secondsPlayed?: BasicStat,
+        remainingTimeAfterQuitSeconds?: BasicStat
+      }
+    },
+
+    startTime?: number,
+    stopTime?: number,
+    twitchClips?: twitch.Video[],
+    xboxClips?: xbox.Video[],
+    iconUrl?: any,
+    xbox?: {
+      checked: boolean,
+      gamertag: string,
+      response: xbox.Response
+    }
+    twitch?: {
+      checkedId: boolean,
+      twitchId: string,
+      bungieId: string,
+      checkedResponse: boolean,
+      response: {}
+    }
   }
 }
