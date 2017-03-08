@@ -286,7 +286,8 @@ declare namespace bungie {
         startTime?: number,
         stopTime?: number,
         twitchClips?: twitch.Video[],
-        xboxClips?: xbox.Video[]
+        xboxClips?: xbox.Video[],
+        iconUrl?: any
       }[],
       teams: {
         teamId: number,

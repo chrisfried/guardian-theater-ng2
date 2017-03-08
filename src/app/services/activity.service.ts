@@ -95,6 +95,8 @@ export class ActivityService implements OnDestroy {
 
                   let membershipId = entry.player.bungieNetUserInfo.membershipId;
 
+                  entry.iconUrl = this.sanitizer.bypassSecurityTrustResourceUrl('//www.bungie.net' + entry.player.destinyUserInfo.iconPath);
+
                   if (!this.twitchService.twitch[membershipId]) {
                     this.twitchService.twitch[membershipId] = new BehaviorSubject({
                       checkedId: false,

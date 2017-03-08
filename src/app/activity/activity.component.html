@@ -1,20 +1,23 @@
 <div class="activity">
   <div class="columns small-12">
-    <div *ngIf="!pgcr" class="fi-widget spinner pgcr-spinner" title="Fetching Bungie PGCR..."></div>
-    <div class="mode row align-justify mode-no-clips" [ngClass]="{'loading': !pgcr}">
+    <div class="mode row align-justify mode-no-clips">
       <span class="ng-binding">{{ activity.activityDetails.mode | activityMode }} </span>
       <span class="activity-time">{{ activity.period | date:'medium' }}</span>
     </div>
   </div>
+  <div *ngIf="!pgcr">
+    <span class="player-spinner">
+      <span class="fi-widget spinner bungie-spinner" title="Fetching Bungie PGCR..."></span>
+    </span>
+  </div>
 
   <div *ngIf="pgcr">
-    <div *ngFor="let entry of pgcr.entries">
-      {{ entry.player.destinyUserInfo.displayName }}
-      <span class="player-spinner" 
+    <span *ngFor="let entry of pgcr.entries">
+      <span class="player-spinner"
         *ngIf="(entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedId)
             || (entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedResponse)
             || (xboxService.xbox[entry.player.destinyUserInfo.displayName] && !(xboxService.xbox[entry.player.destinyUserInfo.displayName] | async).checked)" >
-        <span class="fi-widget spinner bungie-spinner" title="Fetching TwitchID from Bungie..."
+        <span class="fi-widget spinner bungie-spinner" [title]="'Fetching TwitchID for ' + entry.player.destinyUserInfo.displayName"
           [ngClass]="{
             'half-spinner-a': (entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedResponse)
                            || (xboxService.xbox[entry.player.destinyUserInfo.displayName] && !(xboxService.xbox[entry.player.destinyUserInfo.displayName] | async).checked),
@@ -22,7 +25,7 @@
                            && (xboxService.xbox[entry.player.destinyUserInfo.displayName] && !(xboxService.xbox[entry.player.destinyUserInfo.displayName] | async).checked)
           }"
           *ngIf="entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedId"></span>
-        <span class="fi-widget spinner twitch-spinner" title="Fetching clips from Twitch..."
+        <span class="fi-widget spinner twitch-spinner" [title]="'Fetching Twitch clips for ' + entry.player.destinyUserInfo.displayName"
           [ngClass]="{
             'half-spinner-b': entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedId,
             'half-spinner-a': xboxService.xbox[entry.player.destinyUserInfo.displayName] && !(xboxService.xbox[entry.player.destinyUserInfo.displayName] | async).checked,
@@ -30,7 +33,7 @@
                            && (xboxService.xbox[entry.player.destinyUserInfo.displayName] && !(xboxService.xbox[entry.player.destinyUserInfo.displayName] | async).checked)
           }"
           *ngIf="entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedResponse"></span>
-        <span class="fi-widget spinner xbox-spinner" title="Fetching clips from Xbox..."
+        <span class="fi-widget spinner xbox-spinner" [title]="'Fetching Xbox clips for ' + entry.player.destinyUserInfo.displayName"
           [ngClass]="{
             'half-spinner-b': (entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedResponse)
                            || (entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedId),
@@ -39,8 +42,13 @@
           }"
           *ngIf="xboxService.xbox[entry.player.destinyUserInfo.displayName] && !(xboxService.xbox[entry.player.destinyUserInfo.displayName] | async).checked"></span>
       </span>
+    </span>
+    <div *ngFor="let entry of pgcr.entries">
       <div *ngFor="let clip of entry.twitchClips">
-        <img class="clip-thumbnail" (click)="entry.play = !entry.play" *ngIf="!entry.play" [src]="clip.thumbnails[0].url">
+        <span>{{ entry.player.destinyUserInfo.displayName }}</span>
+        <div class="clip-wrapper" *ngIf="!entry.play">
+          <img class="clip-thumbnail" (click)="entry.play = !entry.play" [src]="clip.thumbnails[0].url">
+        </div>
         <div class="clip-wrapper" *ngIf="entry.play">
           <iframe
             class="twitch-embed"
@@ -52,6 +60,7 @@
         </div>
       </div>
       <div *ngFor="let clip of entry.xboxClips">
+        <span>{{ entry.player.destinyUserInfo.displayName }}</span>
         <div class="clip-wrapper">
           <video id="my-video" class="video-js twitch-embed" controls preload="metadata" [poster]="clip.thumbnails[0].uri" data-setup="{}">
             <source [src]="clip.gameClipUris[0].uri" type="video/mp4">

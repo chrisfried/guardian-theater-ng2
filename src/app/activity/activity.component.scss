@@ -71,7 +71,14 @@
   height: 100%;
 }
 .clip-thumbnail {
-  cursor: pointer
+  cursor: pointer;
+  position: absolute;
+  margin-left: 0 !important;
+  top: -16.75%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .mode.loading {
@@ -101,6 +108,7 @@
   height: 25px;
   font-size: 25px;
   line-height: 25px;
+  margin-right: 1em;
 }
 .bungie-spinner {
   position: absolute;
