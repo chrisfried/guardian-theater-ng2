@@ -73,3 +73,62 @@
 .clip-thumbnail {
   cursor: pointer
 }
+
+.mode.loading {
+  margin-left: .9375rem;
+}
+
+.spinner {
+  -webkit-animation: spin 3s infinite linear;
+  animation: spin 3s infinite linear;
+}
+.pgcr-spinner-wrapper {
+  text-align: center;
+}
+.pgcr-spinner {
+  position: absolute;
+  text-align: center;
+  width: 26px;
+  font-size: 26px;
+  line-height: 26px;
+  height: 26px;
+  color: #0096db;
+  margin-left: -.9375rem;
+}
+.bungie-spinner {
+  display: inline-block;
+  text-align: center;
+  width: 26px;
+  font-size: 26px;
+  line-height: 26px;
+  height: 26px;
+  color: #0096db;
+}
+.twitch-spinner {
+  display: inline-block;
+  text-align: center;
+  width: 26px;
+  font-size: 26px;
+  line-height: 26px;
+  height: 26px;
+  color: #6441A4;
+}
+.xbox-spinner {
+  display: inline-block;
+  text-align: center;
+  width: 26px;
+  font-size: 26px;
+  line-height: 26px;
+  height: 26px;
+  color: #5dc21e;
+}
+@-webkit-keyframes spin
+{  
+0%   {-webkit-transform: rotate(0deg);}  
+100% {-webkit-transform: rotate(360deg);}  
+}
+@keyframes spinX
+{  
+0%   {transform: rotate(0deg);}  
+100% {transform: rotate(360deg);}  
+}

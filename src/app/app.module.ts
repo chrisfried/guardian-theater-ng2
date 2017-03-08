@@ -6,6 +6,8 @@ import { HttpModule } from '@angular/http';
 import { RoutesModule } from './routes/routes.module';
 
 import { BungieHttpService } from './services/bungie-http.service';
+import { TwitchService } from './services/twitch.service';
+import { XboxService } from './services/xbox.service';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -34,7 +36,9 @@ import { ActivityComponent } from './activity/activity.component';
     RoutesModule
   ],
   providers: [
-    BungieHttpService
+    BungieHttpService,
+    TwitchService,
+    XboxService
   ],
   bootstrap: [AppComponent]
 })

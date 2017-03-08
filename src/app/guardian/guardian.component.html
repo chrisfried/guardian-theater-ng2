@@ -1,7 +1,9 @@
-<p *ngIf="needToSelectPlatform">
-  <button class="button" (click)="selectPlatform(1)">Xbox</button>
-  <button class="button" (click)="selectPlatform(2)">PlayStation</button>
-</p>
+<div *ngIf="!needToSelectPlatform && !displayName && !activeCharacter" class="profile-spinner-wrapper"><div class="fi-widget spinner profile-spinner" title="Fetching Bungie Profile..."></div></div>
+
+<div *ngIf="needToSelectPlatform" class="columns small-12 button-group expanded">
+  <button type="button" class="button" (click)="selectPlatform(1)">Xbox</button>
+  <button type="button" class="button" (click)="selectPlatform(2)">PlayStation</button>
+</div>
 
 <div *ngIf="displayName && activeCharacter" class="profile small-12 columns" [ngStyle]="{'background-image': 'url(//www.bungie.net' + activeCharacter.backgroundPath + ')'}">
   <div class="row">
@@ -20,8 +22,8 @@
   </div>
 </div>
 
-<div class="row">
-  <div *ngIf="displayName && activeCharacter" class="columns small-12 large-6">
+<div *ngIf="displayName && activeCharacter" class="row">
+  <div class="columns small-12 large-6">
     <select class="mode-selector" [ngModel]="gamemode" (change)="selectGamemode($event.target.value)">
       <option label="All" value="None" selected="selected">All</option>
       <option label="All PvE" value="AllPvE">All PvE</option>
@@ -50,11 +52,13 @@
     </select>
   </div>
 
-  <div *ngIf="displayName && activeCharacter" class="columns small-12 large-6 button-group expanded">
+  <div class="columns small-12 large-6 button-group expanded">
     <button type="button" class="button" (click)="prevPage()" *ngIf="page > 0">Previous</button>
     <button type="button" class="button" (click)="nextPage()">Next</button>
   </div>
 </div>
+
+<div *ngIf="displayName && activeCharacter && (!activities || !activities.length)" class="profile-spinner-wrapper"><div class="fi-widget spinner profile-spinner" title="Fetching Bungie Activities..."></div></div>
 
 <app-activity *ngFor="let activity of activities" [activity]="activity"></app-activity>
 

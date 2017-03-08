@@ -7,47 +7,6 @@
   display: inline-block;
   margin-bottom: 5px;
 }
-.spinner {
-  -webkit-animation: spin 3s infinite linear;
-  animation: spin 3s infinite linear;
-}
-.character-spinner {
-  width: 50px;
-  text-align: center;
-  font-size: 2em;
-  position: absolute;
-  line-height: 50px;
-  left: 0;
-  top: 0;
-}
-.carnage-spinner {
-  margin-left: .25em;
-  text-align: center;
-  display: inline-block;
-}
-.clip-spinner {
-  margin-left: .25em;
-  text-align: center;
-  display: inline-block;
-}
-.activity-spinner {
-  text-align: center;
-  font-size: 3em;
-}
-.video-spinner {
-  text-align: center;
-  font-size: 3em;
-}
-@-webkit-keyframes spin
-{  
-0%   {-webkit-transform: rotate(0deg);}  
-100% {-webkit-transform: rotate(360deg);}  
-}
-@keyframes spinX
-{  
-0%   {transform: rotate(0deg);}  
-100% {transform: rotate(360deg);}  
-}
 
 .activeCharacter a, .activeCharacter a:visited, .activeCharacter a:hover, .activeCharacter a:active {
   display: block;
