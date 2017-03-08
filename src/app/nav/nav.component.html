@@ -1,4 +1,16 @@
 <div class="row align-middle">
+  <div class="columns small-12 ad order-0 medium-order-4">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Guardian Theater v2 -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-7822250090731539"
+        data-ad-slot="9694174006"
+        data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
   <div class="columns small-12 icon-menu row align-right order-1 medium-order-3">
     <a title="Guardian Theater on Twitter" href="https://twitter.com/guardtheater" target="_blank" class="twitter">
       <span class="fi-social-twitter"></span>
@@ -9,15 +21,15 @@
     <a class="discord" title="Join our Discord Server" href="https://discord.gg/0lADdhKdnv0jxTNP" target="_blank">
       <span>Discord</span>
     </a>
-    <a title="About Guardian Theater" href="/about">
+    <a title="About Guardian Theater" (click)="route(['/about'])">
       <span class="fi-info"></span>
     </a>
-    <a title="Settings" href="/settings">
+    <a title="Settings" (click)="route(['/settings'])">
       <span class="fi-widget"></span>
     </a>
   </div>
   <div class="logo-wrap small-2 medium-12 columns order-2 medium-order-1">
-    <a href="/" class="home">
+    <a (click)="route(['/'])" class="home">
       <img class="logo" src="/assets/images/travelereel.png">
     </a>
   </div>
