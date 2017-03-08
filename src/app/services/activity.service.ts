@@ -1,19 +1,21 @@
 import { Injectable, OnDestroy } from '@angular/core';
 import { BungieHttpService } from './bungie-http.service';
-import { GuardianService } from './guardian.service';
 import { Http } from '@angular/http';
 import { DomSanitizer } from '@angular/platform-browser';
 import { TwitchService } from './twitch.service';
 import { XboxService } from './xbox.service';
 import { Observable, BehaviorSubject, Subscription } from 'rxjs/Rx';
 import { Response } from '@angular/http';
+import { Router, ActivatedRoute, Params } from '@angular/router';
 
 @Injectable()
 export class ActivityService implements OnDestroy {
   private subs: Subscription[];
 
+  private _activityId: BehaviorSubject<string>;
   private _activity: BehaviorSubject<bungie.Activity>;
 
+  public membershipType: BehaviorSubject<number>;
   public pgcr: BehaviorSubject<bungie.PostGameCarnageReport>;
 
   constructor(
@@ -21,18 +23,46 @@ export class ActivityService implements OnDestroy {
     private bHttp: BungieHttpService,
     private twitchService: TwitchService,
     private sanitizer: DomSanitizer,
-    private guardianService: GuardianService,
-    private xboxService: XboxService
+    private xboxService: XboxService,
+    private router: Router,
+    private route: ActivatedRoute
   ) {
     this._activity = new BehaviorSubject(null);
+    this._activityId = new BehaviorSubject('');
     this.pgcr = new BehaviorSubject(null);
     this.subs = [];
+    this.membershipType = new BehaviorSubject(-1);
+
+    this.subs.push(this.route.params
+      .subscribe((params: Params) => {
+        if (params['membershipType']) {
+          this.membershipType.next(+params['membershipType']);
+        } else {
+          this.membershipType.next(-1);
+        }
+
+        if (params['activityId']) {
+          this._activityId.next(params['activityId']);
+        } else {
+          this._activityId.next('');
+        }
+      })
+    );
 
     this.subs.push(
       this._activity
-        .map((activity) => {
+        .subscribe(activity => {
           if (activity) {
-            return 'https://www.bungie.net/Platform/Destiny/Stats/PostGameCarnageReport/' + activity.activityDetails.instanceId + '/';
+            this._activityId.next(activity.activityDetails.instanceId);
+          }
+        })
+    );
+
+    this.subs.push(
+      this._activityId
+        .map((activityId) => {
+          if (activityId) {
+            return 'https://www.bungie.net/Platform/Destiny/Stats/PostGameCarnageReport/' + activityId + '/';
           } else {
             return '';
           }
@@ -49,13 +79,13 @@ export class ActivityService implements OnDestroy {
           }
         })
         .subscribe(
-          (res: bungie.PostGameCarnageReportResponse) => {
-            try {
-              this.pgcr.next(res.Response.data);
-            } catch (e) {
-              console.log(e);
-            }
+        (res: bungie.PostGameCarnageReportResponse) => {
+          try {
+            this.pgcr.next(res.Response.data);
+          } catch (e) {
+            console.log(e);
           }
+        }
         )
     );
 
@@ -69,14 +99,14 @@ export class ActivityService implements OnDestroy {
                 let remainingSeconds = 0;
                 try {
                   remainingSeconds = entry.extended.values.remainingTimeAfterQuitSeconds.basic.value;
-                } catch (e) {}
+                } catch (e) { }
                 entry.startTime = period.getTime() / 1000
-                + entry.values.activityDurationSeconds.basic.value
-                - remainingSeconds
-                - entry.extended.values.secondsPlayed.basic.value;
+                  + entry.values.activityDurationSeconds.basic.value
+                  - remainingSeconds
+                  - entry.extended.values.secondsPlayed.basic.value;
                 entry.stopTime = period.getTime() / 1000
-                + entry.values.activityDurationSeconds.basic.value
-                - remainingSeconds;
+                  + entry.values.activityDurationSeconds.basic.value
+                  - remainingSeconds;
               });
             } catch (e) {
               console.log(e);
@@ -167,7 +197,7 @@ export class ActivityService implements OnDestroy {
                         if (subject.twitchId && !subject.checkedResponse) {
                           twitchId = subject.twitchId;
                           return 'https://api.twitch.tv/kraken/channels/' + twitchId + '/videos'
-                          + '?client_id=o8cuwhl23x5ways7456xhitdm0f4th0&limit=100&offset=0&broadcast_type=archive,highlight';
+                            + '?client_id=o8cuwhl23x5ways7456xhitdm0f4th0&limit=100&offset=0&broadcast_type=archive,highlight';
                         } else {
                           return '';
                         }
@@ -221,11 +251,11 @@ export class ActivityService implements OnDestroy {
                             let hms = '0h0m0s';
                             if (offset > 0) {
                               hms = Math.floor(offset / 3600) + 'h'
-                              + Math.floor(offset % 3600 / 60) + 'm'
-                              + Math.floor(offset % 3600 % 60) + 's';
+                                + Math.floor(offset % 3600 / 60) + 'm'
+                                + Math.floor(offset % 3600 % 60) + 's';
                             }
                             video.embedUrl = this.sanitizer.bypassSecurityTrustResourceUrl('//player.twitch.tv/?video='
-                            + video._id + '&time=' + hms);
+                              + video._id + '&time=' + hms);
                             entry.twitchClips.push(video);
                           });
                         }
@@ -243,7 +273,7 @@ export class ActivityService implements OnDestroy {
 
     this.subs.push(
       Observable.combineLatest(
-        this.guardianService.membershipType,
+        this.membershipType,
         this.pgcr
       )
         .subscribe(([type, pgcr]) => {
@@ -263,36 +293,36 @@ export class ActivityService implements OnDestroy {
 
                 this.subs.push(
                   this.xboxService.xbox[gamertag]
-                  .map((gamer: {
-                    checked: boolean,
-                    gamertag: string,
-                    response: {}
-                  }) => {
-                    if (!gamer.checked && gamer.gamertag) {
-                      return 'https://limitless-reaches-77548.herokuapp.com/api/clips/' + gamertag;
-                    } else {
-                      return '';
-                    }
-                  })
-                  .distinctUntilChanged()
-                  .switchMap(url => {
-                    if (url.length) {
-                      return this.http.get(url)
-                        .map((res: Response) => res.json())
-                        .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
-                    } else {
-                      return Observable.empty();
-                    }
-                  })
-                  .subscribe((res) => {
-                    if (res) {
-                      this.xboxService.xbox[gamertag].next({
-                        checked: true,
-                        gamertag: gamertag,
-                        response: res
-                      });
-                    }
-                  })
+                    .map((gamer: {
+                      checked: boolean,
+                      gamertag: string,
+                      response: {}
+                    }) => {
+                      if (!gamer.checked && gamer.gamertag) {
+                        return 'https://limitless-reaches-77548.herokuapp.com/api/clips/' + gamertag;
+                      } else {
+                        return '';
+                      }
+                    })
+                    .distinctUntilChanged()
+                    .switchMap(url => {
+                      if (url.length) {
+                        return this.http.get(url)
+                          .map((res: Response) => res.json())
+                          .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
+                      } else {
+                        return Observable.empty();
+                      }
+                    })
+                    .subscribe((res) => {
+                      if (res) {
+                        this.xboxService.xbox[gamertag].next({
+                          checked: true,
+                          gamertag: gamertag,
+                          response: res
+                        });
+                      }
+                    })
                 );
 
                 this.subs.push(

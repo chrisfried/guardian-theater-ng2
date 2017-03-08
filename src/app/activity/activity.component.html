@@ -1,10 +1,11 @@
 <div class="activity">
-  <div class="columns small-12">
+  <div *ngIf="activity" class="columns small-12" (click)="toActivity(activity.activityDetails.instanceId)">
     <div class="mode row align-justify mode-no-clips">
       <span class="ng-binding">{{ activity.activityDetails.mode | activityMode }} </span>
       <span class="activity-time">{{ activity.period | date:'medium' }}</span>
     </div>
   </div>
+
   <div *ngIf="!pgcr">
     <span class="player-spinner">
       <span class="fi-widget spinner bungie-spinner" title="Fetching Bungie PGCR..."></span>
@@ -45,7 +46,7 @@
     </span>
     <div *ngFor="let entry of pgcr.entries">
       <div *ngFor="let clip of entry.twitchClips">
-        <span>{{ entry.player.destinyUserInfo.displayName }}</span>
+        <span (click)="toGuardian(entry.player.destinyUserInfo.displayName, entry.characterId)">{{ entry.player.destinyUserInfo.displayName }}</span>
         <div class="clip-wrapper" *ngIf="!entry.play">
           <img class="clip-thumbnail" (click)="entry.play = !entry.play" [src]="clip.thumbnails[0].url">
         </div>
@@ -60,7 +61,7 @@
         </div>
       </div>
       <div *ngFor="let clip of entry.xboxClips">
-        <span>{{ entry.player.destinyUserInfo.displayName }}</span>
+        <span (click)="toGuardian(entry.player.destinyUserInfo.displayName, entry.characterId)">{{ entry.player.destinyUserInfo.displayName }}</span>
         <div class="clip-wrapper">
           <video id="my-video" class="video-js twitch-embed" controls preload="metadata" [poster]="clip.thumbnails[0].uri" data-setup="{}">
             <source [src]="clip.gameClipUris[0].uri" type="video/mp4">

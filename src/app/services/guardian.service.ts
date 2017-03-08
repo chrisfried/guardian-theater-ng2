@@ -24,6 +24,7 @@ export class GuardianService implements OnDestroy {
   public activities: BehaviorSubject<bungie.Activity[]>;
   public activityMode: BehaviorSubject<string>;
   public activityPage: BehaviorSubject<number>;
+  public activityId: BehaviorSubject<string>;
 
   constructor(
     private bHttp: BungieHttpService,
@@ -42,11 +43,12 @@ export class GuardianService implements OnDestroy {
     this.characterId = new BehaviorSubject('');
     this.activeCharacter = new BehaviorSubject(null);
     this.activities = new BehaviorSubject([]);
+    this.activityId = new BehaviorSubject('');
 
     this.subParams = this.route.params
       .subscribe((params: Params) => {
-        if (params['platform']) {
-          this.membershipType.next(+params['platform']);
+        if (params['membershipType']) {
+          this.membershipType.next(+params['membershipType']);
         } else {
           this.membershipType.next(-1);
         }
@@ -58,7 +60,7 @@ export class GuardianService implements OnDestroy {
         }
 
         if (params['character']) {
-          this.characterId.next(params['character']);
+          this.characterId.next(params['characterId']);
         } else {
           this.characterId.next('');
         }
