@@ -95,32 +95,56 @@
   color: #0096db;
   margin-left: -.9375rem;
 }
+.player-spinner {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  line-height: 25px;
+}
 .bungie-spinner {
-  display: inline-block;
+  position: absolute;
   text-align: center;
-  width: 26px;
-  font-size: 26px;
-  line-height: 26px;
-  height: 26px;
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  line-height: 25px;
   color: #0096db;
 }
 .twitch-spinner {
-  display: inline-block;
+  position: absolute;
   text-align: center;
-  width: 26px;
-  font-size: 26px;
-  line-height: 26px;
-  height: 26px;
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  line-height: 25px;
   color: #6441A4;
 }
 .xbox-spinner {
-  display: inline-block;
+  position: absolute;
   text-align: center;
-  width: 26px;
-  font-size: 26px;
-  line-height: 26px;
-  height: 26px;
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  line-height: 25px;
   color: #5dc21e;
+}
+
+.half-spinner-a {
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+}
+.half-spinner-b {
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+}
+
+.third-spinner-a {
+  clip-path: polygon(0 0, 50% 0, 50% 50%, 0 80%);
+}
+.third-spinner-b {
+  clip-path: polygon(50% 0, 100% 0, 100% 80%, 50% 50%);
+}
+.third-spinner-c {
+  clip-path: polygon(0 80%, 50% 50%, 100% 80%, 100% 100%, 0 100%);
 }
 @-webkit-keyframes spin
 {  

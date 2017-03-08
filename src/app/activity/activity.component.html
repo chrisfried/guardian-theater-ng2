@@ -10,9 +10,35 @@
   <div *ngIf="pgcr">
     <div *ngFor="let entry of pgcr.entries">
       {{ entry.player.destinyUserInfo.displayName }}
-      <span *ngIf="entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedId" class="fi-widget spinner bungie-spinner" title="Fetching TwitchID from Bungie..."></span>
-      <span *ngIf="entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedResponse" class="fi-widget spinner twitch-spinner" title="Fetching clips from Twitch..."></span>
-      <span *ngIf="xboxService.xbox[entry.player.destinyUserInfo.displayName] && !(xboxService.xbox[entry.player.destinyUserInfo.displayName] | async).checked" class="fi-widget spinner xbox-spinner" title="Fetching clips from Xbox..."></span>
+      <span class="player-spinner" 
+        *ngIf="(entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedId)
+            || (entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedResponse)
+            || (xboxService.xbox[entry.player.destinyUserInfo.displayName] && !(xboxService.xbox[entry.player.destinyUserInfo.displayName] | async).checked)" >
+        <span class="fi-widget spinner bungie-spinner" title="Fetching TwitchID from Bungie..."
+          [ngClass]="{
+            'half-spinner-a': (entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedResponse)
+                           || (xboxService.xbox[entry.player.destinyUserInfo.displayName] && !(xboxService.xbox[entry.player.destinyUserInfo.displayName] | async).checked),
+            'third-spinner-a': (entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedResponse)
+                           && (xboxService.xbox[entry.player.destinyUserInfo.displayName] && !(xboxService.xbox[entry.player.destinyUserInfo.displayName] | async).checked)
+          }"
+          *ngIf="entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedId"></span>
+        <span class="fi-widget spinner twitch-spinner" title="Fetching clips from Twitch..."
+          [ngClass]="{
+            'half-spinner-b': entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedId,
+            'half-spinner-a': xboxService.xbox[entry.player.destinyUserInfo.displayName] && !(xboxService.xbox[entry.player.destinyUserInfo.displayName] | async).checked,
+            'third-spinner-b': (entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedId)
+                           && (xboxService.xbox[entry.player.destinyUserInfo.displayName] && !(xboxService.xbox[entry.player.destinyUserInfo.displayName] | async).checked)
+          }"
+          *ngIf="entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedResponse"></span>
+        <span class="fi-widget spinner xbox-spinner" title="Fetching clips from Xbox..."
+          [ngClass]="{
+            'half-spinner-b': (entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedResponse)
+                           || (entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedId),
+            'third-spinner-c': (entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedResponse)
+                           && (entry.player.bungieNetUserInfo && twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] && !(twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).checkedId)
+          }"
+          *ngIf="xboxService.xbox[entry.player.destinyUserInfo.displayName] && !(xboxService.xbox[entry.player.destinyUserInfo.displayName] | async).checked"></span>
+      </span>
       <div *ngFor="let clip of entry.twitchClips">
         <img class="clip-thumbnail" (click)="entry.play = !entry.play" *ngIf="!entry.play" [src]="clip.thumbnails[0].url">
         <div class="clip-wrapper" *ngIf="entry.play">
