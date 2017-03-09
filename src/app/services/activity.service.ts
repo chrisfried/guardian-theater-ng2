@@ -344,7 +344,7 @@ export class ActivityService implements OnDestroy {
                       && clip.entry.values.team && clip.entry.values.team.basic.value === activeTeam) {
                         return;
                       }
-                  if (!limiter.oponents && clip.entry.values.team && clip.entry.values.team.basic.value !== activeTeam) {
+                  if (!limiter.opponents && clip.entry.values.team && clip.entry.values.team.basic.value !== activeTeam) {
                     return;
                   }
                   filteredClips.push(clip);

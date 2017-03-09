@@ -109,15 +109,15 @@ export class GuardianComponent implements OnInit, OnDestroy {
     this.subLimiter.unsubscribe();
   }
 
-  selectPlatform(platform) {
+  selectPlatform(platform: string) {
     this.router.navigate(['/guardian', this._guardian, platform]);
   }
 
-  selectCharacter(characterId) {
+  selectCharacter(characterId: string) {
     this.router.navigate(['/guardian', this._guardian, this._platform, characterId, this.gamemode, 0]);
   }
 
-  selectGamemode(gamemode) {
+  selectGamemode(gamemode: string) {
     this.router.navigate(['/guardian', this._guardian, this._platform, this.activeCharacter.characterBase.characterId, gamemode, 0]);
   }
 
@@ -135,7 +135,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
     }
   }
 
-  toggleLimiter(limit) {
+  toggleLimiter(limit: string) {
     this.settingsService.toggleLimit = limit;
   }
 }

@@ -3,6 +3,6 @@ declare namespace gt {
     self: boolean,
     fireteam: boolean,
     team: boolean,
-    oponents: boolean
+    opponents: boolean
   }
 }
