@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { GuardianService } from '../services/guardian.service';
+import { SettingsService } from '../services/settings.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs/Rx';
 
@@ -21,6 +22,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
   private subActivities: Subscription;
   private subGamemode: Subscription;
   private subPage: Subscription;
+  private subLimiter: Subscription;
 
   private _guardian: string;
   private _platform: number;
@@ -32,11 +34,13 @@ export class GuardianComponent implements OnInit, OnDestroy {
   public activities: bungie.Activity[];
   public gamemode: string;
   public page: number;
+  public clipLimiter: gt.ClipLimiter;
 
   constructor(
     private router: Router,
     private route: ActivatedRoute,
-    private guardianService: GuardianService
+    private guardianService: GuardianService,
+    private settingsService: SettingsService 
   ) { }
 
   ngOnInit() {
@@ -85,6 +89,11 @@ export class GuardianComponent implements OnInit, OnDestroy {
       .subscribe(page => {
         this.page = page;
       });
+
+    this.subLimiter = this.settingsService.clipLimiter
+      .subscribe(limiter => {
+        this.clipLimiter = limiter;
+      });
   }
 
   ngOnDestroy() {
@@ -97,6 +106,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
     this.subActivities.unsubscribe();
     this.subGamemode.unsubscribe();
     this.subPage.unsubscribe();
+    this.subLimiter.unsubscribe();
   }
 
   selectPlatform(platform) {
@@ -123,5 +133,9 @@ export class GuardianComponent implements OnInit, OnDestroy {
         '/guardian', this._guardian, this._platform, this.activeCharacter.characterBase.characterId, this.gamemode, this.page - 1
       ]);
     }
+  }
+
+  toggleLimiter(limit) {
+    this.settingsService.toggleLimit = limit;
   }
 }

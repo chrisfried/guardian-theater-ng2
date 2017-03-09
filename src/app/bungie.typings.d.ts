@@ -244,6 +244,9 @@ declare namespace bungie {
       embedUrl?: any
     }[],
 
+    clips$?: any,
+    filteredClips$: any,
+
     loading?: {
       message: string,
       twitch: boolean,
@@ -303,7 +306,8 @@ declare namespace bungie {
       }[],
       values: {
         secondsPlayed?: BasicStat,
-        remainingTimeAfterQuitSeconds?: BasicStat
+        remainingTimeAfterQuitSeconds?: BasicStat,
+        fireTeamId: BasicStat
       }
     },
 

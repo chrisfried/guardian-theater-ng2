@@ -62,12 +62,21 @@
   </div>
 </div>
 
+<div class="row" *ngIf="activities && activities.length">
+  <div class="columns small-12 button-group expanded">
+    <button type="button" class="button" [ngClass]="{ 'hollow': !clipLimiter.self }" (click)="toggleLimiter('self')">{{ displayName }}</button>
+    <button type="button" class="button" [ngClass]="{ 'hollow': !clipLimiter.fireteam }" (click)="toggleLimiter('fireteam')">Fireteam</button>
+    <button type="button" class="button" [ngClass]="{ 'hollow': !clipLimiter.team }" (click)="toggleLimiter('team')">Team</button>
+    <button type="button" class="button" [ngClass]="{ 'hollow': !clipLimiter.oponents }" (click)="toggleLimiter('oponents')">Oponents</button>
+  </div>
+</div>
+
 <div *ngIf="displayName && activeCharacter && (!activities || !activities.length) &&  !(guardianService.noActivities | async)" class="profile-spinner-wrapper"><div class="fi-widget spinner profile-spinner" title="Fetching Bungie Activities..."></div></div>
 <div *ngIf="guardianService.noActivities | async">No activities found.</div>
 
 <app-activity *ngFor="let activity of activities" [activity]="activity"></app-activity>
 
-<div class="row">
+<div class="row" *ngIf="activities && activities.length">
   <div *ngIf="displayName && activeCharacter" class="columns small-12 button-group expanded">
     <button type="button" class="button" (click)="prevPage()" [ngClass]="{'disabled': page < 1}">Previous</button>
     <button type="button" class="button" (click)="nextPage()">Next</button>

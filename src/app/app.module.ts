@@ -8,6 +8,7 @@ import { RoutesModule } from './routes/routes.module';
 import { BungieHttpService } from './services/bungie-http.service';
 import { TwitchService } from './services/twitch.service';
 import { XboxService } from './services/xbox.service';
+import { SettingsService } from './services/settings.service';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -40,7 +41,8 @@ import { PgcrComponent } from './activity/pgcr/pgcr.component';
   providers: [
     BungieHttpService,
     TwitchService,
-    XboxService
+    XboxService,
+    SettingsService
   ],
   bootstrap: [AppComponent]
 })

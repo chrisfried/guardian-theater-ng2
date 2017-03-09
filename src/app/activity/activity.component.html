@@ -49,8 +49,7 @@
     </span>
   </span>
 
-  <button class="button" *ngIf="pgcr && pgcr.clips" (click)="pgcr.showClips = !pgcr.showClips">{{ pgcr.clips.length }}</button>
-  <button class="button disabled" *ngIf="!pgcr || !pgcr.clips">0</button>
+  <button class="button" *ngIf="pgcr" [ngClass]="{'disabled': !(pgcr.filteredClips$ | async).length}" (click)="pgcr.showClips = !pgcr.showClips"><span class="fi-video"></span> {{ (pgcr.filteredClips$ | async).length }} ({{ (pgcr.clips$ | async).length }})</button>
 
   <button class="button" *ngIf="pgcr" (click)="pgcr.showPgcr = !pgcr.showPgcr">PGCR</button>
   <button class="button disabled" *ngIf="!pgcr">PGCR</button>
@@ -58,7 +57,7 @@
   <app-pgcr [pgcr]="pgcr" *ngIf="pgcr && pgcr.showPgcr"></app-pgcr>
 
   <div *ngIf="pgcr && pgcr.showClips">
-    <div *ngFor="let clip of pgcr.clips">
+    <div *ngFor="let clip of (pgcr.filteredClips$ | async)">
       <span style="cursor: pointer" (click)="toGuardian(clip.entry.player.destinyUserInfo.displayName, clip.entry.characterId)">{{ clip.entry.player.destinyUserInfo.displayName }}</span>
       <div *ngIf="clip.type === 'twitch'">
         <div class="clip-wrapper" *ngIf="!clip.play">

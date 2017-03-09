@@ -132,8 +132,20 @@
   background-color: #806A90;
 }
 
+.button.hollow {
+  background: none;
+  border: 1px solid #806A90;
+  color: #806A90;
+}
+
 .button:focus, .button:hover {
   background-color: #593373;
+}
+
+.button.hollow:focus, .button.hollow:hover {
+  background: none;
+  border: 1px solid #593373;
+  color: #593373;
 }
 
 .button.xbox {

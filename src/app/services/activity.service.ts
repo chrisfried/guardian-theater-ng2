@@ -4,6 +4,7 @@ import { Http } from '@angular/http';
 import { DomSanitizer } from '@angular/platform-browser';
 import { TwitchService } from './twitch.service';
 import { XboxService } from './xbox.service';
+import { SettingsService } from './settings.service';
 import { Observable, BehaviorSubject, Subscription } from 'rxjs/Rx';
 import { Response } from '@angular/http';
 import { Router, ActivatedRoute, Params } from '@angular/router';
@@ -14,6 +15,7 @@ export class ActivityService implements OnDestroy {
 
   private _activityId: BehaviorSubject<string>;
   private _activity: BehaviorSubject<bungie.Activity>;
+  private _activeGuardian: string;
 
   public membershipType: BehaviorSubject<number>;
   public pgcr: BehaviorSubject<bungie.PostGameCarnageReport>;
@@ -25,8 +27,10 @@ export class ActivityService implements OnDestroy {
     private sanitizer: DomSanitizer,
     private xboxService: XboxService,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private settingsService: SettingsService
   ) {
+    this._activeGuardian = '';
     this._activity = new BehaviorSubject(null);
     this._activityId = new BehaviorSubject('');
     this.pgcr = new BehaviorSubject(null);
@@ -45,6 +49,12 @@ export class ActivityService implements OnDestroy {
           this._activityId.next(params['activityId']);
         } else {
           this._activityId.next('');
+        }
+
+        if (params['guardian']) {
+          this._activeGuardian = params['guardian'];
+        } else {
+          this._activeGuardian = '';
         }
       })
     );
@@ -78,15 +88,13 @@ export class ActivityService implements OnDestroy {
             return Observable.empty();
           }
         })
-        .subscribe(
-        (res: bungie.PostGameCarnageReportResponse) => {
+        .subscribe((res: bungie.PostGameCarnageReportResponse) => {
           try {
             this.pgcr.next(res.Response.data);
           } catch (e) {
             console.log(e);
           }
-        }
-        )
+        })
     );
 
     this.subs.push(
@@ -111,14 +119,10 @@ export class ActivityService implements OnDestroy {
             } catch (e) {
               console.log(e);
             }
-          }
-        })
-    );
 
-    this.subs.push(
-      this.pgcr
-        .subscribe(pgcr => {
-          if (pgcr) {
+            if (!pgcr.clips$) {
+              pgcr.clips$ = new BehaviorSubject([]);
+            }
             try {
               pgcr.entries.forEach(entry => {
                 if (entry.player.bungieNetUserInfo) {
@@ -252,9 +256,6 @@ export class ActivityService implements OnDestroy {
                             if (recordedStop < entry.startTime) {
                               return;
                             }
-                            if (!entry.twitchClips) {
-                              entry.twitchClips = [];
-                            }
                             if (!pgcr.clips) {
                               pgcr.clips = [];
                             }
@@ -277,6 +278,7 @@ export class ActivityService implements OnDestroy {
                             pgcr.clips.sort(function (a, b) {
                               return a.start - b.start;
                             });
+                            pgcr.clips$.next(pgcr.clips);
                           });
                         }
                       })
@@ -287,6 +289,68 @@ export class ActivityService implements OnDestroy {
             } catch (e) {
               console.log(e);
             }
+
+            let activeGuardian = this._activeGuardian;
+            let activeEntry: bungie.Entry = null;
+            let activeTeam = -1;
+            let activeFireteam = -1;
+            pgcr.entries.some(function (entry) {
+              if (entry.player.destinyUserInfo.displayName === activeGuardian) {
+                activeEntry = entry;
+                try {
+                  if (entry.values.team) {
+                    activeTeam = entry.values.team.basic.value;
+                  }
+                } catch (e) { console.log(e); }
+                try {
+                  if (entry.extended.values.fireTeamId) {
+                    activeFireteam = entry.extended.values.fireTeamId.basic.value;
+                  }
+                } catch (e) { console.log(e); }
+                return true;
+              }
+            });
+
+            pgcr.filteredClips$ = Observable.combineLatest(
+              pgcr.clips$,
+              this.settingsService.clipLimiter
+            )
+              .map(([clips, limiter]: [
+                {
+                  type: string,
+                  start: number,
+                  video: (xbox.Video | twitch.Video),
+                  entry: bungie.Entry,
+                  embedUrl?: any
+                }[],
+                gt.ClipLimiter
+              ]) => {
+                let filteredClips = [];
+                clips.forEach(clip => {
+                  if (!limiter.self
+                      && clip.entry.player.destinyUserInfo.displayName === activeEntry.player.destinyUserInfo.displayName) {
+                        return;
+                      }
+                  if (!limiter.fireteam
+                      && clip.entry.player.destinyUserInfo.displayName !== activeEntry.player.destinyUserInfo.displayName
+                      && clip.entry.extended.values.fireTeamId && clip.entry.extended.values.fireTeamId.basic.value === activeFireteam) {
+                        return;
+                      }
+                  if (!limiter.team
+                      && clip.entry.player.destinyUserInfo.displayName !== activeEntry.player.destinyUserInfo.displayName
+                      && (!clip.entry.extended.values.fireTeamId
+                          || (clip.entry.extended.values.fireTeamId
+                              && clip.entry.extended.values.fireTeamId.basic.value !== activeFireteam))
+                      && clip.entry.values.team && clip.entry.values.team.basic.value === activeTeam) {
+                        return;
+                      }
+                  if (!limiter.oponents && clip.entry.values.team && clip.entry.values.team.basic.value !== activeTeam) {
+                    return;
+                  }
+                  filteredClips.push(clip);
+                });
+                return filteredClips;
+              });
           }
         })
     );
@@ -298,6 +362,9 @@ export class ActivityService implements OnDestroy {
       )
         .subscribe(([type, pgcr]) => {
           if (type === 1 && pgcr) {
+            if (!pgcr.clips$) {
+              pgcr.clips$ = new BehaviorSubject([]);
+            }
             try {
               pgcr.entries.forEach(entry => {
 
@@ -362,9 +429,6 @@ export class ActivityService implements OnDestroy {
                           if (recordedStop < entry.startTime) {
                             return;
                           }
-                          if (!entry.xboxClips) {
-                            entry.xboxClips = [];
-                          }
                           if (!pgcr.clips) {
                             pgcr.clips = [];
                           }
@@ -377,6 +441,7 @@ export class ActivityService implements OnDestroy {
                           pgcr.clips.sort(function (a, b) {
                             return a.start - b.start;
                           });
+                          pgcr.clips$.next(pgcr.clips);
                         });
                       }
                     })
