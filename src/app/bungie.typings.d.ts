@@ -252,7 +252,9 @@ declare namespace bungie {
       twitch: boolean,
       bungie: boolean,
       xbox: boolean
-    }
+    },
+
+    showClips?: boolean
   }
 
   interface Entry {

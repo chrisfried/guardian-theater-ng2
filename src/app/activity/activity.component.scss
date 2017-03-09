@@ -31,7 +31,6 @@
 .activity-time {
   font-weight: 200;
   font-size: .75em;
-  opacity: 0.5;
 }
 .activity-permalinks {
   font-size: 10px;
@@ -86,12 +85,9 @@
   margin-left: .9375rem;
 }
 
-.info-row {
-  margin-top: 1px;
-}
-
 .spinner-block {
-  margin-right: 1px;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
   color: #fff;
   text-align: center;
   font-size: 2.35em;
@@ -101,6 +97,10 @@
 
 .spinner-block.mode-no-clips {
   cursor: initial;
+}
+
+.spinner-block.pgcr {
+  border-right: none;
 }
 
 .spinner {

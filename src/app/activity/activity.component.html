@@ -18,7 +18,10 @@
       <span class="columns small-2 spinner-block mode-no-clips">
         0
       </span>
-      <button class="button disabled" *ngIf="!pgcr">PGCR</button>      
+
+      <span class="columns small-8 spinner-block mode-no-clips pgcr" (click)="pgcr.showPgcr = !pgcr.showPgcr">
+        PGCR
+      </span> 
     </div>
         
     <div *ngIf="pgcr" class="row info-row">
@@ -55,7 +58,9 @@
         {{ (pgcr.clips$ | async).length }}
       </span>
 
-      <button class="button" (click)="pgcr.showPgcr = !pgcr.showPgcr">PGCR</button>
+      <span class="columns small-8 spinner-block pgcr" (click)="pgcr.showPgcr = !pgcr.showPgcr" [ngClass]="(pgcr.filteredClips$ | async).length ? 'mode-' + pgcr.activityDetails.mode : 'mode-no-clips'">
+        PGCR
+      </span>
     </div>
   </div>
 
