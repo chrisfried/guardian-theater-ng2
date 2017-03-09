@@ -59,7 +59,7 @@ export class GuardianService implements OnDestroy {
           this.searchName.next('');
         }
 
-        if (params['character']) {
+        if (params['characterId']) {
           this.characterId.next(params['characterId']);
         } else {
           this.characterId.next('');

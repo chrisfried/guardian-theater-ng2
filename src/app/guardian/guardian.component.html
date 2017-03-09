@@ -23,8 +23,8 @@
 </div>
 
 <div *ngIf="displayName && activeCharacter" class="row">
-  <div class="columns small-12 large-6">
-    <select class="mode-selector" [ngModel]="gamemode" (change)="selectGamemode($event.target.value)">
+  <div class="columns small-12 large-6 order-0 large-order-1 mode-column">
+    <select class="mode-selector" [ngClass]="'mode-selected-' + gamemode" [ngModel]="gamemode" (change)="selectGamemode($event.target.value)">
       <option label="All" value="None" selected="selected">All</option>
       <option label="All PvE" value="AllPvE">All PvE</option>
       <option label="All PvP" value="AllPvP">All PvP</option>
@@ -52,8 +52,11 @@
     </select>
   </div>
 
-  <div class="columns small-12 large-6 button-group expanded">
+  <div class="columns small-6 large-3 button-group expanded order-1 large-order-0 previous-column">
     <button type="button" class="button" (click)="prevPage()" [ngClass]="{'disabled': page < 1}">Previous</button>
+  </div>
+
+  <div class="columns small-6 large-3 button-group expanded order-2 large-order-2 next-column">
     <button type="button" class="button" (click)="nextPage()">Next</button>
   </div>
 </div>
