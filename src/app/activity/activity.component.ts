@@ -39,6 +39,7 @@ export class ActivityComponent implements OnInit, OnDestroy {
     this.subs.push(this.activityService.pgcr
       .subscribe((pgcr: bungie.PostGameCarnageReport) => {
         this.pgcr = pgcr;
+        console.log(pgcr);
         if (pgcr && !pgcr.loading) {
           pgcr.loading = {
             message: '',

@@ -86,6 +86,23 @@
   margin-left: .9375rem;
 }
 
+.info-row {
+  margin-top: 1px;
+}
+
+.spinner-block {
+  margin-right: 1px;
+  color: #fff;
+  text-align: center;
+  font-size: 2.35em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.spinner-block.mode-no-clips {
+  cursor: initial;
+}
+
 .spinner {
   -webkit-animation: spin 3s infinite linear;
   animation: spin 3s infinite linear;
@@ -94,49 +111,34 @@
   text-align: center;
 }
 .pgcr-spinner {
-  position: absolute;
-  text-align: center;
-  width: 26px;
-  font-size: 26px;
-  line-height: 26px;
-  height: 26px;
+  display: block;
   color: #0096db;
-  margin-left: -.9375rem;
+  color: #fff;
 }
 .player-spinner {
+  display: block;
   position: relative;
-  width: 25px;
-  height: 25px;
-  font-size: 25px;
-  line-height: 25px;
-  margin-right: 1em;
 }
 .bungie-spinner {
   position: absolute;
-  text-align: center;
-  width: 25px;
-  height: 25px;
-  font-size: 25px;
-  line-height: 25px;
+  left: 0;
+  width: 100%;
   color: #0096db;
+  color: #fff;
 }
 .twitch-spinner {
   position: absolute;
-  text-align: center;
-  width: 25px;
-  height: 25px;
-  font-size: 25px;
-  line-height: 25px;
+  left: 0;
+  width: 100%;
   color: #6441A4;
+  color: #fff;
 }
 .xbox-spinner {
   position: absolute;
-  text-align: center;
-  width: 25px;
-  height: 25px;
-  font-size: 25px;
-  line-height: 25px;
+  left: 0;
+  width: 100%;
   color: #5dc21e;
+  color: #fff;
 }
 
 .half-spinner-a {
