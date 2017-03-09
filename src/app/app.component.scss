@@ -1,4 +1,10 @@
+.button {
+  background-color: #806A90;
+}
 
+.button:focus, .button:hover {
+  background-color: #593373;
+}
 
 .supporterTag {
   height: 25px;

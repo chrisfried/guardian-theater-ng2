@@ -127,3 +127,19 @@
 0%   {transform: rotate(0deg);}  
 100% {transform: rotate(360deg);}  
 }
+
+.button {
+  background-color: #806A90;
+}
+
+.button:focus, .button:hover {
+  background-color: #593373;
+}
+
+.button.xbox {
+  background-color: #5DC21E;
+}
+
+.button.playstation {
+  background-color: #003791;
+}

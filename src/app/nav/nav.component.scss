@@ -69,3 +69,11 @@ ins.adsbygoogle {
   max-height: 10em;
   margin-bottom: .5em;
 }
+
+.button {
+  background-color: #806A90;
+}
+
+.button:focus, .button:hover {
+  background-color: #593373;
+}

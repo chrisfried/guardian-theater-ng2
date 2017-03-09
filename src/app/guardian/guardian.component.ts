@@ -118,8 +118,10 @@ export class GuardianComponent implements OnInit, OnDestroy {
   }
 
   prevPage() {
-    this.router.navigate([
-      '/guardian', this._guardian, this._platform, this.activeCharacter.characterBase.characterId, this.gamemode, this.page - 1
-    ]);
+    if (this.page > 0) {
+      this.router.navigate([
+        '/guardian', this._guardian, this._platform, this.activeCharacter.characterBase.characterId, this.gamemode, this.page - 1
+      ]);
+    }
   }
 }
