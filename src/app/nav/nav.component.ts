@@ -18,7 +18,9 @@ export class NavComponent implements OnInit {
   }
 
   search() {
-    this.router.navigate(['/guardian', this.searchString]);
+    if (this.searchString.length) {
+      this.router.navigate(['/guardian', this.searchString]);
+    }
   }
 
   route(route: any[]) {

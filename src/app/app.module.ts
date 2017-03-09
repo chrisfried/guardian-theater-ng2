@@ -17,6 +17,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { GuardianComponent } from './guardian/guardian.component';
 import { ClassTypePipe, RaceHashPipe, ActivityModePipe } from './bungie-pipes.pipe';
 import { ActivityComponent } from './activity/activity.component';
+import { PgcrComponent } from './activity/pgcr/pgcr.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ActivityComponent } from './activity/activity.component';
     SettingsComponent,
     GuardianComponent,
     ClassTypePipe, RaceHashPipe, ActivityModePipe,
-    ActivityComponent
+    ActivityComponent,
+    PgcrComponent
   ],
   imports: [
     BrowserModule,

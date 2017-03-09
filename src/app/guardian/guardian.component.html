@@ -1,4 +1,5 @@
-<div *ngIf="!needToSelectPlatform && !displayName && !activeCharacter" class="profile-spinner-wrapper"><div class="fi-widget spinner profile-spinner" title="Fetching Bungie Profile..."></div></div>
+<div *ngIf="!needToSelectPlatform && !displayName && !activeCharacter && !(guardianService.noResults | async)" class="profile-spinner-wrapper"><div class="fi-widget spinner profile-spinner" title="Fetching Bungie Profile..."></div></div>
+<div *ngIf="guardianService.noResults | async">Guardian {{ guardianService.searchName | async }} not found.</div>
 
 <div *ngIf="needToSelectPlatform" class="columns small-12 button-group expanded">
   <button type="button" class="button xbox" (click)="selectPlatform(1)">Xbox</button>
@@ -61,7 +62,8 @@
   </div>
 </div>
 
-<div *ngIf="displayName && activeCharacter && (!activities || !activities.length)" class="profile-spinner-wrapper"><div class="fi-widget spinner profile-spinner" title="Fetching Bungie Activities..."></div></div>
+<div *ngIf="displayName && activeCharacter && (!activities || !activities.length) &&  !(guardianService.noActivities | async)" class="profile-spinner-wrapper"><div class="fi-widget spinner profile-spinner" title="Fetching Bungie Activities..."></div></div>
+<div *ngIf="guardianService.noActivities | async">No activities found.</div>
 
 <app-activity *ngFor="let activity of activities" [activity]="activity"></app-activity>
 

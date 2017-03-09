@@ -25,6 +25,8 @@ export class GuardianService implements OnDestroy {
   public activityMode: BehaviorSubject<string>;
   public activityPage: BehaviorSubject<number>;
   public activityId: BehaviorSubject<string>;
+  public noResults: BehaviorSubject<boolean>;
+  public noActivities: BehaviorSubject<boolean>;
 
   constructor(
     private bHttp: BungieHttpService,
@@ -44,6 +46,8 @@ export class GuardianService implements OnDestroy {
     this.activeCharacter = new BehaviorSubject(null);
     this.activities = new BehaviorSubject([]);
     this.activityId = new BehaviorSubject('');
+    this.noResults = new BehaviorSubject(false);
+    this.noActivities = new BehaviorSubject(false);
 
     this.subParams = this.route.params
       .subscribe((params: Params) => {
@@ -93,6 +97,7 @@ export class GuardianService implements OnDestroy {
       .switchMap((url) => {
         this._membershipId.next('');
         this.selectPlatform.next(false);
+        this.noResults.next(false);
         if (url.length) {
           return this.bHttp.get(url)
             .map((res: Response) => res.json())
@@ -111,6 +116,9 @@ export class GuardianService implements OnDestroy {
           }
           if (Response.length > 1) {
             this.selectPlatform.next(true);
+          }
+          if (Response.length < 1) {
+            this.noResults.next(true);
           }
         } catch (e) {
           console.log(e);
@@ -193,6 +201,7 @@ export class GuardianService implements OnDestroy {
       .distinctUntilChanged()
       .switchMap((url) => {
         this.activities.next([]);
+        this.noActivities.next(false);
         if (url.length) {
           return this.bHttp.get(url)
             .map((res: Response) => res.json())
@@ -203,6 +212,9 @@ export class GuardianService implements OnDestroy {
       })
       .subscribe((res: bungie.ActivityHistoryResponse) => {
         try {
+          if (!res.Response.data || !res.Response.data.activities || !res.Response.data.activities.length) {
+            this.noActivities.next(true);
+          }
           this.activities.next(res.Response.data.activities);
         } catch (e) {
           console.log(e);

@@ -1,20 +1,25 @@
 <div class="activity">
-  <div *ngIf="activity" class="columns small-12" (click)="toActivity(activity.activityDetails.instanceId)">
+  <div *ngIf="activity && !pgcr" class="columns small-12" (click)="toActivity(activity.activityDetails.instanceId)">
     <div class="mode row align-justify mode-no-clips">
-      <span class="ng-binding">{{ activity.activityDetails.mode | activityMode }} </span>
-      <span class="activity-time">{{ activity.period | date:'medium' }}</span>
+      <span class="ng-binding">Fetching PGCR from Bungie...</span>
     </div>
   </div>
 
-  <div *ngIf="!pgcr">
-    <span class="player-spinner">
-      <span class="fi-widget spinner bungie-spinner" title="Fetching data from Bungie..."></span>
-    </span>
-    Fetching PGCR from Bungie...
+  <div *ngIf="pgcr" class="columns small-12" (click)="toActivity(activity.activityDetails.instanceId)">
+    <div class="mode row align-justify mode-no-clips">
+      <span class="">{{ pgcr.loading.message || (pgcr.activityDetails.mode | activityMode) }} </span>
+      <span class="activity-time" *ngIf="!pgcr.loading.message">{{ pgcr.period | date:'medium' }}</span>
+    </div>
   </div>
 
-  <div *ngIf="pgcr">
-    <span *ngIf="pgcr.loading && (pgcr.loading.twitch || pgcr.loading.bungie || pgcr.loading.xbox)">
+  <span style="display: inline-block; width: 25px">
+    <span *ngIf="!pgcr">
+      <span class="player-spinner">
+        <span class="fi-widget spinner bungie-spinner" title="Fetching data from Bungie..."></span>
+      </span>
+    </span>
+
+    <span *ngIf="pgcr && (pgcr.loading && (pgcr.loading.twitch || pgcr.loading.bungie || pgcr.loading.xbox))">
       <span class="player-spinner">
         <span class="fi-widget spinner bungie-spinner" title="Fetching data from Bungie..."
           *ngIf="pgcr.loading.bungie"
@@ -36,8 +41,23 @@
             'third-spinner-c': pgcr.loading.twitch && pgcr.loading.bungie
           }"></span>
       </span>
-      {{ pgcr.loading.message }}
     </span>
+
+    <span *ngIf="pgcr && pgcr.loading && !pgcr.loading.twitch && !pgcr.loading.bungie && !pgcr.loading.xbox">
+      <span class="fi-check" *ngIf="pgcr.clips && pgcr.clips.length"></span>
+      <span class="fi-x" *ngIf="!pgcr.clips || !pgcr.clips.length"></span>
+    </span>
+  </span>
+
+  <button class="button" *ngIf="pgcr && pgcr.clips" (click)="pgcr.showClips = !pgcr.showClips">{{ pgcr.clips.length }}</button>
+  <button class="button disabled" *ngIf="!pgcr || !pgcr.clips">0</button>
+
+  <button class="button" *ngIf="pgcr" (click)="pgcr.showPgcr = !pgcr.showPgcr">PGCR</button>
+  <button class="button disabled" *ngIf="!pgcr">PGCR</button>
+
+  <app-pgcr [pgcr]="pgcr" *ngIf="pgcr && pgcr.showPgcr"></app-pgcr>
+
+  <div *ngIf="pgcr && pgcr.showClips">
     <div *ngFor="let clip of pgcr.clips">
       <span style="cursor: pointer" (click)="toGuardian(clip.entry.player.destinyUserInfo.displayName, clip.entry.characterId)">{{ clip.entry.player.destinyUserInfo.displayName }}</span>
       <div *ngIf="clip.type === 'twitch'">
@@ -61,7 +81,8 @@
           </video>
         </div>
       </div>
-    </div>
+    </div>  
   </div>
+  
 </div>
 
