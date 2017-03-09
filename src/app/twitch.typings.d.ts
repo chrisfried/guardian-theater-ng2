@@ -54,8 +54,6 @@ declare namespace twitch {
     }[],
     title: string,
     url: string,
-    views: number,
-
-    embedUrl?: any
+    views: number
   }
 }

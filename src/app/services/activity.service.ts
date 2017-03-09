@@ -265,13 +265,14 @@ export class ActivityService implements OnDestroy {
                                 + Math.floor(offset % 3600 / 60) + 'm'
                                 + Math.floor(offset % 3600 % 60) + 's';
                             }
-                            video.embedUrl = this.sanitizer.bypassSecurityTrustResourceUrl('//player.twitch.tv/?video='
+                            let embedUrl = this.sanitizer.bypassSecurityTrustResourceUrl('//player.twitch.tv/?video='
                               + video._id + '&time=' + hms);
                             pgcr.clips.push({
                               type: 'twitch',
                               start: recordedStart,
                               entry: entry,
-                              video: video
+                              video: video,
+                              embedUrl: embedUrl
                             });
                             pgcr.clips.sort(function (a, b) {
                               return a.start - b.start;

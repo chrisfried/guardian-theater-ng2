@@ -240,7 +240,8 @@ declare namespace bungie {
       type: string,
       start: number,
       video: (xbox.Video | twitch.Video),
-      entry: Entry
+      entry: Entry,
+      embedUrl?: any
     }[],
 
     loading?: {
