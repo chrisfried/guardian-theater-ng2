@@ -227,6 +227,7 @@ export class GuardianService implements OnDestroy {
   }
 
   ngOnDestroy() {
+    this.settingsService.activeName.next('');
     this.subParams.unsubscribe();
     this.subSearch.unsubscribe();
     this.subAccount.unsubscribe();
