@@ -255,6 +255,12 @@ declare namespace bungie {
     },
 
     showClips?: boolean
+
+    active?: {
+      entry: Entry,
+      team: number,
+      fireteam: number
+    };
   }
 
   interface Entry {
@@ -329,6 +335,13 @@ declare namespace bungie {
       bungieId: string,
       checkedResponse: boolean,
       response: {}
-    }
+    },
+    clips?: {
+      type: string,
+      start: number,
+      video: (xbox.Video | twitch.Video),
+      entry: Entry,
+      embedUrl?: any
+    }[],
   }
 }

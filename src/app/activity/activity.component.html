@@ -33,7 +33,7 @@
       </div>
     </div>
     <div *ngIf="pgcr" class="row info-row">
-      <div class="columns x-small-6 small-4">
+      <div class="columns small-4">
         <div class="row">
           <div class="mode columns small-12 date-block" [ngClass]="(pgcr.filteredClips$ | async).length ? 'mode-' + pgcr.activityDetails.mode : 'mode-no-clips'"
             (click)="toActivity(pgcr.activityDetails.instanceId)">
@@ -76,7 +76,7 @@
         </div>
       </div>
 
-      <span class="columns x-small-6 small-8 pgcr" [ngClass]="{'full-pgcr': pgcr.showPgcr}" (click)="pgcr.showPgcr = !pgcr.showPgcr">
+      <span class="columns small-8 pgcr" [ngClass]="{'full-pgcr': pgcr.showPgcr}" (click)="pgcr.showPgcr = !pgcr.showPgcr">
         <div class="row">
           <div class="columns small-6 mode pgcr-entry" *ngFor="let entry of pgcr.entries" [ngClass]="(pgcr.filteredClips$ | async).length ? 'mode-' + pgcr.activityDetails.mode : 'mode-no-clips'">{{ entry.player.destinyUserInfo.displayName }}</div>
         </div>

@@ -258,6 +258,9 @@ export class ActivityService implements OnDestroy {
                             if (!pgcr.clips) {
                               pgcr.clips = [];
                             }
+                            if (!entry.clips) {
+                              entry.clips = [];
+                            }
                             let offset = entry.startTime - recordedStart;
                             let hms = '0h0m0s';
                             if (offset > 0) {
@@ -267,6 +270,13 @@ export class ActivityService implements OnDestroy {
                             }
                             let embedUrl = this.sanitizer.bypassSecurityTrustResourceUrl('//player.twitch.tv/?video='
                               + video._id + '&time=' + hms);
+                            entry.clips.push({
+                              type: 'twitch',
+                              start: recordedStart,
+                              entry: entry,
+                              video: video,
+                              embedUrl: embedUrl
+                            });
                             pgcr.clips.push({
                               type: 'twitch',
                               start: recordedStart,
@@ -289,21 +299,23 @@ export class ActivityService implements OnDestroy {
               console.log(e);
             }
 
-            let activeEntry: bungie.Entry = null;
-            let activeTeam = -1;
-            let activeFireteam = -1;
+            pgcr.active = {
+               entry: null,
+               team: -1,
+               fireteam: -1
+            };
             let activeName = this._activeName;
             pgcr.entries.some(function (entry) {
               if (entry.player.destinyUserInfo.displayName === activeName) {
-                activeEntry = entry;
+                pgcr.active.entry = entry;
                 try {
                   if (entry.values.team) {
-                    activeTeam = entry.values.team.basic.value;
+                    pgcr.active.team = entry.values.team.basic.value;
                   }
                 } catch (e) { console.log(e); }
                 try {
                   if (entry.extended.values.fireTeamId) {
-                    activeFireteam = entry.extended.values.fireTeamId.basic.value;
+                    pgcr.active.fireteam = entry.extended.values.fireTeamId.basic.value;
                   }
                 } catch (e) { console.log(e); }
                 return true;
@@ -326,25 +338,29 @@ export class ActivityService implements OnDestroy {
               ]) => {
                 let filteredClips = [];
                 clips.forEach(clip => {
-                  if (activeEntry) {
+                  if (pgcr.active.entry) {
                     if (!limiter.self
-                        && clip.entry.player.destinyUserInfo.displayName === activeEntry.player.destinyUserInfo.displayName) {
+                        && clip.entry.player.destinyUserInfo.displayName === pgcr.active.entry.player.destinyUserInfo.displayName) {
                           return;
                         }
                     if (!limiter.fireteam
-                        && clip.entry.player.destinyUserInfo.displayName !== activeEntry.player.destinyUserInfo.displayName
-                        && clip.entry.extended.values.fireTeamId && clip.entry.extended.values.fireTeamId.basic.value === activeFireteam) {
+                        && clip.entry.player.destinyUserInfo.displayName !== pgcr.active.entry.player.destinyUserInfo.displayName
+                        && clip.entry.extended.values.fireTeamId
+                        && clip.entry.extended.values.fireTeamId.basic.value === pgcr.active.fireteam) {
                           return;
                         }
                     if (!limiter.team
-                        && clip.entry.player.destinyUserInfo.displayName !== activeEntry.player.destinyUserInfo.displayName
+                        && clip.entry.player.destinyUserInfo.displayName !== pgcr.active.entry.player.destinyUserInfo.displayName
                         && (!clip.entry.extended.values.fireTeamId
                             || (clip.entry.extended.values.fireTeamId
-                                && clip.entry.extended.values.fireTeamId.basic.value !== activeFireteam))
-                        && clip.entry.values.team && clip.entry.values.team.basic.value === activeTeam) {
+                                && clip.entry.extended.values.fireTeamId.basic.value !== pgcr.active.fireteam))
+                        && clip.entry.values.team && clip.entry.values.team.basic.value === pgcr.active.team) {
                           return;
                         }
-                    if (!limiter.opponents && clip.entry.values.team && clip.entry.values.team.basic.value !== activeTeam) {
+                    if (!limiter.opponents
+                        && clip.entry.player.destinyUserInfo.displayName !== pgcr.active.entry.player.destinyUserInfo.displayName
+                        && (!clip.entry.values.team && !clip.entry.extended.values.fireTeamId
+                            || (clip.entry.values.team && clip.entry.values.team.basic.value !== pgcr.active.team))) {
                       return;
                     }
                   }
@@ -433,6 +449,15 @@ export class ActivityService implements OnDestroy {
                           if (!pgcr.clips) {
                             pgcr.clips = [];
                           }
+                          if (!entry.clips) {
+                            entry.clips = [];
+                          }
+                          entry.clips.push({
+                            type: 'xbox',
+                            start: recordedStart,
+                            entry: entry,
+                            video: video
+                          });
                           pgcr.clips.push({
                             type: 'xbox',
                             start: recordedStart,
