@@ -1,70 +1,88 @@
 <div class="activity">
   <div class="columns small-12">
-    <div *ngIf="activity && !pgcr" class="mode row align-justify mode-no-clips" (click)="toActivity(activity.activityDetails.instanceId)">
-      <span class="ng-binding">Fetching PGCR from Bungie...</span>
-    </div>
-    <div *ngIf="pgcr" class="mode row align-justify" [ngClass]="(pgcr.filteredClips$ | async).length ? 'mode-' + pgcr.activityDetails.mode : 'mode-no-clips'"
-      (click)="toActivity(pgcr.activityDetails.instanceId)">
-      <span class="">{{ pgcr.loading.message || (pgcr.activityDetails.mode | activityMode) }} </span>
-      <span class="activity-time" *ngIf="!pgcr.loading.message">{{ pgcr.period | date:'medium' }}</span>
-    </div>
 
+    <div *ngIf="!pgcr" class="row">
+      <div *ngIf="activity && !pgcr" class="mode columns small-12 mode-no-clips" (click)="toActivity(activity.activityDetails.instanceId)">
+        <span>Fetching PGCR from Bungie...</span>
+      </div>
+    </div>
     <div *ngIf="!pgcr" class="row info-row">
-      <span class="columns small-2 spinner-block mode-no-clips">
-        <span class="player-spinner">
-          <span class="fi-widget spinner bungie-spinner" title="Fetching data from Bungie..."></span>
-        </span>
-      </span>
-      <span class="columns small-2 spinner-block mode-no-clips">
-        0
-      </span>
-
-      <span class="columns small-8 spinner-block mode-no-clips pgcr" (click)="pgcr.showPgcr = !pgcr.showPgcr">
-        PGCR
-      </span> 
+      <div class="columns small-4">
+        <div class="row">
+          <div *ngIf="activity && !pgcr" class="mode columns small-12 mode-no-clips date-block" (click)="toActivity(activity.activityDetails.instanceId)">
+            <span></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="columns small-6 spinner-block mode-no-clips">
+            <div class="player-spinner">
+              <span class="fi-widget spinner bungie-spinner" title="Fetching data from Bungie..."></span>
+            </div>
+          </div>
+          <div class="columns small-6 spinner-block mode-no-clips">
+            0
+          </div>
+        </div>
+      </div>
     </div>
-        
+    
+    <div *ngIf="pgcr" class="row">
+      <div class="mode columns small-12" [ngClass]="(pgcr.filteredClips$ | async).length ? 'mode-' + pgcr.activityDetails.mode : 'mode-no-clips'"
+        (click)="toActivity(pgcr.activityDetails.instanceId)">
+        <span class="">{{ pgcr.loading.message || (pgcr.activityDetails.mode | activityMode) }} </span>
+      </div>
+    </div>
     <div *ngIf="pgcr" class="row info-row">
-      <span class="columns small-2 spinner-block" (click)="pgcr.showClips = !pgcr.showClips" [ngClass]="(pgcr.filteredClips$ | async).length ? 'mode-' + pgcr.activityDetails.mode : 'mode-no-clips'">
-        <span class="player-spinner" *ngIf="pgcr.loading && (pgcr.loading.twitch || pgcr.loading.bungie || pgcr.loading.xbox)">
-          <span class="fi-widget spinner bungie-spinner" title="Fetching data from Bungie..."
-            *ngIf="true || pgcr.loading.bungie"
-            [ngClass]="{
-              'half-spinner-a': pgcr.loading.twitch || pgcr.loading.xbox,
-              'third-spinner-a': pgcr.loading.twitch && pgcr.loading.xbox
-            }"></span>
-          <span class="fi-widget spinner twitch-spinner" title="Fetching data from Twitch..."
-            *ngIf="pgcr.loading.twitch"
-            [ngClass]="{
-              'half-spinner-b': pgcr.loading.bungie,
-              'half-spinner-a': pgcr.loading.xbox,
-              'third-spinner-b': pgcr.loading.bungie && pgcr.loading.xbox
-            }"></span>
-          <span class="fi-widget spinner xbox-spinner" title="Fetching data from Xbox..."
-            *ngIf="pgcr.loading.xbox"
-            [ngClass]="{
-              'half-spinner-b': pgcr.loading.twitch || pgcr.loading.bungie,
-              'third-spinner-c': pgcr.loading.twitch && pgcr.loading.bungie
-            }"></span>
-        </span>
+      <div class="columns x-small-6 small-4">
+        <div class="row">
+          <div class="mode columns small-12 date-block" [ngClass]="(pgcr.filteredClips$ | async).length ? 'mode-' + pgcr.activityDetails.mode : 'mode-no-clips'"
+            (click)="toActivity(pgcr.activityDetails.instanceId)">
+            <span class="activity-time">{{ pgcr.period | date:'medium' }}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="columns small-6 spinner-block" (click)="pgcr.showClips = !pgcr.showClips" [ngClass]="(pgcr.filteredClips$ | async).length ? 'mode-' + pgcr.activityDetails.mode : 'mode-no-clips'">
+            <div class="player-spinner" *ngIf="pgcr.loading && (pgcr.loading.twitch || pgcr.loading.bungie || pgcr.loading.xbox)">
+              <span class="fi-widget spinner bungie-spinner" title="Fetching data from Bungie..."
+                *ngIf="true || pgcr.loading.bungie"
+                [ngClass]="{
+                  'half-spinner-a': pgcr.loading.twitch || pgcr.loading.xbox,
+                  'third-spinner-a': pgcr.loading.twitch && pgcr.loading.xbox
+                }"></span>
+              <span class="fi-widget spinner twitch-spinner" title="Fetching data from Twitch..."
+                *ngIf="pgcr.loading.twitch"
+                [ngClass]="{
+                  'half-spinner-b': pgcr.loading.bungie,
+                  'half-spinner-a': pgcr.loading.xbox,
+                  'third-spinner-b': pgcr.loading.bungie && pgcr.loading.xbox
+                }"></span>
+              <span class="fi-widget spinner xbox-spinner" title="Fetching data from Xbox..."
+                *ngIf="pgcr.loading.xbox"
+                [ngClass]="{
+                  'half-spinner-b': pgcr.loading.twitch || pgcr.loading.bungie,
+                  'third-spinner-c': pgcr.loading.twitch && pgcr.loading.bungie
+                }"></span>
+            </div>
 
-        <span *ngIf="pgcr.loading && !pgcr.loading.twitch && !pgcr.loading.bungie && !pgcr.loading.xbox">
-          <span class="fi-video" *ngIf="pgcr.clips && pgcr.clips.length"></span>
-          <span class="fi-x" *ngIf="!pgcr.clips || !pgcr.clips.length"></span>
-        </span>
-      </span>
+            <div *ngIf="pgcr.loading && !pgcr.loading.twitch && !pgcr.loading.bungie && !pgcr.loading.xbox">
+              <span class="fi-video" *ngIf="pgcr.clips && pgcr.clips.length"></span>
+              <span class="fi-x" *ngIf="!pgcr.clips || !pgcr.clips.length"></span>
+            </div>
+          </div>
 
-      <span class="columns small-2 spinner-block" (click)="pgcr.showClips = !pgcr.showClips" [ngClass]="(pgcr.filteredClips$ | async).length ? 'mode-' + pgcr.activityDetails.mode : 'mode-no-clips'">
-        {{ (pgcr.clips$ | async).length }}
-      </span>
+          <div class="columns small-6 spinner-block" (click)="pgcr.showClips = !pgcr.showClips" [ngClass]="(pgcr.filteredClips$ | async).length ? 'mode-' + pgcr.activityDetails.mode : 'mode-no-clips'">
+            {{ (pgcr.clips$ | async).length }}
+          </div>
+        </div>
+      </div>
 
-      <span class="columns small-8 spinner-block pgcr" (click)="pgcr.showPgcr = !pgcr.showPgcr" [ngClass]="(pgcr.filteredClips$ | async).length ? 'mode-' + pgcr.activityDetails.mode : 'mode-no-clips'">
-        PGCR
+      <span class="columns x-small-6 small-8 pgcr" [ngClass]="{'full-pgcr': pgcr.showPgcr}" (click)="pgcr.showPgcr = !pgcr.showPgcr">
+        <div class="row">
+          <div class="columns small-6 mode pgcr-entry" *ngFor="let entry of pgcr.entries" [ngClass]="(pgcr.filteredClips$ | async).length ? 'mode-' + pgcr.activityDetails.mode : 'mode-no-clips'">{{ entry.player.destinyUserInfo.displayName }}</div>
+        </div>
       </span>
     </div>
   </div>
-
-  <app-pgcr [pgcr]="pgcr" *ngIf="pgcr && pgcr.showPgcr"></app-pgcr>
 
   <div *ngIf="pgcr && pgcr.showClips">
     <div *ngFor="let clip of (pgcr.filteredClips$ | async)">
