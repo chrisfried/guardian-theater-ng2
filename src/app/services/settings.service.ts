@@ -6,6 +6,7 @@ export class SettingsService {
   private _clipLimiter: gt.ClipLimiter;
 
   public clipLimiter: BehaviorSubject<gt.ClipLimiter>;
+  public activeName: BehaviorSubject<string>;
 
   constructor() {
     this._clipLimiter = {
@@ -16,6 +17,7 @@ export class SettingsService {
     };
 
     this.clipLimiter = new BehaviorSubject(this._clipLimiter);
+    this.activeName = new BehaviorSubject('');
   }
 
   set toggleLimit(limit) {

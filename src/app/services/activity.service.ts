@@ -15,7 +15,7 @@ export class ActivityService implements OnDestroy {
 
   private _activityId: BehaviorSubject<string>;
   private _activity: BehaviorSubject<bungie.Activity>;
-  private _activeGuardian: string;
+  private _activeName: string;
 
   public membershipType: BehaviorSubject<number>;
   public pgcr: BehaviorSubject<bungie.PostGameCarnageReport>;
@@ -30,12 +30,17 @@ export class ActivityService implements OnDestroy {
     private route: ActivatedRoute,
     private settingsService: SettingsService
   ) {
-    this._activeGuardian = '';
     this._activity = new BehaviorSubject(null);
     this._activityId = new BehaviorSubject('');
     this.pgcr = new BehaviorSubject(null);
     this.subs = [];
     this.membershipType = new BehaviorSubject(-1);
+
+    this.subs.push(this.settingsService.activeName
+      .subscribe(
+        displayName => this._activeName = displayName
+      )
+    );
 
     this.subs.push(this.route.params
       .subscribe((params: Params) => {
@@ -49,12 +54,6 @@ export class ActivityService implements OnDestroy {
           this._activityId.next(params['activityId']);
         } else {
           this._activityId.next('');
-        }
-
-        if (params['guardian']) {
-          this._activeGuardian = params['guardian'];
-        } else {
-          this._activeGuardian = '';
         }
       })
     );
@@ -290,12 +289,12 @@ export class ActivityService implements OnDestroy {
               console.log(e);
             }
 
-            let activeGuardian = this._activeGuardian;
             let activeEntry: bungie.Entry = null;
             let activeTeam = -1;
             let activeFireteam = -1;
+            let activeName = this._activeName;
             pgcr.entries.some(function (entry) {
-              if (entry.player.destinyUserInfo.displayName === activeGuardian) {
+              if (entry.player.destinyUserInfo.displayName === activeName) {
                 activeEntry = entry;
                 try {
                   if (entry.values.team) {
@@ -327,25 +326,27 @@ export class ActivityService implements OnDestroy {
               ]) => {
                 let filteredClips = [];
                 clips.forEach(clip => {
-                  if (!limiter.self
-                      && clip.entry.player.destinyUserInfo.displayName === activeEntry.player.destinyUserInfo.displayName) {
-                        return;
-                      }
-                  if (!limiter.fireteam
-                      && clip.entry.player.destinyUserInfo.displayName !== activeEntry.player.destinyUserInfo.displayName
-                      && clip.entry.extended.values.fireTeamId && clip.entry.extended.values.fireTeamId.basic.value === activeFireteam) {
-                        return;
-                      }
-                  if (!limiter.team
-                      && clip.entry.player.destinyUserInfo.displayName !== activeEntry.player.destinyUserInfo.displayName
-                      && (!clip.entry.extended.values.fireTeamId
-                          || (clip.entry.extended.values.fireTeamId
-                              && clip.entry.extended.values.fireTeamId.basic.value !== activeFireteam))
-                      && clip.entry.values.team && clip.entry.values.team.basic.value === activeTeam) {
-                        return;
-                      }
-                  if (!limiter.opponents && clip.entry.values.team && clip.entry.values.team.basic.value !== activeTeam) {
-                    return;
+                  if (activeEntry) {
+                    if (!limiter.self
+                        && clip.entry.player.destinyUserInfo.displayName === activeEntry.player.destinyUserInfo.displayName) {
+                          return;
+                        }
+                    if (!limiter.fireteam
+                        && clip.entry.player.destinyUserInfo.displayName !== activeEntry.player.destinyUserInfo.displayName
+                        && clip.entry.extended.values.fireTeamId && clip.entry.extended.values.fireTeamId.basic.value === activeFireteam) {
+                          return;
+                        }
+                    if (!limiter.team
+                        && clip.entry.player.destinyUserInfo.displayName !== activeEntry.player.destinyUserInfo.displayName
+                        && (!clip.entry.extended.values.fireTeamId
+                            || (clip.entry.extended.values.fireTeamId
+                                && clip.entry.extended.values.fireTeamId.basic.value !== activeFireteam))
+                        && clip.entry.values.team && clip.entry.values.team.basic.value === activeTeam) {
+                          return;
+                        }
+                    if (!limiter.opponents && clip.entry.values.team && clip.entry.values.team.basic.value !== activeTeam) {
+                      return;
+                    }
                   }
                   filteredClips.push(clip);
                 });

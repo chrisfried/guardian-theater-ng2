@@ -1,4 +1,6 @@
-<div *ngIf="!needToSelectPlatform && !displayName && !activeCharacter && !(guardianService.noResults | async)" class="profile-spinner-wrapper"><div class="fi-widget spinner profile-spinner" title="Fetching Bungie Profile..."></div></div>
+<div *ngIf="!needToSelectPlatform && !displayName && !activeCharacter && !(guardianService.noResults | async)" class="profile-spinner-wrapper">
+  <div class="fi-widget spinner profile-spinner" title="Fetching Bungie Profile..."></div>
+</div>
 <div *ngIf="guardianService.noResults | async">Guardian {{ guardianService.searchName | async }} not found.</div>
 
 <div *ngIf="needToSelectPlatform" class="columns small-12 button-group expanded">
@@ -62,7 +64,7 @@
   </div>
 </div>
 
-<div class="row" *ngIf="activities && activities.length">
+<div class="row" *ngIf="displayName && activeCharacter">
   <div class="columns small-12 button-group expanded">
     <button type="button" class="button" [ngClass]="{ 'hollow': !clipLimiter.self }" (click)="toggleLimiter('self')">{{ displayName }}</button>
     <button type="button" class="button" [ngClass]="{ 'hollow': !clipLimiter.fireteam }" (click)="toggleLimiter('fireteam')">Fireteam</button>

@@ -2,6 +2,7 @@ import { Injectable, OnDestroy } from '@angular/core';
 import { Observable, BehaviorSubject, Subscription } from 'rxjs/Rx';
 import { Response } from '@angular/http';
 import { BungieHttpService } from './bungie-http.service';
+import { SettingsService } from './settings.service';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
 @Injectable()
@@ -31,7 +32,8 @@ export class GuardianService implements OnDestroy {
   constructor(
     private bHttp: BungieHttpService,
     private router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private settingsService: SettingsService
   ) {
     this._membershipId = new BehaviorSubject('');
     this.activityMode = new BehaviorSubject('None');
@@ -109,9 +111,11 @@ export class GuardianService implements OnDestroy {
       .subscribe((res: bungie.SearchDestinyPlayerResponse) => {
         try {
           let Response = res.Response;
+          this.settingsService.activeName.next('');
           if (Response.length === 1) {
             this._membershipId.next(Response[0].membershipId);
             this.displayName.next(Response[0].displayName);
+            this.settingsService.activeName.next(Response[0].displayName);
             this.membershipType.next(Response[0].membershipType);
           }
           if (Response.length > 1) {
