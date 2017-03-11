@@ -117,19 +117,12 @@
   height: 75px;
   color: #0096db;
 }
-@-webkit-keyframes spin
-{  
-0%   {-webkit-transform: rotate(0deg);}  
-100% {-webkit-transform: rotate(360deg);}  
-}
-@keyframes spinX
-{  
-0%   {transform: rotate(0deg);}  
-100% {transform: rotate(360deg);}  
-}
 
 .button {
   background-color: #806A90;
+}
+.button:focus, .button:hover {
+  background-color: #593373;
 }
 
 .button.hollow {
@@ -137,15 +130,47 @@
   border: 1px solid #806A90;
   color: #806A90;
 }
-
-.button:focus, .button:hover {
-  background-color: #593373;
-}
-
 .button.hollow:focus, .button.hollow:hover {
   background: none;
   border: 1px solid #593373;
   color: #593373;
+}
+
+.button.filter-toggle {
+  font-size: 1.75em;
+  padding: .25em;
+}
+
+.button.paging {
+  font-size: 1.75em;
+  padding: .25em;
+}
+
+.button.player,.button.fireteam {
+  background-color: #6D6;
+}
+.button.player.hollow, .button.fireteam.hollow {
+  background: none;
+  border: 1px solid #6D6;
+  color: #6D6;
+}
+
+.button.blueberry {
+  background-color: #69F;
+}
+.button.blueberry.hollow, .button.blueberry.hollow {
+  background: none;
+  border: 1px solid #69F;
+  color: #69F;
+}
+
+.button.enemy {
+  background-color: #D66;
+}
+.button.enemy.hollow, .button.enemy.hollow {
+  background: none;
+  border: 1px solid #D66;
+  color: #D66;
 }
 
 .button.xbox {
