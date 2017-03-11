@@ -22,7 +22,7 @@ export class GuardianService implements OnDestroy {
   public characters: BehaviorSubject<bungie.Character[]>;
   public characterId: BehaviorSubject<string>;
   public activeCharacter: BehaviorSubject<bungie.Character>;
-  public activities: BehaviorSubject<bungie.Activity[]>;
+  public activities: BehaviorSubject<gt.Activity[]>;
   public activityMode: BehaviorSubject<string>;
   public activityPage: BehaviorSubject<number>;
   public activityId: BehaviorSubject<string>;

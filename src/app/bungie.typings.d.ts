@@ -1,11 +1,11 @@
 declare namespace bungie {
   interface Response {
     Response: {},
-    ErrorCode?: number,
-    ThrottleSeconds?: number,
-    ErrorStatus?: string,
-    Message?: string,
-    MessageData?: {}
+    ErrorCode: number,
+    ThrottleSeconds: number,
+    ErrorStatus: string,
+    Message: string,
+    MessageData: {}
   }
 
   interface SearchDestinyPlayerResponse extends Response {
@@ -74,10 +74,10 @@ declare namespace bungie {
   }
 
   interface SearchDestinyPlayerResult {
-    iconPath?: string,
-    membershipType?: number,
-    membershipId?: string,
-    displayName?: string
+    iconPath: string,
+    membershipType: number,
+    membershipId: string,
+    displayName: string
   }
 
   interface Character {
@@ -219,10 +219,7 @@ declare namespace bungie {
       completionReason: ActivityStat,
       playerCount: ActivityStat,
       raceCompletionMilliseconds: ActivityStat
-    },
-
-    pgcr?: PostGameCarnageReport,
-    loadingPgcr?: boolean
+    }
   }
 
   interface PostGameCarnageReport {
@@ -235,32 +232,6 @@ declare namespace bungie {
       score: BasicStat,
       teamName: string
     }[],
-
-    clips?: {
-      type: string,
-      start: number,
-      video: (xbox.Video | twitch.Video),
-      entry: Entry,
-      embedUrl?: any
-    }[],
-
-    clips$?: any,
-    filteredClips$: any,
-
-    loading?: {
-      message: string,
-      twitch: boolean,
-      bungie: boolean,
-      xbox: boolean
-    },
-
-    showClips?: boolean
-
-    active?: {
-      entry: Entry,
-      team: number,
-      fireteam: number
-    };
   }
 
   interface Entry {
@@ -318,30 +289,5 @@ declare namespace bungie {
         fireTeamId: BasicStat
       }
     },
-
-    startTime?: number,
-    stopTime?: number,
-    twitchClips?: twitch.Video[],
-    xboxClips?: xbox.Video[],
-    iconUrl?: any,
-    xbox?: {
-      checked: boolean,
-      gamertag: string,
-      response: xbox.Response
-    }
-    twitch?: {
-      checkedId: boolean,
-      twitchId: string,
-      bungieId: string,
-      checkedResponse: boolean,
-      response: {}
-    },
-    clips?: {
-      type: string,
-      start: number,
-      video: (xbox.Video | twitch.Video),
-      entry: Entry,
-      embedUrl?: any
-    }[],
   }
 }

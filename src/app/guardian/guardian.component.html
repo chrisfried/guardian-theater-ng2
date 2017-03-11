@@ -70,6 +70,8 @@
     <button type="button" class="button filter-toggle fireteam" [ngClass]="{ 'hollow': !clipLimiter.fireteam }" (click)="toggleLimiter('fireteam')" title="Fireteam"><span class="fi-torsos"></span></button>
     <button type="button" class="button filter-toggle blueberry" [ngClass]="{ 'hollow': !clipLimiter.team }" (click)="toggleLimiter('team')" title="Blueberries"><span class="fi-torsos-all"></span></button>
     <button type="button" class="button filter-toggle enemy" [ngClass]="{ 'hollow': !clipLimiter.opponents }" (click)="toggleLimiter('opponents')" title="Opponents"><span class="fi-torsos-all"></span></button>
+    <button *ngIf="membershipType === 1" type="button" class="button filter-toggle xbox" [ngClass]="{ 'hollow': !clipLimiter.xbox }" (click)="toggleLimiter('xbox')" title="Xbox"><span class="fi-social-xbox"></span></button>
+    <button *ngIf="membershipType === 1" type="button" class="button filter-toggle twitch" [ngClass]="{ 'hollow': !clipLimiter.twitch }" (click)="toggleLimiter('twitch')" title="Twitch"><span class="fi-social-twitch"></span></button>
   </div>
 </div>
 

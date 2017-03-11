@@ -14,7 +14,9 @@ export class SettingsService {
       self: true,
       fireteam: true,
       team: true,
-      opponents: true
+      opponents: true,
+      xbox: true,
+      twitch: true
     };
 
     this.clipLimiter = new BehaviorSubject(this._clipLimiter);

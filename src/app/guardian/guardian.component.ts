@@ -25,13 +25,13 @@ export class GuardianComponent implements OnInit, OnDestroy {
   private subLimiter: Subscription;
 
   private _guardian: string;
-  private _platform: number;
 
+  public membershipType: number;
   public displayName: string;
   public needToSelectPlatform: boolean;
   public characters: bungie.Character[];
   public activeCharacter: bungie.Character;
-  public activities: bungie.Activity[];
+  public activities: gt.Activity[];
   public gamemode: string;
   public page: number;
   public clipLimiter: gt.ClipLimiter;
@@ -57,7 +57,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
 
     this.subMembershipType = this.guardianService.membershipType
       .subscribe(type => {
-        this._platform = type;
+        this.membershipType = type;
       });
 
     this.subSearch = this.guardianService.searchName
@@ -114,23 +114,23 @@ export class GuardianComponent implements OnInit, OnDestroy {
   }
 
   selectCharacter(characterId: string) {
-    this.router.navigate(['/guardian', this._guardian, this._platform, characterId, this.gamemode, 0]);
+    this.router.navigate(['/guardian', this._guardian, this.membershipType, characterId, this.gamemode, 0]);
   }
 
   selectGamemode(gamemode: string) {
-    this.router.navigate(['/guardian', this._guardian, this._platform, this.activeCharacter.characterBase.characterId, gamemode, 0]);
+    this.router.navigate(['/guardian', this._guardian, this.membershipType, this.activeCharacter.characterBase.characterId, gamemode, 0]);
   }
 
   nextPage() {
     this.router.navigate([
-      '/guardian', this._guardian, this._platform, this.activeCharacter.characterBase.characterId, this.gamemode, this.page + 1
+      '/guardian', this._guardian, this.membershipType, this.activeCharacter.characterBase.characterId, this.gamemode, this.page + 1
     ]);
   }
 
   prevPage() {
     if (this.page > 0) {
       this.router.navigate([
-        '/guardian', this._guardian, this._platform, this.activeCharacter.characterBase.characterId, this.gamemode, this.page - 1
+        '/guardian', this._guardian, this.membershipType, this.activeCharacter.characterBase.characterId, this.gamemode, this.page - 1
       ]);
     }
   }

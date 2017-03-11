@@ -15,11 +15,11 @@ import { Router } from '@angular/router';
   ]
 })
 export class ActivityComponent implements OnInit, OnDestroy {
-  @Input() activity: bungie.Activity;
+  @Input() activity: gt.Activity;
 
   private subs: Subscription[];
 
-  public pgcr: bungie.PostGameCarnageReport;
+  public pgcr: gt.PostGameCarnageReport;
   public membershipType: number;
 
   constructor(
@@ -37,9 +37,8 @@ export class ActivityComponent implements OnInit, OnDestroy {
       .subscribe(membershipType => this.membershipType = membershipType)
     );
     this.subs.push(this.activityService.pgcr
-      .subscribe((pgcr: bungie.PostGameCarnageReport) => {
+      .subscribe((pgcr: gt.PostGameCarnageReport) => {
         this.pgcr = pgcr;
-        console.log(pgcr);
         if (pgcr && !pgcr.loading) {
           pgcr.loading = {
             message: '',

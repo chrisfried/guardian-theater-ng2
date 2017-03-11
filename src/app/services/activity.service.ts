@@ -14,11 +14,11 @@ export class ActivityService implements OnDestroy {
   private subs: Subscription[];
 
   private _activityId: BehaviorSubject<string>;
-  private _activity: BehaviorSubject<bungie.Activity>;
+  private _activity: BehaviorSubject<gt.Activity>;
   private _activeName: string;
 
   public membershipType: BehaviorSubject<number>;
-  public pgcr: BehaviorSubject<bungie.PostGameCarnageReport>;
+  public pgcr: BehaviorSubject<gt.PostGameCarnageReport>;
 
   constructor(
     private http: Http,
@@ -324,20 +324,20 @@ export class ActivityService implements OnDestroy {
 
             pgcr.filteredClips$ = Observable.combineLatest(
               pgcr.clips$,
-              this.settingsService.clipLimiter
+              this.settingsService.clipLimiter,
+              this.membershipType
             )
-              .map(([clips, limiter]: [
-                {
-                  type: string,
-                  start: number,
-                  video: (xbox.Video | twitch.Video),
-                  entry: bungie.Entry,
-                  embedUrl?: any
-                }[],
-                gt.ClipLimiter
+              .map(([clips, limiter, membershipType]: [
+                gt.Clip[],
+                gt.ClipLimiter,
+                number
               ]) => {
                 let filteredClips = [];
                 clips.forEach(clip => {
+                  if (membershipType === 1
+                      && ((!limiter.xbox && clip.type === 'xbox') || (!limiter.twitch && clip.type === 'twitch'))) {
+                    return;
+                  }
                   if (pgcr.active.entry) {
                     if (!limiter.self
                         && clip.entry.player.destinyUserInfo.displayName === pgcr.active.entry.player.destinyUserInfo.displayName) {

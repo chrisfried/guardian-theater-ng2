@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./pgcr.component.scss']
 })
 export class PgcrComponent implements OnInit {
-  @Input() pgcr: bungie.PostGameCarnageReport;
+  @Input() pgcr: gt.PostGameCarnageReport;
 
   constructor() { }
 
