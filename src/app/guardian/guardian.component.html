@@ -15,12 +15,12 @@
       <div class="gamertag">
         {{ displayName }}
       </div>
-      <div class="character-details" *ngIf="activeCharacter.characterBase"><span class="power-level">{{ activeCharacter.characterBase.powerLevel }} </span><span>// {{ activeCharacter.characterBase.classType | classType }} // {{ activeCharacter.characterBase.raceHash | raceHash }}</span></div>
+      <div class="character-details" *ngIf="activeCharacter.characterBase"><span class="power-level">{{ activeCharacter.characterBase.powerLevel }} </span><span>// {{ activeCharacter.characterBase.classHash | classHash }} // {{ activeCharacter.characterBase.raceHash | raceHash }}</span></div>
     </div>
   </div>
   <div class="row characters" *ngIf="characters">
     <div class="expand columns character" *ngFor="let character of characters" [ngStyle]="{'background-image': character.characterBase.characterId === activeCharacter.characterBase.characterId ? '' : 'url(//www.bungie.net' + character.backgroundPath + ')'}">
-      <a (click)="selectCharacter(character.characterBase.characterId)"><span class="class-name">{{ character.characterBase.classType | classType }} </span><span class="power-level">{{ character.characterBase.powerLevel }}</span></a>
+      <a (click)="selectCharacter(character.characterBase.characterId)"><span class="class-name">{{ character.characterBase.classHash | classHash }} </span><span class="power-level">{{ character.characterBase.powerLevel }}</span></a>
     </div>
   </div>
 </div>

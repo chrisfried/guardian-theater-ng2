@@ -7,6 +7,7 @@ export class SettingsService {
 
   public clipLimiter: BehaviorSubject<gt.ClipLimiter>;
   public activeName: BehaviorSubject<string>;
+  public userLang: string;
 
   constructor() {
     this._clipLimiter = {
@@ -18,6 +19,31 @@ export class SettingsService {
 
     this.clipLimiter = new BehaviorSubject(this._clipLimiter);
     this.activeName = new BehaviorSubject('');
+
+    this.userLang = 'en';
+    if (navigator.language) {
+      switch (navigator.language.substr(0, 2)) {
+        case 'de':
+          this.userLang = 'de';
+          break;
+        case 'es':
+          this.userLang = 'es';
+          break;
+        case 'fr':
+          this.userLang = 'fr';
+          break;
+        case 'it':
+          this.userLang = 'it';
+          break;
+        case 'ja':
+          this.userLang = 'ja';
+          break;
+        case 'pt':
+          this.userLang = 'ptbr';
+          break;
+      }
+    }
+    console.log(this.userLang);
   }
 
   set toggleLimit(limit) {

@@ -16,7 +16,7 @@ import { FrontPageComponent } from './front-page/front-page.component';
 import { AboutComponent } from './about/about.component';
 import { SettingsComponent } from './settings/settings.component';
 import { GuardianComponent } from './guardian/guardian.component';
-import { ClassTypePipe, RaceHashPipe, ActivityModePipe } from './bungie-pipes.pipe';
+import { ClassHashPipe, RaceHashPipe, ActivityModePipe, ActivityNamePipe } from './bungie-pipes.pipe';
 import { ActivityComponent } from './activity/activity.component';
 import { PgcrComponent } from './activity/pgcr/pgcr.component';
 
@@ -28,7 +28,7 @@ import { PgcrComponent } from './activity/pgcr/pgcr.component';
     AboutComponent,
     SettingsComponent,
     GuardianComponent,
-    ClassTypePipe, RaceHashPipe, ActivityModePipe,
+    ClassHashPipe, RaceHashPipe, ActivityModePipe, ActivityNamePipe,
     ActivityComponent,
     PgcrComponent
   ],
