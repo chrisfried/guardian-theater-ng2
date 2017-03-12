@@ -4,8 +4,8 @@
 <div *ngIf="guardianService.noResults | async">Guardian {{ guardianService.searchName | async }} not found.</div>
 
 <div *ngIf="needToSelectPlatform" class="columns small-12 button-group expanded">
-  <button type="button" class="button xbox" (click)="selectPlatform(1)">Xbox</button>
-  <button type="button" class="button playstation" (click)="selectPlatform(2)">PlayStation</button>
+  <button type="button" class="button xbox filter-toggle" (click)="selectPlatform(1)" title="Xbox"><span class="fi-social-xbox"></span></button>
+  <button type="button" class="button playstation filter-toggle" (click)="selectPlatform(2)" title="PlayStation"><span class="fi-social-playstation"></span></button>
 </div>
 
 <div *ngIf="displayName && activeCharacter" class="profile small-12 columns" [ngStyle]="{'background-image': 'url(//www.bungie.net' + activeCharacter.backgroundPath + ')'}">
@@ -26,7 +26,7 @@
 </div>
 
 <div *ngIf="displayName && activeCharacter" class="row">
-  <div class="columns small-12 large-6 order-0 large-order-1 mode-column">
+  <div class="columns small-12 mode-column">
     <select class="mode-selector" [ngClass]="'mode-selected-' + gamemode" [ngModel]="gamemode" (change)="selectGamemode($event.target.value)">
       <option label="All" value="None" selected="selected">All</option>
       <option label="All PvE" value="AllPvE">All PvE</option>
@@ -54,14 +54,6 @@
       <option label="Sparrow Racing League" value="Racing">Sparrow Racing League</option>
     </select>
   </div>
-
-  <div class="columns small-6 large-3 button-group expanded order-1 large-order-0 previous-column">
-    <button type="button" class="button paging" (click)="prevPage()" [ngClass]="{'disabled': page < 1}" title="Previous"><span class="fi-previous"></span></button>
-  </div>
-
-  <div class="columns small-6 large-3 button-group expanded order-2 large-order-2 next-column">
-    <button type="button" class="button paging" (click)="nextPage()" title="Next"><span class="fi-next"></span></button>
-  </div>
 </div>
 
 <div class="row" *ngIf="displayName && activeCharacter">
@@ -72,6 +64,13 @@
     <button type="button" class="button filter-toggle enemy" [ngClass]="{ 'hollow': !clipLimiter.opponents }" (click)="toggleLimiter('opponents')" title="Opponents"><span class="fi-torsos-all"></span></button>
     <button *ngIf="membershipType === 1" type="button" class="button filter-toggle xbox" [ngClass]="{ 'hollow': !clipLimiter.xbox }" (click)="toggleLimiter('xbox')" title="Xbox"><span class="fi-social-xbox"></span></button>
     <button *ngIf="membershipType === 1" type="button" class="button filter-toggle twitch" [ngClass]="{ 'hollow': !clipLimiter.twitch }" (click)="toggleLimiter('twitch')" title="Twitch"><span class="fi-social-twitch"></span></button>
+  </div>
+</div>
+  
+<div class="row">
+  <div *ngIf="displayName && activeCharacter" class="columns small-12 button-group expanded">
+    <button type="button" class="button paging" (click)="prevPage()" [ngClass]="{'disabled': page < 1}" title="Previous"><span class="fi-previous"></span></button>
+    <button type="button" class="button paging" (click)="nextPage()" title="Next"><span class="fi-next"></span></button>
   </div>
 </div>
 

@@ -184,6 +184,10 @@
 
 .button.playstation {
   background-color: #003791;
+  background-image: url('/assets/images/ps.png');
+  background-size: 1em;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .button.playstation.hollow {
   background: none;
@@ -193,10 +197,18 @@
 
 .button.twitch {
   background-color: #6441A4;
+  background-image: url('/assets/images/twitch-white.png');
+  background-size: .75em;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .button.twitch.hollow {
   background: none;
+  background-image: url('/assets/images/twitch-purple.png');
+  background-size: .75em;
+  background-repeat: no-repeat;
+  background-position: center;
   border: 1px solid #6441A4;
   color: #6441A4;
 }
@@ -206,11 +218,6 @@
 
   .select {
     height: 40px;
-  }
-
-  @media print, screen and (min-width: 64em) {
-    padding-left: 1px;
-    padding-right: 0px;
   }
 }
 
