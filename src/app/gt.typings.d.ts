@@ -1,11 +1,11 @@
 declare namespace gt {
   interface ClipLimiter {
-    self: boolean,
-    fireteam: boolean,
-    team: boolean,
-    opponents: boolean,
-    xbox: boolean,
-    twitch: boolean
+    self?: boolean,
+    fireteam?: boolean,
+    team?: boolean,
+    opponents?: boolean,
+    xbox?: boolean,
+    twitch?: boolean
   }
 
   interface Activity extends bungie.Activity {
@@ -13,8 +13,14 @@ declare namespace gt {
     loadingPgcr?: boolean
   }
 
+  interface Team extends bungie.Team {
+    entries?: Entry[]
+  }
+
   interface PostGameCarnageReport extends bungie.PostGameCarnageReport {
     entries: Entry[],
+    
+    teams: Team[],
 
     clips$?: any,
     filteredClips$?: any,
@@ -38,6 +44,7 @@ declare namespace gt {
   }
 
   interface Entry extends bungie.Entry {
+    twitchId?: string,
     startTime?: number,
     stopTime?: number,
     twitchClips?: twitch.Video[],
@@ -64,5 +71,20 @@ declare namespace gt {
     video: (xbox.Video | twitch.Video),
     entry: Entry,
     embedUrl?: any
+  }
+
+  interface Links {
+    activity?: {
+      bungie: boolean,
+      tracker: boolean,
+      ggg: boolean,
+      trials: boolean
+    },
+    guardian?: {
+      bungie: boolean,
+      twitch: boolean,
+      tracker: boolean,
+      ggg: boolean
+    }
   }
 }

@@ -1,3 +1,19 @@
-<p>
-  settings works!
-</p>
+<h5>Activity Links</h5>
+<div class="row">
+  <div class="columns small-12 button-group expanded">
+    <button type="button" class="button filter-toggle bungie" [ngClass]="{ 'hollow': !links.activity.bungie }" (click)="toggleActivityLink('bungie')" title="Bungie">Bungie</button>
+    <button type="button" class="button filter-toggle tracker" [ngClass]="{ 'hollow': !links.activity.tracker }" (click)="toggleActivityLink('tracker')" title="Destiny Tracker">Destiny Tracker</button>
+    <button type="button" class="button filter-toggle ggg" [ngClass]="{ 'hollow': !links.activity.ggg }" (click)="toggleActivityLink('ggg')" title="Guardian.gg">Guardian.gg</button>
+    <button type="button" class="button filter-toggle trials" [ngClass]="{ 'hollow': !links.activity.trials }" (click)="toggleActivityLink('trials')" title="Trials Report">Trials Report</button>
+  </div>
+</div>
+
+<h5>Guardian Links</h5>
+<div class="row">
+  <div class="columns small-12 button-group expanded">
+    <button type="button" class="button filter-toggle bungie" [ngClass]="{ 'hollow': !links.guardian.bungie }" (click)="toggleGuardianLink('bungie')" title="Bungie">Bungie</button>
+    <button type="button" class="button filter-toggle twitch" [ngClass]="{ 'hollow': !links.guardian.twitch }" (click)="toggleGuardianLink('twitch')" title="Twitch">Twitch</button>
+    <button type="button" class="button filter-toggle tracker" [ngClass]="{ 'hollow': !links.guardian.tracker }" (click)="toggleGuardianLink('tracker')" title="Destiny Tracker">Destiny Tracker</button>
+    <button type="button" class="button filter-toggle ggg" [ngClass]="{ 'hollow': !links.guardian.ggg }" (click)="toggleGuardianLink('ggg')" title="Guardian.gg">Guardian.gg</button>
+  </div>
+</div>

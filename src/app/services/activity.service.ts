@@ -38,7 +38,7 @@ export class ActivityService implements OnDestroy {
 
     this.subs.push(this.settingsService.activeName
       .subscribe(
-        displayName => this._activeName = displayName
+      displayName => this._activeName = displayName
       )
     );
 
@@ -115,6 +115,25 @@ export class ActivityService implements OnDestroy {
                   + entry.values.activityDurationSeconds.basic.value
                   - remainingSeconds;
               });
+            } catch (e) {
+              console.log(e);
+            }
+
+            try {
+
+              if (pgcr.teams) {
+                pgcr.teams.forEach(team => {
+                  if (!team.entries) {
+                    team.entries = [];
+                  }
+
+                  pgcr.entries.forEach(entry => {
+                    if (entry.values.team && entry.values.team.basic.value === team.teamId) {
+                      team.entries.push(entry);
+                    }
+                  });
+                });
+              }
             } catch (e) {
               console.log(e);
             }
@@ -300,9 +319,9 @@ export class ActivityService implements OnDestroy {
             }
 
             pgcr.active = {
-               entry: null,
-               team: -1,
-               fireteam: -1
+              entry: null,
+              team: -1,
+              fireteam: -1
             };
             let activeName = this._activeName;
             pgcr.entries.some(function (entry) {
@@ -335,32 +354,32 @@ export class ActivityService implements OnDestroy {
                 let filteredClips = [];
                 clips.forEach(clip => {
                   if (membershipType === 1
-                      && ((!limiter.xbox && clip.type === 'xbox') || (!limiter.twitch && clip.type === 'twitch'))) {
+                    && ((!limiter.xbox && clip.type === 'xbox') || (!limiter.twitch && clip.type === 'twitch'))) {
                     return;
                   }
                   if (pgcr.active.entry) {
                     if (!limiter.self
-                        && clip.entry.player.destinyUserInfo.displayName === pgcr.active.entry.player.destinyUserInfo.displayName) {
-                          return;
-                        }
+                      && clip.entry.player.destinyUserInfo.displayName === pgcr.active.entry.player.destinyUserInfo.displayName) {
+                      return;
+                    }
                     if (!limiter.fireteam
-                        && clip.entry.player.destinyUserInfo.displayName !== pgcr.active.entry.player.destinyUserInfo.displayName
-                        && clip.entry.extended.values.fireTeamId
-                        && clip.entry.extended.values.fireTeamId.basic.value === pgcr.active.fireteam) {
-                          return;
-                        }
+                      && clip.entry.player.destinyUserInfo.displayName !== pgcr.active.entry.player.destinyUserInfo.displayName
+                      && clip.entry.extended.values.fireTeamId
+                      && clip.entry.extended.values.fireTeamId.basic.value === pgcr.active.fireteam) {
+                      return;
+                    }
                     if (!limiter.team
-                        && clip.entry.player.destinyUserInfo.displayName !== pgcr.active.entry.player.destinyUserInfo.displayName
-                        && (!clip.entry.extended.values.fireTeamId
-                            || (clip.entry.extended.values.fireTeamId
-                                && clip.entry.extended.values.fireTeamId.basic.value !== pgcr.active.fireteam))
-                        && clip.entry.values.team && clip.entry.values.team.basic.value === pgcr.active.team) {
-                          return;
-                        }
+                      && clip.entry.player.destinyUserInfo.displayName !== pgcr.active.entry.player.destinyUserInfo.displayName
+                      && (!clip.entry.extended.values.fireTeamId
+                        || (clip.entry.extended.values.fireTeamId
+                          && clip.entry.extended.values.fireTeamId.basic.value !== pgcr.active.fireteam))
+                      && clip.entry.values.team && clip.entry.values.team.basic.value === pgcr.active.team) {
+                      return;
+                    }
                     if (!limiter.opponents
-                        && clip.entry.player.destinyUserInfo.displayName !== pgcr.active.entry.player.destinyUserInfo.displayName
-                        && (!clip.entry.values.team && !clip.entry.extended.values.fireTeamId
-                            || (clip.entry.values.team && clip.entry.values.team.basic.value !== pgcr.active.team))) {
+                      && clip.entry.player.destinyUserInfo.displayName !== pgcr.active.entry.player.destinyUserInfo.displayName
+                      && (!clip.entry.values.team && !clip.entry.extended.values.fireTeamId
+                        || (clip.entry.values.team && clip.entry.values.team.basic.value !== pgcr.active.team))) {
                       return;
                     }
                   }

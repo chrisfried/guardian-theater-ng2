@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { LocalStorageModule } from 'angular-2-local-storage';
 
 import { RoutesModule } from './routes/routes.module';
 
@@ -36,7 +37,11 @@ import { PgcrComponent } from './activity/pgcr/pgcr.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RoutesModule
+    RoutesModule,
+    LocalStorageModule.withConfig({
+      prefix: 'gt',
+      storageType: 'localStorage'
+    })
   ],
   providers: [
     BungieHttpService,

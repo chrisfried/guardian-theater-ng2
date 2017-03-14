@@ -222,16 +222,18 @@ declare namespace bungie {
     }
   }
 
+  interface Team {
+    teamId: number,
+    standing: BasicStat,
+    score: BasicStat,
+    teamName: string
+  }
+
   interface PostGameCarnageReport {
     period: string,
     activityDetails: ActivityDetails,
     entries: Entry[],
-    teams: {
-      teamId: number,
-      standing: BasicStat,
-      score: BasicStat,
-      teamName: string
-    }[],
+    teams: Team[]
   }
 
   interface Entry {

@@ -3,6 +3,7 @@ import { ActivityService } from '../services/activity.service';
 import { BungieHttpService } from '../services/bungie-http.service';
 import { TwitchService } from '../services/twitch.service';
 import { XboxService } from '../services/xbox.service';
+import { SettingsService } from '../services/settings.service';
 import { Subscription, Observable } from 'rxjs/Rx';
 import { Router } from '@angular/router';
 
@@ -27,7 +28,8 @@ export class ActivityComponent implements OnInit, OnDestroy {
     private bHttp: BungieHttpService,
     private twitchService: TwitchService,
     private xboxService: XboxService,
-    private router: Router
+    private router: Router,
+    private settingsService: SettingsService
   ) { }
 
   ngOnInit() {
@@ -130,4 +132,7 @@ export class ActivityComponent implements OnInit, OnDestroy {
     ]);
   }
 
+  stopPropagation(event) {
+    event.stopPropagation();
+  }
 }
