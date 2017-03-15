@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { LocalStorageModule } from 'angular-2-local-storage';
+import { AdsenseModule } from 'ng2-adsense';
 
 import { RoutesModule } from './routes/routes.module';
 
@@ -17,7 +18,7 @@ import { FrontPageComponent } from './front-page/front-page.component';
 import { AboutComponent } from './about/about.component';
 import { SettingsComponent } from './settings/settings.component';
 import { GuardianComponent } from './guardian/guardian.component';
-import { ClassHashPipe, RaceHashPipe, ActivityModePipe, ActivityNamePipe } from './bungie-pipes.pipe';
+import { ClassHashPipe, RaceHashPipe, ActivityModePipe, ActivityNamePipe, TwitchStampPipe } from './bungie-pipes.pipe';
 import { ActivityComponent } from './activity/activity.component';
 import { PgcrComponent } from './activity/pgcr/pgcr.component';
 
@@ -29,7 +30,7 @@ import { PgcrComponent } from './activity/pgcr/pgcr.component';
     AboutComponent,
     SettingsComponent,
     GuardianComponent,
-    ClassHashPipe, RaceHashPipe, ActivityModePipe, ActivityNamePipe,
+    ClassHashPipe, RaceHashPipe, ActivityModePipe, ActivityNamePipe, TwitchStampPipe,
     ActivityComponent,
     PgcrComponent
   ],
@@ -41,6 +42,10 @@ import { PgcrComponent } from './activity/pgcr/pgcr.component';
     LocalStorageModule.withConfig({
       prefix: 'gt',
       storageType: 'localStorage'
+    }),
+    AdsenseModule.forRoot({
+      adClient: 'ca-pub-7822250090731539',
+      adSlot: 9694174006
     })
   ],
   providers: [

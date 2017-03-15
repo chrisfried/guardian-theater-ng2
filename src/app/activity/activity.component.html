@@ -83,7 +83,12 @@
 
       <span class="columns small-8 pgcr pgcr-full pgcr-no-teams" *ngIf="!pgcr.teams || !pgcr.teams.length" [ngClass]="(pgcr.filteredClips$ | async).length ? '' : 'no-clips'">
         <div class="row">
-          <div (click)="toGuardian(entry.player.destinyUserInfo.displayName, entry.characterId)" class="columns small-6 mode pgcr-entry" *ngFor="let entry of pgcr.entries" [ngClass]="(pgcr.filteredClips$ | async).length ? 'mode-' + pgcr.activityDetails.mode : 'mode-no-clips'">
+          <div (click)="toGuardian(entry.player.destinyUserInfo.displayName, entry.characterId)" class="columns small-6 mode pgcr-entry" *ngFor="let entry of pgcr.entries" [ngClass]="{
+            'Opponent': pgcr.active.entry && (pgcr.activityDetails.mode === 13 || pgcr.activityDetails.mode === 27 || pgcr.activityDetails.mode === 29 || pgcr.activityDetails.mode === 33),
+            'Team': pgcr.active.entry && pgcr.activityDetails.mode !== 13 && pgcr.activityDetails.mode !== 27 && pgcr.activityDetails.mode !== 29 && pgcr.activityDetails.mode !== 33,
+            'Fireteam': pgcr.active && pgcr.active.fireteam && entry.extended && entry.extended.values.fireTeamId && pgcr.active.fireteam === entry.extended.values.fireTeamId.basic.value,
+            'Player': pgcr.active && pgcr.active.entry && pgcr.active.entry.characterId === entry.characterId
+          }">
             <span class="pgcr-entry-name">{{ entry.player.destinyUserInfo.displayName }}</span>
             <a class="profile-link twitch" title="View Guardian on Twitch" (click)="stopPropagation($event)" *ngIf="(settingsService.links | async).guardian.twitch && entry.player.bungieNetUserInfo && (twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).twitchId" [href]="'https://www.twitch.tv/' + (twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).twitchId" target="_blank"></a>
             <a class="profile-link bungie" title="View Guardian on Bungie" (click)="stopPropagation($event)" *ngIf="(settingsService.links | async).guardian.bungie" [href]="'https://www.bungie.net/en/Stats/' + entry.player.destinyUserInfo.membershipType  + '/' + entry.player.destinyUserInfo.membershipId  + '/' + entry.characterId" target="_blank"></a>
@@ -95,7 +100,14 @@
 
       <span class="columns small-4 pgcr pgcr-full pgcr-teams" *ngFor="let team of pgcr.teams" [ngClass]="(pgcr.filteredClips$ | async).length ? '' : 'no-clips'">
         <div class="row">
-          <div (click)="toGuardian(entry.player.destinyUserInfo.displayName, entry.characterId)" class="columns small-12 mode pgcr-entry" *ngFor="let entry of team.entries" [ngClass]="team.teamName">
+          <div (click)="toGuardian(entry.player.destinyUserInfo.displayName, entry.characterId)" class="columns small-12 mode pgcr-entry" *ngFor="let entry of team.entries" [ngClass]="{
+            'Alpha': team.teamName === 'Alpha',
+            'Bravo': team.teamName === 'Bravo',
+            'Team': pgcr.active && pgcr.active.team > -1 && entry.values.team && pgcr.active.team === entry.values.team.basic.value,
+            'Opponent': pgcr.active && pgcr.active.team > -1 && entry.values.team && pgcr.active.team !== entry.values.team.basic.value,
+            'Fireteam': pgcr.active && pgcr.active.fireteam && entry.extended && entry.extended.values.fireTeamId && pgcr.active.fireteam === entry.extended.values.fireTeamId.basic.value,
+            'Player': pgcr.active && pgcr.active.entry && pgcr.active.entry.characterId === entry.characterId
+          }">
             <span class="pgcr-entry-name">{{ entry.player.destinyUserInfo.displayName }}</span>
             <a class="profile-link twitch" title="View Guardian on Twitch" (click)="stopPropagation($event)" *ngIf="(settingsService.links | async).guardian.twitch && entry.player.bungieNetUserInfo && (twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).twitchId" [href]="'https://www.twitch.tv/' + (twitchService.twitch[entry.player.bungieNetUserInfo.membershipId] | async).twitchId" target="_blank"></a>
             <a class="profile-link bungie" title="View Guardian on Bungie" (click)="stopPropagation($event)" *ngIf="(settingsService.links | async).guardian.bungie" [href]="'https://www.bungie.net/en/Stats/' + entry.player.destinyUserInfo.membershipType  + '/' + entry.player.destinyUserInfo.membershipId  + '/' + entry.characterId" target="_blank"></a>
@@ -107,14 +119,33 @@
     </div>
   </div>
 
-  <div *ngIf="pgcr">
-    <div *ngFor="let clip of (pgcr.filteredClips$ | async)">
-      <span style="cursor: pointer" (click)="toGuardian(clip.entry.player.destinyUserInfo.displayName, clip.entry.characterId)">{{ clip.entry.player.destinyUserInfo.displayName }}</span>
-      <div *ngIf="clip.type === 'twitch'">
-        <div class="clip-wrapper" *ngIf="!clip.play">
+  <div *ngIf="pgcr" class="columns small-12 clips">
+    <div *ngFor="let clip of (pgcr.filteredClips$ | async)" class="clip-item">
+      <div class="row">
+        <div (click)="toGuardian(clip.entry.player.destinyUserInfo.displayName, clip.entry.characterId)" class="columns small-12 mode pgcr-entry" [ngClass]="{
+          'Alpha': clip.entry.values.team && clip.entry.values.team.basic.displayValue === 'Alpha',
+          'Bravo': clip.entry.values.team && clip.entry.values.team.basic.displayValue === 'Bravo',
+          'Team': (pgcr.active && pgcr.active.team > -1 && clip.entry.values.team && pgcr.active.team === clip.entry.values.team.basic.value) || (pgcr.active.entry && !pgcr.teams.length && pgcr.activityDetails.mode !== 13 && pgcr.activityDetails.mode !== 27 && pgcr.activityDetails.mode !== 29 && pgcr.activityDetails.mode !== 33),
+          'Opponent': (pgcr.active && pgcr.active.team > -1 && clip.entry.values.team && pgcr.active.team !== clip.entry.values.team.basic.value) || (pgcr.active.entry && !pgcr.teams.length && pgcr.activityDetails.mode === 13 || pgcr.activityDetails.mode === 27 || pgcr.activityDetails.mode === 29 || pgcr.activityDetails.mode === 33),
+          'Fireteam': pgcr.active && pgcr.active.fireteam && clip.entry.extended && clip.entry.extended.values.fireTeamId && pgcr.active.fireteam === clip.entry.extended.values.fireTeamId.basic.value,
+          'Player': pgcr.active && pgcr.active.entry && pgcr.active.entry.characterId === clip.entry.characterId
+        }">
+          <span class="pgcr-entry-name">{{ clip.entry.player.destinyUserInfo.displayName }}</span>
+          <a class="profile-link twitch" title="View Guardian on Twitch" (click)="stopPropagation($event)" *ngIf="(settingsService.links | async).guardian.twitch && clip.entry.player.bungieNetUserInfo && (twitchService.twitch[clip.entry.player.bungieNetUserInfo.membershipId] | async).twitchId" [href]="'https://www.twitch.tv/' + (twitchService.twitch[clip.entry.player.bungieNetUserInfo.membershipId] | async).twitchId" target="_blank"></a>
+          <a class="profile-link bungie" title="View Guardian on Bungie" (click)="stopPropagation($event)" *ngIf="(settingsService.links | async).guardian.bungie" [href]="'https://www.bungie.net/en/Stats/' + clip.entry.player.destinyUserInfo.membershipType  + '/' + clip.entry.player.destinyUserInfo.membershipId  + '/' + clip.entry.characterId" target="_blank"></a>
+          <a class="profile-link tracker" title="View Guardian on Destiny Tracker" (click)="stopPropagation($event)" *ngIf="(settingsService.links | async).guardian.tracker" [href]="'http://destinytracker.com/destiny/overview/' + (clip.entry.player.destinyUserInfo.membershipType === 1 ? 'xbox' : 'ps') + '/' + clip.entry.player.destinyUserInfo.displayName" target="_blank"></a>
+          <a class="profile-link ggg" title="View Guardian on Guardian.gg" (click)="stopPropagation($event)" *ngIf="(settingsService.links | async).guardian.ggg" [href]="'http://guardian.gg/en/profile/' + clip.entry.player.destinyUserInfo.membershipType  + '/' + clip.entry.player.destinyUserInfo.displayName" target="_blank"></a>
+        </div>
+      </div>
+      <div class="row" *ngIf="clip.type === 'twitch'">
+        <a class="columns small-12 mode twitch-banner" target="_blank" [href]="clip.video.url">
+          <span class="twitch-clip-name">{{ clip.video.title }}</span>
+          <span class="twitch-timestamp">{{ clip.start | twitchStamp:clip.entry.startTime }}</span>
+        </a>
+        <div class="columns small-12 clip-wrapper" *ngIf="!clip.play">
           <img class="clip-thumbnail" (click)="clip.play = !clip.play" [src]="clip.video.thumbnails[0].url">
         </div>
-        <div class="clip-wrapper" *ngIf="clip.play">
+        <div class="columns small-12 clip-wrapper" *ngIf="clip.play">
           <iframe
             class="twitch-embed"
             [src]="clip.embedUrl"
@@ -124,8 +155,8 @@
           </iframe>
         </div>
       </div>
-      <div *ngIf="clip.type === 'xbox'">
-        <div class="clip-wrapper">
+      <div class="row" *ngIf="clip.type === 'xbox'">
+        <div class="columns small-12 clip-wrapper">
           <video id="my-video" class="video-js twitch-embed" controls preload="none" [poster]="clip.video.thumbnails[0].uri" data-setup="{}">
             <source [src]="clip.video.gameClipUris[0].uri" type="video/mp4">
           </video>

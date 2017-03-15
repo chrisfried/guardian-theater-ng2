@@ -483,6 +483,7 @@ export class ActivityService implements OnDestroy {
                             entry: entry,
                             video: video
                           });
+                          console.log(video);
                           pgcr.clips.sort(function (a, b) {
                             return a.start - b.start;
                           });

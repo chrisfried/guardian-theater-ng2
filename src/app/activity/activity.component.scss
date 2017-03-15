@@ -49,10 +49,20 @@
   opacity: 1;
 }
 
+.clips {
+  margin-top: 1em;
+}
+.clip-item {
+  margin: 0 1em 1em;
+}
+.clip-item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
 .clip-wrapper {
 	position: relative;
-  margin-bottom: .5em;
   overflow: hidden;
+  border-top: 1px solid white;
 }
 .clip-wrapper:before {
   display: block;
@@ -182,20 +192,20 @@
 .activity-title-bar {
   display: flex;
   height: 28px;
-  padding-right: 0;
+  padding: 0;
 }
 
 .pgcr-entry {
   border-top: 1px solid white;
   border-right: 1px solid white;
   display: flex;
-  padding-right: 0;
+  padding: 0;
 
   .no-clips & {
-    opacity: .5;
+    opacity: .75;
   }
 }
-.pgcr-no-teams .pgcr-entry:nth-child(even), .pgcr-entry.Bravo {
+.pgcr-no-teams .pgcr-entry:nth-child(even), .pgcr-entry.Bravo, .clip-item .pgcr-entry {
   border-right: none;
 }
 .pgcr-entry-name, .activity-name {
@@ -203,7 +213,9 @@
   overflow: hidden;
   text-overflow: ellipsis;
   flex-grow: 1;
+  padding-left: .5em;
   padding-right: .5em;
+  transition: background-color .25s ease-out,color .25s ease-out;
 }
 
 .profile-link, .activity-link {
@@ -215,6 +227,7 @@
   background-repeat: no-repeat;
   display: inline-block;
   border-left: 1px solid white;
+  transition: background-color .25s ease-out;
 }
 
 .profile-link.bungie, .activity-link.bungie {
@@ -255,7 +268,56 @@
 
 .Alpha {
   background-color: #0b1d40;
+
+  & .pgcr-entry-name:hover {
+    background-color: #001;
+  }
 }
 .Bravo {
   background-color: #e05225;
+
+  & .pgcr-entry-name:hover {
+    background-color: #b20;
+  }
+}
+.Team {
+  background-color: #69F;
+
+  & .pgcr-entry-name:hover {
+    background-color: #36C;
+  }
+}
+.Opponent {
+  background-color: #D66;
+
+  & .pgcr-entry-name:hover {
+    background-color: #A33;
+  }
+}
+.Fireteam {
+  background-color: #6D6;
+
+  & .pgcr-entry-name:hover {
+    background-color: #3A3;
+  }
+}
+.Player {
+  background-color: #6D6;
+
+  & .pgcr-entry-name:hover {
+    background-color: #3A3;
+  }
+}
+
+.twitch-banner {
+  border-top: 1px solid white;
+  display: flex;
+  background-color: #6441A4;
+}
+.twitch-clip-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  padding-right: .5em;
 }
