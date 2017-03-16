@@ -21,7 +21,7 @@ declare namespace xbox {
     gameClipUris: {
       expiration: string,
       fileSize: number,
-      url: string,
+      uri: string,
       uriType: string
     }[],
     greatestMomentId: string,

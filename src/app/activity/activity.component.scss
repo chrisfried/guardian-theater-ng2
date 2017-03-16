@@ -70,7 +70,7 @@
   width: 100%;
   padding-top: 56.25%;
 }
-.clip-wrapper > div, .twitch-embed {
+.clip-wrapper > div, .twitch-embed, .xbox-embed {
   position: absolute;
   margin-left: 0 !important;
   top: 0;
@@ -218,7 +218,7 @@
   transition: background-color .25s ease-out,color .25s ease-out;
 }
 
-.profile-link, .activity-link {
+.profile-link, .activity-link, .xbox-clip-link {
   background-size: 1em;
   width: 28px;
   min-width: 28px;
@@ -314,10 +314,27 @@
   display: flex;
   background-color: #6441A4;
 }
-.twitch-clip-name {
+.xbox-banner {
+  border-top: 1px solid white;
+  display: flex;
+  background-color: #5DC21E;
+  padding-right: 0;
+  cursor: initial;
+}
+.twitch-clip-name, .xbox-clip-name {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   flex-grow: 1;
   padding-right: .5em;
+}
+.xbox-clip-link {
+  color: white;
+  text-align: center;
+}
+.xbox-clip-link.gif:hover {
+  background-color: #4E76C9;
+}
+.xbox-clip-link.download:hover {
+  background-color: #390;
 }
