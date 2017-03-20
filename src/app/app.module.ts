@@ -18,9 +18,8 @@ import { FrontPageComponent } from './front-page/front-page.component';
 import { AboutComponent } from './about/about.component';
 import { SettingsComponent } from './settings/settings.component';
 import { GuardianComponent } from './guardian/guardian.component';
-import { ClassHashPipe, RaceHashPipe, ActivityModePipe, ActivityNamePipe, TwitchStampPipe } from './bungie-pipes.pipe';
+import { ClassHashPipe, RaceHashPipe, ActivityModePipe, ActivityNamePipe, TwitchStampPipe, GtBadgePipe } from './bungie-pipes.pipe';
 import { ActivityComponent } from './activity/activity.component';
-import { PgcrComponent } from './activity/pgcr/pgcr.component';
 
 @NgModule({
   declarations: [
@@ -30,9 +29,8 @@ import { PgcrComponent } from './activity/pgcr/pgcr.component';
     AboutComponent,
     SettingsComponent,
     GuardianComponent,
-    ClassHashPipe, RaceHashPipe, ActivityModePipe, ActivityNamePipe, TwitchStampPipe,
-    ActivityComponent,
-    PgcrComponent
+    ClassHashPipe, RaceHashPipe, ActivityModePipe, ActivityNamePipe, TwitchStampPipe, GtBadgePipe,
+    ActivityComponent
   ],
   imports: [
     BrowserModule,

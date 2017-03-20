@@ -353,11 +353,11 @@ export class ActivityService implements OnDestroy {
               ]) => {
                 let filteredClips = [];
                 clips.forEach(clip => {
-                  if (membershipType === 1
-                    && ((!limiter.xbox && clip.type === 'xbox') || (!limiter.twitch && clip.type === 'twitch'))) {
-                    return;
-                  }
                   if (pgcr.active.entry) {
+                    if (membershipType === 1
+                      && ((!limiter.xbox && clip.type === 'xbox') || (!limiter.twitch && clip.type === 'twitch'))) {
+                      return;
+                    }
                     if (!limiter.self
                       && clip.entry.player.destinyUserInfo.displayName === pgcr.active.entry.player.destinyUserInfo.displayName) {
                       return;
@@ -483,7 +483,6 @@ export class ActivityService implements OnDestroy {
                             entry: entry,
                             video: video
                           });
-                          console.log(video);
                           pgcr.clips.sort(function (a, b) {
                             return a.start - b.start;
                           });

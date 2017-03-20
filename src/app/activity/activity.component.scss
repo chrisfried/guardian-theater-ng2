@@ -9,6 +9,7 @@
   height: 28px;
   line-height: 28px;
   cursor: pointer;
+  transition: background-color .25s ease-out,color .25s ease-out;
 }
 .mode-5, .mode-8, .mode-9, .mode-10, .mode-11, .mode-12, .mode-13, .mode-14, .mode-15, .mode-19, .mode-23, .mode-24, .mode-26, .mode-27, .mode-28, .mode-29, .mode-31, .mode-32, .mode-34, .mode-35 {
   background: rgba(159,52,47,1) !important;
@@ -31,6 +32,9 @@
 .activity-time {
   font-weight: 200;
   font-size: .75em;
+  text-align: right;
+  padding-right: .5em;
+  flex-shrink: 3;
 }
 .activity-permalinks {
   font-size: 10px;
@@ -100,10 +104,13 @@
   border-right: 1px solid white;
   color: #fff;
   text-align: center;
-  font-size: 2.35em;
+  font-size: 3em;
   font-weight: bold;
   cursor: pointer;
-  max-height: 56px;
+  max-height: 84px;
+  height: 84px;
+  line-height: 84px;
+  padding: 0;
 }
 
 .date-block {
@@ -216,6 +223,18 @@
   padding-left: .5em;
   padding-right: .5em;
   transition: background-color .25s ease-out,color .25s ease-out;
+}
+
+.pgcr-team-name, .pgcr-team-score {
+  padding-right: .5em;
+  cursor: initial;
+}
+.pgcr-team-name {
+  padding-left: .5em;
+  flex-grow: 1;
+}
+.pgcr-team-score {
+  text-align: right;
 }
 
 .profile-link, .activity-link, .xbox-clip-link {
@@ -337,4 +356,22 @@
 }
 .xbox-clip-link.download:hover {
   background-color: #390;
+}
+
+.player-label {
+  background: white;
+  border-radius: .25em;
+  line-height: 1.2em;
+  padding: 0 .3em;
+  font-size: .6rem;
+  cursor: inherit;
+  vertical-align: middle;
+}
+
+.player-label.Patron {
+  color: #E6461A;  
+}
+
+.player-label.Dev {
+  color: #806A90;  
 }

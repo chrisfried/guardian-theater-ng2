@@ -132,6 +132,16 @@ export class ActivityComponent implements OnInit, OnDestroy {
     ]);
   }
 
+  toClip(pgcr: gt.PostGameCarnageReport, clip) {
+    this.router.navigate([
+      '/activity',
+      clip.entry.player.destinyUserInfo.membershipType,
+      pgcr.activityDetails.instanceId,
+      clip.entry.characterId,
+      clip.video.gameClipId
+    ]);
+  }
+
   stopPropagation(event) {
     event.stopPropagation();
   }

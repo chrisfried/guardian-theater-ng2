@@ -8,6 +8,7 @@ import { GuardianComponent } from '../guardian/guardian.component';
 import { ActivityComponent } from '../activity/activity.component';
 
 const appRoutes: Routes = [
+  { path: 'activity/:membershipType/:activityId/:characterId/:clipId', component: ActivityComponent },
   { path: 'activity/:membershipType/:activityId', component: ActivityComponent },
   { path: 'settings', component: SettingsComponent },
   { path: 'about', component: AboutComponent },
