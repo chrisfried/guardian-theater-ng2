@@ -104,15 +104,23 @@ export class ActivityService implements OnDestroy {
               let period = new Date(pgcr.period);
               pgcr.entries.forEach(entry => {
                 let remainingSeconds = 0;
+                let secondsPlayed = 0;
+                let activityDurationSeconds = 0;
                 try {
                   remainingSeconds = entry.extended.values.remainingTimeAfterQuitSeconds.basic.value;
                 } catch (e) { }
+                try {
+                  secondsPlayed = entry.extended.values.secondsPlayed.basic.value;
+                } catch (e) { }
+                try {
+                  activityDurationSeconds = entry.values.activityDurationSeconds.basic.value;
+                } catch (e) { }
                 entry.startTime = period.getTime() / 1000
-                  + entry.values.activityDurationSeconds.basic.value
+                  + activityDurationSeconds
                   - remainingSeconds
-                  - entry.extended.values.secondsPlayed.basic.value;
+                  - secondsPlayed;
                 entry.stopTime = period.getTime() / 1000
-                  + entry.values.activityDurationSeconds.basic.value
+                  + activityDurationSeconds
                   - remainingSeconds;
               });
             } catch (e) {
