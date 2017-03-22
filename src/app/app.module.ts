@@ -18,8 +18,10 @@ import { FrontPageComponent } from './front-page/front-page.component';
 import { AboutComponent } from './about/about.component';
 import { SettingsComponent } from './settings/settings.component';
 import { GuardianComponent } from './guardian/guardian.component';
-import { ClassHashPipe, RaceHashPipe, ActivityModePipe, ActivityNamePipe, TwitchStampPipe, GtBadgePipe } from './bungie-pipes.pipe';
 import { ActivityComponent } from './activity/activity.component';
+import { DestinyHashPipe } from './pipes/destiny-hash.pipe';
+import { TwitchStampPipe } from './pipes/twitch-stamp.pipe';
+import { GtBadgePipe } from './pipes/gt-badge.pipe';
 
 @NgModule({
   declarations: [
@@ -29,8 +31,10 @@ import { ActivityComponent } from './activity/activity.component';
     AboutComponent,
     SettingsComponent,
     GuardianComponent,
-    ClassHashPipe, RaceHashPipe, ActivityModePipe, ActivityNamePipe, TwitchStampPipe, GtBadgePipe,
-    ActivityComponent
+    TwitchStampPipe,
+    GtBadgePipe,
+    ActivityComponent,
+    DestinyHashPipe
   ],
   imports: [
     BrowserModule,
