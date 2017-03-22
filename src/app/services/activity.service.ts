@@ -405,6 +405,13 @@ export class ActivityService implements OnDestroy {
         this.pgcr
       )
         .subscribe(([type, pgcr]) => {
+          if (type === -1 && pgcr) {
+            try {
+              this.membershipType.next(pgcr.entries[0].player.destinyUserInfo.membershipType);
+            } catch (e) {
+              console.log(e);
+            }
+          }
           if (type === 1 && pgcr) {
             if (!pgcr.clips$) {
               pgcr.clips$ = new BehaviorSubject([]);
