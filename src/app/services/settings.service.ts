@@ -10,7 +10,9 @@ export class SettingsService {
   public clipLimiter: BehaviorSubject<gt.ClipLimiter>;
   public links: BehaviorSubject<gt.Links>;
   public activeName: BehaviorSubject<string>;
-  public userLang: string;
+  public userLang: {
+    language?: string
+  };
 
   constructor(
     private localStorageService: LocalStorageService
@@ -43,26 +45,30 @@ export class SettingsService {
     this.links = new BehaviorSubject(this._links);
     this.activeName = new BehaviorSubject('');
 
-    this.userLang = 'en';
-    if (navigator.language) {
+    this.userLang = {
+      language: 'en'
+    };
+    if (this.localStorageService.get('LANGUAGE')) {
+      this.userLang = this.localStorageService.get('LANGUAGE');
+    } else if (navigator.language) {
       switch (navigator.language.substr(0, 2)) {
         case 'de':
-          this.userLang = 'de';
+          this.userLang.language = 'de';
           break;
         case 'es':
-          this.userLang = 'es';
+          this.userLang.language = 'es';
           break;
         case 'fr':
-          this.userLang = 'fr';
+          this.userLang.language = 'fr';
           break;
         case 'it':
-          this.userLang = 'it';
+          this.userLang.language = 'it';
           break;
         case 'ja':
-          this.userLang = 'ja';
+          this.userLang.language = 'ja';
           break;
         case 'pt':
-          this.userLang = 'ptbr';
+          this.userLang.language = 'ptbr';
           break;
       }
     }
@@ -84,5 +90,10 @@ export class SettingsService {
     this._links.activity[link] = !this._links.activity[link];
     this.links.next(this._links);
     this.localStorageService.set('LINKS', this._links);
+  }
+
+  set setLanguage(language) {
+    this.userLang.language = language;
+    this.localStorageService.set('LANGUAGE', this.userLang);
   }
 }

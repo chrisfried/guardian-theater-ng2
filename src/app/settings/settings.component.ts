@@ -35,4 +35,8 @@ export class SettingsComponent implements OnInit, OnDestroy {
     this.settingsService.toggleGuardianLink = link;
   }
 
+  setLanguage(language: string) {
+    this.settingsService.setLanguage = language;
+  }
+
 }
