@@ -437,7 +437,7 @@ export class ActivityService implements OnDestroy {
                       response: {}
                     }) => {
                       if (!gamer.checked && gamer.gamertag) {
-                        return 'https://limitless-reaches-77548.herokuapp.com/api/clips/' + gamertag;
+                        return 'https://boiling-chamber-45794.herokuapp.com/api/clips/' + gamertag;
                       } else {
                         return '';
                       }
@@ -447,7 +447,7 @@ export class ActivityService implements OnDestroy {
                       if (url.length) {
                         return this.http.get(url)
                           .map((res: Response) => res.json())
-                          .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
+                          .catch((error: any) => Observable.from(error.json().error || 'Server error'));
                       } else {
                         return Observable.empty();
                       }
