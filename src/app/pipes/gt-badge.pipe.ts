@@ -10,10 +10,13 @@ export class GtBadgePipe implements PipeTransform {
       '375129' // chrisfried
     ]
     let contributors = [
-      '5116514' // RealAngryMonkey
+      '5116514', // RealAngryMonkey
+      '9321659' // My Derpy Turtle
     ];
     let donors = [
       '8278779', // QuiscalusMajor
+      '3885548', // Phyrne
+      '4165071' // Benimus
     ]
     let patrons = [
       '9303125', // v DontCare v
