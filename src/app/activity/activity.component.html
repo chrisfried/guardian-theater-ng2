@@ -144,7 +144,7 @@
           <a class="xbox-clip-link download fi-download" download title="Download clip" (click)="stopPropagation($event)" [href]="clip.video.gameClipUris[0].uri" target="_blank"></a>
         </div>
         <div class="columns small-12 clip-wrapper">
-          <video id="my-video" class="video-js xbox-embed" controls preload="none" [poster]="clip.video.thumbnails[0].uri" data-setup="{}">
+          <video id="my-video" class="video-js xbox-embed" controls preload="none" [poster]="clip.video.thumbnails[0].uri" data-setup="{}" (click)="$event.srcElement.paused ? $event.srcElement.play() : $event.srcElement.pause()">
             <source [src]="clip.video.gameClipUris[0].uri" type="video/mp4">
           </video>
         </div>
