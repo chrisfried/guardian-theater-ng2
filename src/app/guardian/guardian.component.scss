@@ -78,12 +78,33 @@
   }
 }
 
+.mode-selector-wrapper:after { // Down arrow
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 12px solid white;
+    content: '';
+    display: inline-block;
+    top: -38px;
+    left: calc(100% - 30px);
+    position: relative;
+    pointer-events: none;
+}
 
 .mode-selector {
   margin-bottom: .5em;
   background: rgba(48,56,65,1);
   color: white;
   border: none;
+  cursor: pointer;
+  outline: none;
+  // Hack to remove annoying firefox focus outline. May be solved by an autoprefixer or
+  // reset css at some point.
+  &:-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 #fff;
+  }
 }
 .mode-selected-AllPvP, .mode-selected-Control, .mode-selected-Team, .mode-selected-ThreeVsThree, .mode-selected-Lockdown, .mode-selected-FreeForAll, .mode-selected-Elimination, .mode-selected-Rift, .mode-selected-ZoneControl, .mode-selected-IronBanner, .mode-selected-TrialsOfOsiris, .mode-selected-MayhemClash, .mode-selected-MayhemRumble, .mode-selected-Racing, .mode-selected-Supremacy, .mode-selected-PrivateMatchesAll, .mode-selected-Mayhem {
   background: rgba(159,52,47,1) !important;
