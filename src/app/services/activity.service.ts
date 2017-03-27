@@ -437,7 +437,7 @@ export class ActivityService implements OnDestroy {
                       response: {}
                     }) => {
                       if (!gamer.checked && gamer.gamertag) {
-                        return 'https://boiling-chamber-45794.herokuapp.com/api/clips/' + gamertag;
+                        return 'https://api.guardian.theater/api/clips/' + gamertag;
                       } else {
                         return '';
                       }
