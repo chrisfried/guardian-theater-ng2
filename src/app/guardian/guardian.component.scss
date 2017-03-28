@@ -1,8 +1,9 @@
+@import '../../variables';
 
 .profile {
-  background: rgba(30,36,43,0.75);
+  background: $dark-blue;
   background-size: cover;
-  color: #f5f5f5;
+  color: $light-grey;
   height: 75px;
   margin-bottom: 1rem;
   position: relative;
@@ -16,7 +17,7 @@
   }
 
   .emblem {
-    background-color: rgba(0, 0, 0, .2);
+    background-color: $dark-blue;
     background-size: cover;
     height: 46px;
     left: 2px;
@@ -38,7 +39,7 @@
   }
 
   .character-details {
-    color: #999;
+    color: $details-grey;
     font-size: 10px;
     font-weight: bold;
     height: 14px;
@@ -68,7 +69,7 @@
 }
 
 .power-level {
-  color: rgba(245, 220, 86, 1);
+  color: $power-level-yellow;
 
   &::before {
     content: '\2726';
@@ -78,48 +79,51 @@
   }
 }
 
-.mode-selector-wrapper:after { // Down arrow
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 12px solid white;
-    content: '';
-    display: inline-block;
-    top: -38px;
-    left: calc(100% - 30px);
-    position: relative;
-    pointer-events: none;
+.mode-selector-wrapper { // Down arrow
+    height: 40px;
+    &:after {
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 12px solid white;
+      content: '';
+      display: inline-block;
+      top: -38px;
+      left: calc(100% - 30px);
+      position: relative;
+      pointer-events: none;
+    }
 }
 
 .mode-selector {
   margin-bottom: .5em;
-  background: rgba(48,56,65,1);
+  @include background-hover-darken($all-navy);
   color: white;
   border: none;
   cursor: pointer;
   outline: none;
-  // Hack to remove annoying firefox focus outline. May be solved by an autoprefixer or
-  // reset css at some point.
+  padding-right: 8px;
+  // Hack to remove annoying firefox focus outline. May be solved by an autoprefixer or reset css at some point.
   &:-moz-focusring {
       color: transparent;
-      text-shadow: 0 0 0 #fff;
+      text-shadow: 0 0 0 white;
   }
 }
 .mode-selected-AllPvP, .mode-selected-Control, .mode-selected-Team, .mode-selected-ThreeVsThree, .mode-selected-Lockdown, .mode-selected-FreeForAll, .mode-selected-Elimination, .mode-selected-Rift, .mode-selected-ZoneControl, .mode-selected-IronBanner, .mode-selected-TrialsOfOsiris, .mode-selected-MayhemClash, .mode-selected-MayhemRumble, .mode-selected-Racing, .mode-selected-Supremacy, .mode-selected-PrivateMatchesAll, .mode-selected-Mayhem {
-  background: rgba(159,52,47,1) !important;
+  @include background-hover-darken($crucible-red);
 }
 .mode-selected-Story {
-  background: rgb(212, 110, 55) !important;
+  @include background-hover-darken($story-orange);
 }
 .mode-selected-Strike, .mode-selected-Nightfall, .mode-selected-Heroic, .mode-selected-AllStrikes {
-  background: rgba(85,124,190,1) !important;
+  @include background-hover-darken($strike-blue);
 }
 .mode-selected-AllPvE, .mode-selected-Raid, .mode-selected-AllArena, .mode-selected-Arena, .mode-selected-ArenaChallenge {
-  background: rgba(82,119,181,1) !important;
+  @include background-hover-darken($raid-blue);
 }
 .mode-selected-Patrol {
-  background: rgba(80,124,65,1) !important;
+  @include background-hover-darken($patrol-green);
 }
 
 .spinner {
@@ -136,103 +140,73 @@
   font-size: 75px;
   line-height: 75px;
   height: 75px;
-  color: #0096db;
+  color: $ocean-blue;
 }
 
 .button {
-  background-color: #806A90;
-}
-.button:focus, .button:hover {
-  background-color: #593373;
-}
-
-.button.hollow {
-  background: none;
-  border: 1px solid #806A90;
-  color: #806A90;
-}
-.button.hollow:focus, .button.hollow:hover {
-  background: none;
-  border: 1px solid #593373;
-  color: #593373;
-}
-
-.button.filter-toggle {
-  font-size: 1.75em;
-  padding: .25em;
-}
-
-.button.paging {
-  font-size: 1.75em;
-  padding: .25em;
-}
-
-.button.player,.button.fireteam {
-  background-color: #6D6;
-}
-.button.player.hollow, .button.fireteam.hollow {
-  background: none;
-  border: 1px solid #6D6;
-  color: #6D6;
-}
-
-.button.blueberry {
-  background-color: #69F;
-}
-.button.blueberry.hollow {
-  background: none;
-  border: 1px solid #69F;
-  color: #69F;
-}
-
-.button.enemy {
-  background-color: #D66;
-}
-.button.enemy.hollow {
-  background: none;
-  border: 1px solid #D66;
-  color: #D66;
-}
-
-.button.xbox {
-  background-color: #5DC21E;
-}
-.button.xbox.hollow {
-  background: none;
-  border: 1px solid #5DC21E;
-  color: #5DC21E;
-}
-
-.button.playstation {
-  background-color: #003791;
-  background-image: url('/assets/images/ps.png');
-  background-size: 1em;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.button.playstation.hollow {
-  background: none;
-  border: 1px solid #003791;
-  color: #003791;
+  @include background-hover-darken($light-purple, $dark-purple);
+  &.blueberry {
+    @include background-hover-darken($blueberry-blue);
+  }
+  &.enemy {
+    @include background-hover-darken($opponent-red, $crucible-red);
+  }
+  &.player, &.fireteam {
+    @include background-hover-darken($fireteam-green);
+  }
+  &.xbox {
+    @include background-hover-darken($xbox-green);
+  }
+  &.twitch {
+    @include background-hover-darken($twitch-purple);
+    background-image: url('/assets/images/twitch-white.png');
+    background-size: .75em;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &.playstation { // TODO: Is it possible to have a hollow playstation button?
+    @include background-hover-darken($playstation-blue);
+    background-image: url('/assets/images/ps.png');
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &.hollow {
+    background: none;
+    @include color-border-hover-darken($light-purple, $dark-purple);
+    &:focus, &:hover {
+      background: none;
+    }
+    &.blueberry {
+      @include color-border-hover-darken($blueberry-blue);
+    }
+    &.enemy {
+      @include color-border-hover-darken($opponent-red, $crucible-red);
+    }
+    &.player, &.fireteam {
+      @include color-border-hover-darken($fireteam-green);   
+    }
+    &.xbox {
+      @include color-border-hover-darken($xbox-green);
+    }
+    &.twitch {
+      @include color-border-hover-darken($twitch-purple);
+      background-image: url('/assets/images/twitch-purple.png');
+      background-size: .75em;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  &.filter-toggle {
+    font-size: 1.75em;
+    padding: .25em;
+  }
+  &.paging {
+    font-size: 1.75em;
+    padding: .25em;  
+  }
 }
 
-.button.twitch {
-  background-color: #6441A4;
-  background-image: url('/assets/images/twitch-white.png');
-  background-size: .75em;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.button.twitch.hollow {
-  background: none;
-  background-image: url('/assets/images/twitch-purple.png');
-  background-size: .75em;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 1px solid #6441A4;
-  color: #6441A4;
-}
 .mode-column {
   height: 40px;
   margin-bottom: 1rem;

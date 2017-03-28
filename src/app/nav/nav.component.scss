@@ -1,3 +1,5 @@
+@import '../../variables';
+
 .discord,
 .patreon {
   background-position: center;
@@ -33,7 +35,7 @@
 }
 
 .icon-menu {
-  color: rgba(30,36,43,0.75);
+  color: $dark-blue;
   display: flex;
   font-size: 1.5rem;
   letter-spacing: 2px;
@@ -47,11 +49,11 @@
   display: inline-block;
   width: 30px;
   text-align: center;
-  color: rgba(30,36,43,0.75);
+  color: $dark-blue;
 }
 
 .twitter, .twitter:hover, .twitter:active, .twitter:visited {
-  color: #55acee !important;
+  color: $twitter-blue !important;
 }
 
 ins.adsbygoogle {
@@ -69,12 +71,4 @@ ins.adsbygoogle {
 .logo {
   max-height: 10em;
   margin-bottom: .5em;
-}
-
-.button {
-  background-color: #806A90;
-}
-
-.button:focus, .button:hover {
-  background-color: #593373;
 }

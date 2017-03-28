@@ -1,10 +1,4 @@
-.button {
-  background-color: #806A90;
-}
-
-.button:focus, .button:hover {
-  background-color: #593373;
-}
+@import '../variables';
 
 .supporterTag {
   height: 25px;
@@ -56,35 +50,13 @@
   overflow: hidden;
   text-align: center;
   font-size: 1.35em;
-  color: #333;
+  color: #333; // TODO: I can't find a place where this class is used.
 }
 .gif {
   font-size: 1em;
 }
-.player {
-  color: #333;
-}
-.Alpha, .Alpha:hover, .Alpha:visited, .Alpha:active {
-  color: #0b1d3f;
-}
-.Bravo, .Bravo:hover, .Bravo:visited, .Bravo:active {
-  color: #d75027;
-}
 .displayName {
   font-weight: bold;
-  line-height: 36px;
-}
-.blueberry {
-  color: #5f7594 !important;
-}
-.fireteam {
-  color: #759e89 !important;
-}
-.enemy {
-  color: #a03c43 !important;
-}
-.clanTag {
-  color: #999 !important;
   line-height: 36px;
 }
 
@@ -112,10 +84,11 @@ videogular vg-overlay-play .play:before, [videogular] vg-overlay-play .play:befo
 }
 
 .activity-history-end {
-  color: rgba(180,188,197,.75);
+  color: rgba(180,188,197,.75); //TODO: Where is this used?
   text-align: center;
   margin-bottom: .5em;
 }
+
 .gtgrey {
   width: 25px;
 }
