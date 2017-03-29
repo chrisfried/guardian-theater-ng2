@@ -22,8 +22,10 @@
   <div *ngIf="pgcr" class="columns small-12">
     <div class="row" (click)="toActivity(pgcr.activityDetails.instanceId)">
       <div class="mode columns activity-title-bar small-12" [ngClass]="(pgcr.filteredClips$ | async).length ? 'mode-' + pgcr.activityDetails.mode : 'mode-no-clips'">
-        <span class="activity-name" [title]="pgcr.loading.message || (pgcr.activityDetails.mode | destinyHash:'activityMode') + ': ' + (pgcr.activityDetails.referenceId | destinyHash:'activityName')">{{ pgcr.loading.message || (pgcr.activityDetails.mode | destinyHash:'activityMode') + ': ' + (pgcr.activityDetails.referenceId | destinyHash:'activityName') }}</span>
-        <span class="activity-time" [title]="pgcr.period | date:'short'">{{ pgcr.period | date:'short' }}</span>
+        <span class="activity-info">
+          <span class="activity-name" [title]="pgcr.loading.message || (pgcr.activityDetails.mode | destinyHash:'activityMode') + ': ' + (pgcr.activityDetails.referenceId | destinyHash:'activityName')">{{ pgcr.loading.message || (pgcr.activityDetails.mode | destinyHash:'activityMode') + ': ' + (pgcr.activityDetails.referenceId | destinyHash:'activityName') }}</span>
+          <span class="activity-time" [title]="pgcr.period | date:'short'">{{ pgcr.period | date:'short' }}</span>
+        </span>
         <a class="activity-link bungie" title="View Activity on Bungie" (click)="stopPropagation($event)" *ngIf="(settingsService.links | async).activity.bungie" [href]="'https://www.bungie.net/en/Legend/PGCR?instanceId=' + pgcr.activityDetails.instanceId" target="_blank"></a>
         <a class="activity-link tracker" title="View Activity on Destiny Tracker" (click)="stopPropagation($event)" *ngIf="(settingsService.links | async).activity.tracker" [href]="'http://destinytracker.com/dg/' + pgcr.activityDetails.instanceId" target="_blank"></a>
         <a class="activity-link ggg" title="View Activity on Guardian.gg" (click)="stopPropagation($event)" *ngIf="(settingsService.links | async).activity.ggg" [href]="'http://guardian.gg/en/pgcr/' + pgcr.activityDetails.instanceId" target="_blank"></a>
