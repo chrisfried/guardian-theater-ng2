@@ -140,7 +140,7 @@
       <div class="row" *ngIf="clip.type === 'xbox'">
         <div class="columns small-12 mode xbox-banner" target="_blank">
           <span class="xbox-clip-name">{{ clip.video.clipName || 'Xbox Game DVR Clip' }}</span>
-          <a class="xbox-clip-link gif" title="Make a gif" (click)="stopPropagation($event)" [href]="'https://imgur.com/vidgif?url=https://api.guardian.theater/clip/' + clip.entry.player.destinyUserInfo.displayName + '/' + clip.video.gameClipId" target="_blank">gif</a>
+          <a class="xbox-clip-link gif" title="Make a gif" (click)="stopPropagation($event)" [href]="'https://imgur.com/vidgif?url=https://proxy.guardian.theater/clip/' + clip.entry.player.destinyUserInfo.displayName + '/' + clip.video.gameClipId" target="_blank">gif</a>
           <a class="xbox-clip-link download fi-download" download title="Download clip" (click)="stopPropagation($event)" [href]="clip.video.gameClipUris[0].uri" target="_blank"></a>
         </div>
         <div class="columns small-12 clip-wrapper">
