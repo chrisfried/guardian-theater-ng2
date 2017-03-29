@@ -1,10 +1,28 @@
 export const DestinyActivityDefinition = {
   de: {
+    8055542: {
+      activityName: "Wenn die Mauern fallen"
+    },
+    9885984: {
+      activityName: "Kammer der Nacht"
+    },
+    10551956: {
+      activityName: "König des Berges"
+    },
     18715720: {
       activityName: "König des Berges"
     },
+    24471896: {
+      activityName: "Mars und Venus"
+    },
+    24471899: {
+      activityName: "Erde und Mond"
+    },
     28695277: {
       activityName: "Das Schwert von Crota"
+    },
+    34205302: {
+      activityName: "Der Nexus"
     },
     34327100: {
       activityName: "Gefallenen S.A.B.E.R."
@@ -53,6 +71,9 @@ export const DestinyActivityDefinition = {
     },
     130631058: {
       activityName: "Klassisches 3v3"
+    },
+    134979141: {
+      activityName: "Die letzte Anlage"
     },
     149381097: {
       activityName: "Patrouilliere den Mond"
@@ -123,6 +144,9 @@ export const DestinyActivityDefinition = {
     269981320: {
       activityName: "Der Prometheus-Code"
     },
+    278763462: {
+      activityName: "Staubpalast"
+    },
     279121234: {
       activityName: "König des Berges"
     },
@@ -174,6 +198,9 @@ export const DestinyActivityDefinition = {
     386157877: {
       activityName: "Schild-Brüder"
     },
+    389785553: {
+      activityName: "Dunkle Champions"
+    },
     403726672: {
       activityName: "Wöchentlicher Strike (Heroisch)"
     },
@@ -186,8 +213,17 @@ export const DestinyActivityDefinition = {
     406972773: {
       activityName: "Der Monstrositätenraub"
     },
+    410347507: {
+      activityName: "Der Schattendieb"
+    },
+    425614025: {
+      activityName: "Die Eisernen Lords"
+    },
     428290721: {
       activityName: "Patrouilliere Mars"
+    },
+    430160982: {
+      activityName: "Zorn der Maschine"
     },
     430914016: {
       activityName: "Das Eisengrab"
@@ -234,6 +270,9 @@ export const DestinyActivityDefinition = {
     547981568: {
       activityName: "Eisenbanner: Vorherrschaft"
     },
+    550186563: {
+      activityName: "Ein Kell steigt auf"
+    },
     572368820: {
       activityName: "Wöchentlicher Dämmerungs-Strike"
     },
@@ -257,6 +296,9 @@ export const DestinyActivityDefinition = {
     },
     581858107: {
       activityName: "Der Anbruch"
+    },
+    603968817: {
+      activityName: "Zerberus Vae III"
     },
     604017503: {
       activityName: "Das Gefängnis der Alten: Besessen"
@@ -297,6 +339,12 @@ export const DestinyActivityDefinition = {
     711826167: {
       activityName: "Inferno: Konflikt"
     },
+    719193800: {
+      activityName: "Wintersturm"
+    },
+    719193803: {
+      activityName: "Der Nexus"
+    },
     746864299: {
       activityName: "Inferno-Doppel"
     },
@@ -309,11 +357,14 @@ export const DestinyActivityDefinition = {
     782611196: {
       activityName: "Inferno: Gefecht"
     },
+    820688209: {
+      activityName: "Sepiks-Perfektioniert"
+    },
     826836846: {
       activityName: "Das elende Auge"
     },
     832576952: {
-      activityName: "Klassifiziert"
+      activityName: "Gefallenen S.A.B.E.R."
     },
     833873053: {
       activityName: "Der Unsterbliche Geist"
@@ -321,11 +372,17 @@ export const DestinyActivityDefinition = {
     836641517: {
       activityName: "Auge eines Tor-Lords"
     },
+    853468393: {
+      activityName: "Ischtar-Kollektiv"
+    },
     853774317: {
       activityName: "Der bevorstehende Krieg"
     },
     854130400: {
       activityName: "Belagerung des Kriegsgeistes"
+    },
+    856898338: {
+      activityName: "Gläserne Kammer"
     },
     860566204: {
       activityName: "Der Leuchtturm"
@@ -338,6 +395,21 @@ export const DestinyActivityDefinition = {
     },
     892266083: {
       activityName: "Turm"
+    },
+    902875868: {
+      activityName: "Die Säule des Gartens"
+    },
+    906989597: {
+      activityName: "Die Beschwörungsgruben"
+    },
+    932731386: {
+      activityName: "Caydes Versteck"
+    },
+    940573734: {
+      activityName: "Das dunkle Innere"
+    },
+    944638962: {
+      activityName: "Auge eines Tor-Lords"
     },
     981644933: {
       activityName: "Ans Feuer gebunden"
@@ -369,6 +441,9 @@ export const DestinyActivityDefinition = {
     1016116686: {
       activityName: "Der Unsterbliche Geist"
     },
+    1016659723: {
+      activityName: "Königsfall"
+    },
     1017714251: {
       activityName: "Die letzte Ölung"
     },
@@ -399,6 +474,9 @@ export const DestinyActivityDefinition = {
     1068261034: {
       activityName: "Blut im Garten"
     },
+    1075348150: {
+      activityName: "Zeitalter des Triumphs"
+    },
     1080191247: {
       activityName: "Geißel von Winter"
     },
@@ -410,6 +488,15 @@ export const DestinyActivityDefinition = {
     },
     1112015031: {
       activityName: "Das Erwachen"
+    },
+    1116149777: {
+      activityName: "Königsmord"
+    },
+    1117274478: {
+      activityName: "Der Besessenen-Krieg"
+    },
+    1122783186: {
+      activityName: "Das Eisengrab"
     },
     1126759626: {
       activityName: "Echo-Kammer"
@@ -450,6 +537,9 @@ export const DestinyActivityDefinition = {
     1234230734: {
       activityName: "Patrouilliere den Mond"
     },
+    1259153650: {
+      activityName: "Der Ruf einer Fremden"
+    },
     1288347893: {
       activityName: "Rumble: Vorherrschaft"
     },
@@ -458,6 +548,9 @@ export const DestinyActivityDefinition = {
     },
     1293005540: {
       activityName: "Vorhut-Dämmerung"
+    },
+    1296112978: {
+      activityName: "Die Verseuchten Lande"
     },
     1309514270: {
       activityName: "Wolfstrick"
@@ -477,11 +570,20 @@ export const DestinyActivityDefinition = {
     1378430574: {
       activityName: "Inferno: Eliminierung"
     },
+    1379511171: {
+      activityName: "Das Schwert von Crota"
+    },
     1387993552: {
       activityName: "Zorn der Maschine"
     },
     1390160729: {
       activityName: "Vestianischer Außenposten"
+    },
+    1398209073: {
+      activityName: "Die Höhle der Teufel"
+    },
+    1398209074: {
+      activityName: "Der Wille von Crota"
     },
     1398976305: {
       activityName: "Wöchentlicher Strike (Heroisch)"
@@ -539,6 +641,9 @@ export const DestinyActivityDefinition = {
     },
     1443271657: {
       activityName: "Scharlach-Doppel"
+    },
+    1443570903: {
+      activityName: "Eisenbanner – Hexenkessel: Konflikt"
     },
     1448094960: {
       activityName: "Die Kerker"
@@ -726,11 +831,23 @@ export const DestinyActivityDefinition = {
     1856964953: {
       activityName: "Ein Hüter erhebt sich"
     },
+    1882836298: {
+      activityName: "Das Erwachen"
+    },
     1889399773: {
       activityName: "Wöchentlicher Dämmerungs-Strike"
     },
+    1912940269: {
+      activityName: "Wiederherstellung"
+    },
+    1917735347: {
+      activityName: "Wintersturm"
+    },
     1918823817: {
       activityName: "Der Unsterbliche Geist"
+    },
+    1924778540: {
+      activityName: "Das herrschende Haus"
     },
     1940432142: {
       activityName: "Sperrgebiet"
@@ -789,6 +906,9 @@ export const DestinyActivityDefinition = {
     2095588685: {
       activityName: "Der Wille von Crota"
     },
+    2105028197: {
+      activityName: "Echo-Kammer"
+    },
     2129294976: {
       activityName: "Das dunkle Innere"
     },
@@ -815,6 +935,9 @@ export const DestinyActivityDefinition = {
     },
     2198347919: {
       activityName: "Turm"
+    },
+    2200634811: {
+      activityName: "Belagerung des Kriegsgeistes"
     },
     2201622127: {
       activityName: "Herausforderung der Ältesten"
@@ -849,6 +972,9 @@ export const DestinyActivityDefinition = {
     2268273279: {
       activityName: "Sepiks-Perfektioniert"
     },
+    2270816053: {
+      activityName: "Königliches Lösegeld"
+    },
     2270968444: {
       activityName: "Wöchentlicher Strike (Heroisch)"
     },
@@ -878,6 +1004,9 @@ export const DestinyActivityDefinition = {
     },
     2321224098: {
       activityName: "Der Ruf einer Fremden"
+    },
+    2324706853: {
+      activityName: "Crotas Ende"
     },
     2326253031: {
       activityName: "Skolas‘ Rache"
@@ -912,8 +1041,17 @@ export const DestinyActivityDefinition = {
     2374186202: {
       activityName: "Inferno: Kontrolle"
     },
+    2374784693: {
+      activityName: "Geißel von Winter"
+    },
     2374899718: {
       activityName: "Der Schattendieb"
+    },
+    2375659247: {
+      activityName: "Herausforderung der Ältesten"
+    },
+    2380726447: {
+      activityName: "Das Grabschiff"
     },
     2381859905: {
       activityName: "Der Schattendieb"
@@ -963,6 +1101,9 @@ export const DestinyActivityDefinition = {
     2474598319: {
       activityName: "Patrouilliere die Venus"
     },
+    2486047606: {
+      activityName: "Der Schwarze Garten"
+    },
     2488292787: {
       activityName: "Freelance 3v3"
     },
@@ -1004,6 +1145,9 @@ export const DestinyActivityDefinition = {
     },
     2604992012: {
       activityName: "Ans Licht verloren"
+    },
+    2605106985: {
+      activityName: "Steigende Flut"
     },
     2616429373: {
       activityName: "Umarmung der Angst"
@@ -1059,8 +1203,14 @@ export const DestinyActivityDefinition = {
     2680821721: {
       activityName: "Der Kessel"
     },
+    2693077237: {
+      activityName: "Vorhut-Dämmerung"
+    },
     2695324124: {
       activityName: "Fauliger Kelch"
+    },
+    2697160954: {
+      activityName: "Zeitalter des Triumphs"
     },
     2697969178: {
       activityName: "Wöchentlicher Dämmerungs-Strike"
@@ -1140,8 +1290,14 @@ export const DestinyActivityDefinition = {
     2873833515: {
       activityName: "Die sonnenlose Zelle"
     },
+    2873913519: {
+      activityName: "Der Kriegsgeist"
+    },
     2877811433: {
       activityName: "Hexenkessel: Rumble"
+    },
+    2895301046: {
+      activityName: "Sperrgebiet"
     },
     2896357417: {
       activityName: "Wintersturm"
@@ -1152,6 +1308,9 @@ export const DestinyActivityDefinition = {
     2897641944: {
       activityName: "Fauliger Kelch"
     },
+    2910883293: {
+      activityName: "Die letzte Ölung"
+    },
     2918909691: {
       activityName: "Botenzirkel"
     },
@@ -1160,6 +1319,9 @@ export const DestinyActivityDefinition = {
     },
     2931947534: {
       activityName: "Ein Kell steigt auf"
+    },
+    2938090611: {
+      activityName: "Der bevorstehende Krieg"
     },
     2938118424: {
       activityName: "Der Unsterbliche Geist"
@@ -1182,8 +1344,14 @@ export const DestinyActivityDefinition = {
     2989915775: {
       activityName: "Der Unsterbliche Geist"
     },
+    3005484445: {
+      activityName: "Der Prometheus-Code"
+    },
     3010573436: {
       activityName: "Der Schattendieb"
+    },
+    3011954788: {
+      activityName: "Download abgeschlossen"
     },
     3025411906: {
       activityName: "Der Archonschlächter"
@@ -1191,11 +1359,26 @@ export const DestinyActivityDefinition = {
     3027976182: {
       activityName: "Schild-Brüder"
     },
+    3030879879: {
+      activityName: "Das elende Auge"
+    },
     3041179010: {
       activityName: "Zerberus Vae III"
     },
     3044479892: {
       activityName: "Der Schattendieb"
+    },
+    3047788493: {
+      activityName: "Staubpalast"
+    },
+    3047788494: {
+      activityName: "Zerberus Vae III"
+    },
+    3047788495: {
+      activityName: "Der Unsterbliche Geist"
+    },
+    3051527960: {
+      activityName: "Die sonnenlose Zelle"
     },
     3053288711: {
       activityName: "Schwebende Gärten"
@@ -1272,11 +1455,23 @@ export const DestinyActivityDefinition = {
     3183184449: {
       activityName: "Schild-Brüder"
     },
+    3187607216: {
+      activityName: "Der Unsterbliche Geist"
+    },
     3190434637: {
       activityName: "Das Grabschiff"
     },
+    3192378548: {
+      activityName: "Das dunkle Jenseits"
+    },
+    3196929644: {
+      activityName: "Der Monstrositätenraub"
+    },
     3200293401: {
       activityName: "Der Feind meines Feindes"
+    },
+    3207122440: {
+      activityName: "Das Archiv"
     },
     3209623958: {
       activityName: "Wöchentlicher Dämmerungs-Strike"
@@ -1290,6 +1485,9 @@ export const DestinyActivityDefinition = {
     3234259779: {
       activityName: "Prüfungen von Osiris"
     },
+    3242509473: {
+      activityName: "Der Wille von Crota"
+    },
     3252534714: {
       activityName: "Doppel"
     },
@@ -1298,6 +1496,9 @@ export const DestinyActivityDefinition = {
     },
     3277621970: {
       activityName: "Der Zeitmesser"
+    },
+    3277929848: {
+      activityName: "Schild-Brüder"
     },
     3292305209: {
       activityName: "Wintersturm"
@@ -1323,13 +1524,22 @@ export const DestinyActivityDefinition = {
     3343503784: {
       activityName: "Fauliger Kelch"
     },
+    3345352981: {
+      activityName: "Ritual der Opferung"
+    },
     3346215145: {
       activityName: "Der Leuchtturm"
     },
     3349918649: {
       activityName: "Das Grabschiff"
     },
+    3356249023: {
+      activityName: "Zorn der Maschine"
+    },
     3373044013: {
+      activityName: "Fauliger Kelch"
+    },
+    3384143875: {
       activityName: "Fauliger Kelch"
     },
     3392709953: {
@@ -1449,6 +1659,9 @@ export const DestinyActivityDefinition = {
     3582451805: {
       activityName: "Der Schattendieb"
     },
+    3582577776: {
+      activityName: "Die Schweigenden Reißer"
+    },
     3593950004: {
       activityName: "Destiny-Credits"
     },
@@ -1476,8 +1689,14 @@ export const DestinyActivityDefinition = {
     3645919501: {
       activityName: "Patrouilliere das Kosmodrom"
     },
+    3650545911: {
+      activityName: "Wolfstrick"
+    },
     3670262295: {
       activityName: "Prüfungen von Osiris"
+    },
+    3670861271: {
+      activityName: "Der Feind meines Feindes"
     },
     3670968271: {
       activityName: "Der Wille von Crota"
@@ -1533,6 +1752,9 @@ export const DestinyActivityDefinition = {
     3743955707: {
       activityName: "Turm"
     },
+    3750289192: {
+      activityName: "Die Faust von Crota"
+    },
     3778091466: {
       activityName: "Download abgeschlossen"
     },
@@ -1545,11 +1767,17 @@ export const DestinyActivityDefinition = {
     3817155567: {
       activityName: "Dämmerbruch"
     },
+    3837170670: {
+      activityName: "Das Weltengrab"
+    },
     3842976518: {
       activityName: "Die sonnenlose Zelle"
     },
     3848655103: {
       activityName: "Schwarzer Schild"
+    },
+    3856562046: {
+      activityName: "Ans Licht verloren"
     },
     3856604751: {
       activityName: "Erstes Licht"
@@ -1569,6 +1797,9 @@ export const DestinyActivityDefinition = {
     3918359338: {
       activityName: "Ikarus"
     },
+    3920061741: {
+      activityName: "Schrein von Oryx"
+    },
     3921931055: {
       activityName: "Der Wille von Crota"
     },
@@ -1587,8 +1818,17 @@ export const DestinyActivityDefinition = {
     3974631085: {
       activityName: "Der Feind meines Feindes"
     },
+    3978884648: {
+      activityName: "Königsfall"
+    },
+    4000873610: {
+      activityName: "Crotas Ende"
+    },
     4027720491: {
       activityName: "Schild-Brüder"
+    },
+    4038697181: {
+      activityName: "Gläserne Kammer"
     },
     4046346128: {
       activityName: "Umarmung der Angst"
@@ -1626,6 +1866,12 @@ export const DestinyActivityDefinition = {
     4131978369: {
       activityName: "Der Monstrositätenraub"
     },
+    4141063459: {
+      activityName: "Der Schattendieb"
+    },
+    4153423016: {
+      activityName: "Herausforderung der Ältesten"
+    },
     4163254808: {
       activityName: "Ufer der Zeit"
     },
@@ -1643,6 +1889,12 @@ export const DestinyActivityDefinition = {
     },
     4175179546: {
       activityName: "Wöchentlicher Strike (Heroisch)"
+    },
+    4178645458: {
+      activityName: "Die Begrabene Stadt"
+    },
+    4181273223: {
+      activityName: "Gefallenen S.A.B.E.R."
     },
     4183157062: {
       activityName: "Die letzte Ölung"
@@ -1706,11 +1958,29 @@ export const DestinyActivityDefinition = {
     },
   },
   en: {
+    8055542: {
+      activityName: "The Walls Come Down"
+    },
+    9885984: {
+      activityName: "Chamber of Night"
+    },
+    10551956: {
+      activityName: "King of the Mountain"
+    },
     18715720: {
       activityName: "King of the Mountain"
     },
+    24471896: {
+      activityName: "Mars and Venus"
+    },
+    24471899: {
+      activityName: "Earth and Moon"
+    },
     28695277: {
       activityName: "The Sword of Crota"
+    },
+    34205302: {
+      activityName: "The Nexus"
     },
     34327100: {
       activityName: "Fallen S.A.B.E.R."
@@ -1759,6 +2029,9 @@ export const DestinyActivityDefinition = {
     },
     130631058: {
       activityName: "Classic 3v3"
+    },
+    134979141: {
+      activityName: "The Last Array"
     },
     149381097: {
       activityName: "Patrol the Moon"
@@ -1829,6 +2102,9 @@ export const DestinyActivityDefinition = {
     269981320: {
       activityName: "The Promethean Code"
     },
+    278763462: {
+      activityName: "Dust Palace"
+    },
     279121234: {
       activityName: "King of the Mountain"
     },
@@ -1880,6 +2156,9 @@ export const DestinyActivityDefinition = {
     386157877: {
       activityName: "Shield Brothers"
     },
+    389785553: {
+      activityName: "Dark Champions"
+    },
     403726672: {
       activityName: "Weekly Heroic Strike"
     },
@@ -1892,8 +2171,17 @@ export const DestinyActivityDefinition = {
     406972773: {
       activityName: "The Abomination Heist"
     },
+    410347507: {
+      activityName: "The Shadow Thief"
+    },
+    425614025: {
+      activityName: "The Iron Lords"
+    },
     428290721: {
       activityName: "Patrol Mars"
+    },
+    430160982: {
+      activityName: "Wrath of the Machine"
     },
     430914016: {
       activityName: "The Iron Tomb"
@@ -1940,6 +2228,9 @@ export const DestinyActivityDefinition = {
     547981568: {
       activityName: "Iron Banner Supremacy"
     },
+    550186563: {
+      activityName: "A Kell Rising"
+    },
     572368820: {
       activityName: "Weekly Nightfall Strike"
     },
@@ -1963,6 +2254,9 @@ export const DestinyActivityDefinition = {
     },
     581858107: {
       activityName: "The Dawning"
+    },
+    603968817: {
+      activityName: "Cerberus Vae III"
     },
     604017503: {
       activityName: "Prison of Elders: Taken"
@@ -2003,6 +2297,12 @@ export const DestinyActivityDefinition = {
     711826167: {
       activityName: "Inferno Clash"
     },
+    719193800: {
+      activityName: "Winter's Run"
+    },
+    719193803: {
+      activityName: "The Nexus"
+    },
     746864299: {
       activityName: "Inferno Doubles"
     },
@@ -2015,11 +2315,14 @@ export const DestinyActivityDefinition = {
     782611196: {
       activityName: "Inferno Skirmish"
     },
+    820688209: {
+      activityName: "Sepiks Perfected"
+    },
     826836846: {
       activityName: "The Wretched Eye"
     },
     832576952: {
-      activityName: "Classified"
+      activityName: "Fallen S.A.B.E.R."
     },
     833873053: {
       activityName: "The Undying Mind"
@@ -2027,11 +2330,17 @@ export const DestinyActivityDefinition = {
     836641517: {
       activityName: "Eye of a Gate Lord"
     },
+    853468393: {
+      activityName: "Ishtar Collective"
+    },
     853774317: {
       activityName: "The Coming War"
     },
     854130400: {
       activityName: "Siege of the Warmind"
+    },
+    856898338: {
+      activityName: "Vault of Glass"
     },
     860566204: {
       activityName: "The Lighthouse"
@@ -2044,6 +2353,21 @@ export const DestinyActivityDefinition = {
     },
     892266083: {
       activityName: "Tower"
+    },
+    902875868: {
+      activityName: "The Garden's Spire"
+    },
+    906989597: {
+      activityName: "The Summoning Pits"
+    },
+    932731386: {
+      activityName: "Cayde's Stash"
+    },
+    940573734: {
+      activityName: "The Dark Within"
+    },
+    944638962: {
+      activityName: "Eye of a Gate Lord"
     },
     981644933: {
       activityName: "Bound by Fire"
@@ -2075,6 +2399,9 @@ export const DestinyActivityDefinition = {
     1016116686: {
       activityName: "The Undying Mind"
     },
+    1016659723: {
+      activityName: "King's Fall"
+    },
     1017714251: {
       activityName: "Last Rites"
     },
@@ -2105,6 +2432,9 @@ export const DestinyActivityDefinition = {
     1068261034: {
       activityName: "Blood in the Garden"
     },
+    1075348150: {
+      activityName: "Age of Triumph"
+    },
     1080191247: {
       activityName: "Scourge of Winter"
     },
@@ -2116,6 +2446,15 @@ export const DestinyActivityDefinition = {
     },
     1112015031: {
       activityName: "The Wakening"
+    },
+    1116149777: {
+      activityName: "Regicide"
+    },
+    1117274478: {
+      activityName: "The Taken War"
+    },
+    1122783186: {
+      activityName: "The Iron Tomb"
     },
     1126759626: {
       activityName: "Echo Chamber"
@@ -2156,6 +2495,9 @@ export const DestinyActivityDefinition = {
     1234230734: {
       activityName: "Patrol the Moon"
     },
+    1259153650: {
+      activityName: "A Stranger's Call"
+    },
     1288347893: {
       activityName: "Rumble Supremacy"
     },
@@ -2164,6 +2506,9 @@ export const DestinyActivityDefinition = {
     },
     1293005540: {
       activityName: "Vanguard Nightfall"
+    },
+    1296112978: {
+      activityName: "The Plaguelands"
     },
     1309514270: {
       activityName: "Wolves' Gambit"
@@ -2183,11 +2528,20 @@ export const DestinyActivityDefinition = {
     1378430574: {
       activityName: "Inferno Elimination"
     },
+    1379511171: {
+      activityName: "The Sword of Crota"
+    },
     1387993552: {
       activityName: "Wrath of the Machine"
     },
     1390160729: {
       activityName: "Vestian Outpost"
+    },
+    1398209073: {
+      activityName: "The Devils' Lair"
+    },
+    1398209074: {
+      activityName: "The Will of Crota"
     },
     1398976305: {
       activityName: "Weekly Heroic Strike"
@@ -2245,6 +2599,9 @@ export const DestinyActivityDefinition = {
     },
     1443271657: {
       activityName: "Crimson Doubles"
+    },
+    1443570903: {
+      activityName: "Iron Banner Mayhem Clash"
     },
     1448094960: {
       activityName: "The Dungeons"
@@ -2432,11 +2789,23 @@ export const DestinyActivityDefinition = {
     1856964953: {
       activityName: "A Guardian Rises"
     },
+    1882836298: {
+      activityName: "The Wakening"
+    },
     1889399773: {
       activityName: "Weekly Nightfall Strike"
     },
+    1912940269: {
+      activityName: "Restoration"
+    },
+    1917735347: {
+      activityName: "Winter's Run"
+    },
     1918823817: {
       activityName: "The Undying Mind"
+    },
+    1924778540: {
+      activityName: "The Ruling House"
     },
     1940432142: {
       activityName: "Exclusion Zone"
@@ -2495,6 +2864,9 @@ export const DestinyActivityDefinition = {
     2095588685: {
       activityName: "The Will of Crota"
     },
+    2105028197: {
+      activityName: "Echo Chamber"
+    },
     2129294976: {
       activityName: "The Dark Within"
     },
@@ -2521,6 +2893,9 @@ export const DestinyActivityDefinition = {
     },
     2198347919: {
       activityName: "Tower"
+    },
+    2200634811: {
+      activityName: "Siege of the Warmind"
     },
     2201622127: {
       activityName: "Challenge of the Elders"
@@ -2555,6 +2930,9 @@ export const DestinyActivityDefinition = {
     2268273279: {
       activityName: "Sepiks Perfected"
     },
+    2270816053: {
+      activityName: "Queen's Ransom"
+    },
     2270968444: {
       activityName: "Weekly Heroic Strike"
     },
@@ -2584,6 +2962,9 @@ export const DestinyActivityDefinition = {
     },
     2321224098: {
       activityName: "A Stranger's Call"
+    },
+    2324706853: {
+      activityName: "Crota's End"
     },
     2326253031: {
       activityName: "Skolas's Revenge"
@@ -2618,8 +2999,17 @@ export const DestinyActivityDefinition = {
     2374186202: {
       activityName: "Inferno Control"
     },
+    2374784693: {
+      activityName: "Scourge of Winter"
+    },
     2374899718: {
       activityName: "The Shadow Thief"
+    },
+    2375659247: {
+      activityName: "Challenge of the Elders"
+    },
+    2380726447: {
+      activityName: "The Dreadnaught"
     },
     2381859905: {
       activityName: "The Shadow Thief"
@@ -2669,6 +3059,9 @@ export const DestinyActivityDefinition = {
     2474598319: {
       activityName: "Patrol Venus"
     },
+    2486047606: {
+      activityName: "The Black Garden"
+    },
     2488292787: {
       activityName: "Freelance 3v3"
     },
@@ -2710,6 +3103,9 @@ export const DestinyActivityDefinition = {
     },
     2604992012: {
       activityName: "Lost to Light"
+    },
+    2605106985: {
+      activityName: "A Rising Tide"
     },
     2616429373: {
       activityName: "Fear's Embrace"
@@ -2765,8 +3161,14 @@ export const DestinyActivityDefinition = {
     2680821721: {
       activityName: "The Cauldron"
     },
+    2693077237: {
+      activityName: "Vanguard Nightfall"
+    },
     2695324124: {
       activityName: "Blighted Chalice"
+    },
+    2697160954: {
+      activityName: "Age of Triumph"
     },
     2697969178: {
       activityName: "Weekly Nightfall Strike"
@@ -2846,8 +3248,14 @@ export const DestinyActivityDefinition = {
     2873833515: {
       activityName: "The Sunless Cell"
     },
+    2873913519: {
+      activityName: "The Warmind"
+    },
     2877811433: {
       activityName: "Mayhem Rumble"
+    },
+    2895301046: {
+      activityName: "Exclusion Zone"
     },
     2896357417: {
       activityName: "Winter's Run"
@@ -2858,6 +3266,9 @@ export const DestinyActivityDefinition = {
     2897641944: {
       activityName: "Blighted Chalice"
     },
+    2910883293: {
+      activityName: "Last Rites"
+    },
     2918909691: {
       activityName: "Summoner's Circle"
     },
@@ -2866,6 +3277,9 @@ export const DestinyActivityDefinition = {
     },
     2931947534: {
       activityName: "A Kell Rising"
+    },
+    2938090611: {
+      activityName: "The Coming War"
     },
     2938118424: {
       activityName: "The Undying Mind"
@@ -2888,8 +3302,14 @@ export const DestinyActivityDefinition = {
     2989915775: {
       activityName: "The Undying Mind"
     },
+    3005484445: {
+      activityName: "The Promethean Code"
+    },
     3010573436: {
       activityName: "The Shadow Thief"
+    },
+    3011954788: {
+      activityName: "Download Complete"
     },
     3025411906: {
       activityName: "The Archon-Slayer"
@@ -2897,11 +3317,26 @@ export const DestinyActivityDefinition = {
     3027976182: {
       activityName: "Shield Brothers"
     },
+    3030879879: {
+      activityName: "The Wretched Eye"
+    },
     3041179010: {
       activityName: "Cerberus Vae III"
     },
     3044479892: {
       activityName: "The Shadow Thief"
+    },
+    3047788493: {
+      activityName: "Dust Palace"
+    },
+    3047788494: {
+      activityName: "Cerberus Vae III"
+    },
+    3047788495: {
+      activityName: "The Undying Mind"
+    },
+    3051527960: {
+      activityName: "The Sunless Cell"
     },
     3053288711: {
       activityName: "Floating Gardens"
@@ -2978,11 +3413,23 @@ export const DestinyActivityDefinition = {
     3183184449: {
       activityName: "Shield Brothers"
     },
+    3187607216: {
+      activityName: "The Undying Mind"
+    },
     3190434637: {
       activityName: "The Dreadnaught"
     },
+    3192378548: {
+      activityName: "The Dark Beyond"
+    },
+    3196929644: {
+      activityName: "The Abomination Heist"
+    },
     3200293401: {
       activityName: "Enemy of My Enemy"
+    },
+    3207122440: {
+      activityName: "The Archive"
     },
     3209623958: {
       activityName: "Weekly Nightfall Strike"
@@ -2996,6 +3443,9 @@ export const DestinyActivityDefinition = {
     3234259779: {
       activityName: "Trials of Osiris"
     },
+    3242509473: {
+      activityName: "The Will of Crota"
+    },
     3252534714: {
       activityName: "Doubles"
     },
@@ -3004,6 +3454,9 @@ export const DestinyActivityDefinition = {
     },
     3277621970: {
       activityName: "The Timekeeper"
+    },
+    3277929848: {
+      activityName: "Shield Brothers"
     },
     3292305209: {
       activityName: "Winter's Run"
@@ -3029,13 +3482,22 @@ export const DestinyActivityDefinition = {
     3343503784: {
       activityName: "Blighted Chalice"
     },
+    3345352981: {
+      activityName: "Ritual of Sacrifice"
+    },
     3346215145: {
       activityName: "The Lighthouse"
     },
     3349918649: {
       activityName: "The Dreadnaught"
     },
+    3356249023: {
+      activityName: "Wrath of the Machine"
+    },
     3373044013: {
+      activityName: "Blighted Chalice"
+    },
+    3384143875: {
       activityName: "Blighted Chalice"
     },
     3392709953: {
@@ -3155,6 +3617,9 @@ export const DestinyActivityDefinition = {
     3582451805: {
       activityName: "The Shadow Thief"
     },
+    3582577776: {
+      activityName: "The Silent Fang"
+    },
     3593950004: {
       activityName: "Destiny Credits"
     },
@@ -3182,8 +3647,14 @@ export const DestinyActivityDefinition = {
     3645919501: {
       activityName: "Patrol Cosmodrome"
     },
+    3650545911: {
+      activityName: "Wolves' Gambit"
+    },
     3670262295: {
       activityName: "Trials of Osiris"
+    },
+    3670861271: {
+      activityName: "Enemy of My Enemy"
     },
     3670968271: {
       activityName: "The Will of Crota"
@@ -3239,6 +3710,9 @@ export const DestinyActivityDefinition = {
     3743955707: {
       activityName: "Tower"
     },
+    3750289192: {
+      activityName: "Fist of Crota"
+    },
     3778091466: {
       activityName: "Download Complete"
     },
@@ -3251,11 +3725,17 @@ export const DestinyActivityDefinition = {
     3817155567: {
       activityName: "Twilight Gap"
     },
+    3837170670: {
+      activityName: "The World's Grave"
+    },
     3842976518: {
       activityName: "The Sunless Cell"
     },
     3848655103: {
       activityName: "Black Shield"
+    },
+    3856562046: {
+      activityName: "Lost to Light"
     },
     3856604751: {
       activityName: "First Light"
@@ -3275,6 +3755,9 @@ export const DestinyActivityDefinition = {
     3918359338: {
       activityName: "Icarus"
     },
+    3920061741: {
+      activityName: "Shrine of Oryx"
+    },
     3921931055: {
       activityName: "The Will of Crota"
     },
@@ -3293,8 +3776,17 @@ export const DestinyActivityDefinition = {
     3974631085: {
       activityName: "Enemy of My Enemy"
     },
+    3978884648: {
+      activityName: "King's Fall"
+    },
+    4000873610: {
+      activityName: "Crota's End"
+    },
     4027720491: {
       activityName: "Shield Brothers"
+    },
+    4038697181: {
+      activityName: "Vault of Glass"
     },
     4046346128: {
       activityName: "Fear's Embrace"
@@ -3332,6 +3824,12 @@ export const DestinyActivityDefinition = {
     4131978369: {
       activityName: "The Abomination Heist"
     },
+    4141063459: {
+      activityName: "The Shadow Thief"
+    },
+    4153423016: {
+      activityName: "Challenge of the Elders"
+    },
     4163254808: {
       activityName: "Shores of Time"
     },
@@ -3349,6 +3847,12 @@ export const DestinyActivityDefinition = {
     },
     4175179546: {
       activityName: "Weekly Heroic Strike"
+    },
+    4178645458: {
+      activityName: "The Buried City"
+    },
+    4181273223: {
+      activityName: "Fallen S.A.B.E.R."
     },
     4183157062: {
       activityName: "Last Rites"
@@ -3412,11 +3916,29 @@ export const DestinyActivityDefinition = {
     },
   },
   es: {
+    8055542: {
+      activityName: "Una brecha en la muralla"
+    },
+    9885984: {
+      activityName: "Cámara de la Noche"
+    },
+    10551956: {
+      activityName: "El rey de la montaña"
+    },
     18715720: {
       activityName: "El rey de la montaña"
     },
+    24471896: {
+      activityName: "Marte y Venus"
+    },
+    24471899: {
+      activityName: "Tierra y Luna"
+    },
     28695277: {
       activityName: "La Espada de Crota"
+    },
+    34205302: {
+      activityName: "El Nexo"
     },
     34327100: {
       activityName: "S.A.B.E.R. caído"
@@ -3465,6 +3987,9 @@ export const DestinyActivityDefinition = {
     },
     130631058: {
       activityName: "Clásico 3c3"
+    },
+    134979141: {
+      activityName: "La última antena"
     },
     149381097: {
       activityName: "Patrulla la Luna"
@@ -3535,6 +4060,9 @@ export const DestinyActivityDefinition = {
     269981320: {
       activityName: "El código de Prometeo"
     },
+    278763462: {
+      activityName: "Palacio de Polvo"
+    },
     279121234: {
       activityName: "El rey de la montaña"
     },
@@ -3586,6 +4114,9 @@ export const DestinyActivityDefinition = {
     386157877: {
       activityName: "Hermanos Escudo"
     },
+    389785553: {
+      activityName: "Campeones de la Oscuridad"
+    },
     403726672: {
       activityName: "Asalto heroico semanal"
     },
@@ -3598,8 +4129,17 @@ export const DestinyActivityDefinition = {
     406972773: {
       activityName: "El rapto de la abominación"
     },
+    410347507: {
+      activityName: "El Ladrón de Sombras"
+    },
+    425614025: {
+      activityName: "Los Señores de Hierro"
+    },
     428290721: {
       activityName: "Patrulla Marte"
+    },
+    430160982: {
+      activityName: "La furia de las máquinas"
     },
     430914016: {
       activityName: "La Cripta de Hierro"
@@ -3646,6 +4186,9 @@ export const DestinyActivityDefinition = {
     547981568: {
       activityName: "Supremacía Estandarte de Hierro"
     },
+    550186563: {
+      activityName: "Un kell creciente"
+    },
     572368820: {
       activityName: "Asalto de Ocaso semanal"
     },
@@ -3669,6 +4212,9 @@ export const DestinyActivityDefinition = {
     },
     581858107: {
       activityName: "La Aurora"
+    },
+    603968817: {
+      activityName: "Cerberus Vae III"
     },
     604017503: {
       activityName: "El Presidio de los Ancianos: Poseídos"
@@ -3709,6 +4255,12 @@ export const DestinyActivityDefinition = {
     711826167: {
       activityName: "Enfrentamiento infernal"
     },
+    719193800: {
+      activityName: "Carrera de Invierno"
+    },
+    719193803: {
+      activityName: "El Nexo"
+    },
     746864299: {
       activityName: "Dobles infernal"
     },
@@ -3721,11 +4273,14 @@ export const DestinyActivityDefinition = {
     782611196: {
       activityName: "Escaramuza infernal"
     },
+    820688209: {
+      activityName: "Sepiks Perfeccionado"
+    },
     826836846: {
       activityName: "El abominable ojo"
     },
     832576952: {
-      activityName: "Clasificado"
+      activityName: "S.A.B.E.R. caído"
     },
     833873053: {
       activityName: "La mente imperecedera"
@@ -3733,11 +4288,17 @@ export const DestinyActivityDefinition = {
     836641517: {
       activityName: "El ojo de un celador"
     },
+    853468393: {
+      activityName: "Colectivo de Ishtar"
+    },
     853774317: {
       activityName: "La guerra que se avecina"
     },
     854130400: {
       activityName: "El asedio al Estratega"
+    },
+    856898338: {
+      activityName: "Cámara de Cristal"
     },
     860566204: {
       activityName: "El Faro"
@@ -3750,6 +4311,21 @@ export const DestinyActivityDefinition = {
     },
     892266083: {
       activityName: "La Torre"
+    },
+    902875868: {
+      activityName: "La espira del Jardín"
+    },
+    906989597: {
+      activityName: "Los Fosos de Invocación"
+    },
+    932731386: {
+      activityName: "Alijo de Cayde"
+    },
+    940573734: {
+      activityName: "La Oscuridad interior"
+    },
+    944638962: {
+      activityName: "El ojo de un celador"
     },
     981644933: {
       activityName: "Atado por el fuego"
@@ -3781,6 +4357,9 @@ export const DestinyActivityDefinition = {
     1016116686: {
       activityName: "La mente imperecedera"
     },
+    1016659723: {
+      activityName: "Caída del Rey"
+    },
     1017714251: {
       activityName: "Últimos ritos"
     },
@@ -3811,6 +4390,9 @@ export const DestinyActivityDefinition = {
     1068261034: {
       activityName: "Sangre en el Jardín"
     },
+    1075348150: {
+      activityName: "Era de Triunfo"
+    },
     1080191247: {
       activityName: "Azote del Invierno"
     },
@@ -3822,6 +4404,15 @@ export const DestinyActivityDefinition = {
     },
     1112015031: {
       activityName: "La resurrección"
+    },
+    1116149777: {
+      activityName: "Regicidio"
+    },
+    1117274478: {
+      activityName: "Guerra de los poseídos"
+    },
+    1122783186: {
+      activityName: "La Cripta de Hierro"
     },
     1126759626: {
       activityName: "Cámara del Eco"
@@ -3862,6 +4453,9 @@ export const DestinyActivityDefinition = {
     1234230734: {
       activityName: "Patrulla la Luna"
     },
+    1259153650: {
+      activityName: "La llamada de una desconocida"
+    },
     1288347893: {
       activityName: "Supremacía Disputa"
     },
@@ -3870,6 +4464,9 @@ export const DestinyActivityDefinition = {
     },
     1293005540: {
       activityName: "Ocaso de Vanguardia"
+    },
+    1296112978: {
+      activityName: "Tierras Pestíferas"
     },
     1309514270: {
       activityName: "Ardid de Lobos"
@@ -3889,11 +4486,20 @@ export const DestinyActivityDefinition = {
     1378430574: {
       activityName: "Eliminación infernal"
     },
+    1379511171: {
+      activityName: "La Espada de Crota"
+    },
     1387993552: {
       activityName: "La furia de las máquinas"
     },
     1390160729: {
       activityName: "Puesto de Vesta"
+    },
+    1398209073: {
+      activityName: "Guarida de los Demonios"
+    },
+    1398209074: {
+      activityName: "La voluntad de Crota"
     },
     1398976305: {
       activityName: "Asalto heroico semanal"
@@ -3951,6 +4557,9 @@ export const DestinyActivityDefinition = {
     },
     1443271657: {
       activityName: "Dobles Escarlata"
+    },
+    1443570903: {
+      activityName: "Enfrentamiento Caos: Estandarte de Hierro"
     },
     1448094960: {
       activityName: "Las mazmorras"
@@ -4138,11 +4747,23 @@ export const DestinyActivityDefinition = {
     1856964953: {
       activityName: "Un guardián se alza"
     },
+    1882836298: {
+      activityName: "La resurrección"
+    },
     1889399773: {
       activityName: "Asalto de Ocaso semanal"
     },
+    1912940269: {
+      activityName: "Restauración"
+    },
+    1917735347: {
+      activityName: "Carrera de Invierno"
+    },
     1918823817: {
       activityName: "La mente imperecedera"
+    },
+    1924778540: {
+      activityName: "La Casa reinante"
     },
     1940432142: {
       activityName: "Zona de exclusión"
@@ -4201,6 +4822,9 @@ export const DestinyActivityDefinition = {
     2095588685: {
       activityName: "La voluntad de Crota"
     },
+    2105028197: {
+      activityName: "Cámara del Eco"
+    },
     2129294976: {
       activityName: "La Oscuridad interior"
     },
@@ -4227,6 +4851,9 @@ export const DestinyActivityDefinition = {
     },
     2198347919: {
       activityName: "La Torre"
+    },
+    2200634811: {
+      activityName: "El asedio al Estratega"
     },
     2201622127: {
       activityName: "Desafío de los Ancianos"
@@ -4261,6 +4888,9 @@ export const DestinyActivityDefinition = {
     2268273279: {
       activityName: "Sepiks Perfeccionado"
     },
+    2270816053: {
+      activityName: "Rescate de la Reina"
+    },
     2270968444: {
       activityName: "Asalto heroico semanal"
     },
@@ -4290,6 +4920,9 @@ export const DestinyActivityDefinition = {
     },
     2321224098: {
       activityName: "La llamada de una desconocida"
+    },
+    2324706853: {
+      activityName: "El fin de Crota"
     },
     2326253031: {
       activityName: "La venganza de Skolas"
@@ -4324,8 +4957,17 @@ export const DestinyActivityDefinition = {
     2374186202: {
       activityName: "Control infernal"
     },
+    2374784693: {
+      activityName: "Azote del Invierno"
+    },
     2374899718: {
       activityName: "El ladrón de sombras"
+    },
+    2375659247: {
+      activityName: "Desafío de los Ancianos"
+    },
+    2380726447: {
+      activityName: "El Acorazado"
     },
     2381859905: {
       activityName: "El ladrón de sombras"
@@ -4375,6 +5017,9 @@ export const DestinyActivityDefinition = {
     2474598319: {
       activityName: "Patrulla Venus"
     },
+    2486047606: {
+      activityName: "El Jardín Negro"
+    },
     2488292787: {
       activityName: "Por libre 3c3"
     },
@@ -4416,6 +5061,9 @@ export const DestinyActivityDefinition = {
     },
     2604992012: {
       activityName: "Perder la Luz"
+    },
+    2605106985: {
+      activityName: "La marea creciente"
     },
     2616429373: {
       activityName: "El abrazo del miedo"
@@ -4471,8 +5119,14 @@ export const DestinyActivityDefinition = {
     2680821721: {
       activityName: "La Caldera"
     },
+    2693077237: {
+      activityName: "Ocaso de Vanguardia"
+    },
     2695324124: {
       activityName: "Cáliz plagado"
+    },
+    2697160954: {
+      activityName: "Era de Triunfo"
     },
     2697969178: {
       activityName: "Asalto de Ocaso semanal"
@@ -4552,8 +5206,14 @@ export const DestinyActivityDefinition = {
     2873833515: {
       activityName: "La Celda sin Sol"
     },
+    2873913519: {
+      activityName: "El Estratega"
+    },
     2877811433: {
       activityName: "Disputa Caos"
+    },
+    2895301046: {
+      activityName: "Zona de exclusión"
     },
     2896357417: {
       activityName: "Carrera de Invierno"
@@ -4564,6 +5224,9 @@ export const DestinyActivityDefinition = {
     2897641944: {
       activityName: "Cáliz plagado"
     },
+    2910883293: {
+      activityName: "Últimos ritos"
+    },
     2918909691: {
       activityName: "Círculo del invocador"
     },
@@ -4572,6 +5235,9 @@ export const DestinyActivityDefinition = {
     },
     2931947534: {
       activityName: "Un kell creciente"
+    },
+    2938090611: {
+      activityName: "La guerra que se avecina"
     },
     2938118424: {
       activityName: "La mente imperecedera"
@@ -4594,8 +5260,14 @@ export const DestinyActivityDefinition = {
     2989915775: {
       activityName: "La mente imperecedera"
     },
+    3005484445: {
+      activityName: "El código de Prometeo"
+    },
     3010573436: {
       activityName: "El ladrón de sombras"
+    },
+    3011954788: {
+      activityName: "Descarga completada"
     },
     3025411906: {
       activityName: "El mata-arcontes"
@@ -4603,11 +5275,26 @@ export const DestinyActivityDefinition = {
     3027976182: {
       activityName: "Hermanos Escudo"
     },
+    3030879879: {
+      activityName: "El abominable ojo"
+    },
     3041179010: {
       activityName: "Cerberus Vae III"
     },
     3044479892: {
       activityName: "El Ladrón de Sombras"
+    },
+    3047788493: {
+      activityName: "Palacio de Polvo"
+    },
+    3047788494: {
+      activityName: "Cerberus Vae III"
+    },
+    3047788495: {
+      activityName: "La mente imperecedera"
+    },
+    3051527960: {
+      activityName: "La Celda sin Sol"
     },
     3053288711: {
       activityName: "Jardines Colgantes"
@@ -4684,11 +5371,23 @@ export const DestinyActivityDefinition = {
     3183184449: {
       activityName: "Hermanos Escudo"
     },
+    3187607216: {
+      activityName: "La mente imperecedera"
+    },
     3190434637: {
       activityName: "El Acorazado"
     },
+    3192378548: {
+      activityName: "La Oscuridad exterior"
+    },
+    3196929644: {
+      activityName: "El rapto de la abominación"
+    },
     3200293401: {
       activityName: "El enemigo de mi enemigo..."
+    },
+    3207122440: {
+      activityName: "El Archivo"
     },
     3209623958: {
       activityName: "Asalto de Ocaso semanal"
@@ -4702,6 +5401,9 @@ export const DestinyActivityDefinition = {
     3234259779: {
       activityName: "Las Pruebas de Osiris"
     },
+    3242509473: {
+      activityName: "La voluntad de Crota"
+    },
     3252534714: {
       activityName: "Dobles"
     },
@@ -4710,6 +5412,9 @@ export const DestinyActivityDefinition = {
     },
     3277621970: {
       activityName: "La Atalaya del Tiempo"
+    },
+    3277929848: {
+      activityName: "Hermanos Escudo"
     },
     3292305209: {
       activityName: "Carrera de Invierno"
@@ -4735,13 +5440,22 @@ export const DestinyActivityDefinition = {
     3343503784: {
       activityName: "Cáliz plagado"
     },
+    3345352981: {
+      activityName: "Ritual de sacrificio"
+    },
     3346215145: {
       activityName: "El Faro"
     },
     3349918649: {
       activityName: "El Acorazado"
     },
+    3356249023: {
+      activityName: "La furia de las máquinas"
+    },
     3373044013: {
+      activityName: "Cáliz plagado"
+    },
+    3384143875: {
       activityName: "Cáliz plagado"
     },
     3392709953: {
@@ -4861,6 +5575,9 @@ export const DestinyActivityDefinition = {
     3582451805: {
       activityName: "El ladrón de sombras"
     },
+    3582577776: {
+      activityName: "Los Colmillos Silenciosos"
+    },
     3593950004: {
       activityName: "Créditos de Destiny"
     },
@@ -4888,8 +5605,14 @@ export const DestinyActivityDefinition = {
     3645919501: {
       activityName: "Patrulla el Cosmódromo"
     },
+    3650545911: {
+      activityName: "Ardid de Lobos"
+    },
     3670262295: {
       activityName: "Las Pruebas de Osiris"
+    },
+    3670861271: {
+      activityName: "El enemigo de mi enemigo..."
     },
     3670968271: {
       activityName: "La voluntad de Crota"
@@ -4945,6 +5668,9 @@ export const DestinyActivityDefinition = {
     3743955707: {
       activityName: "La Torre"
     },
+    3750289192: {
+      activityName: "El Puño de Crota"
+    },
     3778091466: {
       activityName: "Descarga completada"
     },
@@ -4957,11 +5683,17 @@ export const DestinyActivityDefinition = {
     3817155567: {
       activityName: "Grieta del Crepúsculo"
     },
+    3837170670: {
+      activityName: "La Tumba del Mundo"
+    },
     3842976518: {
       activityName: "La Celda sin Sol"
     },
     3848655103: {
       activityName: "Escudo Negro"
+    },
+    3856562046: {
+      activityName: "Perder la Luz"
     },
     3856604751: {
       activityName: "Amanecer"
@@ -4981,6 +5713,9 @@ export const DestinyActivityDefinition = {
     3918359338: {
       activityName: "Ícaro"
     },
+    3920061741: {
+      activityName: "Santuario de Oryx"
+    },
     3921931055: {
       activityName: "La voluntad de Crota"
     },
@@ -4999,8 +5734,17 @@ export const DestinyActivityDefinition = {
     3974631085: {
       activityName: "El enemigo de mi enemigo..."
     },
+    3978884648: {
+      activityName: "Caída del Rey"
+    },
+    4000873610: {
+      activityName: "El fin de Crota"
+    },
     4027720491: {
       activityName: "Hermanos Escudo"
+    },
+    4038697181: {
+      activityName: "Cámara de Cristal"
     },
     4046346128: {
       activityName: "El abrazo del miedo"
@@ -5038,6 +5782,12 @@ export const DestinyActivityDefinition = {
     4131978369: {
       activityName: "El rapto de la abominación"
     },
+    4141063459: {
+      activityName: "El ladrón de sombras"
+    },
+    4153423016: {
+      activityName: "Desafío de los Ancianos"
+    },
     4163254808: {
       activityName: "Riberas del Tiempo"
     },
@@ -5055,6 +5805,12 @@ export const DestinyActivityDefinition = {
     },
     4175179546: {
       activityName: "Asalto heroico semanal"
+    },
+    4178645458: {
+      activityName: "La Ciudad Sepultada"
+    },
+    4181273223: {
+      activityName: "S.A.B.E.R. caído"
     },
     4183157062: {
       activityName: "Últimos ritos"
@@ -5118,11 +5874,29 @@ export const DestinyActivityDefinition = {
     },
   },
   fr: {
+    8055542: {
+      activityName: "La chute du Mur"
+    },
+    9885984: {
+      activityName: "La Caverne de la nuit"
+    },
+    10551956: {
+      activityName: "Combat au sommet"
+    },
     18715720: {
       activityName: "Combat au sommet"
     },
+    24471896: {
+      activityName: "Mars et Vénus"
+    },
+    24471899: {
+      activityName: "Terre et Lune"
+    },
     28695277: {
       activityName: "L'Épée de Cropta"
+    },
+    34205302: {
+      activityName: "Le Nexus"
     },
     34327100: {
       activityName: "S.A.B.R.E. déchu"
@@ -5171,6 +5945,9 @@ export const DestinyActivityDefinition = {
     },
     130631058: {
       activityName: "Classique – 3c3"
+    },
+    134979141: {
+      activityName: "Le dernier relais"
     },
     149381097: {
       activityName: "Explorez la Lune"
@@ -5241,6 +6018,9 @@ export const DestinyActivityDefinition = {
     269981320: {
       activityName: "Le code prométhéen"
     },
+    278763462: {
+      activityName: "Le Palais délabré"
+    },
     279121234: {
       activityName: "Combat au sommet"
     },
@@ -5292,6 +6072,9 @@ export const DestinyActivityDefinition = {
     386157877: {
       activityName: "Les Frères au bouclier"
     },
+    389785553: {
+      activityName: "Les Champions des Ténèbres"
+    },
     403726672: {
       activityName: "Assaut « Épique » de la semaine"
     },
@@ -5304,8 +6087,17 @@ export const DestinyActivityDefinition = {
     406972773: {
       activityName: "L'abomination détournée"
     },
+    410347507: {
+      activityName: "Le Voleur obscur"
+    },
+    425614025: {
+      activityName: "Les Seigneurs de Fer"
+    },
     428290721: {
       activityName: "Explorez Mars"
+    },
+    430160982: {
+      activityName: "Fureur mécanique"
     },
     430914016: {
       activityName: "Le Tombeau de Fer"
@@ -5352,6 +6144,9 @@ export const DestinyActivityDefinition = {
     547981568: {
       activityName: "Bannière de Fer – Suprématie"
     },
+    550186563: {
+      activityName: "L'avènement d'un Kall"
+    },
     572368820: {
       activityName: "Assaut « Nuit noire » de la semaine"
     },
@@ -5375,6 +6170,9 @@ export const DestinyActivityDefinition = {
     },
     581858107: {
       activityName: "L'Avènement"
+    },
+    603968817: {
+      activityName: "Cerberus Vae III"
     },
     604017503: {
       activityName: "Prison des vétérans : Corrompus"
@@ -5415,6 +6213,12 @@ export const DestinyActivityDefinition = {
     711826167: {
       activityName: "Infernal – Choc"
     },
+    719193800: {
+      activityName: "L'Enclos de l'Hiver"
+    },
+    719193803: {
+      activityName: "Le Nexus"
+    },
     746864299: {
       activityName: "Infernal – En tandem"
     },
@@ -5427,11 +6231,14 @@ export const DestinyActivityDefinition = {
     782611196: {
       activityName: "Infernal – Escarmouche"
     },
+    820688209: {
+      activityName: "Sepiks Parfait"
+    },
     826836846: {
       activityName: "Mauvais œil"
     },
     832576952: {
-      activityName: "Confidentiel"
+      activityName: "S.A.B.R.E. déchu"
     },
     833873053: {
       activityName: "L'Esprit éternel"
@@ -5439,11 +6246,17 @@ export const DestinyActivityDefinition = {
     836641517: {
       activityName: "L'Œil du Maître des clés"
     },
+    853468393: {
+      activityName: "Le Collectif d'Ishtar"
+    },
     853774317: {
       activityName: "La guerre à venir"
     },
     854130400: {
       activityName: "Le Siège de l'Esprit tutélaire"
+    },
+    856898338: {
+      activityName: "Le Caveau de verre"
     },
     860566204: {
       activityName: "Le Phare"
@@ -5456,6 +6269,21 @@ export const DestinyActivityDefinition = {
     },
     892266083: {
       activityName: "La Tour"
+    },
+    902875868: {
+      activityName: "La Flèche du Jardin"
+    },
+    906989597: {
+      activityName: "Les Fosses de l'invocation"
+    },
+    932731386: {
+      activityName: "La cachette de Cayde"
+    },
+    940573734: {
+      activityName: "Les Ténèbres intérieures"
+    },
+    944638962: {
+      activityName: "L'Œil du Maître des clés"
     },
     981644933: {
       activityName: "L'union par le feu"
@@ -5487,6 +6315,9 @@ export const DestinyActivityDefinition = {
     1016116686: {
       activityName: "L'Esprit éternel"
     },
+    1016659723: {
+      activityName: "La Chute du roi"
+    },
     1017714251: {
       activityName: "Ultimes rites"
     },
@@ -5517,6 +6348,9 @@ export const DestinyActivityDefinition = {
     1068261034: {
       activityName: "Un Jardin ensanglanté"
     },
+    1075348150: {
+      activityName: "Âge du triomphe"
+    },
     1080191247: {
       activityName: "Le Fléau de l'Hiver"
     },
@@ -5528,6 +6362,15 @@ export const DestinyActivityDefinition = {
     },
     1112015031: {
       activityName: "L'Éveil"
+    },
+    1116149777: {
+      activityName: "Régicide"
+    },
+    1117274478: {
+      activityName: "La guerre contre les Corrompus"
+    },
+    1122783186: {
+      activityName: "Le Tombeau de Fer"
     },
     1126759626: {
       activityName: "La Chambre de l'Écho"
@@ -5568,6 +6411,9 @@ export const DestinyActivityDefinition = {
     1234230734: {
       activityName: "Patrouille sur la Lune"
     },
+    1259153650: {
+      activityName: "L'appel de l'inconnue"
+    },
     1288347893: {
       activityName: "Carnage – Suprématie"
     },
@@ -5576,6 +6422,9 @@ export const DestinyActivityDefinition = {
     },
     1293005540: {
       activityName: "« Nuit noire » de l'Avant-garde"
+    },
+    1296112978: {
+      activityName: "La Contrée infestée"
     },
     1309514270: {
       activityName: "La manœuvre des Loups"
@@ -5595,11 +6444,20 @@ export const DestinyActivityDefinition = {
     1378430574: {
       activityName: "Infernal – Élimination"
     },
+    1379511171: {
+      activityName: "L'Épée de Cropta"
+    },
     1387993552: {
       activityName: "Fureur mécanique"
     },
     1390160729: {
       activityName: "Avant-poste de Vesta"
+    },
+    1398209073: {
+      activityName: "Le Repaire des Diables"
+    },
+    1398209074: {
+      activityName: "La Volonté de Cropta"
     },
     1398976305: {
       activityName: "Assaut « Épique » de la semaine"
@@ -5657,6 +6515,9 @@ export const DestinyActivityDefinition = {
     },
     1443271657: {
       activityName: "En tandem garancé"
+    },
+    1443570903: {
+      activityName: "Bannière de Fer – Pagaille – Choc"
     },
     1448094960: {
       activityName: "Les Donjons"
@@ -5844,11 +6705,23 @@ export const DestinyActivityDefinition = {
     1856964953: {
       activityName: "L'avènement d'un Gardien"
     },
+    1882836298: {
+      activityName: "L'Éveil"
+    },
     1889399773: {
       activityName: "Assaut « Nuit noire » de la semaine"
     },
+    1912940269: {
+      activityName: "Remise en état"
+    },
+    1917735347: {
+      activityName: "L'Enclos de l'Hiver"
+    },
     1918823817: {
       activityName: "L'Esprit éternel"
+    },
+    1924778540: {
+      activityName: "La Maison au pouvoir"
     },
     1940432142: {
       activityName: "La zone d'exclusion"
@@ -5907,6 +6780,9 @@ export const DestinyActivityDefinition = {
     2095588685: {
       activityName: "La Volonté de Cropta"
     },
+    2105028197: {
+      activityName: "La Chambre de l'Écho"
+    },
     2129294976: {
       activityName: "Les Ténèbres intérieures"
     },
@@ -5933,6 +6809,9 @@ export const DestinyActivityDefinition = {
     },
     2198347919: {
       activityName: "La Tour"
+    },
+    2200634811: {
+      activityName: "Le Siège de l'Esprit tutélaire"
     },
     2201622127: {
       activityName: "Défi des vétérans"
@@ -5967,6 +6846,9 @@ export const DestinyActivityDefinition = {
     2268273279: {
       activityName: "Sepiks Parfait"
     },
+    2270816053: {
+      activityName: "La rançon de la Reine"
+    },
     2270968444: {
       activityName: "Assaut « Épique » de la semaine"
     },
@@ -5996,6 +6878,9 @@ export const DestinyActivityDefinition = {
     },
     2321224098: {
       activityName: "L'appel de l'inconnue"
+    },
+    2324706853: {
+      activityName: "La chute de Cropta"
     },
     2326253031: {
       activityName: "La Vengeance de Skolas"
@@ -6030,8 +6915,17 @@ export const DestinyActivityDefinition = {
     2374186202: {
       activityName: "Infernal – Domination"
     },
+    2374784693: {
+      activityName: "Le Fléau de l'Hiver"
+    },
     2374899718: {
       activityName: "Le Voleur obscur"
+    },
+    2375659247: {
+      activityName: "Défi des vétérans"
+    },
+    2380726447: {
+      activityName: "Le Cuirassé"
     },
     2381859905: {
       activityName: "Le Voleur obscur"
@@ -6081,6 +6975,9 @@ export const DestinyActivityDefinition = {
     2474598319: {
       activityName: "Explorez Vénus"
     },
+    2486047606: {
+      activityName: "Le Jardin noir"
+    },
     2488292787: {
       activityName: "Mercenaire – 3c3"
     },
@@ -6122,6 +7019,9 @@ export const DestinyActivityDefinition = {
     },
     2604992012: {
       activityName: "Aveugles à la Lumière"
+    },
+    2605106985: {
+      activityName: "Marée montante"
     },
     2616429373: {
       activityName: "Étreinte de la peur"
@@ -6177,8 +7077,14 @@ export const DestinyActivityDefinition = {
     2680821721: {
       activityName: "Le Chaudron"
     },
+    2693077237: {
+      activityName: "« Nuit noire » de l'Avant-garde"
+    },
     2695324124: {
       activityName: "Coupe infectée"
+    },
+    2697160954: {
+      activityName: "Âge du triomphe"
     },
     2697969178: {
       activityName: "Assaut « Nuit noire » de la semaine"
@@ -6258,8 +7164,14 @@ export const DestinyActivityDefinition = {
     2873833515: {
       activityName: "La Geôle ténébreuse"
     },
+    2873913519: {
+      activityName: "L'Esprit tutélaire"
+    },
     2877811433: {
       activityName: "Pagaille – Carnage"
+    },
+    2895301046: {
+      activityName: "La zone d'exclusion"
     },
     2896357417: {
       activityName: "L'Enclos de l'Hiver"
@@ -6270,6 +7182,9 @@ export const DestinyActivityDefinition = {
     2897641944: {
       activityName: "Coupe infectée"
     },
+    2910883293: {
+      activityName: "Ultimes rites"
+    },
     2918909691: {
       activityName: "Cercle d'invocation"
     },
@@ -6278,6 +7193,9 @@ export const DestinyActivityDefinition = {
     },
     2931947534: {
       activityName: "L'avènement d'un Kall"
+    },
+    2938090611: {
+      activityName: "La guerre à venir"
     },
     2938118424: {
       activityName: "L'Esprit éternel"
@@ -6300,8 +7218,14 @@ export const DestinyActivityDefinition = {
     2989915775: {
       activityName: "L'Esprit éternel"
     },
+    3005484445: {
+      activityName: "Le code prométhéen"
+    },
     3010573436: {
       activityName: "Le Voleur obscur"
+    },
+    3011954788: {
+      activityName: "Téléchargement terminé"
     },
     3025411906: {
       activityName: "Le Bourreau d'Archonte"
@@ -6309,11 +7233,26 @@ export const DestinyActivityDefinition = {
     3027976182: {
       activityName: "Les Frères au bouclier"
     },
+    3030879879: {
+      activityName: "Mauvais œil"
+    },
     3041179010: {
       activityName: "Cerberus Vae III"
     },
     3044479892: {
       activityName: "Le Voleur obscur"
+    },
+    3047788493: {
+      activityName: "Le Palais délabré"
+    },
+    3047788494: {
+      activityName: "Cerberus Vae III"
+    },
+    3047788495: {
+      activityName: "L'Esprit éternel"
+    },
+    3051527960: {
+      activityName: "La Geôle ténébreuse"
     },
     3053288711: {
       activityName: "Le Jardin suspendu"
@@ -6390,11 +7329,23 @@ export const DestinyActivityDefinition = {
     3183184449: {
       activityName: "Les Frères au bouclier"
     },
+    3187607216: {
+      activityName: "L'Esprit éternel"
+    },
     3190434637: {
       activityName: "Le Cuirassé"
     },
+    3192378548: {
+      activityName: "Les Ténèbres extérieures"
+    },
+    3196929644: {
+      activityName: "L'abomination détournée"
+    },
     3200293401: {
       activityName: "L'ennemi de mon ennemi"
+    },
+    3207122440: {
+      activityName: "Les Archives"
     },
     3209623958: {
       activityName: "Assaut « Nuit noire » de la semaine"
@@ -6408,6 +7359,9 @@ export const DestinyActivityDefinition = {
     3234259779: {
       activityName: "Jugement d'Osiris"
     },
+    3242509473: {
+      activityName: "La Volonté de Cropta"
+    },
     3252534714: {
       activityName: "En tandem"
     },
@@ -6416,6 +7370,9 @@ export const DestinyActivityDefinition = {
     },
     3277621970: {
       activityName: "La Clepsydre"
+    },
+    3277929848: {
+      activityName: "Les Frères au bouclier"
     },
     3292305209: {
       activityName: "L'Enclos de l'Hiver"
@@ -6441,13 +7398,22 @@ export const DestinyActivityDefinition = {
     3343503784: {
       activityName: "Coupe infectée"
     },
+    3345352981: {
+      activityName: "Rituel du sacrifice"
+    },
     3346215145: {
       activityName: "Le Phare"
     },
     3349918649: {
       activityName: "Le Cuirassé"
     },
+    3356249023: {
+      activityName: "Fureur mécanique"
+    },
     3373044013: {
+      activityName: "Coupe infectée"
+    },
+    3384143875: {
       activityName: "Coupe infectée"
     },
     3392709953: {
@@ -6567,6 +7533,9 @@ export const DestinyActivityDefinition = {
     3582451805: {
       activityName: "Le Voleur obscur"
     },
+    3582577776: {
+      activityName: "Les Crocs silencieux"
+    },
     3593950004: {
       activityName: "Crédits de Destiny"
     },
@@ -6594,8 +7563,14 @@ export const DestinyActivityDefinition = {
     3645919501: {
       activityName: "Explorez le Cosmodrome"
     },
+    3650545911: {
+      activityName: "La manœuvre des Loups"
+    },
     3670262295: {
       activityName: "Jugement d'Osiris"
+    },
+    3670861271: {
+      activityName: "L'ennemi de mon ennemi"
     },
     3670968271: {
       activityName: "La Volonté de Cropta"
@@ -6651,6 +7626,9 @@ export const DestinyActivityDefinition = {
     3743955707: {
       activityName: "La Tour"
     },
+    3750289192: {
+      activityName: "Le Poing de Cropta"
+    },
     3778091466: {
       activityName: "Téléchargement terminé"
     },
@@ -6663,11 +7641,17 @@ export const DestinyActivityDefinition = {
     3817155567: {
       activityName: "La Trouée du crépuscule"
     },
+    3837170670: {
+      activityName: "Le Tombeau-Monde"
+    },
     3842976518: {
       activityName: "La Geôle ténébreuse"
     },
     3848655103: {
       activityName: "Le Bouclier noir"
+    },
+    3856562046: {
+      activityName: "Aveugles à la Lumière"
     },
     3856604751: {
       activityName: "Le Point du jour"
@@ -6687,6 +7671,9 @@ export const DestinyActivityDefinition = {
     3918359338: {
       activityName: "Icare"
     },
+    3920061741: {
+      activityName: "Le Temple d'Oryx"
+    },
     3921931055: {
       activityName: "La Volonté de Cropta"
     },
@@ -6705,8 +7692,17 @@ export const DestinyActivityDefinition = {
     3974631085: {
       activityName: "L'ennemi de mon ennemi"
     },
+    3978884648: {
+      activityName: "La Chute du roi"
+    },
+    4000873610: {
+      activityName: "La chute de Cropta"
+    },
     4027720491: {
       activityName: "Les Frères au bouclier"
+    },
+    4038697181: {
+      activityName: "Le Caveau de verre"
     },
     4046346128: {
       activityName: "Étreinte de la peur"
@@ -6744,6 +7740,12 @@ export const DestinyActivityDefinition = {
     4131978369: {
       activityName: "L'abomination détournée"
     },
+    4141063459: {
+      activityName: "Le Voleur obscur"
+    },
+    4153423016: {
+      activityName: "Défi des vétérans"
+    },
     4163254808: {
       activityName: "Les Rivages du temps"
     },
@@ -6761,6 +7763,12 @@ export const DestinyActivityDefinition = {
     },
     4175179546: {
       activityName: "Assaut « Épique » de la semaine"
+    },
+    4178645458: {
+      activityName: "La Ville ensablée"
+    },
+    4181273223: {
+      activityName: "S.A.B.R.E. déchu"
     },
     4183157062: {
       activityName: "Ultimes rites"
@@ -6824,11 +7832,29 @@ export const DestinyActivityDefinition = {
     },
   },
   it: {
+    8055542: {
+      activityName: "La breccia nella Muraglia"
+    },
+    9885984: {
+      activityName: "Camera della Notte"
+    },
+    10551956: {
+      activityName: "Il re della montagna"
+    },
     18715720: {
       activityName: "Il re della montagna"
     },
+    24471896: {
+      activityName: "Marte e Venere"
+    },
+    24471899: {
+      activityName: "Terra e Luna"
+    },
     28695277: {
       activityName: "La Spada di Crota"
+    },
+    34205302: {
+      activityName: "Il Nexus"
     },
     34327100: {
       activityName: "D.A.G.A. caduta"
@@ -6877,6 +7903,9 @@ export const DestinyActivityDefinition = {
     },
     130631058: {
       activityName: "Classico: 3 contro 3"
+    },
+    134979141: {
+      activityName: "L'ultima Parabola"
     },
     149381097: {
       activityName: "Pattuglia la Luna"
@@ -6947,6 +7976,9 @@ export const DestinyActivityDefinition = {
     269981320: {
       activityName: "Il codice Prometeo"
     },
+    278763462: {
+      activityName: "Palazzo della Polvere"
+    },
     279121234: {
       activityName: "Il re della montagna"
     },
@@ -6998,6 +8030,9 @@ export const DestinyActivityDefinition = {
     386157877: {
       activityName: "Fratelli di sangue"
     },
+    389785553: {
+      activityName: "Campioni dell'Oscurità"
+    },
     403726672: {
       activityName: "Assalto Eroico Settimanale"
     },
@@ -7010,8 +8045,17 @@ export const DestinyActivityDefinition = {
     406972773: {
       activityName: "Il rapimento dell'abominio"
     },
+    410347507: {
+      activityName: "Il ladro di ombre"
+    },
+    425614025: {
+      activityName: "I Signori del Ferro"
+    },
     428290721: {
       activityName: "Pattuglia Marte"
+    },
+    430160982: {
+      activityName: "Furia meccanica"
     },
     430914016: {
       activityName: "La Tomba del Ferro"
@@ -7058,6 +8102,9 @@ export const DestinyActivityDefinition = {
     547981568: {
       activityName: "Stendardo di Ferro: Supremazia"
     },
+    550186563: {
+      activityName: "L'ascesa di un Kell"
+    },
     572368820: {
       activityName: "Assalto Cala la Notte Settimanale"
     },
@@ -7081,6 +8128,9 @@ export const DestinyActivityDefinition = {
     },
     581858107: {
       activityName: "L'Aurora"
+    },
+    603968817: {
+      activityName: "Cerberus Vae III"
     },
     604017503: {
       activityName: "Prigione degli Anziani: corrotti"
@@ -7121,6 +8171,12 @@ export const DestinyActivityDefinition = {
     711826167: {
       activityName: "Inferno: Scontro"
     },
+    719193800: {
+      activityName: "Corso d'inverno"
+    },
+    719193803: {
+      activityName: "Il Nexus"
+    },
     746864299: {
       activityName: "Inferno Doppio"
     },
@@ -7133,11 +8189,14 @@ export const DestinyActivityDefinition = {
     782611196: {
       activityName: "Inferno: Schermaglia"
     },
+    820688209: {
+      activityName: "Sepiks Perfezionato"
+    },
     826836846: {
       activityName: "L'occhio nefasto"
     },
     832576952: {
-      activityName: "Classificato"
+      activityName: "D.A.G.A. caduta"
     },
     833873053: {
       activityName: "Mente Intramontabile"
@@ -7145,11 +8204,17 @@ export const DestinyActivityDefinition = {
     836641517: {
       activityName: "Occhio di un guardiaporta"
     },
+    853468393: {
+      activityName: "Collettivo Ishtar"
+    },
     853774317: {
       activityName: "La guerra imminente"
     },
     854130400: {
       activityName: "L'assedio della mente bellica"
+    },
+    856898338: {
+      activityName: "Volta di Vetro"
     },
     860566204: {
       activityName: "Il Faro"
@@ -7162,6 +8227,21 @@ export const DestinyActivityDefinition = {
     },
     892266083: {
       activityName: "La Torre"
+    },
+    902875868: {
+      activityName: "Il pinnacolo del giardino"
+    },
+    906989597: {
+      activityName: "Le Fosse di Evocazione"
+    },
+    932731386: {
+      activityName: "Il nascondiglio di Cayde"
+    },
+    940573734: {
+      activityName: "L'oscurità dentro"
+    },
+    944638962: {
+      activityName: "Occhio di un guardiaporta"
     },
     981644933: {
       activityName: "Vincolati dal fuoco"
@@ -7193,6 +8273,9 @@ export const DestinyActivityDefinition = {
     1016116686: {
       activityName: "Mente Intramontabile"
     },
+    1016659723: {
+      activityName: "La caduta di un Re"
+    },
     1017714251: {
       activityName: "Ultimi rituali"
     },
@@ -7223,6 +8306,9 @@ export const DestinyActivityDefinition = {
     1068261034: {
       activityName: "Sangue nel Giardino"
     },
+    1075348150: {
+      activityName: "Era di Trionfo"
+    },
     1080191247: {
       activityName: "Flagello d'inverno"
     },
@@ -7234,6 +8320,15 @@ export const DestinyActivityDefinition = {
     },
     1112015031: {
       activityName: "Il risveglio"
+    },
+    1116149777: {
+      activityName: "Regicidio"
+    },
+    1117274478: {
+      activityName: "La guerra dei corrotti"
+    },
+    1122783186: {
+      activityName: "La Tomba del Ferro"
     },
     1126759626: {
       activityName: "Sala dell'Eco"
@@ -7274,6 +8369,9 @@ export const DestinyActivityDefinition = {
     1234230734: {
       activityName: "Pattuglia la Luna"
     },
+    1259153650: {
+      activityName: "La chiamata di un'Ignota"
+    },
     1288347893: {
       activityName: "Supremazia: Rissa"
     },
@@ -7282,6 +8380,9 @@ export const DestinyActivityDefinition = {
     },
     1293005540: {
       activityName: "Cala la notte dell'Avanguardia"
+    },
+    1296112978: {
+      activityName: "Le Terre Infette"
     },
     1309514270: {
       activityName: "La mossa dei Lupi"
@@ -7301,11 +8402,20 @@ export const DestinyActivityDefinition = {
     1378430574: {
       activityName: "Inferno: Eliminazione"
     },
+    1379511171: {
+      activityName: "La Spada di Crota"
+    },
     1387993552: {
       activityName: "Furia meccanica"
     },
     1390160729: {
       activityName: "Avamposto Vestiano"
+    },
+    1398209073: {
+      activityName: "La Tana dei Diavoli"
+    },
+    1398209074: {
+      activityName: "La Volontà di Crota"
     },
     1398976305: {
       activityName: "Assalto Eroico Settimanale"
@@ -7363,6 +8473,9 @@ export const DestinyActivityDefinition = {
     },
     1443271657: {
       activityName: "Doppietta Scarlatta"
+    },
+    1443570903: {
+      activityName: "Stendardo di Ferro Pandemonio: Scontro"
     },
     1448094960: {
       activityName: "I Sotterranei"
@@ -7550,11 +8663,23 @@ export const DestinyActivityDefinition = {
     1856964953: {
       activityName: "L'ascesa dei guardiani"
     },
+    1882836298: {
+      activityName: "Il risveglio"
+    },
     1889399773: {
       activityName: "Assalto Cala la Notte Settimanale"
     },
+    1912940269: {
+      activityName: "Recupero"
+    },
+    1917735347: {
+      activityName: "Corso d'inverno"
+    },
     1918823817: {
       activityName: "Mente Intramontabile"
+    },
+    1924778540: {
+      activityName: "Il Casato dominante"
     },
     1940432142: {
       activityName: "Zona d'interdizione"
@@ -7613,6 +8738,9 @@ export const DestinyActivityDefinition = {
     2095588685: {
       activityName: "La Volontà di Crota"
     },
+    2105028197: {
+      activityName: "Sala dell'Eco"
+    },
     2129294976: {
       activityName: "L'oscurità dentro"
     },
@@ -7639,6 +8767,9 @@ export const DestinyActivityDefinition = {
     },
     2198347919: {
       activityName: "La Torre"
+    },
+    2200634811: {
+      activityName: "L'assedio della mente bellica"
     },
     2201622127: {
       activityName: "Sfida degli Anziani"
@@ -7673,6 +8804,9 @@ export const DestinyActivityDefinition = {
     2268273279: {
       activityName: "Sepiks Perfezionato"
     },
+    2270816053: {
+      activityName: "Il riscatto della Regina"
+    },
     2270968444: {
       activityName: "Assalto Eroico Settimanale"
     },
@@ -7702,6 +8836,9 @@ export const DestinyActivityDefinition = {
     },
     2321224098: {
       activityName: "La chiamata di un'Ignota"
+    },
+    2324706853: {
+      activityName: "La fine di Crota"
     },
     2326253031: {
       activityName: "La vendetta di Skolas"
@@ -7736,8 +8873,17 @@ export const DestinyActivityDefinition = {
     2374186202: {
       activityName: "Inferno: Controllo"
     },
+    2374784693: {
+      activityName: "Flagello d'inverno"
+    },
     2374899718: {
       activityName: "Il ladro di ombre"
+    },
+    2375659247: {
+      activityName: "Sfida degli Anziani"
+    },
+    2380726447: {
+      activityName: "L'Astrocorazzata"
     },
     2381859905: {
       activityName: "Il ladro di ombre"
@@ -7787,6 +8933,9 @@ export const DestinyActivityDefinition = {
     2474598319: {
       activityName: "Pattuglia Venere"
     },
+    2486047606: {
+      activityName: "Il Giardino Nero"
+    },
     2488292787: {
       activityName: "Lupi solitari: 3 contro 3"
     },
@@ -7828,6 +8977,9 @@ export const DestinyActivityDefinition = {
     },
     2604992012: {
       activityName: "Perdere la Luce"
+    },
+    2605106985: {
+      activityName: "Un'onda si alza"
     },
     2616429373: {
       activityName: "La stretta della paura"
@@ -7883,8 +9035,14 @@ export const DestinyActivityDefinition = {
     2680821721: {
       activityName: "Il Calderone"
     },
+    2693077237: {
+      activityName: "Cala la notte dell'Avanguardia"
+    },
     2695324124: {
       activityName: "Calice corrotto"
+    },
+    2697160954: {
+      activityName: "Era di Trionfo"
     },
     2697969178: {
       activityName: "Assalto Cala la Notte Settimanale"
@@ -7964,8 +9122,14 @@ export const DestinyActivityDefinition = {
     2873833515: {
       activityName: "La Cella Senza Sole"
     },
+    2873913519: {
+      activityName: "La mente bellica"
+    },
     2877811433: {
       activityName: "Pandemonio: Rissa"
+    },
+    2895301046: {
+      activityName: "Zona d'interdizione"
     },
     2896357417: {
       activityName: "Corso d'inverno"
@@ -7976,6 +9140,9 @@ export const DestinyActivityDefinition = {
     2897641944: {
       activityName: "Calice corrotto"
     },
+    2910883293: {
+      activityName: "Ultimi rituali"
+    },
     2918909691: {
       activityName: "Circolo dell'evocazione"
     },
@@ -7984,6 +9151,9 @@ export const DestinyActivityDefinition = {
     },
     2931947534: {
       activityName: "L'ascesa di un Kell"
+    },
+    2938090611: {
+      activityName: "La guerra imminente"
     },
     2938118424: {
       activityName: "Mente Intramontabile"
@@ -8006,8 +9176,14 @@ export const DestinyActivityDefinition = {
     2989915775: {
       activityName: "Mente Intramontabile"
     },
+    3005484445: {
+      activityName: "Il codice Prometeo"
+    },
     3010573436: {
       activityName: "Il ladro di ombre"
+    },
+    3011954788: {
+      activityName: "Download completato"
     },
     3025411906: {
       activityName: "Il Macellarconti"
@@ -8015,11 +9191,26 @@ export const DestinyActivityDefinition = {
     3027976182: {
       activityName: "Fratelli di sangue"
     },
+    3030879879: {
+      activityName: "L'occhio nefasto"
+    },
     3041179010: {
       activityName: "Cerberus Vae III"
     },
     3044479892: {
       activityName: "Il ladro di ombre"
+    },
+    3047788493: {
+      activityName: "Palazzo della Polvere"
+    },
+    3047788494: {
+      activityName: "Cerberus Vae III"
+    },
+    3047788495: {
+      activityName: "Mente Intramontabile"
+    },
+    3051527960: {
+      activityName: "La Cella Senza Sole"
     },
     3053288711: {
       activityName: "Giardini Pensili"
@@ -8096,11 +9287,23 @@ export const DestinyActivityDefinition = {
     3183184449: {
       activityName: "Fratelli di sangue"
     },
+    3187607216: {
+      activityName: "Mente Intramontabile"
+    },
     3190434637: {
       activityName: "L'Astrocorazzata"
     },
+    3192378548: {
+      activityName: "L'oscurità oltre"
+    },
+    3196929644: {
+      activityName: "Il rapimento dell'abominio"
+    },
     3200293401: {
       activityName: "Il nemico del mio nemico"
+    },
+    3207122440: {
+      activityName: "L'Archivio"
     },
     3209623958: {
       activityName: "Assalto Cala la Notte Settimanale"
@@ -8114,6 +9317,9 @@ export const DestinyActivityDefinition = {
     3234259779: {
       activityName: "Prove di Osiride"
     },
+    3242509473: {
+      activityName: "La Volontà di Crota"
+    },
     3252534714: {
       activityName: "Doppietta"
     },
@@ -8122,6 +9328,9 @@ export const DestinyActivityDefinition = {
     },
     3277621970: {
       activityName: "Il Rilevatore Temporale"
+    },
+    3277929848: {
+      activityName: "Fratelli di sangue"
     },
     3292305209: {
       activityName: "Corso d'inverno"
@@ -8147,13 +9356,22 @@ export const DestinyActivityDefinition = {
     3343503784: {
       activityName: "Calice corrotto"
     },
+    3345352981: {
+      activityName: "Rituale del sacrificio"
+    },
     3346215145: {
       activityName: "Il Faro"
     },
     3349918649: {
       activityName: "L'Astrocorazzata"
     },
+    3356249023: {
+      activityName: "Furia meccanica"
+    },
     3373044013: {
+      activityName: "Calice corrotto"
+    },
+    3384143875: {
       activityName: "Calice corrotto"
     },
     3392709953: {
@@ -8273,6 +9491,9 @@ export const DestinyActivityDefinition = {
     3582451805: {
       activityName: "Il ladro di ombre"
     },
+    3582577776: {
+      activityName: "La Zanna Silente"
+    },
     3593950004: {
       activityName: "Riconoscimenti di Destiny"
     },
@@ -8300,8 +9521,14 @@ export const DestinyActivityDefinition = {
     3645919501: {
       activityName: "Pattuglia il Cosmodromo"
     },
+    3650545911: {
+      activityName: "La mossa dei Lupi"
+    },
     3670262295: {
       activityName: "Prove di Osiride"
+    },
+    3670861271: {
+      activityName: "Il nemico del mio nemico"
     },
     3670968271: {
       activityName: "La Volontà di Crota"
@@ -8357,6 +9584,9 @@ export const DestinyActivityDefinition = {
     3743955707: {
       activityName: "La Torre"
     },
+    3750289192: {
+      activityName: "Pugno di Crota"
+    },
     3778091466: {
       activityName: "Download completato"
     },
@@ -8369,11 +9599,17 @@ export const DestinyActivityDefinition = {
     3817155567: {
       activityName: "Breccia del Crepuscolo"
     },
+    3837170670: {
+      activityName: "La Tomba del Mondo"
+    },
     3842976518: {
       activityName: "La Cella Senza Sole"
     },
     3848655103: {
       activityName: "Scudo Nero"
+    },
+    3856562046: {
+      activityName: "Perdere la Luce"
     },
     3856604751: {
       activityName: "Prima Luce"
@@ -8393,6 +9629,9 @@ export const DestinyActivityDefinition = {
     3918359338: {
       activityName: "Icaro"
     },
+    3920061741: {
+      activityName: "Altare di Oryx"
+    },
     3921931055: {
       activityName: "La Volontà di Crota"
     },
@@ -8411,8 +9650,17 @@ export const DestinyActivityDefinition = {
     3974631085: {
       activityName: "Il nemico del mio nemico"
     },
+    3978884648: {
+      activityName: "La caduta di un Re"
+    },
+    4000873610: {
+      activityName: "La fine di Crota"
+    },
     4027720491: {
       activityName: "Fratelli di sangue"
+    },
+    4038697181: {
+      activityName: "Volta di Vetro"
     },
     4046346128: {
       activityName: "La stretta della paura"
@@ -8450,6 +9698,12 @@ export const DestinyActivityDefinition = {
     4131978369: {
       activityName: "Il rapimento dell'abominio"
     },
+    4141063459: {
+      activityName: "Il ladro di ombre"
+    },
+    4153423016: {
+      activityName: "Sfida degli Anziani"
+    },
     4163254808: {
       activityName: "Sponde del Tempo"
     },
@@ -8467,6 +9721,12 @@ export const DestinyActivityDefinition = {
     },
     4175179546: {
       activityName: "Assalto Eroico Settimanale"
+    },
+    4178645458: {
+      activityName: "La Città Sepolta"
+    },
+    4181273223: {
+      activityName: "D.A.G.A. caduta"
     },
     4183157062: {
       activityName: "Ultimi rituali"
@@ -8530,11 +9790,29 @@ export const DestinyActivityDefinition = {
     },
   },
   ja: {
+    8055542: {
+      activityName: "破られた防壁"
+    },
+    9885984: {
+      activityName: "夜の間"
+    },
+    10551956: {
+      activityName: "山の王者"
+    },
     18715720: {
       activityName: "山の王者"
     },
+    24471896: {
+      activityName: "火星と金星"
+    },
+    24471899: {
+      activityName: "地球と月"
+    },
     28695277: {
       activityName: "クロタの剣"
+    },
+    34205302: {
+      activityName: "ネクサス"
     },
     34327100: {
       activityName: "フォールン・サーベル"
@@ -8583,6 +9861,9 @@ export const DestinyActivityDefinition = {
     },
     130631058: {
       activityName: "クラシック: 3対3"
+    },
+    134979141: {
+      activityName: "ラストアレイ"
     },
     149381097: {
       activityName: "月をパトロール"
@@ -8653,6 +9934,9 @@ export const DestinyActivityDefinition = {
     269981320: {
       activityName: "プロメテウス・コード"
     },
+    278763462: {
+      activityName: "塵の宮殿"
+    },
     279121234: {
       activityName: "山の王者"
     },
@@ -8704,6 +9988,9 @@ export const DestinyActivityDefinition = {
     386157877: {
       activityName: "シールドを操る双頭"
     },
+    389785553: {
+      activityName: "暗黒の強戦士"
+    },
     403726672: {
       activityName: "週間英雄ストライク"
     },
@@ -8716,8 +10003,17 @@ export const DestinyActivityDefinition = {
     406972773: {
       activityName: "変異体の強奪"
     },
+    410347507: {
+      activityName: "影に生きる盗賊"
+    },
+    425614025: {
+      activityName: "鉄の豪傑"
+    },
     428290721: {
       activityName: "火星をパトロール"
+    },
+    430160982: {
+      activityName: "機械の天罰"
     },
     430914016: {
       activityName: "鉄の墓"
@@ -8764,6 +10060,9 @@ export const DestinyActivityDefinition = {
     547981568: {
       activityName: "アイアンバナー: 闘魂"
     },
+    550186563: {
+      activityName: "陰謀のケル"
+    },
     572368820: {
       activityName: "週間ナイトフォールストライク"
     },
@@ -8787,6 +10086,9 @@ export const DestinyActivityDefinition = {
     },
     581858107: {
       activityName: "暁旦"
+    },
+    603968817: {
+      activityName: "ケルベロス・バエIII"
     },
     604017503: {
       activityName: "エルダーズ・プリズン: 宿られた者"
@@ -8827,6 +10129,12 @@ export const DestinyActivityDefinition = {
     711826167: {
       activityName: "インフェルノ: クラッシュ"
     },
+    719193800: {
+      activityName: "ウィンター・ラン"
+    },
+    719193803: {
+      activityName: "ネクサス"
+    },
     746864299: {
       activityName: "インフェルノ: ダブル"
     },
@@ -8839,11 +10147,14 @@ export const DestinyActivityDefinition = {
     782611196: {
       activityName: "インフェルノ: スカーミッシュ"
     },
+    820688209: {
+      activityName: "完成形セピックス"
+    },
     826836846: {
       activityName: "哀れな目"
     },
     832576952: {
-      activityName: "機密"
+      activityName: "フォールン・サーベル"
     },
     833873053: {
       activityName: "不滅のマインド"
@@ -8851,11 +10162,17 @@ export const DestinyActivityDefinition = {
     836641517: {
       activityName: "ゲートロードの目"
     },
+    853468393: {
+      activityName: "イシュタルコレクティブ"
+    },
     853774317: {
       activityName: "前触れ"
     },
     854130400: {
       activityName: "苦境のウォーマインド"
+    },
+    856898338: {
+      activityName: "ガラスの間"
     },
     860566204: {
       activityName: "ライトハウス"
@@ -8868,6 +10185,21 @@ export const DestinyActivityDefinition = {
     },
     892266083: {
       activityName: "タワー"
+    },
+    902875868: {
+      activityName: "ガーデン・スパイア"
+    },
+    906989597: {
+      activityName: "サモニングピット"
+    },
+    932731386: {
+      activityName: "ケイド6の探し物"
+    },
+    940573734: {
+      activityName: "内なる暗黒"
+    },
+    944638962: {
+      activityName: "ゲートロードの目"
     },
     981644933: {
       activityName: "炎の束縛"
@@ -8899,6 +10231,9 @@ export const DestinyActivityDefinition = {
     1016116686: {
       activityName: "不滅のマインド"
     },
+    1016659723: {
+      activityName: "邪神、滅びる"
+    },
     1017714251: {
       activityName: "最後の儀式"
     },
@@ -8929,6 +10264,9 @@ export const DestinyActivityDefinition = {
     1068261034: {
       activityName: "ガーデンの血"
     },
+    1075348150: {
+      activityName: "勝利の時代"
+    },
     1080191247: {
       activityName: "ウィンターの災難"
     },
@@ -8940,6 +10278,15 @@ export const DestinyActivityDefinition = {
     },
     1112015031: {
       activityName: "目覚めの時"
+    },
+    1116149777: {
+      activityName: "神殺し"
+    },
+    1117274478: {
+      activityName: "宿られし軍との戦い"
+    },
+    1122783186: {
+      activityName: "鉄の墓"
     },
     1126759626: {
       activityName: "残響の間"
@@ -8980,6 +10327,9 @@ export const DestinyActivityDefinition = {
     1234230734: {
       activityName: "月をパトロールする"
     },
+    1259153650: {
+      activityName: "謎の人物からの連絡"
+    },
     1288347893: {
       activityName: "ランブル: 闘魂"
     },
@@ -8988,6 +10338,9 @@ export const DestinyActivityDefinition = {
     },
     1293005540: {
       activityName: "バンガードのナイトフォール"
+    },
+    1296112978: {
+      activityName: "災いの地"
     },
     1309514270: {
       activityName: "ウルブズの策略"
@@ -9007,11 +10360,20 @@ export const DestinyActivityDefinition = {
     1378430574: {
       activityName: "インフェルノ: サバイバル"
     },
+    1379511171: {
+      activityName: "クロタの剣"
+    },
     1387993552: {
       activityName: "機械の天罰"
     },
     1390160729: {
       activityName: "ベスタ基地"
+    },
+    1398209073: {
+      activityName: "デビルズ・レイヤー"
+    },
+    1398209074: {
+      activityName: "クロタの意思"
     },
     1398976305: {
       activityName: "週間英雄ストライク"
@@ -9069,6 +10431,9 @@ export const DestinyActivityDefinition = {
     },
     1443271657: {
       activityName: "真紅ダブル"
+    },
+    1443570903: {
+      activityName: "アイアンバナー: カオス・クラッシュ"
     },
     1448094960: {
       activityName: "ダンジョン"
@@ -9256,11 +10621,23 @@ export const DestinyActivityDefinition = {
     1856964953: {
       activityName: "立ち上がるガーディアン"
     },
+    1882836298: {
+      activityName: "目覚めの時"
+    },
     1889399773: {
       activityName: "週間ナイトフォールストライク"
     },
+    1912940269: {
+      activityName: "復旧"
+    },
+    1917735347: {
+      activityName: "ウィンター・ラン"
+    },
     1918823817: {
       activityName: "不滅のマインド"
+    },
+    1924778540: {
+      activityName: "君臨するハウス"
     },
     1940432142: {
       activityName: "排他エリア"
@@ -9319,6 +10696,9 @@ export const DestinyActivityDefinition = {
     2095588685: {
       activityName: "クロタの意思"
     },
+    2105028197: {
+      activityName: "残響の間"
+    },
     2129294976: {
       activityName: "内なる暗黒"
     },
@@ -9345,6 +10725,9 @@ export const DestinyActivityDefinition = {
     },
     2198347919: {
       activityName: "タワー"
+    },
+    2200634811: {
+      activityName: "苦境のウォーマインド"
     },
     2201622127: {
       activityName: "エルダーの挑戦"
@@ -9379,6 +10762,9 @@ export const DestinyActivityDefinition = {
     2268273279: {
       activityName: "完成形セピックス"
     },
+    2270816053: {
+      activityName: "女王の獲物"
+    },
     2270968444: {
       activityName: "週間英雄ストライク"
     },
@@ -9408,6 +10794,9 @@ export const DestinyActivityDefinition = {
     },
     2321224098: {
       activityName: "謎の人物からの連絡"
+    },
+    2324706853: {
+      activityName: "クロタの最期"
     },
     2326253031: {
       activityName: "スコラスの逆襲"
@@ -9442,8 +10831,17 @@ export const DestinyActivityDefinition = {
     2374186202: {
       activityName: "インフェルノ: コントロール"
     },
+    2374784693: {
+      activityName: "ウィンターの災難"
+    },
     2374899718: {
       activityName: "影に生きる盗賊"
+    },
+    2375659247: {
+      activityName: "エルダーの挑戦"
+    },
+    2380726447: {
+      activityName: "ドレッドノート"
     },
     2381859905: {
       activityName: "影に生きる盗賊"
@@ -9493,6 +10891,9 @@ export const DestinyActivityDefinition = {
     2474598319: {
       activityName: "金星をパトロール"
     },
+    2486047606: {
+      activityName: "ブラックガーデン"
+    },
     2488292787: {
       activityName: "フリーランス: 3対3"
     },
@@ -9534,6 +10935,9 @@ export const DestinyActivityDefinition = {
     },
     2604992012: {
       activityName: "光の後に"
+    },
+    2605106985: {
+      activityName: "敵地への襲撃"
     },
     2616429373: {
       activityName: "恐怖の抱擁"
@@ -9589,8 +10993,14 @@ export const DestinyActivityDefinition = {
     2680821721: {
       activityName: "コルドロン"
     },
+    2693077237: {
+      activityName: "バンガードのナイトフォール"
+    },
     2695324124: {
       activityName: "汚染された聖杯"
+    },
+    2697160954: {
+      activityName: "勝利の時代"
     },
     2697969178: {
       activityName: "週間ナイトフォールストライク"
@@ -9670,8 +11080,14 @@ export const DestinyActivityDefinition = {
     2873833515: {
       activityName: "太陽の当たらない独房"
     },
+    2873913519: {
+      activityName: "ウォーマインド"
+    },
     2877811433: {
       activityName: "カオス: ランブル"
+    },
+    2895301046: {
+      activityName: "排他エリア"
     },
     2896357417: {
       activityName: "ウィンター・ラン"
@@ -9682,6 +11098,9 @@ export const DestinyActivityDefinition = {
     2897641944: {
       activityName: "汚染された聖杯"
     },
+    2910883293: {
+      activityName: "最後の儀式"
+    },
     2918909691: {
       activityName: "召喚者のサークル"
     },
@@ -9690,6 +11109,9 @@ export const DestinyActivityDefinition = {
     },
     2931947534: {
       activityName: "陰謀のケル"
+    },
+    2938090611: {
+      activityName: "前触れ"
     },
     2938118424: {
       activityName: "不滅のマインド"
@@ -9712,8 +11134,14 @@ export const DestinyActivityDefinition = {
     2989915775: {
       activityName: "不滅のマインド"
     },
+    3005484445: {
+      activityName: "プロメテウス・コード"
+    },
     3010573436: {
       activityName: "影に生きる盗賊"
+    },
+    3011954788: {
+      activityName: "ダウンロード完了"
     },
     3025411906: {
       activityName: "アルコンスレイヤー"
@@ -9721,11 +11149,26 @@ export const DestinyActivityDefinition = {
     3027976182: {
       activityName: "シールドを操る双頭"
     },
+    3030879879: {
+      activityName: "哀れな目"
+    },
     3041179010: {
       activityName: "ケルベロス・バエIII"
     },
     3044479892: {
       activityName: "影に生きる盗賊"
+    },
+    3047788493: {
+      activityName: "塵の宮殿"
+    },
+    3047788494: {
+      activityName: "ケルベロス・バエIII"
+    },
+    3047788495: {
+      activityName: "不滅のマインド"
+    },
+    3051527960: {
+      activityName: "太陽の当たらない独房"
     },
     3053288711: {
       activityName: "浮遊庭園"
@@ -9802,11 +11245,23 @@ export const DestinyActivityDefinition = {
     3183184449: {
       activityName: "シールドを操る双頭"
     },
+    3187607216: {
+      activityName: "不滅のマインド"
+    },
     3190434637: {
       activityName: "ドレッドノート"
     },
+    3192378548: {
+      activityName: "遥かなる暗黒"
+    },
+    3196929644: {
+      activityName: "変異体の強奪"
+    },
     3200293401: {
       activityName: "我が敵の敵"
+    },
+    3207122440: {
+      activityName: "アーカイブ"
     },
     3209623958: {
       activityName: "週間ナイトフォールストライク"
@@ -9820,6 +11275,9 @@ export const DestinyActivityDefinition = {
     3234259779: {
       activityName: "オシリスの試練"
     },
+    3242509473: {
+      activityName: "クロタの意思"
+    },
     3252534714: {
       activityName: "ダブル"
     },
@@ -9828,6 +11286,9 @@ export const DestinyActivityDefinition = {
     },
     3277621970: {
       activityName: "時の番人"
+    },
+    3277929848: {
+      activityName: "シールドを操る双頭"
     },
     3292305209: {
       activityName: "ウィンター・ラン"
@@ -9853,13 +11314,22 @@ export const DestinyActivityDefinition = {
     3343503784: {
       activityName: "汚染された聖杯"
     },
+    3345352981: {
+      activityName: "生贄の儀式"
+    },
     3346215145: {
       activityName: "ライトハウス"
     },
     3349918649: {
       activityName: "ドレッドノート"
     },
+    3356249023: {
+      activityName: "機械の天罰"
+    },
     3373044013: {
+      activityName: "汚染された聖杯"
+    },
+    3384143875: {
       activityName: "汚染された聖杯"
     },
     3392709953: {
@@ -9979,6 +11449,9 @@ export const DestinyActivityDefinition = {
     3582451805: {
       activityName: "影に生きる盗賊"
     },
+    3582577776: {
+      activityName: "サイレント・ファング"
+    },
     3593950004: {
       activityName: "クレジット"
     },
@@ -10006,8 +11479,14 @@ export const DestinyActivityDefinition = {
     3645919501: {
       activityName: "コスモドロームをパトロール"
     },
+    3650545911: {
+      activityName: "ウルブズの策略"
+    },
     3670262295: {
       activityName: "オシリスの試練"
+    },
+    3670861271: {
+      activityName: "我が敵の敵"
     },
     3670968271: {
       activityName: "クロタの意思"
@@ -10063,6 +11542,9 @@ export const DestinyActivityDefinition = {
     3743955707: {
       activityName: "タワー"
     },
+    3750289192: {
+      activityName: "クロタフィスト"
+    },
     3778091466: {
       activityName: "ダウンロード完了"
     },
@@ -10075,11 +11557,17 @@ export const DestinyActivityDefinition = {
     3817155567: {
       activityName: "トワイライトギャップ"
     },
+    3837170670: {
+      activityName: "ワールドグレイブ"
+    },
     3842976518: {
       activityName: "太陽の当たらない独房"
     },
     3848655103: {
       activityName: "ブラックシールド"
+    },
+    3856562046: {
+      activityName: "光の後に"
     },
     3856604751: {
       activityName: "曙光"
@@ -10099,6 +11587,9 @@ export const DestinyActivityDefinition = {
     3918359338: {
       activityName: "イカロス"
     },
+    3920061741: {
+      activityName: "オリックスの神殿"
+    },
     3921931055: {
       activityName: "クロタの意思"
     },
@@ -10117,8 +11608,17 @@ export const DestinyActivityDefinition = {
     3974631085: {
       activityName: "我が敵の敵"
     },
+    3978884648: {
+      activityName: "邪神、滅びる"
+    },
+    4000873610: {
+      activityName: "クロタの最期"
+    },
     4027720491: {
       activityName: "シールドを操る双頭"
+    },
+    4038697181: {
+      activityName: "ガラスの間"
     },
     4046346128: {
       activityName: "恐怖の抱擁"
@@ -10156,6 +11656,12 @@ export const DestinyActivityDefinition = {
     4131978369: {
       activityName: "変異体の強奪"
     },
+    4141063459: {
+      activityName: "影に生きる盗賊"
+    },
+    4153423016: {
+      activityName: "エルダーの挑戦"
+    },
     4163254808: {
       activityName: "時の海岸"
     },
@@ -10173,6 +11679,12 @@ export const DestinyActivityDefinition = {
     },
     4175179546: {
       activityName: "週間英雄ストライク"
+    },
+    4178645458: {
+      activityName: "埋もれた都市"
+    },
+    4181273223: {
+      activityName: "フォールン・サーベル"
     },
     4183157062: {
       activityName: "最後の儀式"
@@ -10236,11 +11748,29 @@ export const DestinyActivityDefinition = {
     },
   },
   ptbr: {
+    8055542: {
+      activityName: "As muralhas ruem"
+    },
+    9885984: {
+      activityName: "Câmara da Noite"
+    },
+    10551956: {
+      activityName: "Rei da montanha"
+    },
     18715720: {
       activityName: "Rei da montanha"
     },
+    24471896: {
+      activityName: "Marte e Vênus"
+    },
+    24471899: {
+      activityName: "Terra e Lua"
+    },
     28695277: {
       activityName: "A Espada de Crota"
+    },
+    34205302: {
+      activityName: "O Nexo"
     },
     34327100: {
       activityName: "S.A.B.R.E. Decaído"
@@ -10289,6 +11819,9 @@ export const DestinyActivityDefinition = {
     },
     130631058: {
       activityName: "3v3 Clássico"
+    },
+    134979141: {
+      activityName: "A Última Matriz"
     },
     149381097: {
       activityName: "Patrulhe a Lua"
@@ -10359,6 +11892,9 @@ export const DestinyActivityDefinition = {
     269981320: {
       activityName: "O código de Prometeu"
     },
+    278763462: {
+      activityName: "Palácio das Areias"
+    },
     279121234: {
       activityName: "Rei da montanha"
     },
@@ -10410,6 +11946,9 @@ export const DestinyActivityDefinition = {
     386157877: {
       activityName: "Irmãos Escudeiros"
     },
+    389785553: {
+      activityName: "Campeões Sombrios"
+    },
     403726672: {
       activityName: "Assalto Heróico Semanal"
     },
@@ -10422,8 +11961,17 @@ export const DestinyActivityDefinition = {
     406972773: {
       activityName: "O Golpe à Abominação"
     },
+    410347507: {
+      activityName: "O Ladrão das Sombras"
+    },
+    425614025: {
+      activityName: "Os Senhores do Ferro"
+    },
     428290721: {
       activityName: "Patrulhe Marte"
+    },
+    430160982: {
+      activityName: "A ira da máquina"
     },
     430914016: {
       activityName: "O Túmulo de Ferro"
@@ -10470,6 +12018,9 @@ export const DestinyActivityDefinition = {
     547981568: {
       activityName: "Bandeira de Ferro: Supremacia"
     },
+    550186563: {
+      activityName: "Um Kell em ascensão"
+    },
     572368820: {
       activityName: "Assalto do Anoitecer Semanal"
     },
@@ -10493,6 +12044,9 @@ export const DestinyActivityDefinition = {
     },
     581858107: {
       activityName: "A Alvorada"
+    },
+    603968817: {
+      activityName: "Cerberus Vae III"
     },
     604017503: {
       activityName: "Prisão dos Anciões: Possuídos"
@@ -10533,6 +12087,12 @@ export const DestinyActivityDefinition = {
     711826167: {
       activityName: "Inferno: Enfrentamento"
     },
+    719193800: {
+      activityName: "Caminho Invernal"
+    },
+    719193803: {
+      activityName: "O Nexo"
+    },
     746864299: {
       activityName: "Inferno: Duplas"
     },
@@ -10545,11 +12105,14 @@ export const DestinyActivityDefinition = {
     782611196: {
       activityName: "Inferno: Disputa"
     },
+    820688209: {
+      activityName: "Sepiks Aperfeiçoado"
+    },
     826836846: {
       activityName: "O Olho Maldito"
     },
     832576952: {
-      activityName: "Acesso restrito"
+      activityName: "S.A.B.R.E. Decaído"
     },
     833873053: {
       activityName: "A Mente Imortal"
@@ -10557,11 +12120,17 @@ export const DestinyActivityDefinition = {
     836641517: {
       activityName: "Olho de um Senhor do Portal"
     },
+    853468393: {
+      activityName: "Cooperativa Ishtar"
+    },
     853774317: {
       activityName: "A guerra por vir"
     },
     854130400: {
       activityName: "Cerco da Mente Bélica"
+    },
+    856898338: {
+      activityName: "Câmara de Cristal"
     },
     860566204: {
       activityName: "O Farol"
@@ -10574,6 +12143,21 @@ export const DestinyActivityDefinition = {
     },
     892266083: {
       activityName: "Torre"
+    },
+    902875868: {
+      activityName: "A Espira do Jardim"
+    },
+    906989597: {
+      activityName: "O Precipício da Convocação"
+    },
+    932731386: {
+      activityName: "O depósito de Cayde"
+    },
+    940573734: {
+      activityName: "A Escuridão Interior"
+    },
+    944638962: {
+      activityName: "Olho de um Senhor do Portal"
     },
     981644933: {
       activityName: "União de fogo"
@@ -10605,6 +12189,9 @@ export const DestinyActivityDefinition = {
     1016116686: {
       activityName: "A Mente Imortal"
     },
+    1016659723: {
+      activityName: "A Queda do Rei"
+    },
     1017714251: {
       activityName: "Rituais Finais"
     },
@@ -10635,6 +12222,9 @@ export const DestinyActivityDefinition = {
     1068261034: {
       activityName: "Sangue no jardim"
     },
+    1075348150: {
+      activityName: "Era do Triunfo"
+    },
     1080191247: {
       activityName: "Sofrimento Invernal"
     },
@@ -10646,6 +12236,15 @@ export const DestinyActivityDefinition = {
     },
     1112015031: {
       activityName: "A Invocação"
+    },
+    1116149777: {
+      activityName: "Regicídio"
+    },
+    1117274478: {
+      activityName: "A Guerra dos Possuídos"
+    },
+    1122783186: {
+      activityName: "O Túmulo de Ferro"
     },
     1126759626: {
       activityName: "Câmara do Eco"
@@ -10686,6 +12285,9 @@ export const DestinyActivityDefinition = {
     1234230734: {
       activityName: "Patrulhe a Lua"
     },
+    1259153650: {
+      activityName: "O Chamado de uma Estranha"
+    },
     1288347893: {
       activityName: "Briga: Supremacia"
     },
@@ -10694,6 +12296,9 @@ export const DestinyActivityDefinition = {
     },
     1293005540: {
       activityName: "Anoitecer da Vanguarda"
+    },
+    1296112978: {
+      activityName: "As Terras Pestíferas"
     },
     1309514270: {
       activityName: "Jogada dos Lobos"
@@ -10713,11 +12318,20 @@ export const DestinyActivityDefinition = {
     1378430574: {
       activityName: "Inferno: Eliminação"
     },
+    1379511171: {
+      activityName: "A Espada de Crota"
+    },
     1387993552: {
       activityName: "A ira da máquina"
     },
     1390160729: {
       activityName: "Posto de Vesta"
+    },
+    1398209073: {
+      activityName: "O Covil dos Demônios"
+    },
+    1398209074: {
+      activityName: "A Vontade de Crota"
     },
     1398976305: {
       activityName: "Assalto Heróico Semanal"
@@ -10775,6 +12389,9 @@ export const DestinyActivityDefinition = {
     },
     1443271657: {
       activityName: "Duplas Carmesins"
+    },
+    1443570903: {
+      activityName: "Bandeira de Ferro – Caos: Enfrentamento"
     },
     1448094960: {
       activityName: "As Masmorras"
@@ -10962,11 +12579,23 @@ export const DestinyActivityDefinition = {
     1856964953: {
       activityName: "O Nascimento de um Guardião"
     },
+    1882836298: {
+      activityName: "A Invocação"
+    },
     1889399773: {
       activityName: "Assalto do Anoitecer Semanal"
     },
+    1912940269: {
+      activityName: "Restauração"
+    },
+    1917735347: {
+      activityName: "Caminho Invernal"
+    },
     1918823817: {
       activityName: "A Mente Imortal"
+    },
+    1924778540: {
+      activityName: "A Casa Governante"
     },
     1940432142: {
       activityName: "Zona de Exclusão"
@@ -11025,6 +12654,9 @@ export const DestinyActivityDefinition = {
     2095588685: {
       activityName: "A Vontade de Crota"
     },
+    2105028197: {
+      activityName: "Câmara do Eco"
+    },
     2129294976: {
       activityName: "A Escuridão Interior"
     },
@@ -11051,6 +12683,9 @@ export const DestinyActivityDefinition = {
     },
     2198347919: {
       activityName: "Torre"
+    },
+    2200634811: {
+      activityName: "Cerco da Mente Bélica"
     },
     2201622127: {
       activityName: "Desafio dos Anciões"
@@ -11085,6 +12720,9 @@ export const DestinyActivityDefinition = {
     2268273279: {
       activityName: "Sepiks Aperfeiçoado"
     },
+    2270816053: {
+      activityName: "Refém da Rainha"
+    },
     2270968444: {
       activityName: "Assalto Heróico Semanal"
     },
@@ -11114,6 +12752,9 @@ export const DestinyActivityDefinition = {
     },
     2321224098: {
       activityName: "O Chamado de uma Estranha"
+    },
+    2324706853: {
+      activityName: "O Fim de Crota"
     },
     2326253031: {
       activityName: "Vingança de Skolas"
@@ -11148,8 +12789,17 @@ export const DestinyActivityDefinition = {
     2374186202: {
       activityName: "Inferno: Controle"
     },
+    2374784693: {
+      activityName: "Sofrimento Invernal"
+    },
     2374899718: {
       activityName: "O Ladrão das Sombras"
+    },
+    2375659247: {
+      activityName: "Desafio dos Anciões"
+    },
+    2380726447: {
+      activityName: "O Encouraçado"
     },
     2381859905: {
       activityName: "O Ladrão das Sombras"
@@ -11199,6 +12849,9 @@ export const DestinyActivityDefinition = {
     2474598319: {
       activityName: "Patrulhe Vênus"
     },
+    2486047606: {
+      activityName: "O Jardim Sombrio"
+    },
     2488292787: {
       activityName: "3v3 Autônomo"
     },
@@ -11240,6 +12893,9 @@ export const DestinyActivityDefinition = {
     },
     2604992012: {
       activityName: "Dominado pela Luz"
+    },
+    2605106985: {
+      activityName: "Uma Maré Ascendente"
     },
     2616429373: {
       activityName: "Abraço do medo"
@@ -11295,8 +12951,14 @@ export const DestinyActivityDefinition = {
     2680821721: {
       activityName: "O Caldeirão"
     },
+    2693077237: {
+      activityName: "Anoitecer da Vanguarda"
+    },
     2695324124: {
       activityName: "Cálice Maculado"
+    },
+    2697160954: {
+      activityName: "Era do Triunfo"
     },
     2697969178: {
       activityName: "Assalto do Anoitecer Semanal"
@@ -11376,8 +13038,14 @@ export const DestinyActivityDefinition = {
     2873833515: {
       activityName: "A Cela Sem Sol"
     },
+    2873913519: {
+      activityName: "A Mente Bélica"
+    },
     2877811433: {
       activityName: "Caos: Briga"
+    },
+    2895301046: {
+      activityName: "Zona de Exclusão"
     },
     2896357417: {
       activityName: "Caminho Invernal"
@@ -11388,6 +13056,9 @@ export const DestinyActivityDefinition = {
     2897641944: {
       activityName: "Cálice Maculado"
     },
+    2910883293: {
+      activityName: "Rituais Finais"
+    },
     2918909691: {
       activityName: "Círculo do Invocador"
     },
@@ -11396,6 +13067,9 @@ export const DestinyActivityDefinition = {
     },
     2931947534: {
       activityName: "Um Kell em ascensão"
+    },
+    2938090611: {
+      activityName: "A guerra por vir"
     },
     2938118424: {
       activityName: "A Mente Imortal"
@@ -11418,8 +13092,14 @@ export const DestinyActivityDefinition = {
     2989915775: {
       activityName: "A Mente Imortal"
     },
+    3005484445: {
+      activityName: "O código de Prometeu"
+    },
     3010573436: {
       activityName: "O Ladrão das Sombras"
+    },
+    3011954788: {
+      activityName: "Download concluído"
     },
     3025411906: {
       activityName: "O Caçador de Arcontes"
@@ -11427,11 +13107,26 @@ export const DestinyActivityDefinition = {
     3027976182: {
       activityName: "Irmãos Escudeiros"
     },
+    3030879879: {
+      activityName: "O Olho Maldito"
+    },
     3041179010: {
       activityName: "Cerberus Vae III"
     },
     3044479892: {
       activityName: "O Ladrão das Sombras"
+    },
+    3047788493: {
+      activityName: "Palácio das Areias"
+    },
+    3047788494: {
+      activityName: "Cerberus Vae III"
+    },
+    3047788495: {
+      activityName: "A Mente Imortal"
+    },
+    3051527960: {
+      activityName: "A Cela Sem Sol"
     },
     3053288711: {
       activityName: "Jardins Suspensos"
@@ -11508,11 +13203,23 @@ export const DestinyActivityDefinition = {
     3183184449: {
       activityName: "Irmãos Escudeiros"
     },
+    3187607216: {
+      activityName: "A Mente Imortal"
+    },
     3190434637: {
       activityName: "O Encouraçado"
     },
+    3192378548: {
+      activityName: "A Escuridão Além"
+    },
+    3196929644: {
+      activityName: "O Golpe à Abominação"
+    },
     3200293401: {
       activityName: "Inimigo do meu inimigo"
+    },
+    3207122440: {
+      activityName: "O Arquivo"
     },
     3209623958: {
       activityName: "Assalto do Anoitecer Semanal"
@@ -11526,6 +13233,9 @@ export const DestinyActivityDefinition = {
     3234259779: {
       activityName: "Desafios de Osíris"
     },
+    3242509473: {
+      activityName: "A Vontade de Crota"
+    },
     3252534714: {
       activityName: "Duplas"
     },
@@ -11534,6 +13244,9 @@ export const DestinyActivityDefinition = {
     },
     3277621970: {
       activityName: "Chronos"
+    },
+    3277929848: {
+      activityName: "Irmãos Escudeiros"
     },
     3292305209: {
       activityName: "Caminho Invernal"
@@ -11559,13 +13272,22 @@ export const DestinyActivityDefinition = {
     3343503784: {
       activityName: "Cálice Maculado"
     },
+    3345352981: {
+      activityName: "Ritual do Sacrifício"
+    },
     3346215145: {
       activityName: "O Farol"
     },
     3349918649: {
       activityName: "O Encouraçado"
     },
+    3356249023: {
+      activityName: "A ira da máquina"
+    },
     3373044013: {
+      activityName: "Cálice Maculado"
+    },
+    3384143875: {
       activityName: "Cálice Maculado"
     },
     3392709953: {
@@ -11685,6 +13407,9 @@ export const DestinyActivityDefinition = {
     3582451805: {
       activityName: "O Ladrão das Sombras"
     },
+    3582577776: {
+      activityName: "A Presa Silenciosa"
+    },
     3593950004: {
       activityName: "Créditos de Destiny"
     },
@@ -11712,8 +13437,14 @@ export const DestinyActivityDefinition = {
     3645919501: {
       activityName: "Patrulhe o Cosmódromo"
     },
+    3650545911: {
+      activityName: "Jogada dos Lobos"
+    },
     3670262295: {
       activityName: "Desafios de Osíris"
+    },
+    3670861271: {
+      activityName: "Inimigo do meu inimigo"
     },
     3670968271: {
       activityName: "A Vontade de Crota"
@@ -11769,6 +13500,9 @@ export const DestinyActivityDefinition = {
     3743955707: {
       activityName: "Torre"
     },
+    3750289192: {
+      activityName: "Punho de Crota"
+    },
     3778091466: {
       activityName: "Download concluído"
     },
@@ -11781,11 +13515,17 @@ export const DestinyActivityDefinition = {
     3817155567: {
       activityName: "Fenda do Crepúsculo"
     },
+    3837170670: {
+      activityName: "A Tumba do Mundo"
+    },
     3842976518: {
       activityName: "A Cela Sem Sol"
     },
     3848655103: {
       activityName: "Escudo Negro"
+    },
+    3856562046: {
+      activityName: "Dominado pela Luz"
     },
     3856604751: {
       activityName: "Primeira Luz"
@@ -11805,6 +13545,9 @@ export const DestinyActivityDefinition = {
     3918359338: {
       activityName: "Ícaro"
     },
+    3920061741: {
+      activityName: "Santuário de Oryx"
+    },
     3921931055: {
       activityName: "A Vontade de Crota"
     },
@@ -11823,8 +13566,17 @@ export const DestinyActivityDefinition = {
     3974631085: {
       activityName: "Inimigo do meu inimigo"
     },
+    3978884648: {
+      activityName: "A Queda do Rei"
+    },
+    4000873610: {
+      activityName: "O Fim de Crota"
+    },
     4027720491: {
       activityName: "Irmãos Escudeiros"
+    },
+    4038697181: {
+      activityName: "Câmara de Cristal"
     },
     4046346128: {
       activityName: "Abraço do medo"
@@ -11862,6 +13614,12 @@ export const DestinyActivityDefinition = {
     4131978369: {
       activityName: "O Golpe à Abominação"
     },
+    4141063459: {
+      activityName: "O Ladrão das Sombras"
+    },
+    4153423016: {
+      activityName: "Desafio dos Anciões"
+    },
     4163254808: {
       activityName: "Margens do Tempo"
     },
@@ -11879,6 +13637,12 @@ export const DestinyActivityDefinition = {
     },
     4175179546: {
       activityName: "Assalto Heróico Semanal"
+    },
+    4178645458: {
+      activityName: "A Cidade Enterrada"
+    },
+    4181273223: {
+      activityName: "S.A.B.R.E. Decaído"
     },
     4183157062: {
       activityName: "Rituais Finais"
@@ -11942,11 +13706,29 @@ export const DestinyActivityDefinition = {
     },
   },
   images: {
+    8055542: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    },
+    9885984: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_4.jpg"
+    },
+    10551956: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    },
     18715720: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/king_of_the_mountain.jpg"
     },
+    24471896: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/playlist_a_strangers_call.jpg"
+    },
+    24471899: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/playlist_guardian_rises.jpg"
+    },
     28695277: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_3.jpg"
+    },
+    34205302: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_the_nexus.jpg"
     },
     34327100: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/fallen_saber.jpg"
@@ -11995,6 +13777,9 @@ export const DestinyActivityDefinition = {
     },
     130631058: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    },
+    134979141: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_cosmo_4.jpg"
     },
     149381097: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
@@ -12048,7 +13833,7 @@ export const DestinyActivityDefinition = {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_plaguelands.jpg"
     },
     242777083: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_the_nexus.jpg"
     },
     252347595: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
@@ -12064,6 +13849,9 @@ export const DestinyActivityDefinition = {
     },
     269981320: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_promethean_code.jpg"
+    },
+    278763462: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_dust_palace.jpg"
     },
     279121234: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/king_of_the_mountain.jpg"
@@ -12111,10 +13899,13 @@ export const DestinyActivityDefinition = {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
     },
     360962374: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
     },
     386157877: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/shield_brothers.jpg"
+    },
+    389785553: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/playlist_dark_below_house_of_wolves.jpg"
     },
     403726672: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_cosmo.jpg"
@@ -12128,8 +13919,17 @@ export const DestinyActivityDefinition = {
     406972773: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/abomination_heist.jpg"
     },
+    410347507: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    },
+    425614025: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/playlist_the_iron_lords.jpg"
+    },
     428290721: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_mars.jpg"
+    },
+    430160982: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/wrath_of_the_machine.jpg"
     },
     430914016: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_iron_tomb.jpg"
@@ -12176,6 +13976,9 @@ export const DestinyActivityDefinition = {
     547981568: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
     },
+    550186563: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    },
     572368820: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
     },
@@ -12199,6 +14002,9 @@ export const DestinyActivityDefinition = {
     },
     581858107: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    },
+    603968817: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_cerberus_vae_III.jpg"
     },
     604017503: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/TakenPoE.jpg"
@@ -12239,6 +14045,12 @@ export const DestinyActivityDefinition = {
     711826167: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
     },
+    719193800: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_winters_run.jpg"
+    },
+    719193803: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_the_nexus.jpg"
+    },
     746864299: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
     },
@@ -12251,11 +14063,14 @@ export const DestinyActivityDefinition = {
     782611196: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
     },
+    820688209: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/sepiks_perfected.jpg"
+    },
     826836846: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/wretched_eye.jpg"
     },
     832576952: {
-      pgcrImage: "undefined"
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/fallen_saber.jpg"
     },
     833873053: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
@@ -12263,11 +14078,17 @@ export const DestinyActivityDefinition = {
     836641517: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_5.jpg"
     },
+    853468393: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_2.jpg"
+    },
     853774317: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_coming_war.jpg"
     },
     854130400: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_seige_of_the_warmind.jpg"
+    },
+    856898338: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/raid_vault_of_glass.jpg"
     },
     860566204: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_lighthouse.jpg"
@@ -12280,6 +14101,21 @@ export const DestinyActivityDefinition = {
     },
     892266083: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/default.jpg"
+    },
+    902875868: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_3.jpg"
+    },
+    906989597: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_1.jpg"
+    },
+    932731386: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/caydes_stash.jpg"
+    },
+    940573734: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_cosmo_2.jpg"
+    },
+    944638962: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_5.jpg"
     },
     981644933: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/bound_by_fire.jpg"
@@ -12311,6 +14147,9 @@ export const DestinyActivityDefinition = {
     1016116686: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
     },
+    1016659723: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/kings_fall.jpg"
+    },
     1017714251: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/last_rites.jpg"
     },
@@ -12341,6 +14180,9 @@ export const DestinyActivityDefinition = {
     1068261034: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/blood_in_the_garden.jpg"
     },
+    1075348150: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    },
     1080191247: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_4.jpg"
     },
@@ -12353,6 +14195,15 @@ export const DestinyActivityDefinition = {
     1112015031: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_the_wakening.jpg"
     },
+    1116149777: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/regicide.jpg"
+    },
+    1117274478: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/playlist_the_taken_war.jpg"
+    },
+    1122783186: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    },
     1126759626: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/echo_chamber.jpg"
     },
@@ -12363,7 +14214,7 @@ export const DestinyActivityDefinition = {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_cosmo.jpg"
     },
     1169187265: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_the_nexus.jpg"
     },
     1174401783: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/primes_path.jpg"
@@ -12392,6 +14243,9 @@ export const DestinyActivityDefinition = {
     1234230734: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
     },
+    1259153650: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_1.jpg"
+    },
     1288347893: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
     },
@@ -12399,6 +14253,9 @@ export const DestinyActivityDefinition = {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
     },
     1293005540: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    },
+    1296112978: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
     },
     1309514270: {
@@ -12419,11 +14276,20 @@ export const DestinyActivityDefinition = {
     1378430574: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
     },
+    1379511171: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_3.jpg"
+    },
     1387993552: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/wrath_of_the_machine.jpg"
     },
     1390160729: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/vestian_outpost.jpg"
+    },
+    1398209073: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_devils_lair.jpg"
+    },
+    1398209074: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
     },
     1398976305: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_cosmo.jpg"
@@ -12482,6 +14348,9 @@ export const DestinyActivityDefinition = {
     1443271657: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
     },
+    1443570903: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    },
     1448094960: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_dungeons.jpg"
     },
@@ -12504,7 +14373,7 @@ export const DestinyActivityDefinition = {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/default.jpg"
     },
     1522422482: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
     },
     1526798932: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/fallen_saber.jpg"
@@ -12645,7 +14514,7 @@ export const DestinyActivityDefinition = {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
     },
     1816396489: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
     },
     1836141626: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
@@ -12668,11 +14537,23 @@ export const DestinyActivityDefinition = {
     1856964953: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_cosmo_nux.jpg"
     },
+    1882836298: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_the_wakening.jpg"
+    },
     1889399773: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
     },
+    1912940269: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_cosmo_1.jpg"
+    },
+    1917735347: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_winters_run.jpg"
+    },
     1918823817: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
+    },
+    1924778540: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/a_joining_of_houses.jpg"
     },
     1940432142: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_1.jpg"
@@ -12731,6 +14612,9 @@ export const DestinyActivityDefinition = {
     2095588685: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
     },
+    2105028197: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/echo_chamber.jpg"
+    },
     2129294976: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_cosmo_2.jpg"
     },
@@ -12757,6 +14641,9 @@ export const DestinyActivityDefinition = {
     },
     2198347919: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/default.jpg"
+    },
+    2200634811: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_seige_of_the_warmind.jpg"
     },
     2201622127: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/TakenPoE.jpg"
@@ -12791,6 +14678,9 @@ export const DestinyActivityDefinition = {
     2268273279: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/sepiks_perfected.jpg"
     },
+    2270816053: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_world_ravager.jpg"
+    },
     2270968444: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
     },
@@ -12801,7 +14691,7 @@ export const DestinyActivityDefinition = {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
     },
     2275772174: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
     },
     2286628407: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/paradox.jpg"
@@ -12820,6 +14710,9 @@ export const DestinyActivityDefinition = {
     },
     2321224098: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_1.jpg"
+    },
+    2324706853: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/raid_crotas_end.jpg"
     },
     2326253031: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/prison_of_elders.jpg"
@@ -12854,8 +14747,17 @@ export const DestinyActivityDefinition = {
     2374186202: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
     },
+    2374784693: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_4.jpg"
+    },
     2374899718: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    },
+    2375659247: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/TakenPoE.jpg"
+    },
+    2380726447: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_dreadnaught.jpg"
     },
     2381859905: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
@@ -12905,6 +14807,9 @@ export const DestinyActivityDefinition = {
     2474598319: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_venus.jpg"
     },
+    2486047606: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_5.jpg"
+    },
     2488292787: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
     },
@@ -12946,6 +14851,9 @@ export const DestinyActivityDefinition = {
     },
     2604992012: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/lost_to_light.jpg"
+    },
+    2605106985: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_4.jpg"
     },
     2616429373: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/taken_war_mars.jpg"
@@ -13001,8 +14909,14 @@ export const DestinyActivityDefinition = {
     2680821721: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/crucible_cauldron.jpg"
     },
+    2693077237: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    },
     2695324124: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/BlightedChalice.jpg"
+    },
+    2697160954: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
     },
     2697969178: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_cosmo.jpg"
@@ -13017,7 +14931,7 @@ export const DestinyActivityDefinition = {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/a_march_of_fire.jpg"
     },
     2717791362: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
     },
     2719526771: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_dust_palace.jpg"
@@ -13056,7 +14970,7 @@ export const DestinyActivityDefinition = {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
     },
     2799122060: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_the_nexus.jpg"
     },
     2819394450: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
@@ -13082,8 +14996,14 @@ export const DestinyActivityDefinition = {
     2873833515: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_sunless_cell.jpg"
     },
+    2873913519: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_cosmo_3.jpg"
+    },
     2877811433: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    },
+    2895301046: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_1.jpg"
     },
     2896357417: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_winters_run.jpg"
@@ -13094,6 +15014,9 @@ export const DestinyActivityDefinition = {
     2897641944: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/BlightedChalice.jpg"
     },
+    2910883293: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/last_rites.jpg"
+    },
     2918909691: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/road_to_kings_fall.jpg"
     },
@@ -13102,6 +15025,9 @@ export const DestinyActivityDefinition = {
     },
     2931947534: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/wolves_of_winter.jpg"
+    },
+    2938090611: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_coming_war.jpg"
     },
     2938118424: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
@@ -13124,8 +15050,14 @@ export const DestinyActivityDefinition = {
     2989915775: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
     },
+    3005484445: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_promethean_code.jpg"
+    },
     3010573436: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    },
+    3011954788: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
     },
     3025411906: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/default.jpg"
@@ -13133,11 +15065,26 @@ export const DestinyActivityDefinition = {
     3027976182: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/shield_brothers.jpg"
     },
+    3030879879: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/wretched_eye.jpg"
+    },
     3041179010: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_cerberus_vae_III.jpg"
     },
     3044479892: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    },
+    3047788493: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_dust_palace.jpg"
+    },
+    3047788494: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_cerberus_vae_III.jpg"
+    },
+    3047788495: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
+    },
+    3051527960: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_sunless_cell.jpg"
     },
     3053288711: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/floating_gardens.jpg"
@@ -13214,11 +15161,23 @@ export const DestinyActivityDefinition = {
     3183184449: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/shield_brothers.jpg"
     },
+    3187607216: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
+    },
     3190434637: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_dreadnaught.jpg"
     },
+    3192378548: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_1.jpg"
+    },
+    3196929644: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/abomination_heist.jpg"
+    },
     3200293401: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/enemy_of_my_enemy.jpg"
+    },
+    3207122440: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_3.jpg"
     },
     3209623958: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_mars.jpg"
@@ -13232,6 +15191,9 @@ export const DestinyActivityDefinition = {
     3234259779: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/TrialsDefault.jpg"
     },
+    3242509473: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
+    },
     3252534714: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
     },
@@ -13240,6 +15202,9 @@ export const DestinyActivityDefinition = {
     },
     3277621970: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/timekeeper.jpg"
+    },
+    3277929848: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/shield_brothers.jpg"
     },
     3292305209: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_winters_run.jpg"
@@ -13265,13 +15230,22 @@ export const DestinyActivityDefinition = {
     3343503784: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/BlightedChalice.jpg"
     },
+    3345352981: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/quest_ritual_of_sacrifice.jpg"
+    },
     3346215145: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_lighthouse.jpg"
     },
     3349918649: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_dreadnaught.jpg"
     },
+    3356249023: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    },
     3373044013: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/BlightedChalice.jpg"
+    },
+    3384143875: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/BlightedChalice.jpg"
     },
     3392709953: {
@@ -13314,7 +15288,7 @@ export const DestinyActivityDefinition = {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/cathedral_of_dusk.jpg"
     },
     3415949693: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_the_nexus.jpg"
     },
     3422670336: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_devils_lair.jpg"
@@ -13380,7 +15354,7 @@ export const DestinyActivityDefinition = {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/regicide.jpg"
     },
     3573972337: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_the_nexus.jpg"
     },
     3575520714: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/shield_brothers.jpg"
@@ -13390,6 +15364,9 @@ export const DestinyActivityDefinition = {
     },
     3582451805: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    },
+    3582577776: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
     },
     3593950004: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
@@ -13418,11 +15395,17 @@ export const DestinyActivityDefinition = {
     3645919501: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_cosmo.jpg"
     },
+    3650545911: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    },
     3670262295: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/TrialsDefault.jpg"
     },
+    3670861271: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/enemy_of_my_enemy.jpg"
+    },
     3670968271: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
     },
     3671763238: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_cerberus_vae_III.jpg"
@@ -13475,6 +15458,9 @@ export const DestinyActivityDefinition = {
     3743955707: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/default.jpg"
     },
+    3750289192: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_rise_of_crota.jpg"
+    },
     3778091466: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/download_complete.jpg"
     },
@@ -13482,16 +15468,22 @@ export const DestinyActivityDefinition = {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_3.jpg"
     },
     3799336128: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
     },
     3817155567: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/crucible_twilight_gap_2.jpg"
+    },
+    3837170670: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_2.jpg"
     },
     3842976518: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_sunless_cell.jpg"
     },
     3848655103: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/black_shield.jpg"
+    },
+    3856562046: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/lost_to_light.jpg"
     },
     3856604751: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/crucible_first_light.jpg"
@@ -13511,6 +15503,9 @@ export const DestinyActivityDefinition = {
     3918359338: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/icarus.jpg"
     },
+    3920061741: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_5.jpg"
+    },
     3921931055: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
     },
@@ -13529,8 +15524,17 @@ export const DestinyActivityDefinition = {
     3974631085: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/enemy_of_my_enemy.jpg"
     },
+    3978884648: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/kings_fall.jpg"
+    },
+    4000873610: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/raid_crotas_end.jpg"
+    },
     4027720491: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/shield_brothers.jpg"
+    },
+    4038697181: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/raid_vault_of_glass.jpg"
     },
     4046346128: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/taken_war_mars.jpg"
@@ -13568,6 +15572,12 @@ export const DestinyActivityDefinition = {
     4131978369: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/abomination_heist.jpg"
     },
+    4141063459: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    },
+    4153423016: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/TakenPoE.jpg"
+    },
     4163254808: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/crucible_shores_of_time.jpg"
     },
@@ -13586,6 +15596,12 @@ export const DestinyActivityDefinition = {
     4175179546: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
     },
+    4178645458: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_2.jpg"
+    },
+    4181273223: {
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/fallen_saber.jpg"
+    },
     4183157062: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/last_rites.jpg"
     },
@@ -13602,7 +15618,7 @@ export const DestinyActivityDefinition = {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
     },
     4215168114: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
     },
     4217181091: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
@@ -13632,7 +15648,7 @@ export const DestinyActivityDefinition = {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_winters_run.jpg"
     },
     4254149014: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
     },
     4260139097: {
       pgcrImage: "/img/theme/destiny/bgs/pgcrs/crucible_pantheon.jpg"
