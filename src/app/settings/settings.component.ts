@@ -13,7 +13,7 @@ export class SettingsComponent implements OnInit, OnDestroy {
   public links: gt.Links;
 
   constructor(
-    private settingsService: SettingsService
+    public settingsService: SettingsService
   ) { }
 
   ngOnInit() {

@@ -29,7 +29,7 @@ export class ActivityComponent implements OnInit, OnDestroy {
     private twitchService: TwitchService,
     private xboxService: XboxService,
     private router: Router,
-    private settingsService: SettingsService
+    public settingsService: SettingsService
   ) { }
 
   ngOnInit() {

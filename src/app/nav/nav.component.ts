@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
-  private searchString: string;
+  public searchString: string;
 
   constructor(
     private router: Router
