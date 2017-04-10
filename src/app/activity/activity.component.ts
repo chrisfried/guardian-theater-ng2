@@ -68,6 +68,14 @@ export class ActivityComponent implements OnInit, OnDestroy {
               );
             }
           });
+          if (pgcr.activityDetails.mode === 14) {
+            this.pgcr.teams.forEach(team => {
+              team.trialsLink = 'https://trials.report/' + (team.entries[0].player.destinyUserInfo.membershipType === 1 ? 'xbox' : 'ps');
+              team.entries.forEach(entry => {
+                team.trialsLink += '/' + entry.player.destinyUserInfo.displayName;
+              });
+            });
+          }
           this.subs.push(
             Observable.combineLatest(loadingArray)
               .subscribe(

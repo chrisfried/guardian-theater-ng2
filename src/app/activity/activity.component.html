@@ -73,7 +73,7 @@
           <div class="columns small-12 mode pgcr-entry" [ngClass]="{'Alpha': team.teamName === 'Alpha', 'Bravo': team.teamName === 'Bravo'}">
             <span class="pgcr-team-name">{{ team.standing.basic.displayValue }}</span>
             <span class="pgcr-team-score">{{ team.score.basic.displayValue }}</span>
-            <a class="profile-link trials" [ngClass]="pgcr.teams[i].teamName" [title]="'View ' + team.teamName + ' Team on Trials Report'" (click)="stopPropagation($event)" *ngIf="pgcr.teams && pgcr.teams[i] && pgcr.teams[i].entries && pgcr.activityDetails.mode === 14 && (settingsService.links | async).activity.trials" [href]="'https://trials.report/' + (membershipType === 1 ? 'xbox' : 'ps') + '/' + pgcr.teams[i].entries[0].player.destinyUserInfo.displayName + '/' + pgcr.teams[i].entries[1].player.destinyUserInfo.displayName + '/' + pgcr.teams[i].entries[2].player.destinyUserInfo.displayName" target="_blank"></a>
+            <a class="profile-link trials" [ngClass]="pgcr.teams[i].teamName" [title]="'View ' + team.teamName + ' Team on Trials Report'" (click)="stopPropagation($event)" *ngIf="pgcr.teams && pgcr.teams[i] && pgcr.teams[i].entries && pgcr.activityDetails.mode === 14 && (settingsService.links | async).activity.trials" [href]="pgcr.teams[i].trialsLink" target="_blank"></a>
           </div>
           <div (click)="toGuardian(entry.player.destinyUserInfo.displayName, entry.characterId)" class="columns small-12 mode pgcr-entry" *ngFor="let entry of team.entries" [ngClass]="{
             'Alpha': team.teamName === 'Alpha',

@@ -14,7 +14,8 @@ declare namespace gt {
   }
 
   interface Team extends bungie.Team {
-    entries?: Entry[]
+    entries?: Entry[],
+    trialsLink?: string
   }
 
   interface PostGameCarnageReport extends bungie.PostGameCarnageReport {
