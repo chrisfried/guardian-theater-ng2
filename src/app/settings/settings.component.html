@@ -1,3 +1,5 @@
+<a (click)="back()">Back</a>
+
 <h5>Activity Links</h5>
 <div class="row">
   <div class="columns small-12 button-group expanded">
@@ -5,6 +7,7 @@
     <button type="button" class="button filter-toggle trials" [ngClass]="{ 'hollow': !links.activity.trials }" (click)="toggleActivityLink('trials')" title="Trials Report">Trials Report</button>
     <button type="button" class="button filter-toggle tracker" [ngClass]="{ 'hollow': !links.activity.tracker }" (click)="toggleActivityLink('tracker')" title="Destiny Tracker">Destiny Tracker</button>
     <button type="button" class="button filter-toggle ggg" [ngClass]="{ 'hollow': !links.activity.ggg }" (click)="toggleActivityLink('ggg')" title="Guardian.gg">Guardian.gg</button>
+    <button type="button" class="button filter-toggle options fi-wrench" [ngClass]="{ 'hollow': !links.activity.options }" (click)="toggleActivityLink('options')" title="Link to Settings page"></button>
   </div>
 </div>
 
@@ -15,6 +18,18 @@
     <button type="button" class="button filter-toggle twitch" [ngClass]="{ 'hollow': !links.guardian.twitch }" (click)="toggleGuardianLink('twitch')" title="Twitch">Twitch</button>
     <button type="button" class="button filter-toggle tracker" [ngClass]="{ 'hollow': !links.guardian.tracker }" (click)="toggleGuardianLink('tracker')" title="Destiny Tracker">Destiny Tracker</button>
     <button type="button" class="button filter-toggle ggg" [ngClass]="{ 'hollow': !links.guardian.ggg }" (click)="toggleGuardianLink('ggg')" title="Guardian.gg">Guardian.gg</button>
+    <button type="button" class="button filter-toggle options fi-wrench" [ngClass]="{ 'hollow': !links.guardian.options }" (click)="toggleGuardianLink('options')" title="Link to Settings page"></button>
+  </div>
+</div>
+
+<h5>Xbox Clip Links</h5>
+<div class="row">
+  <div class="columns small-12 button-group expanded">
+    <button type="button" class="button filter-toggle xboxrecordus" [ngClass]="{ 'hollow': !links.xbox.recordus }" (click)="toggleXboxLink('recordus')" title="xboxrecord.us">xboxrecord.us</button>
+    <button type="button" class="button filter-toggle xboxdvr" [ngClass]="{ 'hollow': !links.xbox.dvr }" (click)="toggleXboxLink('dvr')" title="Xbox DVR">Xbox DVR</button>
+    <button type="button" class="button filter-toggle gamedtv" [ngClass]="{ 'hollow': !links.xbox.gamedtv }" (click)="toggleXboxLink('gamedtv')" title="Gamed.TV">Gamed.TV</button>
+    <button type="button" class="button filter-toggle download" [ngClass]="{ 'hollow': !links.xbox.download }" (click)="toggleXboxLink('download')" title="Download">Download</button>
+    <button type="button" class="button filter-toggle options fi-wrench" [ngClass]="{ 'hollow': !links.xbox.options }" (click)="toggleXboxLink('options')" title="Link to Settings page"></button>
   </div>
 </div>
 

@@ -79,13 +79,23 @@ declare namespace gt {
       bungie: boolean,
       tracker: boolean,
       ggg: boolean,
-      trials: boolean
+      trials: boolean,
+      options: boolean
     },
     guardian?: {
       bungie: boolean,
       twitch: boolean,
       tracker: boolean,
-      ggg: boolean
+      ggg: boolean,
+      options: boolean
+    },
+    xbox?: {
+      recordus: boolean,
+      dvr: boolean,
+      clips: boolean,
+      gamedtv: boolean,
+      download: boolean,
+      options: boolean
     }
   }
 }

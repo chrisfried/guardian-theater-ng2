@@ -153,4 +153,8 @@ export class ActivityComponent implements OnInit, OnDestroy {
   stopPropagation(event) {
     event.stopPropagation();
   }
+
+  route(route: any[]) {
+    this.router.navigate(route);
+  }
 }
