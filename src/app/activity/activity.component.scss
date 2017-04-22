@@ -113,6 +113,17 @@
   bottom: 0;
   width: 100%;
 }
+.clip-play-button {
+  cursor: pointer;
+  position: absolute;
+  margin-left: 0 !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ddd;
+}
 
 .mode.loading {
   margin-left: .9375rem;

@@ -124,13 +124,14 @@
           <a class="profile-link options fi-wrench" title="Configure Guardian Links" (click)="route(['/settings'])" *ngIf="(settingsService.links | async).guardian.options"></a>
         </div>
       </div>
-      <div class="row" *ngIf="clip.type === 'twitch'">
+      <div class="row" *ngIf="clip.type === 'twitch' && clip.video">
         <a class="columns small-12 mode twitch-banner" target="_blank" [href]="clip.video.url">
           <span class="twitch-clip-name">{{ clip.video.title }}</span>
           <span class="twitch-timestamp">{{ clip.start | twitchStamp:clip.entry.startTime }}</span>
         </a>
         <div class="columns small-12 clip-wrapper" *ngIf="!clip.play">
-          <img class="clip-thumbnail" (click)="clip.play = !clip.play" [src]="clip.video.thumbnails[0].url">
+          <img *ngIf="clip.video.thumbnails[0]" class="clip-thumbnail" (click)="clip.play = !clip.play" [src]="clip.video.thumbnails[0].url">
+          <span *ngIf="!clip.video.thumbnails[0]" (click)="clip.play = !clip.play" class="clip-play-button"></span>
         </div>
         <div class="columns small-12 clip-wrapper" *ngIf="clip.play">
           <iframe
