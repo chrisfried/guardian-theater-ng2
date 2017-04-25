@@ -1,7 +1,8 @@
 @import '../../variables';
 
 .discord,
-.patreon {
+.patreon,
+.donate {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 18px;
@@ -15,6 +16,10 @@
 
 .patreon {
   background-image: url('/assets/images/patreon.png');
+}
+
+.donate {
+  background-image: url('/assets/images/takemymoneypurple.png');
 }
 
 .discord {
