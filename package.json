@@ -23,6 +23,7 @@
     "@angular/platform-browser-dynamic": "^4.0.1",
     "@angular/router": "^4.0.1",
     "angular-2-local-storage": "^1.0.1",
+    "angulartics2": "^2.2.1",
     "core-js": "^2.4.1",
     "intl": "^1.2.5",
     "ng2-adsense": "^2.1.1",
