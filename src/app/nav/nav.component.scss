@@ -77,3 +77,19 @@ ins.adsbygoogle {
   max-height: 10em;
   margin-bottom: .5em;
 }
+
+.mayhem {
+  border: solid 1px orange;
+  padding: .5em;
+  cursor: pointer;
+
+  img {
+    width: 100px;
+    float: right;
+    margin: .5em;
+  }
+
+  a {
+    display: block;
+  }
+}
