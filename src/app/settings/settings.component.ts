@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Location } from '@angular/common';
 import { SettingsService } from '../services/settings.service';
 import { Subscription } from 'rxjs/Rx';
 
@@ -13,7 +14,8 @@ export class SettingsComponent implements OnInit, OnDestroy {
   public links: gt.Links;
 
   constructor(
-    private settingsService: SettingsService
+    public settingsService: SettingsService,
+    private location: Location
   ) { }
 
   ngOnInit() {
@@ -35,8 +37,16 @@ export class SettingsComponent implements OnInit, OnDestroy {
     this.settingsService.toggleGuardianLink = link;
   }
 
+  toggleXboxLink(link: string) {
+    this.settingsService.toggleXboxLink = link;
+  }
+
   setLanguage(language: string) {
     this.settingsService.setLanguage = language;
+  }
+
+  back() {
+    this.location.back();
   }
 
 }

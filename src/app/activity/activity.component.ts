@@ -26,10 +26,10 @@ export class ActivityComponent implements OnInit, OnDestroy {
   constructor(
     private activityService: ActivityService,
     private bHttp: BungieHttpService,
-    private twitchService: TwitchService,
+    public twitchService: TwitchService,
     private xboxService: XboxService,
     private router: Router,
-    private settingsService: SettingsService
+    public settingsService: SettingsService
   ) { }
 
   ngOnInit() {
@@ -68,6 +68,14 @@ export class ActivityComponent implements OnInit, OnDestroy {
               );
             }
           });
+          if (pgcr.activityDetails.mode === 14) {
+            this.pgcr.teams.forEach(team => {
+              team.trialsLink = 'https://trials.report/' + (team.entries[0].player.destinyUserInfo.membershipType === 1 ? 'xbox' : 'ps');
+              team.entries.forEach(entry => {
+                team.trialsLink += '/' + entry.player.destinyUserInfo.displayName;
+              });
+            });
+          }
           this.subs.push(
             Observable.combineLatest(loadingArray)
               .subscribe(
@@ -144,5 +152,9 @@ export class ActivityComponent implements OnInit, OnDestroy {
 
   stopPropagation(event) {
     event.stopPropagation();
+  }
+
+  route(route: any[]) {
+    this.router.navigate(route);
   }
 }

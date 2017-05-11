@@ -26,20 +26,38 @@ export class SettingsService {
       twitch: true
     };
 
-    this._links = this.localStorageService.get('LINKS') || {
-      activity: {
+    this._links = this.localStorageService.get('LINKS') || {};
+
+    if (!this._links.activity) {
+      this._links.activity = {
         bungie: false,
         tracker: false,
         ggg: false,
-        trials: false
-      },
-      guardian: {
+        trials: false,
+        options: true
+      };
+    }
+
+    if (!this._links.guardian) {
+      this._links.guardian = {
         bungie: false,
         twitch: false,
         tracker: false,
-        ggg: false
-      }
-    };
+        ggg: false,
+        options: true
+      };
+    }
+
+    if (!this._links.xbox) {
+      this._links.xbox = {
+        recordus: false,
+        dvr: false,
+        clips: false,
+        gamedtv: false,
+        download: true,
+        options: true
+      };
+    }
 
     this.clipLimiter = new BehaviorSubject(this._clipLimiter);
     this.links = new BehaviorSubject(this._links);
@@ -88,6 +106,12 @@ export class SettingsService {
 
   set toggleActivityLink(link) {
     this._links.activity[link] = !this._links.activity[link];
+    this.links.next(this._links);
+    this.localStorageService.set('LINKS', this._links);
+  }
+
+  set toggleXboxLink(link) {
+    this._links.xbox[link] = !this._links.xbox[link];
     this.links.next(this._links);
     this.localStorageService.set('LINKS', this._links);
   }

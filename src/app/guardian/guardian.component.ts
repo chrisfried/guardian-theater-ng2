@@ -39,7 +39,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
   constructor(
     private router: Router,
     private route: ActivatedRoute,
-    private guardianService: GuardianService,
+    public guardianService: GuardianService,
     private settingsService: SettingsService 
   ) { }
 

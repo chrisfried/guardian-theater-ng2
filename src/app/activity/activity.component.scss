@@ -113,6 +113,17 @@
   bottom: 0;
   width: 100%;
 }
+.clip-play-button {
+  cursor: pointer;
+  position: absolute;
+  margin-left: 0 !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ddd;
+}
 
 .mode.loading {
   margin-left: .9375rem;
@@ -264,6 +275,8 @@
   background-repeat: no-repeat;
   display: inline-block;
   border-left: 1px solid white;
+  color: white;
+  text-align: center;
 }
 
 .profile-link.bungie, .activity-link.bungie {
@@ -301,6 +314,9 @@
   background-color: $guardian-gg-grey;
 }
 
+.profile-link.options:hover, .activity-link.options:hover {
+  background-color: $dark-blue;
+}
 
 .Alpha {
   background-color: $alpha-blue;
@@ -361,12 +377,15 @@
 .xbox-clip-link {
   color: white;
   text-align: center;
-}
-.xbox-clip-link.gif {
   @include background-hover-darken($xbox-green);
 }
-.xbox-clip-link.download {
-  @include background-hover-darken($xbox-green);
+
+.xbox-clip-link.xboxdvr {
+  background-image: url('/assets/images/xdvr.png');
+}
+
+.xbox-clip-link.gamedtv {
+  background-image: url('/assets/images/gamed.png');
 }
 
 .player-label {

@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { LocalStorageModule } from 'angular-2-local-storage';
 import { AdsenseModule } from 'ng2-adsense';
+import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
 
 import { RoutesModule } from './routes/routes.module';
 
@@ -48,7 +49,8 @@ import { GtBadgePipe } from './pipes/gt-badge.pipe';
     AdsenseModule.forRoot({
       adClient: 'ca-pub-7822250090731539',
       adSlot: 9694174006
-    })
+    }),
+    Angulartics2Module.forRoot([Angulartics2GoogleAnalytics])
   ],
   providers: [
     BungieHttpService,

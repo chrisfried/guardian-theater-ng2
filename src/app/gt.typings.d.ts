@@ -14,7 +14,8 @@ declare namespace gt {
   }
 
   interface Team extends bungie.Team {
-    entries?: Entry[]
+    entries?: Entry[],
+    trialsLink?: string
   }
 
   interface PostGameCarnageReport extends bungie.PostGameCarnageReport {
@@ -70,7 +71,8 @@ declare namespace gt {
     start: number,
     video: (xbox.Video | twitch.Video),
     entry: Entry,
-    embedUrl?: any
+    embedUrl?: any,
+    hhmmss?: string
   }
 
   interface Links {
@@ -78,13 +80,23 @@ declare namespace gt {
       bungie: boolean,
       tracker: boolean,
       ggg: boolean,
-      trials: boolean
+      trials: boolean,
+      options: boolean
     },
     guardian?: {
       bungie: boolean,
       twitch: boolean,
       tracker: boolean,
-      ggg: boolean
+      ggg: boolean,
+      options: boolean
+    },
+    xbox?: {
+      recordus: boolean,
+      dvr: boolean,
+      clips: boolean,
+      gamedtv: boolean,
+      download: boolean,
+      options: boolean
     }
   }
 }

@@ -1,7 +1,8 @@
 @import '../../variables';
 
 .discord,
-.patreon {
+.patreon,
+.donate {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 18px;
@@ -15,6 +16,10 @@
 
 .patreon {
   background-image: url('/assets/images/patreon.png');
+}
+
+.donate {
+  background-image: url('/assets/images/takemymoneypurple.png');
 }
 
 .discord {
@@ -71,4 +76,21 @@ ins.adsbygoogle {
 .logo {
   max-height: 10em;
   margin-bottom: .5em;
+}
+
+.mayhem {
+  border: solid 1px orange;
+  padding: .5em;
+  cursor: pointer;
+  margin: .5em;
+
+  img {
+    width: 100px;
+    float: right;
+    margin: .5em;
+  }
+
+  a {
+    display: block;
+  }
 }
