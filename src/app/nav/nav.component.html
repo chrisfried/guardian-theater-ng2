@@ -1,8 +1,8 @@
 <div class="row align-middle">
-  <div class="columns small-12 ad order-0 medium-order-4">
+  <div *ngIf="ad" class="columns small-12 ad order-1 medium-order-5">
     <ng2-adsense></ng2-adsense>
   </div>
-  <div class="columns small-12 icon-menu row align-right order-1 medium-order-3">
+  <div class="columns small-12 icon-menu row align-right order-2 medium-order-3">
     <a class="donate" title="Take My Money" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8GLMLFEGR5TFU" target="_blank" angulartics2On="click" angularticsEvent="NavBarLink" angularticsCategory="DonateLink">
       <span>Donate</span>
     </a>
@@ -22,12 +22,12 @@
       <span class="fi-wrench"></span>
     </a>
   </div>
-  <div class="logo-wrap small-2 medium-12 columns order-2 medium-order-1">
+  <div class="logo-wrap small-2 medium-12 columns order-3 medium-order-1">
     <a (click)="route(['/'])" class="home">
       <img class="logo" src="/assets/images/travelereel.png">
     </a>
   </div>
-  <div class="small-10 medium-12 columns order-3 medium-order-2">
+  <div class="small-10 medium-12 columns order-4 medium-order-2">
     <form class="row search-form" (ngSubmit)="search()">
       <div class="small-12 columns input-group search-bar">
         <input [(ngModel)]="searchString" name="searchString" text="quick-links" class="input-group-field search-box" type="search" placeholder="Guardian" autofocus="true">
@@ -37,10 +37,10 @@
       </div>
     </form>
   </div>
-</div>
-<div class="mayhem">
-  <a href="https://mayhem.guardian.theater">
-    <img src="/assets/images/travelerfire.png">
-    <span>A Bungie error is preventing Mayhem Clash Iron Banner activities from appearing normally. Thanks to our friends at Trials Report, we have a temporary solution at mayhem.guardian.theater.</span>
-  </a>
+  <div class="mayhem columns order-0 medium-order-4">
+    <a href="https://mayhem.guardian.theater">
+      <img src="/assets/images/travelerfire.png">
+      <span>A Bungie error is preventing Mayhem Clash Iron Banner activities from appearing normally. Thanks to our friends at Trials Report, we have a temporary solution at mayhem.guardian.theater.</span>
+    </a>
+  </div>
 </div>
