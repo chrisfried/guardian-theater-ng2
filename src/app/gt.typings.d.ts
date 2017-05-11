@@ -71,7 +71,8 @@ declare namespace gt {
     start: number,
     video: (xbox.Video | twitch.Video),
     entry: Entry,
-    embedUrl?: any
+    embedUrl?: any,
+    hhmmss?: string
   }
 
   interface Links {

@@ -125,7 +125,7 @@
         </div>
       </div>
       <div class="row" *ngIf="clip.type === 'twitch' && clip.video">
-        <a class="columns small-12 mode twitch-banner" target="_blank" [href]="clip.video.url" angulartics2On="click" angularticsEvent="TwitchClipLink" angularticsCategory="TwitchLink">
+        <a class="columns small-12 mode twitch-banner" target="_blank" [href]="clip.video.url + '?t=' + clip.hhmmss" angulartics2On="click" angularticsEvent="TwitchClipLink" angularticsCategory="TwitchLink">
           <span class="twitch-clip-name">{{ clip.video.title }}</span>
           <span class="twitch-timestamp">{{ clip.start | twitchStamp:clip.entry.startTime }}</span>
         </a>
