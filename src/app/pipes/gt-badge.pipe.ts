@@ -17,7 +17,8 @@ export class GtBadgePipe implements PipeTransform {
       '8278779', // QuiscalusMajor
       '3885548', // Phyrne
       '4165071', // Benimus
-      '11009584' // Mystareez
+      '11009584', // Mystareez
+      '6773619' // Fordluvr
     ];
     let patrons = [
       '9303125', // v DontCare v
