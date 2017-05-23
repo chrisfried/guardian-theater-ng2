@@ -314,6 +314,22 @@
   background-color: $guardian-gg-grey;
 }
 
+.profile-link.platform.ps {
+  background-image: url('/assets/images/ps.png');
+
+  &:hover {
+    background-color: $playstation-blue;
+  }
+}
+
+.profile-link.platform.xbox {
+  background-image: url('/assets/images/xbox.png');
+
+  &:hover {
+    background-color: $xbox-green;
+  }
+}
+
 .profile-link.options:hover, .activity-link.options:hover {
   background-color: $dark-blue;
 }

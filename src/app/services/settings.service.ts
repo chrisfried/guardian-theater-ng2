@@ -44,7 +44,8 @@ export class SettingsService {
         twitch: false,
         tracker: false,
         ggg: false,
-        options: true
+        options: true,
+        platform: false
       };
     }
 
