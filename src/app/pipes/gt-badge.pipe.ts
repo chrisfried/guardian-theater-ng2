@@ -25,7 +25,9 @@ export class GtBadgePipe implements PipeTransform {
     let patrons = [
       '9303125', // v DontCare v
       '10213132', // designker
-      '11828236'  // cowgod77
+      '11828236', // cowgod77
+      '13513244', // CHUBS152001
+      '5197148' // lowlines
     ];
     if (owner.indexOf(membershipId) > -1) {
       return 'Owner';
