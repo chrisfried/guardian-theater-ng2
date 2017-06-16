@@ -20,7 +20,8 @@ export class GtBadgePipe implements PipeTransform {
       '11009584', // Mystareez
       '6773619', // Fordluvr
       '168740', // Menos del Oso
-      '10949513' // JohnnyG_11
+      '10949513', // JohnnyG_11
+      '10762460' // xImDeRey
     ];
     let patrons = [
       '9303125', // v DontCare v
