@@ -40,7 +40,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
     private router: Router,
     private route: ActivatedRoute,
     public guardianService: GuardianService,
-    private settingsService: SettingsService 
+    private settingsService: SettingsService
   ) { }
 
   ngOnInit() {
