@@ -32,7 +32,11 @@ export class GtBadgePipe implements PipeTransform {
       '168740', // Menos del Oso
       '10949513', // JohnnyG_11
       '5116514', // RealAngryMonkey
-      '10762460' // xImDeRey
+      '10762460', // xImDeRey
+      '14050724', // LoveDazed
+      '5996932', // VlakatafakatA
+      '4170740', // LeBrometheus
+      '167493' // Marruk
     ];
     if (owner.indexOf(membershipId) > -1) {
       return 'Owner';
