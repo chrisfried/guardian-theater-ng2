@@ -444,7 +444,7 @@ export class ActivityService implements OnDestroy {
                       if (url.length) {
                         return this.http.get(url)
                           .map((res: Response) => res.json())
-                          .catch((error: any) => Observable.from(error.json().error || 'Server error'));
+                          .catch((error: any) => Observable.from(error.error || 'Server error'));
                       } else {
                         return Observable.empty();
                       }
