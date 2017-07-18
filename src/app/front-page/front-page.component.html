@@ -9,7 +9,7 @@
   <label>Local Start Time: <input type="datetime-local" [(ngModel)]="startTime" (change)="updateStart($event)"></label>
   <label>Guardians: <input *ngFor="let player of players" type="text" [(ngModel)]="player.name" (change)="player.updateName()"></label>
   <div *ngFor="let player of players">
-    <div *ngFor="let clip of (player.clips$ | async)" class="clip-item">
+    <div *ngFor="let clip of (player.twitchClips$ | async)" class="clip-item">
       <div class="row">
         <div class="columns small-12 mode pgcr-entry">
           <span class="pgcr-entry-name">
@@ -30,6 +30,15 @@
         <div class="columns small-12 clip-wrapper" *ngIf="clip.play">
           <iframe class="twitch-embed" [src]="clip.embedUrl" frameborder="0" scrolling="no" allowfullscreen="true">
           </iframe>
+        </div>
+      </div>
+    </div>
+    <div *ngFor="let clip of (player.xboxClips$ | async)" class="clip-item">
+      <div class="row">
+        <div class="columns small-12 mode pgcr-entry">
+          <span class="pgcr-entry-name">
+            {{ player.displayName$ | async }}
+          </span>
         </div>
       </div>
       <div class="row" *ngIf="clip.type === 'xbox'">

@@ -31,8 +31,10 @@ export class FrontPageComponent implements OnInit {
     twitchIdChecked$: BehaviorSubject<boolean>,
     twitchId$: BehaviorSubject<string>,
     twitchResponseChecked$: BehaviorSubject<boolean>,
-    twitchResponse$: BehaviorSubject<any>
-    clips$: BehaviorSubject<any[]>
+    twitchResponse$: BehaviorSubject<any>,
+    twitchClips$: BehaviorSubject<any[]>,
+    xboxResponse$: BehaviorSubject<any>,
+    xboxClips$: BehaviorSubject<any[]>
   }[];
 
   constructor(
@@ -76,7 +78,9 @@ export class FrontPageComponent implements OnInit {
       this.twitchId$ = new BehaviorSubject('');
       this.twitchResponseChecked$ = new BehaviorSubject(false);
       this.twitchResponse$ = new BehaviorSubject(null);
-      this.clips$ = new BehaviorSubject([]);
+      this.twitchClips$ = new BehaviorSubject([]);
+      this.xboxResponse$ = new BehaviorSubject(null);
+      this.xboxClips$ = new BehaviorSubject([]);
       this.updateName = function () {
         this.name$.next(this.name);
       }
@@ -190,46 +194,101 @@ export class FrontPageComponent implements OnInit {
 
       Observable.combineLatest(player.twitchResponse$, this.start$, this.end$)
         .subscribe(([res, start, end]) => {
-          if (res) {
-            console.log('Checked clip timestamps for', player.name)
-            player.clips$.next([]);
+          console.log(start);
+          player.twitchClips$.next([]);
+          if (res && res._total > 0 && start && start.getTime() > 0) {
+            console.log('Checked Twitch clip timestamps for', player.name)
             let clips = [];
             let startTime = start.getTime() / 1000;
             let stopTime = end.getTime() / 1000;
-            if (res && res._total > 0) {
-              res.videos.forEach(video => {
-                let recordedStart = new Date(video.recorded_at).getTime() / 1000;
-                let recordedStop = recordedStart + video.length;
-                if (recordedStart > stopTime) {
-                  return;
-                }
-                if (recordedStop < startTime) {
-                  return;
-                }
-                let offset = startTime - recordedStart;
-                let hms = '0h0m0s';
-                if (offset > 0) {
-                  let h = Math.floor(offset / 3600);
-                  let m = Math.floor(offset % 3600 / 60);
-                  let s = Math.floor(offset % 3600 % 60);
-                  hms = h + 'h' + m + 'm' + s + 's';
-                }
-                let embedUrl = this.sanitizer.bypassSecurityTrustResourceUrl('//player.twitch.tv/?video='
-                  + video._id + '&time=' + hms);
-                let clip = {
-                  type: 'twitch',
-                  start: recordedStart,
-                  entry: player,
-                  video: video,
-                  embedUrl: embedUrl,
-                  hhmmss: hms
-                };
-                clips.push(clip);
-              });
-              player.clips$.next(clips);
-            }
+            res.videos.forEach(video => {
+              let recordedStart = new Date(video.recorded_at).getTime() / 1000;
+              let recordedStop = recordedStart + video.length;
+              if (recordedStart > stopTime) {
+                return;
+              }
+              if (recordedStop < startTime) {
+                return;
+              }
+              let offset = startTime - recordedStart;
+              let hms = '0h0m0s';
+              if (offset > 0) {
+                let h = Math.floor(offset / 3600);
+                let m = Math.floor(offset % 3600 / 60);
+                let s = Math.floor(offset % 3600 % 60);
+                hms = h + 'h' + m + 'm' + s + 's';
+              }
+              let embedUrl = this.sanitizer.bypassSecurityTrustResourceUrl('//player.twitch.tv/?video='
+                + video._id + '&time=' + hms);
+              let clip = {
+                type: 'twitch',
+                start: recordedStart,
+                video: video,
+                embedUrl: embedUrl,
+                hhmmss: hms
+              };
+              clips.push(clip);
+            });
+            clips.sort(function (a, b) {
+              return a.start - b.start;
+            });
+            player.twitchClips$.next(clips);
           }
         });
+
+      Observable.combineLatest(this.platform$, player.displayName$)
+        .map(([platform, displayName]) => {
+          if (platform === 1 && displayName.length) {
+            return 'https://api.guardian.theater/api/clips/' + displayName;
+          } else {
+            return '';
+          }
+        })
+        .distinctUntilChanged()
+        .switchMap(url => {
+          if (url.length) {
+            return this.http.get(url)
+              .map((res) => res.json())
+              .catch((error: any) => Observable.from(error.error || 'Server error'));
+          } else {
+            return Observable.empty();
+          }
+        })
+        .subscribe((res) => {
+          if (res) {
+            player.xboxResponse$.next(res);
+          }
+        });
+
+      Observable.combineLatest(player.xboxResponse$, this.start$, this.end$)
+        .subscribe(([res, start, end]) => {
+          if (res && res.gameClips && start && start.getTime() > 0) {
+            console.log('Checked Xbox clip timestamps for', player.name)
+            player.xboxClips$.next([]);
+            let clips = [];
+            let startTime = start.getTime() / 1000;
+            let stopTime = end.getTime() / 1000;
+            res.gameClips.forEach((video: xbox.Video) => {
+              let recordedStart = new Date(video.dateRecorded).getTime() / 1000;
+              let recordedStop = recordedStart + video.durationInSeconds;
+              if (recordedStart > stopTime) {
+                return;
+              }
+              if (recordedStop < startTime) {
+                return;
+              }
+              clips.push({
+                type: 'xbox',
+                start: recordedStart,
+                video: video
+              });
+            });
+            clips.sort(function (a, b) {
+              return a.start - b.start;
+            });
+            player.xboxClips$.next(clips);
+          }
+        })
     });
   }
 
@@ -238,7 +297,9 @@ export class FrontPageComponent implements OnInit {
   }
 
   updateStart() {
-    this.start$.next(new Date(this.startTime));
+    if (this.startTime) {
+      this.start$.next(new Date(this.startTime));
+    }
   }
 
 }
