@@ -7,7 +7,23 @@
 
 <div *ngIf="(platform$ | async) > 0">
   <label>Local Start Time: <input type="datetime-local" [(ngModel)]="startTime" (change)="updateStart($event)"></label>
-  <label>Guardians: <input *ngFor="let player of players" type="text" [(ngModel)]="player.name" (change)="player.updateName()"></label>
+  Guardians: 
+  <span *ngFor="let player of players">
+    <input type="text" [(ngModel)]="player.name" (change)="player.updateName()">
+    <span class="fetchStatus bungie" [ngClass]="{
+      'spin': (player.bungieStatus$ | async) === 2 || (player.bungieStatus$ | async) === 4,
+      'color': (player.bungieStatus$ | async) > 2
+    }"></span>
+    <span class="fetchStatus twitch" [ngClass]="{
+      'spin': (player.twitchStatus$ | async) === 2 || (player.twitchStatus$ | async) === 4,
+      'color': (player.twitchStatus$ | async) > 2
+    }"></span>
+    <span class="fetchStatus xbox" [ngClass]="{
+      'hidden': (player.xboxStatus$ | async) === 0,
+      'color': (player.xboxStatus$ | async) > 1,
+      'spin': (player.xboxStatus$ | async) === 3
+    }"></span>
+  </span>
   <div *ngFor="let player of players">
     <div *ngFor="let clip of (player.twitchClips$ | async)" class="clip-item">
       <div class="row">

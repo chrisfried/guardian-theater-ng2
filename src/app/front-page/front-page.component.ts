@@ -21,20 +21,37 @@ export class FrontPageComponent implements OnInit {
   public players: {
     name: string,
     name$: BehaviorSubject<string>,
-    fetchingBungieResults$: BehaviorSubject<boolean>,
+    displayName$: BehaviorSubject<string>,
     membershipId$: BehaviorSubject<string>,
     noResults$: BehaviorSubject<boolean>,
     multipleResults$: BehaviorSubject<boolean>,
-    displayName$: BehaviorSubject<string>,
     updateName: () => void,
-    checkingTwitchId$: BehaviorSubject<boolean>,
-    twitchIdChecked$: BehaviorSubject<boolean>,
+
+    bungieId$: BehaviorSubject<string>,
+
     twitchId$: BehaviorSubject<string>,
-    twitchResponseChecked$: BehaviorSubject<boolean>,
     twitchResponse$: BehaviorSubject<any>,
     twitchClips$: BehaviorSubject<any[]>,
+
     xboxResponse$: BehaviorSubject<any>,
-    xboxClips$: BehaviorSubject<any[]>
+    xboxClips$: BehaviorSubject<any[]>,
+
+    fetchingBungieResults$: BehaviorSubject<boolean>,
+    fetchedBungieResults$: BehaviorSubject<boolean>,
+    fetchingBungieId$: BehaviorSubject<boolean>,
+    fetchedBungieId$: BehaviorSubject<boolean>,
+    fetchingTwitchId1$: BehaviorSubject<boolean>,
+    fetchedTwitchId1$: BehaviorSubject<boolean>,
+    fetchingTwitchId2$: BehaviorSubject<boolean>,
+    fetchedTwitchId2$: BehaviorSubject<boolean>,
+    fetchingTwitchClips$: BehaviorSubject<boolean>,
+    fetchedTwitchClips$: BehaviorSubject<boolean>,
+    fetchingXboxClips$: BehaviorSubject<boolean>,
+    fetchedXboxClips$: BehaviorSubject<boolean>,
+
+    bungieStatus$: Observable<number>,
+    twitchStatus$: Observable<number>,
+    xboxStatus$: Observable<number>
   }[];
 
   constructor(
@@ -68,22 +85,39 @@ export class FrontPageComponent implements OnInit {
     function Player() {
       this.name = '';
       this.name$ = new BehaviorSubject(this.name);
-      this.fetchingBungieResults$ = new BehaviorSubject(false);
+      this.displayName$ = new BehaviorSubject('');
       this.membershipId$ = new BehaviorSubject('');
       this.noResults$ = new BehaviorSubject(false);
       this.multipleResults$ = new BehaviorSubject(false);
-      this.displayName$ = new BehaviorSubject('');
-      this.checkingTwitchId$ = new BehaviorSubject(false);
-      this.twitchIdChecked$ = new BehaviorSubject(false);
-      this.twitchId$ = new BehaviorSubject('');
-      this.twitchResponseChecked$ = new BehaviorSubject(false);
-      this.twitchResponse$ = new BehaviorSubject(null);
-      this.twitchClips$ = new BehaviorSubject([]);
-      this.xboxResponse$ = new BehaviorSubject(null);
-      this.xboxClips$ = new BehaviorSubject([]);
       this.updateName = function () {
         this.name$.next(this.name);
       }
+
+      this.bungieId$ = new BehaviorSubject('');
+
+      this.twitchId$ = new BehaviorSubject('');
+      this.twitchResponse$ = new BehaviorSubject(null);
+      this.twitchClips$ = new BehaviorSubject([]);
+
+      this.xboxResponse$ = new BehaviorSubject(null);
+      this.xboxClips$ = new BehaviorSubject([]);
+
+      this.fetchingBungieResults$ = new BehaviorSubject(false);
+      this.fetchedBungieResults$ = new BehaviorSubject(false);
+      this.fetchingBungieId$ = new BehaviorSubject(false);
+      this.fetchedBungieId$ = new BehaviorSubject(false);
+      this.fetchingTwitchId1$ = new BehaviorSubject(false);
+      this.fetchedTwitchId1$ = new BehaviorSubject(false);
+      this.fetchingTwitchId2$ = new BehaviorSubject(false);
+      this.fetchedTwitchId2$ = new BehaviorSubject(false);
+      this.fetchingTwitchClips$ = new BehaviorSubject(false);
+      this.fetchedTwitchClips$ = new BehaviorSubject(false);
+      this.fetchingXboxClips$ = new BehaviorSubject(false);
+      this.fetchedXboxClips$ = new BehaviorSubject(false);
+
+      this.bungieStatus$ = Observable.of(1);
+      this.twitchStatus$ = Observable.of(1);
+      this.xboxStatus$ = Observable.of(0);
     }
 
     for (let i = 0; i < 8; i++) {
@@ -94,10 +128,35 @@ export class FrontPageComponent implements OnInit {
       Observable.combineLatest(player.name$, this.platform$)
         .distinctUntilChanged()
         .map(([guardian, platform]) => {
-          player.fetchingBungieResults$.next(true);
-          player.membershipId$.next('');
           player.displayName$.next('');
+          player.membershipId$.next('');
+          player.noResults$.next(false);
+          player.multipleResults$.next(false);
+
+          player.bungieId$.next('');
+
+          player.twitchId$.next('');
+          player.twitchResponse$.next(null);
+          player.twitchClips$.next([]);
+
+          player.xboxResponse$.next(null);
+          player.xboxClips$.next([]);
+
+          player.fetchingBungieResults$.next(false);
+          player.fetchedBungieResults$.next(false);
+          player.fetchingBungieId$.next(false);
+          player.fetchedBungieId$.next(false);
+          player.fetchingTwitchId1$.next(false);
+          player.fetchedTwitchId1$.next(false);
+          player.fetchingTwitchId2$.next(false);
+          player.fetchedTwitchId2$.next(false);
+          player.fetchingTwitchClips$.next(false);
+          player.fetchedTwitchClips$.next(false);
+          player.fetchingXboxClips$.next(false);
+          player.fetchedXboxClips$.next(false);
+
           if (guardian.length) {
+            player.fetchingBungieResults$.next(true);
             return 'https://www.bungie.net/Platform/Destiny/SearchDestinyPlayer/' + platform + '/' + guardian + '/';
           } else {
             return '';
@@ -115,6 +174,7 @@ export class FrontPageComponent implements OnInit {
         .subscribe((res: bungie.SearchDestinyPlayerResponse) => {
           console.log('Searched Bungie for', player.name);
           player.fetchingBungieResults$.next(false);
+          player.fetchedBungieResults$.next(true);
           try {
             let Response = res.Response;
             if (Response.length > 0) {
@@ -131,9 +191,11 @@ export class FrontPageComponent implements OnInit {
           } catch (e) { }
         });
 
-      Observable.combineLatest(player.twitchIdChecked$, player.membershipId$, this.platform$)
-        .map(([checked, membershipId, platform]) => {
-          if (!checked && membershipId) {
+      Observable.combineLatest(player.membershipId$, this.platform$)
+        .map(([membershipId, platform]) => {
+          player.fetchedTwitchId1$.next(false);
+          if (membershipId) {
+            player.fetchingTwitchId1$.next(true);
             return 'https://www.bungie.net/Platform/CommunityContent/Live/Users/1/' + platform + '/' + membershipId + '/';
           } else {
             return '';
@@ -150,24 +212,76 @@ export class FrontPageComponent implements OnInit {
           }
         })
         .subscribe((res: bungie.PartnershipResponse) => {
-          player.checkingTwitchId$.next(false);
-          if (res.Response && res.Response.partnershipIdentifier) {
-            console.log('Found TwitchID for', player.name);
+          player.fetchingTwitchId1$.next(false);
+          player.fetchedTwitchId1$.next(true);
+          try {
+            console.log('Found TwitchId for', player.name);
             player.twitchId$.next(res.Response.partnershipIdentifier);
-            player.twitchResponseChecked$.next(false);
-            player.twitchResponse$.next(null);
-            player.twitchIdChecked$.next(true);
-          } else {
-            player.twitchId$.next('');
-            player.twitchResponseChecked$.next(true);
-            player.twitchResponse$.next(null);
-            player.twitchIdChecked$.next(true);
-          }
+          } catch (e) { }
         });
 
-      Observable.combineLatest(player.twitchId$, player.twitchResponseChecked$)
-        .map(([twitchId, responseChecked]) => {
-          if (twitchId && !responseChecked) {
+      Observable.combineLatest(player.membershipId$, this.platform$)
+        .map(([membershipId, platform]) => {
+          player.fetchedBungieId$.next(false);
+          if (membershipId) {
+            player.fetchingBungieId$.next(true);
+            return 'https://www.bungie.net/Platform/User/GetBungieAccount/' + membershipId + '/' + platform + '/';
+          } else {
+            return '';
+          }
+        })
+        .distinctUntilChanged()
+        .switchMap(url => {
+          if (url.length) {
+            return this.bHttp.get(url)
+              .map((res) => res.json())
+              .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
+          } else {
+            return Observable.empty();
+          }
+        })
+        .subscribe((res) => {
+          player.fetchingBungieId$.next(false);
+          player.fetchedBungieId$.next(true);
+          try {
+            console.log('Found BungieId for', player.name);
+            player.bungieId$.next(res.Response.bungieNetUser.membershipId);
+          } catch (e) { }
+        });
+
+      player.bungieId$
+        .map(bungieId => {
+          player.fetchedTwitchId2$.next(false);
+          if (bungieId) {
+            player.fetchingTwitchId2$.next(true);
+            return 'https://www.bungie.net/Platform/User/' + bungieId + '/Partnerships/';
+          } else {
+            return '';
+          }
+        })
+        .distinctUntilChanged()
+        .switchMap(url => {
+          if (url.length) {
+            return this.bHttp.get(url)
+              .map((res) => res.json())
+              .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
+          } else {
+            return Observable.empty();
+          }
+        })
+        .subscribe((res) => {
+          player.fetchingTwitchId2$.next(false);
+          player.fetchedTwitchId2$.next(true);
+          try {
+            console.log('Found TwitchId for', player.name);
+            player.twitchId$.next(res.Response[0].identifier);
+          } catch (e) { }
+        });
+
+      player.twitchId$
+        .map((twitchId) => {
+          player.fetchedTwitchClips$.next(false);
+          if (twitchId) {
             return 'https://api.twitch.tv/kraken/channels/' + twitchId + '/videos'
               + '?client_id=o8cuwhl23x5ways7456xhitdm0f4th0&limit=100&offset=0&broadcast_type=archive,highlight';
           } else {
@@ -177,6 +291,7 @@ export class FrontPageComponent implements OnInit {
         .distinctUntilChanged()
         .switchMap(url => {
           if (url.length) {
+            player.fetchingTwitchClips$.next(true);
             return this.http.get(url)
               .map((res) => res.json())
               .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
@@ -185,16 +300,16 @@ export class FrontPageComponent implements OnInit {
           }
         })
         .subscribe((res) => {
-          if (res) {
+          player.fetchingTwitchClips$.next(false);
+          player.fetchedTwitchClips$.next(true);
+          try {
             console.log('Retrieved Twitch clips for', player.name);
             player.twitchResponse$.next(res);
-            player.twitchResponseChecked$.next(true);
-          }
+          } catch (e) { }
         });
 
       Observable.combineLatest(player.twitchResponse$, this.start$, this.end$)
         .subscribe(([res, start, end]) => {
-          console.log(start);
           player.twitchClips$.next([]);
           if (res && res._total > 0 && start && start.getTime() > 0) {
             console.log('Checked Twitch clip timestamps for', player.name)
@@ -238,7 +353,9 @@ export class FrontPageComponent implements OnInit {
 
       Observable.combineLatest(this.platform$, player.displayName$)
         .map(([platform, displayName]) => {
+          player.fetchedXboxClips$.next(false);
           if (platform === 1 && displayName.length) {
+            player.fetchingXboxClips$.next(true);
             return 'https://api.guardian.theater/api/clips/' + displayName;
           } else {
             return '';
@@ -255,9 +372,11 @@ export class FrontPageComponent implements OnInit {
           }
         })
         .subscribe((res) => {
-          if (res) {
+          player.fetchingXboxClips$.next(false);
+          player.fetchedXboxClips$.next(true);
+          try {
             player.xboxResponse$.next(res);
-          }
+          } catch (e) { }
         });
 
       Observable.combineLatest(player.xboxResponse$, this.start$, this.end$)
@@ -288,7 +407,80 @@ export class FrontPageComponent implements OnInit {
             });
             player.xboxClips$.next(clips);
           }
-        })
+        });
+
+      player.bungieStatus$ = Observable.combineLatest(
+        player.fetchingBungieResults$,
+        player.fetchingTwitchId1$,
+        player.fetchingBungieId$,
+        player.fetchingTwitchId2$,
+        player.membershipId$
+      )
+      .map(([fB, fT1, fBi, fT2, mId]) => {
+        // States:
+        //   1 - Gray
+        //   2 - GraySearching
+        //   3 - Color
+        //   4 - ColorSearching
+        if (mId && (fT1 || fBi || fT2)) {
+          return 4;
+        } else if (mId) {
+          return 3;
+        } else if (fB) {
+          return 2;
+        } else {
+          return 1;
+        }
+      });
+
+      player.twitchStatus$ = Observable.combineLatest(
+        player.fetchingTwitchId1$,
+        player.fetchingBungieId$,
+        player.fetchingTwitchId2$,
+        player.twitchId$,
+        player.fetchingTwitchClips$
+      )
+      .map(([fT1, fBi, fT2, tId, fT]) => {
+        // States:
+        //   1 - Gray
+        //   2 - GraySearching
+        //   3 - Color
+        //   4 - ColorSearching
+        if (tId && fT) {
+          return 4;
+        } else if (tId) {
+          return 3;
+        } else if (fT1 || fBi || fT2) {
+          return 2;
+        } else {
+          return 1;
+        }
+      });
+
+      player.xboxStatus$ = Observable.combineLatest(
+        this.platform$,
+        player.displayName$,
+        player.fetchingXboxClips$
+      )
+      .map(([p, dN, fX]) => {
+        // States:
+        //   0 - Hidden
+        //   1 - Gray
+        //   2 - Color
+        //   3 - ColorSearching
+        if (p === 1) {
+          if (dN && fX) {
+            return 3;
+          } else if (dN) {
+            return 2;
+          } else {
+            return 1;
+          }
+        } else {
+          return 0;
+        }
+      });
+
     });
   }
 
