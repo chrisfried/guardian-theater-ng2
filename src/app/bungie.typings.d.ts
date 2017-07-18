@@ -34,7 +34,9 @@ declare namespace bungie {
   }
 
   interface PartnershipResponse extends Response {
-    Response: Partnership[]
+    Response: {
+      partnershipIdentifier: string
+    }
   }
 
   interface Partnership {

@@ -196,7 +196,7 @@ export class ActivityService implements OnDestroy {
                         }
                       })
                       .subscribe((res: bungie.PartnershipResponse) => {
-                        if (res.Response.length) {
+                        if (res.Response) {
                           this.twitchService.twitch[membershipId].next({
                             displayName: displayName,
                             checkedId: true,

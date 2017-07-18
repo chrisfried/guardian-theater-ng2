@@ -1,0 +1,50 @@
+<div class="columns small-12 button-group expanded">
+  <button type="button" class="button xbox filter-toggle" [ngClass]="{ 'hollow': (platform$ | async) !== 1 }" (click)="selectPlatform(1)"
+    title="Xbox"><span class="fi-social-xbox"></span></button>
+  <button type="button" class="button playstation filter-toggle" [ngClass]="{ 'hollow': (platform$ | async) !== 2 }" (click)="selectPlatform(2)"
+    title="PlayStation"><span class="fi-social-playstation"></span></button>
+</div>
+
+<div *ngIf="(platform$ | async) > 0">
+  <label>Local Start Time: <input type="datetime-local" [(ngModel)]="startTime" (change)="updateStart($event)"></label>
+  <label>Guardians: <input *ngFor="let player of players" type="text" [(ngModel)]="player.name" (change)="player.updateName()"></label>
+  <div *ngFor="let player of players">
+    <div *ngFor="let clip of (player.clips$ | async)" class="clip-item">
+      <div class="row">
+        <div class="columns small-12 mode pgcr-entry">
+          <span class="pgcr-entry-name">
+            {{ player.displayName$ | async }}
+          </span>
+        </div>
+      </div>
+      <div class="row" *ngIf="clip.type === 'twitch' && clip.video">
+        <a class="columns small-12 mode twitch-banner" target="_blank" [href]="clip.video.url + '?t=' + clip.hhmmss" angulartics2On="click"
+          angularticsEvent="TwitchClipLink" angularticsCategory="TwitchLink">
+          <span class="twitch-clip-name">{{ clip.video.title }}</span>
+          <span class="twitch-timestamp">{{ clip.start | twitchStamp:clip.entry.startTime }}</span>
+        </a>
+        <div class="columns small-12 clip-wrapper" *ngIf="!clip.play">
+          <img *ngIf="clip.video.thumbnails && clip.video.thumbnails[0]" class="clip-thumbnail" (click)="clip.play = !clip.play" [src]="clip.video.thumbnails[0].url">
+          <span *ngIf="!clip.video.thumbnails || !clip.video.thumbnails[0]" (click)="clip.play = !clip.play" class="clip-play-button"></span>
+        </div>
+        <div class="columns small-12 clip-wrapper" *ngIf="clip.play">
+          <iframe class="twitch-embed" [src]="clip.embedUrl" frameborder="0" scrolling="no" allowfullscreen="true">
+          </iframe>
+        </div>
+      </div>
+      <div class="row" *ngIf="clip.type === 'xbox'">
+        <div class="columns small-12 mode xbox-banner" target="_blank">
+          <span class="xbox-clip-name">{{ clip.video.clipName || 'Xbox Game DVR Clip' }}</span>
+        </div>
+        <div class="columns small-12 clip-wrapper">
+          <video id="my-video" class="video-js xbox-embed" controls preload="none" [poster]="clip.video.thumbnails[0].uri" data-setup="{}"
+            (click)="$event.srcElement.paused ? $event.srcElement.play() : $event.srcElement.pause()">
+            <source [src]="clip.video.gameClipUris[0].uri" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>

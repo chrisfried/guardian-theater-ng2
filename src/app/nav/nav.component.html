@@ -15,26 +15,10 @@
     <a title="Github" href="https://github.com/GuardianTheater" target="_blank" angulartics2On="click" angularticsEvent="NavBarLink" angularticsCategory="GithubLink">
       <span class="fi-social-github"></span>
     </a>
-    <a title="About Guardian Theater" (click)="route(['/about'])" angulartics2On="click" angularticsEvent="NavBarLink" angularticsCategory="AboutLink">
-      <span class="fi-info"></span>
-    </a>
-    <a title="Settings" (click)="route(['/settings'])" angulartics2On="click" angularticsEvent="NavBarLink" angularticsCategory="SettingsLink">
-      <span class="fi-wrench"></span>
-    </a>
   </div>
   <div class="logo-wrap small-2 medium-12 columns order-3 medium-order-1">
     <a (click)="route(['/'])" class="home">
       <img class="logo" src="/assets/images/travelereel.png">
     </a>
-  </div>
-  <div class="small-10 medium-12 columns order-4 medium-order-2">
-    <form class="row search-form" (ngSubmit)="search()">
-      <div class="small-12 columns input-group search-bar">
-        <input [(ngModel)]="searchString" name="searchString" text="quick-links" class="input-group-field search-box" type="search" placeholder="Guardian" autofocus="true">
-        <div class="input-group-button">
-          <button type="submit" class="button search-button">Go</button>
-        </div>
-      </div>
-    </form>
   </div>
 </div>
