@@ -360,7 +360,7 @@ export class FrontPageComponent implements OnInit {
           player.fetchedXboxClips$.next(false);
           if (platform === 1 && displayName.length) {
             player.fetchingXboxClips$.next(true);
-            return 'https://api.guardian.theater/api/clips/' + displayName;
+            return 'https://api.guardian.theater/api/2/clips/' + displayName;
           } else {
             return '';
           }
