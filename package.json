@@ -9,8 +9,7 @@
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
     "pree2e": "webdriver-manager update --standalone false --gecko false",
-    "e2e": "protractor",
-    "ngh": "ng build --prod && cp dist/index.html dist/404.html && cp ghp/CNAME dist/CNAME && ngh"
+    "e2e": "protractor"
   },
   "private": true,
   "dependencies": {
