@@ -37,7 +37,7 @@
         <a class="columns small-12 mode twitch-banner" target="_blank" [href]="clip.video.url + '?t=' + clip.hhmmss" angulartics2On="click"
           angularticsEvent="TwitchClipLink" angularticsCategory="TwitchLink">
           <span class="twitch-clip-name">{{ clip.video.title }}</span>
-          <span class="twitch-timestamp">{{ clip.start | twitchStamp:clip.entry.startTime }}</span>
+          <span class="twitch-timestamp">{{ clip.start | twitchStamp:startSeconds }}</span>
         </a>
         <div class="columns small-12 clip-wrapper" *ngIf="!clip.play">
           <img *ngIf="clip.video.thumbnails && clip.video.thumbnails[0]" class="clip-thumbnail" (click)="clip.play = !clip.play" [src]="clip.video.thumbnails[0].url">

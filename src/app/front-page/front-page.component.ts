@@ -16,6 +16,7 @@ export class FrontPageComponent implements OnInit {
   public endTime: string;
 
   private start$: BehaviorSubject<Date>;
+  public startSeconds: number;
   public end$: Observable<Date>;
 
   public players: {
@@ -65,6 +66,9 @@ export class FrontPageComponent implements OnInit {
 
     let startDate = new Date();
     this.start$ = new BehaviorSubject(startDate);
+    this.start$
+      .debounceTime(0)
+      .subscribe(start => this.startSeconds = start.getTime() / 1000);
     this.end$ = this.start$
       .debounceTime(0)
       .map(start => new Date(start.getTime() + 600000));

@@ -6,6 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class TwitchStampPipe implements PipeTransform {
 
   transform(clipStart: number, entryStart: number): string {
+    console.log(clipStart, entryStart);
     let offset = entryStart - clipStart;
     let hms = '0:00:00';
     if (offset > 0) {
