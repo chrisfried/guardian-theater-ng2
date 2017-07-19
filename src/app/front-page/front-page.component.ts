@@ -52,7 +52,9 @@ export class FrontPageComponent implements OnInit {
 
     bungieStatus$: Observable<number>,
     twitchStatus$: Observable<number>,
-    xboxStatus$: Observable<number>
+    xboxStatus$: Observable<number>,
+
+    clipCount$: Observable<number>
   }[];
 
   constructor(
@@ -122,6 +124,8 @@ export class FrontPageComponent implements OnInit {
       this.bungieStatus$ = Observable.of(1);
       this.twitchStatus$ = Observable.of(1);
       this.xboxStatus$ = Observable.of(0);
+
+      this.clipCount$ = Observable.of(0);
     }
 
     for (let i = 0; i < 8; i++) {
@@ -483,6 +487,11 @@ export class FrontPageComponent implements OnInit {
         } else {
           return 0;
         }
+      });
+
+    player.clipCount$ = Observable.combineLatest(player.twitchClips$, player.xboxClips$)
+      .map(([tClips, xClips]) => {
+        return xClips.length + tClips.length;
       });
 
     });
