@@ -434,7 +434,7 @@ export class ActivityService implements OnDestroy {
                       response: {}
                     }) => {
                       if (!gamer.checked && gamer.gamertag) {
-                        return 'https://api.guardian.theater/api/clips/' + gamertag;
+                        return 'https://api.xboxrecord.us/gameclips/gamertag/' + gamertag + '/titleid/247546985';
                       } else {
                         return '';
                       }
