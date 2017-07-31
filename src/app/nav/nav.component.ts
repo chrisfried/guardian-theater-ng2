@@ -51,9 +51,9 @@ export class NavComponent implements OnInit, OnDestroy {
     this.router.navigate(route);
   }
 
-  hideBetaText() {
-    this.betaTextHidden.hidden = true;
-    this.localStorageService.set('hideBetaText', this.betaTextHidden);
-  }
+  // hideBetaText() {
+  //   this.betaTextHidden.hidden = true;
+  //   this.localStorageService.set('hideBetaText', this.betaTextHidden);
+  // }
 
 }
