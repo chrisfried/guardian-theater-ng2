@@ -115,10 +115,14 @@ export class ActivityService implements OnDestroy {
                 try {
                   activityDurationSeconds = entry.values.activityDurationSeconds.basic.value;
                 } catch (e) { }
-                entry.startTime = period.getTime() / 1000
-                  + activityDurationSeconds
-                  - remainingSeconds
-                  - secondsPlayed;
+                if (secondsPlayed) {
+                  entry.startTime = period.getTime() / 1000
+                    + activityDurationSeconds
+                    - remainingSeconds
+                    - secondsPlayed;
+                } else {
+                  entry.startTime = period.getTime() / 1000;
+                }
                 entry.stopTime = period.getTime() / 1000
                   + activityDurationSeconds
                   - remainingSeconds;
@@ -336,12 +340,12 @@ export class ActivityService implements OnDestroy {
                   if (entry.values.team) {
                     pgcr.active.team = entry.values.team.basic.value;
                   }
-                } catch (e) { console.log(e); }
+                } catch (e) { }
                 try {
                   if (entry.extended.values.fireTeamId) {
                     pgcr.active.fireteam = entry.extended.values.fireTeamId.basic.value;
                   }
-                } catch (e) { console.log(e); }
+                } catch (e) { }
                 return true;
               }
             });
