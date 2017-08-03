@@ -71,7 +71,7 @@ export class ActivityService implements OnDestroy {
       this._activityId
         .map((activityId) => {
           if (activityId) {
-            return 'https://www.bungie.net/Platform/Destiny/Stats/PostGameCarnageReport/' + activityId + '/';
+            return 'https://www.bungie.net/d1/Platform/Destiny/Stats/PostGameCarnageReport/' + activityId + '/';
           } else {
             return '';
           }
