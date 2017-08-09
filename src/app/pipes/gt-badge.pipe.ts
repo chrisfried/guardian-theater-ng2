@@ -36,7 +36,8 @@ export class GtBadgePipe implements PipeTransform {
       '14050724', // LoveDazed
       '5996932', // VlakatafakatA
       '4170740', // LeBrometheus
-      '167493' // Marruk
+      '167493', // Marruk
+      '3836546' // CobraliciouZ
     ];
     if (owner.indexOf(membershipId) > -1) {
       return 'Owner';
