@@ -96,6 +96,7 @@ declare namespace gt {
       dvr: boolean,
       clips: boolean,
       gamedtv: boolean,
+      xbox: boolean,
       download: boolean,
       options: boolean
     }

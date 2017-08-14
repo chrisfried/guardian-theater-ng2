@@ -55,6 +55,7 @@ export class SettingsService {
         dvr: false,
         clips: false,
         gamedtv: false,
+        xbox: true,
         download: true,
         options: true
       };
