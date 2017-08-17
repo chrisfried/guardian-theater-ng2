@@ -455,6 +455,8 @@ export class ActivityService implements OnDestroy {
                     })
                     .subscribe((res) => {
                       if (res) {
+                        
+                        console.log("res for", gamertag, res);
                         this.xboxService.xbox[gamertag].next({
                           checked: true,
                           gamertag: gamertag,
@@ -471,14 +473,20 @@ export class ActivityService implements OnDestroy {
                       gamertag: string,
                       response: xbox.Response
                     }) => {
+                      console.log("I think clips arrived", gamertag);
+                      console.log(subject.response);
+                      console.log(subject.response.gameClips);
+                      console.log(subject.response.gameClips.length);
                       if (subject.response && subject.response.gameClips && subject.response.gameClips.length) {
                         subject.response.gameClips.forEach((video: xbox.Video) => {
                           let recordedStart = new Date(video.dateRecorded).getTime() / 1000;
                           let recordedStop = recordedStart + video.durationInSeconds;
                           if (recordedStart > entry.stopTime) {
+                            console.log(recordedStart, "is greater than", entry.stopTime);
                             return;
                           }
                           if (recordedStop < entry.startTime) {
+                            console.log(recordedStop, "is less than", entry.startTime);
                             return;
                           }
                           if (!pgcr.clips) {
