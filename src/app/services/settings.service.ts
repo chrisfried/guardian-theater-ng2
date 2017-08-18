@@ -44,7 +44,8 @@ export class SettingsService {
         twitch: false,
         tracker: false,
         ggg: false,
-        options: true
+        options: true,
+        platform: false
       };
     }
 
@@ -54,6 +55,7 @@ export class SettingsService {
         dvr: false,
         clips: false,
         gamedtv: false,
+        xbox: true,
         download: true,
         options: true
       };

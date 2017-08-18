@@ -314,6 +314,21 @@
   background-color: $guardian-gg-grey;
 }
 
+.profile-link.platform.ps {
+  background-image: url('/assets/images/ps.png');
+
+  &:hover {
+    background-color: $playstation-blue;
+  }
+}
+
+.profile-link.platform.xbox {
+
+  &:hover {
+    background-color: $xbox-green;
+  }
+}
+
 .profile-link.options:hover, .activity-link.options:hover {
   background-color: $dark-blue;
 }
@@ -404,6 +419,10 @@
 
 .player-label.Donor {
   color: $donor-blue;  
+}
+
+.player-label.Shirt.Haver {
+  color: $light-purple;
 }
 
 .player-label.Contributor {

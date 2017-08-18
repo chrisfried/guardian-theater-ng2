@@ -13,16 +13,7 @@ import { Subscription } from 'rxjs/Rx';
   ]
 })
 export class GuardianComponent implements OnInit, OnDestroy {
-  private subDisplayName: Subscription;
-  private subSelectPlatform: Subscription;
-  private subMembershipType: Subscription;
-  private subSearch: Subscription;
-  private subCharacters: Subscription;
-  private subActiveCharacter: Subscription;
-  private subActivities: Subscription;
-  private subGamemode: Subscription;
-  private subPage: Subscription;
-  private subLimiter: Subscription;
+  private subs: Subscription[];
 
   private _guardian: string;
 
@@ -40,73 +31,66 @@ export class GuardianComponent implements OnInit, OnDestroy {
     private router: Router,
     private route: ActivatedRoute,
     public guardianService: GuardianService,
-    private settingsService: SettingsService 
+    private settingsService: SettingsService
   ) { }
 
   ngOnInit() {
 
-    this.subDisplayName = this.guardianService.displayName
+    this.subs = [];
+
+    this.subs.push(this.guardianService.displayName
       .subscribe(name => {
         this.displayName = name;
-      });
+      }));
 
-    this.subSelectPlatform = this.guardianService.selectPlatform
+    this.subs.push(this.guardianService.selectPlatform
       .subscribe(bool => {
         this.needToSelectPlatform = bool;
-      });
+      }));
 
-    this.subMembershipType = this.guardianService.membershipType
+    this.subs.push(this.guardianService.membershipType
       .subscribe(type => {
         this.membershipType = type;
-      });
+      }));
 
-    this.subSearch = this.guardianService.searchName
+    this.subs.push(this.guardianService.searchName
       .subscribe(name => {
         this._guardian = name;
-      });
+      }));
 
-    this.subCharacters = this.guardianService.characters
+    this.subs.push(this.guardianService.characters
       .subscribe(characters => {
         this.characters = characters;
-      });
+      }));
 
-    this.subActiveCharacter = this.guardianService.activeCharacter
+    this.subs.push(this.guardianService.activeCharacter
       .subscribe(character => {
         this.activeCharacter = character;
-      });
+      }));
 
-    this.subActivities = this.guardianService.activities
+    this.subs.push(this.guardianService.activities
       .subscribe(activities => {
         this.activities = activities;
-      });
+      }));
 
-    this.subGamemode = this.guardianService.activityMode
+    this.subs.push(this.guardianService.activityMode
       .subscribe(gamemode => {
         this.gamemode = gamemode;
-      });
+      }));
 
-    this.subPage = this.guardianService.activityPage
+    this.subs.push(this.guardianService.activityPage
       .subscribe(page => {
         this.page = page;
-      });
+      }));
 
-    this.subLimiter = this.settingsService.clipLimiter
+    this.subs.push(this.settingsService.clipLimiter
       .subscribe(limiter => {
         this.clipLimiter = limiter;
-      });
+      }));
   }
 
   ngOnDestroy() {
-    this.subDisplayName.unsubscribe();
-    this.subSelectPlatform.unsubscribe();
-    this.subMembershipType.unsubscribe();
-    this.subSearch.unsubscribe();
-    this.subCharacters.unsubscribe();
-    this.subActiveCharacter.unsubscribe();
-    this.subActivities.unsubscribe();
-    this.subGamemode.unsubscribe();
-    this.subPage.unsubscribe();
-    this.subLimiter.unsubscribe();
+    this.subs.forEach(sub => sub.unsubscribe());
   }
 
   selectPlatform(platform: string) {

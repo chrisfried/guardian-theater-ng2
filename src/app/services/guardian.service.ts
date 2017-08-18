@@ -90,7 +90,7 @@ export class GuardianService implements OnDestroy {
     )
       .map(([platform, guardian]) => {
         if (guardian.length) {
-          return 'https://www.bungie.net/Platform/Destiny/SearchDestinyPlayer/' + platform + '/' + guardian + '/';
+          return 'https://www.bungie.net/d1/Platform/Destiny/SearchDestinyPlayer/' + platform + '/' + guardian + '/';
         } else {
           return '';
         }
@@ -136,7 +136,7 @@ export class GuardianService implements OnDestroy {
       .map(([membershipType, membershipId]) => {
         try {
           if (membershipType && membershipId) {
-            return 'https://www.bungie.net/Platform/Destiny/' + membershipType + '/Account/' + membershipId + '/Summary/';
+            return 'https://www.bungie.net/d1/Platform/Destiny/' + membershipType + '/Account/' + membershipId + '/Summary/';
           } else {
             return '';
           }
@@ -196,7 +196,7 @@ export class GuardianService implements OnDestroy {
           let membershipId = character.characterBase.membershipId;
           let characterId = character.characterBase.characterId;
           this.characterId.next(characterId);
-          return 'https://www.bungie.net/Platform/Destiny/Stats/ActivityHistory/'
+          return 'https://www.bungie.net/d1/Platform/Destiny/Stats/ActivityHistory/'
             + membershipType + '/' + membershipId + '/' + characterId + '/?mode=' + mode + '&count=7&page=' + page;
         } catch (e) {
           return '';

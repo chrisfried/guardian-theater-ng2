@@ -88,13 +88,15 @@ declare namespace gt {
       twitch: boolean,
       tracker: boolean,
       ggg: boolean,
-      options: boolean
+      options: boolean,
+      platform: boolean
     },
     xbox?: {
       recordus: boolean,
       dvr: boolean,
       clips: boolean,
       gamedtv: boolean,
+      xbox: boolean,
       download: boolean,
       options: boolean
     }

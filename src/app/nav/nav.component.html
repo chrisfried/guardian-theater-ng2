@@ -3,7 +3,7 @@
     <ng2-adsense></ng2-adsense>
   </div>
   <div class="columns small-12 icon-menu row align-right order-2 medium-order-3">
-    <a class="donate" title="Take My Money" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8GLMLFEGR5TFU" target="_blank" angulartics2On="click" angularticsEvent="NavBarLink" angularticsCategory="DonateLink">
+    <a class="donate" title="Take My Money" (click)="route(['/donate'])" angulartics2On="click" angularticsEvent="NavBarLink" angularticsCategory="DonateLink">
       <span>Donate</span>
     </a>
     <a title="Guardian Theater on Twitter" href="https://twitter.com/guardtheater" target="_blank" class="twitter" angulartics2On="click" angularticsEvent="NavBarLink" angularticsCategory="TwitterLink">
@@ -36,11 +36,5 @@
         </div>
       </div>
     </form>
-  </div>
-  <div class="mayhem columns order-0 medium-order-4">
-    <a href="https://mayhem.guardian.theater">
-      <img src="/assets/images/travelerfire.png">
-      <span>A Bungie error is preventing Mayhem Clash Iron Banner activities from appearing normally. Thanks to our friends at Trials Report, we have a temporary solution at mayhem.guardian.theater.</span>
-    </a>
   </div>
 </div>

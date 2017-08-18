@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
+import { LocalStorageService } from 'angular-2-local-storage';
 
 @Component({
   selector: 'app-nav',
@@ -11,9 +12,13 @@ export class NavComponent implements OnInit, OnDestroy {
   public ad: boolean;
   private adInterval;
   private adTimeout;
+  public betaTextHidden: {
+    hidden?: boolean
+  };
 
   constructor(
-    private router: Router
+    private router: Router,
+    private localStorageService: LocalStorageService
   ) {}
 
   ngOnInit() {
@@ -27,6 +32,8 @@ export class NavComponent implements OnInit, OnDestroy {
         }, 50);
       }
     }, 30000)
+
+    this.betaTextHidden = this.localStorageService.get('hideBetaText') || { hidden: false };
   }
 
   ngOnDestroy() {
@@ -43,5 +50,10 @@ export class NavComponent implements OnInit, OnDestroy {
   route(route: any[]) {
     this.router.navigate(route);
   }
+
+  // hideBetaText() {
+  //   this.betaTextHidden.hidden = true;
+  //   this.localStorageService.set('hideBetaText', this.betaTextHidden);
+  // }
 
 }

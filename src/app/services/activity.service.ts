@@ -71,7 +71,7 @@ export class ActivityService implements OnDestroy {
       this._activityId
         .map((activityId) => {
           if (activityId) {
-            return 'https://www.bungie.net/Platform/Destiny/Stats/PostGameCarnageReport/' + activityId + '/';
+            return 'https://www.bungie.net/d1/Platform/Destiny/Stats/PostGameCarnageReport/' + activityId + '/';
           } else {
             return '';
           }
@@ -115,10 +115,14 @@ export class ActivityService implements OnDestroy {
                 try {
                   activityDurationSeconds = entry.values.activityDurationSeconds.basic.value;
                 } catch (e) { }
-                entry.startTime = period.getTime() / 1000
-                  + activityDurationSeconds
-                  - remainingSeconds
-                  - secondsPlayed;
+                if (secondsPlayed) {
+                  entry.startTime = period.getTime() / 1000
+                    + activityDurationSeconds
+                    - remainingSeconds
+                    - secondsPlayed;
+                } else {
+                  entry.startTime = period.getTime() / 1000;
+                }
                 entry.stopTime = period.getTime() / 1000
                   + activityDurationSeconds
                   - remainingSeconds;
@@ -336,12 +340,12 @@ export class ActivityService implements OnDestroy {
                   if (entry.values.team) {
                     pgcr.active.team = entry.values.team.basic.value;
                   }
-                } catch (e) { console.log(e); }
+                } catch (e) { }
                 try {
                   if (entry.extended.values.fireTeamId) {
                     pgcr.active.fireteam = entry.extended.values.fireTeamId.basic.value;
                   }
-                } catch (e) { console.log(e); }
+                } catch (e) { }
                 return true;
               }
             });
@@ -434,7 +438,7 @@ export class ActivityService implements OnDestroy {
                       response: {}
                     }) => {
                       if (!gamer.checked && gamer.gamertag) {
-                        return 'https://api.guardian.theater/api/clips/' + gamertag;
+                        return 'https://api.xboxrecord.us/gameclips/gamertag/' + gamertag + '/titleid/247546985';
                       } else {
                         return '';
                       }
@@ -444,7 +448,7 @@ export class ActivityService implements OnDestroy {
                       if (url.length) {
                         return this.http.get(url)
                           .map((res: Response) => res.json())
-                          .catch((error: any) => Observable.from(error.json().error || 'Server error'));
+                          .catch((error: any) => Observable.from(error.error || 'Server error'));
                       } else {
                         return Observable.empty();
                       }

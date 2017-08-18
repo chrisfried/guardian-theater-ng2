@@ -23,6 +23,7 @@ import { ActivityComponent } from './activity/activity.component';
 import { DestinyHashPipe } from './pipes/destiny-hash.pipe';
 import { TwitchStampPipe } from './pipes/twitch-stamp.pipe';
 import { GtBadgePipe } from './pipes/gt-badge.pipe';
+import { TakeMyMoneyComponent } from './take-my-money/take-my-money.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { GtBadgePipe } from './pipes/gt-badge.pipe';
     TwitchStampPipe,
     GtBadgePipe,
     ActivityComponent,
-    DestinyHashPipe
+    DestinyHashPipe,
+    TakeMyMoneyComponent
   ],
   imports: [
     BrowserModule,
