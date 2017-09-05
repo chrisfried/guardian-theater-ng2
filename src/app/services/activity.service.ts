@@ -439,7 +439,7 @@ export class ActivityService implements OnDestroy {
                       response: {}
                     }) => {
                       if (!gamer.checked && gamer.gamertag) {
-                        return 'https://api.xboxrecord.us/gameclips/gamertag/' + gamertag + '/titleid/247546985';
+                        return 'https://api.xboxrecord.us/gameclips/gamertag/' + gamertag + '/titleid/144389848';
                       } else {
                         return '';
                       }
