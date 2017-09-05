@@ -13,24 +13,15 @@ declare namespace bungie {
   }
 
   interface AccountResponse extends Response {
-    Response: {
-      data: Account,
-      definitions?: Definitions
-    }
+    Response: Account
   }
 
   interface ActivityHistoryResponse extends Response {
-    Response: {
-      data: ActivityHistory,
-      definitions?: Definitions
-    }
+    Response: ActivityHistory
   }
 
   interface PostGameCarnageReportResponse extends Response {
-    Response: {
-      data: PostGameCarnageReport,
-      definitions?: Definitions
-    }
+    Response: PostGameCarnageReport
   }
 
   interface PartnershipResponse extends Response {
@@ -81,74 +72,37 @@ declare namespace bungie {
   }
 
   interface Character {
-    characterBase: {
-      membershipId: string,
-      membershipType: number,
-      characterId: string,
-      dateLastPlayed: string,
-      minutesPlayedThisSession: string,
-      minutesPlayedTotal: string,
-      powerLevel: number,
-      raceHash: number,
-      genderHash: number,
-      classHash: number,
-      currentActivityHash: number,
-      lastCompletedStoryHash: number,
-      stats: {
-        STAT_DEFENSE: CharacterStat,
-        STAT_INTELLECT: CharacterStat,
-        STAT_DISCIPLINE: CharacterStat,
-        STAT_STRENGTH: CharacterStat,
-        STAT_LIGHT: CharacterStat,
-        STAT_ARMOR: CharacterStat,
-        STAT_AGILITY: CharacterStat,
-        STAT_RECOVERY: CharacterStat,
-        STAT_OPTICS: CharacterStat
-      },
-      customization: {
-        personality: number,
-        face: number,
-        skinColor: number,
-        lipColor: number,
-        eyeColor: number,
-        hairColor: number,
-        featureColor: number,
-        decalColor: number,
-        wearHelmet: boolean,
-        hairIndex: number,
-        featureIndex: number,
-        decalIndex: number
-      },
-      grimoireScore: number,
-      peerView: {
-        equipment: {
-          itemHash: number,
-          dyes: {
-            channelHash: number,
-            dyeHash: number
-          }[]
-        }[]
-      },
-      genderType: number,
-      classType: number,
-      buildStatGroupHash: number
-    },
+    membershipId: string,
+    membershipType: number,
+    characterId: string,
+    dateLastPlayed: string,
+    minutesPlayedThisSession: string,
+    minutesPlayedTotal: string,
+    light: number,
+    stats: any,
+    raceHash: number,
+    genderHash: number,
+    classHash: number,
+    raceType: number,
+    classType: number,
+    genderType: number,
+    emblemPath: string,
+    emblemBackgroundPath: string,
+    emblemHash: number,
     levelProgression: {
+      progressionHash: number
       dailyProgress: number,
+      dailyLimit: number,
       weeklyProgress: number,
+      weeklyLimit: number,
       currentProgress: number,
       level: number,
-      step: number,
+      levelCap: number
+      stepIndex: number,
       progressToNextLevel: number,
       nextLevelAt: number,
-      progressionHash: number
     },
-    emblemPath: string,
-    backgroundPath: string,
-    emblemHash: number,
-    characterLevel: number,
     baseCharacterLevel: number,
-    isPrestigeLevel: boolean,
     percentToNextLevel: number
   }
 
@@ -179,7 +133,9 @@ declare namespace bungie {
   interface Account {
     membershipId: string,
     membershipType: number,
-    characters: Character[],
+    characters: {
+      data: any
+    },
     inventory: {
       items: {}[],
       currencies: {
@@ -214,11 +170,13 @@ declare namespace bungie {
       averageScorePerLife: ActivityStat,
       completed: ActivityStat,
       killsDeathsRatio: ActivityStat,
+      killsDeathsAssists: ActivityStat,
       activityDurationSeconds: ActivityStat,
-      standing: ActivityStat,
       completionReason: ActivityStat,
-      playerCount: ActivityStat,
-      raceCompletionMilliseconds: ActivityStat
+      fireteamId: ActivityStat,
+      startSeconds: ActivityStat,
+      timePlayedSeconds: ActivityStat,
+      playerCount: ActivityStat
     }
   }
 

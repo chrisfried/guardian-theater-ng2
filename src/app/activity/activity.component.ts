@@ -40,6 +40,7 @@ export class ActivityComponent implements OnInit, OnDestroy {
     );
     this.subs.push(this.activityService.pgcr
       .subscribe((pgcr: gt.PostGameCarnageReport) => {
+        console.log('pgcr', pgcr)
         this.pgcr = pgcr;
         if (pgcr && !pgcr.loading) {
           pgcr.loading = {

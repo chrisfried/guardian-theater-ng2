@@ -90,7 +90,7 @@ export class GuardianService implements OnDestroy {
     )
       .map(([platform, guardian]) => {
         if (guardian.length) {
-          return 'https://www.bungie.net/d1/Platform/Destiny/SearchDestinyPlayer/' + platform + '/' + guardian + '/';
+          return 'https://www.bungie.net/Platform/Destiny2/SearchDestinyPlayer/' + platform + '/' + guardian + '/';
         } else {
           return '';
         }
@@ -109,6 +109,7 @@ export class GuardianService implements OnDestroy {
         }
       })
       .subscribe((res: bungie.SearchDestinyPlayerResponse) => {
+        console.log('SearchDestinyPlayer', res);
         try {
           let Response = res.Response;
           this.settingsService.activeName.next('');
@@ -136,7 +137,7 @@ export class GuardianService implements OnDestroy {
       .map(([membershipType, membershipId]) => {
         try {
           if (membershipType && membershipId) {
-            return 'https://www.bungie.net/d1/Platform/Destiny/' + membershipType + '/Account/' + membershipId + '/Summary/';
+            return 'https://www.bungie.net/Platform/Destiny2/' + membershipType + '/Profile/' + membershipId + '/?components=200';
           } else {
             return '';
           }
@@ -156,8 +157,9 @@ export class GuardianService implements OnDestroy {
         }
       })
       .subscribe((res: bungie.AccountResponse) => {
+        console.log('Profile', res);
         try {
-          this.characters.next(res.Response.data.characters);
+          this.characters.next(res.Response.characters.data);
         } catch (e) {
           console.log(e);
         }
@@ -169,19 +171,21 @@ export class GuardianService implements OnDestroy {
     )
       .map(([characters, characterId]) => {
         let character = null;
-        if (characters && characters.length) {
+        console.log('characters', characters);
+        if (characters) {
+          console.log('characterId', characterId)
           if (characterId) {
-            character = characters.find(function (char) {
-              return char.characterBase.characterId === characterId;
-            });
+            character = characters[characterId]
           } else {
-            character = characters[0];
+            character = characters[Object.keys(characters)[0]];
+            console.log('character', character);
           }
         }
         return character;
       })
       .distinctUntilChanged()
       .subscribe((character: bungie.Character) => {
+        console.log('character', character)
         this.activeCharacter.next(character);
       });
 
@@ -192,12 +196,14 @@ export class GuardianService implements OnDestroy {
     )
       .map(([character, mode, page]) => {
         try {
-          let membershipType = character.characterBase.membershipType;
-          let membershipId = character.characterBase.membershipId;
-          let characterId = character.characterBase.characterId;
+          let membershipType = character.membershipType;
+          let membershipId = character.membershipId;
+          let characterId = character.characterId;
           this.characterId.next(characterId);
-          return 'https://www.bungie.net/d1/Platform/Destiny/Stats/ActivityHistory/'
-            + membershipType + '/' + membershipId + '/' + characterId + '/?mode=' + mode + '&count=7&page=' + page;
+          console.log('https://www.bungie.net/Platform/Destiny2/' + membershipType + '/Account/' + membershipId
+          + '/Character/' + characterId + '/Stats/Activities/?mode=' + mode + '&count=7&page=' + page);
+          return 'https://www.bungie.net/Platform/Destiny2/' + membershipType + '/Account/' + membershipId
+                  + '/Character/' + characterId + '/Stats/Activities/?mode=' + mode + '&count=7&page=' + page;
         } catch (e) {
           return '';
         }
@@ -215,11 +221,12 @@ export class GuardianService implements OnDestroy {
         }
       })
       .subscribe((res: bungie.ActivityHistoryResponse) => {
+        console.log('Activities', res);
         try {
-          if (!res.Response.data || !res.Response.data.activities || !res.Response.data.activities.length) {
+          if (!res.Response || !res.Response.activities || !res.Response.activities.length) {
             this.noActivities.next(true);
           }
-          this.activities.next(res.Response.data.activities);
+          this.activities.next(res.Response.activities);
         } catch (e) {
           console.log(e);
         }

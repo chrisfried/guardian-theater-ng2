@@ -71,7 +71,7 @@ export class ActivityService implements OnDestroy {
       this._activityId
         .map((activityId) => {
           if (activityId) {
-            return 'https://www.bungie.net/d1/Platform/Destiny/Stats/PostGameCarnageReport/' + activityId + '/';
+            return 'https://www.bungie.net/Platform/Destiny2/Stats/PostGameCarnageReport/' + activityId + '/';
           } else {
             return '';
           }
@@ -88,8 +88,9 @@ export class ActivityService implements OnDestroy {
           }
         })
         .subscribe((res: bungie.PostGameCarnageReportResponse) => {
+          console.log(res);
           try {
-            this.pgcr.next(res.Response.data);
+            this.pgcr.next(res.Response);
           } catch (e) {
             console.log(e);
           }

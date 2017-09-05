@@ -8,19 +8,19 @@
   <button type="button" class="button playstation filter-toggle" (click)="selectPlatform(2)" title="PlayStation"><span class="fi-social-playstation"></span></button>
 </div>
 
-<div *ngIf="displayName && activeCharacter" class="profile small-12 columns" [ngStyle]="{'background-image': 'url(//www.bungie.net' + activeCharacter.backgroundPath + ')'}">
+<div *ngIf="displayName && activeCharacter" class="profile small-12 columns" [ngStyle]="{'background-image': 'url(//www.bungie.net' + activeCharacter.emblemBackgroundPath + ')'}">
   <div class="row">
     <div class="active-character">
       <div class="emblem" [ngStyle]="{'background-image': 'url(//www.bungie.net' + activeCharacter.emblemPath + ')'}"></div>
       <div class="gamertag">
         {{ displayName }}
       </div>
-      <div class="character-details" *ngIf="activeCharacter.characterBase"><span class="power-level">{{ activeCharacter.characterBase.powerLevel }} </span><span>// {{ activeCharacter.characterBase.classHash | destinyHash:'class' }} // {{ activeCharacter.characterBase.raceHash | destinyHash:'race' }}</span></div>
+      <div class="character-details" *ngIf="activeCharacter"><span class="power-level">{{ activeCharacter.light }} </span><span>// {{ activeCharacter.classHash | destinyHash:'class' }} // {{ activeCharacter.raceHash | destinyHash:'race' }}</span></div>
     </div>
   </div>
   <div class="row characters" *ngIf="characters">
-    <div class="expand columns character" *ngFor="let character of characters" [ngStyle]="{'background-image': character.characterBase.characterId === activeCharacter.characterBase.characterId ? '' : 'url(//www.bungie.net' + character.backgroundPath + ')'}">
-      <a (click)="selectCharacter(character.characterBase.characterId)"><span class="class-name">{{ character.characterBase.classHash | destinyHash:'class' }} </span><span class="power-level">{{ character.characterBase.powerLevel }}</span></a>
+    <div class="expand columns character" *ngFor="let character of characters" [ngStyle]="{'background-image': character.characterId === activeCharacter.characterId ? '' : 'url(//www.bungie.net' + character.emblemBackgroundPath + ')'}">
+      <a (click)="selectCharacter(character.characterId)"><span class="class-name">{{ character.classHash | destinyHash:'class' }} </span><span class="power-level">{{ character.light }}</span></a>
     </div>
   </div>
 </div>

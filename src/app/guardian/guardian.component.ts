@@ -60,7 +60,17 @@ export class GuardianComponent implements OnInit, OnDestroy {
 
     this.subs.push(this.guardianService.characters
       .subscribe(characters => {
-        this.characters = characters;
+        if (characters) {
+          let charactersArray = [];
+          for (let key in characters) {
+            if (characters[key]) {
+              charactersArray.push(characters[key]);
+            }
+          }
+          this.characters = charactersArray;
+        } else {
+          this.characters = [];
+        }
       }));
 
     this.subs.push(this.guardianService.activeCharacter
@@ -102,19 +112,19 @@ export class GuardianComponent implements OnInit, OnDestroy {
   }
 
   selectGamemode(gamemode: string) {
-    this.router.navigate(['/guardian', this._guardian, this.membershipType, this.activeCharacter.characterBase.characterId, gamemode, 0]);
+    this.router.navigate(['/guardian', this._guardian, this.membershipType, this.activeCharacter.characterId, gamemode, 0]);
   }
 
   nextPage() {
     this.router.navigate([
-      '/guardian', this._guardian, this.membershipType, this.activeCharacter.characterBase.characterId, this.gamemode, this.page + 1
+      '/guardian', this._guardian, this.membershipType, this.activeCharacter.characterId, this.gamemode, this.page + 1
     ]);
   }
 
   prevPage() {
     if (this.page > 0) {
       this.router.navigate([
-        '/guardian', this._guardian, this.membershipType, this.activeCharacter.characterBase.characterId, this.gamemode, this.page - 1
+        '/guardian', this._guardian, this.membershipType, this.activeCharacter.characterId, this.gamemode, this.page - 1
       ]);
     }
   }
