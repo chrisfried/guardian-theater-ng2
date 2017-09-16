@@ -52,7 +52,7 @@
           <div (click)="toGuardian(entry.player.destinyUserInfo.displayName, entry.characterId)" class="columns small-6 mode pgcr-entry" *ngFor="let entry of pgcr.entries" [ngClass]="{
             'Opponent': pgcr.active.entry && (pgcr.activityDetails.mode === 13 || pgcr.activityDetails.mode === 27 || pgcr.activityDetails.mode === 29 || pgcr.activityDetails.mode === 33),
             'Team': pgcr.active.entry && pgcr.activityDetails.mode !== 13 && pgcr.activityDetails.mode !== 27 && pgcr.activityDetails.mode !== 29 && pgcr.activityDetails.mode !== 33,
-            'Fireteam': pgcr.active && pgcr.active.fireteam && entry.extended && entry.extended.values.fireTeamId && pgcr.active.fireteam === entry.extended.values.fireTeamId.basic.value,
+            'Fireteam': pgcr.active && pgcr.active.fireteam && entry.values.fireteamId && pgcr.active.fireteam === entry.values.fireteamId.basic.value,
             'Player': pgcr.active && pgcr.active.entry && pgcr.active.entry.characterId === entry.characterId
           }">
             <span class="pgcr-entry-name" [title]="entry.player.destinyUserInfo.displayName">
@@ -84,7 +84,7 @@
                   'Bravo': team.teamName === 'Bravo',
                   'Team': pgcr.active && pgcr.active.team > -1 && entry.values.team && pgcr.active.team === entry.values.team.basic.value,
                   'Opponent': pgcr.active && pgcr.active.team > -1 && entry.values.team && pgcr.active.team !== entry.values.team.basic.value,
-                  'Fireteam': pgcr.active && pgcr.active.fireteam && entry.extended && entry.extended.values.fireTeamId && pgcr.active.fireteam === entry.extended.values.fireTeamId.basic.value,
+                  'Fireteam': pgcr.active && pgcr.active.fireteam && entry.values.fireteamId && pgcr.active.fireteam === entry.values.fireteamId.basic.value,
                   'Player': pgcr.active && pgcr.active.entry && pgcr.active.entry.characterId === entry.characterId
                 }">
                   <span class="pgcr-entry-name" [title]="entry.player.destinyUserInfo.displayName">
@@ -114,7 +114,7 @@
           'Bravo': clip.entry.values.team && clip.entry.values.team.basic.displayValue === 'Bravo',
           'Team': (pgcr.active && pgcr.active.team > -1 && clip.entry.values.team && pgcr.active.team === clip.entry.values.team.basic.value) || (pgcr.active.entry && !pgcr.teams.length && pgcr.activityDetails.mode !== 13 && pgcr.activityDetails.mode !== 27 && pgcr.activityDetails.mode !== 29 && pgcr.activityDetails.mode !== 33),
           'Opponent': (pgcr.active && pgcr.active.team > -1 && clip.entry.values.team && pgcr.active.team !== clip.entry.values.team.basic.value) || (pgcr.active.entry && !pgcr.teams.length && pgcr.activityDetails.mode === 13 || pgcr.activityDetails.mode === 27 || pgcr.activityDetails.mode === 29 || pgcr.activityDetails.mode === 33),
-          'Fireteam': pgcr.active && pgcr.active.fireteam && clip.entry.extended && clip.entry.extended.values.fireTeamId && pgcr.active.fireteam === clip.entry.extended.values.fireTeamId.basic.value,
+          'Fireteam': pgcr.active && pgcr.active.fireteam && clip.entry.values.fireteamId && pgcr.active.fireteam === clip.entry.values.fireteamId.basic.value,
           'Player': pgcr.active && pgcr.active.entry && pgcr.active.entry.characterId === clip.entry.characterId
         }">
           <span class="pgcr-entry-name">

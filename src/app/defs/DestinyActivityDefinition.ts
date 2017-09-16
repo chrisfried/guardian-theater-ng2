@@ -1,15666 +1,12203 @@
 export const DestinyActivityDefinition = {
   de: {
-    8055542: {
-      activityName: "Wenn die Mauern fallen"
+    19982784: {
+      name: 'Kampfmission'
     },
-    9885984: {
-      activityName: "Kammer der Nacht"
+    30240416: {
+      name: 'Attentatsmission'
     },
-    10551956: {
-      activityName: "König des Berges"
+    37050217: {
+      name: 'Untersuchungsmission'
     },
-    18715720: {
-      activityName: "König des Berges"
+    51408141: {
+      name: 'Bergungsmission'
     },
-    24471896: {
-      activityName: "Mars und Venus"
+    53954174: {
+      name: 'Luftabwehr-Abwehr'
     },
-    24471899: {
-      activityName: "Erde und Mond"
+    57103244: {
+      name: 'Untersuchungsmission'
     },
-    28695277: {
-      activityName: "Das Schwert von Crota"
+    60002467: {
+      name: 'Sakrileg'
     },
-    34205302: {
-      activityName: "Der Nexus"
+    78673128: {
+      name: 'Dieb der Diebe'
     },
-    34327100: {
-      activityName: "Gefallenen S.A.B.E.R."
+    80726883: {
+      name: 'Oh Captain'
     },
-    51311972: {
-      activityName: "Der Unsterbliche Geist"
+    82913930: {
     },
-    51311973: {
-      activityName: "Zerberus Vae III"
+    89727599: {
+      name: 'Leviathan'
     },
-    51311974: {
-      activityName: "Staubpalast"
+    104342360: {
+      name: 'Kampfmission'
     },
-    64371922: {
-      activityName: "Rumble: Vorherrschaft"
+    116352029: {
+      name: 'Kampfmission'
     },
-    86749741: {
-      activityName: "Eisenbanner: Kontrolle"
+    122988657: {
+      name: 'Rotlegion und Schwarzöl'
     },
-    91984044: {
-      activityName: "Ein Kell steigt auf"
+    143647473: {
+      name: 'Bergungsmission'
     },
-    95021281: {
-      activityName: "Ans Licht verloren"
+    145302664: {
+      name: 'Dämmerung: Der Waffenhändler'
     },
-    96237246: {
-      activityName: "Klassisches 6v6"
+    153537894: {
+      name: 'Ein neues Grenzland'
     },
-    98710471: {
-      activityName: "Rumble"
+    160721490: {
+      name: 'Klassifiziert'
     },
-    103493304: {
-      activityName: "König des Berges"
+    175598161: {
+      name: 'Bergungsmission'
     },
-    116560380: {
-      activityName: "Der Schattendieb"
+    189324537: {
+      name: 'Bergungsmission'
     },
-    116811400: {
-      activityName: "Der Schattendieb"
+    197670945: {
+      name: 'Attentatsmission'
     },
-    123652644: {
-      activityName: "Echo-Kammer"
+    204298081: {
+      name: 'Analysemission'
     },
-    123999179: {
-      activityName: "Schatten in der Dämmerung"
+    248066530: {
+      name: 'Bergungsmission'
     },
-    130631058: {
-      activityName: "Klassisches 3v3"
+    255819671: {
+      name: 'Raserei'
     },
-    134979141: {
-      activityName: "Die letzte Anlage"
+    261349035: {
+      name: 'Bergungsmission'
     },
-    149381097: {
-      activityName: "Patrouilliere den Mond"
+    286324446: {
+      name: 'Bergungsmission'
     },
-    151357230: {
-      activityName: "Der Schattendieb"
+    287649202: {
+      name: 'Leviathan'
     },
-    154683944: {
-      activityName: "Entropiehöhepunkt"
+    293858112: {
+      name: 'Kampfmission'
     },
-    157336261: {
-      activityName: "Inferno: Vorherrschaft"
+    298747401: {
+      name: 'Untersuchungsmission'
     },
-    157390236: {
-      activityName: "Staubpalast"
+    298793060: {
+      name: 'Bergungsmission'
     },
-    157980450: {
-      activityName: "Das Eisengrab"
+    313572698: {
+      name: 'Bruchstück des Reisenden'
     },
-    165850035: {
-      activityName: "Der Unsterbliche Geist"
+    320680002: {
+      name: 'Angebot und Nachfrage'
     },
-    167419252: {
-      activityName: "Patrouilliere das Kosmodrom"
+    330545737: {
+      name: 'Die Farm'
     },
-    184503944: {
-      activityName: "Der Unsterbliche Geist"
+    338662534: {
+      name: 'Die verdrehte Säule'
     },
-    184503945: {
-      activityName: "Zerberus Vae III"
+    355984230: {
+      name: 'Attentatsmission'
     },
-    184503946: {
-      activityName: "Staubpalast"
+    359488722: {
+      name: 'Den Planeten hacken'
     },
-    194283519: {
-      activityName: "Staubpalast"
+    374818561: {
+      name: 'Frist des Imperators'
     },
-    202167389: {
-      activityName: "Staubpalast"
+    379330092: {
+      name: 'Bruchstück des Reisenden'
     },
-    209343718: {
-      activityName: "Wintersturm"
+    387171436: {
+      name: 'Bergungsmission'
     },
-    211678003: {
-      activityName: "Eisenbanner: Rift"
+    388289443: {
+      name: 'Untersuchungsmission'
     },
-    212088538: {
-      activityName: "Die Beschwörungsgruben"
+    415388387: {
+      name: 'Untersuchungsmission'
     },
-    218006092: {
-      activityName: "Die Verseuchten Lande"
+    417231112: {
+      name: 'Leviathan'
     },
-    242777083: {
-      activityName: "Der Nexus"
+    429361491: {
+      name: 'Bergungsmission'
     },
-    252347595: {
-      activityName: "Hangar-Einsätze"
+    435989417: {
+      name: 'Analysemission'
     },
-    259879232: {
-      activityName: "Gefallenen S.A.B.E.R."
+    444087412: {
+      name: 'Kampfmission'
     },
-    260615043: {
-      activityName: "Rumble"
+    445417088: {
     },
-    260765522: {
-      activityName: "Zorn der Maschine"
+    459955094: {
+      name: 'Analysemission'
     },
-    269981320: {
-      activityName: "Der Prometheus-Code"
+    461203479: {
+      name: 'Untersuchungsmission'
     },
-    278763462: {
-      activityName: "Staubpalast"
+    464789944: {
+      name: 'Auserwählt'
     },
-    279121234: {
-      activityName: "König des Berges"
+    474380713: {
+      name: 'Bergungsmission'
     },
-    284635225: {
-      activityName: "Der Brennende Schrein"
+    539897061: {
+      name: 'Umgepolt'
     },
-    287505866: {
-      activityName: "Gefallenen S.A.B.E.R."
+    545240418: {
+      name: 'Untersuchungsmission'
     },
-    291350530: {
-      activityName: "Wöchentlicher Dämmerungs-Strike"
+    549123191: {
+      name: 'Untersuchungsmission'
     },
-    300506688: {
-      activityName: "Wöchentlicher Dämmerungs-Strike"
+    553537971: {
+      name: 'Auserwählt'
     },
-    308091852: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    564863404: {
     },
-    308091854: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    581323290: {
+      name: 'Untersuchungsmission'
     },
-    308091855: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    585071442: {
+      name: 'Dämmerung: Savathûns Lied'
     },
-    324283916: {
-      activityName: "Steigende Flut"
+    601540706: {
+      name: 'Dämmerung: Der Waffenhändler'
     },
-    331520418: {
-      activityName: "Der Unsterbliche Geist"
+    622895925: {
+      name: 'Arecibo'
     },
-    342909762: {
-      activityName: "Schild-Brüder"
+    632790902: {
+      name: 'Zitterpartie'
     },
-    351460287: {
-      activityName: "Die sonnenlose Zelle"
+    642256373: {
+      name: 'Dämmerung: Exodus-Absturz'
     },
-    351673577: {
-      activityName: "Klassisches Jeder gegen Jeden"
+    642277473: {
+      name: 'Dämmerung: Das Pyramidion'
     },
-    355200465: {
-      activityName: "Schild-Brüder"
+    652598202: {
+      name: 'Legionsschlucht'
     },
-    355605844: {
-      activityName: "Patrouilliere die Verseuchten Lande"
+    667604912: {
+      name: 'Meditation: „Kreislauf“'
     },
-    360962374: {
-      activityName: "Der Schattendieb"
+    671904429: {
+      name: 'Bergungsmission'
     },
-    386157877: {
-      activityName: "Schild-Brüder"
+    703311712: {
+      name: 'Bruchstück des Reisenden'
     },
-    389785553: {
-      activityName: "Dunkle Champions"
+    715306877: {
+      name: 'Kampfmission'
     },
-    403726672: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    719906507: {
+      name: 'Klassifiziert'
     },
-    403726674: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    743100125: {
+      name: 'Bergungsmission'
     },
-    403726675: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    750649238: {
+      name: 'Bergungsmission'
     },
-    406972773: {
-      activityName: "Der Monstrositätenraub"
+    757116822: {
+      name: 'Leviathan'
     },
-    410347507: {
-      activityName: "Der Schattendieb"
+    760130722: {
+      name: 'Die Todeskliffs'
     },
-    425614025: {
-      activityName: "Die Eisernen Lords"
+    782175145: {
+      name: 'Attentatsmission'
     },
-    428290721: {
-      activityName: "Patrouilliere Mars"
+    782290869: {
+      name: 'Untersuchungsmission'
     },
-    430160982: {
-      activityName: "Zorn der Maschine"
+    789332628: {
+      name: 'Dieb der Diebe'
     },
-    430914016: {
-      activityName: "Das Eisengrab"
+    798143184: {
+      name: 'Kampfmission'
     },
-    431759746: {
-      activityName: "Bergung"
+    808931822: {
+      name: 'Postmoderner Prometheus'
     },
-    443057682: {
-      activityName: "Himmelsschock"
+    837763871: {
+      name: 'Bergungsmission'
     },
-    443707023: {
-      activityName: "Das herrschende Haus"
+    849242583: {
+      name: 'Analysemission'
     },
-    455063520: {
-      activityName: "Das Erwachen"
+    880665770: {
+      name: 'Untersuchungsmission'
     },
-    468325937: {
-      activityName: "Kombinierte Waffen"
+    919252154: {
+      name: 'Dunkle Allianz'
     },
-    469270447: {
-      activityName: "Memento"
+    926012363: {
+      name: 'Attentatsmission'
     },
-    474428712: {
-      activityName: "Der Feind meines Feindes"
+    926940962: {
+      name: 'Dämmerung: Das Pyramidion'
     },
-    482017096: {
-      activityName: "Sepiks-Perfektioniert"
+    938512773: {
+      name: 'Ungebrochen'
     },
-    492319725: {
-      activityName: "Hexenkessel: Rumble"
+    940394831: {
+      name: 'Quest: Exodus-Absturz'
     },
-    493857039: {
-      activityName: "Wöchentlicher Dämmerungs-Strike"
+    955852466: {
+      name: '1 AE'
     },
-    496237130: {
-      activityName: "SRL-Rennstrecke"
+    963938931: {
+      name: 'Tiefgründige Gespräche'
     },
-    504512661: {
-      activityName: "Vestianischer Außenposten"
+    964196803: {
+      name: 'Bergungsmission'
     },
-    509411569: {
-      activityName: "Böses Blut"
+    969385987: {
+      name: 'Licht ins Dunkel'
     },
-    547981568: {
-      activityName: "Eisenbanner: Vorherrschaft"
+    993152361: {
+      name: 'Bergungsmission'
     },
-    550186563: {
-      activityName: "Ein Kell steigt auf"
+    1019362992: {
+      name: 'Meditation: „Heimkehr“'
     },
-    572368820: {
-      activityName: "Wöchentlicher Dämmerungs-Strike"
+    1035135049: {
+      name: 'Das Pyramidion'
     },
-    573077648: {
-      activityName: "Gefallenen S.A.B.E.R."
+    1038710420: {
+      name: 'Attentatsmission'
     },
-    574483028: {
-      activityName: "Die Begrabene Stadt"
+    1053141615: {
+      name: 'Attentatsmission'
     },
-    575304694: {
-      activityName: "Ein neuer Bau"
+    1063969232: {
+      name: 'Einladung vom Imperator'
     },
-    575376446: {
-      activityName: "Echo-Kammer"
+    1075152813: {
+      name: 'Europäische Todeszone'
     },
-    579700969: {
-      activityName: "Caydes Versteck"
+    1076851943: {
+      name: 'Attentatsmission'
     },
-    579949585: {
-      activityName: "Die Schweigenden Reißer"
+    1085523978: {
+      name: 'Untersuchungsmission'
     },
-    581858107: {
-      activityName: "Der Anbruch"
+    1090267699: {
+      name: 'Attentatsmission'
     },
-    603968817: {
-      activityName: "Zerberus Vae III"
+    1101792305: {
+      name: 'Savathûns Lied'
     },
-    604017503: {
-      activityName: "Das Gefängnis der Alten: Besessen"
+    1102824603: {
+      name: 'Attentatsmission'
     },
-    614791010: {
-      activityName: "Vorherrschaft"
+    1105211124: {
+      name: 'Analysemission'
     },
-    632771975: {
-      activityName: "Thronanwärter"
+    1107208644: {
+      name: 'Den Planeten hacken'
     },
-    637046772: {
-      activityName: "Diebesbau"
+    1129066976: {
+      name: 'Dämmerung: Das Pyramidion'
     },
-    645920838: {
-      activityName: "Echo-Kammer"
+    1159314159: {
+      name: 'Schlechter Empfang'
     },
-    653380797: {
-      activityName: "Wintersturm"
+    1164772243: {
+      name: 'Bergungsmission'
     },
-    653380798: {
-      activityName: "Der Nexus"
+    1206154103: {
+      name: 'Attentatsmission'
     },
-    696672649: {
-      activityName: "undefined"
+    1207505828: {
+      name: 'Quest: Der Waffenhändler'
     },
-    702170822: {
-      activityName: "Die Beschwörungsgruben"
+    1225970098: {
+      name: 'Verlorene Crew'
     },
-    706472064: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    1228327586: {
+      name: 'Luftabwehr-Abwehr'
     },
-    706472065: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    1243390694: {
+      name: 'Diebstahl'
     },
-    706472066: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    1249965655: {
+      name: 'Analysemission'
     },
-    711826167: {
-      activityName: "Inferno: Konflikt"
+    1250426564: {
+      name: 'Attentatsmission'
     },
-    719193800: {
-      activityName: "Wintersturm"
+    1254990192: {
+      name: 'Risikobereit'
     },
-    719193803: {
-      activityName: "Der Nexus"
+    1265390366: {
+      name: 'Schlechter Empfang'
     },
-    746864299: {
-      activityName: "Inferno-Doppel"
+    1289867188: {
+      name: 'Gut gepanzert'
     },
-    757275024: {
-      activityName: "Gefallenen S.A.B.E.R."
+    1290744998: {
+      name: 'Die Farm'
     },
-    764916411: {
-      activityName: "Die Begrabene Stadt"
+    1309646866: {
+      name: 'Die Farm'
     },
-    782611196: {
-      activityName: "Inferno: Gefecht"
+    1331268141: {
+      name: 'Untersuchungsmission'
     },
-    820688209: {
-      activityName: "Sepiks-Perfektioniert"
+    1357019430: {
+      name: 'Dämmerung: Exodus-Absturz'
     },
-    826836846: {
-      activityName: "Das elende Auge"
+    1375839088: {
+      name: 'Analysemission'
     },
-    832576952: {
-      activityName: "Gefallenen S.A.B.E.R."
+    1412142789: {
+      name: ''
     },
-    833873053: {
-      activityName: "Der Unsterbliche Geist"
+    1416597166: {
+      name: 'Angebot und Nachfrage'
     },
-    836641517: {
-      activityName: "Auge eines Tor-Lords"
+    1428050875: {
+      name: 'Klassifiziert'
     },
-    853468393: {
-      activityName: "Ischtar-Kollektiv"
+    1451946951: {
+      name: 'Bergungsmission'
     },
-    853774317: {
-      activityName: "Der bevorstehende Krieg"
+    1466550401: {
+      name: 'Unsicher bei jedem Tempo'
     },
-    854130400: {
-      activityName: "Belagerung des Kriegsgeistes"
+    1490848577: {
+      name: 'Kreislauf'
     },
-    856898338: {
-      activityName: "Gläserne Kammer"
+    1491022087: {
+      name: 'Exodus-Belagerung'
     },
-    860566204: {
-      activityName: "Der Leuchtturm"
+    1495993294: {
+      name: 'See der Schatten'
     },
-    870614351: {
-      activityName: "SIVA-Krise (Heroisch)"
+    1498466193: {
+      name: 'Bergungsmission'
     },
-    888190220: {
-      activityName: "Inferno: Rumble"
+    1521232506: {
+      name: 'Klassifiziert'
     },
-    892266083: {
-      activityName: "Turm"
+    1525633702: {
+      name: 'Bergungsmission'
     },
-    902875868: {
-      activityName: "Die Säule des Gartens"
+    1536764325: {
+      name: 'Untersuchungsmission'
     },
-    906989597: {
-      activityName: "Die Beschwörungsgruben"
+    1557641249: {
+      name: 'Bergungsmission'
     },
-    932731386: {
-      activityName: "Caydes Versteck"
+    1563393783: {
+      name: 'Exodus-Absturz'
     },
-    940573734: {
-      activityName: "Das dunkle Innere"
+    1568750156: {
+      name: 'Die Farm'
     },
-    944638962: {
-      activityName: "Auge eines Tor-Lords"
+    1581219251: {
+      name: 'Untersuchungsmission'
     },
-    981644933: {
-      activityName: "Ans Feuer gebunden"
+    1614692057: {
+      name: 'Bergungsmission'
     },
-    982298740: {
-      activityName: "Das Weltengrab"
+    1646219807: {
+      name: 'Diebstahl'
     },
-    984759429: {
-      activityName: "Der Monstrositätenraub"
+    1651979106: {
+      name: 'Postmoderner Prometheus'
     },
-    985012235: {
-      activityName: "Ein neuer Bau"
+    1658347443: {
+      name: 'Heimkehr'
     },
-    989535795: {
-      activityName: "Inferno: Zonenkontrolle"
+    1685065161: {
+      name: 'Leviathan'
     },
-    994743956: {
-      activityName: "Der Unsterbliche Geist"
+    1685237649: {
+      name: 'Attentatsmission'
     },
-    994743957: {
-      activityName: "Zerberus Vae III"
+    1699948563: {
+      name: 'Leviathan'
     },
-    994743958: {
-      activityName: "Staubpalast"
+    1720510574: {
+      name: 'Die Festung'
     },
-    1005705920: {
-      activityName: "Der erste Schutzwall"
+    1756055546: {
+      name: 'Bergungsmission'
     },
-    1016116686: {
-      activityName: "Der Unsterbliche Geist"
+    1773400654: {
+      name: 'Einladung vom Imperator'
     },
-    1016659723: {
-      activityName: "Königsfall"
+    1778450722: {
+      name: 'Analysemission'
     },
-    1017714251: {
-      activityName: "Die letzte Ölung"
+    1786054751: {
+      name: 'Vorsatz'
     },
-    1019616175: {
-      activityName: "Inferno: Rumble"
+    1790343591: {
+      name: 'Bruchstück des Reisenden'
     },
-    1023542723: {
-      activityName: "Der Unsterbliche Geist"
+    1792985204: {
+      name: 'Dämmerung: Exodus-Absturz'
     },
-    1030188908: {
-      activityName: "Auge eines Tor-Lords"
+    1824067376: {
+      name: 'Road Rage'
     },
-    1031478181: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    1829866365: {
+      name: 'Die Hände schmutzig machen'
     },
-    1031478182: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    1863334927: {
+      name: 'Dämmerung: Savathûns Lied'
     },
-    1031478183: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    1875726950: {
+      name: 'Leviathan'
     },
-    1044883964: {
-      activityName: "Sepiks-Perfektioniert"
+    1949546348: {
+      name: 'Attentatsmission'
     },
-    1045828271: {
-      activityName: "Konflikt"
+    1952521609: {
+      name: 'Bruchstück des Reisenden'
     },
-    1068261034: {
-      activityName: "Blut im Garten"
+    1956541147: {
+      name: 'Ruf der Heimat'
     },
-    1075348150: {
-      activityName: "Zeitalter des Triumphs"
+    1969800443: {
+      name: 'Arecibo'
     },
-    1080191247: {
-      activityName: "Geißel von Winter"
+    1971154629: {
+      name: 'Unsicher bei jedem Tempo'
     },
-    1084620606: {
-      activityName: "Die sonnenlose Zelle"
+    1975064760: {
+      name: 'Dämmerung: Savathûns Lied'
     },
-    1087052691: {
-      activityName: "Konflikt"
+    1981289329: {
+      name: 'Exodus-Belagerung'
     },
-    1112015031: {
-      activityName: "Das Erwachen"
+    1984315274: {
+      name: 'Vorhut-Strikes'
     },
-    1116149777: {
-      activityName: "Königsmord"
+    1988701745: {
+      name: 'Vergeltung'
     },
-    1117274478: {
-      activityName: "Der Besessenen-Krieg"
+    2001433484: {
+      name: 'Attentatsmission'
     },
-    1122783186: {
-      activityName: "Das Eisengrab"
+    2025057095: {
+      name: 'Kampfmission'
     },
-    1126759626: {
-      activityName: "Echo-Kammer"
+    2033669713: {
+      name: 'Javelin-4'
     },
-    1141580112: {
-      activityName: "Der Wille von Crota"
+    2052289205: {
+      name: 'Verbrennung'
     },
-    1142225067: {
-      activityName: "Wöchentlicher Dämmerungs-Strike"
+    2079994698: {
+      name: 'Untersuchungsmission'
     },
-    1169187265: {
-      activityName: "Der Nexus"
+    2080275457: {
+      name: 'Der Waffenhändler'
     },
-    1174401783: {
-      activityName: "Primus-Pfad"
+    2113712124: {
+      name: 'Sakrileg'
     },
-    1194342366: {
-      activityName: "Inferno: Bergung"
+    2151274060: {
+      name: 'Analysemission'
     },
-    1200628152: {
-      activityName: "Die Beschwörungsgruben"
+    2174556965: {
+      name: 'Reinlegen'
     },
-    1208087916: {
-      activityName: "Maschinenzorn"
+    2183066491: {
+      name: 'Die Farm'
     },
-    1208087919: {
-      activityName: "Maschinenzorn"
+    2184866967: {
+      name: 'Analysemission'
     },
-    1226857472: {
-      activityName: "Caydes Versteck"
+    2187073261: {
+      name: 'Analysemission'
     },
-    1227144460: {
-      activityName: "Königliches Lösegeld"
+    2231840083: {
+      name: 'Sirenenlied'
     },
-    1228944057: {
-      activityName: "Staubpalast"
+    2236648719: {
+      name: 'Ewigkeit'
     },
-    1234230734: {
-      activityName: "Patrouilliere den Mond"
+    2243336789: {
+      name: 'Kampfmission'
     },
-    1259153650: {
-      activityName: "Der Ruf einer Fremden"
+    2250935166: {
+      name: 'Unsterblich'
     },
-    1288347893: {
-      activityName: "Rumble: Vorherrschaft"
+    2259811067: {
+      name: 'Bruchstück des Reisenden'
     },
-    1291023759: {
-      activityName: "Inferno: Gefecht"
+    2264636552: {
+      name: 'Meditation: „Verbrennung“'
     },
-    1293005540: {
-      activityName: "Vorhut-Dämmerung"
+    2266954523: {
+      name: 'Die Farm'
     },
-    1296112978: {
-      activityName: "Die Verseuchten Lande"
+    2287222467: {
+      name: 'Analysemission'
     },
-    1309514270: {
-      activityName: "Wolfstrick"
+    2288260902: {
+      name: 'Attentatsmission'
     },
-    1322792020: {
-      activityName: "Inferno: Rift"
+    2291549972: {
+      name: 'Vergrößern!'
     },
-    1328326126: {
-      activityName: "Ans Licht verloren"
+    2297638408: {
+      name: 'Raserei'
     },
-    1329840146: {
-      activityName: "Das elende Auge"
+    2301390667: {
+      name: 'Untersuchungsmission'
     },
-    1378194100: {
-      activityName: "Der Leuchtturm"
+    2318812547: {
+      name: 'Das Pyramidion'
     },
-    1378430574: {
-      activityName: "Inferno: Eliminierung"
+    2336998357: {
+      name: 'Auf lange Sicht'
     },
-    1379511171: {
-      activityName: "Das Schwert von Crota"
+    2379494367: {
+      name: 'Analysemission'
     },
-    1387993552: {
-      activityName: "Zorn der Maschine"
+    2420240009: {
+      name: 'Bergungsmission'
     },
-    1390160729: {
-      activityName: "Vestianischer Außenposten"
+    2445164291: {
+      name: 'Attentatsmission'
     },
-    1398209073: {
-      activityName: "Die Höhle der Teufel"
+    2449714930: {
+      name: 'Leviathan'
     },
-    1398209074: {
-      activityName: "Der Wille von Crota"
+    2464834848: {
+      name: 'Innenstadt'
     },
-    1398976305: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    2468202005: {
+      name: 'Bruchstück des Reisenden'
     },
-    1398976306: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    2478782573: {
+      name: ''
     },
-    1398976307: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    2517540332: {
+      name: 'Risikobereit'
     },
-    1400727968: {
-      activityName: "Rift"
+    2519458964: {
+      name: 'Endloses Tal'
     },
-    1403880576: {
-      activityName: "Die Säule des Gartens"
+    2519564410: {
+      name: 'Attentatsmission'
     },
-    1403880578: {
-      activityName: "Der Schwarze Garten"
+    2536491635: {
+      name: 'Untersuchungsmission'
     },
-    1403880579: {
-      activityName: "Steigende Flut"
+    2558926634: {
+      name: 'Untersuchungsmission'
     },
-    1403880580: {
-      activityName: "Sperrgebiet"
+    2559514952: {
+      name: 'Utopie'
     },
-    1403880582: {
-      activityName: "Die Begrabene Stadt"
+    2561308143: {
+      name: 'Untersuchungsmission'
     },
-    1404620600: {
-      activityName: "Das Gefängnis der Alten"
+    2573702057: {
+      name: 'Bergungsmission'
     },
-    1415179315: {
-      activityName: "Eliminierung"
+    2574607799: {
+      name: 'Schlechte Nachbarschaft'
     },
-    1419457477: {
-      activityName: "Der verlorene Ranger"
+    2575990417: {
+      name: 'Kampfmission'
     },
-    1427585666: {
-      activityName: "Heldenhafte Rückkehr"
+    2580713007: {
+      name: 'Untersuchungsmission'
     },
-    1431469570: {
-      activityName: "Der Monstrositätenraub"
+    2588220738: {
+      name: 'Untersuchungsmission'
     },
-    1438195119: {
-      activityName: "Der Schwarze Garten"
+    2610112492: {
+      name: 'Analysemission'
     },
-    1439468985: {
-      activityName: "Ausgehendes Signal"
+    2619236227: {
+      name: 'Analysemission'
     },
-    1441430564: {
-      activityName: "Urrox‘ Groll"
+    2629975203: {
+      name: 'Kampfmission'
     },
-    1441430567: {
-      activityName: "Urrox‘ Groll"
+    2629998776: {
+      name: 'Bergungsmission'
     },
-    1443271657: {
-      activityName: "Scharlach-Doppel"
+    2642769170: {
+      name: 'Sechs'
     },
-    1443570903: {
-      activityName: "Eisenbanner – Hexenkessel: Konflikt"
+    2651851341: {
+      name: 'Analysemission'
     },
-    1448094960: {
-      activityName: "Die Kerker"
+    2665134323: {
+      name: 'Freilassung'
     },
-    1478347980: {
-      activityName: "Campus Martius"
+    2667533713: {
+      name: 'Vostok'
     },
-    1491766060: {
-      activityName: "Der Schattendieb"
+    2684479494: {
+      name: 'Bergungsmission'
     },
-    1501957761: {
-      activityName: "Gefallenen S.A.B.E.R."
+    2693136600: {
+      name: 'Leviathan'
     },
-    1516701147: {
-      activityName: "undefined"
+    2693136601: {
+      name: 'Leviathan'
     },
-    1517679997: {
-      activityName: "SIVA-Krise"
+    2693136602: {
+      name: 'Leviathan'
     },
-    1522220810: {
-      activityName: "Turm"
+    2693136603: {
+      name: 'Leviathan'
     },
-    1522422482: {
-      activityName: "Der Wille von Crota"
+    2693136604: {
+      name: 'Leviathan'
     },
-    1526798932: {
-      activityName: "Gefallenen S.A.B.E.R."
+    2693136605: {
+      name: 'Leviathan'
     },
-    1533733535: {
-      activityName: "Die sonnenlose Zelle"
+    2702476101: {
+      name: 'Turm'
     },
-    1551387515: {
-      activityName: "Das Gefängnis der Alten"
+    2708828207: {
+      name: 'Utopie'
     },
-    1566333829: {
-      activityName: "Schild-Brüder"
+    2737739053: {
+      name: 'Tiefgründige Gespräche'
     },
-    1572749251: {
-      activityName: "Zonenkontrolle"
+    2759086913: {
+      name: 'Klassifiziert'
     },
-    1584566734: {
-      activityName: "Inferno 6v6"
+    2768347363: {
+      name: 'Attentatsmission'
     },
-    1604535501: {
-      activityName: "SRL-Rennstrecke"
+    2773222353: {
+      name: 'Analysemission'
     },
-    1609488702: {
-      activityName: "Doppel"
+    2776929937: {
+      name: 'Differenzial-Diagnose'
     },
-    1614355423: {
-      activityName: "Königliches Lösegeld"
+    2782300570: {
+      name: 'Bergungsmission'
     },
-    1618960674: {
-      activityName: "Inferno 3v3"
+    2784803584: {
+      name: 'Kampfmission'
     },
-    1624947721: {
-      activityName: "Schild-Brüder"
+    2798856614: {
+      name: 'Untersuchungsmission'
     },
-    1628212868: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    2846775197: {
+      name: 'Kampfmission'
     },
-    1628212869: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    2908287325: {
+      name: 'Untersuchungsmission'
     },
-    1628212871: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    2926767881: {
+      name: 'Rache'
     },
-    1636082733: {
-      activityName: "Wintersturm"
+    2949941834: {
+      name: 'Unerwartete Gäste'
     },
-    1636082734: {
-      activityName: "Der Nexus"
+    2969403085: {
+      name: 'Untersuchungsmission'
     },
-    1646288223: {
-      activityName: "Echo-Kammer"
+    3002511278: {
+      name: 'Dunkle Allianz'
     },
-    1650930548: {
-      activityName: "Klassifiziert"
+    3026637018: {
+      name: 'Untersuchungsmission'
     },
-    1657401676: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    3038694763: {
+      name: 'Attentatsmission'
     },
-    1657401677: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    3049122128: {
+      name: 'Analysemission'
     },
-    1657401679: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    3050465729: {
+      name: 'Dämmerung: Die verdrehte Säule'
     },
-    1659888245: {
-      activityName: "Der Monstrositätenraub"
+    3062197616: {
+      name: 'Kompetitiv'
     },
-    1665631320: {
-      activityName: "Rumble"
+    3105090879: {
+      name: 'Lebewohl'
     },
-    1669262087: {
-      activityName: "Schild-Brüder"
+    3140524926: {
+      name: 'Gut gepanzert'
     },
-    1673931290: {
-      activityName: "Herausforderung der Ältesten"
+    3143798436: {
+      name: 'Europäische Todeszone'
     },
-    1681545807: {
-      activityName: "Die sonnenlose Zelle"
+    3147707814: {
+      name: 'Springflut'
     },
-    1685214122: {
-      activityName: "Hexenkessel: Vorherrschaft"
+    3148431353: {
+      name: 'Die Hände schmutzig machen'
     },
-    1685535967: {
-      activityName: "Der Wille von Crota"
+    3150153711: {
+      name: 'Chancen und Möglichkeiten'
     },
-    1686326716: {
-      activityName: "Ein neuer Bau"
+    3172367001: {
+      name: 'Bruchstück des Reisenden'
     },
-    1686679946: {
-      activityName: "Konflikt"
+    3173130826: {
+      name: 'Kampfmission'
     },
-    1709749894: {
-      activityName: "Skyline"
+    3208779612: {
+      name: 'Bergungsmission'
     },
-    1714839224: {
-      activityName: "Ritual der Opferung"
+    3211303924: {
+      name: 'Bergungsmission'
     },
-    1719392441: {
-      activityName: "Kreuzung"
+    3211568383: {
+      name: 'Sirenenlied'
     },
-    1723226893: {
-      activityName: "Der Kriegsgeist"
+    3231065327: {
+      name: 'Analysemission'
     },
-    1727851403: {
-      activityName: "Der Prometheus-Code"
+    3243161126: {
+      name: 'Schnellspiel'
     },
-    1728758154: {
-      activityName: "Die Beschwörungsgruben"
+    3268684190: {
+      name: 'Bergungsmission'
     },
-    1733556769: {
-      activityName: "Königsfall"
+    3272002712: {
+      name: 'Hoffnung'
     },
-    1740074530: {
-      activityName: "Zerberus Vae III"
+    3277510674: {
+      name: 'Unsterblich'
     },
-    1749151224: {
-      activityName: "Vorhut-Dämmerung"
+    3283790633: {
+      name: 'Reinlegen'
     },
-    1771902734: {
-      activityName: "Inferno: Konflikt"
+    3289681664: {
+      name: 'Verlorene Crew'
     },
-    1772839913: {
-      activityName: "Düstere Tunnel"
+    3298775062: {
+      name: 'Untersuchungsmission'
     },
-    1783047867: {
-      activityName: "Inferno: Kontrolle"
+    3303685562: {
+      name: 'Bergungsmission'
     },
-    1783107168: {
-      activityName: "Download abgeschlossen"
+    3304835347: {
+      name: 'Ruf der Heimat'
     },
-    1783564050: {
-      activityName: "Das herrschende Haus"
+    3336275007: {
+      name: 'Meditation: „Sechs“'
     },
-    1794499705: {
-      activityName: "Das Erwachen der Eisernen Lords: Auftakt"
+    3337731612: {
+      name: 'Kampfmission'
     },
-    1815860968: {
-      activityName: "Zonenkontrolle"
+    3346345105: {
+      name: 'Experimentelle Behandlung'
     },
-    1816396489: {
-      activityName: "Der Schattendieb"
+    3359466010: {
+      name: 'Funke'
     },
-    1836141626: {
-      activityName: "Eliminierung"
+    3368226533: {
+      name: 'Dämmerung: Die verdrehte Säule'
     },
-    1836893116: {
-      activityName: "Crotas Ende"
+    3379039897: {
+      name: 'Bergungsmission'
     },
-    1836893119: {
-      activityName: "Crotas Ende"
+    3410530777: {
+      name: 'Berechnete Aktion'
     },
-    1845751534: {
-      activityName: "Zerberus Vae III"
+    3417504239: {
+      name: 'Springflut'
     },
-    1846390409: {
-      activityName: "Ein Hüter erhebt sich"
+    3446541099: {
+      name: 'Leviathan'
     },
-    1851417512: {
-      activityName: "Der Drifter"
+    3479544154: {
+      name: 'Kampfmission'
     },
-    1856964953: {
-      activityName: "Ein Hüter erhebt sich"
+    3481058226: {
+      name: 'Untersuchungsmission'
     },
-    1882836298: {
-      activityName: "Das Erwachen"
+    3485876484: {
+      name: 'Road Rage'
     },
-    1889399773: {
-      activityName: "Wöchentlicher Dämmerungs-Strike"
+    3487576414: {
+      name: 'Untersuchungsmission'
     },
-    1912940269: {
-      activityName: "Wiederherstellung"
+    3489692681: {
+      name: 'Untersuchungsmission'
     },
-    1917735347: {
-      activityName: "Wintersturm"
+    3500791146: {
+      name: 'Zitterpartie'
     },
-    1918823817: {
-      activityName: "Der Unsterbliche Geist"
+    3515770727: {
+      name: 'Analysemission'
     },
-    1924778540: {
-      activityName: "Das herrschende Haus"
+    3580793473: {
+      name: 'Meditation: „1 AE“'
     },
-    1940432142: {
-      activityName: "Sperrgebiet"
+    3612741503: {
+      name: 'Untersuchungsmission'
     },
-    1973631991: {
-      activityName: "Die letzte Anlage"
+    3627094182: {
+      name: 'Kampfmission'
     },
-    1974138312: {
-      activityName: "Fauliger Kelch"
+    3631476566: {
+      name: 'Die Farm'
     },
-    1985034593: {
-      activityName: "Wöchentlicher Dämmerungs-Strike"
+    3645117987: {
+      name: 'Schlechte Nachbarschaft'
     },
-    2008529245: {
-      activityName: "Könige des Zerfalls"
+    3652531274: {
+      name: 'Bruchstück des Reisenden'
     },
-    2010056644: {
-      activityName: "Haakon-Abgrund"
+    3662124488: {
+      name: 'Untersuchungsmission'
     },
-    2022189692: {
-      activityName: "Fauliger Kelch"
+    3664915501: {
+      name: 'Rotlegion und Schwarzöl'
     },
-    2037022373: {
-      activityName: "Vertigo"
+    3669054326: {
+      name: 'Bergungsmission'
     },
-    2045385030: {
-      activityName: "Patrouilliere die Venus"
+    3688464794: {
+      name: 'Warum ein gutes Netzwerk wichtig ist'
     },
-    2051444910: {
-      activityName: "Das dunkle Jenseits"
+    3700722865: {
+      name: 'Freilassung'
     },
-    2061368111: {
-      activityName: "Hexenkessel: Vorherrschaft"
+    3702064261: {
+      name: 'Daten-Erhebung'
     },
-    2063852581: {
-      activityName: "Hexenkessel: Konflikt"
+    3738159218: {
+      name: 'Ungebrochen'
     },
-    2072729921: {
-      activityName: "Fauliger Kelch"
+    3752039537: {
+      name: 'Umgepolt'
     },
-    2074618692: {
-      activityName: "Der Ewigkeitsfresser"
+    3780356141: {
+      name: 'Zähfließend'
     },
-    2074618695: {
-      activityName: "Der Ewigkeitsfresser"
+    3792746061: {
+      name: 'Kampfmission'
     },
-    2082069870: {
-      activityName: "Die Anomalie"
+    3799743268: {
+      name: 'Klassifiziert'
     },
-    2084208305: {
-      activityName: "Die sonnenlose Zelle"
+    3806583577: {
+      name: 'Attentatsmission'
     },
-    2084307227: {
-      activityName: "Patrouille des Grauens"
+    3834639884: {
+      name: 'Analysemission'
     },
-    2095588685: {
-      activityName: "Der Wille von Crota"
+    3836086286: {
+      name: 'Unerwartete Gäste'
     },
-    2105028197: {
-      activityName: "Echo-Kammer"
+    3839751954: {
+      name: 'Altar der Flamme'
     },
-    2129294976: {
-      activityName: "Das dunkle Innere"
+    3872525353: {
+      name: 'Zähfließend'
     },
-    2151413729: {
-      activityName: "Turm"
+    3879860661: {
+      name: 'Leviathan'
     },
-    2176272408: {
-      activityName: "Der Schattendieb"
+    3903562779: {
+      name: 'Turm'
     },
-    2178968385: {
-      activityName: "Das elende Auge"
+    3916343513: {
+      name: 'Leviathan'
     },
-    2184393955: {
-      activityName: "Zerberus Vae III"
+    3920643231: {
+      name: 'Dämmerung: Der Waffenhändler'
     },
-    2186849909: {
-      activityName: "Wintersturm"
+    3958400416: {
+      name: 'Untersuchungsmission'
     },
-    2190039885: {
-      activityName: "Klassisches Jeder gegen Jeden"
+    3966792859: {
+      name: 'Nessus, instabiler Zentaur'
     },
-    2197680969: {
-      activityName: "Könige des Zerfalls"
+    3978357488: {
+      name: 'Bergungsmission'
     },
-    2198347919: {
-      activityName: "Turm"
+    3982474534: {
+      name: 'Rache'
     },
-    2200634811: {
-      activityName: "Belagerung des Kriegsgeistes"
+    4034557395: {
+      name: 'Heimkehr'
     },
-    2201622127: {
-      activityName: "Herausforderung der Ältesten"
+    4039317196: {
+      name: 'Leviathan'
     },
-    2213151771: {
-      activityName: "Ischtar-Kollektiv"
+    4043714237: {
+      name: 'Untersuchungsmission'
     },
-    2217862439: {
-      activityName: "Kontrolle"
+    4047570705: {
+      name: 'Kampfmission'
     },
-    2221365740: {
-      activityName: "Sepiks-Perfektioniert"
+    4050886070: {
+      name: 'Untersuchungsmission'
     },
-    2234107290: {
-      activityName: "Die sonnenlose Zelle"
+    4054968718: {
+      name: 'Dämmerung: Die verdrehte Säule'
     },
-    2243240710: {
-      activityName: "Unendlicher Abstieg"
+    4095207117: {
+      name: 'Bergungsmission'
     },
-    2244550959: {
-      activityName: "Turm"
+    4103844069: {
+      name: 'Attentatsmission'
     },
-    2244943676: {
-      activityName: "Eine Khvostov steigt auf"
+    4159221189: {
+      name: 'Io'
     },
-    2245079334: {
-      activityName: "Fauliger Kelch"
+    4166562681: {
+      name: 'Titan'
     },
-    2263964303: {
-      activityName: "Eliminierung"
+    4174103238: {
+      name: 'Bergungsmission'
     },
-    2268273279: {
-      activityName: "Sepiks-Perfektioniert"
+    4209774794: {
+      name: 'Bergungsmission'
     },
-    2270816053: {
-      activityName: "Königliches Lösegeld"
+    4216926874: {
+      name: 'Bergungsmission'
     },
-    2270968444: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    4231544111: {
+      name: 'Untersuchungsmission'
     },
-    2270968445: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    4239233351: {
+      name: 'Meditation: „Funke“'
     },
-    2270968446: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
+    4254776501: {
+      name: 'Bergungsmission'
     },
-    2275772174: {
-      activityName: "Der Schattendieb"
+    4283649349: {
+      name: 'Attentatsmission'
     },
-    2286628407: {
-      activityName: "Paradox"
-    },
-    2303355724: {
-      activityName: "Die Höhle der Teufel"
-    },
-    2303355727: {
-      activityName: "Der Wille von Crota"
-    },
-    2316484115: {
-      activityName: "Der Leuchtturm"
-    },
-    2319702946: {
-      activityName: "Eisentempel"
-    },
-    2321224098: {
-      activityName: "Der Ruf einer Fremden"
-    },
-    2324706853: {
-      activityName: "Crotas Ende"
-    },
-    2326253031: {
-      activityName: "Skolas‘ Rache"
-    },
-    2327910410: {
-      activityName: "Kammer der Nacht"
-    },
-    2330516073: {
-      activityName: "Turm"
-    },
-    2332037858: {
-      activityName: "Witwenhof"
-    },
-    2333767699: {
-      activityName: "Umarmung der Angst"
-    },
-    2344229082: {
-      activityName: "Der Unsterbliche Geist"
-    },
-    2344622554: {
-      activityName: "Echo-Kammer"
-    },
-    2356723745: {
-      activityName: "Der bevorstehende Krieg"
-    },
-    2364610626: {
-      activityName: "Primus-Pfad"
-    },
-    2369296916: {
-      activityName: "Der bevorstehende Krieg"
-    },
-    2374186202: {
-      activityName: "Inferno: Kontrolle"
-    },
-    2374784693: {
-      activityName: "Geißel von Winter"
-    },
-    2374899718: {
-      activityName: "Der Schattendieb"
-    },
-    2375659247: {
-      activityName: "Herausforderung der Ältesten"
-    },
-    2380726447: {
-      activityName: "Das Grabschiff"
-    },
-    2381859905: {
-      activityName: "Der Schattendieb"
-    },
-    2388860485: {
-      activityName: "Rift"
-    },
-    2391040454: {
-      activityName: "Sepiks-Perfektioniert"
-    },
-    2393458461: {
-      activityName: "Entropiehöhepunkt"
-    },
-    2396741855: {
-      activityName: "Zerberus Vae III"
-    },
-    2398459666: {
-      activityName: "Patrouilliere den Mars"
-    },
-    2401705359: {
-      activityName: "Der Besessenen-Krieg"
-    },
-    2422821510: {
-      activityName: "Könige des Zerfalls"
-    },
-    2430076725: {
-      activityName: "Blindwacht"
-    },
-    2437373043: {
-      activityName: "Der Unsterbliche Geist"
-    },
-    2445476122: {
-      activityName: "Klassisches 6v6"
-    },
-    2446491566: {
-      activityName: "Die Verseuchten Lande"
-    },
-    2449230902: {
-      activityName: "Das Grabschiff"
-    },
-    2450352219: {
-      activityName: "Die sonnenlose Zelle"
-    },
-    2473173917: {
-      activityName: "Die Schweigenden Reißer"
-    },
-    2474598319: {
-      activityName: "Patrouilliere die Venus"
-    },
-    2486047606: {
-      activityName: "Der Schwarze Garten"
-    },
-    2488292787: {
-      activityName: "Freelance 3v3"
-    },
-    2500396686: {
-      activityName: "Eisentempel"
-    },
-    2503808507: {
-      activityName: "Die letzte Ölung"
-    },
-    2507231345: {
-      activityName: "Grenzland"
-    },
-    2507671226: {
-      activityName: "Ausgehendes Signal"
-    },
-    2522686639: {
-      activityName: "Freelance 6v6"
-    },
-    2532582309: {
-      activityName: "Gefallenen S.A.B.E.R."
-    },
-    2546962221: {
-      activityName: "Die sonnenlose Zelle"
-    },
-    2553967924: {
-      activityName: "Wenn die Mauern fallen"
-    },
-    2577060487: {
-      activityName: "Paradox"
-    },
-    2582525652: {
-      activityName: "Schrein von Oryx"
-    },
-    2586575560: {
-      activityName: "Hexenkessel: Rumble"
-    },
-    2591739000: {
-      activityName: "Die Erwachten"
-    },
-    2604992012: {
-      activityName: "Ans Licht verloren"
-    },
-    2605106985: {
-      activityName: "Steigende Flut"
-    },
-    2616429373: {
-      activityName: "Umarmung der Angst"
-    },
-    2624694148: {
-      activityName: "Fauliger Zirkel"
-    },
-    2624916786: {
-      activityName: "Zerberus Vae III"
-    },
-    2626477216: {
-      activityName: "Ausgehendes Signal"
-    },
-    2632260907: {
-      activityName: "Echo-Kammer"
-    },
-    2638978649: {
-      activityName: ""
-    },
-    2641355370: {
-      activityName: "Die Säule des Gartens"
-    },
-    2643956095: {
-      activityName: "Freelance 3v3"
-    },
-    2658160549: {
-      activityName: "Fauliger Zirkel"
-    },
-    2659248068: {
-      activityName: "Gläserne Kammer"
-    },
-    2659248069: {
-      activityName: "Gläserne Kammer"
-    },
-    2659248071: {
-      activityName: "Gläserne Kammer"
-    },
-    2662709104: {
-      activityName: "Arkus in der Flasche"
-    },
-    2664207554: {
-      activityName: "Das elende Auge"
-    },
-    2666433880: {
-      activityName: "Der Nexus"
-    },
-    2669189613: {
-      activityName: "Staubpalast"
-    },
-    2678657479: {
-      activityName: "Der Monstrositätenraub"
-    },
-    2680821721: {
-      activityName: "Der Kessel"
-    },
-    2693077237: {
-      activityName: "Vorhut-Dämmerung"
-    },
-    2695324124: {
-      activityName: "Fauliger Kelch"
-    },
-    2697160954: {
-      activityName: "Zeitalter des Triumphs"
-    },
-    2697969178: {
-      activityName: "Wöchentlicher Dämmerungs-Strike"
-    },
-    2701768038: {
-      activityName: "Faust von Crota"
-    },
-    2704098598: {
-      activityName: "Die Höhle der Teufel"
-    },
-    2708547287: {
-      activityName: "Feuermarsch"
-    },
-    2717791362: {
-      activityName: "Der Wille von Crota"
-    },
-    2719526771: {
-      activityName: "Staubpalast"
-    },
-    2726977290: {
-      activityName: "Die letzte Anlage"
-    },
-    2737751857: {
-      activityName: "Prachtvolle Lieferung"
-    },
-    2739987894: {
-      activityName: "Ein Zeichen der Ehre"
-    },
-    2743106708: {
-      activityName: "Staubpalast"
-    },
-    2747031950: {
-      activityName: "Klassisches 3v3"
-    },
-    2764426556: {
-      activityName: "Paradox"
-    },
-    2764561765: {
-      activityName: "Ans Licht verloren"
-    },
-    2775184694: {
-      activityName: "Die Beschwörungsgruben"
-    },
-    2776273577: {
-      activityName: "Zerberus Vae III"
-    },
-    2790114296: {
-      activityName: "Das herrschende Haus"
-    },
-    2795444912: {
-      activityName: "Gefecht"
-    },
-    2799122060: {
-      activityName: "Der Nexus"
-    },
-    2819394450: {
-      activityName: "Vorhut-Legacy"
-    },
-    2828456290: {
-      activityName: "Schimmernder Sand"
-    },
-    2839046506: {
-      activityName: "undefined"
-    },
-    2840876929: {
-      activityName: "Schild-Brüder"
-    },
-    2846350970: {
-      activityName: "Die sonnenlose Zelle"
-    },
-    2853745856: {
-      activityName: "Der Schwarze Garten"
-    },
-    2861777810: {
-      activityName: "Wintersturm"
-    },
-    2873833515: {
-      activityName: "Die sonnenlose Zelle"
-    },
-    2873913519: {
-      activityName: "Der Kriegsgeist"
-    },
-    2877811433: {
-      activityName: "Hexenkessel: Rumble"
-    },
-    2895301046: {
-      activityName: "Sperrgebiet"
-    },
-    2896357417: {
-      activityName: "Wintersturm"
-    },
-    2896357418: {
-      activityName: "Der Nexus"
-    },
-    2897641944: {
-      activityName: "Fauliger Kelch"
-    },
-    2910883293: {
-      activityName: "Die letzte Ölung"
-    },
-    2918909691: {
-      activityName: "Botenzirkel"
-    },
-    2926133958: {
-      activityName: "Arsenal"
-    },
-    2931947534: {
-      activityName: "Ein Kell steigt auf"
-    },
-    2938090611: {
-      activityName: "Der bevorstehende Krieg"
-    },
-    2938118424: {
-      activityName: "Der Unsterbliche Geist"
-    },
-    2938118425: {
-      activityName: "Zerberus Vae III"
-    },
-    2938118426: {
-      activityName: "Staubpalast"
-    },
-    2945511915: {
-      activityName: "Freelance 6v6"
-    },
-    2947742498: {
-      activityName: "Inferno-Doppel"
-    },
-    2981424914: {
-      activityName: "Der Prometheus-Code"
-    },
-    2989915775: {
-      activityName: "Der Unsterbliche Geist"
-    },
-    3005484445: {
-      activityName: "Der Prometheus-Code"
-    },
-    3010573436: {
-      activityName: "Der Schattendieb"
-    },
-    3011954788: {
-      activityName: "Download abgeschlossen"
-    },
-    3025411906: {
-      activityName: "Der Archonschlächter"
-    },
-    3027976182: {
-      activityName: "Schild-Brüder"
-    },
-    3030879879: {
-      activityName: "Das elende Auge"
-    },
-    3041179010: {
-      activityName: "Zerberus Vae III"
-    },
-    3044479892: {
-      activityName: "Der Schattendieb"
-    },
-    3047788493: {
-      activityName: "Staubpalast"
-    },
-    3047788494: {
-      activityName: "Zerberus Vae III"
-    },
-    3047788495: {
-      activityName: "Der Unsterbliche Geist"
-    },
-    3051527960: {
-      activityName: "Die sonnenlose Zelle"
-    },
-    3053288711: {
-      activityName: "Schwebende Gärten"
-    },
-    3056582947: {
-      activityName: "Steigende Flut"
-    },
-    3070937708: {
-      activityName: "Gefallenen S.A.B.E.R."
-    },
-    3077860924: {
-      activityName: "Die Höhle der Teufel"
-    },
-    3077860927: {
-      activityName: "Der Wille von Crota"
-    },
-    3097191720: {
-      activityName: "Der Schattendieb"
-    },
-    3098008841: {
-      activityName: "Der Wille von Crota"
-    },
-    3101475152: {
-      activityName: "Stützpunkt Delphi"
-    },
-    3101766066: {
-      activityName: "Das elende Auge"
-    },
-    3102291176: {
-      activityName: "Primus-Pfad"
-    },
-    3102295231: {
-      activityName: "Bergung"
-    },
-    3120201278: {
-      activityName: "Wintersturm"
-    },
-    3120351937: {
-      activityName: "Der Kriegsgeist"
-    },
-    3120351938: {
-      activityName: "Das dunkle Innere"
-    },
-    3120351939: {
-      activityName: "Wiederherstellung"
-    },
-    3120351941: {
-      activityName: "Belagerung des Kriegsgeistes"
-    },
-    3120351943: {
-      activityName: "Die letzte Anlage"
-    },
-    3125074504: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
-    },
-    3125074505: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
-    },
-    3125074507: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
-    },
-    3132533708: {
-      activityName: "Fauliger Kelch"
-    },
-    3135856650: {
-      activityName: "Geißel von Winter"
-    },
-    3156370656: {
-      activityName: "Sektor 618"
-    },
-    3162176634: {
-      activityName: "Echo-Kammer"
-    },
-    3183184449: {
-      activityName: "Schild-Brüder"
-    },
-    3187607216: {
-      activityName: "Der Unsterbliche Geist"
-    },
-    3190434637: {
-      activityName: "Das Grabschiff"
-    },
-    3192378548: {
-      activityName: "Das dunkle Jenseits"
-    },
-    3196929644: {
-      activityName: "Der Monstrositätenraub"
-    },
-    3200293401: {
-      activityName: "Der Feind meines Feindes"
-    },
-    3207122440: {
-      activityName: "Das Archiv"
-    },
-    3209623958: {
-      activityName: "Wöchentlicher Dämmerungs-Strike"
-    },
-    3210106079: {
-      activityName: "Patrouilliere das Grabschiff"
-    },
-    3220294246: {
-      activityName: "Wenn die Mauern fallen"
-    },
-    3234259779: {
-      activityName: "Prüfungen von Osiris"
-    },
-    3242509473: {
-      activityName: "Der Wille von Crota"
-    },
-    3252534714: {
-      activityName: "Doppel"
-    },
-    3263216023: {
-      activityName: "Königsmord"
-    },
-    3277621970: {
-      activityName: "Der Zeitmesser"
-    },
-    3277929848: {
-      activityName: "Schild-Brüder"
-    },
-    3292305209: {
-      activityName: "Wintersturm"
-    },
-    3292305210: {
-      activityName: "Der Nexus"
-    },
-    3292667877: {
-      activityName: "Asyl"
-    },
-    3315158082: {
-      activityName: "Ein Aufblitzen in der Finsternis"
-    },
-    3322717977: {
-      activityName: "Eisenbanner: Kontrolle"
-    },
-    3335571405: {
-      activityName: "Vorherrschaft"
-    },
-    3343284688: {
-      activityName: "Ausgehendes Signal"
-    },
-    3343503784: {
-      activityName: "Fauliger Kelch"
-    },
-    3345352981: {
-      activityName: "Ritual der Opferung"
-    },
-    3346215145: {
-      activityName: "Der Leuchtturm"
-    },
-    3349918649: {
-      activityName: "Das Grabschiff"
-    },
-    3356249023: {
-      activityName: "Zorn der Maschine"
-    },
-    3373044013: {
-      activityName: "Fauliger Kelch"
-    },
-    3384143875: {
-      activityName: "Fauliger Kelch"
-    },
-    3392709953: {
-      activityName: "Der Monstrositätenraub"
-    },
-    3393673804: {
-      activityName: "Das Gefängnis der Alten"
-    },
-    3394418729: {
-      activityName: "Staubpalast"
-    },
-    3398049753: {
-      activityName: "Die Säule des Gartens"
-    },
-    3398752148: {
-      activityName: "Wintersturm"
-    },
-    3399843400: {
-      activityName: "Der Ruf einer Fremden"
-    },
-    3399843403: {
-      activityName: "Ischtar-Kollektiv"
-    },
-    3399843404: {
-      activityName: "Das Archiv"
-    },
-    3399843406: {
-      activityName: "Auge eines Tor-Lords"
-    },
-    3399843407: {
-      activityName: "Geißel von Winter"
-    },
-    3403438134: {
-      activityName: "Echo-Kammer"
-    },
-    3406669964: {
-      activityName: "Sepiks-Perfektioniert"
-    },
-    3412406993: {
-      activityName: "Staubkathedrale"
-    },
-    3415949693: {
-      activityName: "Der Nexus"
-    },
-    3422670336: {
-      activityName: "Die Höhle der Teufel"
-    },
-    3422670339: {
-      activityName: "Der Wille von Crota"
-    },
-    3422924470: {
-      activityName: "Fauliger Zirkel"
-    },
-    3427115544: {
-      activityName: "Gefallenen S.A.B.E.R."
-    },
-    3428378490: {
-      activityName: "Hexenkessel: Konflikt"
-    },
-    3434275681: {
-      activityName: "Kammer der Nacht"
-    },
-    3464398659: {
-      activityName: "Schrein von Oryx"
-    },
-    3473815980: {
-      activityName: "Faust von Crota"
-    },
-    3476387771: {
-      activityName: "Der Besessenen-Krieg (Heroisch)"
-    },
-    3492173922: {
-      activityName: "Vestianischer Außenposten"
-    },
-    3493774909: {
-      activityName: "König der Besessenen: Auftakt"
-    },
-    3508129769: {
-      activityName: "Wurmkult"
-    },
-    3508129770: {
-      activityName: "Wurmkult"
-    },
-    3509128672: {
-      activityName: "Eisentempel"
-    },
-    3527709396: {
-      activityName: "Gefecht"
-    },
-    3534581229: {
-      activityName: "Königsfall"
-    },
-    3543525727: {
-      activityName: "Königliches Lösegeld"
-    },
-    3549856929: {
-      activityName: "Belagerung des Kriegsgeistes"
-    },
-    3555113730: {
-      activityName: "Das elende Auge"
-    },
-    3565777280: {
-      activityName: "Klopf Klopf"
-    },
-    3568014988: {
-      activityName: "Königsmord"
-    },
-    3573972337: {
-      activityName: "Der Nexus"
-    },
-    3575520714: {
-      activityName: "Schild-Brüder"
-    },
-    3575840788: {
-      activityName: "Wolfstrick"
-    },
-    3582451805: {
-      activityName: "Der Schattendieb"
-    },
-    3582577776: {
-      activityName: "Die Schweigenden Reißer"
-    },
-    3593950004: {
-      activityName: "Destiny-Credits"
-    },
-    3602734434: {
-      activityName: "Bannerfall"
-    },
-    3609927430: {
-      activityName: "Inferno: Vorherrschaft"
-    },
-    3612436612: {
-      activityName: "Der bevorstehende Krieg"
-    },
-    3619606113: {
-      activityName: "Hexenkessel: Konflikt"
-    },
-    3621292155: {
-      activityName: "Bergung"
-    },
-    3635588435: {
-      activityName: "Der Sprecher"
-    },
-    3645675142: {
-      activityName: "Kontrolle"
-    },
-    3645919501: {
-      activityName: "Patrouilliere das Kosmodrom"
-    },
-    3650545911: {
-      activityName: "Wolfstrick"
-    },
-    3670262295: {
-      activityName: "Prüfungen von Osiris"
-    },
-    3670861271: {
-      activityName: "Der Feind meines Feindes"
-    },
-    3670968271: {
-      activityName: "Der Wille von Crota"
-    },
-    3671763238: {
-      activityName: "Zerberus Vae III"
-    },
-    3674885127: {
-      activityName: "Königsmord"
-    },
-    3676594097: {
-      activityName: "Wintersturm"
-    },
-    3691405620: {
-      activityName: "Vorhut-Dämmerung"
-    },
-    3700036317: {
-      activityName: "Oryx triumphiert"
-    },
-    3705341715: {
-      activityName: "Der wiedergefundene Ranger"
-    },
-    3708806801: {
-      activityName: "Entropiehöhepunkt"
-    },
-    3711414560: {
-      activityName: "Kammer der Nacht"
-    },
-    3711414561: {
-      activityName: "Das Schwert von Crota"
-    },
-    3711414562: {
-      activityName: "Das Erwachen"
-    },
-    3711414563: {
-      activityName: "Schrein von Oryx"
-    },
-    3711414564: {
-      activityName: "Das dunkle Jenseits"
-    },
-    3711414566: {
-      activityName: "Das Weltengrab"
-    },
-    3715085142: {
-      activityName: "Schattenruf"
-    },
-    3731091063: {
-      activityName: "Wöchentlicher Dämmerungs-Strike"
-    },
-    3741914742: {
-      activityName: "Wintersturm"
-    },
-    3743955707: {
-      activityName: "Turm"
-    },
-    3750289192: {
-      activityName: "Die Faust von Crota"
-    },
-    3778091466: {
-      activityName: "Download abgeschlossen"
-    },
-    3784570118: {
-      activityName: "Das Archiv"
-    },
-    3799336128: {
-      activityName: "Der Wille von Crota"
-    },
-    3817155567: {
-      activityName: "Dämmerbruch"
-    },
-    3837170670: {
-      activityName: "Das Weltengrab"
-    },
-    3842976518: {
-      activityName: "Die sonnenlose Zelle"
-    },
-    3848655103: {
-      activityName: "Schwarzer Schild"
-    },
-    3856562046: {
-      activityName: "Ans Licht verloren"
-    },
-    3856604751: {
-      activityName: "Erstes Licht"
-    },
-    3860793576: {
-      activityName: "Sepiks-Perfektioniert"
-    },
-    3878867172: {
-      activityName: "Zonenkontrolle"
-    },
-    3896699662: {
-      activityName: "Wintersturm"
-    },
-    3910288239: {
-      activityName: "Eisenbanner: Rift"
-    },
-    3918359338: {
-      activityName: "Ikarus"
-    },
-    3920061741: {
-      activityName: "Schrein von Oryx"
-    },
-    3921931055: {
-      activityName: "Der Wille von Crota"
-    },
-    3936153046: {
-      activityName: "Inferno 3v3"
-    },
-    3941998864: {
-      activityName: "Zerberus Vae III"
-    },
-    3945328236: {
-      activityName: "Eisentempel"
-    },
-    3948474766: {
-      activityName: "Das Schwert von Crota"
-    },
-    3974631085: {
-      activityName: "Der Feind meines Feindes"
-    },
-    3978884648: {
-      activityName: "Königsfall"
-    },
-    4000873610: {
-      activityName: "Crotas Ende"
-    },
-    4027720491: {
-      activityName: "Schild-Brüder"
-    },
-    4038697181: {
-      activityName: "Gläserne Kammer"
-    },
-    4046346128: {
-      activityName: "Umarmung der Angst"
-    },
-    4055903037: {
-      activityName: "Rift"
-    },
-    4060895971: {
-      activityName: "Turm"
-    },
-    4079642013: {
-      activityName: "Zerbrochene Legion"
-    },
-    4079642014: {
-      activityName: "Zerbrochene Legion"
-    },
-    4087776066: {
-      activityName: "Caydes Versteck"
-    },
-    4099604100: {
-      activityName: "Der Wille von Crota"
-    },
-    4101329072: {
-      activityName: "Das elende Auge"
-    },
-    4105918304: {
-      activityName: "Letzter Ausweg"
-    },
-    4107311671: {
-      activityName: "Rostlande"
-    },
-    4129878327: {
-      activityName: "Inferno: Bergung"
-    },
-    4131978369: {
-      activityName: "Der Monstrositätenraub"
-    },
-    4141063459: {
-      activityName: "Der Schattendieb"
-    },
-    4153423016: {
-      activityName: "Herausforderung der Ältesten"
-    },
-    4163254808: {
-      activityName: "Ufer der Zeit"
-    },
-    4168247421: {
-      activityName: "Eisenbanner: Konflikt"
-    },
-    4171584130: {
-      activityName: "Inferno 6v6"
-    },
-    4175179544: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
-    },
-    4175179545: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
-    },
-    4175179546: {
-      activityName: "Wöchentlicher Strike (Heroisch)"
-    },
-    4178645458: {
-      activityName: "Die Begrabene Stadt"
-    },
-    4181273223: {
-      activityName: "Gefallenen S.A.B.E.R."
-    },
-    4183157062: {
-      activityName: "Die letzte Ölung"
-    },
-    4187524452: {
-      activityName: "Der Unsterbliche Geist"
-    },
-    4196724507: {
-      activityName: "Inferno: Rumble"
-    },
-    4200263342: {
-      activityName: "Bastion"
-    },
-    4203094490: {
-      activityName: "Eisentempel"
-    },
-    4215168114: {
-      activityName: "Der Wille von Crota"
-    },
-    4217181091: {
-      activityName: "Gefecht"
-    },
-    4222208550: {
-      activityName: "SRL-Rennstrecke"
-    },
-    4227723344: {
-      activityName: "Die Höhle der Teufel"
-    },
-    4227723347: {
-      activityName: "Der Wille von Crota"
-    },
-    4239017990: {
-      activityName: "Ein Schlüssel wartet"
-    },
-    4240750267: {
-      activityName: "Der Prometheus-Code"
-    },
-    4242282035: {
-      activityName: "Kontrolle"
-    },
-    4252752792: {
-      activityName: "Staubpalast"
-    },
-    4253541885: {
-      activityName: "Wintersturm"
-    },
-    4254149014: {
-      activityName: "Der Schattendieb"
-    },
-    4260139097: {
-      activityName: "Pantheon"
-    },
-    4272344899: {
-      activityName: "Das Archiv"
-    },
-    4277539497: {
-      activityName: "Eisenbanner: Konflikt"
-    },
-    4287936726: {
-      activityName: "Exodus Blau"
+    4291922223: {
+      name: 'Hoffnung'
     },
   },
   en: {
-    8055542: {
-      activityName: "The Walls Come Down"
+    19982784: {
+      name: 'Combat Mission'
     },
-    9885984: {
-      activityName: "Chamber of Night"
+    30240416: {
+      name: 'Assassination Mission'
     },
-    10551956: {
-      activityName: "King of the Mountain"
+    37050217: {
+      name: 'Survey mission'
     },
-    18715720: {
-      activityName: "King of the Mountain"
+    51408141: {
+      name: 'Salvage Mission'
     },
-    24471896: {
-      activityName: "Mars and Venus"
+    53954174: {
+      name: 'Anti-Anti-Air'
     },
-    24471899: {
-      activityName: "Earth and Moon"
+    57103244: {
+      name: 'Survey mission'
     },
-    28695277: {
-      activityName: "The Sword of Crota"
+    60002467: {
+      name: 'Sacrilege'
     },
-    34205302: {
-      activityName: "The Nexus"
+    78673128: {
+      name: 'Thief of Thieves'
     },
-    34327100: {
-      activityName: "Fallen S.A.B.E.R."
+    80726883: {
+      name: 'O Captain'
     },
-    51311972: {
-      activityName: "The Undying Mind"
+    82913930: {
     },
-    51311973: {
-      activityName: "Cerberus Vae III"
+    89727599: {
+      name: 'Leviathan'
     },
-    51311974: {
-      activityName: "Dust Palace"
+    104342360: {
+      name: 'Combat Mission'
     },
-    64371922: {
-      activityName: "Rumble Supremacy"
+    116352029: {
+      name: 'Combat Mission'
     },
-    86749741: {
-      activityName: "Iron Banner Control"
+    122988657: {
+      name: 'Red Legion, Black Oil'
     },
-    91984044: {
-      activityName: "A Kell Rising"
+    143647473: {
+      name: 'Salvage Mission'
     },
-    95021281: {
-      activityName: "Lost to Light"
+    145302664: {
+      name: 'Nightfall: The Arms Dealer'
     },
-    96237246: {
-      activityName: "Classic 6v6"
+    153537894: {
+      name: 'A New Frontier'
     },
-    98710471: {
-      activityName: "Rumble"
+    160721490: {
+      name: 'Classified'
     },
-    103493304: {
-      activityName: "King of the Mountain"
+    175598161: {
+      name: 'Salvage Mission'
     },
-    116560380: {
-      activityName: "The Shadow Thief"
+    189324537: {
+      name: 'Salvage Mission'
     },
-    116811400: {
-      activityName: "The Shadow Thief"
+    197670945: {
+      name: 'Assassination Mission'
     },
-    123652644: {
-      activityName: "Echo Chamber"
+    204298081: {
+      name: 'Analysis Mission'
     },
-    123999179: {
-      activityName: "Shadows at Twilight"
+    248066530: {
+      name: 'Salvage Mission'
     },
-    130631058: {
-      activityName: "Classic 3v3"
+    255819671: {
+      name: 'Fury'
     },
-    134979141: {
-      activityName: "The Last Array"
+    261349035: {
+      name: 'Salvage Mission'
     },
-    149381097: {
-      activityName: "Patrol the Moon"
+    286324446: {
+      name: 'Salvage Mission'
     },
-    151357230: {
-      activityName: "The Shadow Thief"
+    287649202: {
+      name: 'Leviathan'
     },
-    154683944: {
-      activityName: "Entropy's Pinnacle"
+    293858112: {
+      name: 'Combat Mission'
     },
-    157336261: {
-      activityName: "Inferno Supremacy"
+    298747401: {
+      name: 'Survey mission'
     },
-    157390236: {
-      activityName: "Dust Palace"
+    298793060: {
+      name: 'Salvage Mission'
     },
-    157980450: {
-      activityName: "The Iron Tomb"
+    313572698: {
+      name: 'Shard of the Traveler'
     },
-    165850035: {
-      activityName: "The Undying Mind"
+    320680002: {
+      name: 'Supply and Demand'
     },
-    167419252: {
-      activityName: "Patrol the Cosmodrome"
+    330545737: {
+      name: 'The Farm'
     },
-    184503944: {
-      activityName: "The Undying Mind"
+    338662534: {
+      name: 'The Inverted Spire'
     },
-    184503945: {
-      activityName: "Cerberus Vae III"
+    355984230: {
+      name: 'Assassination Mission'
     },
-    184503946: {
-      activityName: "Dust Palace"
+    359488722: {
+      name: 'Hack the Planet'
     },
-    194283519: {
-      activityName: "Dust Palace"
+    374818561: {
+      name: 'Emperor\'s Respite'
     },
-    202167389: {
-      activityName: "Dust Palace"
+    379330092: {
+      name: 'Shard of the Traveler'
     },
-    209343718: {
-      activityName: "Winter's Run"
+    387171436: {
+      name: 'Salvage Mission'
     },
-    211678003: {
-      activityName: "Iron Banner Rift"
+    388289443: {
+      name: 'Survey mission'
     },
-    212088538: {
-      activityName: "The Summoning Pits"
+    415388387: {
+      name: 'Survey mission'
     },
-    218006092: {
-      activityName: "The Plaguelands"
+    417231112: {
+      name: 'Leviathan'
     },
-    242777083: {
-      activityName: "The Nexus"
+    429361491: {
+      name: 'Salvage Mission'
     },
-    252347595: {
-      activityName: "Hangar Stakes"
+    435989417: {
+      name: 'Analysis Mission'
     },
-    259879232: {
-      activityName: "Fallen S.A.B.E.R."
+    444087412: {
+      name: 'Combat Mission'
     },
-    260615043: {
-      activityName: "Rumble"
+    445417088: {
     },
-    260765522: {
-      activityName: "Wrath of the Machine"
+    459955094: {
+      name: 'Analysis Mission'
     },
-    269981320: {
-      activityName: "The Promethean Code"
+    461203479: {
+      name: 'Survey mission'
     },
-    278763462: {
-      activityName: "Dust Palace"
+    464789944: {
+      name: 'Chosen'
     },
-    279121234: {
-      activityName: "King of the Mountain"
+    474380713: {
+      name: 'Salvage Mission'
     },
-    284635225: {
-      activityName: "The Burning Shrine"
+    539897061: {
+      name: 'Reversing the Polarity'
     },
-    287505866: {
-      activityName: "Fallen S.A.B.E.R."
+    545240418: {
+      name: 'Survey mission'
     },
-    291350530: {
-      activityName: "Weekly Nightfall Strike"
+    549123191: {
+      name: 'Survey mission'
     },
-    300506688: {
-      activityName: "Weekly Nightfall Strike"
+    553537971: {
+      name: 'Chosen'
     },
-    308091852: {
-      activityName: "Weekly Heroic Strike"
+    564863404: {
     },
-    308091854: {
-      activityName: "Weekly Heroic Strike"
+    581323290: {
+      name: 'Survey mission'
     },
-    308091855: {
-      activityName: "Weekly Heroic Strike"
+    585071442: {
+      name: 'Nightfall: Savathûn\'s Song'
     },
-    324283916: {
-      activityName: "A Rising Tide"
+    601540706: {
+      name: 'Nightfall: The Arms Dealer'
     },
-    331520418: {
-      activityName: "The Undying Mind"
+    622895925: {
+      name: 'Arecibo'
     },
-    342909762: {
-      activityName: "Shield Brothers"
+    632790902: {
+      name: 'Cliffhanger'
     },
-    351460287: {
-      activityName: "The Sunless Cell"
+    642256373: {
+      name: 'Nightfall: Exodus Crash'
     },
-    351673577: {
-      activityName: "Classic Free-For-All"
+    642277473: {
+      name: 'Nightfall: The Pyramidion'
     },
-    355200465: {
-      activityName: "Shield Brothers"
+    652598202: {
+      name: 'Legion\'s Gulch'
     },
-    355605844: {
-      activityName: "Patrol the Plaguelands"
+    667604912: {
+      name: 'Meditation: "Looped"'
     },
-    360962374: {
-      activityName: "The Shadow Thief"
+    671904429: {
+      name: 'Salvage Mission'
     },
-    386157877: {
-      activityName: "Shield Brothers"
+    703311712: {
+      name: 'Shard of the Traveler'
     },
-    389785553: {
-      activityName: "Dark Champions"
+    715306877: {
+      name: 'Combat Mission'
     },
-    403726672: {
-      activityName: "Weekly Heroic Strike"
+    719906507: {
+      name: 'Classified'
     },
-    403726674: {
-      activityName: "Weekly Heroic Strike"
+    743100125: {
+      name: 'Salvage Mission'
     },
-    403726675: {
-      activityName: "Weekly Heroic Strike"
+    750649238: {
+      name: 'Salvage Mission'
     },
-    406972773: {
-      activityName: "The Abomination Heist"
+    757116822: {
+      name: 'Leviathan'
     },
-    410347507: {
-      activityName: "The Shadow Thief"
+    760130722: {
+      name: 'The Dead Cliffs'
     },
-    425614025: {
-      activityName: "The Iron Lords"
+    782175145: {
+      name: 'Assassination Mission'
     },
-    428290721: {
-      activityName: "Patrol Mars"
+    782290869: {
+      name: 'Survey mission'
     },
-    430160982: {
-      activityName: "Wrath of the Machine"
+    789332628: {
+      name: 'Thief of Thieves'
     },
-    430914016: {
-      activityName: "The Iron Tomb"
+    798143184: {
+      name: 'Combat Mission'
     },
-    431759746: {
-      activityName: "Salvage"
+    808931822: {
+      name: 'Postmodern Prometheus'
     },
-    443057682: {
-      activityName: "Skyshock"
+    837763871: {
+      name: 'Salvage Mission'
     },
-    443707023: {
-      activityName: "The Ruling House"
+    849242583: {
+      name: 'Analysis Mission'
     },
-    455063520: {
-      activityName: "The Wakening"
+    880665770: {
+      name: 'Survey mission'
     },
-    468325937: {
-      activityName: "Combined Arms"
+    919252154: {
+      name: 'Dark Alliance'
     },
-    469270447: {
-      activityName: "Memento"
+    926012363: {
+      name: 'Assassination Mission'
     },
-    474428712: {
-      activityName: "Enemy of My Enemy"
+    926940962: {
+      name: 'Nightfall: The Pyramidion'
     },
-    482017096: {
-      activityName: "Sepiks Perfected"
+    938512773: {
+      name: 'Unbroken'
     },
-    492319725: {
-      activityName: "Mayhem Rumble"
+    940394831: {
+      name: 'QUEST: Exodus Crash'
     },
-    493857039: {
-      activityName: "Weekly Nightfall Strike"
+    955852466: {
+      name: '1AU'
     },
-    496237130: {
-      activityName: "Sparrow Racing"
+    963938931: {
+      name: 'Deep Conversation'
     },
-    504512661: {
-      activityName: "Vestian Outpost"
+    964196803: {
+      name: 'Salvage Mission'
     },
-    509411569: {
-      activityName: "Bad Blood"
+    969385987: {
+      name: 'Lighting the Dark'
     },
-    547981568: {
-      activityName: "Iron Banner Supremacy"
+    993152361: {
+      name: 'Salvage Mission'
     },
-    550186563: {
-      activityName: "A Kell Rising"
+    1019362992: {
+      name: 'Meditation: "Homecoming"'
     },
-    572368820: {
-      activityName: "Weekly Nightfall Strike"
+    1035135049: {
+      name: 'The Pyramidion'
     },
-    573077648: {
-      activityName: "Fallen S.A.B.E.R."
+    1038710420: {
+      name: 'Assassination Mission'
     },
-    574483028: {
-      activityName: "The Buried City"
+    1053141615: {
+      name: 'Assassination Mission'
     },
-    575304694: {
-      activityName: "A New Den"
+    1063969232: {
+      name: 'Invitation from the Emperor'
     },
-    575376446: {
-      activityName: "Echo Chamber"
+    1075152813: {
+      name: 'European Dead Zone'
     },
-    579700969: {
-      activityName: "Cayde's Stash"
+    1076851943: {
+      name: 'Assassination Mission'
     },
-    579949585: {
-      activityName: "The Silent Fang"
+    1085523978: {
+      name: 'Survey mission'
     },
-    581858107: {
-      activityName: "The Dawning"
+    1090267699: {
+      name: 'Assassination Mission'
     },
-    603968817: {
-      activityName: "Cerberus Vae III"
+    1101792305: {
+      name: 'Savathûn\'s Song'
     },
-    604017503: {
-      activityName: "Prison of Elders: Taken"
+    1102824603: {
+      name: 'Assassination Mission'
     },
-    614791010: {
-      activityName: "Supremacy"
+    1105211124: {
+      name: 'Analysis Mission'
     },
-    632771975: {
-      activityName: "Pretender to the Throne"
+    1107208644: {
+      name: 'Hack the Planet'
     },
-    637046772: {
-      activityName: "Thieves' Den"
+    1129066976: {
+      name: 'Nightfall: The Pyramidion'
     },
-    645920838: {
-      activityName: "Echo Chamber"
+    1159314159: {
+      name: 'Poor Reception'
     },
-    653380797: {
-      activityName: "Winter's Run"
+    1164772243: {
+      name: 'Salvage Mission'
     },
-    653380798: {
-      activityName: "The Nexus"
+    1206154103: {
+      name: 'Assassination Mission'
     },
-    696672649: {
-      activityName: "undefined"
+    1207505828: {
+      name: 'QUEST: The Arms Dealer'
     },
-    702170822: {
-      activityName: "The Summoning Pits"
+    1225970098: {
+      name: 'Lost Crew'
     },
-    706472064: {
-      activityName: "Weekly Heroic Strike"
+    1228327586: {
+      name: 'Anti-Anti-Air'
     },
-    706472065: {
-      activityName: "Weekly Heroic Strike"
+    1243390694: {
+      name: 'Larceny'
     },
-    706472066: {
-      activityName: "Weekly Heroic Strike"
+    1249965655: {
+      name: 'Analysis Mission'
     },
-    711826167: {
-      activityName: "Inferno Clash"
+    1250426564: {
+      name: 'Assassination Mission'
     },
-    719193800: {
-      activityName: "Winter's Run"
+    1254990192: {
+      name: 'No Safe Distance'
     },
-    719193803: {
-      activityName: "The Nexus"
+    1265390366: {
+      name: 'Poor Reception'
     },
-    746864299: {
-      activityName: "Inferno Doubles"
+    1289867188: {
+      name: 'Unbreakable'
     },
-    757275024: {
-      activityName: "Fallen S.A.B.E.R."
+    1290744998: {
+      name: 'The Farm'
     },
-    764916411: {
-      activityName: "The Buried City"
+    1309646866: {
+      name: 'The Farm'
     },
-    782611196: {
-      activityName: "Inferno Skirmish"
+    1331268141: {
+      name: 'Survey mission'
     },
-    820688209: {
-      activityName: "Sepiks Perfected"
+    1357019430: {
+      name: 'Nightfall: Exodus Crash'
     },
-    826836846: {
-      activityName: "The Wretched Eye"
+    1375839088: {
+      name: 'Analysis Mission'
     },
-    832576952: {
-      activityName: "Fallen S.A.B.E.R."
+    1412142789: {
+      name: ''
     },
-    833873053: {
-      activityName: "The Undying Mind"
+    1416597166: {
+      name: 'Supply and Demand'
     },
-    836641517: {
-      activityName: "Eye of a Gate Lord"
+    1428050875: {
+      name: 'Classified'
     },
-    853468393: {
-      activityName: "Ishtar Collective"
+    1451946951: {
+      name: 'Salvage Mission'
     },
-    853774317: {
-      activityName: "The Coming War"
+    1466550401: {
+      name: 'Unsafe at Any Speed'
     },
-    854130400: {
-      activityName: "Siege of the Warmind"
+    1490848577: {
+      name: 'Looped'
     },
-    856898338: {
-      activityName: "Vault of Glass"
+    1491022087: {
+      name: 'Exodus Siege'
     },
-    860566204: {
-      activityName: "The Lighthouse"
+    1495993294: {
+      name: 'Lake of Shadows'
     },
-    870614351: {
-      activityName: "SIVA Crisis Heroic"
+    1498466193: {
+      name: 'Salvage Mission'
     },
-    888190220: {
-      activityName: "Inferno Rumble"
+    1521232506: {
+      name: 'Classified'
     },
-    892266083: {
-      activityName: "Tower"
+    1525633702: {
+      name: 'Salvage Mission'
     },
-    902875868: {
-      activityName: "The Garden's Spire"
+    1536764325: {
+      name: 'Survey mission'
     },
-    906989597: {
-      activityName: "The Summoning Pits"
+    1557641249: {
+      name: 'Salvage Mission'
     },
-    932731386: {
-      activityName: "Cayde's Stash"
+    1563393783: {
+      name: 'Exodus Crash'
     },
-    940573734: {
-      activityName: "The Dark Within"
+    1568750156: {
+      name: 'The Farm'
     },
-    944638962: {
-      activityName: "Eye of a Gate Lord"
+    1581219251: {
+      name: 'Survey mission'
     },
-    981644933: {
-      activityName: "Bound by Fire"
+    1614692057: {
+      name: 'Salvage Mission'
     },
-    982298740: {
-      activityName: "The World's Grave"
+    1646219807: {
+      name: 'Larceny'
     },
-    984759429: {
-      activityName: "The Abomination Heist"
+    1651979106: {
+      name: 'Postmodern Prometheus'
     },
-    985012235: {
-      activityName: "A New Den"
+    1658347443: {
+      name: 'Homecoming'
     },
-    989535795: {
-      activityName: "Inferno Zone Control"
+    1685065161: {
+      name: 'Leviathan'
     },
-    994743956: {
-      activityName: "The Undying Mind"
+    1685237649: {
+      name: 'Assassination Mission'
     },
-    994743957: {
-      activityName: "Cerberus Vae III"
+    1699948563: {
+      name: 'Leviathan'
     },
-    994743958: {
-      activityName: "Dust Palace"
+    1720510574: {
+      name: 'The Fortress'
     },
-    1005705920: {
-      activityName: "The First Firewall"
+    1756055546: {
+      name: 'Salvage Mission'
     },
-    1016116686: {
-      activityName: "The Undying Mind"
+    1773400654: {
+      name: 'Invitation from the Emperor'
     },
-    1016659723: {
-      activityName: "King's Fall"
+    1778450722: {
+      name: 'Analysis Mission'
     },
-    1017714251: {
-      activityName: "Last Rites"
+    1786054751: {
+      name: 'Premeditation'
     },
-    1019616175: {
-      activityName: "Inferno Rumble"
+    1790343591: {
+      name: 'Shard of the Traveler'
     },
-    1023542723: {
-      activityName: "The Undying Mind"
+    1792985204: {
+      name: 'Nightfall: Exodus Crash'
     },
-    1030188908: {
-      activityName: "Eye of a Gate Lord"
+    1824067376: {
+      name: 'Road Rage'
     },
-    1031478181: {
-      activityName: "Weekly Heroic Strike"
+    1829866365: {
+      name: 'Getting Your Hands Dirty'
     },
-    1031478182: {
-      activityName: "Weekly Heroic Strike"
+    1863334927: {
+      name: 'Nightfall: Savathûn\'s Song'
     },
-    1031478183: {
-      activityName: "Weekly Heroic Strike"
+    1875726950: {
+      name: 'Leviathan'
     },
-    1044883964: {
-      activityName: "Sepiks Perfected"
+    1949546348: {
+      name: 'Assassination Mission'
     },
-    1045828271: {
-      activityName: "Clash"
+    1952521609: {
+      name: 'Shard of the Traveler'
     },
-    1068261034: {
-      activityName: "Blood in the Garden"
+    1956541147: {
+      name: 'Calling Them Home'
     },
-    1075348150: {
-      activityName: "Age of Triumph"
+    1969800443: {
+      name: 'Arecibo'
     },
-    1080191247: {
-      activityName: "Scourge of Winter"
+    1971154629: {
+      name: 'Unsafe at Any Speed'
     },
-    1084620606: {
-      activityName: "The Sunless Cell"
+    1975064760: {
+      name: 'Nightfall: Savathûn\'s Song'
     },
-    1087052691: {
-      activityName: "Clash"
+    1981289329: {
+      name: 'Exodus Siege'
     },
-    1112015031: {
-      activityName: "The Wakening"
+    1984315274: {
+      name: 'Vanguard Strikes'
     },
-    1116149777: {
-      activityName: "Regicide"
+    1988701745: {
+      name: 'Retribution'
     },
-    1117274478: {
-      activityName: "The Taken War"
+    2001433484: {
+      name: 'Assassination Mission'
     },
-    1122783186: {
-      activityName: "The Iron Tomb"
+    2025057095: {
+      name: 'Combat Mission'
     },
-    1126759626: {
-      activityName: "Echo Chamber"
+    2033669713: {
+      name: 'Javelin-4'
     },
-    1141580112: {
-      activityName: "The Will of Crota"
+    2052289205: {
+      name: 'Combustion'
     },
-    1142225067: {
-      activityName: "Weekly Nightfall Strike"
+    2079994698: {
+      name: 'Survey mission'
     },
-    1169187265: {
-      activityName: "The Nexus"
+    2080275457: {
+      name: 'The Arms Dealer'
     },
-    1174401783: {
-      activityName: "The Prime's Path"
+    2113712124: {
+      name: 'Sacrilege'
     },
-    1194342366: {
-      activityName: "Inferno Salvage"
+    2151274060: {
+      name: 'Analysis Mission'
     },
-    1200628152: {
-      activityName: "The Summoning Pits"
+    2174556965: {
+      name: 'A Frame Job'
     },
-    1208087916: {
-      activityName: "Machine Wrath"
+    2183066491: {
+      name: 'The Farm'
     },
-    1208087919: {
-      activityName: "Machine Wrath"
+    2184866967: {
+      name: 'Analysis Mission'
     },
-    1226857472: {
-      activityName: "Cayde's Stash"
+    2187073261: {
+      name: 'Analysis Mission'
     },
-    1227144460: {
-      activityName: "Queen's Ransom"
+    2231840083: {
+      name: 'Siren Song'
     },
-    1228944057: {
-      activityName: "Dust Palace"
+    2236648719: {
+      name: 'Eternity'
     },
-    1234230734: {
-      activityName: "Patrol the Moon"
+    2243336789: {
+      name: 'Combat Mission'
     },
-    1259153650: {
-      activityName: "A Stranger's Call"
+    2250935166: {
+      name: 'Deathless'
     },
-    1288347893: {
-      activityName: "Rumble Supremacy"
+    2259811067: {
+      name: 'Shard of the Traveler'
     },
-    1291023759: {
-      activityName: "Inferno Skirmish"
+    2264636552: {
+      name: 'Meditation: "Combustion"'
     },
-    1293005540: {
-      activityName: "Vanguard Nightfall"
+    2266954523: {
+      name: 'The Farm'
     },
-    1296112978: {
-      activityName: "The Plaguelands"
+    2287222467: {
+      name: 'Analysis Mission'
     },
-    1309514270: {
-      activityName: "Wolves' Gambit"
+    2288260902: {
+      name: 'Assassination Mission'
     },
-    1322792020: {
-      activityName: "Inferno Rift"
+    2291549972: {
+      name: 'Enhance!'
     },
-    1328326126: {
-      activityName: "Lost to Light"
+    2297638408: {
+      name: 'Fury'
     },
-    1329840146: {
-      activityName: "The Wretched Eye"
+    2301390667: {
+      name: 'Survey mission'
     },
-    1378194100: {
-      activityName: "The Lighthouse"
+    2318812547: {
+      name: 'The Pyramidion'
     },
-    1378430574: {
-      activityName: "Inferno Elimination"
+    2336998357: {
+      name: 'The Long Play'
     },
-    1379511171: {
-      activityName: "The Sword of Crota"
+    2379494367: {
+      name: 'Analysis Mission'
     },
-    1387993552: {
-      activityName: "Wrath of the Machine"
+    2420240009: {
+      name: 'Salvage Mission'
     },
-    1390160729: {
-      activityName: "Vestian Outpost"
+    2445164291: {
+      name: 'Assassination Mission'
     },
-    1398209073: {
-      activityName: "The Devils' Lair"
+    2449714930: {
+      name: 'Leviathan'
     },
-    1398209074: {
-      activityName: "The Will of Crota"
+    2464834848: {
+      name: 'Midtown'
     },
-    1398976305: {
-      activityName: "Weekly Heroic Strike"
+    2468202005: {
+      name: 'Shard of the Traveler'
     },
-    1398976306: {
-      activityName: "Weekly Heroic Strike"
+    2478782573: {
+      name: ''
     },
-    1398976307: {
-      activityName: "Weekly Heroic Strike"
+    2517540332: {
+      name: 'No Safe Distance'
     },
-    1400727968: {
-      activityName: "Rift"
+    2519458964: {
+      name: 'Endless Vale'
     },
-    1403880576: {
-      activityName: "The Garden's Spire"
+    2519564410: {
+      name: 'Assassination Mission'
     },
-    1403880578: {
-      activityName: "The Black Garden"
+    2536491635: {
+      name: 'Survey mission'
     },
-    1403880579: {
-      activityName: "A Rising Tide"
+    2558926634: {
+      name: 'Survey mission'
     },
-    1403880580: {
-      activityName: "Exclusion Zone"
+    2559514952: {
+      name: 'Utopia'
     },
-    1403880582: {
-      activityName: "The Buried City"
+    2561308143: {
+      name: 'Survey mission'
     },
-    1404620600: {
-      activityName: "Prison of Elders"
+    2573702057: {
+      name: 'Salvage Mission'
     },
-    1415179315: {
-      activityName: "Elimination"
+    2574607799: {
+      name: 'Bad Neighbors'
     },
-    1419457477: {
-      activityName: "A Ranger Lost"
+    2575990417: {
+      name: 'Combat Mission'
     },
-    1427585666: {
-      activityName: "A Hero's Return"
+    2580713007: {
+      name: 'Survey mission'
     },
-    1431469570: {
-      activityName: "The Abomination Heist"
+    2588220738: {
+      name: 'Survey mission'
     },
-    1438195119: {
-      activityName: "The Black Garden"
+    2610112492: {
+      name: 'Analysis Mission'
     },
-    1439468985: {
-      activityName: "Outbound Signal"
+    2619236227: {
+      name: 'Analysis Mission'
     },
-    1441430564: {
-      activityName: "Urrox's Grudge"
+    2629975203: {
+      name: 'Combat Mission'
     },
-    1441430567: {
-      activityName: "Urrox's Grudge"
+    2629998776: {
+      name: 'Salvage Mission'
     },
-    1443271657: {
-      activityName: "Crimson Doubles"
+    2642769170: {
+      name: 'Six'
     },
-    1443570903: {
-      activityName: "Iron Banner Mayhem Clash"
+    2651851341: {
+      name: 'Analysis Mission'
     },
-    1448094960: {
-      activityName: "The Dungeons"
+    2665134323: {
+      name: 'Release'
     },
-    1478347980: {
-      activityName: "Campus Martius"
+    2667533713: {
+      name: 'Vostok'
     },
-    1491766060: {
-      activityName: "The Shadow Thief"
+    2684479494: {
+      name: 'Salvage Mission'
     },
-    1501957761: {
-      activityName: "Fallen S.A.B.E.R."
+    2693136600: {
+      name: 'Leviathan'
     },
-    1516701147: {
-      activityName: "undefined"
+    2693136601: {
+      name: 'Leviathan'
     },
-    1517679997: {
-      activityName: "SIVA Crisis"
+    2693136602: {
+      name: 'Leviathan'
     },
-    1522220810: {
-      activityName: "Tower"
+    2693136603: {
+      name: 'Leviathan'
     },
-    1522422482: {
-      activityName: "The Will of Crota"
+    2693136604: {
+      name: 'Leviathan'
     },
-    1526798932: {
-      activityName: "Fallen S.A.B.E.R."
+    2693136605: {
+      name: 'Leviathan'
     },
-    1533733535: {
-      activityName: "The Sunless Cell"
+    2702476101: {
+      name: 'Tower'
     },
-    1551387515: {
-      activityName: "Prison of Elders"
+    2708828207: {
+      name: 'Utopia'
     },
-    1566333829: {
-      activityName: "Shield Brothers"
+    2737739053: {
+      name: 'Deep Conversation'
     },
-    1572749251: {
-      activityName: "Zone Control"
+    2759086913: {
+      name: 'Classified'
     },
-    1584566734: {
-      activityName: "Inferno 6v6"
+    2768347363: {
+      name: 'Assassination Mission'
     },
-    1604535501: {
-      activityName: "Sparrow Racing"
+    2773222353: {
+      name: 'Analysis Mission'
     },
-    1609488702: {
-      activityName: "Doubles"
+    2776929937: {
+      name: 'Differential Diagnosis'
     },
-    1614355423: {
-      activityName: "Queen's Ransom"
+    2782300570: {
+      name: 'Salvage Mission'
     },
-    1618960674: {
-      activityName: "Inferno 3v3"
+    2784803584: {
+      name: 'Combat Mission'
     },
-    1624947721: {
-      activityName: "Shield Brothers"
+    2798856614: {
+      name: 'Survey mission'
     },
-    1628212868: {
-      activityName: "Weekly Heroic Strike"
+    2846775197: {
+      name: 'Combat Mission'
     },
-    1628212869: {
-      activityName: "Weekly Heroic Strike"
+    2908287325: {
+      name: 'Survey mission'
     },
-    1628212871: {
-      activityName: "Weekly Heroic Strike"
+    2926767881: {
+      name: 'Payback'
     },
-    1636082733: {
-      activityName: "Winter's Run"
+    2949941834: {
+      name: 'Unexpected Guests'
     },
-    1636082734: {
-      activityName: "The Nexus"
+    2969403085: {
+      name: 'Survey mission'
     },
-    1646288223: {
-      activityName: "Echo Chamber"
+    3002511278: {
+      name: 'Dark Alliance'
     },
-    1650930548: {
-      activityName: "Classified"
+    3026637018: {
+      name: 'Survey mission'
     },
-    1657401676: {
-      activityName: "Weekly Heroic Strike"
+    3038694763: {
+      name: 'Assassination Mission'
     },
-    1657401677: {
-      activityName: "Weekly Heroic Strike"
+    3049122128: {
+      name: 'Analysis Mission'
     },
-    1657401679: {
-      activityName: "Weekly Heroic Strike"
+    3050465729: {
+      name: 'Nightfall: The Inverted Spire'
     },
-    1659888245: {
-      activityName: "The Abomination Heist"
+    3062197616: {
+      name: 'Competitive'
     },
-    1665631320: {
-      activityName: "Rumble"
+    3105090879: {
+      name: 'Adieu'
     },
-    1669262087: {
-      activityName: "Shield Brothers"
+    3140524926: {
+      name: 'Unbreakable'
     },
-    1673931290: {
-      activityName: "Challenge of the Elders"
+    3143798436: {
+      name: 'European Dead Zone'
     },
-    1681545807: {
-      activityName: "The Sunless Cell"
+    3147707814: {
+      name: 'Riptide'
     },
-    1685214122: {
-      activityName: "Mayhem Supremacy"
+    3148431353: {
+      name: 'Getting Your Hands Dirty'
     },
-    1685535967: {
-      activityName: "The Will of Crota"
+    3150153711: {
+      name: 'Chances and Choices'
     },
-    1686326716: {
-      activityName: "A New Den"
+    3172367001: {
+      name: 'Shard of the Traveler'
     },
-    1686679946: {
-      activityName: "Clash"
+    3173130826: {
+      name: 'Combat Mission'
     },
-    1709749894: {
-      activityName: "Skyline"
+    3208779612: {
+      name: 'Salvage Mission'
     },
-    1714839224: {
-      activityName: "Ritual of Sacrifice"
+    3211303924: {
+      name: 'Salvage Mission'
     },
-    1719392441: {
-      activityName: "Crossroads"
+    3211568383: {
+      name: 'Siren Song'
     },
-    1723226893: {
-      activityName: "The Warmind"
+    3231065327: {
+      name: 'Analysis Mission'
     },
-    1727851403: {
-      activityName: "The Promethean Code"
+    3243161126: {
+      name: 'Quickplay'
     },
-    1728758154: {
-      activityName: "The Summoning Pits"
+    3268684190: {
+      name: 'Salvage Mission'
     },
-    1733556769: {
-      activityName: "King's Fall"
+    3272002712: {
+      name: 'Hope'
     },
-    1740074530: {
-      activityName: "Cerberus Vae III"
+    3277510674: {
+      name: 'Deathless'
     },
-    1749151224: {
-      activityName: "Vanguard Nightfall"
+    3283790633: {
+      name: 'A Frame Job'
     },
-    1771902734: {
-      activityName: "Inferno Clash"
+    3289681664: {
+      name: 'Lost Crew'
     },
-    1772839913: {
-      activityName: "Tenebrous Tunnels"
+    3298775062: {
+      name: 'Survey mission'
     },
-    1783047867: {
-      activityName: "Inferno Control"
+    3303685562: {
+      name: 'Salvage Mission'
     },
-    1783107168: {
-      activityName: "Download Complete"
+    3304835347: {
+      name: 'Calling Them Home'
     },
-    1783564050: {
-      activityName: "The Ruling House"
+    3336275007: {
+      name: 'Meditation: "Six"'
     },
-    1794499705: {
-      activityName: "Rise of Iron: Prelude"
+    3337731612: {
+      name: 'Combat Mission'
     },
-    1815860968: {
-      activityName: "Zone Control"
+    3346345105: {
+      name: 'Experimental Treatment'
     },
-    1816396489: {
-      activityName: "The Shadow Thief"
+    3359466010: {
+      name: 'Spark'
     },
-    1836141626: {
-      activityName: "Elimination"
+    3368226533: {
+      name: 'Nightfall: The Inverted Spire'
     },
-    1836893116: {
-      activityName: "Crota's End"
+    3379039897: {
+      name: 'Salvage Mission'
     },
-    1836893119: {
-      activityName: "Crota's End"
+    3410530777: {
+      name: 'Calculated Action'
     },
-    1845751534: {
-      activityName: "Cerberus Vae III"
+    3417504239: {
+      name: 'Riptide'
     },
-    1846390409: {
-      activityName: "A Guardian Rises"
+    3446541099: {
+      name: 'Leviathan'
     },
-    1851417512: {
-      activityName: "The Drifter"
+    3479544154: {
+      name: 'Combat Mission'
     },
-    1856964953: {
-      activityName: "A Guardian Rises"
+    3481058226: {
+      name: 'Survey mission'
     },
-    1882836298: {
-      activityName: "The Wakening"
+    3485876484: {
+      name: 'Road Rage'
     },
-    1889399773: {
-      activityName: "Weekly Nightfall Strike"
+    3487576414: {
+      name: 'Survey mission'
     },
-    1912940269: {
-      activityName: "Restoration"
+    3489692681: {
+      name: 'Survey mission'
     },
-    1917735347: {
-      activityName: "Winter's Run"
+    3500791146: {
+      name: 'Cliffhanger'
     },
-    1918823817: {
-      activityName: "The Undying Mind"
+    3515770727: {
+      name: 'Analysis Mission'
     },
-    1924778540: {
-      activityName: "The Ruling House"
+    3580793473: {
+      name: 'Meditation: "1AU"'
     },
-    1940432142: {
-      activityName: "Exclusion Zone"
+    3612741503: {
+      name: 'Survey mission'
     },
-    1973631991: {
-      activityName: "The Last Array"
+    3627094182: {
+      name: 'Combat Mission'
     },
-    1974138312: {
-      activityName: "Blighted Chalice"
+    3631476566: {
+      name: 'The Farm'
     },
-    1985034593: {
-      activityName: "Weekly Nightfall Strike"
+    3645117987: {
+      name: 'Bad Neighbors'
     },
-    2008529245: {
-      activityName: "Kings of Decay"
+    3652531274: {
+      name: 'Shard of the Traveler'
     },
-    2010056644: {
-      activityName: "Haakon Precipice"
+    3662124488: {
+      name: 'Survey mission'
     },
-    2022189692: {
-      activityName: "Blighted Chalice"
+    3664915501: {
+      name: 'Red Legion, Black Oil'
     },
-    2037022373: {
-      activityName: "Vertigo"
+    3669054326: {
+      name: 'Salvage Mission'
     },
-    2045385030: {
-      activityName: "Patrol Venus"
+    3688464794: {
+      name: 'The Importance of Networking'
     },
-    2051444910: {
-      activityName: "The Dark Beyond"
+    3700722865: {
+      name: 'Release'
     },
-    2061368111: {
-      activityName: "Mayhem Supremacy"
+    3702064261: {
+      name: 'Data Requisition'
     },
-    2063852581: {
-      activityName: "Mayhem Clash"
+    3738159218: {
+      name: 'Unbroken'
     },
-    2072729921: {
-      activityName: "Blighted Chalice"
+    3752039537: {
+      name: 'Reversing the Polarity'
     },
-    2074618692: {
-      activityName: "The Forever Eater"
+    3780356141: {
+      name: 'Stop and Go'
     },
-    2074618695: {
-      activityName: "The Forever Eater"
+    3792746061: {
+      name: 'Combat Mission'
     },
-    2082069870: {
-      activityName: "The Anomaly"
+    3799743268: {
+      name: 'Classified'
     },
-    2084208305: {
-      activityName: "The Sunless Cell"
+    3806583577: {
+      name: 'Assassination Mission'
     },
-    2084307227: {
-      activityName: "Dread Patrol"
+    3834639884: {
+      name: 'Analysis Mission'
     },
-    2095588685: {
-      activityName: "The Will of Crota"
+    3836086286: {
+      name: 'Unexpected Guests'
     },
-    2105028197: {
-      activityName: "Echo Chamber"
+    3839751954: {
+      name: 'Altar of Flame'
     },
-    2129294976: {
-      activityName: "The Dark Within"
+    3872525353: {
+      name: 'Stop and Go'
     },
-    2151413729: {
-      activityName: "Tower"
+    3879860661: {
+      name: 'Leviathan'
     },
-    2176272408: {
-      activityName: "The Shadow Thief"
+    3903562779: {
+      name: 'Tower'
     },
-    2178968385: {
-      activityName: "The Wretched Eye"
+    3916343513: {
+      name: 'Leviathan'
     },
-    2184393955: {
-      activityName: "Cerberus Vae III"
+    3920643231: {
+      name: 'Nightfall: The Arms Dealer'
     },
-    2186849909: {
-      activityName: "Winter's Run"
+    3958400416: {
+      name: 'Survey mission'
     },
-    2190039885: {
-      activityName: "Classic Free-For-All"
+    3966792859: {
+      name: 'Nessus, Unstable Centaur'
     },
-    2197680969: {
-      activityName: "Kings of Decay"
+    3978357488: {
+      name: 'Salvage Mission'
     },
-    2198347919: {
-      activityName: "Tower"
+    3982474534: {
+      name: 'Payback'
     },
-    2200634811: {
-      activityName: "Siege of the Warmind"
+    4034557395: {
+      name: 'Homecoming'
     },
-    2201622127: {
-      activityName: "Challenge of the Elders"
+    4039317196: {
+      name: 'Leviathan'
     },
-    2213151771: {
-      activityName: "Ishtar Collective"
+    4043714237: {
+      name: 'Survey mission'
     },
-    2217862439: {
-      activityName: "Control"
+    4047570705: {
+      name: 'Combat Mission'
     },
-    2221365740: {
-      activityName: "Sepiks Perfected"
+    4050886070: {
+      name: 'Survey mission'
     },
-    2234107290: {
-      activityName: "The Sunless Cell"
+    4054968718: {
+      name: 'Nightfall: The Inverted Spire'
     },
-    2243240710: {
-      activityName: "Infinite Descent"
+    4095207117: {
+      name: 'Salvage Mission'
     },
-    2244550959: {
-      activityName: "Tower"
+    4103844069: {
+      name: 'Assassination Mission'
     },
-    2244943676: {
-      activityName: "A Khvostov Rising"
+    4159221189: {
+      name: 'Io'
     },
-    2245079334: {
-      activityName: "Blighted Chalice"
+    4166562681: {
+      name: 'Titan'
     },
-    2263964303: {
-      activityName: "Elimination"
+    4174103238: {
+      name: 'Salvage Mission'
     },
-    2268273279: {
-      activityName: "Sepiks Perfected"
+    4209774794: {
+      name: 'Salvage Mission'
     },
-    2270816053: {
-      activityName: "Queen's Ransom"
+    4216926874: {
+      name: 'Salvage Mission'
     },
-    2270968444: {
-      activityName: "Weekly Heroic Strike"
+    4231544111: {
+      name: 'Survey mission'
     },
-    2270968445: {
-      activityName: "Weekly Heroic Strike"
+    4239233351: {
+      name: 'Meditation: "Spark"'
     },
-    2270968446: {
-      activityName: "Weekly Heroic Strike"
+    4254776501: {
+      name: 'Salvage Mission'
     },
-    2275772174: {
-      activityName: "The Shadow Thief"
+    4283649349: {
+      name: 'Assassination Mission'
     },
-    2286628407: {
-      activityName: "Paradox"
-    },
-    2303355724: {
-      activityName: "The Devils' Lair"
-    },
-    2303355727: {
-      activityName: "The Will of Crota"
-    },
-    2316484115: {
-      activityName: "The Lighthouse"
-    },
-    2319702946: {
-      activityName: "Iron Temple"
-    },
-    2321224098: {
-      activityName: "A Stranger's Call"
-    },
-    2324706853: {
-      activityName: "Crota's End"
-    },
-    2326253031: {
-      activityName: "Skolas's Revenge"
-    },
-    2327910410: {
-      activityName: "Chamber of Night"
-    },
-    2330516073: {
-      activityName: "Tower"
-    },
-    2332037858: {
-      activityName: "Widow's Court"
-    },
-    2333767699: {
-      activityName: "Fear's Embrace"
-    },
-    2344229082: {
-      activityName: "The Undying Mind"
-    },
-    2344622554: {
-      activityName: "Echo Chamber"
-    },
-    2356723745: {
-      activityName: "The Coming War"
-    },
-    2364610626: {
-      activityName: "The Prime's Path"
-    },
-    2369296916: {
-      activityName: "The Coming War"
-    },
-    2374186202: {
-      activityName: "Inferno Control"
-    },
-    2374784693: {
-      activityName: "Scourge of Winter"
-    },
-    2374899718: {
-      activityName: "The Shadow Thief"
-    },
-    2375659247: {
-      activityName: "Challenge of the Elders"
-    },
-    2380726447: {
-      activityName: "The Dreadnaught"
-    },
-    2381859905: {
-      activityName: "The Shadow Thief"
-    },
-    2388860485: {
-      activityName: "Rift"
-    },
-    2391040454: {
-      activityName: "Sepiks Perfected"
-    },
-    2393458461: {
-      activityName: "Entropy's Pinnacle"
-    },
-    2396741855: {
-      activityName: "Cerberus Vae III"
-    },
-    2398459666: {
-      activityName: "Patrol Mars"
-    },
-    2401705359: {
-      activityName: "Taken War"
-    },
-    2422821510: {
-      activityName: "Kings of Decay"
-    },
-    2430076725: {
-      activityName: "Blind Watch"
-    },
-    2437373043: {
-      activityName: "The Undying Mind"
-    },
-    2445476122: {
-      activityName: "Classic 6v6"
-    },
-    2446491566: {
-      activityName: "The Plaguelands"
-    },
-    2449230902: {
-      activityName: "The Dreadnaught"
-    },
-    2450352219: {
-      activityName: "The Sunless Cell"
-    },
-    2473173917: {
-      activityName: "The Silent Fang"
-    },
-    2474598319: {
-      activityName: "Patrol Venus"
-    },
-    2486047606: {
-      activityName: "The Black Garden"
-    },
-    2488292787: {
-      activityName: "Freelance 3v3"
-    },
-    2500396686: {
-      activityName: "Iron Temple"
-    },
-    2503808507: {
-      activityName: "Last Rites"
-    },
-    2507231345: {
-      activityName: "Frontier"
-    },
-    2507671226: {
-      activityName: "Outbound Signal"
-    },
-    2522686639: {
-      activityName: "Freelance 6v6"
-    },
-    2532582309: {
-      activityName: "Fallen S.A.B.E.R."
-    },
-    2546962221: {
-      activityName: "The Sunless Cell"
-    },
-    2553967924: {
-      activityName: "The Walls Come Down"
-    },
-    2577060487: {
-      activityName: "Paradox"
-    },
-    2582525652: {
-      activityName: "Shrine of Oryx"
-    },
-    2586575560: {
-      activityName: "Mayhem Rumble"
-    },
-    2591739000: {
-      activityName: "The Awoken"
-    },
-    2604992012: {
-      activityName: "Lost to Light"
-    },
-    2605106985: {
-      activityName: "A Rising Tide"
-    },
-    2616429373: {
-      activityName: "Fear's Embrace"
-    },
-    2624694148: {
-      activityName: "Blighted Coven"
-    },
-    2624916786: {
-      activityName: "Cerberus Vae III"
-    },
-    2626477216: {
-      activityName: "Outbound Signal"
-    },
-    2632260907: {
-      activityName: "Echo Chamber"
-    },
-    2638978649: {
-      activityName: ""
-    },
-    2641355370: {
-      activityName: "The Garden's Spire"
-    },
-    2643956095: {
-      activityName: "Freelance 3v3"
-    },
-    2658160549: {
-      activityName: "Blighted Coven"
-    },
-    2659248068: {
-      activityName: "Vault of Glass"
-    },
-    2659248069: {
-      activityName: "Vault of Glass"
-    },
-    2659248071: {
-      activityName: "Vault of Glass"
-    },
-    2662709104: {
-      activityName: "Bottle the Arc"
-    },
-    2664207554: {
-      activityName: "The Wretched Eye"
-    },
-    2666433880: {
-      activityName: "The Nexus"
-    },
-    2669189613: {
-      activityName: "Dust Palace"
-    },
-    2678657479: {
-      activityName: "The Abomination Heist"
-    },
-    2680821721: {
-      activityName: "The Cauldron"
-    },
-    2693077237: {
-      activityName: "Vanguard Nightfall"
-    },
-    2695324124: {
-      activityName: "Blighted Chalice"
-    },
-    2697160954: {
-      activityName: "Age of Triumph"
-    },
-    2697969178: {
-      activityName: "Weekly Nightfall Strike"
-    },
-    2701768038: {
-      activityName: "Fist of Crota"
-    },
-    2704098598: {
-      activityName: "The Devils' Lair"
-    },
-    2708547287: {
-      activityName: "A March of Fire"
-    },
-    2717791362: {
-      activityName: "The Will of Crota"
-    },
-    2719526771: {
-      activityName: "Dust Palace"
-    },
-    2726977290: {
-      activityName: "The Last Array"
-    },
-    2737751857: {
-      activityName: "Beauty in Delivery"
-    },
-    2739987894: {
-      activityName: "A Symbol of Honor"
-    },
-    2743106708: {
-      activityName: "Dust Palace"
-    },
-    2747031950: {
-      activityName: "Classic 3v3"
-    },
-    2764426556: {
-      activityName: "Paradox"
-    },
-    2764561765: {
-      activityName: "Lost to Light"
-    },
-    2775184694: {
-      activityName: "The Summoning Pits"
-    },
-    2776273577: {
-      activityName: "Cerberus Vae III"
-    },
-    2790114296: {
-      activityName: "The Ruling House"
-    },
-    2795444912: {
-      activityName: "Skirmish"
-    },
-    2799122060: {
-      activityName: "The Nexus"
-    },
-    2819394450: {
-      activityName: "Vanguard Legacy"
-    },
-    2828456290: {
-      activityName: "Shining Sands"
-    },
-    2839046506: {
-      activityName: "undefined"
-    },
-    2840876929: {
-      activityName: "Shield Brothers"
-    },
-    2846350970: {
-      activityName: "The Sunless Cell"
-    },
-    2853745856: {
-      activityName: "The Black Garden"
-    },
-    2861777810: {
-      activityName: "Winter's Run"
-    },
-    2873833515: {
-      activityName: "The Sunless Cell"
-    },
-    2873913519: {
-      activityName: "The Warmind"
-    },
-    2877811433: {
-      activityName: "Mayhem Rumble"
-    },
-    2895301046: {
-      activityName: "Exclusion Zone"
-    },
-    2896357417: {
-      activityName: "Winter's Run"
-    },
-    2896357418: {
-      activityName: "The Nexus"
-    },
-    2897641944: {
-      activityName: "Blighted Chalice"
-    },
-    2910883293: {
-      activityName: "Last Rites"
-    },
-    2918909691: {
-      activityName: "Summoner's Circle"
-    },
-    2926133958: {
-      activityName: "Arsenal"
-    },
-    2931947534: {
-      activityName: "A Kell Rising"
-    },
-    2938090611: {
-      activityName: "The Coming War"
-    },
-    2938118424: {
-      activityName: "The Undying Mind"
-    },
-    2938118425: {
-      activityName: "Cerberus Vae III"
-    },
-    2938118426: {
-      activityName: "Dust Palace"
-    },
-    2945511915: {
-      activityName: "Freelance 6v6"
-    },
-    2947742498: {
-      activityName: "Inferno Doubles"
-    },
-    2981424914: {
-      activityName: "The Promethean Code"
-    },
-    2989915775: {
-      activityName: "The Undying Mind"
-    },
-    3005484445: {
-      activityName: "The Promethean Code"
-    },
-    3010573436: {
-      activityName: "The Shadow Thief"
-    },
-    3011954788: {
-      activityName: "Download Complete"
-    },
-    3025411906: {
-      activityName: "The Archon-Slayer"
-    },
-    3027976182: {
-      activityName: "Shield Brothers"
-    },
-    3030879879: {
-      activityName: "The Wretched Eye"
-    },
-    3041179010: {
-      activityName: "Cerberus Vae III"
-    },
-    3044479892: {
-      activityName: "The Shadow Thief"
-    },
-    3047788493: {
-      activityName: "Dust Palace"
-    },
-    3047788494: {
-      activityName: "Cerberus Vae III"
-    },
-    3047788495: {
-      activityName: "The Undying Mind"
-    },
-    3051527960: {
-      activityName: "The Sunless Cell"
-    },
-    3053288711: {
-      activityName: "Floating Gardens"
-    },
-    3056582947: {
-      activityName: "A Rising Tide"
-    },
-    3070937708: {
-      activityName: "Fallen S.A.B.E.R."
-    },
-    3077860924: {
-      activityName: "The Devils' Lair"
-    },
-    3077860927: {
-      activityName: "The Will of Crota"
-    },
-    3097191720: {
-      activityName: "The Shadow Thief"
-    },
-    3098008841: {
-      activityName: "The Will of Crota"
-    },
-    3101475152: {
-      activityName: "Firebase Delphi"
-    },
-    3101766066: {
-      activityName: "The Wretched Eye"
-    },
-    3102291176: {
-      activityName: "The Prime's Path"
-    },
-    3102295231: {
-      activityName: "Salvage"
-    },
-    3120201278: {
-      activityName: "Winter's Run"
-    },
-    3120351937: {
-      activityName: "The Warmind"
-    },
-    3120351938: {
-      activityName: "The Dark Within"
-    },
-    3120351939: {
-      activityName: "Restoration"
-    },
-    3120351941: {
-      activityName: "Siege of the Warmind"
-    },
-    3120351943: {
-      activityName: "The Last Array"
-    },
-    3125074504: {
-      activityName: "Weekly Heroic Strike"
-    },
-    3125074505: {
-      activityName: "Weekly Heroic Strike"
-    },
-    3125074507: {
-      activityName: "Weekly Heroic Strike"
-    },
-    3132533708: {
-      activityName: "Blighted Chalice"
-    },
-    3135856650: {
-      activityName: "Scourge of Winter"
-    },
-    3156370656: {
-      activityName: "Sector 618"
-    },
-    3162176634: {
-      activityName: "Echo Chamber"
-    },
-    3183184449: {
-      activityName: "Shield Brothers"
-    },
-    3187607216: {
-      activityName: "The Undying Mind"
-    },
-    3190434637: {
-      activityName: "The Dreadnaught"
-    },
-    3192378548: {
-      activityName: "The Dark Beyond"
-    },
-    3196929644: {
-      activityName: "The Abomination Heist"
-    },
-    3200293401: {
-      activityName: "Enemy of My Enemy"
-    },
-    3207122440: {
-      activityName: "The Archive"
-    },
-    3209623958: {
-      activityName: "Weekly Nightfall Strike"
-    },
-    3210106079: {
-      activityName: "Patrol the Dreadnaught"
-    },
-    3220294246: {
-      activityName: "The Walls Come Down"
-    },
-    3234259779: {
-      activityName: "Trials of Osiris"
-    },
-    3242509473: {
-      activityName: "The Will of Crota"
-    },
-    3252534714: {
-      activityName: "Doubles"
-    },
-    3263216023: {
-      activityName: "Regicide"
-    },
-    3277621970: {
-      activityName: "The Timekeeper"
-    },
-    3277929848: {
-      activityName: "Shield Brothers"
-    },
-    3292305209: {
-      activityName: "Winter's Run"
-    },
-    3292305210: {
-      activityName: "The Nexus"
-    },
-    3292667877: {
-      activityName: "Asylum"
-    },
-    3315158082: {
-      activityName: "A Spark in Shadow"
-    },
-    3322717977: {
-      activityName: "Iron Banner Control"
-    },
-    3335571405: {
-      activityName: "Supremacy"
-    },
-    3343284688: {
-      activityName: "Outbound Signal"
-    },
-    3343503784: {
-      activityName: "Blighted Chalice"
-    },
-    3345352981: {
-      activityName: "Ritual of Sacrifice"
-    },
-    3346215145: {
-      activityName: "The Lighthouse"
-    },
-    3349918649: {
-      activityName: "The Dreadnaught"
-    },
-    3356249023: {
-      activityName: "Wrath of the Machine"
-    },
-    3373044013: {
-      activityName: "Blighted Chalice"
-    },
-    3384143875: {
-      activityName: "Blighted Chalice"
-    },
-    3392709953: {
-      activityName: "The Abomination Heist"
-    },
-    3393673804: {
-      activityName: "Prison of Elders"
-    },
-    3394418729: {
-      activityName: "Dust Palace"
-    },
-    3398049753: {
-      activityName: "The Garden's Spire"
-    },
-    3398752148: {
-      activityName: "Winter's Run"
-    },
-    3399843400: {
-      activityName: "A Stranger's Call"
-    },
-    3399843403: {
-      activityName: "Ishtar Collective"
-    },
-    3399843404: {
-      activityName: "The Archive"
-    },
-    3399843406: {
-      activityName: "Eye of a Gate Lord"
-    },
-    3399843407: {
-      activityName: "Scourge of Winter"
-    },
-    3403438134: {
-      activityName: "Echo Chamber"
-    },
-    3406669964: {
-      activityName: "Sepiks Perfected"
-    },
-    3412406993: {
-      activityName: "Cathedral of Dusk"
-    },
-    3415949693: {
-      activityName: "The Nexus"
-    },
-    3422670336: {
-      activityName: "The Devils' Lair"
-    },
-    3422670339: {
-      activityName: "The Will of Crota"
-    },
-    3422924470: {
-      activityName: "Blighted Coven"
-    },
-    3427115544: {
-      activityName: "Fallen S.A.B.E.R."
-    },
-    3428378490: {
-      activityName: "Mayhem Clash"
-    },
-    3434275681: {
-      activityName: "Chamber of Night"
-    },
-    3464398659: {
-      activityName: "Shrine of Oryx"
-    },
-    3473815980: {
-      activityName: "Fist of Crota"
-    },
-    3476387771: {
-      activityName: "Taken War Heroic"
-    },
-    3492173922: {
-      activityName: "Vestian Outpost"
-    },
-    3493774909: {
-      activityName: "The Taken King: Prelude"
-    },
-    3508129769: {
-      activityName: "Cult of the Worm"
-    },
-    3508129770: {
-      activityName: "Cult of the Worm"
-    },
-    3509128672: {
-      activityName: "Iron Temple"
-    },
-    3527709396: {
-      activityName: "Skirmish"
-    },
-    3534581229: {
-      activityName: "King's Fall"
-    },
-    3543525727: {
-      activityName: "Queen's Ransom"
-    },
-    3549856929: {
-      activityName: "Siege of the Warmind"
-    },
-    3555113730: {
-      activityName: "The Wretched Eye"
-    },
-    3565777280: {
-      activityName: "Knock Knock"
-    },
-    3568014988: {
-      activityName: "Regicide"
-    },
-    3573972337: {
-      activityName: "The Nexus"
-    },
-    3575520714: {
-      activityName: "Shield Brothers"
-    },
-    3575840788: {
-      activityName: "Wolves' Gambit"
-    },
-    3582451805: {
-      activityName: "The Shadow Thief"
-    },
-    3582577776: {
-      activityName: "The Silent Fang"
-    },
-    3593950004: {
-      activityName: "Destiny Credits"
-    },
-    3602734434: {
-      activityName: "Bannerfall"
-    },
-    3609927430: {
-      activityName: "Inferno Supremacy"
-    },
-    3612436612: {
-      activityName: "The Coming War"
-    },
-    3619606113: {
-      activityName: "Mayhem Clash"
-    },
-    3621292155: {
-      activityName: "Salvage"
-    },
-    3635588435: {
-      activityName: "The Speaker"
-    },
-    3645675142: {
-      activityName: "Control"
-    },
-    3645919501: {
-      activityName: "Patrol Cosmodrome"
-    },
-    3650545911: {
-      activityName: "Wolves' Gambit"
-    },
-    3670262295: {
-      activityName: "Trials of Osiris"
-    },
-    3670861271: {
-      activityName: "Enemy of My Enemy"
-    },
-    3670968271: {
-      activityName: "The Will of Crota"
-    },
-    3671763238: {
-      activityName: "Cerberus Vae III"
-    },
-    3674885127: {
-      activityName: "Regicide"
-    },
-    3676594097: {
-      activityName: "Winter's Run"
-    },
-    3691405620: {
-      activityName: "Vanguard Nightfall"
-    },
-    3700036317: {
-      activityName: "Oryx Triumphant"
-    },
-    3705341715: {
-      activityName: "A Ranger Found"
-    },
-    3708806801: {
-      activityName: "Entropy's Pinnacle"
-    },
-    3711414560: {
-      activityName: "Chamber of Night"
-    },
-    3711414561: {
-      activityName: "The Sword of Crota"
-    },
-    3711414562: {
-      activityName: "The Wakening"
-    },
-    3711414563: {
-      activityName: "Shrine of Oryx"
-    },
-    3711414564: {
-      activityName: "The Dark Beyond"
-    },
-    3711414566: {
-      activityName: "The World's Grave"
-    },
-    3715085142: {
-      activityName: "Shadow Call"
-    },
-    3731091063: {
-      activityName: "Weekly Nightfall Strike"
-    },
-    3741914742: {
-      activityName: "Winter's Run"
-    },
-    3743955707: {
-      activityName: "Tower"
-    },
-    3750289192: {
-      activityName: "Fist of Crota"
-    },
-    3778091466: {
-      activityName: "Download Complete"
-    },
-    3784570118: {
-      activityName: "The Archive"
-    },
-    3799336128: {
-      activityName: "The Will of Crota"
-    },
-    3817155567: {
-      activityName: "Twilight Gap"
-    },
-    3837170670: {
-      activityName: "The World's Grave"
-    },
-    3842976518: {
-      activityName: "The Sunless Cell"
-    },
-    3848655103: {
-      activityName: "Black Shield"
-    },
-    3856562046: {
-      activityName: "Lost to Light"
-    },
-    3856604751: {
-      activityName: "First Light"
-    },
-    3860793576: {
-      activityName: "Sepiks Perfected"
-    },
-    3878867172: {
-      activityName: "Zone Control"
-    },
-    3896699662: {
-      activityName: "Winter's Run"
-    },
-    3910288239: {
-      activityName: "Iron Banner Rift"
-    },
-    3918359338: {
-      activityName: "Icarus"
-    },
-    3920061741: {
-      activityName: "Shrine of Oryx"
-    },
-    3921931055: {
-      activityName: "The Will of Crota"
-    },
-    3936153046: {
-      activityName: "Inferno 3v3"
-    },
-    3941998864: {
-      activityName: "Cerberus Vae III"
-    },
-    3945328236: {
-      activityName: "Iron Temple"
-    },
-    3948474766: {
-      activityName: "The Sword of Crota"
-    },
-    3974631085: {
-      activityName: "Enemy of My Enemy"
-    },
-    3978884648: {
-      activityName: "King's Fall"
-    },
-    4000873610: {
-      activityName: "Crota's End"
-    },
-    4027720491: {
-      activityName: "Shield Brothers"
-    },
-    4038697181: {
-      activityName: "Vault of Glass"
-    },
-    4046346128: {
-      activityName: "Fear's Embrace"
-    },
-    4055903037: {
-      activityName: "Rift"
-    },
-    4060895971: {
-      activityName: "Tower"
-    },
-    4079642013: {
-      activityName: "Broken Legion"
-    },
-    4079642014: {
-      activityName: "Broken Legion"
-    },
-    4087776066: {
-      activityName: "Cayde's Stash"
-    },
-    4099604100: {
-      activityName: "The Will of Crota"
-    },
-    4101329072: {
-      activityName: "The Wretched Eye"
-    },
-    4105918304: {
-      activityName: "Last Exit"
-    },
-    4107311671: {
-      activityName: "Rusted Lands"
-    },
-    4129878327: {
-      activityName: "Inferno Salvage"
-    },
-    4131978369: {
-      activityName: "The Abomination Heist"
-    },
-    4141063459: {
-      activityName: "The Shadow Thief"
-    },
-    4153423016: {
-      activityName: "Challenge of the Elders"
-    },
-    4163254808: {
-      activityName: "Shores of Time"
-    },
-    4168247421: {
-      activityName: "Iron Banner Clash"
-    },
-    4171584130: {
-      activityName: "Inferno 6v6"
-    },
-    4175179544: {
-      activityName: "Weekly Heroic Strike"
-    },
-    4175179545: {
-      activityName: "Weekly Heroic Strike"
-    },
-    4175179546: {
-      activityName: "Weekly Heroic Strike"
-    },
-    4178645458: {
-      activityName: "The Buried City"
-    },
-    4181273223: {
-      activityName: "Fallen S.A.B.E.R."
-    },
-    4183157062: {
-      activityName: "Last Rites"
-    },
-    4187524452: {
-      activityName: "The Undying Mind"
-    },
-    4196724507: {
-      activityName: "Inferno Rumble"
-    },
-    4200263342: {
-      activityName: "Bastion"
-    },
-    4203094490: {
-      activityName: "Iron Temple"
-    },
-    4215168114: {
-      activityName: "The Will of Crota"
-    },
-    4217181091: {
-      activityName: "Skirmish"
-    },
-    4222208550: {
-      activityName: "Sparrow Racing"
-    },
-    4227723344: {
-      activityName: "The Devils' Lair"
-    },
-    4227723347: {
-      activityName: "The Will of Crota"
-    },
-    4239017990: {
-      activityName: "A Key Awaits"
-    },
-    4240750267: {
-      activityName: "The Promethean Code"
-    },
-    4242282035: {
-      activityName: "Control"
-    },
-    4252752792: {
-      activityName: "Dust Palace"
-    },
-    4253541885: {
-      activityName: "Winter's Run"
-    },
-    4254149014: {
-      activityName: "The Shadow Thief"
-    },
-    4260139097: {
-      activityName: "Pantheon"
-    },
-    4272344899: {
-      activityName: "The Archive"
-    },
-    4277539497: {
-      activityName: "Iron Banner Clash"
-    },
-    4287936726: {
-      activityName: "Exodus Blue"
+    4291922223: {
+      name: 'Hope'
     },
   },
   es: {
-    8055542: {
-      activityName: "Una brecha en la muralla"
+    19982784: {
+      name: 'Misión de combate'
     },
-    9885984: {
-      activityName: "Cámara de la Noche"
+    30240416: {
+      name: 'Misión de asesinato'
     },
-    10551956: {
-      activityName: "El rey de la montaña"
+    37050217: {
+      name: 'Misión de reconocimiento'
     },
-    18715720: {
-      activityName: "El rey de la montaña"
+    51408141: {
+      name: 'Misión de salvamento'
     },
-    24471896: {
-      activityName: "Marte y Venus"
+    53954174: {
+      name: 'Antiantiaéreos'
     },
-    24471899: {
-      activityName: "Tierra y Luna"
+    57103244: {
+      name: 'Misión de reconocimiento'
     },
-    28695277: {
-      activityName: "La Espada de Crota"
+    60002467: {
+      name: 'Sacrilegio'
     },
-    34205302: {
-      activityName: "El Nexo"
+    78673128: {
+      name: 'Ladrón de ladrones'
     },
-    34327100: {
-      activityName: "S.A.B.E.R. caído"
+    80726883: {
+      name: 'Mi capitán'
     },
-    51311972: {
-      activityName: "La mente imperecedera"
+    82913930: {
     },
-    51311973: {
-      activityName: "Cerberus Vae III"
+    89727599: {
+      name: 'Leviatán'
     },
-    51311974: {
-      activityName: "Palacio de Polvo"
+    104342360: {
+      name: 'Misión de combate'
     },
-    64371922: {
-      activityName: "Supremacía Disputa"
+    116352029: {
+      name: 'Misión de combate'
     },
-    86749741: {
-      activityName: "Control Estandarte de Hierro"
+    122988657: {
+      name: 'Legión Roja, aceite oscuro'
     },
-    91984044: {
-      activityName: "Un kell creciente"
+    143647473: {
+      name: 'Misión de salvamento'
     },
-    95021281: {
-      activityName: "Perder la Luz"
+    145302664: {
+      name: 'Ocaso: El contrabandista de armas'
     },
-    96237246: {
-      activityName: "Clásico 6c6"
+    153537894: {
+      name: 'Una nueva frontera'
     },
-    98710471: {
-      activityName: "Disputa"
+    160721490: {
+      name: 'Clasificado'
     },
-    103493304: {
-      activityName: "El rey de la montaña"
+    175598161: {
+      name: 'Misión de salvamento'
     },
-    116560380: {
-      activityName: "El ladrón de sombras"
+    189324537: {
+      name: 'Misión de salvamento'
     },
-    116811400: {
-      activityName: "El ladrón de sombras"
+    197670945: {
+      name: 'Misión de asesinato'
     },
-    123652644: {
-      activityName: "Cámara del Eco"
+    204298081: {
+      name: 'Misión de análisis'
     },
-    123999179: {
-      activityName: "Sombras del crepúsculo"
+    248066530: {
+      name: 'Misión de salvamento'
     },
-    130631058: {
-      activityName: "Clásico 3c3"
+    255819671: {
+      name: 'Furia'
     },
-    134979141: {
-      activityName: "La última antena"
+    261349035: {
+      name: 'Misión de salvamento'
     },
-    149381097: {
-      activityName: "Patrulla la Luna"
+    286324446: {
+      name: 'Misión de salvamento'
     },
-    151357230: {
-      activityName: "El ladrón de sombras"
+    287649202: {
+      name: 'Leviatán'
     },
-    154683944: {
-      activityName: "Pináculo de entropía"
+    293858112: {
+      name: 'Misión de combate'
     },
-    157336261: {
-      activityName: "Supremacía infernal"
+    298747401: {
+      name: 'Misión de reconocimiento'
     },
-    157390236: {
-      activityName: "Palacio de Polvo"
+    298793060: {
+      name: 'Misión de salvamento'
     },
-    157980450: {
-      activityName: "La Cripta de Hierro"
+    313572698: {
+      name: 'Fragmento del Viajero'
     },
-    165850035: {
-      activityName: "La mente imperecedera"
+    320680002: {
+      name: 'Oferta y demanda'
     },
-    167419252: {
-      activityName: "Patrulla el Cosmódromo"
+    330545737: {
+      name: 'Villa'
     },
-    184503944: {
-      activityName: "La mente imperecedera"
+    338662534: {
+      name: 'Espira Invertida'
     },
-    184503945: {
-      activityName: "Cerberus Vae III"
+    355984230: {
+      name: 'Misión de asesinato'
     },
-    184503946: {
-      activityName: "Palacio de Polvo"
+    359488722: {
+      name: 'Pirateo planetario'
     },
-    194283519: {
-      activityName: "Palacio de Polvo"
+    374818561: {
+      name: 'Descanso del Emperador'
     },
-    202167389: {
-      activityName: "Palacio de Polvo"
+    379330092: {
+      name: 'Fragmento del Viajero'
     },
-    209343718: {
-      activityName: "Carrera de Invierno"
+    387171436: {
+      name: 'Misión de salvamento'
     },
-    211678003: {
-      activityName: "Grieta Estandarte de Hierro"
+    388289443: {
+      name: 'Misión de reconocimiento'
     },
-    212088538: {
-      activityName: "Los Fosos de Invocación"
+    415388387: {
+      name: 'Misión de reconocimiento'
     },
-    218006092: {
-      activityName: "Tierras Pestíferas"
+    417231112: {
+      name: 'Leviatán'
     },
-    242777083: {
-      activityName: "El Nexo"
+    429361491: {
+      name: 'Misión de salvamento'
     },
-    252347595: {
-      activityName: "Apuestas en el hangar"
+    435989417: {
+      name: 'Misión de análisis'
     },
-    259879232: {
-      activityName: "S.A.B.E.R. caído"
+    444087412: {
+      name: 'Misión de combate'
     },
-    260615043: {
-      activityName: "Disputa"
+    445417088: {
     },
-    260765522: {
-      activityName: "La furia de las máquinas"
+    459955094: {
+      name: 'Misión de análisis'
     },
-    269981320: {
-      activityName: "El código de Prometeo"
+    461203479: {
+      name: 'Misión de reconocimiento'
     },
-    278763462: {
-      activityName: "Palacio de Polvo"
+    464789944: {
+      name: 'Elegido'
     },
-    279121234: {
-      activityName: "El rey de la montaña"
+    474380713: {
+      name: 'Misión de salvamento'
     },
-    284635225: {
-      activityName: "El Santuario Ardiente"
+    539897061: {
+      name: 'Revirtiendo la polaridad'
     },
-    287505866: {
-      activityName: "S.A.B.E.R. caído"
+    545240418: {
+      name: 'Misión de reconocimiento'
     },
-    291350530: {
-      activityName: "Asalto de Ocaso semanal"
+    549123191: {
+      name: 'Misión de reconocimiento'
     },
-    300506688: {
-      activityName: "Asalto de Ocaso semanal"
+    553537971: {
+      name: 'Elegido'
     },
-    308091852: {
-      activityName: "Asalto heroico semanal"
+    564863404: {
     },
-    308091854: {
-      activityName: "Asalto heroico semanal"
+    581323290: {
+      name: 'Misión de reconocimiento'
     },
-    308091855: {
-      activityName: "Asalto heroico semanal"
+    585071442: {
+      name: 'Ocaso: Canción de Savathûn'
     },
-    324283916: {
-      activityName: "La marea creciente"
+    601540706: {
+      name: 'Ocaso: El contrabandista de armas'
     },
-    331520418: {
-      activityName: "La mente imperecedera"
+    622895925: {
+      name: 'Arecibo'
     },
-    342909762: {
-      activityName: "Hermanos Escudo"
+    632790902: {
+      name: 'Suspense'
     },
-    351460287: {
-      activityName: "La Celda sin Sol"
+    642256373: {
+      name: 'Ocaso: Siniestro del Éxodo'
     },
-    351673577: {
-      activityName: "Clásico todos contra todos"
+    642277473: {
+      name: 'Ocaso: El Piramidión'
     },
-    355200465: {
-      activityName: "Hermanos Escudo"
+    652598202: {
+      name: 'Barranco de la Legión'
     },
-    355605844: {
-      activityName: "Patrulla las Tierras Pestíferas"
+    667604912: {
+      name: 'Meditación: "Bucle interdimensional"'
     },
-    360962374: {
-      activityName: "El Ladrón de Sombras"
+    671904429: {
+      name: 'Misión de salvamento'
     },
-    386157877: {
-      activityName: "Hermanos Escudo"
+    703311712: {
+      name: 'Fragmento del Viajero'
     },
-    389785553: {
-      activityName: "Campeones de la Oscuridad"
+    715306877: {
+      name: 'Misión de combate'
     },
-    403726672: {
-      activityName: "Asalto heroico semanal"
+    719906507: {
+      name: 'Clasificado'
     },
-    403726674: {
-      activityName: "Asalto heroico semanal"
+    743100125: {
+      name: 'Misión de salvamento'
     },
-    403726675: {
-      activityName: "Asalto heroico semanal"
+    750649238: {
+      name: 'Misión de salvamento'
     },
-    406972773: {
-      activityName: "El rapto de la abominación"
+    757116822: {
+      name: 'Leviatán'
     },
-    410347507: {
-      activityName: "El Ladrón de Sombras"
+    760130722: {
+      name: 'Acantilado Muerto'
     },
-    425614025: {
-      activityName: "Los Señores de Hierro"
+    782175145: {
+      name: 'Misión de asesinato'
     },
-    428290721: {
-      activityName: "Patrulla Marte"
+    782290869: {
+      name: 'Misión de reconocimiento'
     },
-    430160982: {
-      activityName: "La furia de las máquinas"
+    789332628: {
+      name: 'Ladrón de ladrones'
     },
-    430914016: {
-      activityName: "La Cripta de Hierro"
+    798143184: {
+      name: 'Misión de combate'
     },
-    431759746: {
-      activityName: "Rescate"
+    808931822: {
+      name: 'Prometeo posmoderno'
     },
-    443057682: {
-      activityName: "Colapso Aéreo"
+    837763871: {
+      name: 'Misión de salvamento'
     },
-    443707023: {
-      activityName: "La Casa reinante"
+    849242583: {
+      name: 'Misión de análisis'
     },
-    455063520: {
-      activityName: "La resurrección"
+    880665770: {
+      name: 'Misión de reconocimiento'
     },
-    468325937: {
-      activityName: "Armas combinadas"
+    919252154: {
+      name: 'Alianza oscura'
     },
-    469270447: {
-      activityName: "Recuerdo"
+    926012363: {
+      name: 'Misión de asesinato'
     },
-    474428712: {
-      activityName: "El enemigo de mi enemigo..."
+    926940962: {
+      name: 'Ocaso: El Piramidión'
     },
-    482017096: {
-      activityName: "Sepiks Perfeccionado"
+    938512773: {
+      name: 'Inquebrantable'
     },
-    492319725: {
-      activityName: "Disputa Caos"
+    940394831: {
+      name: 'AVENTURA: Siniestro del Éxodo'
     },
-    493857039: {
-      activityName: "Asalto de Ocaso semanal"
+    955852466: {
+      name: '1UA'
     },
-    496237130: {
-      activityName: "Carreras de Colibríes"
+    963938931: {
+      name: 'Conversación profunda'
     },
-    504512661: {
-      activityName: "Puesto de Vesta"
+    964196803: {
+      name: 'Misión de salvamento'
     },
-    509411569: {
-      activityName: "Mala sangre"
+    969385987: {
+      name: 'Iluminando la oscuridad'
     },
-    547981568: {
-      activityName: "Supremacía Estandarte de Hierro"
+    993152361: {
+      name: 'Misión de salvamento'
     },
-    550186563: {
-      activityName: "Un kell creciente"
+    1019362992: {
+      name: 'Meditación: "La bienvenida"'
     },
-    572368820: {
-      activityName: "Asalto de Ocaso semanal"
+    1035135049: {
+      name: 'El Piramidión'
     },
-    573077648: {
-      activityName: "S.A.B.E.R. caído"
+    1038710420: {
+      name: 'Misión de asesinato'
     },
-    574483028: {
-      activityName: "La Ciudad Sepultada"
+    1053141615: {
+      name: 'Misión de asesinato'
     },
-    575304694: {
-      activityName: "Una nueva madriguera"
+    1063969232: {
+      name: 'Invitación del emperador'
     },
-    575376446: {
-      activityName: "Cámara del Eco"
+    1075152813: {
+      name: 'Zona Muerta Europea'
     },
-    579700969: {
-      activityName: "Alijo de Cayde"
+    1076851943: {
+      name: 'Misión de asesinato'
     },
-    579949585: {
-      activityName: "Los Colmillos Silenciosos"
+    1085523978: {
+      name: 'Misión de reconocimiento'
     },
-    581858107: {
-      activityName: "La Aurora"
+    1090267699: {
+      name: 'Misión de asesinato'
     },
-    603968817: {
-      activityName: "Cerberus Vae III"
+    1101792305: {
+      name: 'Canción de Savathûn'
     },
-    604017503: {
-      activityName: "El Presidio de los Ancianos: Poseídos"
+    1102824603: {
+      name: 'Misión de asesinato'
     },
-    614791010: {
-      activityName: "Supremacía"
+    1105211124: {
+      name: 'Misión de análisis'
     },
-    632771975: {
-      activityName: "Aspirante al trono"
+    1107208644: {
+      name: 'Pirateo planetario'
     },
-    637046772: {
-      activityName: "Guarida de Ladrones"
+    1129066976: {
+      name: 'Ocaso: El Piramidión'
     },
-    645920838: {
-      activityName: "Cámara del Eco"
+    1159314159: {
+      name: 'Mala señal'
     },
-    653380797: {
-      activityName: "Carrera de Invierno"
+    1164772243: {
+      name: 'Misión de salvamento'
     },
-    653380798: {
-      activityName: "El Nexo"
+    1206154103: {
+      name: 'Misión de asesinato'
     },
-    696672649: {
-      activityName: "undefined"
+    1207505828: {
+      name: 'AVENTURA: El contrabandista de armas'
     },
-    702170822: {
-      activityName: "Los Fosos de Invocación"
+    1225970098: {
+      name: 'Tripulación perdida'
     },
-    706472064: {
-      activityName: "Asalto heroico semanal"
+    1228327586: {
+      name: 'Antiantiaéreos'
     },
-    706472065: {
-      activityName: "Asalto heroico semanal"
+    1243390694: {
+      name: 'Latrocinio'
     },
-    706472066: {
-      activityName: "Asalto heroico semanal"
+    1249965655: {
+      name: 'Misión de análisis'
     },
-    711826167: {
-      activityName: "Enfrentamiento infernal"
+    1250426564: {
+      name: 'Misión de asesinato'
     },
-    719193800: {
-      activityName: "Carrera de Invierno"
+    1254990192: {
+      name: 'No hay distancia segura'
     },
-    719193803: {
-      activityName: "El Nexo"
+    1265390366: {
+      name: 'Mala señal'
     },
-    746864299: {
-      activityName: "Dobles infernal"
+    1289867188: {
+      name: 'Indestructible'
     },
-    757275024: {
-      activityName: "S.A.B.E.R. caído"
+    1290744998: {
+      name: 'Villa'
     },
-    764916411: {
-      activityName: "La Ciudad Sepultada"
+    1309646866: {
+      name: 'Villa'
     },
-    782611196: {
-      activityName: "Escaramuza infernal"
+    1331268141: {
+      name: 'Misión de reconocimiento'
     },
-    820688209: {
-      activityName: "Sepiks Perfeccionado"
+    1357019430: {
+      name: 'Ocaso: Siniestro del Éxodo'
     },
-    826836846: {
-      activityName: "El abominable ojo"
+    1375839088: {
+      name: 'Misión de análisis'
     },
-    832576952: {
-      activityName: "S.A.B.E.R. caído"
+    1412142789: {
+      name: ''
     },
-    833873053: {
-      activityName: "La mente imperecedera"
+    1416597166: {
+      name: 'Oferta y demanda'
     },
-    836641517: {
-      activityName: "El ojo de un celador"
+    1428050875: {
+      name: 'Clasificado'
     },
-    853468393: {
-      activityName: "Colectivo de Ishtar"
+    1451946951: {
+      name: 'Misión de salvamento'
     },
-    853774317: {
-      activityName: "La guerra que se avecina"
+    1466550401: {
+      name: 'Peligroso a cualquier velocidad'
     },
-    854130400: {
-      activityName: "El asedio al Estratega"
+    1490848577: {
+      name: 'Bucle interdimensional'
     },
-    856898338: {
-      activityName: "Cámara de Cristal"
+    1491022087: {
+      name: 'Asedio del Éxodo Negro'
     },
-    860566204: {
-      activityName: "El Faro"
+    1495993294: {
+      name: 'Lago de sombras'
     },
-    870614351: {
-      activityName: "Crisis de SIVA heroica"
+    1498466193: {
+      name: 'Misión de salvamento'
     },
-    888190220: {
-      activityName: "Disputa infernal"
+    1521232506: {
+      name: 'Clasificado'
     },
-    892266083: {
-      activityName: "La Torre"
+    1525633702: {
+      name: 'Misión de salvamento'
     },
-    902875868: {
-      activityName: "La espira del Jardín"
+    1536764325: {
+      name: 'Misión de reconocimiento'
     },
-    906989597: {
-      activityName: "Los Fosos de Invocación"
+    1557641249: {
+      name: 'Misión de salvamento'
     },
-    932731386: {
-      activityName: "Alijo de Cayde"
+    1563393783: {
+      name: 'Siniestro del Éxodo'
     },
-    940573734: {
-      activityName: "La Oscuridad interior"
+    1568750156: {
+      name: 'Villa'
     },
-    944638962: {
-      activityName: "El ojo de un celador"
+    1581219251: {
+      name: 'Misión de reconocimiento'
     },
-    981644933: {
-      activityName: "Atado por el fuego"
+    1614692057: {
+      name: 'Misión de salvamento'
     },
-    982298740: {
-      activityName: "La Tumba del Mundo"
+    1646219807: {
+      name: 'Latrocinio'
     },
-    984759429: {
-      activityName: "El rapto de la abominación"
+    1651979106: {
+      name: 'Prometeo posmoderno'
     },
-    985012235: {
-      activityName: "Una nueva madriguera"
+    1658347443: {
+      name: 'La bienvenida'
     },
-    989535795: {
-      activityName: "Control de zonas infernal"
+    1685065161: {
+      name: 'Leviatán'
     },
-    994743956: {
-      activityName: "La mente imperecedera"
+    1685237649: {
+      name: 'Misión de asesinato'
     },
-    994743957: {
-      activityName: "Cerberus Vae III"
+    1699948563: {
+      name: 'Leviatán'
     },
-    994743958: {
-      activityName: "Palacio de Polvo"
+    1720510574: {
+      name: 'Fortaleza'
     },
-    1005705920: {
-      activityName: "El primer cortafuegos"
+    1756055546: {
+      name: 'Misión de salvamento'
     },
-    1016116686: {
-      activityName: "La mente imperecedera"
+    1773400654: {
+      name: 'Invitación del emperador'
     },
-    1016659723: {
-      activityName: "Caída del Rey"
+    1778450722: {
+      name: 'Misión de análisis'
     },
-    1017714251: {
-      activityName: "Últimos ritos"
+    1786054751: {
+      name: 'Premeditación'
     },
-    1019616175: {
-      activityName: "Disputa infernal"
+    1790343591: {
+      name: 'Fragmento del Viajero'
     },
-    1023542723: {
-      activityName: "La mente imperecedera"
+    1792985204: {
+      name: 'Ocaso: Siniestro del Éxodo'
     },
-    1030188908: {
-      activityName: "El ojo de un celador"
+    1824067376: {
+      name: 'Furia en la carretera'
     },
-    1031478181: {
-      activityName: "Asalto heroico semanal"
+    1829866365: {
+      name: 'Ensuciándote las manos'
     },
-    1031478182: {
-      activityName: "Asalto heroico semanal"
+    1863334927: {
+      name: 'Ocaso: Canción de Savathûn'
     },
-    1031478183: {
-      activityName: "Asalto heroico semanal"
+    1875726950: {
+      name: 'Leviatán'
     },
-    1044883964: {
-      activityName: "Sepiks Perfeccionado"
+    1949546348: {
+      name: 'Misión de asesinato'
     },
-    1045828271: {
-      activityName: "Enfrentamiento"
+    1952521609: {
+      name: 'Fragmento del Viajero'
     },
-    1068261034: {
-      activityName: "Sangre en el Jardín"
+    1956541147: {
+      name: 'Llámalos a casa'
     },
-    1075348150: {
-      activityName: "Era de Triunfo"
+    1969800443: {
+      name: 'Arecibo'
     },
-    1080191247: {
-      activityName: "Azote del Invierno"
+    1971154629: {
+      name: 'Peligroso a cualquier velocidad'
     },
-    1084620606: {
-      activityName: "La Celda sin Sol"
+    1975064760: {
+      name: 'Ocaso: Canción de Savathûn'
     },
-    1087052691: {
-      activityName: "Enfrentamiento"
+    1981289329: {
+      name: 'Asedio del Éxodo Negro'
     },
-    1112015031: {
-      activityName: "La resurrección"
+    1984315274: {
+      name: 'Asaltos de la Vanguardia'
     },
-    1116149777: {
-      activityName: "Regicidio"
+    1988701745: {
+      name: 'Represalia'
     },
-    1117274478: {
-      activityName: "Guerra de los poseídos"
+    2001433484: {
+      name: 'Misión de asesinato'
     },
-    1122783186: {
-      activityName: "La Cripta de Hierro"
+    2025057095: {
+      name: 'Misión de combate'
     },
-    1126759626: {
-      activityName: "Cámara del Eco"
+    2033669713: {
+      name: 'Jabalina-4'
     },
-    1141580112: {
-      activityName: "La voluntad de Crota"
+    2052289205: {
+      name: 'Combustión'
     },
-    1142225067: {
-      activityName: "Asalto de Ocaso semanal"
+    2079994698: {
+      name: 'Misión de reconocimiento'
     },
-    1169187265: {
-      activityName: "El Nexo"
+    2080275457: {
+      name: 'El contrabandista de armas'
     },
-    1174401783: {
-      activityName: "La senda del primario"
+    2113712124: {
+      name: 'Sacrilegio'
     },
-    1194342366: {
-      activityName: "Rescate infernal"
+    2151274060: {
+      name: 'Misión de análisis'
     },
-    1200628152: {
-      activityName: "Los Fosos de Invocación"
+    2174556965: {
+      name: 'Echando las culpas'
     },
-    1208087916: {
-      activityName: "Máquina rabiosa"
+    2183066491: {
+      name: 'Villa'
     },
-    1208087919: {
-      activityName: "Máquina rabiosa"
+    2184866967: {
+      name: 'Misión de análisis'
     },
-    1226857472: {
-      activityName: "Alijo de Cayde"
+    2187073261: {
+      name: 'Misión de análisis'
     },
-    1227144460: {
-      activityName: "Rescate de la Reina"
+    2231840083: {
+      name: 'Canto de sirena'
     },
-    1228944057: {
-      activityName: "Palacio de Polvo"
+    2236648719: {
+      name: 'Eternidad'
     },
-    1234230734: {
-      activityName: "Patrulla la Luna"
+    2243336789: {
+      name: 'Misión de combate'
     },
-    1259153650: {
-      activityName: "La llamada de una desconocida"
+    2250935166: {
+      name: 'Inmortal'
     },
-    1288347893: {
-      activityName: "Supremacía Disputa"
+    2259811067: {
+      name: 'Fragmento del Viajero'
     },
-    1291023759: {
-      activityName: "Escaramuza infernal"
+    2264636552: {
+      name: 'Meditación: "Combustión"'
     },
-    1293005540: {
-      activityName: "Ocaso de Vanguardia"
+    2266954523: {
+      name: 'Villa'
     },
-    1296112978: {
-      activityName: "Tierras Pestíferas"
+    2287222467: {
+      name: 'Misión de análisis'
     },
-    1309514270: {
-      activityName: "Ardid de Lobos"
+    2288260902: {
+      name: 'Misión de asesinato'
     },
-    1322792020: {
-      activityName: "Grieta infernal"
+    2291549972: {
+      name: '¡Altera!'
     },
-    1328326126: {
-      activityName: "Perder la Luz"
+    2297638408: {
+      name: 'Furia'
     },
-    1329840146: {
-      activityName: "El abominable ojo"
+    2301390667: {
+      name: 'Misión de reconocimiento'
     },
-    1378194100: {
-      activityName: "El Faro"
+    2318812547: {
+      name: 'El Piramidión'
     },
-    1378430574: {
-      activityName: "Eliminación infernal"
+    2336998357: {
+      name: 'A largo plazo'
     },
-    1379511171: {
-      activityName: "La Espada de Crota"
+    2379494367: {
+      name: 'Misión de análisis'
     },
-    1387993552: {
-      activityName: "La furia de las máquinas"
+    2420240009: {
+      name: 'Misión de salvamento'
     },
-    1390160729: {
-      activityName: "Puesto de Vesta"
+    2445164291: {
+      name: 'Misión de asesinato'
     },
-    1398209073: {
-      activityName: "Guarida de los Demonios"
+    2449714930: {
+      name: 'Leviatán'
     },
-    1398209074: {
-      activityName: "La voluntad de Crota"
+    2464834848: {
+      name: 'Centro Urbano'
     },
-    1398976305: {
-      activityName: "Asalto heroico semanal"
+    2468202005: {
+      name: 'Fragmento del Viajero'
     },
-    1398976306: {
-      activityName: "Asalto heroico semanal"
+    2478782573: {
+      name: ''
     },
-    1398976307: {
-      activityName: "Asalto heroico semanal"
+    2517540332: {
+      name: 'No hay distancia segura'
     },
-    1400727968: {
-      activityName: "Grieta"
+    2519458964: {
+      name: 'Valle infinito'
     },
-    1403880576: {
-      activityName: "La espira del Jardín"
+    2519564410: {
+      name: 'Misión de asesinato'
     },
-    1403880578: {
-      activityName: "El Jardín Negro"
+    2536491635: {
+      name: 'Misión de reconocimiento'
     },
-    1403880579: {
-      activityName: "La marea creciente"
+    2558926634: {
+      name: 'Misión de reconocimiento'
     },
-    1403880580: {
-      activityName: "Zona de exclusión"
+    2559514952: {
+      name: 'Utopía'
     },
-    1403880582: {
-      activityName: "La Ciudad Sepultada"
+    2561308143: {
+      name: 'Misión de reconocimiento'
     },
-    1404620600: {
-      activityName: "El Presidio de los Ancianos"
+    2573702057: {
+      name: 'Misión de salvamento'
     },
-    1415179315: {
-      activityName: "Eliminación"
+    2574607799: {
+      name: 'Malos vecinos'
     },
-    1419457477: {
-      activityName: "Un guardés perdido"
+    2575990417: {
+      name: 'Misión de combate'
     },
-    1427585666: {
-      activityName: "El regreso de un héroe"
+    2580713007: {
+      name: 'Misión de reconocimiento'
     },
-    1431469570: {
-      activityName: "El rapto de la abominación"
+    2588220738: {
+      name: 'Misión de reconocimiento'
     },
-    1438195119: {
-      activityName: "El Jardín Negro"
+    2610112492: {
+      name: 'Misión de análisis'
     },
-    1439468985: {
-      activityName: "Señal emitida"
+    2619236227: {
+      name: 'Misión de análisis'
     },
-    1441430564: {
-      activityName: "La envidia de Urrox"
+    2629975203: {
+      name: 'Misión de combate'
     },
-    1441430567: {
-      activityName: "La envidia de Urrox"
+    2629998776: {
+      name: 'Misión de salvamento'
     },
-    1443271657: {
-      activityName: "Dobles Escarlata"
+    2642769170: {
+      name: 'Seis'
     },
-    1443570903: {
-      activityName: "Enfrentamiento Caos: Estandarte de Hierro"
+    2651851341: {
+      name: 'Misión de análisis'
     },
-    1448094960: {
-      activityName: "Las mazmorras"
+    2665134323: {
+      name: 'Liberación'
     },
-    1478347980: {
-      activityName: "Campus Martius"
+    2667533713: {
+      name: 'Vostok'
     },
-    1491766060: {
-      activityName: "El ladrón de sombras"
+    2684479494: {
+      name: 'Misión de salvamento'
     },
-    1501957761: {
-      activityName: "S.A.B.E.R. caído"
+    2693136600: {
+      name: 'Leviatán'
     },
-    1516701147: {
-      activityName: "undefined"
+    2693136601: {
+      name: 'Leviatán'
     },
-    1517679997: {
-      activityName: "Crisis de SIVA"
+    2693136602: {
+      name: 'Leviatán'
     },
-    1522220810: {
-      activityName: "La Torre"
+    2693136603: {
+      name: 'Leviatán'
     },
-    1522422482: {
-      activityName: "La voluntad de Crota"
+    2693136604: {
+      name: 'Leviatán'
     },
-    1526798932: {
-      activityName: "S.A.B.E.R. caído"
+    2693136605: {
+      name: 'Leviatán'
     },
-    1533733535: {
-      activityName: "La Celda sin Sol"
+    2702476101: {
+      name: 'Torre'
     },
-    1551387515: {
-      activityName: "El Presidio de los Ancianos"
+    2708828207: {
+      name: 'Utopía'
     },
-    1566333829: {
-      activityName: "Hermanos Escudo"
+    2737739053: {
+      name: 'Conversación profunda'
     },
-    1572749251: {
-      activityName: "Control de zonas"
+    2759086913: {
+      name: 'Clasificado'
     },
-    1584566734: {
-      activityName: "Infernal 6c6"
+    2768347363: {
+      name: 'Misión de asesinato'
     },
-    1604535501: {
-      activityName: "Carreras de Colibríes"
+    2773222353: {
+      name: 'Misión de análisis'
     },
-    1609488702: {
-      activityName: "Dobles"
+    2776929937: {
+      name: 'Diagnóstico diferencial'
     },
-    1614355423: {
-      activityName: "Rescate de la Reina"
+    2782300570: {
+      name: 'Misión de salvamento'
     },
-    1618960674: {
-      activityName: "Infernal 3c3"
+    2784803584: {
+      name: 'Misión de combate'
     },
-    1624947721: {
-      activityName: "Hermanos Escudo"
+    2798856614: {
+      name: 'Misión de reconocimiento'
     },
-    1628212868: {
-      activityName: "Asalto heroico semanal"
+    2846775197: {
+      name: 'Misión de combate'
     },
-    1628212869: {
-      activityName: "Asalto heroico semanal"
+    2908287325: {
+      name: 'Misión de reconocimiento'
     },
-    1628212871: {
-      activityName: "Asalto heroico semanal"
+    2926767881: {
+      name: 'Venganza'
     },
-    1636082733: {
-      activityName: "Carrera de Invierno"
+    2949941834: {
+      name: 'Invitados inesperados'
     },
-    1636082734: {
-      activityName: "El Nexo"
+    2969403085: {
+      name: 'Misión de reconocimiento'
     },
-    1646288223: {
-      activityName: "Cámara del Eco"
+    3002511278: {
+      name: 'Alianza oscura'
     },
-    1650930548: {
-      activityName: "Clasificado"
+    3026637018: {
+      name: 'Misión de reconocimiento'
     },
-    1657401676: {
-      activityName: "Asalto heroico semanal"
+    3038694763: {
+      name: 'Misión de asesinato'
     },
-    1657401677: {
-      activityName: "Asalto heroico semanal"
+    3049122128: {
+      name: 'Misión de análisis'
     },
-    1657401679: {
-      activityName: "Asalto heroico semanal"
+    3050465729: {
+      name: 'Ocaso: Espira Invertida'
     },
-    1659888245: {
-      activityName: "El rapto de la abominación"
+    3062197616: {
+      name: 'Competitivo'
     },
-    1665631320: {
-      activityName: "Disputa"
+    3105090879: {
+      name: 'Adiós'
     },
-    1669262087: {
-      activityName: "Hermanos Escudo"
+    3140524926: {
+      name: 'Indestructible'
     },
-    1673931290: {
-      activityName: "Desafío de los Ancianos"
+    3143798436: {
+      name: 'Zona Muerta Europea'
     },
-    1681545807: {
-      activityName: "La Celda sin Sol"
+    3147707814: {
+      name: 'Aguas revueltas'
     },
-    1685214122: {
-      activityName: "Supremacía Caos"
+    3148431353: {
+      name: 'Ensuciándote las manos'
     },
-    1685535967: {
-      activityName: "La voluntad de Crota"
+    3150153711: {
+      name: 'Oportunidades y elecciones'
     },
-    1686326716: {
-      activityName: "Una nueva madriguera"
+    3172367001: {
+      name: 'Fragmento del Viajero'
     },
-    1686679946: {
-      activityName: "Enfrentamiento"
+    3173130826: {
+      name: 'Misión de combate'
     },
-    1709749894: {
-      activityName: "Panorama Urbano"
+    3208779612: {
+      name: 'Misión de salvamento'
     },
-    1714839224: {
-      activityName: "Ritual de sacrificio"
+    3211303924: {
+      name: 'Misión de salvamento'
     },
-    1719392441: {
-      activityName: "Encrucijada"
+    3211568383: {
+      name: 'Canto de sirena'
     },
-    1723226893: {
-      activityName: "El Estratega"
+    3231065327: {
+      name: 'Misión de análisis'
     },
-    1727851403: {
-      activityName: "El código de Prometeo"
+    3243161126: {
+      name: 'Juego rápido'
     },
-    1728758154: {
-      activityName: "Los Fosos de Invocación"
+    3268684190: {
+      name: 'Misión de salvamento'
     },
-    1733556769: {
-      activityName: "Caída del Rey"
+    3272002712: {
+      name: 'Esperanza'
     },
-    1740074530: {
-      activityName: "Cerberus Vae III"
+    3277510674: {
+      name: 'Inmortal'
     },
-    1749151224: {
-      activityName: "Ocaso de Vanguardia"
+    3283790633: {
+      name: 'Echando las culpas'
     },
-    1771902734: {
-      activityName: "Enfrentamiento infernal"
+    3289681664: {
+      name: 'Tripulación perdida'
     },
-    1772839913: {
-      activityName: "Túneles tenebrosos"
+    3298775062: {
+      name: 'Misión de reconocimiento'
     },
-    1783047867: {
-      activityName: "Control infernal"
+    3303685562: {
+      name: 'Misión de salvamento'
     },
-    1783107168: {
-      activityName: "Descarga completada"
+    3304835347: {
+      name: 'Llámalos a casa'
     },
-    1783564050: {
-      activityName: "La Casa reinante"
+    3336275007: {
+      name: 'Meditación: "Seis"'
     },
-    1794499705: {
-      activityName: "Los Señores de Hierro: Preludio"
+    3337731612: {
+      name: 'Misión de combate'
     },
-    1815860968: {
-      activityName: "Control de zonas"
+    3346345105: {
+      name: 'Tratamiento experimental'
     },
-    1816396489: {
-      activityName: "El Ladrón de Sombras"
+    3359466010: {
+      name: 'Destello'
     },
-    1836141626: {
-      activityName: "Eliminación"
+    3368226533: {
+      name: 'Ocaso: Espira Invertida'
     },
-    1836893116: {
-      activityName: "El fin de Crota"
+    3379039897: {
+      name: 'Misión de salvamento'
     },
-    1836893119: {
-      activityName: "El fin de Crota"
+    3410530777: {
+      name: 'Acción calculada'
     },
-    1845751534: {
-      activityName: "Cerberus Vae III"
+    3417504239: {
+      name: 'Aguas revueltas'
     },
-    1846390409: {
-      activityName: "Un guardián se alza"
+    3446541099: {
+      name: 'Leviatán'
     },
-    1851417512: {
-      activityName: "El vagabundo"
+    3479544154: {
+      name: 'Misión de combate'
     },
-    1856964953: {
-      activityName: "Un guardián se alza"
+    3481058226: {
+      name: 'Misión de reconocimiento'
     },
-    1882836298: {
-      activityName: "La resurrección"
+    3485876484: {
+      name: 'Furia en la carretera'
     },
-    1889399773: {
-      activityName: "Asalto de Ocaso semanal"
+    3487576414: {
+      name: 'Misión de reconocimiento'
     },
-    1912940269: {
-      activityName: "Restauración"
+    3489692681: {
+      name: 'Misión de reconocimiento'
     },
-    1917735347: {
-      activityName: "Carrera de Invierno"
+    3500791146: {
+      name: 'Suspense'
     },
-    1918823817: {
-      activityName: "La mente imperecedera"
+    3515770727: {
+      name: 'Misión de análisis'
     },
-    1924778540: {
-      activityName: "La Casa reinante"
+    3580793473: {
+      name: 'Meditación: "1UA"'
     },
-    1940432142: {
-      activityName: "Zona de exclusión"
+    3612741503: {
+      name: 'Misión de reconocimiento'
     },
-    1973631991: {
-      activityName: "La última antena"
+    3627094182: {
+      name: 'Misión de combate'
     },
-    1974138312: {
-      activityName: "Cáliz plagado"
+    3631476566: {
+      name: 'Villa'
     },
-    1985034593: {
-      activityName: "Asalto de Ocaso semanal"
+    3645117987: {
+      name: 'Malos vecinos'
     },
-    2008529245: {
-      activityName: "Reyes de podredumbre"
+    3652531274: {
+      name: 'Fragmento del Viajero'
     },
-    2010056644: {
-      activityName: "Precipicio Haakon"
+    3662124488: {
+      name: 'Misión de reconocimiento'
     },
-    2022189692: {
-      activityName: "Cáliz plagado"
+    3664915501: {
+      name: 'Legión Roja, aceite oscuro'
     },
-    2037022373: {
-      activityName: "Vértigo"
+    3669054326: {
+      name: 'Misión de salvamento'
     },
-    2045385030: {
-      activityName: "Patrulla Venus"
+    3688464794: {
+      name: 'La importancia de tener contactos'
     },
-    2051444910: {
-      activityName: "La Oscuridad exterior"
+    3700722865: {
+      name: 'Liberación'
     },
-    2061368111: {
-      activityName: "Supremacía Caos"
+    3702064261: {
+      name: 'Confiscación de datos'
     },
-    2063852581: {
-      activityName: "Enfrentamiento Caos"
+    3738159218: {
+      name: 'Inquebrantable'
     },
-    2072729921: {
-      activityName: "Cáliz plagado"
+    3752039537: {
+      name: 'Revirtiendo la polaridad'
     },
-    2074618692: {
-      activityName: "Tragón del tiempo"
+    3780356141: {
+      name: 'Para y sigue'
     },
-    2074618695: {
-      activityName: "Tragón del tiempo"
+    3792746061: {
+      name: 'Misión de combate'
     },
-    2082069870: {
-      activityName: "La Anomalía"
+    3799743268: {
+      name: 'Clasificado'
     },
-    2084208305: {
-      activityName: "La Celda sin Sol"
+    3806583577: {
+      name: 'Misión de asesinato'
     },
-    2084307227: {
-      activityName: "Patrulla del Acorazado"
+    3834639884: {
+      name: 'Misión de análisis'
     },
-    2095588685: {
-      activityName: "La voluntad de Crota"
+    3836086286: {
+      name: 'Invitados inesperados'
     },
-    2105028197: {
-      activityName: "Cámara del Eco"
+    3839751954: {
+      name: 'Altar de la Llama'
     },
-    2129294976: {
-      activityName: "La Oscuridad interior"
+    3872525353: {
+      name: 'Para y sigue'
     },
-    2151413729: {
-      activityName: "La Torre"
+    3879860661: {
+      name: 'Leviatán'
     },
-    2176272408: {
-      activityName: "El ladrón de sombras"
+    3903562779: {
+      name: 'Torre'
     },
-    2178968385: {
-      activityName: "El abominable ojo"
+    3916343513: {
+      name: 'Leviatán'
     },
-    2184393955: {
-      activityName: "Cerberus Vae III"
+    3920643231: {
+      name: 'Ocaso: El contrabandista de armas'
     },
-    2186849909: {
-      activityName: "Carrera de Invierno"
+    3958400416: {
+      name: 'Misión de reconocimiento'
     },
-    2190039885: {
-      activityName: "Clásico todos contra todos"
+    3966792859: {
+      name: 'Nessus, Centauro Inestable'
     },
-    2197680969: {
-      activityName: "Reyes de podredumbre"
+    3978357488: {
+      name: 'Misión de salvamento'
     },
-    2198347919: {
-      activityName: "La Torre"
+    3982474534: {
+      name: 'Venganza'
     },
-    2200634811: {
-      activityName: "El asedio al Estratega"
+    4034557395: {
+      name: 'La bienvenida'
     },
-    2201622127: {
-      activityName: "Desafío de los Ancianos"
+    4039317196: {
+      name: 'Leviatán'
     },
-    2213151771: {
-      activityName: "Colectivo de Ishtar"
+    4043714237: {
+      name: 'Misión de reconocimiento'
     },
-    2217862439: {
-      activityName: "Control"
+    4047570705: {
+      name: 'Misión de combate'
     },
-    2221365740: {
-      activityName: "Sepiks Perfeccionado"
+    4050886070: {
+      name: 'Misión de reconocimiento'
     },
-    2234107290: {
-      activityName: "La Celda sin Sol"
+    4054968718: {
+      name: 'Ocaso: Espira Invertida'
     },
-    2243240710: {
-      activityName: "Descenso Infinito"
+    4095207117: {
+      name: 'Misión de salvamento'
     },
-    2244550959: {
-      activityName: "La Torre"
+    4103844069: {
+      name: 'Misión de asesinato'
     },
-    2244943676: {
-      activityName: "Un Khvostov reforjado"
+    4159221189: {
+      name: 'Ío'
     },
-    2245079334: {
-      activityName: "Cáliz plagado"
+    4166562681: {
+      name: 'Titán'
     },
-    2263964303: {
-      activityName: "Eliminación"
+    4174103238: {
+      name: 'Misión de salvamento'
     },
-    2268273279: {
-      activityName: "Sepiks Perfeccionado"
+    4209774794: {
+      name: 'Misión de salvamento'
     },
-    2270816053: {
-      activityName: "Rescate de la Reina"
+    4216926874: {
+      name: 'Misión de salvamento'
     },
-    2270968444: {
-      activityName: "Asalto heroico semanal"
+    4231544111: {
+      name: 'Misión de reconocimiento'
     },
-    2270968445: {
-      activityName: "Asalto heroico semanal"
+    4239233351: {
+      name: 'Meditación: "Destello"'
     },
-    2270968446: {
-      activityName: "Asalto heroico semanal"
+    4254776501: {
+      name: 'Misión de salvamento'
     },
-    2275772174: {
-      activityName: "El Ladrón de Sombras"
+    4283649349: {
+      name: 'Misión de asesinato'
     },
-    2286628407: {
-      activityName: "Paradoja"
+    4291922223: {
+      name: 'Esperanza'
     },
-    2303355724: {
-      activityName: "Guarida de los Demonios"
+  },
+  esmx: {
+    19982784: {
+      name: 'Misión de combate'
     },
-    2303355727: {
-      activityName: "La voluntad de Crota"
+    30240416: {
+      name: 'Misión de asesinato'
     },
-    2316484115: {
-      activityName: "El Faro"
+    37050217: {
+      name: 'Misión de reconocimiento'
     },
-    2319702946: {
-      activityName: "Templo de Hierro"
+    51408141: {
+      name: 'Misión de salvamento'
     },
-    2321224098: {
-      activityName: "La llamada de una desconocida"
+    53954174: {
+      name: 'Antiantiaéreos'
     },
-    2324706853: {
-      activityName: "El fin de Crota"
+    57103244: {
+      name: 'Misión de reconocimiento'
     },
-    2326253031: {
-      activityName: "La venganza de Skolas"
+    60002467: {
+      name: 'Sacrilegio'
     },
-    2327910410: {
-      activityName: "Cámara de la Noche"
+    78673128: {
+      name: 'Ladrón de ladrones'
     },
-    2330516073: {
-      activityName: "La Torre"
+    80726883: {
+      name: 'Oh capitán'
     },
-    2332037858: {
-      activityName: "La Corte de las Viudas"
+    82913930: {
     },
-    2333767699: {
-      activityName: "El abrazo del miedo"
+    89727599: {
+      name: 'Leviatán'
     },
-    2344229082: {
-      activityName: "La mente imperecedera"
+    104342360: {
+      name: 'Misión de combate'
     },
-    2344622554: {
-      activityName: "Cámara del Eco"
+    116352029: {
+      name: 'Misión de combate'
     },
-    2356723745: {
-      activityName: "La guerra que se avecina"
+    122988657: {
+      name: 'Legión Roja, aceite oscuro'
     },
-    2364610626: {
-      activityName: "La senda del primario"
+    143647473: {
+      name: 'Misión de salvamento'
     },
-    2369296916: {
-      activityName: "La guerra que se avecina"
+    145302664: {
+      name: 'Ocaso: Traficante de armas'
     },
-    2374186202: {
-      activityName: "Control infernal"
+    153537894: {
+      name: 'Una nueva frontera'
     },
-    2374784693: {
-      activityName: "Azote del Invierno"
+    160721490: {
+      name: 'Confidencial'
     },
-    2374899718: {
-      activityName: "El ladrón de sombras"
+    175598161: {
+      name: 'Misión de salvamento'
     },
-    2375659247: {
-      activityName: "Desafío de los Ancianos"
+    189324537: {
+      name: 'Misión de salvamento'
     },
-    2380726447: {
-      activityName: "El Acorazado"
+    197670945: {
+      name: 'Misión de asesinato'
     },
-    2381859905: {
-      activityName: "El ladrón de sombras"
+    204298081: {
+      name: 'Misión de análisis'
     },
-    2388860485: {
-      activityName: "Grieta"
+    248066530: {
+      name: 'Misión de salvamento'
     },
-    2391040454: {
-      activityName: "Sepiks Perfeccionado"
+    255819671: {
+      name: 'Furia'
     },
-    2393458461: {
-      activityName: "Pináculo de entropía"
+    261349035: {
+      name: 'Misión de salvamento'
     },
-    2396741855: {
-      activityName: "Cerberus Vae III"
+    286324446: {
+      name: 'Misión de salvamento'
     },
-    2398459666: {
-      activityName: "Patrulla Marte"
+    287649202: {
+      name: 'Leviatán'
     },
-    2401705359: {
-      activityName: "Guerra de los poseídos"
+    293858112: {
+      name: 'Misión de combate'
     },
-    2422821510: {
-      activityName: "Reyes de podredumbre"
+    298747401: {
+      name: 'Misión de reconocimiento'
     },
-    2430076725: {
-      activityName: "Observatorio Ciego"
+    298793060: {
+      name: 'Misión de salvamento'
     },
-    2437373043: {
-      activityName: "La mente imperecedera"
+    313572698: {
+      name: 'Fragmento del Viajero'
     },
-    2445476122: {
-      activityName: "Clásico 6c6"
+    320680002: {
+      name: 'Oferta y demanda'
     },
-    2446491566: {
-      activityName: "Tierras Pestíferas"
+    330545737: {
+      name: 'La Villa'
     },
-    2449230902: {
-      activityName: "El Acorazado"
+    338662534: {
+      name: 'La Espira Invertida'
     },
-    2450352219: {
-      activityName: "La Celda sin Sol"
+    355984230: {
+      name: 'Misión de asesinato'
     },
-    2473173917: {
-      activityName: "Los Colmillos Silenciosos"
+    359488722: {
+      name: 'Piratea el planeta'
     },
-    2474598319: {
-      activityName: "Patrulla Venus"
+    374818561: {
+      name: 'Descanso del emperador'
     },
-    2486047606: {
-      activityName: "El Jardín Negro"
+    379330092: {
+      name: 'Fragmento del Viajero'
     },
-    2488292787: {
-      activityName: "Por libre 3c3"
+    387171436: {
+      name: 'Misión de salvamento'
     },
-    2500396686: {
-      activityName: "Templo de Hierro"
+    388289443: {
+      name: 'Misión de reconocimiento'
     },
-    2503808507: {
-      activityName: "Últimos ritos"
+    415388387: {
+      name: 'Misión de reconocimiento'
     },
-    2507231345: {
-      activityName: "Frontera"
+    417231112: {
+      name: 'Leviatán'
     },
-    2507671226: {
-      activityName: "Señal emitida"
+    429361491: {
+      name: 'Misión de salvamento'
     },
-    2522686639: {
-      activityName: "Por libre 6c6"
+    435989417: {
+      name: 'Misión de análisis'
     },
-    2532582309: {
-      activityName: "S.A.B.E.R. caído"
+    444087412: {
+      name: 'Misión de combate'
     },
-    2546962221: {
-      activityName: "La Celda sin Sol"
+    445417088: {
     },
-    2553967924: {
-      activityName: "Una brecha en la muralla"
+    459955094: {
+      name: 'Misión de análisis'
     },
-    2577060487: {
-      activityName: "Paradoja"
+    461203479: {
+      name: 'Misión de reconocimiento'
     },
-    2582525652: {
-      activityName: "Santuario de Oryx"
+    464789944: {
+      name: 'Elegido'
     },
-    2586575560: {
-      activityName: "Disputa Caos"
+    474380713: {
+      name: 'Misión de salvamento'
     },
-    2591739000: {
-      activityName: "Los insomnes"
+    539897061: {
+      name: 'Revirtiendo la polaridad'
     },
-    2604992012: {
-      activityName: "Perder la Luz"
+    545240418: {
+      name: 'Misión de reconocimiento'
     },
-    2605106985: {
-      activityName: "La marea creciente"
+    549123191: {
+      name: 'Misión de reconocimiento'
     },
-    2616429373: {
-      activityName: "El abrazo del miedo"
+    553537971: {
+      name: 'Elegido'
     },
-    2624694148: {
-      activityName: "Aquelarre plagado"
+    564863404: {
     },
-    2624916786: {
-      activityName: "Cerberus Vae III"
+    581323290: {
+      name: 'Misión de reconocimiento'
     },
-    2626477216: {
-      activityName: "Señal emitida"
+    585071442: {
+      name: 'Ocaso: Canción de Savathûn'
     },
-    2632260907: {
-      activityName: "Cámara del Eco"
+    601540706: {
+      name: 'Ocaso: Traficante de armas'
     },
-    2638978649: {
-      activityName: ""
+    622895925: {
+      name: 'Arecibo'
     },
-    2641355370: {
-      activityName: "La espira del Jardín"
+    632790902: {
+      name: 'Suspenso'
     },
-    2643956095: {
-      activityName: "Por libre 3c3"
+    642256373: {
+      name: 'Ocaso: Colisión del Éxodo'
     },
-    2658160549: {
-      activityName: "Aquelarre plagado"
+    642277473: {
+      name: 'Ocaso: El piramidión'
     },
-    2659248068: {
-      activityName: "Cámara de Cristal"
+    652598202: {
+      name: 'Barranco de la Legión'
     },
-    2659248069: {
-      activityName: "Cámara de Cristal"
+    667604912: {
+      name: 'Meditación: "Circuito"'
     },
-    2659248071: {
-      activityName: "Cámara de Cristal"
+    671904429: {
+      name: 'Misión de salvamento'
     },
-    2662709104: {
-      activityName: "Arco en una botella"
+    703311712: {
+      name: 'Fragmento del Viajero'
     },
-    2664207554: {
-      activityName: "El abominable ojo"
+    715306877: {
+      name: 'Misión de combate'
     },
-    2666433880: {
-      activityName: "El Nexo"
+    719906507: {
+      name: 'Confidencial'
     },
-    2669189613: {
-      activityName: "Palacio de Polvo"
+    743100125: {
+      name: 'Misión de salvamento'
     },
-    2678657479: {
-      activityName: "El rapto de la abominación"
+    750649238: {
+      name: 'Misión de salvamento'
     },
-    2680821721: {
-      activityName: "La Caldera"
+    757116822: {
+      name: 'Leviatán'
     },
-    2693077237: {
-      activityName: "Ocaso de Vanguardia"
+    760130722: {
+      name: 'Los acantilados muertos'
     },
-    2695324124: {
-      activityName: "Cáliz plagado"
+    782175145: {
+      name: 'Misión de asesinato'
     },
-    2697160954: {
-      activityName: "Era de Triunfo"
+    782290869: {
+      name: 'Misión de reconocimiento'
     },
-    2697969178: {
-      activityName: "Asalto de Ocaso semanal"
+    789332628: {
+      name: 'Ladrón de ladrones'
     },
-    2701768038: {
-      activityName: "El Puño de Crota"
+    798143184: {
+      name: 'Misión de combate'
     },
-    2704098598: {
-      activityName: "Guarida de los Demonios"
+    808931822: {
+      name: 'Prometeo posmoderno'
     },
-    2708547287: {
-      activityName: "Un desfile de fuego"
+    837763871: {
+      name: 'Misión de salvamento'
     },
-    2717791362: {
-      activityName: "La voluntad de Crota"
+    849242583: {
+      name: 'Misión de análisis'
     },
-    2719526771: {
-      activityName: "Palacio de Polvo"
+    880665770: {
+      name: 'Misión de reconocimiento'
     },
-    2726977290: {
-      activityName: "La última antena"
+    919252154: {
+      name: 'Alianza oscura'
     },
-    2737751857: {
-      activityName: "Bella ejecución"
+    926012363: {
+      name: 'Misión de asesinato'
     },
-    2739987894: {
-      activityName: "Símbolo de honor"
+    926940962: {
+      name: 'Ocaso: El piramidión'
     },
-    2743106708: {
-      activityName: "Palacio de Polvo"
+    938512773: {
+      name: 'Irrompible'
     },
-    2747031950: {
-      activityName: "Clásico 3c3"
+    940394831: {
+      name: 'AVENTURA: Colisión del Éxodo'
     },
-    2764426556: {
-      activityName: "Paradoja"
+    955852466: {
+      name: '1UA'
     },
-    2764561765: {
-      activityName: "Perder la Luz"
+    963938931: {
+      name: 'Conversación profunda'
     },
-    2775184694: {
-      activityName: "Los Fosos de Invocación"
+    964196803: {
+      name: 'Misión de salvamento'
     },
-    2776273577: {
-      activityName: "Cerberus Vae III"
+    969385987: {
+      name: 'Iluminando la oscuridad'
     },
-    2790114296: {
-      activityName: "La Casa reinante"
+    993152361: {
+      name: 'Misión de salvamento'
     },
-    2795444912: {
-      activityName: "Escaramuza"
+    1019362992: {
+      name: 'Meditación: "La bienvenida"'
     },
-    2799122060: {
-      activityName: "El Nexo"
+    1035135049: {
+      name: 'El Piramidión'
     },
-    2819394450: {
-      activityName: "Legado de la Vanguardia"
+    1038710420: {
+      name: 'Misión de asesinato'
     },
-    2828456290: {
-      activityName: "Arenas Rutilantes"
+    1053141615: {
+      name: 'Misión de asesinato'
     },
-    2839046506: {
-      activityName: "undefined"
+    1063969232: {
+      name: 'Invitación del emperador'
     },
-    2840876929: {
-      activityName: "Hermanos Escudo"
+    1075152813: {
+      name: 'Zona Muerta Europea'
     },
-    2846350970: {
-      activityName: "La Celda sin Sol"
+    1076851943: {
+      name: 'Misión de asesinato'
     },
-    2853745856: {
-      activityName: "El Jardín Negro"
+    1085523978: {
+      name: 'Misión de reconocimiento'
     },
-    2861777810: {
-      activityName: "Carrera de Invierno"
+    1090267699: {
+      name: 'Misión de asesinato'
     },
-    2873833515: {
-      activityName: "La Celda sin Sol"
+    1101792305: {
+      name: 'Canción de Savathûn'
     },
-    2873913519: {
-      activityName: "El Estratega"
+    1102824603: {
+      name: 'Misión de asesinato'
     },
-    2877811433: {
-      activityName: "Disputa Caos"
+    1105211124: {
+      name: 'Misión de análisis'
     },
-    2895301046: {
-      activityName: "Zona de exclusión"
+    1107208644: {
+      name: 'Piratea el planeta'
     },
-    2896357417: {
-      activityName: "Carrera de Invierno"
+    1129066976: {
+      name: 'Ocaso: El piramidión'
     },
-    2896357418: {
-      activityName: "El Nexo"
+    1159314159: {
+      name: 'Mala señal'
     },
-    2897641944: {
-      activityName: "Cáliz plagado"
+    1164772243: {
+      name: 'Misión de salvamento'
     },
-    2910883293: {
-      activityName: "Últimos ritos"
+    1206154103: {
+      name: 'Misión de asesinato'
     },
-    2918909691: {
-      activityName: "Círculo del invocador"
+    1207505828: {
+      name: 'AVENTURA: Traficante de armas'
     },
-    2926133958: {
-      activityName: "Arsenal"
+    1225970098: {
+      name: 'Tripulación perdida'
     },
-    2931947534: {
-      activityName: "Un kell creciente"
+    1228327586: {
+      name: 'Antiantiaéreos'
     },
-    2938090611: {
-      activityName: "La guerra que se avecina"
+    1243390694: {
+      name: 'Hurto'
     },
-    2938118424: {
-      activityName: "La mente imperecedera"
+    1249965655: {
+      name: 'Misión de análisis'
     },
-    2938118425: {
-      activityName: "Cerberus Vae III"
+    1250426564: {
+      name: 'Misión de asesinato'
     },
-    2938118426: {
-      activityName: "Palacio de Polvo"
+    1254990192: {
+      name: 'No hay distancia segura'
     },
-    2945511915: {
-      activityName: "Por libre 6c6"
+    1265390366: {
+      name: 'Mala señal'
     },
-    2947742498: {
-      activityName: "Dobles infernal"
+    1289867188: {
+      name: 'Indestructible'
     },
-    2981424914: {
-      activityName: "El código de Prometeo"
+    1290744998: {
+      name: 'La Villa'
     },
-    2989915775: {
-      activityName: "La mente imperecedera"
+    1309646866: {
+      name: 'La Villa'
     },
-    3005484445: {
-      activityName: "El código de Prometeo"
+    1331268141: {
+      name: 'Misión de reconocimiento'
     },
-    3010573436: {
-      activityName: "El ladrón de sombras"
+    1357019430: {
+      name: 'Ocaso: Colisión del Éxodo'
     },
-    3011954788: {
-      activityName: "Descarga completada"
+    1375839088: {
+      name: 'Misión de análisis'
     },
-    3025411906: {
-      activityName: "El mata-arcontes"
+    1412142789: {
+      name: ''
     },
-    3027976182: {
-      activityName: "Hermanos Escudo"
+    1416597166: {
+      name: 'Oferta y demanda'
     },
-    3030879879: {
-      activityName: "El abominable ojo"
+    1428050875: {
+      name: 'Confidencial'
     },
-    3041179010: {
-      activityName: "Cerberus Vae III"
+    1451946951: {
+      name: 'Misión de salvamento'
     },
-    3044479892: {
-      activityName: "El Ladrón de Sombras"
+    1466550401: {
+      name: 'Peligroso a cualquier velocidad'
     },
-    3047788493: {
-      activityName: "Palacio de Polvo"
+    1490848577: {
+      name: 'Circuito'
     },
-    3047788494: {
-      activityName: "Cerberus Vae III"
+    1491022087: {
+      name: 'Asedio del Éxodo'
     },
-    3047788495: {
-      activityName: "La mente imperecedera"
+    1495993294: {
+      name: 'Lago de las sombras'
     },
-    3051527960: {
-      activityName: "La Celda sin Sol"
+    1498466193: {
+      name: 'Misión de salvamento'
     },
-    3053288711: {
-      activityName: "Jardines Colgantes"
+    1521232506: {
+      name: 'Confidencial'
     },
-    3056582947: {
-      activityName: "La marea creciente"
+    1525633702: {
+      name: 'Misión de salvamento'
     },
-    3070937708: {
-      activityName: "S.A.B.E.R. caído"
+    1536764325: {
+      name: 'Misión de reconocimiento'
     },
-    3077860924: {
-      activityName: "Guarida de los Demonios"
+    1557641249: {
+      name: 'Misión de salvamento'
     },
-    3077860927: {
-      activityName: "La voluntad de Crota"
+    1563393783: {
+      name: 'Colisión del Éxodo'
     },
-    3097191720: {
-      activityName: "El ladrón de sombras"
+    1568750156: {
+      name: 'La Villa'
     },
-    3098008841: {
-      activityName: "La voluntad de Crota"
+    1581219251: {
+      name: 'Misión de reconocimiento'
     },
-    3101475152: {
-      activityName: "Base de Artillería Delphi"
+    1614692057: {
+      name: 'Misión de salvamento'
     },
-    3101766066: {
-      activityName: "El abominable ojo"
+    1646219807: {
+      name: 'Hurto'
     },
-    3102291176: {
-      activityName: "La senda del primario"
+    1651979106: {
+      name: 'Prometeo posmoderno'
     },
-    3102295231: {
-      activityName: "Rescate"
+    1658347443: {
+      name: 'La bienvenida'
     },
-    3120201278: {
-      activityName: "Carrera de Invierno"
+    1685065161: {
+      name: 'Leviatán'
     },
-    3120351937: {
-      activityName: "El Estratega"
+    1685237649: {
+      name: 'Misión de asesinato'
     },
-    3120351938: {
-      activityName: "La Oscuridad interior"
+    1699948563: {
+      name: 'Leviatán'
     },
-    3120351939: {
-      activityName: "Restauración"
+    1720510574: {
+      name: 'La fortaleza'
     },
-    3120351941: {
-      activityName: "El asedio al Estratega"
+    1756055546: {
+      name: 'Misión de salvamento'
     },
-    3120351943: {
-      activityName: "La última antena"
+    1773400654: {
+      name: 'Invitación del emperador'
     },
-    3125074504: {
-      activityName: "Asalto heroico semanal"
+    1778450722: {
+      name: 'Misión de análisis'
     },
-    3125074505: {
-      activityName: "Asalto heroico semanal"
+    1786054751: {
+      name: 'Premeditación'
     },
-    3125074507: {
-      activityName: "Asalto heroico semanal"
+    1790343591: {
+      name: 'Fragmento del Viajero'
     },
-    3132533708: {
-      activityName: "Cáliz plagado"
+    1792985204: {
+      name: 'Ocaso: Colisión del Éxodo'
     },
-    3135856650: {
-      activityName: "Azote del Invierno"
+    1824067376: {
+      name: 'Furia en la carretera'
     },
-    3156370656: {
-      activityName: "Sector 618"
+    1829866365: {
+      name: 'Ensuciándote las manos'
     },
-    3162176634: {
-      activityName: "Cámara del Eco"
+    1863334927: {
+      name: 'Ocaso: Canción de Savathûn'
     },
-    3183184449: {
-      activityName: "Hermanos Escudo"
+    1875726950: {
+      name: 'Leviatán'
     },
-    3187607216: {
-      activityName: "La mente imperecedera"
+    1949546348: {
+      name: 'Misión de asesinato'
     },
-    3190434637: {
-      activityName: "El Acorazado"
+    1952521609: {
+      name: 'Fragmento del Viajero'
     },
-    3192378548: {
-      activityName: "La Oscuridad exterior"
+    1956541147: {
+      name: 'Llámalos a casa'
     },
-    3196929644: {
-      activityName: "El rapto de la abominación"
+    1969800443: {
+      name: 'Arecibo'
     },
-    3200293401: {
-      activityName: "El enemigo de mi enemigo..."
+    1971154629: {
+      name: 'Peligroso a cualquier velocidad'
     },
-    3207122440: {
-      activityName: "El Archivo"
+    1975064760: {
+      name: 'Ocaso: Canción de Savathûn'
     },
-    3209623958: {
-      activityName: "Asalto de Ocaso semanal"
+    1981289329: {
+      name: 'Asedio del Éxodo'
     },
-    3210106079: {
-      activityName: "Patrulla el Acorazado"
+    1984315274: {
+      name: 'Asaltos de la Vanguardia'
     },
-    3220294246: {
-      activityName: "Una brecha en la muralla"
+    1988701745: {
+      name: 'Venganza'
     },
-    3234259779: {
-      activityName: "Las Pruebas de Osiris"
+    2001433484: {
+      name: 'Misión de asesinato'
     },
-    3242509473: {
-      activityName: "La voluntad de Crota"
+    2025057095: {
+      name: 'Misión de combate'
     },
-    3252534714: {
-      activityName: "Dobles"
+    2033669713: {
+      name: 'Jabalina-4'
     },
-    3263216023: {
-      activityName: "Regicidio"
+    2052289205: {
+      name: 'Combustión'
     },
-    3277621970: {
-      activityName: "La Atalaya del Tiempo"
+    2079994698: {
+      name: 'Misión de reconocimiento'
     },
-    3277929848: {
-      activityName: "Hermanos Escudo"
+    2080275457: {
+      name: 'Traficante de armas'
     },
-    3292305209: {
-      activityName: "Carrera de Invierno"
+    2113712124: {
+      name: 'Sacrilegio'
     },
-    3292305210: {
-      activityName: "El Nexo"
+    2151274060: {
+      name: 'Misión de análisis'
     },
-    3292667877: {
-      activityName: "Asilo"
+    2174556965: {
+      name: 'Echando las culpas'
     },
-    3315158082: {
-      activityName: "Una chispa en la sombra"
+    2183066491: {
+      name: 'La Villa'
     },
-    3322717977: {
-      activityName: "Control Estandarte de Hierro"
+    2184866967: {
+      name: 'Misión de análisis'
     },
-    3335571405: {
-      activityName: "Supremacía"
+    2187073261: {
+      name: 'Misión de análisis'
     },
-    3343284688: {
-      activityName: "Señal emitida"
+    2231840083: {
+      name: 'Canto de sirena'
     },
-    3343503784: {
-      activityName: "Cáliz plagado"
+    2236648719: {
+      name: 'Eternidad'
     },
-    3345352981: {
-      activityName: "Ritual de sacrificio"
+    2243336789: {
+      name: 'Misión de combate'
     },
-    3346215145: {
-      activityName: "El Faro"
+    2250935166: {
+      name: 'Inmortal'
     },
-    3349918649: {
-      activityName: "El Acorazado"
+    2259811067: {
+      name: 'Fragmento del Viajero'
     },
-    3356249023: {
-      activityName: "La furia de las máquinas"
+    2264636552: {
+      name: 'Meditación: "Combustión"'
     },
-    3373044013: {
-      activityName: "Cáliz plagado"
+    2266954523: {
+      name: 'La Villa'
     },
-    3384143875: {
-      activityName: "Cáliz plagado"
+    2287222467: {
+      name: 'Misión de análisis'
     },
-    3392709953: {
-      activityName: "El rapto de la abominación"
+    2288260902: {
+      name: 'Misión de asesinato'
     },
-    3393673804: {
-      activityName: "El Presidio de los Ancianos"
+    2291549972: {
+      name: '¡Alterados!'
     },
-    3394418729: {
-      activityName: "Palacio de Polvo"
+    2297638408: {
+      name: 'Furia'
     },
-    3398049753: {
-      activityName: "La espira del Jardín"
+    2301390667: {
+      name: 'Misión de reconocimiento'
     },
-    3398752148: {
-      activityName: "Carrera de Invierno"
+    2318812547: {
+      name: 'El Piramidión'
     },
-    3399843400: {
-      activityName: "La llamada de una desconocida"
+    2336998357: {
+      name: 'A largo plazo'
     },
-    3399843403: {
-      activityName: "Colectivo de Ishtar"
+    2379494367: {
+      name: 'Misión de análisis'
     },
-    3399843404: {
-      activityName: "El Archivo"
+    2420240009: {
+      name: 'Misión de salvamento'
     },
-    3399843406: {
-      activityName: "El ojo de un celador"
+    2445164291: {
+      name: 'Misión de asesinato'
     },
-    3399843407: {
-      activityName: "Azote del Invierno"
+    2449714930: {
+      name: 'Leviatán'
     },
-    3403438134: {
-      activityName: "Cámara del Eco"
+    2464834848: {
+      name: 'Centro'
     },
-    3406669964: {
-      activityName: "Sepiks Perfeccionado"
+    2468202005: {
+      name: 'Fragmento del Viajero'
     },
-    3412406993: {
-      activityName: "Catedral del Anochecer"
+    2478782573: {
+      name: ''
     },
-    3415949693: {
-      activityName: "El Nexo"
+    2517540332: {
+      name: 'No hay distancia segura'
     },
-    3422670336: {
-      activityName: "Guarida de los Demonios"
+    2519458964: {
+      name: 'Valle infinito'
     },
-    3422670339: {
-      activityName: "La voluntad de Crota"
+    2519564410: {
+      name: 'Misión de asesinato'
     },
-    3422924470: {
-      activityName: "Aquelarre plagado"
+    2536491635: {
+      name: 'Misión de reconocimiento'
     },
-    3427115544: {
-      activityName: "S.A.B.E.R. caído"
+    2558926634: {
+      name: 'Misión de reconocimiento'
     },
-    3428378490: {
-      activityName: "Enfrentamiento Caos"
+    2559514952: {
+      name: 'Utopía'
     },
-    3434275681: {
-      activityName: "Cámara de la Noche"
+    2561308143: {
+      name: 'Misión de reconocimiento'
     },
-    3464398659: {
-      activityName: "Santuario de Oryx"
+    2573702057: {
+      name: 'Misión de salvamento'
     },
-    3473815980: {
-      activityName: "El Puño de Crota"
+    2574607799: {
+      name: 'Malos vecinos'
     },
-    3476387771: {
-      activityName: "Guerra de los poseídos heroica"
+    2575990417: {
+      name: 'Misión de combate'
     },
-    3492173922: {
-      activityName: "Puesto de Vesta"
+    2580713007: {
+      name: 'Misión de reconocimiento'
     },
-    3493774909: {
-      activityName: "El Rey de los Poseídos: Preludio"
+    2588220738: {
+      name: 'Misión de reconocimiento'
     },
-    3508129769: {
-      activityName: "Culto del gusano"
+    2610112492: {
+      name: 'Misión de análisis'
     },
-    3508129770: {
-      activityName: "Culto del gusano"
+    2619236227: {
+      name: 'Misión de análisis'
     },
-    3509128672: {
-      activityName: "Templo de Hierro"
+    2629975203: {
+      name: 'Misión de combate'
     },
-    3527709396: {
-      activityName: "Escaramuza"
+    2629998776: {
+      name: 'Misión de salvamento'
     },
-    3534581229: {
-      activityName: "Caída del Rey"
+    2642769170: {
+      name: 'Seis'
     },
-    3543525727: {
-      activityName: "Rescate de la Reina"
+    2651851341: {
+      name: 'Misión de análisis'
     },
-    3549856929: {
-      activityName: "El asedio al Estratega"
+    2665134323: {
+      name: 'Liberación'
     },
-    3555113730: {
-      activityName: "El abominable ojo"
+    2667533713: {
+      name: 'Vostok'
     },
-    3565777280: {
-      activityName: "Toc, toc"
+    2684479494: {
+      name: 'Misión de salvamento'
     },
-    3568014988: {
-      activityName: "Regicidio"
+    2693136600: {
+      name: 'Leviatán'
     },
-    3573972337: {
-      activityName: "El Nexo"
+    2693136601: {
+      name: 'Leviatán'
     },
-    3575520714: {
-      activityName: "Hermanos Escudo"
+    2693136602: {
+      name: 'Leviatán'
     },
-    3575840788: {
-      activityName: "Ardid de Lobos"
+    2693136603: {
+      name: 'Leviatán'
     },
-    3582451805: {
-      activityName: "El ladrón de sombras"
+    2693136604: {
+      name: 'Leviatán'
     },
-    3582577776: {
-      activityName: "Los Colmillos Silenciosos"
+    2693136605: {
+      name: 'Leviatán'
     },
-    3593950004: {
-      activityName: "Créditos de Destiny"
+    2702476101: {
+      name: 'Torre'
     },
-    3602734434: {
-      activityName: "Estandarte Caído"
+    2708828207: {
+      name: 'Utopía'
     },
-    3609927430: {
-      activityName: "Supremacía infernal"
+    2737739053: {
+      name: 'Conversación profunda'
     },
-    3612436612: {
-      activityName: "La guerra que se avecina"
+    2759086913: {
+      name: 'Confidencial'
     },
-    3619606113: {
-      activityName: "Enfrentamiento Caos"
+    2768347363: {
+      name: 'Misión de asesinato'
     },
-    3621292155: {
-      activityName: "Rescate"
+    2773222353: {
+      name: 'Misión de análisis'
     },
-    3635588435: {
-      activityName: "El Orador"
+    2776929937: {
+      name: 'Diagnóstico diferencial'
     },
-    3645675142: {
-      activityName: "Control"
+    2782300570: {
+      name: 'Misión de salvamento'
     },
-    3645919501: {
-      activityName: "Patrulla el Cosmódromo"
+    2784803584: {
+      name: 'Misión de combate'
     },
-    3650545911: {
-      activityName: "Ardid de Lobos"
+    2798856614: {
+      name: 'Misión de reconocimiento'
     },
-    3670262295: {
-      activityName: "Las Pruebas de Osiris"
+    2846775197: {
+      name: 'Misión de combate'
     },
-    3670861271: {
-      activityName: "El enemigo de mi enemigo..."
+    2908287325: {
+      name: 'Misión de reconocimiento'
     },
-    3670968271: {
-      activityName: "La voluntad de Crota"
+    2926767881: {
+      name: 'Venganza'
     },
-    3671763238: {
-      activityName: "Cerberus Vae III"
+    2949941834: {
+      name: 'Invitados inesperados'
     },
-    3674885127: {
-      activityName: "Regicidio"
+    2969403085: {
+      name: 'Misión de reconocimiento'
     },
-    3676594097: {
-      activityName: "Carrera de Invierno"
+    3002511278: {
+      name: 'Alianza oscura'
     },
-    3691405620: {
-      activityName: "Ocaso de Vanguardia"
+    3026637018: {
+      name: 'Misión de reconocimiento'
     },
-    3700036317: {
-      activityName: "Oryx triunfante"
+    3038694763: {
+      name: 'Misión de asesinato'
     },
-    3705341715: {
-      activityName: "Un guardés hallado"
+    3049122128: {
+      name: 'Misión de análisis'
     },
-    3708806801: {
-      activityName: "Pináculo de entropía"
+    3050465729: {
+      name: 'Ocaso: La Espira Invertida'
     },
-    3711414560: {
-      activityName: "Cámara de la Noche"
+    3062197616: {
+      name: 'Competitivo'
     },
-    3711414561: {
-      activityName: "La Espada de Crota"
+    3105090879: {
+      name: 'Adiós'
     },
-    3711414562: {
-      activityName: "La resurrección"
+    3140524926: {
+      name: 'Indestructible'
     },
-    3711414563: {
-      activityName: "Santuario de Oryx"
+    3143798436: {
+      name: 'Zona Muerta Europea'
     },
-    3711414564: {
-      activityName: "La Oscuridad exterior"
+    3147707814: {
+      name: 'Resaca'
     },
-    3711414566: {
-      activityName: "La Tumba del Mundo"
+    3148431353: {
+      name: 'Ensuciándote las manos'
     },
-    3715085142: {
-      activityName: "Llamada de sombra"
+    3150153711: {
+      name: 'Oportunidades y elecciones'
     },
-    3731091063: {
-      activityName: "Asalto de Ocaso semanal"
+    3172367001: {
+      name: 'Fragmento del Viajero'
     },
-    3741914742: {
-      activityName: "Carrera de Invierno"
+    3173130826: {
+      name: 'Misión de combate'
     },
-    3743955707: {
-      activityName: "La Torre"
+    3208779612: {
+      name: 'Misión de salvamento'
     },
-    3750289192: {
-      activityName: "El Puño de Crota"
+    3211303924: {
+      name: 'Misión de salvamento'
     },
-    3778091466: {
-      activityName: "Descarga completada"
+    3211568383: {
+      name: 'Canto de sirena'
     },
-    3784570118: {
-      activityName: "El Archivo"
+    3231065327: {
+      name: 'Misión de análisis'
     },
-    3799336128: {
-      activityName: "La voluntad de Crota"
+    3243161126: {
+      name: 'Juego rápido'
     },
-    3817155567: {
-      activityName: "Grieta del Crepúsculo"
+    3268684190: {
+      name: 'Misión de salvamento'
     },
-    3837170670: {
-      activityName: "La Tumba del Mundo"
+    3272002712: {
+      name: 'Esperanza'
     },
-    3842976518: {
-      activityName: "La Celda sin Sol"
+    3277510674: {
+      name: 'Inmortal'
     },
-    3848655103: {
-      activityName: "Escudo Negro"
+    3283790633: {
+      name: 'Echando las culpas'
     },
-    3856562046: {
-      activityName: "Perder la Luz"
+    3289681664: {
+      name: 'Tripulación perdida'
     },
-    3856604751: {
-      activityName: "Amanecer"
+    3298775062: {
+      name: 'Misión de reconocimiento'
     },
-    3860793576: {
-      activityName: "Sepiks Perfeccionado"
+    3303685562: {
+      name: 'Misión de salvamento'
     },
-    3878867172: {
-      activityName: "Control de zonas"
+    3304835347: {
+      name: 'Llámalos a casa'
     },
-    3896699662: {
-      activityName: "Carrera de Invierno"
+    3336275007: {
+      name: 'Meditación: "Seis"'
     },
-    3910288239: {
-      activityName: "Grieta Estandarte de Hierro"
+    3337731612: {
+      name: 'Misión de combate'
     },
-    3918359338: {
-      activityName: "Ícaro"
+    3346345105: {
+      name: 'Tratamiento experimental'
     },
-    3920061741: {
-      activityName: "Santuario de Oryx"
+    3359466010: {
+      name: 'Chispa'
     },
-    3921931055: {
-      activityName: "La voluntad de Crota"
+    3368226533: {
+      name: 'Ocaso: La Espira Invertida'
     },
-    3936153046: {
-      activityName: "Infernal 3c3"
+    3379039897: {
+      name: 'Misión de salvamento'
     },
-    3941998864: {
-      activityName: "Cerberus Vae III"
+    3410530777: {
+      name: 'Acción calculada'
     },
-    3945328236: {
-      activityName: "Templo de Hierro"
+    3417504239: {
+      name: 'Resaca'
     },
-    3948474766: {
-      activityName: "La Espada de Crota"
+    3446541099: {
+      name: 'Leviatán'
     },
-    3974631085: {
-      activityName: "El enemigo de mi enemigo..."
+    3479544154: {
+      name: 'Misión de combate'
     },
-    3978884648: {
-      activityName: "Caída del Rey"
+    3481058226: {
+      name: 'Misión de reconocimiento'
     },
-    4000873610: {
-      activityName: "El fin de Crota"
+    3485876484: {
+      name: 'Furia en la carretera'
     },
-    4027720491: {
-      activityName: "Hermanos Escudo"
+    3487576414: {
+      name: 'Misión de reconocimiento'
     },
-    4038697181: {
-      activityName: "Cámara de Cristal"
+    3489692681: {
+      name: 'Misión de reconocimiento'
     },
-    4046346128: {
-      activityName: "El abrazo del miedo"
+    3500791146: {
+      name: 'Suspenso'
     },
-    4055903037: {
-      activityName: "Grieta"
+    3515770727: {
+      name: 'Misión de análisis'
     },
-    4060895971: {
-      activityName: "La Torre"
+    3580793473: {
+      name: 'Meditación: "1UA"'
     },
-    4079642013: {
-      activityName: "Legión rota"
+    3612741503: {
+      name: 'Misión de reconocimiento'
     },
-    4079642014: {
-      activityName: "Legión rota"
+    3627094182: {
+      name: 'Misión de combate'
     },
-    4087776066: {
-      activityName: "Alijo de Cayde"
+    3631476566: {
+      name: 'La Villa'
     },
-    4099604100: {
-      activityName: "La voluntad de Crota"
+    3645117987: {
+      name: 'Malos vecinos'
     },
-    4101329072: {
-      activityName: "El abominable ojo"
+    3652531274: {
+      name: 'Fragmento del Viajero'
     },
-    4105918304: {
-      activityName: "Última Parada"
+    3662124488: {
+      name: 'Misión de reconocimiento'
     },
-    4107311671: {
-      activityName: "Tierras Oxidadas"
+    3664915501: {
+      name: 'Legión Roja, aceite oscuro'
     },
-    4129878327: {
-      activityName: "Rescate infernal"
+    3669054326: {
+      name: 'Misión de salvamento'
     },
-    4131978369: {
-      activityName: "El rapto de la abominación"
+    3688464794: {
+      name: 'La importancia de las redes'
     },
-    4141063459: {
-      activityName: "El ladrón de sombras"
+    3700722865: {
+      name: 'Liberación'
     },
-    4153423016: {
-      activityName: "Desafío de los Ancianos"
+    3702064261: {
+      name: 'Confiscación de datos'
     },
-    4163254808: {
-      activityName: "Riberas del Tiempo"
+    3738159218: {
+      name: 'Irrompible'
     },
-    4168247421: {
-      activityName: "Enfrentamiento Estandarte de Hierro"
+    3752039537: {
+      name: 'Revirtiendo la polaridad'
     },
-    4171584130: {
-      activityName: "Infernal 6c6"
+    3780356141: {
+      name: 'Para y sigue'
     },
-    4175179544: {
-      activityName: "Asalto heroico semanal"
+    3792746061: {
+      name: 'Misión de combate'
     },
-    4175179545: {
-      activityName: "Asalto heroico semanal"
+    3799743268: {
+      name: 'Confidencial'
     },
-    4175179546: {
-      activityName: "Asalto heroico semanal"
+    3806583577: {
+      name: 'Misión de asesinato'
     },
-    4178645458: {
-      activityName: "La Ciudad Sepultada"
+    3834639884: {
+      name: 'Misión de análisis'
     },
-    4181273223: {
-      activityName: "S.A.B.E.R. caído"
+    3836086286: {
+      name: 'Invitados inesperados'
     },
-    4183157062: {
-      activityName: "Últimos ritos"
+    3839751954: {
+      name: 'Altar de fuego'
     },
-    4187524452: {
-      activityName: "La mente imperecedera"
+    3872525353: {
+      name: 'Para y sigue'
     },
-    4196724507: {
-      activityName: "Disputa infernal"
+    3879860661: {
+      name: 'Leviatán'
     },
-    4200263342: {
-      activityName: "Bastión"
+    3903562779: {
+      name: 'Torre'
     },
-    4203094490: {
-      activityName: "Templo de Hierro"
+    3916343513: {
+      name: 'Leviatán'
     },
-    4215168114: {
-      activityName: "La voluntad de Crota"
+    3920643231: {
+      name: 'Ocaso: Traficante de armas'
     },
-    4217181091: {
-      activityName: "Escaramuza"
+    3958400416: {
+      name: 'Misión de reconocimiento'
     },
-    4222208550: {
-      activityName: "Carreras de Colibríes"
+    3966792859: {
+      name: 'Nessus, Centauro Inestable'
     },
-    4227723344: {
-      activityName: "Guarida de los Demonios"
+    3978357488: {
+      name: 'Misión de salvamento'
     },
-    4227723347: {
-      activityName: "La voluntad de Crota"
+    3982474534: {
+      name: 'Venganza'
     },
-    4239017990: {
-      activityName: "Una llave espera"
+    4034557395: {
+      name: 'La bienvenida'
     },
-    4240750267: {
-      activityName: "El código de Prometeo"
+    4039317196: {
+      name: 'Leviatán'
     },
-    4242282035: {
-      activityName: "Control"
+    4043714237: {
+      name: 'Misión de reconocimiento'
     },
-    4252752792: {
-      activityName: "Palacio de Polvo"
+    4047570705: {
+      name: 'Misión de combate'
     },
-    4253541885: {
-      activityName: "Carrera de Invierno"
+    4050886070: {
+      name: 'Misión de reconocimiento'
     },
-    4254149014: {
-      activityName: "El Ladrón de Sombras"
+    4054968718: {
+      name: 'Ocaso: La Espira Invertida'
     },
-    4260139097: {
-      activityName: "Panteón"
+    4095207117: {
+      name: 'Misión de salvamento'
     },
-    4272344899: {
-      activityName: "El Archivo"
+    4103844069: {
+      name: 'Misión de asesinato'
     },
-    4277539497: {
-      activityName: "Enfrentamiento Estandarte de Hierro"
+    4159221189: {
+      name: 'Ío'
     },
-    4287936726: {
-      activityName: "Exodus Blue"
+    4166562681: {
+      name: 'Titán'
+    },
+    4174103238: {
+      name: 'Misión de salvamento'
+    },
+    4209774794: {
+      name: 'Misión de salvamento'
+    },
+    4216926874: {
+      name: 'Misión de salvamento'
+    },
+    4231544111: {
+      name: 'Misión de reconocimiento'
+    },
+    4239233351: {
+      name: 'Meditación: "Chispa"'
+    },
+    4254776501: {
+      name: 'Misión de salvamento'
+    },
+    4283649349: {
+      name: 'Misión de asesinato'
+    },
+    4291922223: {
+      name: 'Esperanza'
     },
   },
   fr: {
-    8055542: {
-      activityName: "La chute du Mur"
+    19982784: {
+      name: 'Mission de combat'
     },
-    9885984: {
-      activityName: "La Caverne de la nuit"
+    30240416: {
+      name: 'Mission d\'assassinat'
     },
-    10551956: {
-      activityName: "Combat au sommet"
+    37050217: {
+      name: 'Mission de relevé'
     },
-    18715720: {
-      activityName: "Combat au sommet"
+    51408141: {
+      name: 'Mission de récupération'
     },
-    24471896: {
-      activityName: "Mars et Vénus"
+    53954174: {
+      name: 'Anti-antiaérien'
     },
-    24471899: {
-      activityName: "Terre et Lune"
+    57103244: {
+      name: 'Mission de relevé'
     },
-    28695277: {
-      activityName: "L'Épée de Cropta"
+    60002467: {
+      name: 'Sacrilège'
     },
-    34205302: {
-      activityName: "Le Nexus"
+    78673128: {
+      name: 'Voleur de voleurs'
     },
-    34327100: {
-      activityName: "S.A.B.R.E. déchu"
+    80726883: {
+      name: 'Ô Capitaine'
     },
-    51311972: {
-      activityName: "L'Esprit éternel"
+    82913930: {
     },
-    51311973: {
-      activityName: "Cerberus Vae III"
+    89727599: {
+      name: 'Léviathan'
     },
-    51311974: {
-      activityName: "Le Palais délabré"
+    104342360: {
+      name: 'Mission de combat'
     },
-    64371922: {
-      activityName: "Carnage – Suprématie"
+    116352029: {
+      name: 'Mission de combat'
     },
-    86749741: {
-      activityName: "Bannière de Fer – Domination"
+    122988657: {
+      name: 'Légion rouge, huile noire'
     },
-    91984044: {
-      activityName: "L'avènement d'un Kall"
+    143647473: {
+      name: 'Mission de récupération'
     },
-    95021281: {
-      activityName: "Aveugles à la Lumière"
+    145302664: {
+      name: 'Nuit noire : Le Trafiquant d\'armes'
     },
-    96237246: {
-      activityName: "Classique – 6c6"
+    153537894: {
+      name: 'Une nouvelle frontière'
     },
-    98710471: {
-      activityName: "Carnage"
+    160721490: {
+      name: 'Confidentiel'
     },
-    103493304: {
-      activityName: "Combat au sommet"
+    175598161: {
+      name: 'Mission de récupération'
     },
-    116560380: {
-      activityName: "Le Voleur obscur"
+    189324537: {
+      name: 'Mission de récupération'
     },
-    116811400: {
-      activityName: "Le Voleur obscur"
+    197670945: {
+      name: 'Mission d\'assassinat'
     },
-    123652644: {
-      activityName: "La Chambre de l'Écho"
+    204298081: {
+      name: 'Mission d\'analyse'
     },
-    123999179: {
-      activityName: "Ombres de la Trouée"
+    248066530: {
+      name: 'Mission de récupération'
     },
-    130631058: {
-      activityName: "Classique – 3c3"
+    255819671: {
+      name: 'Fureur'
     },
-    134979141: {
-      activityName: "Le dernier relais"
+    261349035: {
+      name: 'Mission de récupération'
     },
-    149381097: {
-      activityName: "Explorez la Lune"
+    286324446: {
+      name: 'Mission de récupération'
     },
-    151357230: {
-      activityName: "Le Voleur obscur"
+    287649202: {
+      name: 'Léviathan'
     },
-    154683944: {
-      activityName: "Un sommet d'entropie"
+    293858112: {
+      name: 'Mission de combat'
     },
-    157336261: {
-      activityName: "Infernal – Suprématie"
+    298747401: {
+      name: 'Mission de relevé'
     },
-    157390236: {
-      activityName: "Le Palais délabré"
+    298793060: {
+      name: 'Mission de récupération'
     },
-    157980450: {
-      activityName: "Le Tombeau de Fer"
+    313572698: {
+      name: 'Fragment du Voyageur'
     },
-    165850035: {
-      activityName: "L'Esprit éternel"
+    320680002: {
+      name: 'Offre et demande'
     },
-    167419252: {
-      activityName: "Patrouille au Cosmodrome"
+    330545737: {
+      name: 'Le Domaine'
     },
-    184503944: {
-      activityName: "L'Esprit éternel"
+    338662534: {
+      name: 'La Flèche inversée'
     },
-    184503945: {
-      activityName: "Cerberus Vae III"
+    355984230: {
+      name: 'Mission d\'assassinat'
     },
-    184503946: {
-      activityName: "Le Palais délabré"
+    359488722: {
+      name: 'Piratage de planète'
     },
-    194283519: {
-      activityName: "Le Palais délabré"
+    374818561: {
+      name: 'Répit de l\'Empereur'
     },
-    202167389: {
-      activityName: "Le Palais délabré"
+    379330092: {
+      name: 'Fragment du Voyageur'
     },
-    209343718: {
-      activityName: "L'Enclos de l'Hiver"
+    387171436: {
+      name: 'Mission de récupération'
     },
-    211678003: {
-      activityName: "Bannière de Fer – Faille"
+    388289443: {
+      name: 'Mission de relevé'
     },
-    212088538: {
-      activityName: "Les Fosses de l'invocation"
+    415388387: {
+      name: 'Mission de relevé'
     },
-    218006092: {
-      activityName: "La Contrée infestée"
+    417231112: {
+      name: 'Léviathan'
     },
-    242777083: {
-      activityName: "Le Nexus"
+    429361491: {
+      name: 'Mission de récupération'
     },
-    252347595: {
-      activityName: "Bricolage au Hangar"
+    435989417: {
+      name: 'Mission d\'analyse'
     },
-    259879232: {
-      activityName: "S.A.B.R.E. déchu"
+    444087412: {
+      name: 'Mission de combat'
     },
-    260615043: {
-      activityName: "Carnage"
+    445417088: {
     },
-    260765522: {
-      activityName: "Fureur mécanique"
+    459955094: {
+      name: 'Mission d\'analyse'
     },
-    269981320: {
-      activityName: "Le code prométhéen"
+    461203479: {
+      name: 'Mission de relevé'
     },
-    278763462: {
-      activityName: "Le Palais délabré"
+    464789944: {
+      name: 'Élus'
     },
-    279121234: {
-      activityName: "Combat au sommet"
+    474380713: {
+      name: 'Mission de récupération'
     },
-    284635225: {
-      activityName: "Le Temple incandescent"
+    539897061: {
+      name: 'Inversion de polarité'
     },
-    287505866: {
-      activityName: "S.A.B.R.E. déchu"
+    545240418: {
+      name: 'Mission de relevé'
     },
-    291350530: {
-      activityName: "Assaut « Nuit noire » de la semaine"
+    549123191: {
+      name: 'Mission de relevé'
     },
-    300506688: {
-      activityName: "Assaut « Nuit noire » de la semaine"
+    553537971: {
+      name: 'Élus'
     },
-    308091852: {
-      activityName: "Assaut « Épique » de la semaine"
+    564863404: {
     },
-    308091854: {
-      activityName: "Assaut « Épique » de la semaine"
+    581323290: {
+      name: 'Mission de relevé'
     },
-    308091855: {
-      activityName: "Assaut « Épique » de la semaine"
+    585071442: {
+      name: 'Nuit noire : Chant de Savathûn'
     },
-    324283916: {
-      activityName: "Marée montante"
+    601540706: {
+      name: 'Nuit noire : Le Trafiquant d\'armes'
     },
-    331520418: {
-      activityName: "L'Esprit éternel"
+    622895925: {
+      name: 'Arecibo'
     },
-    342909762: {
-      activityName: "Les Frères au bouclier"
+    632790902: {
+      name: 'Suspense'
     },
-    351460287: {
-      activityName: "La Geôle ténébreuse"
+    642256373: {
+      name: 'Nuit noire : Crash de l\'Exode'
     },
-    351673577: {
-      activityName: "Classique – Chacun pour soi"
+    642277473: {
+      name: 'Nuit noire : Le Pyramidion'
     },
-    355200465: {
-      activityName: "Les Frères au bouclier"
+    652598202: {
+      name: 'Ravin de la Légion'
     },
-    355605844: {
-      activityName: "Patrouille dans la Contrée infestée"
+    667604912: {
+      name: 'Méditation : « Boucle »'
     },
-    360962374: {
-      activityName: "Le Voleur obscur"
+    671904429: {
+      name: 'Mission de récupération'
     },
-    386157877: {
-      activityName: "Les Frères au bouclier"
+    703311712: {
+      name: 'Fragment du Voyageur'
     },
-    389785553: {
-      activityName: "Les Champions des Ténèbres"
+    715306877: {
+      name: 'Mission de combat'
     },
-    403726672: {
-      activityName: "Assaut « Épique » de la semaine"
+    719906507: {
+      name: 'Confidentiel'
     },
-    403726674: {
-      activityName: "Assaut « Épique » de la semaine"
+    743100125: {
+      name: 'Mission de récupération'
     },
-    403726675: {
-      activityName: "Assaut « Épique » de la semaine"
+    750649238: {
+      name: 'Mission de récupération'
     },
-    406972773: {
-      activityName: "L'abomination détournée"
+    757116822: {
+      name: 'Léviathan'
     },
-    410347507: {
-      activityName: "Le Voleur obscur"
+    760130722: {
+      name: 'Les Falaises du trépas'
     },
-    425614025: {
-      activityName: "Les Seigneurs de Fer"
+    782175145: {
+      name: 'Mission d\'assassinat'
     },
-    428290721: {
-      activityName: "Explorez Mars"
+    782290869: {
+      name: 'Mission de relevé'
     },
-    430160982: {
-      activityName: "Fureur mécanique"
+    789332628: {
+      name: 'Voleur de voleurs'
     },
-    430914016: {
-      activityName: "Le Tombeau de Fer"
+    798143184: {
+      name: 'Mission de combat'
     },
-    431759746: {
-      activityName: "Défense"
+    808931822: {
+      name: 'Prométhée post-moderne'
     },
-    443057682: {
-      activityName: "L'Effondrement cosmique"
+    837763871: {
+      name: 'Mission de récupération'
     },
-    443707023: {
-      activityName: "La Maison au pouvoir"
+    849242583: {
+      name: 'Mission d\'analyse'
     },
-    455063520: {
-      activityName: "L'Éveil"
+    880665770: {
+      name: 'Mission de relevé'
     },
-    468325937: {
-      activityName: "Armes combinées"
+    919252154: {
+      name: 'L\'alliance obscure'
     },
-    469270447: {
-      activityName: "Mémento"
+    926012363: {
+      name: 'Mission d\'assassinat'
     },
-    474428712: {
-      activityName: "L'ennemi de mon ennemi"
+    926940962: {
+      name: 'Nuit noire : Le Pyramidion'
     },
-    482017096: {
-      activityName: "Sepiks Parfait"
+    938512773: {
+      name: 'Indestructible'
     },
-    492319725: {
-      activityName: "Pagaille – Carnage"
+    940394831: {
+      name: 'QUÊTE : Crash de l\'Exode'
     },
-    493857039: {
-      activityName: "Assaut « Nuit noire » de la semaine"
+    955852466: {
+      name: '1 UA'
     },
-    496237130: {
-      activityName: "Course de Passereaux"
+    963938931: {
+      name: 'Grande conversation'
     },
-    504512661: {
-      activityName: "Avant-poste de Vesta"
+    964196803: {
+      name: 'Mission de récupération'
     },
-    509411569: {
-      activityName: "Hostilités"
+    969385987: {
+      name: 'En allumant les ténèbres'
     },
-    547981568: {
-      activityName: "Bannière de Fer – Suprématie"
+    993152361: {
+      name: 'Mission de récupération'
     },
-    550186563: {
-      activityName: "L'avènement d'un Kall"
+    1019362992: {
+      name: 'Méditation : « De retour »'
     },
-    572368820: {
-      activityName: "Assaut « Nuit noire » de la semaine"
+    1035135049: {
+      name: 'Le Pyramidion'
     },
-    573077648: {
-      activityName: "S.A.B.R.E. déchu"
+    1038710420: {
+      name: 'Mission d\'assassinat'
     },
-    574483028: {
-      activityName: "La Ville ensablée"
+    1053141615: {
+      name: 'Mission d\'assassinat'
     },
-    575304694: {
-      activityName: "Un nouveau repaire"
+    1063969232: {
+      name: 'Une invitation de l\'Empereur'
     },
-    575376446: {
-      activityName: "La Chambre de l'Écho"
+    1075152813: {
+      name: 'Zone morte européenne'
     },
-    579700969: {
-      activityName: "La cachette de Cayde"
+    1076851943: {
+      name: 'Mission d\'assassinat'
     },
-    579949585: {
-      activityName: "Les Crocs silencieux"
+    1085523978: {
+      name: 'Mission de relevé'
     },
-    581858107: {
-      activityName: "L'Avènement"
+    1090267699: {
+      name: 'Mission d\'assassinat'
     },
-    603968817: {
-      activityName: "Cerberus Vae III"
+    1101792305: {
+      name: 'Chant de Savathûn'
     },
-    604017503: {
-      activityName: "Prison des vétérans : Corrompus"
+    1102824603: {
+      name: 'Mission d\'assassinat'
     },
-    614791010: {
-      activityName: "Suprématie"
+    1105211124: {
+      name: 'Mission d\'analyse'
     },
-    632771975: {
-      activityName: "Prétendant au trône"
+    1107208644: {
+      name: 'Piratage de planète'
     },
-    637046772: {
-      activityName: "Le Repaire des voleurs"
+    1129066976: {
+      name: 'Nuit noire : Le Pyramidion'
     },
-    645920838: {
-      activityName: "La Chambre de l'Écho"
+    1159314159: {
+      name: 'Mauvaise réception'
     },
-    653380797: {
-      activityName: "L'Enclos de l'Hiver"
+    1164772243: {
+      name: 'Mission de récupération'
     },
-    653380798: {
-      activityName: "Le Nexus"
+    1206154103: {
+      name: 'Mission d\'assassinat'
     },
-    696672649: {
-      activityName: "undefined"
+    1207505828: {
+      name: 'QUÊTE : Le Trafiquant d\'armes'
     },
-    702170822: {
-      activityName: "Les Fosses de l'invocation"
+    1225970098: {
+      name: 'Équipage perdu'
     },
-    706472064: {
-      activityName: "Assaut « Épique » de la semaine"
+    1228327586: {
+      name: 'Anti-antiaérien'
     },
-    706472065: {
-      activityName: "Assaut « Épique » de la semaine"
+    1243390694: {
+      name: 'Larcin'
     },
-    706472066: {
-      activityName: "Assaut « Épique » de la semaine"
+    1249965655: {
+      name: 'Mission d\'analyse'
     },
-    711826167: {
-      activityName: "Infernal – Choc"
+    1250426564: {
+      name: 'Mission d\'assassinat'
     },
-    719193800: {
-      activityName: "L'Enclos de l'Hiver"
+    1254990192: {
+      name: 'Pas de distance de sécurité'
     },
-    719193803: {
-      activityName: "Le Nexus"
+    1265390366: {
+      name: 'Mauvaise réception'
     },
-    746864299: {
-      activityName: "Infernal – En tandem"
+    1289867188: {
+      name: 'Incassable'
     },
-    757275024: {
-      activityName: "S.A.B.R.E. déchu"
+    1290744998: {
+      name: 'Le Domaine'
     },
-    764916411: {
-      activityName: "La Ville ensablée"
+    1309646866: {
+      name: 'Le Domaine'
     },
-    782611196: {
-      activityName: "Infernal – Escarmouche"
+    1331268141: {
+      name: 'Mission de relevé'
     },
-    820688209: {
-      activityName: "Sepiks Parfait"
+    1357019430: {
+      name: 'Nuit noire : Crash de l\'Exode'
     },
-    826836846: {
-      activityName: "Mauvais œil"
+    1375839088: {
+      name: 'Mission d\'analyse'
     },
-    832576952: {
-      activityName: "S.A.B.R.E. déchu"
+    1412142789: {
+      name: ''
     },
-    833873053: {
-      activityName: "L'Esprit éternel"
+    1416597166: {
+      name: 'Offre et demande'
     },
-    836641517: {
-      activityName: "L'Œil du Maître des clés"
+    1428050875: {
+      name: 'Confidentiel'
     },
-    853468393: {
-      activityName: "Le Collectif d'Ishtar"
+    1451946951: {
+      name: 'Mission de récupération'
     },
-    853774317: {
-      activityName: "La guerre à venir"
+    1466550401: {
+      name: 'Dangereux quelque soit la vitesse'
     },
-    854130400: {
-      activityName: "Le Siège de l'Esprit tutélaire"
+    1490848577: {
+      name: 'En boucle'
     },
-    856898338: {
-      activityName: "Le Caveau de verre"
+    1491022087: {
+      name: 'Siège de l\'Exode'
     },
-    860566204: {
-      activityName: "Le Phare"
+    1495993294: {
+      name: 'Lac de Ténèbres'
     },
-    870614351: {
-      activityName: "Épiques contre l'ARIA"
+    1498466193: {
+      name: 'Mission de récupération'
     },
-    888190220: {
-      activityName: "Infernal – Carnage"
+    1521232506: {
+      name: 'Confidentiel'
     },
-    892266083: {
-      activityName: "La Tour"
+    1525633702: {
+      name: 'Mission de récupération'
     },
-    902875868: {
-      activityName: "La Flèche du Jardin"
+    1536764325: {
+      name: 'Mission de relevé'
     },
-    906989597: {
-      activityName: "Les Fosses de l'invocation"
+    1557641249: {
+      name: 'Mission de récupération'
     },
-    932731386: {
-      activityName: "La cachette de Cayde"
+    1563393783: {
+      name: 'Crash de l\'Exode'
     },
-    940573734: {
-      activityName: "Les Ténèbres intérieures"
+    1568750156: {
+      name: 'Le Domaine'
     },
-    944638962: {
-      activityName: "L'Œil du Maître des clés"
+    1581219251: {
+      name: 'Mission de relevé'
     },
-    981644933: {
-      activityName: "L'union par le feu"
+    1614692057: {
+      name: 'Mission de récupération'
     },
-    982298740: {
-      activityName: "Le Tombeau-Monde"
+    1646219807: {
+      name: 'Larcin'
     },
-    984759429: {
-      activityName: "L'abomination détournée"
+    1651979106: {
+      name: 'Prométhée post-moderne'
     },
-    985012235: {
-      activityName: "Un nouveau repaire"
+    1658347443: {
+      name: 'De retour'
     },
-    989535795: {
-      activityName: "Infernal – Contrôle de zone"
+    1685065161: {
+      name: 'Léviathan'
     },
-    994743956: {
-      activityName: "L'Esprit éternel"
+    1685237649: {
+      name: 'Mission d\'assassinat'
     },
-    994743957: {
-      activityName: "Cerberus Vae III"
+    1699948563: {
+      name: 'Léviathan'
     },
-    994743958: {
-      activityName: "Le Palais délabré"
+    1720510574: {
+      name: 'La Forteresse'
     },
-    1005705920: {
-      activityName: "Le premier pare-feu"
+    1756055546: {
+      name: 'Mission de récupération'
     },
-    1016116686: {
-      activityName: "L'Esprit éternel"
+    1773400654: {
+      name: 'Une invitation de l\'Empereur'
     },
-    1016659723: {
-      activityName: "La Chute du roi"
+    1778450722: {
+      name: 'Mission d\'analyse'
     },
-    1017714251: {
-      activityName: "Ultimes rites"
+    1786054751: {
+      name: 'Préméditation'
     },
-    1019616175: {
-      activityName: "Infernal – Carnage"
+    1790343591: {
+      name: 'Fragment du Voyageur'
     },
-    1023542723: {
-      activityName: "L'Esprit éternel"
+    1792985204: {
+      name: 'Nuit noire : Crash de l\'Exode'
     },
-    1030188908: {
-      activityName: "L'Œil du Maître des clés"
+    1824067376: {
+      name: 'Conduite agressive'
     },
-    1031478181: {
-      activityName: "Assaut « Épique » de la semaine"
+    1829866365: {
+      name: 'Se salir les mains'
     },
-    1031478182: {
-      activityName: "Assaut « Épique » de la semaine"
+    1863334927: {
+      name: 'Nuit noire : Chant de Savathûn'
     },
-    1031478183: {
-      activityName: "Assaut « Épique » de la semaine"
+    1875726950: {
+      name: 'Léviathan'
     },
-    1044883964: {
-      activityName: "Sepiks Parfait"
+    1949546348: {
+      name: 'Mission d\'assassinat'
     },
-    1045828271: {
-      activityName: "Choc"
+    1952521609: {
+      name: 'Fragment du Voyageur'
     },
-    1068261034: {
-      activityName: "Un Jardin ensanglanté"
+    1956541147: {
+      name: 'L\'appel de la maison'
     },
-    1075348150: {
-      activityName: "Âge du triomphe"
+    1969800443: {
+      name: 'Arecibo'
     },
-    1080191247: {
-      activityName: "Le Fléau de l'Hiver"
+    1971154629: {
+      name: 'Dangereux quelque soit la vitesse'
     },
-    1084620606: {
-      activityName: "La Geôle ténébreuse"
+    1975064760: {
+      name: 'Nuit noire : Chant de Savathûn'
     },
-    1087052691: {
-      activityName: "Choc"
+    1981289329: {
+      name: 'Siège de l\'Exode'
     },
-    1112015031: {
-      activityName: "L'Éveil"
+    1984315274: {
+      name: 'Assauts de l\'Avant-garde'
     },
-    1116149777: {
-      activityName: "Régicide"
+    1988701745: {
+      name: 'Représailles'
     },
-    1117274478: {
-      activityName: "La guerre contre les Corrompus"
+    2001433484: {
+      name: 'Mission d\'assassinat'
     },
-    1122783186: {
-      activityName: "Le Tombeau de Fer"
+    2025057095: {
+      name: 'Mission de combat'
     },
-    1126759626: {
-      activityName: "La Chambre de l'Écho"
+    2033669713: {
+      name: 'Javelot-4'
     },
-    1141580112: {
-      activityName: "La Volonté de Cropta"
+    2052289205: {
+      name: 'Combustion'
     },
-    1142225067: {
-      activityName: "Assaut « Nuit noire » de la semaine"
+    2079994698: {
+      name: 'Mission de relevé'
     },
-    1169187265: {
-      activityName: "Le Nexus"
+    2080275457: {
+      name: 'Le Trafiquant d\'armes'
     },
-    1174401783: {
-      activityName: "La voie du Premier"
+    2113712124: {
+      name: 'Sacrilège'
     },
-    1194342366: {
-      activityName: "Infernal – Défense"
+    2151274060: {
+      name: 'Mission d\'analyse'
     },
-    1200628152: {
-      activityName: "Les Fosses de l'invocation"
+    2174556965: {
+      name: 'Coup monté'
     },
-    1208087916: {
-      activityName: "La colère des machines"
+    2183066491: {
+      name: 'Le Domaine'
     },
-    1208087919: {
-      activityName: "La colère des machines"
+    2184866967: {
+      name: 'Mission d\'analyse'
     },
-    1226857472: {
-      activityName: "La cachette de Cayde"
+    2187073261: {
+      name: 'Mission d\'analyse'
     },
-    1227144460: {
-      activityName: "La rançon de la Reine"
+    2231840083: {
+      name: 'Le chant des sirènes'
     },
-    1228944057: {
-      activityName: "Le Palais délabré"
+    2236648719: {
+      name: 'Éternité'
     },
-    1234230734: {
-      activityName: "Patrouille sur la Lune"
+    2243336789: {
+      name: 'Mission de combat'
     },
-    1259153650: {
-      activityName: "L'appel de l'inconnue"
+    2250935166: {
+      name: 'Invulnérable'
     },
-    1288347893: {
-      activityName: "Carnage – Suprématie"
+    2259811067: {
+      name: 'Fragment du Voyageur'
     },
-    1291023759: {
-      activityName: "Infernal – Escarmouche"
+    2264636552: {
+      name: 'Méditation : « Combustion »'
     },
-    1293005540: {
-      activityName: "« Nuit noire » de l'Avant-garde"
+    2266954523: {
+      name: 'Le Domaine'
     },
-    1296112978: {
-      activityName: "La Contrée infestée"
+    2287222467: {
+      name: 'Mission d\'analyse'
     },
-    1309514270: {
-      activityName: "La manœuvre des Loups"
+    2288260902: {
+      name: 'Mission d\'assassinat'
     },
-    1322792020: {
-      activityName: "Infernal – Faille"
+    2291549972: {
+      name: 'Concentration !'
     },
-    1328326126: {
-      activityName: "Aveugles à la Lumière"
+    2297638408: {
+      name: 'Fureur'
     },
-    1329840146: {
-      activityName: "Mauvais œil"
+    2301390667: {
+      name: 'Mission de relevé'
     },
-    1378194100: {
-      activityName: "Le Phare"
+    2318812547: {
+      name: 'Le Pyramidion'
     },
-    1378430574: {
-      activityName: "Infernal – Élimination"
+    2336998357: {
+      name: 'Jeu à long terme'
     },
-    1379511171: {
-      activityName: "L'Épée de Cropta"
+    2379494367: {
+      name: 'Mission d\'analyse'
     },
-    1387993552: {
-      activityName: "Fureur mécanique"
+    2420240009: {
+      name: 'Mission de récupération'
     },
-    1390160729: {
-      activityName: "Avant-poste de Vesta"
+    2445164291: {
+      name: 'Mission d\'assassinat'
     },
-    1398209073: {
-      activityName: "Le Repaire des Diables"
+    2449714930: {
+      name: 'Léviathan'
     },
-    1398209074: {
-      activityName: "La Volonté de Cropta"
+    2464834848: {
+      name: 'Centre-ville'
     },
-    1398976305: {
-      activityName: "Assaut « Épique » de la semaine"
+    2468202005: {
+      name: 'Fragment du Voyageur'
     },
-    1398976306: {
-      activityName: "Assaut « Épique » de la semaine"
+    2478782573: {
+      name: ''
     },
-    1398976307: {
-      activityName: "Assaut « Épique » de la semaine"
+    2517540332: {
+      name: 'Pas de distance de sécurité'
     },
-    1400727968: {
-      activityName: "Faille"
+    2519458964: {
+      name: 'Val infini'
     },
-    1403880576: {
-      activityName: "La Flèche du Jardin"
+    2519564410: {
+      name: 'Mission d\'assassinat'
     },
-    1403880578: {
-      activityName: "Le Jardin noir"
+    2536491635: {
+      name: 'Mission de relevé'
     },
-    1403880579: {
-      activityName: "Marée montante"
+    2558926634: {
+      name: 'Mission de relevé'
     },
-    1403880580: {
-      activityName: "La zone d'exclusion"
+    2559514952: {
+      name: 'Utopie'
     },
-    1403880582: {
-      activityName: "La Ville ensablée"
+    2561308143: {
+      name: 'Mission de relevé'
     },
-    1404620600: {
-      activityName: "La Prison des vétérans"
+    2573702057: {
+      name: 'Mission de récupération'
     },
-    1415179315: {
-      activityName: "Élimination"
+    2574607799: {
+      name: 'Problèmes de voisinage'
     },
-    1419457477: {
-      activityName: "Le pisteur disparu"
+    2575990417: {
+      name: 'Mission de combat'
     },
-    1427585666: {
-      activityName: "Un retour triomphal"
+    2580713007: {
+      name: 'Mission de relevé'
     },
-    1431469570: {
-      activityName: "L'abomination détournée"
+    2588220738: {
+      name: 'Mission de relevé'
     },
-    1438195119: {
-      activityName: "Le Jardin noir"
+    2610112492: {
+      name: 'Mission d\'analyse'
     },
-    1439468985: {
-      activityName: "Signal en partance"
+    2619236227: {
+      name: 'Mission d\'analyse'
     },
-    1441430564: {
-      activityName: "La rancune d'Urrox"
+    2629975203: {
+      name: 'Mission de combat'
     },
-    1441430567: {
-      activityName: "La rancune d'Urrox"
+    2629998776: {
+      name: 'Mission de récupération'
     },
-    1443271657: {
-      activityName: "En tandem garancé"
+    2642769170: {
+      name: 'Six'
     },
-    1443570903: {
-      activityName: "Bannière de Fer – Pagaille – Choc"
+    2651851341: {
+      name: 'Mission d\'analyse'
     },
-    1448094960: {
-      activityName: "Les Donjons"
+    2665134323: {
+      name: 'Libération'
     },
-    1478347980: {
-      activityName: "Campus Martius"
+    2667533713: {
+      name: 'Vostok'
     },
-    1491766060: {
-      activityName: "Le Voleur obscur"
+    2684479494: {
+      name: 'Mission de récupération'
     },
-    1501957761: {
-      activityName: "S.A.B.R.E. déchu"
+    2693136600: {
+      name: 'Léviathan'
     },
-    1516701147: {
-      activityName: "undefined"
+    2693136601: {
+      name: 'Léviathan'
     },
-    1517679997: {
-      activityName: "Contre l'ARIA"
+    2693136602: {
+      name: 'Léviathan'
     },
-    1522220810: {
-      activityName: "La Tour"
+    2693136603: {
+      name: 'Léviathan'
     },
-    1522422482: {
-      activityName: "La Volonté de Cropta"
+    2693136604: {
+      name: 'Léviathan'
     },
-    1526798932: {
-      activityName: "S.A.B.R.E. déchu"
+    2693136605: {
+      name: 'Léviathan'
     },
-    1533733535: {
-      activityName: "La Geôle ténébreuse"
+    2702476101: {
+      name: 'La Tour'
     },
-    1551387515: {
-      activityName: "Prison des vétérans"
+    2708828207: {
+      name: 'Utopie'
     },
-    1566333829: {
-      activityName: "Les Frères au bouclier"
+    2737739053: {
+      name: 'Grande conversation'
     },
-    1572749251: {
-      activityName: "Contrôle de zone"
+    2759086913: {
+      name: 'Confidentiel'
     },
-    1584566734: {
-      activityName: "Infernal – 6c6"
+    2768347363: {
+      name: 'Mission d\'assassinat'
     },
-    1604535501: {
-      activityName: "Course de Passereaux"
+    2773222353: {
+      name: 'Mission d\'analyse'
     },
-    1609488702: {
-      activityName: "En tandem"
+    2776929937: {
+      name: 'Diagnostic différentiel'
     },
-    1614355423: {
-      activityName: "La rançon de la Reine"
+    2782300570: {
+      name: 'Mission de récupération'
     },
-    1618960674: {
-      activityName: "Infernal – 3c3"
+    2784803584: {
+      name: 'Mission de combat'
     },
-    1624947721: {
-      activityName: "Les Frères au bouclier"
+    2798856614: {
+      name: 'Mission de relevé'
     },
-    1628212868: {
-      activityName: "Assaut « Épique » de la semaine"
+    2846775197: {
+      name: 'Mission de combat'
     },
-    1628212869: {
-      activityName: "Assaut « Épique » de la semaine"
+    2908287325: {
+      name: 'Mission de relevé'
     },
-    1628212871: {
-      activityName: "Assaut « Épique » de la semaine"
+    2926767881: {
+      name: 'Revanche'
     },
-    1636082733: {
-      activityName: "L'Enclos de l'Hiver"
+    2949941834: {
+      name: 'Invités inattendus'
     },
-    1636082734: {
-      activityName: "Le Nexus"
+    2969403085: {
+      name: 'Mission de relevé'
     },
-    1646288223: {
-      activityName: "La Chambre de l'Écho"
+    3002511278: {
+      name: 'L\'alliance obscure'
     },
-    1650930548: {
-      activityName: "Confidentiel"
+    3026637018: {
+      name: 'Mission de relevé'
     },
-    1657401676: {
-      activityName: "Assaut « Épique » de la semaine"
+    3038694763: {
+      name: 'Mission d\'assassinat'
     },
-    1657401677: {
-      activityName: "Assaut « Épique » de la semaine"
+    3049122128: {
+      name: 'Mission d\'analyse'
     },
-    1657401679: {
-      activityName: "Assaut « Épique » de la semaine"
+    3050465729: {
+      name: 'Nuit noire : La Flèche Inversée'
     },
-    1659888245: {
-      activityName: "L'abomination détournée"
+    3062197616: {
+      name: 'Compétitif'
     },
-    1665631320: {
-      activityName: "Carnage"
+    3105090879: {
+      name: 'Adieu'
     },
-    1669262087: {
-      activityName: "Les Frères au bouclier"
+    3140524926: {
+      name: 'Incassable'
     },
-    1673931290: {
-      activityName: "Défi des vétérans"
+    3143798436: {
+      name: 'Zone morte européenne'
     },
-    1681545807: {
-      activityName: "La Geôle ténébreuse"
+    3147707814: {
+      name: 'Contre-courant'
     },
-    1685214122: {
-      activityName: "Pagaille – Suprématie"
+    3148431353: {
+      name: 'Se salir les mains'
     },
-    1685535967: {
-      activityName: "La Volonté de Cropta"
+    3150153711: {
+      name: 'Risques et opportunités'
     },
-    1686326716: {
-      activityName: "Un nouveau repaire"
+    3172367001: {
+      name: 'Fragment du Voyageur'
     },
-    1686679946: {
-      activityName: "Choc"
+    3173130826: {
+      name: 'Mission de combat'
     },
-    1709749894: {
-      activityName: "Urbania"
+    3208779612: {
+      name: 'Mission de récupération'
     },
-    1714839224: {
-      activityName: "Rituel du sacrifice"
+    3211303924: {
+      name: 'Mission de récupération'
     },
-    1719392441: {
-      activityName: "Croisée des chemins"
+    3211568383: {
+      name: 'Le chant des sirènes'
     },
-    1723226893: {
-      activityName: "L'Esprit tutélaire"
+    3231065327: {
+      name: 'Mission d\'analyse'
     },
-    1727851403: {
-      activityName: "Le code prométhéen"
+    3243161126: {
+      name: 'Partie rapide'
     },
-    1728758154: {
-      activityName: "Les Fosses de l'invocation"
+    3268684190: {
+      name: 'Mission de récupération'
     },
-    1733556769: {
-      activityName: "La Chute du roi"
+    3272002712: {
+      name: 'Espoir'
     },
-    1740074530: {
-      activityName: "Cerberus Vae III"
+    3277510674: {
+      name: 'Invulnérable'
     },
-    1749151224: {
-      activityName: "« Nuit noire » de l'Avant-garde"
+    3283790633: {
+      name: 'Coup monté'
     },
-    1771902734: {
-      activityName: "Infernal – Choc"
+    3289681664: {
+      name: 'Équipage perdu'
     },
-    1772839913: {
-      activityName: "Tunnels ténébreux"
+    3298775062: {
+      name: 'Mission de relevé'
     },
-    1783047867: {
-      activityName: "Infernal – Domination"
+    3303685562: {
+      name: 'Mission de récupération'
     },
-    1783107168: {
-      activityName: "Téléchargement terminé"
+    3304835347: {
+      name: 'L\'appel de la maison'
     },
-    1783564050: {
-      activityName: "La Maison au pouvoir"
+    3336275007: {
+      name: 'Méditation : « Six »'
     },
-    1794499705: {
-      activityName: "Les Seigneurs de Fer : Prologue"
+    3337731612: {
+      name: 'Mission de combat'
     },
-    1815860968: {
-      activityName: "Contrôle de zone"
+    3346345105: {
+      name: 'Traitement expérimental'
     },
-    1816396489: {
-      activityName: "Le Voleur obscur"
+    3359466010: {
+      name: 'Étincelle'
     },
-    1836141626: {
-      activityName: "Élimination"
+    3368226533: {
+      name: 'Nuit noire : La Flèche Inversée'
     },
-    1836893116: {
-      activityName: "La chute de Cropta"
+    3379039897: {
+      name: 'Mission de récupération'
     },
-    1836893119: {
-      activityName: "La chute de Cropta"
+    3410530777: {
+      name: 'Action calculée'
     },
-    1845751534: {
-      activityName: "Cerberus Vae III"
+    3417504239: {
+      name: 'Contre-courant'
     },
-    1846390409: {
-      activityName: "L'avènement d'un Gardien"
+    3446541099: {
+      name: 'Léviathan'
     },
-    1851417512: {
-      activityName: "Le Vagabond"
+    3479544154: {
+      name: 'Mission de combat'
     },
-    1856964953: {
-      activityName: "L'avènement d'un Gardien"
+    3481058226: {
+      name: 'Mission de relevé'
     },
-    1882836298: {
-      activityName: "L'Éveil"
+    3485876484: {
+      name: 'Conduite agressive'
     },
-    1889399773: {
-      activityName: "Assaut « Nuit noire » de la semaine"
+    3487576414: {
+      name: 'Mission de relevé'
     },
-    1912940269: {
-      activityName: "Remise en état"
+    3489692681: {
+      name: 'Mission de relevé'
     },
-    1917735347: {
-      activityName: "L'Enclos de l'Hiver"
+    3500791146: {
+      name: 'Suspense'
     },
-    1918823817: {
-      activityName: "L'Esprit éternel"
+    3515770727: {
+      name: 'Mission d\'analyse'
     },
-    1924778540: {
-      activityName: "La Maison au pouvoir"
+    3580793473: {
+      name: 'Méditation : « 1 UA »'
     },
-    1940432142: {
-      activityName: "La zone d'exclusion"
+    3612741503: {
+      name: 'Mission de relevé'
     },
-    1973631991: {
-      activityName: "Le dernier relais"
+    3627094182: {
+      name: 'Mission de combat'
     },
-    1974138312: {
-      activityName: "Coupe infectée"
+    3631476566: {
+      name: 'Le Domaine'
     },
-    1985034593: {
-      activityName: "Assaut « Nuit noire » de la semaine"
+    3645117987: {
+      name: 'Problèmes de voisinage'
     },
-    2008529245: {
-      activityName: "Les rois putrides"
+    3652531274: {
+      name: 'Fragment du Voyageur'
     },
-    2010056644: {
-      activityName: "Précipice de Haakon"
+    3662124488: {
+      name: 'Mission de relevé'
     },
-    2022189692: {
-      activityName: "Coupe infectée"
+    3664915501: {
+      name: 'Légion rouge, huile noire'
     },
-    2037022373: {
-      activityName: "Vertige"
+    3669054326: {
+      name: 'Mission de récupération'
     },
-    2045385030: {
-      activityName: "Patrouille sur Vénus"
+    3688464794: {
+      name: 'Un réseau important'
     },
-    2051444910: {
-      activityName: "Les Ténèbres extérieures"
+    3700722865: {
+      name: 'Libération'
     },
-    2061368111: {
-      activityName: "Pagaille – Suprématie"
+    3702064261: {
+      name: 'Réquisition de données'
     },
-    2063852581: {
-      activityName: "Pagaille – Choc"
+    3738159218: {
+      name: 'Indestructible'
     },
-    2072729921: {
-      activityName: "Coupe infectée"
+    3752039537: {
+      name: 'Inversion de polarité'
     },
-    2074618692: {
-      activityName: "Le Mangeur d'éternité"
+    3780356141: {
+      name: 'Arrêt et départ'
     },
-    2074618695: {
-      activityName: "Le Mangeur d'éternité"
+    3792746061: {
+      name: 'Mission de combat'
     },
-    2082069870: {
-      activityName: "L'Anomalie"
+    3799743268: {
+      name: 'Confidentiel'
     },
-    2084208305: {
-      activityName: "La Geôle ténébreuse"
+    3806583577: {
+      name: 'Mission d\'assassinat'
     },
-    2084307227: {
-      activityName: "La patrouille de l'effroi"
+    3834639884: {
+      name: 'Mission d\'analyse'
     },
-    2095588685: {
-      activityName: "La Volonté de Cropta"
+    3836086286: {
+      name: 'Invités inattendus'
     },
-    2105028197: {
-      activityName: "La Chambre de l'Écho"
+    3839751954: {
+      name: 'Autel de flammes'
     },
-    2129294976: {
-      activityName: "Les Ténèbres intérieures"
+    3872525353: {
+      name: 'Arrêt et départ'
     },
-    2151413729: {
-      activityName: "La Tour"
+    3879860661: {
+      name: 'Léviathan'
     },
-    2176272408: {
-      activityName: "Le Voleur obscur"
+    3903562779: {
+      name: 'La Tour'
     },
-    2178968385: {
-      activityName: "Mauvais œil"
+    3916343513: {
+      name: 'Léviathan'
     },
-    2184393955: {
-      activityName: "Cerberus Vae III"
+    3920643231: {
+      name: 'Nuit noire : Le Trafiquant d\'armes'
     },
-    2186849909: {
-      activityName: "L'Enclos de l'Hiver"
+    3958400416: {
+      name: 'Mission de relevé'
     },
-    2190039885: {
-      activityName: "Classique – Chacun pour soi"
+    3966792859: {
+      name: 'Nessos, centaure instable'
     },
-    2197680969: {
-      activityName: "Les rois putrides"
+    3978357488: {
+      name: 'Mission de récupération'
     },
-    2198347919: {
-      activityName: "La Tour"
+    3982474534: {
+      name: 'Revanche'
     },
-    2200634811: {
-      activityName: "Le Siège de l'Esprit tutélaire"
+    4034557395: {
+      name: 'De retour'
     },
-    2201622127: {
-      activityName: "Défi des vétérans"
+    4039317196: {
+      name: 'Léviathan'
     },
-    2213151771: {
-      activityName: "Le Collectif d'Ishtar"
+    4043714237: {
+      name: 'Mission de relevé'
     },
-    2217862439: {
-      activityName: "Domination"
+    4047570705: {
+      name: 'Mission de combat'
     },
-    2221365740: {
-      activityName: "Sepiks Parfait"
+    4050886070: {
+      name: 'Mission de relevé'
     },
-    2234107290: {
-      activityName: "La Geôle ténébreuse"
+    4054968718: {
+      name: 'Nuit noire : La Flèche Inversée'
     },
-    2243240710: {
-      activityName: "Descente infinie"
+    4095207117: {
+      name: 'Mission de récupération'
     },
-    2244550959: {
-      activityName: "La Tour"
+    4103844069: {
+      name: 'Mission d\'assassinat'
     },
-    2244943676: {
-      activityName: "L'avènement du Khvostov"
+    4159221189: {
+      name: 'Io'
     },
-    2245079334: {
-      activityName: "Coupe infectée"
+    4166562681: {
+      name: 'Titan'
     },
-    2263964303: {
-      activityName: "Élimination"
+    4174103238: {
+      name: 'Mission de récupération'
     },
-    2268273279: {
-      activityName: "Sepiks Parfait"
+    4209774794: {
+      name: 'Mission de récupération'
     },
-    2270816053: {
-      activityName: "La rançon de la Reine"
+    4216926874: {
+      name: 'Mission de récupération'
     },
-    2270968444: {
-      activityName: "Assaut « Épique » de la semaine"
+    4231544111: {
+      name: 'Mission de relevé'
     },
-    2270968445: {
-      activityName: "Assaut « Épique » de la semaine"
+    4239233351: {
+      name: 'Méditation : « Étincelle »'
     },
-    2270968446: {
-      activityName: "Assaut « Épique » de la semaine"
+    4254776501: {
+      name: 'Mission de récupération'
     },
-    2275772174: {
-      activityName: "Le Voleur obscur"
+    4283649349: {
+      name: 'Mission d\'assassinat'
     },
-    2286628407: {
-      activityName: "Paradoxe"
-    },
-    2303355724: {
-      activityName: "Le Repaire des Diables"
-    },
-    2303355727: {
-      activityName: "La Volonté de Cropta"
-    },
-    2316484115: {
-      activityName: "Le Phare"
-    },
-    2319702946: {
-      activityName: "Temple de Fer"
-    },
-    2321224098: {
-      activityName: "L'appel de l'inconnue"
-    },
-    2324706853: {
-      activityName: "La chute de Cropta"
-    },
-    2326253031: {
-      activityName: "La Vengeance de Skolas"
-    },
-    2327910410: {
-      activityName: "La Caverne de la nuit"
-    },
-    2330516073: {
-      activityName: "La Tour"
-    },
-    2332037858: {
-      activityName: "La Cour de la Veuve"
-    },
-    2333767699: {
-      activityName: "Étreinte de la peur"
-    },
-    2344229082: {
-      activityName: "L'Esprit éternel"
-    },
-    2344622554: {
-      activityName: "La Chambre de l'Écho"
-    },
-    2356723745: {
-      activityName: "La guerre à venir"
-    },
-    2364610626: {
-      activityName: "La voie du Premier"
-    },
-    2369296916: {
-      activityName: "La guerre à venir"
-    },
-    2374186202: {
-      activityName: "Infernal – Domination"
-    },
-    2374784693: {
-      activityName: "Le Fléau de l'Hiver"
-    },
-    2374899718: {
-      activityName: "Le Voleur obscur"
-    },
-    2375659247: {
-      activityName: "Défi des vétérans"
-    },
-    2380726447: {
-      activityName: "Le Cuirassé"
-    },
-    2381859905: {
-      activityName: "Le Voleur obscur"
-    },
-    2388860485: {
-      activityName: "Faille"
-    },
-    2391040454: {
-      activityName: "Sepiks Parfait"
-    },
-    2393458461: {
-      activityName: "Un sommet d'entropie"
-    },
-    2396741855: {
-      activityName: "Cerberus Vae III"
-    },
-    2398459666: {
-      activityName: "Patrouille sur Mars"
-    },
-    2401705359: {
-      activityName: "Contre les Corrompus"
-    },
-    2422821510: {
-      activityName: "Les rois putrides"
-    },
-    2430076725: {
-      activityName: "L'Observatoire aveugle"
-    },
-    2437373043: {
-      activityName: "L'Esprit éternel"
-    },
-    2445476122: {
-      activityName: "Classique – 6c6"
-    },
-    2446491566: {
-      activityName: "La Contrée infestée"
-    },
-    2449230902: {
-      activityName: "Le Cuirassé"
-    },
-    2450352219: {
-      activityName: "La Geôle ténébreuse"
-    },
-    2473173917: {
-      activityName: "Les Crocs silencieux"
-    },
-    2474598319: {
-      activityName: "Explorez Vénus"
-    },
-    2486047606: {
-      activityName: "Le Jardin noir"
-    },
-    2488292787: {
-      activityName: "Mercenaire – 3c3"
-    },
-    2500396686: {
-      activityName: "Temple de Fer"
-    },
-    2503808507: {
-      activityName: "Ultimes rites"
-    },
-    2507231345: {
-      activityName: "Frontière"
-    },
-    2507671226: {
-      activityName: "Signal en partance"
-    },
-    2522686639: {
-      activityName: "Mercenaire – 6c6"
-    },
-    2532582309: {
-      activityName: "S.A.B.R.E. déchu"
-    },
-    2546962221: {
-      activityName: "La Geôle ténébreuse"
-    },
-    2553967924: {
-      activityName: "La chute du Mur"
-    },
-    2577060487: {
-      activityName: "Paradoxe"
-    },
-    2582525652: {
-      activityName: "Le Temple d'Oryx"
-    },
-    2586575560: {
-      activityName: "Pagaille – Carnage"
-    },
-    2591739000: {
-      activityName: "Les Éveillés"
-    },
-    2604992012: {
-      activityName: "Aveugles à la Lumière"
-    },
-    2605106985: {
-      activityName: "Marée montante"
-    },
-    2616429373: {
-      activityName: "Étreinte de la peur"
-    },
-    2624694148: {
-      activityName: "Assemblée infectée"
-    },
-    2624916786: {
-      activityName: "Cerberus Vae III"
-    },
-    2626477216: {
-      activityName: "Signal en partance"
-    },
-    2632260907: {
-      activityName: "La Chambre de l'Écho"
-    },
-    2638978649: {
-      activityName: ""
-    },
-    2641355370: {
-      activityName: "La Flèche du Jardin"
-    },
-    2643956095: {
-      activityName: "Mercenaire – 3c3"
-    },
-    2658160549: {
-      activityName: "Assemblée infectée"
-    },
-    2659248068: {
-      activityName: "Le Caveau de verre"
-    },
-    2659248069: {
-      activityName: "Le Caveau de verre"
-    },
-    2659248071: {
-      activityName: "Le Caveau de verre"
-    },
-    2662709104: {
-      activityName: "Maîtrise cryo-électrique"
-    },
-    2664207554: {
-      activityName: "Mauvais œil"
-    },
-    2666433880: {
-      activityName: "Le Nexus"
-    },
-    2669189613: {
-      activityName: "Le Palais délabré"
-    },
-    2678657479: {
-      activityName: "L'abomination détournée"
-    },
-    2680821721: {
-      activityName: "Le Chaudron"
-    },
-    2693077237: {
-      activityName: "« Nuit noire » de l'Avant-garde"
-    },
-    2695324124: {
-      activityName: "Coupe infectée"
-    },
-    2697160954: {
-      activityName: "Âge du triomphe"
-    },
-    2697969178: {
-      activityName: "Assaut « Nuit noire » de la semaine"
-    },
-    2701768038: {
-      activityName: "Le Poing de Cropta"
-    },
-    2704098598: {
-      activityName: "Le Repaire des Diables"
-    },
-    2708547287: {
-      activityName: "La marche des flammes"
-    },
-    2717791362: {
-      activityName: "La Volonté de Cropta"
-    },
-    2719526771: {
-      activityName: "Le Palais délabré"
-    },
-    2726977290: {
-      activityName: "Le dernier relais"
-    },
-    2737751857: {
-      activityName: "La beauté de l'exécution"
-    },
-    2739987894: {
-      activityName: "Un symbole d'honneur"
-    },
-    2743106708: {
-      activityName: "Le Palais délabré"
-    },
-    2747031950: {
-      activityName: "Classique – 3c3"
-    },
-    2764426556: {
-      activityName: "Paradoxe"
-    },
-    2764561765: {
-      activityName: "Aveugles à la Lumière"
-    },
-    2775184694: {
-      activityName: "Les Fosses de l'invocation"
-    },
-    2776273577: {
-      activityName: "Cerberus Vae III"
-    },
-    2790114296: {
-      activityName: "La Maison au pouvoir"
-    },
-    2795444912: {
-      activityName: "Escarmouche"
-    },
-    2799122060: {
-      activityName: "Le Nexus"
-    },
-    2819394450: {
-      activityName: "Classiques de l'Avant-garde"
-    },
-    2828456290: {
-      activityName: "Sables étincelants"
-    },
-    2839046506: {
-      activityName: "undefined"
-    },
-    2840876929: {
-      activityName: "Les Frères au bouclier"
-    },
-    2846350970: {
-      activityName: "La Geôle ténébreuse"
-    },
-    2853745856: {
-      activityName: "Le Jardin noir"
-    },
-    2861777810: {
-      activityName: "L'Enclos de l'Hiver"
-    },
-    2873833515: {
-      activityName: "La Geôle ténébreuse"
-    },
-    2873913519: {
-      activityName: "L'Esprit tutélaire"
-    },
-    2877811433: {
-      activityName: "Pagaille – Carnage"
-    },
-    2895301046: {
-      activityName: "La zone d'exclusion"
-    },
-    2896357417: {
-      activityName: "L'Enclos de l'Hiver"
-    },
-    2896357418: {
-      activityName: "Le Nexus"
-    },
-    2897641944: {
-      activityName: "Coupe infectée"
-    },
-    2910883293: {
-      activityName: "Ultimes rites"
-    },
-    2918909691: {
-      activityName: "Cercle d'invocation"
-    },
-    2926133958: {
-      activityName: "Arsenal"
-    },
-    2931947534: {
-      activityName: "L'avènement d'un Kall"
-    },
-    2938090611: {
-      activityName: "La guerre à venir"
-    },
-    2938118424: {
-      activityName: "L'Esprit éternel"
-    },
-    2938118425: {
-      activityName: "Cerberus Vae III"
-    },
-    2938118426: {
-      activityName: "Le Palais délabré"
-    },
-    2945511915: {
-      activityName: "Mercenaire – 6c6"
-    },
-    2947742498: {
-      activityName: "Infernal – En tandem"
-    },
-    2981424914: {
-      activityName: "Le code prométhéen"
-    },
-    2989915775: {
-      activityName: "L'Esprit éternel"
-    },
-    3005484445: {
-      activityName: "Le code prométhéen"
-    },
-    3010573436: {
-      activityName: "Le Voleur obscur"
-    },
-    3011954788: {
-      activityName: "Téléchargement terminé"
-    },
-    3025411906: {
-      activityName: "Le Bourreau d'Archonte"
-    },
-    3027976182: {
-      activityName: "Les Frères au bouclier"
-    },
-    3030879879: {
-      activityName: "Mauvais œil"
-    },
-    3041179010: {
-      activityName: "Cerberus Vae III"
-    },
-    3044479892: {
-      activityName: "Le Voleur obscur"
-    },
-    3047788493: {
-      activityName: "Le Palais délabré"
-    },
-    3047788494: {
-      activityName: "Cerberus Vae III"
-    },
-    3047788495: {
-      activityName: "L'Esprit éternel"
-    },
-    3051527960: {
-      activityName: "La Geôle ténébreuse"
-    },
-    3053288711: {
-      activityName: "Le Jardin suspendu"
-    },
-    3056582947: {
-      activityName: "Marée montante"
-    },
-    3070937708: {
-      activityName: "S.A.B.R.E. déchu"
-    },
-    3077860924: {
-      activityName: "Le Repaire des Diables"
-    },
-    3077860927: {
-      activityName: "La Volonté de Cropta"
-    },
-    3097191720: {
-      activityName: "Le Voleur obscur"
-    },
-    3098008841: {
-      activityName: "La Volonté de Cropta"
-    },
-    3101475152: {
-      activityName: "Fort de Delphes"
-    },
-    3101766066: {
-      activityName: "Mauvais œil"
-    },
-    3102291176: {
-      activityName: "La voie du Premier"
-    },
-    3102295231: {
-      activityName: "Défense"
-    },
-    3120201278: {
-      activityName: "L'Enclos de l'Hiver"
-    },
-    3120351937: {
-      activityName: "L'Esprit tutélaire"
-    },
-    3120351938: {
-      activityName: "Les Ténèbres intérieures"
-    },
-    3120351939: {
-      activityName: "Remise en état"
-    },
-    3120351941: {
-      activityName: "Le Siège de l'Esprit tutélaire"
-    },
-    3120351943: {
-      activityName: "Le dernier relais"
-    },
-    3125074504: {
-      activityName: "Assaut « Épique » de la semaine"
-    },
-    3125074505: {
-      activityName: "Assaut « Épique » de la semaine"
-    },
-    3125074507: {
-      activityName: "Assaut « Épique » de la semaine"
-    },
-    3132533708: {
-      activityName: "Coupe infectée"
-    },
-    3135856650: {
-      activityName: "Le Fléau de l'Hiver"
-    },
-    3156370656: {
-      activityName: "Secteur 618"
-    },
-    3162176634: {
-      activityName: "La Chambre de l'Écho"
-    },
-    3183184449: {
-      activityName: "Les Frères au bouclier"
-    },
-    3187607216: {
-      activityName: "L'Esprit éternel"
-    },
-    3190434637: {
-      activityName: "Le Cuirassé"
-    },
-    3192378548: {
-      activityName: "Les Ténèbres extérieures"
-    },
-    3196929644: {
-      activityName: "L'abomination détournée"
-    },
-    3200293401: {
-      activityName: "L'ennemi de mon ennemi"
-    },
-    3207122440: {
-      activityName: "Les Archives"
-    },
-    3209623958: {
-      activityName: "Assaut « Nuit noire » de la semaine"
-    },
-    3210106079: {
-      activityName: "Patrouille dans le Cuirassé"
-    },
-    3220294246: {
-      activityName: "La chute du Mur"
-    },
-    3234259779: {
-      activityName: "Jugement d'Osiris"
-    },
-    3242509473: {
-      activityName: "La Volonté de Cropta"
-    },
-    3252534714: {
-      activityName: "En tandem"
-    },
-    3263216023: {
-      activityName: "Régicide"
-    },
-    3277621970: {
-      activityName: "La Clepsydre"
-    },
-    3277929848: {
-      activityName: "Les Frères au bouclier"
-    },
-    3292305209: {
-      activityName: "L'Enclos de l'Hiver"
-    },
-    3292305210: {
-      activityName: "Le Nexus"
-    },
-    3292667877: {
-      activityName: "L'Asile"
-    },
-    3315158082: {
-      activityName: "Une étincelle dans l'ombre"
-    },
-    3322717977: {
-      activityName: "Bannière de Fer – Domination"
-    },
-    3335571405: {
-      activityName: "Suprématie"
-    },
-    3343284688: {
-      activityName: "Signal en partance"
-    },
-    3343503784: {
-      activityName: "Coupe infectée"
-    },
-    3345352981: {
-      activityName: "Rituel du sacrifice"
-    },
-    3346215145: {
-      activityName: "Le Phare"
-    },
-    3349918649: {
-      activityName: "Le Cuirassé"
-    },
-    3356249023: {
-      activityName: "Fureur mécanique"
-    },
-    3373044013: {
-      activityName: "Coupe infectée"
-    },
-    3384143875: {
-      activityName: "Coupe infectée"
-    },
-    3392709953: {
-      activityName: "L'abomination détournée"
-    },
-    3393673804: {
-      activityName: "La Prison des vétérans"
-    },
-    3394418729: {
-      activityName: "Le Palais délabré"
-    },
-    3398049753: {
-      activityName: "La Flèche du Jardin"
-    },
-    3398752148: {
-      activityName: "L'Enclos de l'Hiver"
-    },
-    3399843400: {
-      activityName: "L'appel de l'inconnue"
-    },
-    3399843403: {
-      activityName: "Le Collectif d'Ishtar"
-    },
-    3399843404: {
-      activityName: "Les Archives"
-    },
-    3399843406: {
-      activityName: "L'Œil du Maître des clés"
-    },
-    3399843407: {
-      activityName: "Le Fléau de l'Hiver"
-    },
-    3403438134: {
-      activityName: "La Chambre de l'Écho"
-    },
-    3406669964: {
-      activityName: "Sepiks Parfait"
-    },
-    3412406993: {
-      activityName: "Cathédrale du crépuscule"
-    },
-    3415949693: {
-      activityName: "Le Nexus"
-    },
-    3422670336: {
-      activityName: "Le Repaire des Diables"
-    },
-    3422670339: {
-      activityName: "La Volonté de Cropta"
-    },
-    3422924470: {
-      activityName: "Assemblée infectée"
-    },
-    3427115544: {
-      activityName: "S.A.B.R.E. déchu"
-    },
-    3428378490: {
-      activityName: "Pagaille – Choc"
-    },
-    3434275681: {
-      activityName: "La Caverne de la nuit"
-    },
-    3464398659: {
-      activityName: "Le Temple d'Oryx"
-    },
-    3473815980: {
-      activityName: "Le Poing de Cropta"
-    },
-    3476387771: {
-      activityName: "Épiques contre les Corrompus"
-    },
-    3492173922: {
-      activityName: "Avant-poste de Vesta"
-    },
-    3493774909: {
-      activityName: "Le Roi des Corrompus – Prologue"
-    },
-    3508129769: {
-      activityName: "Le Culte de l'Oligochète"
-    },
-    3508129770: {
-      activityName: "Le Culte de l'Oligochète"
-    },
-    3509128672: {
-      activityName: "Temple de Fer"
-    },
-    3527709396: {
-      activityName: "Escarmouche"
-    },
-    3534581229: {
-      activityName: "La Chute du roi"
-    },
-    3543525727: {
-      activityName: "La rançon de la Reine"
-    },
-    3549856929: {
-      activityName: "Le Siège de l'Esprit tutélaire"
-    },
-    3555113730: {
-      activityName: "Mauvais œil"
-    },
-    3565777280: {
-      activityName: "Toc toc"
-    },
-    3568014988: {
-      activityName: "Régicide"
-    },
-    3573972337: {
-      activityName: "Le Nexus"
-    },
-    3575520714: {
-      activityName: "Les Frères au bouclier"
-    },
-    3575840788: {
-      activityName: "La manœuvre des Loups"
-    },
-    3582451805: {
-      activityName: "Le Voleur obscur"
-    },
-    3582577776: {
-      activityName: "Les Crocs silencieux"
-    },
-    3593950004: {
-      activityName: "Crédits de Destiny"
-    },
-    3602734434: {
-      activityName: "Chute de l'étendard"
-    },
-    3609927430: {
-      activityName: "Infernal – Suprématie"
-    },
-    3612436612: {
-      activityName: "La guerre à venir"
-    },
-    3619606113: {
-      activityName: "Pagaille – Choc"
-    },
-    3621292155: {
-      activityName: "Défense"
-    },
-    3635588435: {
-      activityName: "Le Guide"
-    },
-    3645675142: {
-      activityName: "Domination"
-    },
-    3645919501: {
-      activityName: "Explorez le Cosmodrome"
-    },
-    3650545911: {
-      activityName: "La manœuvre des Loups"
-    },
-    3670262295: {
-      activityName: "Jugement d'Osiris"
-    },
-    3670861271: {
-      activityName: "L'ennemi de mon ennemi"
-    },
-    3670968271: {
-      activityName: "La Volonté de Cropta"
-    },
-    3671763238: {
-      activityName: "Cerberus Vae III"
-    },
-    3674885127: {
-      activityName: "Régicide"
-    },
-    3676594097: {
-      activityName: "L'Enclos de l'Hiver"
-    },
-    3691405620: {
-      activityName: "« Nuit noire » de l'Avant-garde"
-    },
-    3700036317: {
-      activityName: "Oryx triomphant"
-    },
-    3705341715: {
-      activityName: "Le pisteur retrouvé"
-    },
-    3708806801: {
-      activityName: "Un sommet d'entropie"
-    },
-    3711414560: {
-      activityName: "La Caverne de la nuit"
-    },
-    3711414561: {
-      activityName: "L'Épée de Cropta"
-    },
-    3711414562: {
-      activityName: "L'Éveil"
-    },
-    3711414563: {
-      activityName: "Le Temple d'Oryx"
-    },
-    3711414564: {
-      activityName: "Les Ténèbres extérieures"
-    },
-    3711414566: {
-      activityName: "Le Tombeau-Monde"
-    },
-    3715085142: {
-      activityName: "L'appel des ombres"
-    },
-    3731091063: {
-      activityName: "Assaut « Nuit noire » de la semaine"
-    },
-    3741914742: {
-      activityName: "L'Enclos de l'Hiver"
-    },
-    3743955707: {
-      activityName: "La Tour"
-    },
-    3750289192: {
-      activityName: "Le Poing de Cropta"
-    },
-    3778091466: {
-      activityName: "Téléchargement terminé"
-    },
-    3784570118: {
-      activityName: "Les Archives"
-    },
-    3799336128: {
-      activityName: "La Volonté de Cropta"
-    },
-    3817155567: {
-      activityName: "La Trouée du crépuscule"
-    },
-    3837170670: {
-      activityName: "Le Tombeau-Monde"
-    },
-    3842976518: {
-      activityName: "La Geôle ténébreuse"
-    },
-    3848655103: {
-      activityName: "Le Bouclier noir"
-    },
-    3856562046: {
-      activityName: "Aveugles à la Lumière"
-    },
-    3856604751: {
-      activityName: "Le Point du jour"
-    },
-    3860793576: {
-      activityName: "Sepiks Parfait"
-    },
-    3878867172: {
-      activityName: "Contrôle de zone"
-    },
-    3896699662: {
-      activityName: "L'Enclos de l'Hiver"
-    },
-    3910288239: {
-      activityName: "Bannière de Fer – Faille"
-    },
-    3918359338: {
-      activityName: "Icare"
-    },
-    3920061741: {
-      activityName: "Le Temple d'Oryx"
-    },
-    3921931055: {
-      activityName: "La Volonté de Cropta"
-    },
-    3936153046: {
-      activityName: "Infernal – 3c3"
-    },
-    3941998864: {
-      activityName: "Cerberus Vae III"
-    },
-    3945328236: {
-      activityName: "Temple de Fer"
-    },
-    3948474766: {
-      activityName: "L'Épée de Cropta"
-    },
-    3974631085: {
-      activityName: "L'ennemi de mon ennemi"
-    },
-    3978884648: {
-      activityName: "La Chute du roi"
-    },
-    4000873610: {
-      activityName: "La chute de Cropta"
-    },
-    4027720491: {
-      activityName: "Les Frères au bouclier"
-    },
-    4038697181: {
-      activityName: "Le Caveau de verre"
-    },
-    4046346128: {
-      activityName: "Étreinte de la peur"
-    },
-    4055903037: {
-      activityName: "Faille"
-    },
-    4060895971: {
-      activityName: "La Tour"
-    },
-    4079642013: {
-      activityName: "La Légion brisée"
-    },
-    4079642014: {
-      activityName: "La Légion brisée"
-    },
-    4087776066: {
-      activityName: "La cachette de Cayde"
-    },
-    4099604100: {
-      activityName: "La Volonté de Cropta"
-    },
-    4101329072: {
-      activityName: "Mauvais œil"
-    },
-    4105918304: {
-      activityName: "La Dernière station"
-    },
-    4107311671: {
-      activityName: "Les Terres de rouille"
-    },
-    4129878327: {
-      activityName: "Infernal – Défense"
-    },
-    4131978369: {
-      activityName: "L'abomination détournée"
-    },
-    4141063459: {
-      activityName: "Le Voleur obscur"
-    },
-    4153423016: {
-      activityName: "Défi des vétérans"
-    },
-    4163254808: {
-      activityName: "Les Rivages du temps"
-    },
-    4168247421: {
-      activityName: "Bannière de Fer – Choc"
-    },
-    4171584130: {
-      activityName: "Infernal – 6c6"
-    },
-    4175179544: {
-      activityName: "Assaut « Épique » de la semaine"
-    },
-    4175179545: {
-      activityName: "Assaut « Épique » de la semaine"
-    },
-    4175179546: {
-      activityName: "Assaut « Épique » de la semaine"
-    },
-    4178645458: {
-      activityName: "La Ville ensablée"
-    },
-    4181273223: {
-      activityName: "S.A.B.R.E. déchu"
-    },
-    4183157062: {
-      activityName: "Ultimes rites"
-    },
-    4187524452: {
-      activityName: "L'Esprit éternel"
-    },
-    4196724507: {
-      activityName: "Infernal – Carnage"
-    },
-    4200263342: {
-      activityName: "Le Bastion"
-    },
-    4203094490: {
-      activityName: "Temple de Fer"
-    },
-    4215168114: {
-      activityName: "La Volonté de Cropta"
-    },
-    4217181091: {
-      activityName: "Escarmouche"
-    },
-    4222208550: {
-      activityName: "Course de Passereaux"
-    },
-    4227723344: {
-      activityName: "Le Repaire des Diables"
-    },
-    4227723347: {
-      activityName: "La Volonté de Cropta"
-    },
-    4239017990: {
-      activityName: "La clé tant convoitée"
-    },
-    4240750267: {
-      activityName: "Le code prométhéen"
-    },
-    4242282035: {
-      activityName: "Domination"
-    },
-    4252752792: {
-      activityName: "Le Palais délabré"
-    },
-    4253541885: {
-      activityName: "L'Enclos de l'Hiver"
-    },
-    4254149014: {
-      activityName: "Le Voleur obscur"
-    },
-    4260139097: {
-      activityName: "Le Panthéon"
-    },
-    4272344899: {
-      activityName: "Les Archives"
-    },
-    4277539497: {
-      activityName: "Bannière de Fer – Choc"
-    },
-    4287936726: {
-      activityName: "L'Exode bleu"
+    4291922223: {
+      name: 'Espoir'
     },
   },
   it: {
-    8055542: {
-      activityName: "La breccia nella Muraglia"
+    19982784: {
+      name: 'Missione di combattimento'
     },
-    9885984: {
-      activityName: "Camera della Notte"
+    30240416: {
+      name: 'Missione di esecuzione'
     },
-    10551956: {
-      activityName: "Il re della montagna"
+    37050217: {
+      name: 'Missione di indagine'
     },
-    18715720: {
-      activityName: "Il re della montagna"
+    51408141: {
+      name: 'Missione di recupero'
     },
-    24471896: {
-      activityName: "Marte e Venere"
+    53954174: {
+      name: 'Anti-antiaerea'
     },
-    24471899: {
-      activityName: "Terra e Luna"
+    57103244: {
+      name: 'Missione di indagine'
     },
-    28695277: {
-      activityName: "La Spada di Crota"
+    60002467: {
+      name: 'Sacrilegio'
     },
-    34205302: {
-      activityName: "Il Nexus"
+    78673128: {
+      name: 'Ladri di ladri'
     },
-    34327100: {
-      activityName: "D.A.G.A. caduta"
+    80726883: {
+      name: 'Oh, capitano!'
     },
-    51311972: {
-      activityName: "Mente Intramontabile"
+    82913930: {
     },
-    51311973: {
-      activityName: "Cerberus Vae III"
+    89727599: {
+      name: 'Leviatano'
     },
-    51311974: {
-      activityName: "Palazzo della Polvere"
+    104342360: {
+      name: 'Missione di combattimento'
     },
-    64371922: {
-      activityName: "Supremazia: Rissa"
+    116352029: {
+      name: 'Missione di combattimento'
     },
-    86749741: {
-      activityName: "Stendardo di Ferro: Controllo"
+    122988657: {
+      name: 'Legione Rossa, fluido nero'
     },
-    91984044: {
-      activityName: "L'ascesa di un Kell"
+    143647473: {
+      name: 'Missione di recupero'
     },
-    95021281: {
-      activityName: "Perdere la Luce"
+    145302664: {
+      name: 'Cala la Notte: Trafficante d\'armi'
     },
-    96237246: {
-      activityName: "Classico: 6 contro 6"
+    153537894: {
+      name: 'Una nuova frontiera'
     },
-    98710471: {
-      activityName: "Rissa"
+    160721490: {
+      name: 'Classificato'
     },
-    103493304: {
-      activityName: "Il re della montagna"
+    175598161: {
+      name: 'Missione di recupero'
     },
-    116560380: {
-      activityName: "Il ladro di ombre"
+    189324537: {
+      name: 'Missione di recupero'
     },
-    116811400: {
-      activityName: "Il ladro di ombre"
+    197670945: {
+      name: 'Missione di esecuzione'
     },
-    123652644: {
-      activityName: "Sala dell'Eco"
+    204298081: {
+      name: 'Missione d\'analisi'
     },
-    123999179: {
-      activityName: "Ombre al Crepuscolo"
+    248066530: {
+      name: 'Missione di recupero'
     },
-    130631058: {
-      activityName: "Classico: 3 contro 3"
+    255819671: {
+      name: 'Furia'
     },
-    134979141: {
-      activityName: "L'ultima Parabola"
+    261349035: {
+      name: 'Missione di recupero'
     },
-    149381097: {
-      activityName: "Pattuglia la Luna"
+    286324446: {
+      name: 'Missione di recupero'
     },
-    151357230: {
-      activityName: "Il ladro di ombre"
+    287649202: {
+      name: 'Leviatano'
     },
-    154683944: {
-      activityName: "Apogeo entropico"
+    293858112: {
+      name: 'Missione di combattimento'
     },
-    157336261: {
-      activityName: "Inferno: Supremazia"
+    298747401: {
+      name: 'Missione di indagine'
     },
-    157390236: {
-      activityName: "Palazzo della Polvere"
+    298793060: {
+      name: 'Missione di recupero'
     },
-    157980450: {
-      activityName: "La Tomba del Ferro"
+    313572698: {
+      name: 'Frammento del Viaggiatore'
     },
-    165850035: {
-      activityName: "Mente Intramontabile"
+    320680002: {
+      name: 'Domanda e offerta'
     },
-    167419252: {
-      activityName: "Pattuglia il Cosmodromo"
+    330545737: {
+      name: 'Il Rifugio'
     },
-    184503944: {
-      activityName: "Mente Intramontabile"
+    338662534: {
+      name: 'Spirale invertita'
     },
-    184503945: {
-      activityName: "Cerberus Vae III"
+    355984230: {
+      name: 'Missione di esecuzione'
     },
-    184503946: {
-      activityName: "Palazzo della Polvere"
+    359488722: {
+      name: 'Manomissione planetaria'
     },
-    194283519: {
-      activityName: "Palazzo della Polvere"
+    374818561: {
+      name: 'Tregua dell\'Imperatore'
     },
-    202167389: {
-      activityName: "Palazzo della Polvere"
+    379330092: {
+      name: 'Frammento del Viaggiatore'
     },
-    209343718: {
-      activityName: "Corso d'inverno"
+    387171436: {
+      name: 'Missione di recupero'
     },
-    211678003: {
-      activityName: "Stendardo di Ferro: Frattura"
+    388289443: {
+      name: 'Missione di indagine'
     },
-    212088538: {
-      activityName: "Le Fosse di Evocazione"
+    415388387: {
+      name: 'Missione di indagine'
     },
-    218006092: {
-      activityName: "Le Terre Infette"
+    417231112: {
+      name: 'Leviatano'
     },
-    242777083: {
-      activityName: "Il Nexus"
+    429361491: {
+      name: 'Missione di recupero'
     },
-    252347595: {
-      activityName: "Accordi nell'Hangar"
+    435989417: {
+      name: 'Missione d\'analisi'
     },
-    259879232: {
-      activityName: "D.A.G.A. caduta"
+    444087412: {
+      name: 'Missione di combattimento'
     },
-    260615043: {
-      activityName: "Rissa"
+    445417088: {
     },
-    260765522: {
-      activityName: "Furia meccanica"
+    459955094: {
+      name: 'Missione d\'analisi'
     },
-    269981320: {
-      activityName: "Il codice Prometeo"
+    461203479: {
+      name: 'Missione di indagine'
     },
-    278763462: {
-      activityName: "Palazzo della Polvere"
+    464789944: {
+      name: 'Prescelto'
     },
-    279121234: {
-      activityName: "Il re della montagna"
+    474380713: {
+      name: 'Missione di recupero'
     },
-    284635225: {
-      activityName: "L'Altare Ardente"
+    539897061: {
+      name: 'Polarità invertita'
     },
-    287505866: {
-      activityName: "D.A.G.A. caduta"
+    545240418: {
+      name: 'Missione di indagine'
     },
-    291350530: {
-      activityName: "Assalto Cala la Notte Settimanale"
+    549123191: {
+      name: 'Missione di indagine'
     },
-    300506688: {
-      activityName: "Assalto Cala la Notte Settimanale"
+    553537971: {
+      name: 'Prescelto'
     },
-    308091852: {
-      activityName: "Assalto Eroico Settimanale"
+    564863404: {
     },
-    308091854: {
-      activityName: "Assalto Eroico Settimanale"
+    581323290: {
+      name: 'Missione di indagine'
     },
-    308091855: {
-      activityName: "Assalto Eroico Settimanale"
+    585071442: {
+      name: 'Cala la Notte: Canto di Savathûn'
     },
-    324283916: {
-      activityName: "Un'onda si alza"
+    601540706: {
+      name: 'Cala la Notte: Trafficante d\'armi'
     },
-    331520418: {
-      activityName: "Mente Intramontabile"
+    622895925: {
+      name: 'Arecibo'
     },
-    342909762: {
-      activityName: "Fratelli di sangue"
+    632790902: {
+      name: 'Suspense'
     },
-    351460287: {
-      activityName: "La Cella Senza Sole"
+    642256373: {
+      name: 'Cala la Notte: Schianto dell\'Esodo'
     },
-    351673577: {
-      activityName: "Classico: Tutti contro Tutti"
+    642277473: {
+      name: 'Cala la Notte: Pyramidion'
     },
-    355200465: {
-      activityName: "Fratelli di sangue"
+    652598202: {
+      name: 'Gola della Legione'
     },
-    355605844: {
-      activityName: "Pattuglia le Terre Infette"
+    667604912: {
+      name: 'Meditazione: "Problemi dimensionali"'
     },
-    360962374: {
-      activityName: "Il ladro di ombre"
+    671904429: {
+      name: 'Missione di recupero'
     },
-    386157877: {
-      activityName: "Fratelli di sangue"
+    703311712: {
+      name: 'Frammento del Viaggiatore'
     },
-    389785553: {
-      activityName: "Campioni dell'Oscurità"
+    715306877: {
+      name: 'Missione di combattimento'
     },
-    403726672: {
-      activityName: "Assalto Eroico Settimanale"
+    719906507: {
+      name: 'Classificato'
     },
-    403726674: {
-      activityName: "Assalto Eroico Settimanale"
+    743100125: {
+      name: 'Missione di recupero'
     },
-    403726675: {
-      activityName: "Assalto Eroico Settimanale"
+    750649238: {
+      name: 'Missione di recupero'
     },
-    406972773: {
-      activityName: "Il rapimento dell'abominio"
+    757116822: {
+      name: 'Leviatano'
     },
-    410347507: {
-      activityName: "Il ladro di ombre"
+    760130722: {
+      name: 'Dirupo Abbandonato'
     },
-    425614025: {
-      activityName: "I Signori del Ferro"
+    782175145: {
+      name: 'Missione di esecuzione'
     },
-    428290721: {
-      activityName: "Pattuglia Marte"
+    782290869: {
+      name: 'Missione di indagine'
     },
-    430160982: {
-      activityName: "Furia meccanica"
+    789332628: {
+      name: 'Ladri di ladri'
     },
-    430914016: {
-      activityName: "La Tomba del Ferro"
+    798143184: {
+      name: 'Missione di combattimento'
     },
-    431759746: {
-      activityName: "Recupero"
+    808931822: {
+      name: 'Prometeo postmoderno'
     },
-    443057682: {
-      activityName: "Impatto Celeste"
+    837763871: {
+      name: 'Missione di recupero'
     },
-    443707023: {
-      activityName: "Il Casato dominante"
+    849242583: {
+      name: 'Missione d\'analisi'
     },
-    455063520: {
-      activityName: "Il risveglio"
+    880665770: {
+      name: 'Missione di indagine'
     },
-    468325937: {
-      activityName: "Armi Unite"
+    919252154: {
+      name: 'Alleanza oscura'
     },
-    469270447: {
-      activityName: "Memento"
+    926012363: {
+      name: 'Missione di esecuzione'
     },
-    474428712: {
-      activityName: "Il nemico del mio nemico"
+    926940962: {
+      name: 'Cala la Notte: Pyramidion'
     },
-    482017096: {
-      activityName: "Sepiks Perfezionato"
+    938512773: {
+      name: 'Incolume'
     },
-    492319725: {
-      activityName: "Pandemonio: Rissa"
+    940394831: {
+      name: 'Impresa: Schianto dell\'Esodo'
     },
-    493857039: {
-      activityName: "Assalto Cala la Notte Settimanale"
+    955852466: {
+      name: '1AU'
     },
-    496237130: {
-      activityName: "Gare di Astori"
+    963938931: {
+      name: 'Conversazioni intense'
     },
-    504512661: {
-      activityName: "Avamposto Vestiano"
+    964196803: {
+      name: 'Missione di recupero'
     },
-    509411569: {
-      activityName: "Cattivo sangue"
+    969385987: {
+      name: 'Luce nel buio'
     },
-    547981568: {
-      activityName: "Stendardo di Ferro: Supremazia"
+    993152361: {
+      name: 'Missione di recupero'
     },
-    550186563: {
-      activityName: "L'ascesa di un Kell"
+    1019362992: {
+      name: 'Meditazione: "Ritorno a casa"'
     },
-    572368820: {
-      activityName: "Assalto Cala la Notte Settimanale"
+    1035135049: {
+      name: 'Pyramidion'
     },
-    573077648: {
-      activityName: "D.A.G.A. caduta"
+    1038710420: {
+      name: 'Missione di esecuzione'
     },
-    574483028: {
-      activityName: "La Città Sepolta"
+    1053141615: {
+      name: 'Missione di esecuzione'
     },
-    575304694: {
-      activityName: "Una nuova tana"
+    1063969232: {
+      name: 'Invito dell\'Imperatore'
     },
-    575376446: {
-      activityName: "Sala dell'Eco"
+    1075152813: {
+      name: 'Zona Morta Europea'
     },
-    579700969: {
-      activityName: "Il nascondiglio di Cayde"
+    1076851943: {
+      name: 'Missione di esecuzione'
     },
-    579949585: {
-      activityName: "La Zanna Silente"
+    1085523978: {
+      name: 'Missione di indagine'
     },
-    581858107: {
-      activityName: "L'Aurora"
+    1090267699: {
+      name: 'Missione di esecuzione'
     },
-    603968817: {
-      activityName: "Cerberus Vae III"
+    1101792305: {
+      name: 'Canto di Savathûn'
     },
-    604017503: {
-      activityName: "Prigione degli Anziani: corrotti"
+    1102824603: {
+      name: 'Missione di esecuzione'
     },
-    614791010: {
-      activityName: "Supremazia"
+    1105211124: {
+      name: 'Missione d\'analisi'
     },
-    632771975: {
-      activityName: "Pretendente al trono"
+    1107208644: {
+      name: 'Manomissione planetaria'
     },
-    637046772: {
-      activityName: "Covo dei Ladri"
+    1129066976: {
+      name: 'Cala la Notte: Pyramidion'
     },
-    645920838: {
-      activityName: "Sala dell'Eco"
+    1159314159: {
+      name: 'Cattiva accoglienza'
     },
-    653380797: {
-      activityName: "Corso d'inverno"
+    1164772243: {
+      name: 'Missione di recupero'
     },
-    653380798: {
-      activityName: "Il Nexus"
+    1206154103: {
+      name: 'Missione di esecuzione'
     },
-    696672649: {
-      activityName: "undefined"
+    1207505828: {
+      name: 'Impresa: Trafficante d\'armi'
     },
-    702170822: {
-      activityName: "Le Fosse di Evocazione"
+    1225970098: {
+      name: 'Equipaggio perduto'
     },
-    706472064: {
-      activityName: "Assalto Eroico Settimanale"
+    1228327586: {
+      name: 'Anti-antiaerea'
     },
-    706472065: {
-      activityName: "Assalto Eroico Settimanale"
+    1243390694: {
+      name: 'Furtarello'
     },
-    706472066: {
-      activityName: "Assalto Eroico Settimanale"
+    1249965655: {
+      name: 'Missione d\'analisi'
     },
-    711826167: {
-      activityName: "Inferno: Scontro"
+    1250426564: {
+      name: 'Missione di esecuzione'
     },
-    719193800: {
-      activityName: "Corso d'inverno"
+    1254990192: {
+      name: 'Distanza di non sicurezza'
     },
-    719193803: {
-      activityName: "Il Nexus"
+    1265390366: {
+      name: 'Cattiva accoglienza'
     },
-    746864299: {
-      activityName: "Inferno Doppio"
+    1289867188: {
+      name: 'Indistruttibile'
     },
-    757275024: {
-      activityName: "D.A.G.A. caduta"
+    1290744998: {
+      name: 'Il Rifugio'
     },
-    764916411: {
-      activityName: "La Città Sepolta"
+    1309646866: {
+      name: 'Il Rifugio'
     },
-    782611196: {
-      activityName: "Inferno: Schermaglia"
+    1331268141: {
+      name: 'Missione di indagine'
     },
-    820688209: {
-      activityName: "Sepiks Perfezionato"
+    1357019430: {
+      name: 'Cala la Notte: Schianto dell\'Esodo'
     },
-    826836846: {
-      activityName: "L'occhio nefasto"
+    1375839088: {
+      name: 'Missione d\'analisi'
     },
-    832576952: {
-      activityName: "D.A.G.A. caduta"
+    1412142789: {
+      name: ''
     },
-    833873053: {
-      activityName: "Mente Intramontabile"
+    1416597166: {
+      name: 'Domanda e offerta'
     },
-    836641517: {
-      activityName: "Occhio di un guardiaporta"
+    1428050875: {
+      name: 'Classificato'
     },
-    853468393: {
-      activityName: "Collettivo Ishtar"
+    1451946951: {
+      name: 'Missione di recupero'
     },
-    853774317: {
-      activityName: "La guerra imminente"
+    1466550401: {
+      name: 'Velocità di non sicurezza'
     },
-    854130400: {
-      activityName: "L'assedio della mente bellica"
+    1490848577: {
+      name: 'Problemi dimensionali'
     },
-    856898338: {
-      activityName: "Volta di Vetro"
+    1491022087: {
+      name: 'Assedio dell\'Esodo Nero'
     },
-    860566204: {
-      activityName: "Il Faro"
+    1495993294: {
+      name: 'Lago di ombre'
     },
-    870614351: {
-      activityName: "Crisi della SIVA Eroica"
+    1498466193: {
+      name: 'Missione di recupero'
     },
-    888190220: {
-      activityName: "Inferno: Rissa"
+    1521232506: {
+      name: 'Classificato'
     },
-    892266083: {
-      activityName: "La Torre"
+    1525633702: {
+      name: 'Missione di recupero'
     },
-    902875868: {
-      activityName: "Il pinnacolo del giardino"
+    1536764325: {
+      name: 'Missione di indagine'
     },
-    906989597: {
-      activityName: "Le Fosse di Evocazione"
+    1557641249: {
+      name: 'Missione di recupero'
     },
-    932731386: {
-      activityName: "Il nascondiglio di Cayde"
+    1563393783: {
+      name: 'Schianto dell\'Esodo'
     },
-    940573734: {
-      activityName: "L'oscurità dentro"
+    1568750156: {
+      name: 'Il Rifugio'
     },
-    944638962: {
-      activityName: "Occhio di un guardiaporta"
+    1581219251: {
+      name: 'Missione di indagine'
     },
-    981644933: {
-      activityName: "Vincolati dal fuoco"
+    1614692057: {
+      name: 'Missione di recupero'
     },
-    982298740: {
-      activityName: "La Tomba del Mondo"
+    1646219807: {
+      name: 'Furtarello'
     },
-    984759429: {
-      activityName: "Il rapimento dell'abominio"
+    1651979106: {
+      name: 'Prometeo postmoderno'
     },
-    985012235: {
-      activityName: "Una nuova tana"
+    1658347443: {
+      name: 'Ritorno a casa'
     },
-    989535795: {
-      activityName: "Inferno: Zone di Controllo"
+    1685065161: {
+      name: 'Leviatano'
     },
-    994743956: {
-      activityName: "Mente Intramontabile"
+    1685237649: {
+      name: 'Missione di esecuzione'
     },
-    994743957: {
-      activityName: "Cerberus Vae III"
+    1699948563: {
+      name: 'Leviatano'
     },
-    994743958: {
-      activityName: "Palazzo della Polvere"
+    1720510574: {
+      name: 'Fortezza'
     },
-    1005705920: {
-      activityName: "Il primo firewall"
+    1756055546: {
+      name: 'Missione di recupero'
     },
-    1016116686: {
-      activityName: "Mente Intramontabile"
+    1773400654: {
+      name: 'Invito dell\'Imperatore'
     },
-    1016659723: {
-      activityName: "La caduta di un Re"
+    1778450722: {
+      name: 'Missione d\'analisi'
     },
-    1017714251: {
-      activityName: "Ultimi rituali"
+    1786054751: {
+      name: 'Premeditazione'
     },
-    1019616175: {
-      activityName: "Inferno: Rissa"
+    1790343591: {
+      name: 'Frammento del Viaggiatore'
     },
-    1023542723: {
-      activityName: "Mente Intramontabile"
+    1792985204: {
+      name: 'Cala la Notte: Schianto dell\'Esodo'
     },
-    1030188908: {
-      activityName: "Occhio di un guardiaporta"
+    1824067376: {
+      name: 'Rabbia al volante'
     },
-    1031478181: {
-      activityName: "Assalto Eroico Settimanale"
+    1829866365: {
+      name: 'Sporcarsi le mani'
     },
-    1031478182: {
-      activityName: "Assalto Eroico Settimanale"
+    1863334927: {
+      name: 'Cala la Notte: Canto di Savathûn'
     },
-    1031478183: {
-      activityName: "Assalto Eroico Settimanale"
+    1875726950: {
+      name: 'Leviatano'
     },
-    1044883964: {
-      activityName: "Sepiks Perfezionato"
+    1949546348: {
+      name: 'Missione di esecuzione'
     },
-    1045828271: {
-      activityName: "Scontro"
+    1952521609: {
+      name: 'Frammento del Viaggiatore'
     },
-    1068261034: {
-      activityName: "Sangue nel Giardino"
+    1956541147: {
+      name: 'Richiamo di casa'
     },
-    1075348150: {
-      activityName: "Era di Trionfo"
+    1969800443: {
+      name: 'Arecibo'
     },
-    1080191247: {
-      activityName: "Flagello d'inverno"
+    1971154629: {
+      name: 'Velocità di non sicurezza'
     },
-    1084620606: {
-      activityName: "La Cella Senza Sole"
+    1975064760: {
+      name: 'Cala la Notte: Canto di Savathûn'
     },
-    1087052691: {
-      activityName: "Scontro"
+    1981289329: {
+      name: 'Assedio dell\'Esodo Nero'
     },
-    1112015031: {
-      activityName: "Il risveglio"
+    1984315274: {
+      name: 'Assalti dell\'Avanguardia'
     },
-    1116149777: {
-      activityName: "Regicidio"
+    1988701745: {
+      name: 'Rappresaglia'
     },
-    1117274478: {
-      activityName: "La guerra dei corrotti"
+    2001433484: {
+      name: 'Missione di esecuzione'
     },
-    1122783186: {
-      activityName: "La Tomba del Ferro"
+    2025057095: {
+      name: 'Missione di combattimento'
     },
-    1126759626: {
-      activityName: "Sala dell'Eco"
+    2033669713: {
+      name: 'Javelin-4'
     },
-    1141580112: {
-      activityName: "La Volontà di Crota"
+    2052289205: {
+      name: 'Combustione'
     },
-    1142225067: {
-      activityName: "Assalto Cala la Notte Settimanale"
+    2079994698: {
+      name: 'Missione di indagine'
     },
-    1169187265: {
-      activityName: "Il Nexus"
+    2080275457: {
+      name: 'Trafficante d\'armi'
     },
-    1174401783: {
-      activityName: "Il percorso del Primo"
+    2113712124: {
+      name: 'Sacrilegio'
     },
-    1194342366: {
-      activityName: "Inferno: Recupero"
+    2151274060: {
+      name: 'Missione d\'analisi'
     },
-    1200628152: {
-      activityName: "Le Fosse di Evocazione"
+    2174556965: {
+      name: 'Montatura'
     },
-    1208087916: {
-      activityName: "Ira meccanica"
+    2183066491: {
+      name: 'Il Rifugio'
     },
-    1208087919: {
-      activityName: "Ira meccanica"
+    2184866967: {
+      name: 'Missione d\'analisi'
     },
-    1226857472: {
-      activityName: "Il nascondiglio di Cayde"
+    2187073261: {
+      name: 'Missione d\'analisi'
     },
-    1227144460: {
-      activityName: "Il riscatto della Regina"
+    2231840083: {
+      name: 'Canto della sirena'
     },
-    1228944057: {
-      activityName: "Palazzo della Polvere"
+    2236648719: {
+      name: 'Eternità'
     },
-    1234230734: {
-      activityName: "Pattuglia la Luna"
+    2243336789: {
+      name: 'Missione di combattimento'
     },
-    1259153650: {
-      activityName: "La chiamata di un'Ignota"
+    2250935166: {
+      name: 'Senza morte'
     },
-    1288347893: {
-      activityName: "Supremazia: Rissa"
+    2259811067: {
+      name: 'Frammento del Viaggiatore'
     },
-    1291023759: {
-      activityName: "Inferno: Schermaglia"
+    2264636552: {
+      name: 'Meditazione: "Combustione"'
     },
-    1293005540: {
-      activityName: "Cala la notte dell'Avanguardia"
+    2266954523: {
+      name: 'Il Rifugio'
     },
-    1296112978: {
-      activityName: "Le Terre Infette"
+    2287222467: {
+      name: 'Missione d\'analisi'
     },
-    1309514270: {
-      activityName: "La mossa dei Lupi"
+    2288260902: {
+      name: 'Missione di esecuzione'
     },
-    1322792020: {
-      activityName: "Inferno: Frattura"
+    2291549972: {
+      name: 'Potenziamento!'
     },
-    1328326126: {
-      activityName: "Perdere la Luce"
+    2297638408: {
+      name: 'Furia'
     },
-    1329840146: {
-      activityName: "L'occhio nefasto"
+    2301390667: {
+      name: 'Missione di indagine'
     },
-    1378194100: {
-      activityName: "Il Faro"
+    2318812547: {
+      name: 'Pyramidion'
     },
-    1378430574: {
-      activityName: "Inferno: Eliminazione"
+    2336998357: {
+      name: 'La lunga partita'
     },
-    1379511171: {
-      activityName: "La Spada di Crota"
+    2379494367: {
+      name: 'Missione d\'analisi'
     },
-    1387993552: {
-      activityName: "Furia meccanica"
+    2420240009: {
+      name: 'Missione di recupero'
     },
-    1390160729: {
-      activityName: "Avamposto Vestiano"
+    2445164291: {
+      name: 'Missione di esecuzione'
     },
-    1398209073: {
-      activityName: "La Tana dei Diavoli"
+    2449714930: {
+      name: 'Leviatano'
     },
-    1398209074: {
-      activityName: "La Volontà di Crota"
+    2464834848: {
+      name: 'Centro Città'
     },
-    1398976305: {
-      activityName: "Assalto Eroico Settimanale"
+    2468202005: {
+      name: 'Frammento del Viaggiatore'
     },
-    1398976306: {
-      activityName: "Assalto Eroico Settimanale"
+    2478782573: {
+      name: ''
     },
-    1398976307: {
-      activityName: "Assalto Eroico Settimanale"
+    2517540332: {
+      name: 'Distanza di non sicurezza'
     },
-    1400727968: {
-      activityName: "Frattura"
+    2519458964: {
+      name: 'Valle Infinita'
     },
-    1403880576: {
-      activityName: "Il pinnacolo del giardino"
+    2519564410: {
+      name: 'Missione di esecuzione'
     },
-    1403880578: {
-      activityName: "Il Giardino Nero"
+    2536491635: {
+      name: 'Missione di indagine'
     },
-    1403880579: {
-      activityName: "Un'onda si alza"
+    2558926634: {
+      name: 'Missione di indagine'
     },
-    1403880580: {
-      activityName: "Zona d'interdizione"
+    2559514952: {
+      name: 'Utopia'
     },
-    1403880582: {
-      activityName: "La Città Sepolta"
+    2561308143: {
+      name: 'Missione di indagine'
     },
-    1404620600: {
-      activityName: "Prigione degli Anziani"
+    2573702057: {
+      name: 'Missione di recupero'
     },
-    1415179315: {
-      activityName: "Eliminazione"
+    2574607799: {
+      name: 'Pessimi vicini'
     },
-    1419457477: {
-      activityName: "La perdita di un amico"
+    2575990417: {
+      name: 'Missione di combattimento'
     },
-    1427585666: {
-      activityName: "Un ritorno eroico"
+    2580713007: {
+      name: 'Missione di indagine'
     },
-    1431469570: {
-      activityName: "Il rapimento dell'abominio"
+    2588220738: {
+      name: 'Missione di indagine'
     },
-    1438195119: {
-      activityName: "Il Giardino Nero"
+    2610112492: {
+      name: 'Missione d\'analisi'
     },
-    1439468985: {
-      activityName: "Segnale in uscita"
+    2619236227: {
+      name: 'Missione d\'analisi'
     },
-    1441430564: {
-      activityName: "Il rancore di Urrox"
+    2629975203: {
+      name: 'Missione di combattimento'
     },
-    1441430567: {
-      activityName: "Il rancore di Urrox"
+    2629998776: {
+      name: 'Missione di recupero'
     },
-    1443271657: {
-      activityName: "Doppietta Scarlatta"
+    2642769170: {
+      name: 'Sei'
     },
-    1443570903: {
-      activityName: "Stendardo di Ferro Pandemonio: Scontro"
+    2651851341: {
+      name: 'Missione d\'analisi'
     },
-    1448094960: {
-      activityName: "I Sotterranei"
+    2665134323: {
+      name: 'Liberazione'
     },
-    1478347980: {
-      activityName: "Campus Martius"
+    2667533713: {
+      name: 'Vostok'
     },
-    1491766060: {
-      activityName: "Il ladro di ombre"
+    2684479494: {
+      name: 'Missione di recupero'
     },
-    1501957761: {
-      activityName: "D.A.G.A. caduta"
+    2693136600: {
+      name: 'Leviatano'
     },
-    1516701147: {
-      activityName: "undefined"
+    2693136601: {
+      name: 'Leviatano'
     },
-    1517679997: {
-      activityName: "Crisi della SIVA"
+    2693136602: {
+      name: 'Leviatano'
     },
-    1522220810: {
-      activityName: "La Torre"
+    2693136603: {
+      name: 'Leviatano'
     },
-    1522422482: {
-      activityName: "La Volontà di Crota"
+    2693136604: {
+      name: 'Leviatano'
     },
-    1526798932: {
-      activityName: "D.A.G.A. caduta"
+    2693136605: {
+      name: 'Leviatano'
     },
-    1533733535: {
-      activityName: "La Cella Senza Sole"
+    2702476101: {
+      name: 'La Torre'
     },
-    1551387515: {
-      activityName: "Prigione degli Anziani"
+    2708828207: {
+      name: 'Utopia'
     },
-    1566333829: {
-      activityName: "Fratelli di sangue"
+    2737739053: {
+      name: 'Conversazioni intense'
     },
-    1572749251: {
-      activityName: "Zone di Controllo"
+    2759086913: {
+      name: 'Classificato'
     },
-    1584566734: {
-      activityName: "Inferno: 6 contro 6"
+    2768347363: {
+      name: 'Missione di esecuzione'
     },
-    1604535501: {
-      activityName: "Gare di Astori"
+    2773222353: {
+      name: 'Missione d\'analisi'
     },
-    1609488702: {
-      activityName: "Doppietta"
+    2776929937: {
+      name: 'Diagnosi differenziale'
     },
-    1614355423: {
-      activityName: "Il riscatto della Regina"
+    2782300570: {
+      name: 'Missione di recupero'
     },
-    1618960674: {
-      activityName: "Inferno: 3 contro 3"
+    2784803584: {
+      name: 'Missione di combattimento'
     },
-    1624947721: {
-      activityName: "Fratelli di sangue"
+    2798856614: {
+      name: 'Missione di indagine'
     },
-    1628212868: {
-      activityName: "Assalto Eroico Settimanale"
+    2846775197: {
+      name: 'Missione di combattimento'
     },
-    1628212869: {
-      activityName: "Assalto Eroico Settimanale"
+    2908287325: {
+      name: 'Missione di indagine'
     },
-    1628212871: {
-      activityName: "Assalto Eroico Settimanale"
+    2926767881: {
+      name: 'Rivalsa'
     },
-    1636082733: {
-      activityName: "Corso d'inverno"
+    2949941834: {
+      name: 'Ospiti inattesi'
     },
-    1636082734: {
-      activityName: "Il Nexus"
+    2969403085: {
+      name: 'Missione di indagine'
     },
-    1646288223: {
-      activityName: "Sala dell'Eco"
+    3002511278: {
+      name: 'Alleanza oscura'
     },
-    1650930548: {
-      activityName: "Classificato"
+    3026637018: {
+      name: 'Missione di indagine'
     },
-    1657401676: {
-      activityName: "Assalto Eroico Settimanale"
+    3038694763: {
+      name: 'Missione di esecuzione'
     },
-    1657401677: {
-      activityName: "Assalto Eroico Settimanale"
+    3049122128: {
+      name: 'Missione d\'analisi'
     },
-    1657401679: {
-      activityName: "Assalto Eroico Settimanale"
+    3050465729: {
+      name: 'Cala la Notte: Spirale Invertita'
     },
-    1659888245: {
-      activityName: "Il rapimento dell'abominio"
+    3062197616: {
+      name: 'Competitiva'
     },
-    1665631320: {
-      activityName: "Rissa"
+    3105090879: {
+      name: 'Addio'
     },
-    1669262087: {
-      activityName: "Fratelli di sangue"
+    3140524926: {
+      name: 'Indistruttibile'
     },
-    1673931290: {
-      activityName: "Sfida degli Anziani"
+    3143798436: {
+      name: 'Zona Morta Europea'
     },
-    1681545807: {
-      activityName: "La Cella Senza Sole"
+    3147707814: {
+      name: 'Risacca'
     },
-    1685214122: {
-      activityName: "Pandemonio: Supremazia"
+    3148431353: {
+      name: 'Sporcarsi le mani'
     },
-    1685535967: {
-      activityName: "La Volontà di Crota"
+    3150153711: {
+      name: 'Scelte e possibilità'
     },
-    1686326716: {
-      activityName: "Una nuova tana"
+    3172367001: {
+      name: 'Frammento del Viaggiatore'
     },
-    1686679946: {
-      activityName: "Scontro"
+    3173130826: {
+      name: 'Missione di combattimento'
     },
-    1709749894: {
-      activityName: "Prospettiva Urbana"
+    3208779612: {
+      name: 'Missione di recupero'
     },
-    1714839224: {
-      activityName: "Rituale del sacrificio"
+    3211303924: {
+      name: 'Missione di recupero'
     },
-    1719392441: {
-      activityName: "Bivio"
+    3211568383: {
+      name: 'Canto della sirena'
     },
-    1723226893: {
-      activityName: "La mente bellica"
+    3231065327: {
+      name: 'Missione d\'analisi'
     },
-    1727851403: {
-      activityName: "Il codice Prometeo"
+    3243161126: {
+      name: 'Partita veloce'
     },
-    1728758154: {
-      activityName: "Le Fosse di Evocazione"
+    3268684190: {
+      name: 'Missione di recupero'
     },
-    1733556769: {
-      activityName: "La caduta di un Re"
+    3272002712: {
+      name: 'Speranza'
     },
-    1740074530: {
-      activityName: "Cerberus Vae III"
+    3277510674: {
+      name: 'Senza morte'
     },
-    1749151224: {
-      activityName: "Cala la notte dell'Avanguardia"
+    3283790633: {
+      name: 'Montatura'
     },
-    1771902734: {
-      activityName: "Inferno: Scontro"
+    3289681664: {
+      name: 'Equipaggio perduto'
     },
-    1772839913: {
-      activityName: "Gallerie tenebrose"
+    3298775062: {
+      name: 'Missione di indagine'
     },
-    1783047867: {
-      activityName: "Inferno: Controllo"
+    3303685562: {
+      name: 'Missione di recupero'
     },
-    1783107168: {
-      activityName: "Download completato"
+    3304835347: {
+      name: 'Richiamo di casa'
     },
-    1783564050: {
-      activityName: "Il Casato dominante"
+    3336275007: {
+      name: 'Meditazione: "Sei"'
     },
-    1794499705: {
-      activityName: "I Signori del Ferro: preludio"
+    3337731612: {
+      name: 'Missione di combattimento'
     },
-    1815860968: {
-      activityName: "Zone di Controllo"
+    3346345105: {
+      name: 'Trattamento sperimentale'
     },
-    1816396489: {
-      activityName: "Il ladro di ombre"
+    3359466010: {
+      name: 'Scintilla'
     },
-    1836141626: {
-      activityName: "Eliminazione"
+    3368226533: {
+      name: 'Cala la Notte: Spirale Invertita'
     },
-    1836893116: {
-      activityName: "La fine di Crota"
+    3379039897: {
+      name: 'Missione di recupero'
     },
-    1836893119: {
-      activityName: "La fine di Crota"
+    3410530777: {
+      name: 'Azione calcolata'
     },
-    1845751534: {
-      activityName: "Cerberus Vae III"
+    3417504239: {
+      name: 'Risacca'
     },
-    1846390409: {
-      activityName: "L'ascesa dei guardiani"
+    3446541099: {
+      name: 'Leviatano'
     },
-    1851417512: {
-      activityName: "Deriva Siderale"
+    3479544154: {
+      name: 'Missione di combattimento'
     },
-    1856964953: {
-      activityName: "L'ascesa dei guardiani"
+    3481058226: {
+      name: 'Missione di indagine'
     },
-    1882836298: {
-      activityName: "Il risveglio"
+    3485876484: {
+      name: 'Rabbia al volante'
     },
-    1889399773: {
-      activityName: "Assalto Cala la Notte Settimanale"
+    3487576414: {
+      name: 'Missione di indagine'
     },
-    1912940269: {
-      activityName: "Recupero"
+    3489692681: {
+      name: 'Missione di indagine'
     },
-    1917735347: {
-      activityName: "Corso d'inverno"
+    3500791146: {
+      name: 'Suspense'
     },
-    1918823817: {
-      activityName: "Mente Intramontabile"
+    3515770727: {
+      name: 'Missione d\'analisi'
     },
-    1924778540: {
-      activityName: "Il Casato dominante"
+    3580793473: {
+      name: 'Meditazione: "1AU"'
     },
-    1940432142: {
-      activityName: "Zona d'interdizione"
+    3612741503: {
+      name: 'Missione di indagine'
     },
-    1973631991: {
-      activityName: "L'ultima Parabola"
+    3627094182: {
+      name: 'Missione di combattimento'
     },
-    1974138312: {
-      activityName: "Calice corrotto"
+    3631476566: {
+      name: 'Il Rifugio'
     },
-    1985034593: {
-      activityName: "Assalto Cala la Notte Settimanale"
+    3645117987: {
+      name: 'Pessimi vicini'
     },
-    2008529245: {
-      activityName: "I re della rovina"
+    3652531274: {
+      name: 'Frammento del Viaggiatore'
     },
-    2010056644: {
-      activityName: "Precipizio di Haakon"
+    3662124488: {
+      name: 'Missione di indagine'
     },
-    2022189692: {
-      activityName: "Calice corrotto"
+    3664915501: {
+      name: 'Legione Rossa, fluido nero'
     },
-    2037022373: {
-      activityName: "Vertigo"
+    3669054326: {
+      name: 'Missione di recupero'
     },
-    2045385030: {
-      activityName: "Pattuglia Venere"
+    3688464794: {
+      name: 'L\'importanza della rete'
     },
-    2051444910: {
-      activityName: "L'oscurità oltre"
+    3700722865: {
+      name: 'Liberazione'
     },
-    2061368111: {
-      activityName: "Pandemonio: Supremazia"
+    3702064261: {
+      name: 'Recupero dati'
     },
-    2063852581: {
-      activityName: "Pandemonio: Scontro"
+    3738159218: {
+      name: 'Incolume'
     },
-    2072729921: {
-      activityName: "Calice corrotto"
+    3752039537: {
+      name: 'Polarità invertita'
     },
-    2074618692: {
-      activityName: "Il Divoratore di Eternità"
+    3780356141: {
+      name: 'Fermati e spara'
     },
-    2074618695: {
-      activityName: "Il Divoratore di Eternità"
+    3792746061: {
+      name: 'Missione di combattimento'
     },
-    2082069870: {
-      activityName: "L'Anomalia"
+    3799743268: {
+      name: 'Classificato'
     },
-    2084208305: {
-      activityName: "La Cella Senza Sole"
+    3806583577: {
+      name: 'Missione di esecuzione'
     },
-    2084307227: {
-      activityName: "Pattuglia di paura"
+    3834639884: {
+      name: 'Missione d\'analisi'
     },
-    2095588685: {
-      activityName: "La Volontà di Crota"
+    3836086286: {
+      name: 'Ospiti inattesi'
     },
-    2105028197: {
-      activityName: "Sala dell'Eco"
+    3839751954: {
+      name: 'Altare delle Fiamme'
     },
-    2129294976: {
-      activityName: "L'oscurità dentro"
+    3872525353: {
+      name: 'Fermati e spara'
     },
-    2151413729: {
-      activityName: "La Torre"
+    3879860661: {
+      name: 'Leviatano'
     },
-    2176272408: {
-      activityName: "Il ladro di ombre"
+    3903562779: {
+      name: 'La Torre'
     },
-    2178968385: {
-      activityName: "L'occhio nefasto"
+    3916343513: {
+      name: 'Leviatano'
     },
-    2184393955: {
-      activityName: "Cerberus Vae III"
+    3920643231: {
+      name: 'Cala la Notte: Trafficante d\'armi'
     },
-    2186849909: {
-      activityName: "Corso d'inverno"
+    3958400416: {
+      name: 'Missione di indagine'
     },
-    2190039885: {
-      activityName: "Classico: Tutti contro Tutti"
+    3966792859: {
+      name: 'Nessus, Centauro Instabile'
     },
-    2197680969: {
-      activityName: "I re della rovina"
+    3978357488: {
+      name: 'Missione di recupero'
     },
-    2198347919: {
-      activityName: "La Torre"
+    3982474534: {
+      name: 'Rivalsa'
     },
-    2200634811: {
-      activityName: "L'assedio della mente bellica"
+    4034557395: {
+      name: 'Ritorno a casa'
     },
-    2201622127: {
-      activityName: "Sfida degli Anziani"
+    4039317196: {
+      name: 'Leviatano'
     },
-    2213151771: {
-      activityName: "Collettivo Ishtar"
+    4043714237: {
+      name: 'Missione di indagine'
     },
-    2217862439: {
-      activityName: "Controllo"
+    4047570705: {
+      name: 'Missione di combattimento'
     },
-    2221365740: {
-      activityName: "Sepiks Perfezionato"
+    4050886070: {
+      name: 'Missione di indagine'
     },
-    2234107290: {
-      activityName: "La Cella Senza Sole"
+    4054968718: {
+      name: 'Cala la Notte: Spirale Invertita'
     },
-    2243240710: {
-      activityName: "Discesa Infinita"
+    4095207117: {
+      name: 'Missione di recupero'
     },
-    2244550959: {
-      activityName: "La Torre"
+    4103844069: {
+      name: 'Missione di esecuzione'
     },
-    2244943676: {
-      activityName: "La rinascita del Khvostov"
+    4159221189: {
+      name: 'Io'
     },
-    2245079334: {
-      activityName: "Calice corrotto"
+    4166562681: {
+      name: 'Titano'
     },
-    2263964303: {
-      activityName: "Eliminazione"
+    4174103238: {
+      name: 'Missione di recupero'
     },
-    2268273279: {
-      activityName: "Sepiks Perfezionato"
+    4209774794: {
+      name: 'Missione di recupero'
     },
-    2270816053: {
-      activityName: "Il riscatto della Regina"
+    4216926874: {
+      name: 'Missione di recupero'
     },
-    2270968444: {
-      activityName: "Assalto Eroico Settimanale"
+    4231544111: {
+      name: 'Missione di indagine'
     },
-    2270968445: {
-      activityName: "Assalto Eroico Settimanale"
+    4239233351: {
+      name: 'Meditazione: "Scintilla"'
     },
-    2270968446: {
-      activityName: "Assalto Eroico Settimanale"
+    4254776501: {
+      name: 'Missione di recupero'
     },
-    2275772174: {
-      activityName: "Il ladro di ombre"
+    4283649349: {
+      name: 'Missione di esecuzione'
     },
-    2286628407: {
-      activityName: "Paradosso"
-    },
-    2303355724: {
-      activityName: "La Tana dei Diavoli"
-    },
-    2303355727: {
-      activityName: "La Volontà di Crota"
-    },
-    2316484115: {
-      activityName: "Il Faro"
-    },
-    2319702946: {
-      activityName: "Tempio del Ferro"
-    },
-    2321224098: {
-      activityName: "La chiamata di un'Ignota"
-    },
-    2324706853: {
-      activityName: "La fine di Crota"
-    },
-    2326253031: {
-      activityName: "La vendetta di Skolas"
-    },
-    2327910410: {
-      activityName: "Camera della Notte"
-    },
-    2330516073: {
-      activityName: "La Torre"
-    },
-    2332037858: {
-      activityName: "Corte della Vedova"
-    },
-    2333767699: {
-      activityName: "La stretta della paura"
-    },
-    2344229082: {
-      activityName: "Mente Intramontabile"
-    },
-    2344622554: {
-      activityName: "Sala dell'Eco"
-    },
-    2356723745: {
-      activityName: "La guerra imminente"
-    },
-    2364610626: {
-      activityName: "Il percorso del Primo"
-    },
-    2369296916: {
-      activityName: "La guerra imminente"
-    },
-    2374186202: {
-      activityName: "Inferno: Controllo"
-    },
-    2374784693: {
-      activityName: "Flagello d'inverno"
-    },
-    2374899718: {
-      activityName: "Il ladro di ombre"
-    },
-    2375659247: {
-      activityName: "Sfida degli Anziani"
-    },
-    2380726447: {
-      activityName: "L'Astrocorazzata"
-    },
-    2381859905: {
-      activityName: "Il ladro di ombre"
-    },
-    2388860485: {
-      activityName: "Frattura"
-    },
-    2391040454: {
-      activityName: "Sepiks Perfezionato"
-    },
-    2393458461: {
-      activityName: "Apogeo entropico"
-    },
-    2396741855: {
-      activityName: "Cerberus Vae III"
-    },
-    2398459666: {
-      activityName: "Pattuglia Marte"
-    },
-    2401705359: {
-      activityName: "Guerra dei Corrotti"
-    },
-    2422821510: {
-      activityName: "I re della rovina"
-    },
-    2430076725: {
-      activityName: "L'Osservatorio Cieco"
-    },
-    2437373043: {
-      activityName: "Mente Intramontabile"
-    },
-    2445476122: {
-      activityName: "Classico: 6 contro 6"
-    },
-    2446491566: {
-      activityName: "Le Terre Infette"
-    },
-    2449230902: {
-      activityName: "L'Astrocorazzata"
-    },
-    2450352219: {
-      activityName: "La Cella Senza Sole"
-    },
-    2473173917: {
-      activityName: "La Zanna Silente"
-    },
-    2474598319: {
-      activityName: "Pattuglia Venere"
-    },
-    2486047606: {
-      activityName: "Il Giardino Nero"
-    },
-    2488292787: {
-      activityName: "Lupi solitari: 3 contro 3"
-    },
-    2500396686: {
-      activityName: "Tempio del Ferro"
-    },
-    2503808507: {
-      activityName: "Ultimi rituali"
-    },
-    2507231345: {
-      activityName: "La Frontiera"
-    },
-    2507671226: {
-      activityName: "Segnale in uscita"
-    },
-    2522686639: {
-      activityName: "Lupi solitari: 6 contro 6"
-    },
-    2532582309: {
-      activityName: "D.A.G.A. caduta"
-    },
-    2546962221: {
-      activityName: "La Cella Senza Sole"
-    },
-    2553967924: {
-      activityName: "La breccia nella Muraglia"
-    },
-    2577060487: {
-      activityName: "Paradosso"
-    },
-    2582525652: {
-      activityName: "Altare di Oryx"
-    },
-    2586575560: {
-      activityName: "Pandemonio: Rissa"
-    },
-    2591739000: {
-      activityName: "Gli insonni"
-    },
-    2604992012: {
-      activityName: "Perdere la Luce"
-    },
-    2605106985: {
-      activityName: "Un'onda si alza"
-    },
-    2616429373: {
-      activityName: "La stretta della paura"
-    },
-    2624694148: {
-      activityName: "Congrega corrotta"
-    },
-    2624916786: {
-      activityName: "Cerberus Vae III"
-    },
-    2626477216: {
-      activityName: "Segnale in uscita"
-    },
-    2632260907: {
-      activityName: "Sala dell'Eco"
-    },
-    2638978649: {
-      activityName: ""
-    },
-    2641355370: {
-      activityName: "Il pinnacolo del giardino"
-    },
-    2643956095: {
-      activityName: "Lupi solitari: 3 contro 3"
-    },
-    2658160549: {
-      activityName: "Congrega corrotta"
-    },
-    2659248068: {
-      activityName: "Volta di Vetro"
-    },
-    2659248069: {
-      activityName: "Volta di Vetro"
-    },
-    2659248071: {
-      activityName: "Volta di Vetro"
-    },
-    2662709104: {
-      activityName: "Fulmine nel palmo"
-    },
-    2664207554: {
-      activityName: "L'occhio nefasto"
-    },
-    2666433880: {
-      activityName: "Il Nexus"
-    },
-    2669189613: {
-      activityName: "Palazzo della Polvere"
-    },
-    2678657479: {
-      activityName: "Il rapimento dell'abominio"
-    },
-    2680821721: {
-      activityName: "Il Calderone"
-    },
-    2693077237: {
-      activityName: "Cala la notte dell'Avanguardia"
-    },
-    2695324124: {
-      activityName: "Calice corrotto"
-    },
-    2697160954: {
-      activityName: "Era di Trionfo"
-    },
-    2697969178: {
-      activityName: "Assalto Cala la Notte Settimanale"
-    },
-    2701768038: {
-      activityName: "Pugno di Crota"
-    },
-    2704098598: {
-      activityName: "La Tana dei Diavoli"
-    },
-    2708547287: {
-      activityName: "Una marcia di fuoco"
-    },
-    2717791362: {
-      activityName: "La Volontà di Crota"
-    },
-    2719526771: {
-      activityName: "Palazzo della Polvere"
-    },
-    2726977290: {
-      activityName: "L'ultima Parabola"
-    },
-    2737751857: {
-      activityName: "Bellezza nella liberazione"
-    },
-    2739987894: {
-      activityName: "Un simbolo d'onore"
-    },
-    2743106708: {
-      activityName: "Palazzo della Polvere"
-    },
-    2747031950: {
-      activityName: "Classico: 3 contro 3"
-    },
-    2764426556: {
-      activityName: "Paradosso"
-    },
-    2764561765: {
-      activityName: "Perdere la Luce"
-    },
-    2775184694: {
-      activityName: "Le Fosse di Evocazione"
-    },
-    2776273577: {
-      activityName: "Cerberus Vae III"
-    },
-    2790114296: {
-      activityName: "Il Casato dominante"
-    },
-    2795444912: {
-      activityName: "Schermaglia"
-    },
-    2799122060: {
-      activityName: "Il Nexus"
-    },
-    2819394450: {
-      activityName: "Avanguardia Storica"
-    },
-    2828456290: {
-      activityName: "Sabbie Splendenti"
-    },
-    2839046506: {
-      activityName: "undefined"
-    },
-    2840876929: {
-      activityName: "Fratelli di sangue"
-    },
-    2846350970: {
-      activityName: "La Cella Senza Sole"
-    },
-    2853745856: {
-      activityName: "Il Giardino Nero"
-    },
-    2861777810: {
-      activityName: "Corso d'inverno"
-    },
-    2873833515: {
-      activityName: "La Cella Senza Sole"
-    },
-    2873913519: {
-      activityName: "La mente bellica"
-    },
-    2877811433: {
-      activityName: "Pandemonio: Rissa"
-    },
-    2895301046: {
-      activityName: "Zona d'interdizione"
-    },
-    2896357417: {
-      activityName: "Corso d'inverno"
-    },
-    2896357418: {
-      activityName: "Il Nexus"
-    },
-    2897641944: {
-      activityName: "Calice corrotto"
-    },
-    2910883293: {
-      activityName: "Ultimi rituali"
-    },
-    2918909691: {
-      activityName: "Circolo dell'evocazione"
-    },
-    2926133958: {
-      activityName: "Arsenale"
-    },
-    2931947534: {
-      activityName: "L'ascesa di un Kell"
-    },
-    2938090611: {
-      activityName: "La guerra imminente"
-    },
-    2938118424: {
-      activityName: "Mente Intramontabile"
-    },
-    2938118425: {
-      activityName: "Cerberus Vae III"
-    },
-    2938118426: {
-      activityName: "Palazzo della Polvere"
-    },
-    2945511915: {
-      activityName: "Lupi solitari: 6 contro 6"
-    },
-    2947742498: {
-      activityName: "Inferno Doppio"
-    },
-    2981424914: {
-      activityName: "Il codice Prometeo"
-    },
-    2989915775: {
-      activityName: "Mente Intramontabile"
-    },
-    3005484445: {
-      activityName: "Il codice Prometeo"
-    },
-    3010573436: {
-      activityName: "Il ladro di ombre"
-    },
-    3011954788: {
-      activityName: "Download completato"
-    },
-    3025411906: {
-      activityName: "Il Macellarconti"
-    },
-    3027976182: {
-      activityName: "Fratelli di sangue"
-    },
-    3030879879: {
-      activityName: "L'occhio nefasto"
-    },
-    3041179010: {
-      activityName: "Cerberus Vae III"
-    },
-    3044479892: {
-      activityName: "Il ladro di ombre"
-    },
-    3047788493: {
-      activityName: "Palazzo della Polvere"
-    },
-    3047788494: {
-      activityName: "Cerberus Vae III"
-    },
-    3047788495: {
-      activityName: "Mente Intramontabile"
-    },
-    3051527960: {
-      activityName: "La Cella Senza Sole"
-    },
-    3053288711: {
-      activityName: "Giardini Pensili"
-    },
-    3056582947: {
-      activityName: "Un'onda si alza"
-    },
-    3070937708: {
-      activityName: "D.A.G.A. caduta"
-    },
-    3077860924: {
-      activityName: "La Tana dei Diavoli"
-    },
-    3077860927: {
-      activityName: "La Volontà di Crota"
-    },
-    3097191720: {
-      activityName: "Il ladro di ombre"
-    },
-    3098008841: {
-      activityName: "La Volontà di Crota"
-    },
-    3101475152: {
-      activityName: "Base Delfi"
-    },
-    3101766066: {
-      activityName: "L'occhio nefasto"
-    },
-    3102291176: {
-      activityName: "Il percorso del Primo"
-    },
-    3102295231: {
-      activityName: "Recupero"
-    },
-    3120201278: {
-      activityName: "Corso d'inverno"
-    },
-    3120351937: {
-      activityName: "La mente bellica"
-    },
-    3120351938: {
-      activityName: "L'oscurità dentro"
-    },
-    3120351939: {
-      activityName: "Recupero"
-    },
-    3120351941: {
-      activityName: "L'assedio della mente bellica"
-    },
-    3120351943: {
-      activityName: "L'ultima Parabola"
-    },
-    3125074504: {
-      activityName: "Assalto Eroico Settimanale"
-    },
-    3125074505: {
-      activityName: "Assalto Eroico Settimanale"
-    },
-    3125074507: {
-      activityName: "Assalto Eroico Settimanale"
-    },
-    3132533708: {
-      activityName: "Calice corrotto"
-    },
-    3135856650: {
-      activityName: "Flagello d'inverno"
-    },
-    3156370656: {
-      activityName: "Settore 618"
-    },
-    3162176634: {
-      activityName: "Sala dell'Eco"
-    },
-    3183184449: {
-      activityName: "Fratelli di sangue"
-    },
-    3187607216: {
-      activityName: "Mente Intramontabile"
-    },
-    3190434637: {
-      activityName: "L'Astrocorazzata"
-    },
-    3192378548: {
-      activityName: "L'oscurità oltre"
-    },
-    3196929644: {
-      activityName: "Il rapimento dell'abominio"
-    },
-    3200293401: {
-      activityName: "Il nemico del mio nemico"
-    },
-    3207122440: {
-      activityName: "L'Archivio"
-    },
-    3209623958: {
-      activityName: "Assalto Cala la Notte Settimanale"
-    },
-    3210106079: {
-      activityName: "Pattuglia l'Astrocorazzata"
-    },
-    3220294246: {
-      activityName: "La breccia nella Muraglia"
-    },
-    3234259779: {
-      activityName: "Prove di Osiride"
-    },
-    3242509473: {
-      activityName: "La Volontà di Crota"
-    },
-    3252534714: {
-      activityName: "Doppietta"
-    },
-    3263216023: {
-      activityName: "Regicidio"
-    },
-    3277621970: {
-      activityName: "Il Rilevatore Temporale"
-    },
-    3277929848: {
-      activityName: "Fratelli di sangue"
-    },
-    3292305209: {
-      activityName: "Corso d'inverno"
-    },
-    3292305210: {
-      activityName: "Il Nexus"
-    },
-    3292667877: {
-      activityName: "Clinica"
-    },
-    3315158082: {
-      activityName: "Una scintilla nell'ombra"
-    },
-    3322717977: {
-      activityName: "Stendardo di Ferro: Controllo"
-    },
-    3335571405: {
-      activityName: "Supremazia"
-    },
-    3343284688: {
-      activityName: "Segnale in uscita"
-    },
-    3343503784: {
-      activityName: "Calice corrotto"
-    },
-    3345352981: {
-      activityName: "Rituale del sacrificio"
-    },
-    3346215145: {
-      activityName: "Il Faro"
-    },
-    3349918649: {
-      activityName: "L'Astrocorazzata"
-    },
-    3356249023: {
-      activityName: "Furia meccanica"
-    },
-    3373044013: {
-      activityName: "Calice corrotto"
-    },
-    3384143875: {
-      activityName: "Calice corrotto"
-    },
-    3392709953: {
-      activityName: "Il rapimento dell'abominio"
-    },
-    3393673804: {
-      activityName: "Prigione degli Anziani"
-    },
-    3394418729: {
-      activityName: "Palazzo della Polvere"
-    },
-    3398049753: {
-      activityName: "Il pinnacolo del giardino"
-    },
-    3398752148: {
-      activityName: "Corso d'inverno"
-    },
-    3399843400: {
-      activityName: "La chiamata di un'Ignota"
-    },
-    3399843403: {
-      activityName: "Collettivo Ishtar"
-    },
-    3399843404: {
-      activityName: "L'Archivio"
-    },
-    3399843406: {
-      activityName: "Occhio di un guardiaporta"
-    },
-    3399843407: {
-      activityName: "Flagello d'inverno"
-    },
-    3403438134: {
-      activityName: "Sala dell'Eco"
-    },
-    3406669964: {
-      activityName: "Sepiks Perfezionato"
-    },
-    3412406993: {
-      activityName: "Cattedrale del Vespro"
-    },
-    3415949693: {
-      activityName: "Il Nexus"
-    },
-    3422670336: {
-      activityName: "La Tana dei Diavoli"
-    },
-    3422670339: {
-      activityName: "La Volontà di Crota"
-    },
-    3422924470: {
-      activityName: "Congrega corrotta"
-    },
-    3427115544: {
-      activityName: "D.A.G.A. caduta"
-    },
-    3428378490: {
-      activityName: "Pandemonio: Scontro"
-    },
-    3434275681: {
-      activityName: "Camera della Notte"
-    },
-    3464398659: {
-      activityName: "Altare di Oryx"
-    },
-    3473815980: {
-      activityName: "Pugno di Crota"
-    },
-    3476387771: {
-      activityName: "Guerra dei Corrotti Eroica"
-    },
-    3492173922: {
-      activityName: "Avamposto Vestiano"
-    },
-    3493774909: {
-      activityName: "Il Re dei Corrotti: preludio"
-    },
-    3508129769: {
-      activityName: "Culto dei Vermi"
-    },
-    3508129770: {
-      activityName: "Culto dei Vermi"
-    },
-    3509128672: {
-      activityName: "Tempio del Ferro"
-    },
-    3527709396: {
-      activityName: "Schermaglia"
-    },
-    3534581229: {
-      activityName: "La caduta di un Re"
-    },
-    3543525727: {
-      activityName: "Il riscatto della Regina"
-    },
-    3549856929: {
-      activityName: "L'assedio della mente bellica"
-    },
-    3555113730: {
-      activityName: "L'occhio nefasto"
-    },
-    3565777280: {
-      activityName: "Toc toc"
-    },
-    3568014988: {
-      activityName: "Regicidio"
-    },
-    3573972337: {
-      activityName: "Il Nexus"
-    },
-    3575520714: {
-      activityName: "Fratelli di sangue"
-    },
-    3575840788: {
-      activityName: "La mossa dei Lupi"
-    },
-    3582451805: {
-      activityName: "Il ladro di ombre"
-    },
-    3582577776: {
-      activityName: "La Zanna Silente"
-    },
-    3593950004: {
-      activityName: "Riconoscimenti di Destiny"
-    },
-    3602734434: {
-      activityName: "Stendardo Decaduto"
-    },
-    3609927430: {
-      activityName: "Inferno: Supremazia"
-    },
-    3612436612: {
-      activityName: "La guerra imminente"
-    },
-    3619606113: {
-      activityName: "Pandemonio: Scontro"
-    },
-    3621292155: {
-      activityName: "Recupero"
-    },
-    3635588435: {
-      activityName: "L'Oratore"
-    },
-    3645675142: {
-      activityName: "Controllo"
-    },
-    3645919501: {
-      activityName: "Pattuglia il Cosmodromo"
-    },
-    3650545911: {
-      activityName: "La mossa dei Lupi"
-    },
-    3670262295: {
-      activityName: "Prove di Osiride"
-    },
-    3670861271: {
-      activityName: "Il nemico del mio nemico"
-    },
-    3670968271: {
-      activityName: "La Volontà di Crota"
-    },
-    3671763238: {
-      activityName: "Cerberus Vae III"
-    },
-    3674885127: {
-      activityName: "Regicidio"
-    },
-    3676594097: {
-      activityName: "Corso d'inverno"
-    },
-    3691405620: {
-      activityName: "Cala la notte dell'Avanguardia"
-    },
-    3700036317: {
-      activityName: "Il trionfo di Oryx"
-    },
-    3705341715: {
-      activityName: "Un vecchio amico ritrovato"
-    },
-    3708806801: {
-      activityName: "Apogeo entropico"
-    },
-    3711414560: {
-      activityName: "Camera della Notte"
-    },
-    3711414561: {
-      activityName: "La Spada di Crota"
-    },
-    3711414562: {
-      activityName: "Il risveglio"
-    },
-    3711414563: {
-      activityName: "Altare di Oryx"
-    },
-    3711414564: {
-      activityName: "L'oscurità oltre"
-    },
-    3711414566: {
-      activityName: "La Tomba del Mondo"
-    },
-    3715085142: {
-      activityName: "Chiamata dalle ombre"
-    },
-    3731091063: {
-      activityName: "Assalto Cala la Notte Settimanale"
-    },
-    3741914742: {
-      activityName: "Corso d'inverno"
-    },
-    3743955707: {
-      activityName: "La Torre"
-    },
-    3750289192: {
-      activityName: "Pugno di Crota"
-    },
-    3778091466: {
-      activityName: "Download completato"
-    },
-    3784570118: {
-      activityName: "L'Archivio"
-    },
-    3799336128: {
-      activityName: "La Volontà di Crota"
-    },
-    3817155567: {
-      activityName: "Breccia del Crepuscolo"
-    },
-    3837170670: {
-      activityName: "La Tomba del Mondo"
-    },
-    3842976518: {
-      activityName: "La Cella Senza Sole"
-    },
-    3848655103: {
-      activityName: "Scudo Nero"
-    },
-    3856562046: {
-      activityName: "Perdere la Luce"
-    },
-    3856604751: {
-      activityName: "Prima Luce"
-    },
-    3860793576: {
-      activityName: "Sepiks Perfezionato"
-    },
-    3878867172: {
-      activityName: "Zone di Controllo"
-    },
-    3896699662: {
-      activityName: "Corso d'inverno"
-    },
-    3910288239: {
-      activityName: "Stendardo di Ferro: Frattura"
-    },
-    3918359338: {
-      activityName: "Icaro"
-    },
-    3920061741: {
-      activityName: "Altare di Oryx"
-    },
-    3921931055: {
-      activityName: "La Volontà di Crota"
-    },
-    3936153046: {
-      activityName: "Inferno: 3 contro 3"
-    },
-    3941998864: {
-      activityName: "Cerberus Vae III"
-    },
-    3945328236: {
-      activityName: "Tempio del Ferro"
-    },
-    3948474766: {
-      activityName: "La Spada di Crota"
-    },
-    3974631085: {
-      activityName: "Il nemico del mio nemico"
-    },
-    3978884648: {
-      activityName: "La caduta di un Re"
-    },
-    4000873610: {
-      activityName: "La fine di Crota"
-    },
-    4027720491: {
-      activityName: "Fratelli di sangue"
-    },
-    4038697181: {
-      activityName: "Volta di Vetro"
-    },
-    4046346128: {
-      activityName: "La stretta della paura"
-    },
-    4055903037: {
-      activityName: "Frattura"
-    },
-    4060895971: {
-      activityName: "La Torre"
-    },
-    4079642013: {
-      activityName: "Legione Infranta"
-    },
-    4079642014: {
-      activityName: "Legione Infranta"
-    },
-    4087776066: {
-      activityName: "Il nascondiglio di Cayde"
-    },
-    4099604100: {
-      activityName: "La Volontà di Crota"
-    },
-    4101329072: {
-      activityName: "L'occhio nefasto"
-    },
-    4105918304: {
-      activityName: "Ultima Fermata"
-    },
-    4107311671: {
-      activityName: "Terre di Ruggine"
-    },
-    4129878327: {
-      activityName: "Inferno: Recupero"
-    },
-    4131978369: {
-      activityName: "Il rapimento dell'abominio"
-    },
-    4141063459: {
-      activityName: "Il ladro di ombre"
-    },
-    4153423016: {
-      activityName: "Sfida degli Anziani"
-    },
-    4163254808: {
-      activityName: "Sponde del Tempo"
-    },
-    4168247421: {
-      activityName: "Stendardo di Ferro: Scontro"
-    },
-    4171584130: {
-      activityName: "Inferno: 6 contro 6"
-    },
-    4175179544: {
-      activityName: "Assalto Eroico Settimanale"
-    },
-    4175179545: {
-      activityName: "Assalto Eroico Settimanale"
-    },
-    4175179546: {
-      activityName: "Assalto Eroico Settimanale"
-    },
-    4178645458: {
-      activityName: "La Città Sepolta"
-    },
-    4181273223: {
-      activityName: "D.A.G.A. caduta"
-    },
-    4183157062: {
-      activityName: "Ultimi rituali"
-    },
-    4187524452: {
-      activityName: "Mente Intramontabile"
-    },
-    4196724507: {
-      activityName: "Inferno: Rissa"
-    },
-    4200263342: {
-      activityName: "Bastione"
-    },
-    4203094490: {
-      activityName: "Tempio del Ferro"
-    },
-    4215168114: {
-      activityName: "La Volontà di Crota"
-    },
-    4217181091: {
-      activityName: "Schermaglia"
-    },
-    4222208550: {
-      activityName: "Gare di Astori"
-    },
-    4227723344: {
-      activityName: "La Tana dei Diavoli"
-    },
-    4227723347: {
-      activityName: "La Volontà di Crota"
-    },
-    4239017990: {
-      activityName: "Una chiave aspetta"
-    },
-    4240750267: {
-      activityName: "Il codice Prometeo"
-    },
-    4242282035: {
-      activityName: "Controllo"
-    },
-    4252752792: {
-      activityName: "Palazzo della Polvere"
-    },
-    4253541885: {
-      activityName: "Corso d'inverno"
-    },
-    4254149014: {
-      activityName: "Il ladro di ombre"
-    },
-    4260139097: {
-      activityName: "Pantheon"
-    },
-    4272344899: {
-      activityName: "L'Archivio"
-    },
-    4277539497: {
-      activityName: "Stendardo di Ferro: Scontro"
-    },
-    4287936726: {
-      activityName: "Exodus Blu"
+    4291922223: {
+      name: 'Speranza'
     },
   },
   ja: {
-    8055542: {
-      activityName: "破られた防壁"
+    19982784: {
+      name: '戦闘ミッション'
     },
-    9885984: {
-      activityName: "夜の間"
+    30240416: {
+      name: '暗殺ミッション'
     },
-    10551956: {
-      activityName: "山の王者"
+    37050217: {
+      name: '調査ミッション'
     },
-    18715720: {
-      activityName: "山の王者"
+    51408141: {
+      name: '回収ミッション'
     },
-    24471896: {
-      activityName: "火星と金星"
+    53954174: {
+      name: 'アンチ対空'
     },
-    24471899: {
-      activityName: "地球と月"
+    57103244: {
+      name: '調査ミッション'
     },
-    28695277: {
-      activityName: "クロタの剣"
+    60002467: {
+      name: '冒涜'
     },
-    34205302: {
-      activityName: "ネクサス"
+    78673128: {
+      name: '泥棒の泥棒'
     },
-    34327100: {
-      activityName: "フォールン・サーベル"
+    80726883: {
+      name: 'ああ、船長'
     },
-    51311972: {
-      activityName: "不滅のマインド"
+    82913930: {
     },
-    51311973: {
-      activityName: "ケルベロス・バエIII"
+    89727599: {
+      name: 'リヴァイアサン'
     },
-    51311974: {
-      activityName: "塵の宮殿"
+    104342360: {
+      name: '戦闘ミッション'
     },
-    64371922: {
-      activityName: "ランブル: 闘魂"
+    116352029: {
+      name: '戦闘ミッション'
     },
-    86749741: {
-      activityName: "アイアンバナー: コントロール"
+    122988657: {
+      name: 'レッドリージョンの黒い油'
     },
-    91984044: {
-      activityName: "陰謀のケル"
+    143647473: {
+      name: '回収ミッション'
     },
-    95021281: {
-      activityName: "光の後に"
+    145302664: {
+      name: 'ナイトフォール: 武器商人'
     },
-    96237246: {
-      activityName: "クラシック: 6対6"
+    153537894: {
+      name: '新しいフロンティア'
     },
-    98710471: {
-      activityName: "ランブル"
+    160721490: {
+      name: '機密'
     },
-    103493304: {
-      activityName: "山の王者"
+    175598161: {
+      name: '回収ミッション'
     },
-    116560380: {
-      activityName: "影に生きる盗賊"
+    189324537: {
+      name: '回収ミッション'
     },
-    116811400: {
-      activityName: "影に生きる盗賊"
+    197670945: {
+      name: '暗殺ミッション'
     },
-    123652644: {
-      activityName: "残響の間"
+    204298081: {
+      name: '分析ミッション'
     },
-    123999179: {
-      activityName: "トワイライトの影"
+    248066530: {
+      name: '回収ミッション'
     },
-    130631058: {
-      activityName: "クラシック: 3対3"
+    255819671: {
+      name: '怒り'
     },
-    134979141: {
-      activityName: "ラストアレイ"
+    261349035: {
+      name: '回収ミッション'
     },
-    149381097: {
-      activityName: "月をパトロール"
+    286324446: {
+      name: '回収ミッション'
     },
-    151357230: {
-      activityName: "影に生きる盗賊"
+    287649202: {
+      name: 'リヴァイアサン'
     },
-    154683944: {
-      activityName: "止まらない衰退"
+    293858112: {
+      name: '戦闘ミッション'
     },
-    157336261: {
-      activityName: "インフェルノ: 闘魂"
+    298747401: {
+      name: '調査ミッション'
     },
-    157390236: {
-      activityName: "塵の宮殿"
+    298793060: {
+      name: '回収ミッション'
     },
-    157980450: {
-      activityName: "鉄の墓"
+    313572698: {
+      name: 'トラベラーの破片'
     },
-    165850035: {
-      activityName: "不滅のマインド"
+    320680002: {
+      name: '需要と供給'
     },
-    167419252: {
-      activityName: "コスモドロームをパトロールする"
+    330545737: {
+      name: '奥地'
     },
-    184503944: {
-      activityName: "不滅のマインド"
+    338662534: {
+      name: '反転したスパイア'
     },
-    184503945: {
-      activityName: "ケルベロス・バエIII"
+    355984230: {
+      name: '暗殺ミッション'
     },
-    184503946: {
-      activityName: "塵の宮殿"
+    359488722: {
+      name: '惑星のハッキング'
     },
-    194283519: {
-      activityName: "塵の宮殿"
+    374818561: {
+      name: '皇帝の休息'
     },
-    202167389: {
-      activityName: "塵の宮殿"
+    379330092: {
+      name: 'トラベラーの破片'
     },
-    209343718: {
-      activityName: "ウィンター・ラン"
+    387171436: {
+      name: '回収ミッション'
     },
-    211678003: {
-      activityName: "アイアンバナー: 暁光"
+    388289443: {
+      name: '調査ミッション'
     },
-    212088538: {
-      activityName: "サモニングピット"
+    415388387: {
+      name: '調査ミッション'
     },
-    218006092: {
-      activityName: "災いの地"
+    417231112: {
+      name: 'リヴァイアサン'
     },
-    242777083: {
-      activityName: "ネクサス"
+    429361491: {
+      name: '回収ミッション'
     },
-    252347595: {
-      activityName: "ハンガーの賭け"
+    435989417: {
+      name: '分析ミッション'
     },
-    259879232: {
-      activityName: "フォールン・サーベル"
+    444087412: {
+      name: '戦闘ミッション'
     },
-    260615043: {
-      activityName: "ランブル"
+    445417088: {
     },
-    260765522: {
-      activityName: "機械の天罰"
+    459955094: {
+      name: '分析ミッション'
     },
-    269981320: {
-      activityName: "プロメテウス・コード"
+    461203479: {
+      name: '調査ミッション'
     },
-    278763462: {
-      activityName: "塵の宮殿"
+    464789944: {
+      name: '選ばれし者'
     },
-    279121234: {
-      activityName: "山の王者"
+    474380713: {
+      name: '回収ミッション'
     },
-    284635225: {
-      activityName: "燃える神殿"
+    539897061: {
+      name: '戦況の逆転'
     },
-    287505866: {
-      activityName: "フォールン・サーベル"
+    545240418: {
+      name: '調査ミッション'
     },
-    291350530: {
-      activityName: "週間ナイトフォールストライク"
+    549123191: {
+      name: '調査ミッション'
     },
-    300506688: {
-      activityName: "週間ナイトフォールストライク"
+    553537971: {
+      name: '選ばれし者'
     },
-    308091852: {
-      activityName: "週間英雄ストライク"
+    564863404: {
     },
-    308091854: {
-      activityName: "週間英雄ストライク"
+    581323290: {
+      name: '調査ミッション'
     },
-    308091855: {
-      activityName: "週間英雄ストライク"
+    585071442: {
+      name: 'ナイトフォール: サバスンの歌'
     },
-    324283916: {
-      activityName: "敵地への襲撃"
+    601540706: {
+      name: 'ナイトフォール: 武器商人'
     },
-    331520418: {
-      activityName: "不滅のマインド"
+    622895925: {
+      name: 'アレシボ'
     },
-    342909762: {
-      activityName: "シールドを操る双頭"
+    632790902: {
+      name: 'その結末は'
     },
-    351460287: {
-      activityName: "太陽の当たらない独房"
+    642256373: {
+      name: 'ナイトフォール:エクソダスの墜落'
     },
-    351673577: {
-      activityName: "クラシック: 個人戦"
+    642277473: {
+      name: 'ナイトフォール: ピラミディオン'
     },
-    355200465: {
-      activityName: "シールドを操る双頭"
+    652598202: {
+      name: 'リージョンの渓谷'
     },
-    355605844: {
-      activityName: "災いの地をパトロールする"
+    667604912: {
+      name: '瞑想: 「ループ」'
     },
-    360962374: {
-      activityName: "影に生きる盗賊"
+    671904429: {
+      name: '回収ミッション'
     },
-    386157877: {
-      activityName: "シールドを操る双頭"
+    703311712: {
+      name: 'トラベラーの破片'
     },
-    389785553: {
-      activityName: "暗黒の強戦士"
+    715306877: {
+      name: '戦闘ミッション'
     },
-    403726672: {
-      activityName: "週間英雄ストライク"
+    719906507: {
+      name: '機密'
     },
-    403726674: {
-      activityName: "週間英雄ストライク"
+    743100125: {
+      name: '回収ミッション'
     },
-    403726675: {
-      activityName: "週間英雄ストライク"
+    750649238: {
+      name: '回収ミッション'
     },
-    406972773: {
-      activityName: "変異体の強奪"
+    757116822: {
+      name: 'リヴァイアサン'
     },
-    410347507: {
-      activityName: "影に生きる盗賊"
+    760130722: {
+      name: '死の崖'
     },
-    425614025: {
-      activityName: "鉄の豪傑"
+    782175145: {
+      name: '暗殺ミッション'
     },
-    428290721: {
-      activityName: "火星をパトロール"
+    782290869: {
+      name: '調査ミッション'
     },
-    430160982: {
-      activityName: "機械の天罰"
+    789332628: {
+      name: '泥棒の泥棒'
     },
-    430914016: {
-      activityName: "鉄の墓"
+    798143184: {
+      name: '戦闘ミッション'
     },
-    431759746: {
-      activityName: "サルベージ"
+    808931822: {
+      name: '近未来のプロメテウス'
     },
-    443057682: {
-      activityName: "スカイショック"
+    837763871: {
+      name: '回収ミッション'
     },
-    443707023: {
-      activityName: "君臨するハウス"
+    849242583: {
+      name: '分析ミッション'
     },
-    455063520: {
-      activityName: "目覚めの時"
+    880665770: {
+      name: '調査ミッション'
     },
-    468325937: {
-      activityName: "コンバインアームズ"
+    919252154: {
+      name: '闇連合'
     },
-    469270447: {
-      activityName: "思い出の地"
+    926012363: {
+      name: '暗殺ミッション'
     },
-    474428712: {
-      activityName: "我が敵の敵"
+    926940962: {
+      name: 'ナイトフォール: ピラミディオン'
     },
-    482017096: {
-      activityName: "完成形セピックス"
+    938512773: {
+      name: '不屈'
     },
-    492319725: {
-      activityName: "カオス: ランブル"
+    940394831: {
+      name: 'クエスト: エクソダスの墜落'
     },
-    493857039: {
-      activityName: "週間ナイトフォールストライク"
+    955852466: {
+      name: '1AU'
     },
-    496237130: {
-      activityName: "スパローレース"
+    963938931: {
+      name: '深い会話'
     },
-    504512661: {
-      activityName: "ベスタ基地"
+    964196803: {
+      name: '回収ミッション'
     },
-    509411569: {
-      activityName: "不和"
+    969385987: {
+      name: '闇を照らせ'
     },
-    547981568: {
-      activityName: "アイアンバナー: 闘魂"
+    993152361: {
+      name: '回収ミッション'
     },
-    550186563: {
-      activityName: "陰謀のケル"
+    1019362992: {
+      name: '瞑想: 「帰郷」'
     },
-    572368820: {
-      activityName: "週間ナイトフォールストライク"
+    1035135049: {
+      name: 'ピラミディオン'
     },
-    573077648: {
-      activityName: "フォールン・サーベル"
+    1038710420: {
+      name: '暗殺ミッション'
     },
-    574483028: {
-      activityName: "埋もれた都市"
+    1053141615: {
+      name: '暗殺ミッション'
     },
-    575304694: {
-      activityName: "新しい拠点"
+    1063969232: {
+      name: '皇帝からの招待'
     },
-    575376446: {
-      activityName: "残響の間"
+    1075152813: {
+      name: 'EDZ'
     },
-    579700969: {
-      activityName: "ケイド6の探し物"
+    1076851943: {
+      name: '暗殺ミッション'
     },
-    579949585: {
-      activityName: "サイレント・ファング"
+    1085523978: {
+      name: '調査ミッション'
     },
-    581858107: {
-      activityName: "暁旦"
+    1090267699: {
+      name: '暗殺ミッション'
     },
-    603968817: {
-      activityName: "ケルベロス・バエIII"
+    1101792305: {
+      name: 'サバスンの歌'
     },
-    604017503: {
-      activityName: "エルダーズ・プリズン: 宿られた者"
+    1102824603: {
+      name: '暗殺ミッション'
     },
-    614791010: {
-      activityName: "闘魂"
+    1105211124: {
+      name: '分析ミッション'
     },
-    632771975: {
-      activityName: "神の座を狙う者"
+    1107208644: {
+      name: '惑星のハッキング'
     },
-    637046772: {
-      activityName: "シーブズ・デン"
+    1129066976: {
+      name: 'ナイトフォール: ピラミディオン'
     },
-    645920838: {
-      activityName: "残響の間"
+    1159314159: {
+      name: '受信障害'
     },
-    653380797: {
-      activityName: "ウィンター・ラン"
+    1164772243: {
+      name: '回収ミッション'
     },
-    653380798: {
-      activityName: "ネクサス"
+    1206154103: {
+      name: '暗殺ミッション'
     },
-    696672649: {
-      activityName: "undefined"
+    1207505828: {
+      name: 'クエスト: 「武器商人」'
     },
-    702170822: {
-      activityName: "サモニングピット"
+    1225970098: {
+      name: '行方不明の乗組員'
     },
-    706472064: {
-      activityName: "週間英雄ストライク"
+    1228327586: {
+      name: 'アンチ対空'
     },
-    706472065: {
-      activityName: "週間英雄ストライク"
+    1243390694: {
+      name: '窃盗'
     },
-    706472066: {
-      activityName: "週間英雄ストライク"
+    1249965655: {
+      name: '分析ミッション'
     },
-    711826167: {
-      activityName: "インフェルノ: クラッシュ"
+    1250426564: {
+      name: '暗殺ミッション'
     },
-    719193800: {
-      activityName: "ウィンター・ラン"
+    1254990192: {
+      name: 'どこにいても危険'
     },
-    719193803: {
-      activityName: "ネクサス"
+    1265390366: {
+      name: '受信障害'
     },
-    746864299: {
-      activityName: "インフェルノ: ダブル"
+    1289867188: {
+      name: '破壊不可'
     },
-    757275024: {
-      activityName: "フォールン・サーベル"
+    1290744998: {
+      name: '奥地'
     },
-    764916411: {
-      activityName: "埋もれた都市"
+    1309646866: {
+      name: '奥地'
     },
-    782611196: {
-      activityName: "インフェルノ: スカーミッシュ"
+    1331268141: {
+      name: '調査ミッション'
     },
-    820688209: {
-      activityName: "完成形セピックス"
+    1357019430: {
+      name: 'ナイトフォール:エクソダスの墜落'
     },
-    826836846: {
-      activityName: "哀れな目"
+    1375839088: {
+      name: '分析ミッション'
     },
-    832576952: {
-      activityName: "フォールン・サーベル"
+    1412142789: {
+      name: ''
     },
-    833873053: {
-      activityName: "不滅のマインド"
+    1416597166: {
+      name: '需要と供給'
     },
-    836641517: {
-      activityName: "ゲートロードの目"
+    1428050875: {
+      name: '機密'
     },
-    853468393: {
-      activityName: "イシュタルコレクティブ"
+    1451946951: {
+      name: '回収ミッション'
     },
-    853774317: {
-      activityName: "前触れ"
+    1466550401: {
+      name: '速度を問わず危険'
     },
-    854130400: {
-      activityName: "苦境のウォーマインド"
+    1490848577: {
+      name: 'ループ'
     },
-    856898338: {
-      activityName: "ガラスの間"
+    1491022087: {
+      name: 'エクソダスの籠城'
     },
-    860566204: {
-      activityName: "ライトハウス"
+    1495993294: {
+      name: '影の湖'
     },
-    870614351: {
-      activityName: "ZIVAクライシスの英雄"
+    1498466193: {
+      name: '回収ミッション'
     },
-    888190220: {
-      activityName: "インフェルノ: ランブル"
+    1521232506: {
+      name: '機密'
     },
-    892266083: {
-      activityName: "タワー"
+    1525633702: {
+      name: '回収ミッション'
     },
-    902875868: {
-      activityName: "ガーデン・スパイア"
+    1536764325: {
+      name: '調査ミッション'
     },
-    906989597: {
-      activityName: "サモニングピット"
+    1557641249: {
+      name: '回収ミッション'
     },
-    932731386: {
-      activityName: "ケイド6の探し物"
+    1563393783: {
+      name: 'エクソダスの墜落'
     },
-    940573734: {
-      activityName: "内なる暗黒"
+    1568750156: {
+      name: '奥地'
     },
-    944638962: {
-      activityName: "ゲートロードの目"
+    1581219251: {
+      name: '調査ミッション'
     },
-    981644933: {
-      activityName: "炎の束縛"
+    1614692057: {
+      name: '回収ミッション'
     },
-    982298740: {
-      activityName: "ワールドグレイブ"
+    1646219807: {
+      name: '窃盗'
     },
-    984759429: {
-      activityName: "変異体の強奪"
+    1651979106: {
+      name: '近未来のプロメテウス'
     },
-    985012235: {
-      activityName: "新しい拠点"
+    1658347443: {
+      name: '帰郷'
     },
-    989535795: {
-      activityName: "インフェルノ: エリアコントロール"
+    1685065161: {
+      name: 'リヴァイアサン'
     },
-    994743956: {
-      activityName: "不滅のマインド"
+    1685237649: {
+      name: '暗殺ミッション'
     },
-    994743957: {
-      activityName: "ケルベロス・バエIII"
+    1699948563: {
+      name: 'リヴァイアサン'
     },
-    994743958: {
-      activityName: "塵の宮殿"
+    1720510574: {
+      name: '要塞'
     },
-    1005705920: {
-      activityName: "最初のファイアウォール"
+    1756055546: {
+      name: '回収ミッション'
     },
-    1016116686: {
-      activityName: "不滅のマインド"
+    1773400654: {
+      name: '皇帝からの招待'
     },
-    1016659723: {
-      activityName: "邪神、滅びる"
+    1778450722: {
+      name: '分析ミッション'
     },
-    1017714251: {
-      activityName: "最後の儀式"
+    1786054751: {
+      name: '事前検証'
     },
-    1019616175: {
-      activityName: "インフェルノ: ランブル"
+    1790343591: {
+      name: 'トラベラーの破片'
     },
-    1023542723: {
-      activityName: "不滅のマインド"
+    1792985204: {
+      name: 'ナイトフォール:エクソダスの墜落'
     },
-    1030188908: {
-      activityName: "ゲートロードの目"
+    1824067376: {
+      name: 'イライラの頂点'
     },
-    1031478181: {
-      activityName: "週間英雄ストライク"
+    1829866365: {
+      name: '裏工作'
     },
-    1031478182: {
-      activityName: "週間英雄ストライク"
+    1863334927: {
+      name: 'ナイトフォール: サバスンの歌'
     },
-    1031478183: {
-      activityName: "週間英雄ストライク"
+    1875726950: {
+      name: 'リヴァイアサン'
     },
-    1044883964: {
-      activityName: "完成形セピックス"
+    1949546348: {
+      name: '暗殺ミッション'
     },
-    1045828271: {
-      activityName: "クラッシュ"
+    1952521609: {
+      name: 'トラベラーの破片'
     },
-    1068261034: {
-      activityName: "ガーデンの血"
+    1956541147: {
+      name: '新たな故郷へ'
     },
-    1075348150: {
-      activityName: "勝利の時代"
+    1969800443: {
+      name: 'アレシボ'
     },
-    1080191247: {
-      activityName: "ウィンターの災難"
+    1971154629: {
+      name: '速度を問わず危険'
     },
-    1084620606: {
-      activityName: "太陽の当たらない独房"
+    1975064760: {
+      name: 'ナイトフォール: サバスンの歌'
     },
-    1087052691: {
-      activityName: "クラッシュ"
+    1981289329: {
+      name: 'エクソダスの籠城'
     },
-    1112015031: {
-      activityName: "目覚めの時"
+    1984315274: {
+      name: 'バンガードストライク'
     },
-    1116149777: {
-      activityName: "神殺し"
+    1988701745: {
+      name: '報いの空'
     },
-    1117274478: {
-      activityName: "宿られし軍との戦い"
+    2001433484: {
+      name: '暗殺ミッション'
     },
-    1122783186: {
-      activityName: "鉄の墓"
+    2025057095: {
+      name: '戦闘ミッション'
     },
-    1126759626: {
-      activityName: "残響の間"
+    2033669713: {
+      name: 'ジャベリン4'
     },
-    1141580112: {
-      activityName: "クロタの意思"
+    2052289205: {
+      name: '激動'
     },
-    1142225067: {
-      activityName: "週間ナイトフォールストライク"
+    2079994698: {
+      name: '調査ミッション'
     },
-    1169187265: {
-      activityName: "ネクサス"
+    2080275457: {
+      name: '武器商人'
     },
-    1174401783: {
-      activityName: "プライムの道"
+    2113712124: {
+      name: '冒涜'
     },
-    1194342366: {
-      activityName: "インフェルノ: サルベージ"
+    2151274060: {
+      name: '分析ミッション'
     },
-    1200628152: {
-      activityName: "サモニングピット"
+    2174556965: {
+      name: 'でっち上げ作戦'
     },
-    1208087916: {
-      activityName: "機械の怒り"
+    2183066491: {
+      name: '奥地'
     },
-    1208087919: {
-      activityName: "機械の怒り"
+    2184866967: {
+      name: '分析ミッション'
     },
-    1226857472: {
-      activityName: "ケイド6の探し物"
+    2187073261: {
+      name: '分析ミッション'
     },
-    1227144460: {
-      activityName: "女王の獲物"
+    2231840083: {
+      name: 'セイレーンの歌'
     },
-    1228944057: {
-      activityName: "塵の宮殿"
+    2236648719: {
+      name: '永遠の空間'
     },
-    1234230734: {
-      activityName: "月をパトロールする"
+    2243336789: {
+      name: '戦闘ミッション'
     },
-    1259153650: {
-      activityName: "謎の人物からの連絡"
+    2250935166: {
+      name: '不死'
     },
-    1288347893: {
-      activityName: "ランブル: 闘魂"
+    2259811067: {
+      name: 'トラベラーの破片'
     },
-    1291023759: {
-      activityName: "インフェルノ: スカーミッシュ"
+    2264636552: {
+      name: '瞑想: 「激動」'
     },
-    1293005540: {
-      activityName: "バンガードのナイトフォール"
+    2266954523: {
+      name: '奥地'
     },
-    1296112978: {
-      activityName: "災いの地"
+    2287222467: {
+      name: '分析ミッション'
     },
-    1309514270: {
-      activityName: "ウルブズの策略"
+    2288260902: {
+      name: '暗殺ミッション'
     },
-    1322792020: {
-      activityName: "インフェルノ: 暁光"
+    2291549972: {
+      name: '強化！'
     },
-    1328326126: {
-      activityName: "光の後に"
+    2297638408: {
+      name: '怒り'
     },
-    1329840146: {
-      activityName: "哀れな目"
+    2301390667: {
+      name: '調査ミッション'
     },
-    1378194100: {
-      activityName: "ライトハウス"
+    2318812547: {
+      name: 'ピラミディオン'
     },
-    1378430574: {
-      activityName: "インフェルノ: サバイバル"
+    2336998357: {
+      name: '長丁場'
     },
-    1379511171: {
-      activityName: "クロタの剣"
+    2379494367: {
+      name: '分析ミッション'
     },
-    1387993552: {
-      activityName: "機械の天罰"
+    2420240009: {
+      name: '回収ミッション'
     },
-    1390160729: {
-      activityName: "ベスタ基地"
+    2445164291: {
+      name: '暗殺ミッション'
     },
-    1398209073: {
-      activityName: "デビルズ・レイヤー"
+    2449714930: {
+      name: 'リヴァイアサン'
     },
-    1398209074: {
-      activityName: "クロタの意思"
+    2464834848: {
+      name: '市街地'
     },
-    1398976305: {
-      activityName: "週間英雄ストライク"
+    2468202005: {
+      name: 'トラベラーの破片'
     },
-    1398976306: {
-      activityName: "週間英雄ストライク"
+    2478782573: {
+      name: ''
     },
-    1398976307: {
-      activityName: "週間英雄ストライク"
+    2517540332: {
+      name: 'どこにいても危険'
     },
-    1400727968: {
-      activityName: "暁光"
+    2519458964: {
+      name: '無限の谷'
     },
-    1403880576: {
-      activityName: "ガーデン・スパイア"
+    2519564410: {
+      name: '暗殺ミッション'
     },
-    1403880578: {
-      activityName: "ブラックガーデン"
+    2536491635: {
+      name: '調査ミッション'
     },
-    1403880579: {
-      activityName: "敵地への襲撃"
+    2558926634: {
+      name: '調査ミッション'
     },
-    1403880580: {
-      activityName: "排他エリア"
+    2559514952: {
+      name: '理想郷'
     },
-    1403880582: {
-      activityName: "埋もれた都市"
+    2561308143: {
+      name: '調査ミッション'
     },
-    1404620600: {
-      activityName: "エルダーズ・プリズン"
+    2573702057: {
+      name: '回収ミッション'
     },
-    1415179315: {
-      activityName: "サバイバル"
+    2574607799: {
+      name: '手のかかる隣人'
     },
-    1419457477: {
-      activityName: "行方不明のハンター"
+    2575990417: {
+      name: '戦闘ミッション'
     },
-    1427585666: {
-      activityName: "英雄の帰還"
+    2580713007: {
+      name: '調査ミッション'
     },
-    1431469570: {
-      activityName: "変異体の強奪"
+    2588220738: {
+      name: '調査ミッション'
     },
-    1438195119: {
-      activityName: "ブラックガーデン"
+    2610112492: {
+      name: '分析ミッション'
     },
-    1439468985: {
-      activityName: "外部への信号"
+    2619236227: {
+      name: '分析ミッション'
     },
-    1441430564: {
-      activityName: "ユロックスの恨み"
+    2629975203: {
+      name: '戦闘ミッション'
     },
-    1441430567: {
-      activityName: "ユロックスの恨み"
+    2629998776: {
+      name: '回収ミッション'
     },
-    1443271657: {
-      activityName: "真紅ダブル"
+    2642769170: {
+      name: '「6」'
     },
-    1443570903: {
-      activityName: "アイアンバナー: カオス・クラッシュ"
+    2651851341: {
+      name: '分析ミッション'
     },
-    1448094960: {
-      activityName: "ダンジョン"
+    2665134323: {
+      name: '解放'
     },
-    1478347980: {
-      activityName: "カンプス・マルティウス"
+    2667533713: {
+      name: 'ボストーク'
     },
-    1491766060: {
-      activityName: "影に生きる盗賊"
+    2684479494: {
+      name: '回収ミッション'
     },
-    1501957761: {
-      activityName: "フォールン・サーベル"
+    2693136600: {
+      name: 'リヴァイアサン'
     },
-    1516701147: {
-      activityName: "undefined"
+    2693136601: {
+      name: 'リヴァイアサン'
     },
-    1517679997: {
-      activityName: "ZIVAクライシス"
+    2693136602: {
+      name: 'リヴァイアサン'
     },
-    1522220810: {
-      activityName: "タワー"
+    2693136603: {
+      name: 'リヴァイアサン'
     },
-    1522422482: {
-      activityName: "クロタの意思"
+    2693136604: {
+      name: 'リヴァイアサン'
     },
-    1526798932: {
-      activityName: "フォールン・サーベル"
+    2693136605: {
+      name: 'リヴァイアサン'
     },
-    1533733535: {
-      activityName: "太陽の当たらない独房"
+    2702476101: {
+      name: 'タワー'
     },
-    1551387515: {
-      activityName: "エルダーズ・プリズン"
+    2708828207: {
+      name: '理想郷'
     },
-    1566333829: {
-      activityName: "シールドを操る双頭"
+    2737739053: {
+      name: '深い会話'
     },
-    1572749251: {
-      activityName: "エリアコントロール"
+    2759086913: {
+      name: '機密'
     },
-    1584566734: {
-      activityName: "インフェルノ: 6対6"
+    2768347363: {
+      name: '暗殺ミッション'
     },
-    1604535501: {
-      activityName: "スパローレース"
+    2773222353: {
+      name: '分析ミッション'
     },
-    1609488702: {
-      activityName: "ダブル"
+    2776929937: {
+      name: '鑑別診断'
     },
-    1614355423: {
-      activityName: "女王の獲物"
+    2782300570: {
+      name: '回収ミッション'
     },
-    1618960674: {
-      activityName: "インフェルノ: 3対3"
+    2784803584: {
+      name: '戦闘ミッション'
     },
-    1624947721: {
-      activityName: "シールドを操る双頭"
+    2798856614: {
+      name: '調査ミッション'
     },
-    1628212868: {
-      activityName: "週間英雄ストライク"
+    2846775197: {
+      name: '戦闘ミッション'
     },
-    1628212869: {
-      activityName: "週間英雄ストライク"
+    2908287325: {
+      name: '調査ミッション'
     },
-    1628212871: {
-      activityName: "週間英雄ストライク"
+    2926767881: {
+      name: '逆襲'
     },
-    1636082733: {
-      activityName: "ウィンター・ラン"
+    2949941834: {
+      name: '予想外の客'
     },
-    1636082734: {
-      activityName: "ネクサス"
+    2969403085: {
+      name: '調査ミッション'
     },
-    1646288223: {
-      activityName: "残響の間"
+    3002511278: {
+      name: '闇連合'
     },
-    1650930548: {
-      activityName: "機密"
+    3026637018: {
+      name: '調査ミッション'
     },
-    1657401676: {
-      activityName: "週間英雄ストライク"
+    3038694763: {
+      name: '暗殺ミッション'
     },
-    1657401677: {
-      activityName: "週間英雄ストライク"
+    3049122128: {
+      name: '分析ミッション'
     },
-    1657401679: {
-      activityName: "週間英雄ストライク"
+    3050465729: {
+      name: 'ナイトフォール: 反転したスパイア'
     },
-    1659888245: {
-      activityName: "変異体の強奪"
+    3062197616: {
+      name: '対戦モード'
     },
-    1665631320: {
-      activityName: "ランブル"
+    3105090879: {
+      name: '別れ'
     },
-    1669262087: {
-      activityName: "シールドを操る双頭"
+    3140524926: {
+      name: '破壊不可'
     },
-    1673931290: {
-      activityName: "エルダーの挑戦"
+    3143798436: {
+      name: 'ヨーロッパ・デッドゾーン'
     },
-    1681545807: {
-      activityName: "太陽の当たらない独房"
+    3147707814: {
+      name: '激流'
     },
-    1685214122: {
-      activityName: "カオス: 闘魂"
+    3148431353: {
+      name: '裏工作'
     },
-    1685535967: {
-      activityName: "クロタの意思"
+    3150153711: {
+      name: 'チャンスと選択'
     },
-    1686326716: {
-      activityName: "新しい拠点"
+    3172367001: {
+      name: 'トラベラーの破片'
     },
-    1686679946: {
-      activityName: "クラッシュ"
+    3173130826: {
+      name: '戦闘ミッション'
     },
-    1709749894: {
-      activityName: "地平線"
+    3208779612: {
+      name: '回収ミッション'
     },
-    1714839224: {
-      activityName: "生贄の儀式"
+    3211303924: {
+      name: '回収ミッション'
     },
-    1719392441: {
-      activityName: "クロスロード"
+    3211568383: {
+      name: 'セイレーンの歌'
     },
-    1723226893: {
-      activityName: "ウォーマインド"
+    3231065327: {
+      name: '分析ミッション'
     },
-    1727851403: {
-      activityName: "プロメテウス・コード"
+    3243161126: {
+      name: 'クイックプレイ'
     },
-    1728758154: {
-      activityName: "サモニングピット"
+    3268684190: {
+      name: '回収ミッション'
     },
-    1733556769: {
-      activityName: "邪神、滅びる"
+    3272002712: {
+      name: '希望'
     },
-    1740074530: {
-      activityName: "ケルベロス・バエIII"
+    3277510674: {
+      name: '不死'
     },
-    1749151224: {
-      activityName: "バンガードのナイトフォール"
+    3283790633: {
+      name: 'でっち上げ作戦'
     },
-    1771902734: {
-      activityName: "インフェルノ: クラッシュ"
+    3289681664: {
+      name: '行方不明の乗組員'
     },
-    1772839913: {
-      activityName: "薄暗いトンネル"
+    3298775062: {
+      name: '調査ミッション'
     },
-    1783047867: {
-      activityName: "インフェルノ: コントロール"
+    3303685562: {
+      name: '回収ミッション'
     },
-    1783107168: {
-      activityName: "ダウンロード完了"
+    3304835347: {
+      name: '新たな故郷へ'
     },
-    1783564050: {
-      activityName: "君臨するハウス"
+    3336275007: {
+      name: '瞑想: 「6」'
     },
-    1794499705: {
-      activityName: "鉄の章: 序幕"
+    3337731612: {
+      name: '戦闘ミッション'
     },
-    1815860968: {
-      activityName: "エリアコントロール"
+    3346345105: {
+      name: '実験的な解決策'
     },
-    1816396489: {
-      activityName: "影に生きる盗賊"
+    3359466010: {
+      name: '閃光'
     },
-    1836141626: {
-      activityName: "サバイバル"
+    3368226533: {
+      name: 'ナイトフォール: 反転したスパイア'
     },
-    1836893116: {
-      activityName: "クロタの最期"
+    3379039897: {
+      name: '回収ミッション'
     },
-    1836893119: {
-      activityName: "クロタの最期"
+    3410530777: {
+      name: '計算された行動'
     },
-    1845751534: {
-      activityName: "ケルベロス・バエIII"
+    3417504239: {
+      name: '激流'
     },
-    1846390409: {
-      activityName: "立ち上がるガーディアン"
+    3446541099: {
+      name: 'リヴァイアサン'
     },
-    1851417512: {
-      activityName: "漂流船"
+    3479544154: {
+      name: '戦闘ミッション'
     },
-    1856964953: {
-      activityName: "立ち上がるガーディアン"
+    3481058226: {
+      name: '調査ミッション'
     },
-    1882836298: {
-      activityName: "目覚めの時"
+    3485876484: {
+      name: 'イライラの頂点'
     },
-    1889399773: {
-      activityName: "週間ナイトフォールストライク"
+    3487576414: {
+      name: '調査ミッション'
     },
-    1912940269: {
-      activityName: "復旧"
+    3489692681: {
+      name: '調査ミッション'
     },
-    1917735347: {
-      activityName: "ウィンター・ラン"
+    3500791146: {
+      name: 'その結末は'
     },
-    1918823817: {
-      activityName: "不滅のマインド"
+    3515770727: {
+      name: '分析ミッション'
     },
-    1924778540: {
-      activityName: "君臨するハウス"
+    3580793473: {
+      name: '瞑想: 「1AU」'
     },
-    1940432142: {
-      activityName: "排他エリア"
+    3612741503: {
+      name: '調査ミッション'
     },
-    1973631991: {
-      activityName: "ラストアレイ"
+    3627094182: {
+      name: '戦闘ミッション'
     },
-    1974138312: {
-      activityName: "汚染された聖杯"
+    3631476566: {
+      name: '奥地'
     },
-    1985034593: {
-      activityName: "週間ナイトフォールストライク"
+    3645117987: {
+      name: '手のかかる隣人'
     },
-    2008529245: {
-      activityName: "腐敗の王達"
+    3652531274: {
+      name: 'トラベラーの破片'
     },
-    2010056644: {
-      activityName: "ハーコンの絶壁"
+    3662124488: {
+      name: '調査ミッション'
     },
-    2022189692: {
-      activityName: "汚染された聖杯"
+    3664915501: {
+      name: 'レッドリージョンの黒い油'
     },
-    2037022373: {
-      activityName: "バーティゴ"
+    3669054326: {
+      name: '回収ミッション'
     },
-    2045385030: {
-      activityName: "金星をパトロールする"
+    3688464794: {
+      name: 'ネットワークの重要性'
     },
-    2051444910: {
-      activityName: "遥かなる暗黒"
+    3700722865: {
+      name: '解放'
     },
-    2061368111: {
-      activityName: "カオス: 闘魂"
+    3702064261: {
+      name: 'データ需要'
     },
-    2063852581: {
-      activityName: "カオス: クラッシュ"
+    3738159218: {
+      name: '不屈'
     },
-    2072729921: {
-      activityName: "汚染された聖杯"
+    3752039537: {
+      name: '戦況の逆転'
     },
-    2074618692: {
-      activityName: "永遠を喰らう者"
+    3780356141: {
+      name: 'スピード作戦'
     },
-    2074618695: {
-      activityName: "永遠を喰らう者"
+    3792746061: {
+      name: '戦闘ミッション'
     },
-    2082069870: {
-      activityName: "アノマリー"
+    3799743268: {
+      name: '機密'
     },
-    2084208305: {
-      activityName: "太陽の当たらない独房"
+    3806583577: {
+      name: '暗殺ミッション'
     },
-    2084307227: {
-      activityName: "危険なパトロール"
+    3834639884: {
+      name: '分析ミッション'
     },
-    2095588685: {
-      activityName: "クロタの意思"
+    3836086286: {
+      name: '予想外の客'
     },
-    2105028197: {
-      activityName: "残響の間"
+    3839751954: {
+      name: '炎の祭壇'
     },
-    2129294976: {
-      activityName: "内なる暗黒"
+    3872525353: {
+      name: 'スピード作戦'
     },
-    2151413729: {
-      activityName: "タワー"
+    3879860661: {
+      name: 'リヴァイアサン'
     },
-    2176272408: {
-      activityName: "影に生きる盗賊"
+    3903562779: {
+      name: 'タワー'
     },
-    2178968385: {
-      activityName: "哀れな目"
+    3916343513: {
+      name: 'リヴァイアサン'
     },
-    2184393955: {
-      activityName: "ケルベロス・バエIII"
+    3920643231: {
+      name: 'ナイトフォール: 武器商人'
     },
-    2186849909: {
-      activityName: "ウィンター・ラン"
+    3958400416: {
+      name: '調査ミッション'
     },
-    2190039885: {
-      activityName: "クラシック: 個人戦"
+    3966792859: {
+      name: '不安定なケンタウルス族、ネッスス'
     },
-    2197680969: {
-      activityName: "腐敗の王達"
+    3978357488: {
+      name: '回収ミッション'
     },
-    2198347919: {
-      activityName: "タワー"
+    3982474534: {
+      name: '逆襲'
     },
-    2200634811: {
-      activityName: "苦境のウォーマインド"
+    4034557395: {
+      name: '帰郷'
     },
-    2201622127: {
-      activityName: "エルダーの挑戦"
+    4039317196: {
+      name: 'リヴァイアサン'
     },
-    2213151771: {
-      activityName: "イシュタルコレクティブ"
+    4043714237: {
+      name: '調査ミッション'
     },
-    2217862439: {
-      activityName: "コントロール"
+    4047570705: {
+      name: '戦闘ミッション'
     },
-    2221365740: {
-      activityName: "完成形セピックス"
+    4050886070: {
+      name: '調査ミッション'
     },
-    2234107290: {
-      activityName: "太陽の当たらない独房"
+    4054968718: {
+      name: 'ナイトフォール: 反転したスパイア'
     },
-    2243240710: {
-      activityName: "インフィニット・ディセント"
+    4095207117: {
+      name: '回収ミッション'
     },
-    2244550959: {
-      activityName: "タワー"
+    4103844069: {
+      name: '暗殺ミッション'
     },
-    2244943676: {
-      activityName: "フヴォストフの復活"
+    4159221189: {
+      name: 'イオ'
     },
-    2245079334: {
-      activityName: "汚染された聖杯"
+    4166562681: {
+      name: '衛星タイタン'
     },
-    2263964303: {
-      activityName: "サバイバル"
+    4174103238: {
+      name: '回収ミッション'
     },
-    2268273279: {
-      activityName: "完成形セピックス"
+    4209774794: {
+      name: '回収ミッション'
     },
-    2270816053: {
-      activityName: "女王の獲物"
+    4216926874: {
+      name: '回収ミッション'
     },
-    2270968444: {
-      activityName: "週間英雄ストライク"
+    4231544111: {
+      name: '調査ミッション'
     },
-    2270968445: {
-      activityName: "週間英雄ストライク"
+    4239233351: {
+      name: '瞑想: 「閃光」'
     },
-    2270968446: {
-      activityName: "週間英雄ストライク"
+    4254776501: {
+      name: '回収ミッション'
     },
-    2275772174: {
-      activityName: "影に生きる盗賊"
+    4283649349: {
+      name: '暗殺ミッション'
     },
-    2286628407: {
-      activityName: "パラドックス"
+    4291922223: {
+      name: '希望'
     },
-    2303355724: {
-      activityName: "デビルズ・レイヤー"
+  },
+  pl: {
+    19982784: {
+      name: 'Misja bojowa'
     },
-    2303355727: {
-      activityName: "クロタの意思"
+    30240416: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    2316484115: {
-      activityName: "ライトハウス"
+    37050217: {
+      name: 'Misja badawcza'
     },
-    2319702946: {
-      activityName: "鉄の神殿"
+    51408141: {
+      name: 'Misja ratunkowa'
     },
-    2321224098: {
-      activityName: "謎の人物からの連絡"
+    53954174: {
+      name: 'Antyplot'
     },
-    2324706853: {
-      activityName: "クロタの最期"
+    57103244: {
+      name: 'Misja badawcza'
     },
-    2326253031: {
-      activityName: "スコラスの逆襲"
+    60002467: {
+      name: 'Świętokradztwo'
     },
-    2327910410: {
-      activityName: "夜の間"
+    78673128: {
+      name: 'Złodziej złodzieja'
     },
-    2330516073: {
-      activityName: "タワー"
+    80726883: {
+      name: 'O, kapitanie'
     },
-    2332037858: {
-      activityName: "ウィドーズコート"
+    82913930: {
     },
-    2333767699: {
-      activityName: "恐怖の抱擁"
+    89727599: {
+      name: 'Lewiatan'
     },
-    2344229082: {
-      activityName: "不滅のマインド"
+    104342360: {
+      name: 'Misja bojowa'
     },
-    2344622554: {
-      activityName: "残響の間"
+    116352029: {
+      name: 'Misja bojowa'
     },
-    2356723745: {
-      activityName: "前触れ"
+    122988657: {
+      name: 'Czerwony Legion, Czarny olej'
     },
-    2364610626: {
-      activityName: "プライムの道"
+    143647473: {
+      name: 'Misja ratunkowa'
     },
-    2369296916: {
-      activityName: "前触れ"
+    145302664: {
+      name: 'Nocny szturm: Handlarz bronią'
     },
-    2374186202: {
-      activityName: "インフェルノ: コントロール"
+    153537894: {
+      name: 'Nowa granica'
     },
-    2374784693: {
-      activityName: "ウィンターの災難"
+    160721490: {
+      name: 'Classified'
     },
-    2374899718: {
-      activityName: "影に生きる盗賊"
+    175598161: {
+      name: 'Misja ratunkowa'
     },
-    2375659247: {
-      activityName: "エルダーの挑戦"
+    189324537: {
+      name: 'Misja ratunkowa'
     },
-    2380726447: {
-      activityName: "ドレッドノート"
+    197670945: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    2381859905: {
-      activityName: "影に生きる盗賊"
+    204298081: {
+      name: 'Misja analizacyjna/n'
     },
-    2388860485: {
-      activityName: "暁光"
+    248066530: {
+      name: 'Misja ratunkowa'
     },
-    2391040454: {
-      activityName: "完成形セピックス"
+    255819671: {
+      name: 'Furia'
     },
-    2393458461: {
-      activityName: "止まらない衰退"
+    261349035: {
+      name: 'Misja ratunkowa'
     },
-    2396741855: {
-      activityName: "ケルベロス・バエIII"
+    286324446: {
+      name: 'Misja ratunkowa'
     },
-    2398459666: {
-      activityName: "火星をパトロールする"
+    287649202: {
+      name: 'Lewiatan'
     },
-    2401705359: {
-      activityName: "宿られし軍"
+    293858112: {
+      name: 'Misja bojowa'
     },
-    2422821510: {
-      activityName: "腐敗の王達"
+    298747401: {
+      name: 'Misja badawcza'
     },
-    2430076725: {
-      activityName: "ブラインドウォッチ"
+    298793060: {
+      name: 'Misja ratunkowa'
     },
-    2437373043: {
-      activityName: "不滅のマインド"
+    313572698: {
+      name: 'Odłamek Wędrowca'
     },
-    2445476122: {
-      activityName: "クラシック: 6対6"
+    320680002: {
+      name: 'Popyt i podaż'
     },
-    2446491566: {
-      activityName: "災いの地"
+    330545737: {
+      name: 'Farma'
     },
-    2449230902: {
-      activityName: "ドレッドノート"
+    338662534: {
+      name: 'Odwrócona Iglica'
     },
-    2450352219: {
-      activityName: "太陽の当たらない独房"
+    355984230: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    2473173917: {
-      activityName: "サイレント・ファング"
+    359488722: {
+      name: 'Hakowanie planety'
     },
-    2474598319: {
-      activityName: "金星をパトロール"
+    374818561: {
+      name: 'Zacisze Imperatora'
     },
-    2486047606: {
-      activityName: "ブラックガーデン"
+    379330092: {
+      name: 'Odłamek Wędrowca'
     },
-    2488292787: {
-      activityName: "フリーランス: 3対3"
+    387171436: {
+      name: 'Misja ratunkowa'
     },
-    2500396686: {
-      activityName: "鉄の神殿"
+    388289443: {
+      name: 'Misja badawcza'
     },
-    2503808507: {
-      activityName: "最後の儀式"
+    415388387: {
+      name: 'Misja badawcza'
     },
-    2507231345: {
-      activityName: "フロンティア"
+    417231112: {
+      name: 'Lewiatan'
     },
-    2507671226: {
-      activityName: "外部への信号"
+    429361491: {
+      name: 'Misja ratunkowa'
     },
-    2522686639: {
-      activityName: "フリーランス: 6対6"
+    435989417: {
+      name: 'Misja analizacyjna/n'
     },
-    2532582309: {
-      activityName: "フォールン・サーベル"
+    444087412: {
+      name: 'Misja bojowa'
     },
-    2546962221: {
-      activityName: "太陽の当たらない独房"
+    445417088: {
     },
-    2553967924: {
-      activityName: "破られた防壁"
+    459955094: {
+      name: 'Misja analizacyjna/n'
     },
-    2577060487: {
-      activityName: "パラドックス"
+    461203479: {
+      name: 'Misja badawcza'
     },
-    2582525652: {
-      activityName: "オリックスの神殿"
+    464789944: {
+      name: 'Wybraniec'
     },
-    2586575560: {
-      activityName: "カオス: ランブル"
+    474380713: {
+      name: 'Misja ratunkowa'
     },
-    2591739000: {
-      activityName: "アウォークン"
+    539897061: {
+      name: 'Odwracanie polaryzacji'
     },
-    2604992012: {
-      activityName: "光の後に"
+    545240418: {
+      name: 'Misja badawcza'
     },
-    2605106985: {
-      activityName: "敵地への襲撃"
+    549123191: {
+      name: 'Misja badawcza'
     },
-    2616429373: {
-      activityName: "恐怖の抱擁"
+    553537971: {
+      name: 'Wybraniec'
     },
-    2624694148: {
-      activityName: "汚染された魔女"
+    564863404: {
     },
-    2624916786: {
-      activityName: "ケルベロス・バエIII"
+    581323290: {
+      name: 'Misja badawcza'
     },
-    2626477216: {
-      activityName: "外部への信号"
+    585071442: {
+      name: 'Nocny szturm: Pieśń Savathûn'
     },
-    2632260907: {
-      activityName: "残響の間"
+    601540706: {
+      name: 'Nocny szturm: Handlarz bronią'
     },
-    2638978649: {
-      activityName: ""
+    622895925: {
+      name: 'Arecibo'
     },
-    2641355370: {
-      activityName: "ガーデン・スパイア"
+    632790902: {
+      name: 'Wzrost napięcia'
     },
-    2643956095: {
-      activityName: "フリーランス: 3対3"
+    642256373: {
+      name: 'Nocny szturm: Katastrofa Exodusu'
     },
-    2658160549: {
-      activityName: "汚染された魔女"
+    642277473: {
+      name: 'Nocny szturm: Piramidion'
     },
-    2659248068: {
-      activityName: "ガラスの間"
+    652598202: {
+      name: 'Wąwóz Legionu'
     },
-    2659248069: {
-      activityName: "ガラスの間"
+    667604912: {
+      name: 'Medytacja: „Zapętlenie”'
     },
-    2659248071: {
-      activityName: "ガラスの間"
+    671904429: {
+      name: 'Misja ratunkowa'
     },
-    2662709104: {
-      activityName: "アークの制圧"
+    703311712: {
+      name: 'Odłamek Wędrowca'
     },
-    2664207554: {
-      activityName: "哀れな目"
+    715306877: {
+      name: 'Misja bojowa'
     },
-    2666433880: {
-      activityName: "ネクサス"
+    719906507: {
+      name: 'Classified'
     },
-    2669189613: {
-      activityName: "塵の宮殿"
+    743100125: {
+      name: 'Misja ratunkowa'
     },
-    2678657479: {
-      activityName: "変異体の強奪"
+    750649238: {
+      name: 'Misja ratunkowa'
     },
-    2680821721: {
-      activityName: "コルドロン"
+    757116822: {
+      name: 'Lewiatan'
     },
-    2693077237: {
-      activityName: "バンガードのナイトフォール"
+    760130722: {
+      name: 'Martwe Klify'
     },
-    2695324124: {
-      activityName: "汚染された聖杯"
+    782175145: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    2697160954: {
-      activityName: "勝利の時代"
+    782290869: {
+      name: 'Misja badawcza'
     },
-    2697969178: {
-      activityName: "週間ナイトフォールストライク"
+    789332628: {
+      name: 'Złodziej złodzieja'
     },
-    2701768038: {
-      activityName: "クロタフィスト"
+    798143184: {
+      name: 'Misja bojowa'
     },
-    2704098598: {
-      activityName: "デビルズ・レイヤー"
+    808931822: {
+      name: 'Współczesny Prometeusz'
     },
-    2708547287: {
-      activityName: "炎の行進"
+    837763871: {
+      name: 'Misja ratunkowa'
     },
-    2717791362: {
-      activityName: "クロタの意思"
+    849242583: {
+      name: 'Misja analizacyjna/n'
     },
-    2719526771: {
-      activityName: "塵の宮殿"
+    880665770: {
+      name: 'Misja badawcza'
     },
-    2726977290: {
-      activityName: "ラストアレイ"
+    919252154: {
+      name: 'Mroczny sojusz'
     },
-    2737751857: {
-      activityName: "美の創造"
+    926012363: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    2739987894: {
-      activityName: "栄誉の象徴"
+    926940962: {
+      name: 'Nocny szturm: Piramidion'
     },
-    2743106708: {
-      activityName: "塵の宮殿"
+    938512773: {
+      name: 'Niezłomny'
     },
-    2747031950: {
-      activityName: "クラシック: 3対3"
+    940394831: {
+      name: 'ZADANIE: Katastrofa Exodusu'
     },
-    2764426556: {
-      activityName: "パラドックス"
+    955852466: {
+      name: 'Chciwość'
     },
-    2764561765: {
-      activityName: "光の後に"
+    963938931: {
+      name: 'Głęboka konwersacja'
     },
-    2775184694: {
-      activityName: "サモニングピット"
+    964196803: {
+      name: 'Misja ratunkowa'
     },
-    2776273577: {
-      activityName: "ケルベロス・バエIII"
+    969385987: {
+      name: 'Rozjaśnianie ciemności'
     },
-    2790114296: {
-      activityName: "君臨するハウス"
+    993152361: {
+      name: 'Misja ratunkowa'
     },
-    2795444912: {
-      activityName: "スカーミッシュ"
+    1019362992: {
+      name: 'Medytacja: „Powrót do domu”'
     },
-    2799122060: {
-      activityName: "ネクサス"
+    1035135049: {
+      name: 'Piramidion'
     },
-    2819394450: {
-      activityName: "バンガードのレガシー"
+    1038710420: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    2828456290: {
-      activityName: "輝く砂漠"
+    1053141615: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    2839046506: {
-      activityName: "undefined"
+    1063969232: {
+      name: 'Imperialne zaproszenie'
     },
-    2840876929: {
-      activityName: "シールドを操る双頭"
+    1075152813: {
+      name: 'Europejska Martwa Strefa'
     },
-    2846350970: {
-      activityName: "太陽の当たらない独房"
+    1076851943: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    2853745856: {
-      activityName: "ブラックガーデン"
+    1085523978: {
+      name: 'Misja badawcza'
     },
-    2861777810: {
-      activityName: "ウィンター・ラン"
+    1090267699: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    2873833515: {
-      activityName: "太陽の当たらない独房"
+    1101792305: {
+      name: 'Pieśń Savathûn'
     },
-    2873913519: {
-      activityName: "ウォーマインド"
+    1102824603: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    2877811433: {
-      activityName: "カオス: ランブル"
+    1105211124: {
+      name: 'Misja analizacyjna/n'
     },
-    2895301046: {
-      activityName: "排他エリア"
+    1107208644: {
+      name: 'Hakowanie planety'
     },
-    2896357417: {
-      activityName: "ウィンター・ラン"
+    1129066976: {
+      name: 'Nocny szturm: Piramidion'
     },
-    2896357418: {
-      activityName: "ネクサス"
+    1159314159: {
+      name: 'Słaby odbiór'
     },
-    2897641944: {
-      activityName: "汚染された聖杯"
+    1164772243: {
+      name: 'Misja ratunkowa'
     },
-    2910883293: {
-      activityName: "最後の儀式"
+    1206154103: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    2918909691: {
-      activityName: "召喚者のサークル"
+    1207505828: {
+      name: 'ZADANIE: Handlarz bronią'
     },
-    2926133958: {
-      activityName: "アーティファクト"
+    1225970098: {
+      name: 'Zaginiona załoga'
     },
-    2931947534: {
-      activityName: "陰謀のケル"
+    1228327586: {
+      name: 'Antyplot'
     },
-    2938090611: {
-      activityName: "前触れ"
+    1243390694: {
+      name: 'Przywłaszczenie'
     },
-    2938118424: {
-      activityName: "不滅のマインド"
+    1249965655: {
+      name: 'Misja analizacyjna/n'
     },
-    2938118425: {
-      activityName: "ケルベロス・バエIII"
+    1250426564: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    2938118426: {
-      activityName: "塵の宮殿"
+    1254990192: {
+      name: 'Wielkie pole rażenia'
     },
-    2945511915: {
-      activityName: "フリーランス: 6対6"
+    1265390366: {
+      name: 'Słaby odbiór'
     },
-    2947742498: {
-      activityName: "インフェルノ: ダブル"
+    1289867188: {
+      name: 'Niezłomność'
     },
-    2981424914: {
-      activityName: "プロメテウス・コード"
+    1290744998: {
+      name: 'Farma'
     },
-    2989915775: {
-      activityName: "不滅のマインド"
+    1309646866: {
+      name: 'Farma'
     },
-    3005484445: {
-      activityName: "プロメテウス・コード"
+    1331268141: {
+      name: 'Misja badawcza'
     },
-    3010573436: {
-      activityName: "影に生きる盗賊"
+    1357019430: {
+      name: 'Nocny szturm: Katastrofa Exodusu'
     },
-    3011954788: {
-      activityName: "ダウンロード完了"
+    1375839088: {
+      name: 'Misja analizacyjna/n'
     },
-    3025411906: {
-      activityName: "アルコンスレイヤー"
+    1412142789: {
+      name: ''
     },
-    3027976182: {
-      activityName: "シールドを操る双頭"
+    1416597166: {
+      name: 'Popyt i podaż'
     },
-    3030879879: {
-      activityName: "哀れな目"
+    1428050875: {
+      name: 'Classified'
     },
-    3041179010: {
-      activityName: "ケルベロス・バエIII"
+    1451946951: {
+      name: 'Misja ratunkowa'
     },
-    3044479892: {
-      activityName: "影に生きる盗賊"
+    1466550401: {
+      name: 'Niebezpieczna szybkość'
     },
-    3047788493: {
-      activityName: "塵の宮殿"
+    1490848577: {
+      name: 'Zapętlony'
     },
-    3047788494: {
-      activityName: "ケルベロス・バエIII"
+    1491022087: {
+      name: 'Oblężenie Exodusu'
     },
-    3047788495: {
-      activityName: "不滅のマインド"
+    1495993294: {
+      name: 'Jezioro Cieni'
     },
-    3051527960: {
-      activityName: "太陽の当たらない独房"
+    1498466193: {
+      name: 'Misja ratunkowa'
     },
-    3053288711: {
-      activityName: "浮遊庭園"
+    1521232506: {
+      name: 'Classified'
     },
-    3056582947: {
-      activityName: "敵地への襲撃"
+    1525633702: {
+      name: 'Misja ratunkowa'
     },
-    3070937708: {
-      activityName: "フォールン・サーベル"
+    1536764325: {
+      name: 'Misja badawcza'
     },
-    3077860924: {
-      activityName: "デビルズ・レイヤー"
+    1557641249: {
+      name: 'Misja ratunkowa'
     },
-    3077860927: {
-      activityName: "クロタの意思"
+    1563393783: {
+      name: 'Katastrofa Exodusu'
     },
-    3097191720: {
-      activityName: "影に生きる盗賊"
+    1568750156: {
+      name: 'Farma'
     },
-    3098008841: {
-      activityName: "クロタの意思"
+    1581219251: {
+      name: 'Misja badawcza'
     },
-    3101475152: {
-      activityName: "ファイアベースデルフィ"
+    1614692057: {
+      name: 'Misja ratunkowa'
     },
-    3101766066: {
-      activityName: "哀れな目"
+    1646219807: {
+      name: 'Przywłaszczenie'
     },
-    3102291176: {
-      activityName: "プライムの道"
+    1651979106: {
+      name: 'Współczesny Prometeusz'
     },
-    3102295231: {
-      activityName: "サルベージ"
+    1658347443: {
+      name: 'Powrót do domu'
     },
-    3120201278: {
-      activityName: "ウィンター・ラン"
+    1685065161: {
+      name: 'Lewiatan'
     },
-    3120351937: {
-      activityName: "ウォーマインド"
+    1685237649: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    3120351938: {
-      activityName: "内なる暗黒"
+    1699948563: {
+      name: 'Lewiatan'
     },
-    3120351939: {
-      activityName: "復旧"
+    1720510574: {
+      name: 'Twierdza'
     },
-    3120351941: {
-      activityName: "苦境のウォーマインド"
+    1756055546: {
+      name: 'Misja ratunkowa'
     },
-    3120351943: {
-      activityName: "ラストアレイ"
+    1773400654: {
+      name: 'Imperialne zaproszenie'
     },
-    3125074504: {
-      activityName: "週間英雄ストライク"
+    1778450722: {
+      name: 'Misja analizacyjna/n'
     },
-    3125074505: {
-      activityName: "週間英雄ストライク"
+    1786054751: {
+      name: 'Premedytacja'
     },
-    3125074507: {
-      activityName: "週間英雄ストライク"
+    1790343591: {
+      name: 'Odłamek Wędrowca'
     },
-    3132533708: {
-      activityName: "汚染された聖杯"
+    1792985204: {
+      name: 'Nocny szturm: Katastrofa Exodusu'
     },
-    3135856650: {
-      activityName: "ウィンターの災難"
+    1824067376: {
+      name: 'Szał za kółkiem'
     },
-    3156370656: {
-      activityName: "セクター618"
+    1829866365: {
+      name: 'Mokra robota'
     },
-    3162176634: {
-      activityName: "残響の間"
+    1863334927: {
+      name: 'Nocny szturm: Pieśń Savathûn'
     },
-    3183184449: {
-      activityName: "シールドを操る双頭"
+    1875726950: {
+      name: 'Lewiatan'
     },
-    3187607216: {
-      activityName: "不滅のマインド"
+    1949546348: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    3190434637: {
-      activityName: "ドレッドノート"
+    1952521609: {
+      name: 'Odłamek Wędrowca'
     },
-    3192378548: {
-      activityName: "遥かなる暗黒"
+    1956541147: {
+      name: 'Wezwanie do domu'
     },
-    3196929644: {
-      activityName: "変異体の強奪"
+    1969800443: {
+      name: 'Arecibo'
     },
-    3200293401: {
-      activityName: "我が敵の敵"
+    1971154629: {
+      name: 'Niebezpieczna szybkość'
     },
-    3207122440: {
-      activityName: "アーカイブ"
+    1975064760: {
+      name: 'Nocny szturm: Pieśń Savathûn'
     },
-    3209623958: {
-      activityName: "週間ナイトフォールストライク"
+    1981289329: {
+      name: 'Oblężenie Exodusu'
     },
-    3210106079: {
-      activityName: "ドレッドノートをパトロールする"
+    1984315274: {
+      name: 'Szturmy Straży Przedniej'
     },
-    3220294246: {
-      activityName: "破られた防壁"
+    1988701745: {
+      name: 'Odwet'
     },
-    3234259779: {
-      activityName: "オシリスの試練"
+    2001433484: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    3242509473: {
-      activityName: "クロタの意思"
+    2025057095: {
+      name: 'Misja bojowa'
     },
-    3252534714: {
-      activityName: "ダブル"
+    2033669713: {
+      name: 'Oszczep-4'
     },
-    3263216023: {
-      activityName: "神殺し"
+    2052289205: {
+      name: 'Eksplozja'
     },
-    3277621970: {
-      activityName: "時の番人"
+    2079994698: {
+      name: 'Misja badawcza'
     },
-    3277929848: {
-      activityName: "シールドを操る双頭"
+    2080275457: {
+      name: 'Handlarz bronią'
     },
-    3292305209: {
-      activityName: "ウィンター・ラン"
+    2113712124: {
+      name: 'Świętokradztwo'
     },
-    3292305210: {
-      activityName: "ネクサス"
+    2151274060: {
+      name: 'Misja analizacyjna/n'
     },
-    3292667877: {
-      activityName: "アサイラム"
+    2174556965: {
+      name: 'Wrobieni'
     },
-    3315158082: {
-      activityName: "影の中の煌き"
+    2183066491: {
+      name: 'Farma'
     },
-    3322717977: {
-      activityName: "アイアンバナー: コントロール"
+    2184866967: {
+      name: 'Misja analizacyjna/n'
     },
-    3335571405: {
-      activityName: "闘魂"
+    2187073261: {
+      name: 'Misja analizacyjna/n'
     },
-    3343284688: {
-      activityName: "外部への信号"
+    2231840083: {
+      name: 'Syreni Śpiew'
     },
-    3343503784: {
-      activityName: "汚染された聖杯"
+    2236648719: {
+      name: 'Wieczność'
     },
-    3345352981: {
-      activityName: "生贄の儀式"
+    2243336789: {
+      name: 'Misja bojowa'
     },
-    3346215145: {
-      activityName: "ライトハウス"
+    2250935166: {
+      name: 'Nieśmiertelny'
     },
-    3349918649: {
-      activityName: "ドレッドノート"
+    2259811067: {
+      name: 'Odłamek Wędrowca'
     },
-    3356249023: {
-      activityName: "機械の天罰"
+    2264636552: {
+      name: 'Medytacja: „Eksplozja”'
     },
-    3373044013: {
-      activityName: "汚染された聖杯"
+    2266954523: {
+      name: 'Farma'
     },
-    3384143875: {
-      activityName: "汚染された聖杯"
+    2287222467: {
+      name: 'Misja analizacyjna/n'
     },
-    3392709953: {
-      activityName: "変異体の強奪"
+    2288260902: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    3393673804: {
-      activityName: "エルダーズ・プリズン"
+    2291549972: {
+      name: 'Wzmocnienie!'
     },
-    3394418729: {
-      activityName: "塵の宮殿"
+    2297638408: {
+      name: 'Furia'
     },
-    3398049753: {
-      activityName: "ガーデン・スパイア"
+    2301390667: {
+      name: 'Misja badawcza'
     },
-    3398752148: {
-      activityName: "ウィンター・ラン"
+    2318812547: {
+      name: 'Piramidion'
     },
-    3399843400: {
-      activityName: "謎の人物からの連絡"
+    2336998357: {
+      name: 'Długa rozgrywka'
     },
-    3399843403: {
-      activityName: "イシュタルコレクティブ"
+    2379494367: {
+      name: 'Misja analizacyjna/n'
     },
-    3399843404: {
-      activityName: "アーカイブ"
+    2420240009: {
+      name: 'Misja ratunkowa'
     },
-    3399843406: {
-      activityName: "ゲートロードの目"
+    2445164291: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    3399843407: {
-      activityName: "ウィンターの災難"
+    2449714930: {
+      name: 'Lewiatan'
     },
-    3403438134: {
-      activityName: "残響の間"
+    2464834848: {
+      name: 'Śródmieście'
     },
-    3406669964: {
-      activityName: "完成形セピックス"
+    2468202005: {
+      name: 'Odłamek Wędrowca'
     },
-    3412406993: {
-      activityName: "黄昏の大聖堂"
+    2478782573: {
+      name: ''
     },
-    3415949693: {
-      activityName: "ネクサス"
+    2517540332: {
+      name: 'Wielkie pole rażenia'
     },
-    3422670336: {
-      activityName: "デビルズ・レイヤー"
+    2519458964: {
+      name: 'Bezkresna Kotlina'
     },
-    3422670339: {
-      activityName: "クロタの意思"
+    2519564410: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    3422924470: {
-      activityName: "汚染された魔女"
+    2536491635: {
+      name: 'Misja badawcza'
     },
-    3427115544: {
-      activityName: "フォールン・サーベル"
+    2558926634: {
+      name: 'Misja badawcza'
     },
-    3428378490: {
-      activityName: "カオス: クラッシュ"
+    2559514952: {
+      name: 'Utopia'
     },
-    3434275681: {
-      activityName: "夜の間"
+    2561308143: {
+      name: 'Misja badawcza'
     },
-    3464398659: {
-      activityName: "オリックスの神殿"
+    2573702057: {
+      name: 'Misja ratunkowa'
     },
-    3473815980: {
-      activityName: "クロタフィスト"
+    2574607799: {
+      name: 'Sąsiedzi z piekła rodem'
     },
-    3476387771: {
-      activityName: "宿られし軍の英雄"
+    2575990417: {
+      name: 'Misja bojowa'
     },
-    3492173922: {
-      activityName: "ベスタ基地"
+    2580713007: {
+      name: 'Misja badawcza'
     },
-    3493774909: {
-      activityName: "降り立ちし邪神: 序幕"
+    2588220738: {
+      name: 'Misja badawcza'
     },
-    3508129769: {
-      activityName: "ワームカルト"
+    2610112492: {
+      name: 'Misja analizacyjna/n'
     },
-    3508129770: {
-      activityName: "ワームカルト"
+    2619236227: {
+      name: 'Misja analizacyjna/n'
     },
-    3509128672: {
-      activityName: "鉄の神殿"
+    2629975203: {
+      name: 'Misja bojowa'
     },
-    3527709396: {
-      activityName: "スカーミッシュ"
+    2629998776: {
+      name: 'Misja ratunkowa'
     },
-    3534581229: {
-      activityName: "邪神、滅びる"
+    2642769170: {
+      name: 'Sześć'
     },
-    3543525727: {
-      activityName: "女王の獲物"
+    2651851341: {
+      name: 'Misja analizacyjna/n'
     },
-    3549856929: {
-      activityName: "苦境のウォーマインド"
+    2665134323: {
+      name: 'Zwolnienie'
     },
-    3555113730: {
-      activityName: "哀れな目"
+    2667533713: {
+      name: 'Wostok'
     },
-    3565777280: {
-      activityName: "狼の襲撃"
+    2684479494: {
+      name: 'Misja ratunkowa'
     },
-    3568014988: {
-      activityName: "神殺し"
+    2693136600: {
+      name: 'Lewiatan'
     },
-    3573972337: {
-      activityName: "ネクサス"
+    2693136601: {
+      name: 'Lewiatan'
     },
-    3575520714: {
-      activityName: "シールドを操る双頭"
+    2693136602: {
+      name: 'Lewiatan'
     },
-    3575840788: {
-      activityName: "ウルブズの策略"
+    2693136603: {
+      name: 'Lewiatan'
     },
-    3582451805: {
-      activityName: "影に生きる盗賊"
+    2693136604: {
+      name: 'Lewiatan'
     },
-    3582577776: {
-      activityName: "サイレント・ファング"
+    2693136605: {
+      name: 'Lewiatan'
     },
-    3593950004: {
-      activityName: "クレジット"
+    2702476101: {
+      name: 'Wieża'
     },
-    3602734434: {
-      activityName: "旗の落ちた地"
+    2708828207: {
+      name: 'Utopia'
     },
-    3609927430: {
-      activityName: "インフェルノ: 闘魂"
+    2737739053: {
+      name: 'Głęboka konwersacja'
     },
-    3612436612: {
-      activityName: "前触れ"
+    2759086913: {
+      name: 'Classified'
     },
-    3619606113: {
-      activityName: "カオス: クラッシュ"
+    2768347363: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    3621292155: {
-      activityName: "サルベージ"
+    2773222353: {
+      name: 'Misja analizacyjna/n'
     },
-    3635588435: {
-      activityName: "預言者"
+    2776929937: {
+      name: 'Diagnoza dyferencyjna'
     },
-    3645675142: {
-      activityName: "コントロール"
+    2782300570: {
+      name: 'Misja ratunkowa'
     },
-    3645919501: {
-      activityName: "コスモドロームをパトロール"
+    2784803584: {
+      name: 'Misja bojowa'
     },
-    3650545911: {
-      activityName: "ウルブズの策略"
+    2798856614: {
+      name: 'Misja badawcza'
     },
-    3670262295: {
-      activityName: "オシリスの試練"
+    2846775197: {
+      name: 'Misja bojowa'
     },
-    3670861271: {
-      activityName: "我が敵の敵"
+    2908287325: {
+      name: 'Misja badawcza'
     },
-    3670968271: {
-      activityName: "クロタの意思"
+    2926767881: {
+      name: 'Zemsta'
     },
-    3671763238: {
-      activityName: "ケルベロス・バエIII"
+    2949941834: {
+      name: 'Nieoczekiwani goście'
     },
-    3674885127: {
-      activityName: "神殺し"
+    2969403085: {
+      name: 'Misja badawcza'
     },
-    3676594097: {
-      activityName: "ウィンター・ラン"
+    3002511278: {
+      name: 'Mroczny sojusz'
     },
-    3691405620: {
-      activityName: "バンガードのナイトフォール"
+    3026637018: {
+      name: 'Misja badawcza'
     },
-    3700036317: {
-      activityName: "オリックスの勝利"
+    3038694763: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    3705341715: {
-      activityName: "ハンターの発見"
+    3049122128: {
+      name: 'Misja analizacyjna/n'
     },
-    3708806801: {
-      activityName: "止まらない衰退"
+    3050465729: {
+      name: 'Nocny szturm: Odwrócona Iglica'
     },
-    3711414560: {
-      activityName: "夜の間"
+    3062197616: {
+      name: 'Rywalizacja'
     },
-    3711414561: {
-      activityName: "クロタの剣"
+    3105090879: {
+      name: 'Adieu'
     },
-    3711414562: {
-      activityName: "目覚めの時"
+    3140524926: {
+      name: 'Niezłomność'
     },
-    3711414563: {
-      activityName: "オリックスの神殿"
+    3143798436: {
+      name: 'Europejska Martwa Strefa'
     },
-    3711414564: {
-      activityName: "遥かなる暗黒"
+    3147707814: {
+      name: 'Odpływ'
     },
-    3711414566: {
-      activityName: "ワールドグレイブ"
+    3148431353: {
+      name: 'Mokra robota'
     },
-    3715085142: {
-      activityName: "影の呼ぶ声"
+    3150153711: {
+      name: 'Szanse i okazje'
     },
-    3731091063: {
-      activityName: "週間ナイトフォールストライク"
+    3172367001: {
+      name: 'Odłamek Wędrowca'
     },
-    3741914742: {
-      activityName: "ウィンター・ラン"
+    3173130826: {
+      name: 'Misja bojowa'
     },
-    3743955707: {
-      activityName: "タワー"
+    3208779612: {
+      name: 'Misja ratunkowa'
     },
-    3750289192: {
-      activityName: "クロタフィスト"
+    3211303924: {
+      name: 'Misja ratunkowa'
     },
-    3778091466: {
-      activityName: "ダウンロード完了"
+    3211568383: {
+      name: 'Syreni Śpiew'
     },
-    3784570118: {
-      activityName: "アーカイブ"
+    3231065327: {
+      name: 'Misja analizacyjna/n'
     },
-    3799336128: {
-      activityName: "クロタの意思"
+    3243161126: {
+      name: 'Szybka gra'
     },
-    3817155567: {
-      activityName: "トワイライトギャップ"
+    3268684190: {
+      name: 'Misja ratunkowa'
     },
-    3837170670: {
-      activityName: "ワールドグレイブ"
+    3272002712: {
+      name: 'Nadzieja'
     },
-    3842976518: {
-      activityName: "太陽の当たらない独房"
+    3277510674: {
+      name: 'Nieśmiertelny'
     },
-    3848655103: {
-      activityName: "ブラックシールド"
+    3283790633: {
+      name: 'Wrobieni'
     },
-    3856562046: {
-      activityName: "光の後に"
+    3289681664: {
+      name: 'Zaginiona załoga'
     },
-    3856604751: {
-      activityName: "曙光"
+    3298775062: {
+      name: 'Misja badawcza'
     },
-    3860793576: {
-      activityName: "完成形セピックス"
+    3303685562: {
+      name: 'Misja ratunkowa'
     },
-    3878867172: {
-      activityName: "エリアコントロール"
+    3304835347: {
+      name: 'Wezwanie do domu'
     },
-    3896699662: {
-      activityName: "ウィンター・ラン"
+    3336275007: {
+      name: 'Medytacja: „Sześć”'
     },
-    3910288239: {
-      activityName: "アイアンバナー: 暁光"
+    3337731612: {
+      name: 'Misja bojowa'
     },
-    3918359338: {
-      activityName: "イカロス"
+    3346345105: {
+      name: 'Kuracja eksperymentalna'
     },
-    3920061741: {
-      activityName: "オリックスの神殿"
+    3359466010: {
+      name: 'Iskra'
     },
-    3921931055: {
-      activityName: "クロタの意思"
+    3368226533: {
+      name: 'Nocny szturm: Odwrócona Iglica'
     },
-    3936153046: {
-      activityName: "インフェルノ: 3対3"
+    3379039897: {
+      name: 'Misja ratunkowa'
     },
-    3941998864: {
-      activityName: "ケルベロス・バエIII"
+    3410530777: {
+      name: 'Rozważne działania'
     },
-    3945328236: {
-      activityName: "鉄の神殿"
+    3417504239: {
+      name: 'Odpływ'
     },
-    3948474766: {
-      activityName: "クロタの剣"
+    3446541099: {
+      name: 'Lewiatan'
     },
-    3974631085: {
-      activityName: "我が敵の敵"
+    3479544154: {
+      name: 'Misja bojowa'
     },
-    3978884648: {
-      activityName: "邪神、滅びる"
+    3481058226: {
+      name: 'Misja badawcza'
     },
-    4000873610: {
-      activityName: "クロタの最期"
+    3485876484: {
+      name: 'Szał za kółkiem'
     },
-    4027720491: {
-      activityName: "シールドを操る双頭"
+    3487576414: {
+      name: 'Misja badawcza'
     },
-    4038697181: {
-      activityName: "ガラスの間"
+    3489692681: {
+      name: 'Misja badawcza'
     },
-    4046346128: {
-      activityName: "恐怖の抱擁"
+    3500791146: {
+      name: 'Wzrost napięcia'
     },
-    4055903037: {
-      activityName: "暁光"
+    3515770727: {
+      name: 'Misja analizacyjna/n'
     },
-    4060895971: {
-      activityName: "タワー"
+    3580793473: {
+      name: 'Medytacja: „1AU”'
     },
-    4079642013: {
-      activityName: "ブロークンリージョン"
+    3612741503: {
+      name: 'Misja badawcza'
     },
-    4079642014: {
-      activityName: "ブロークンリージョン"
+    3627094182: {
+      name: 'Misja bojowa'
     },
-    4087776066: {
-      activityName: "ケイド6の探し物"
+    3631476566: {
+      name: 'Farma'
     },
-    4099604100: {
-      activityName: "クロタの意思"
+    3645117987: {
+      name: 'Sąsiedzi z piekła rodem'
     },
-    4101329072: {
-      activityName: "哀れな目"
+    3652531274: {
+      name: 'Odłamek Wędrowca'
     },
-    4105918304: {
-      activityName: "最終出口"
+    3662124488: {
+      name: 'Misja badawcza'
     },
-    4107311671: {
-      activityName: "朽ち果てた地"
+    3664915501: {
+      name: 'Czerwony Legion, Czarny olej'
     },
-    4129878327: {
-      activityName: "インフェルノ: サルベージ"
+    3669054326: {
+      name: 'Misja ratunkowa'
     },
-    4131978369: {
-      activityName: "変異体の強奪"
+    3688464794: {
+      name: 'Znaczenie połączeń'
     },
-    4141063459: {
-      activityName: "影に生きる盗賊"
+    3700722865: {
+      name: 'Zwolnienie'
     },
-    4153423016: {
-      activityName: "エルダーの挑戦"
+    3702064261: {
+      name: 'Zbieranie danych'
     },
-    4163254808: {
-      activityName: "時の海岸"
+    3738159218: {
+      name: 'Niezłomny'
     },
-    4168247421: {
-      activityName: "アイアンバナー: クラッシュ"
+    3752039537: {
+      name: 'Odwracanie polaryzacji'
     },
-    4171584130: {
-      activityName: "インフェルノ: 6対6"
+    3780356141: {
+      name: 'Stop i start'
     },
-    4175179544: {
-      activityName: "週間英雄ストライク"
+    3792746061: {
+      name: 'Misja bojowa'
     },
-    4175179545: {
-      activityName: "週間英雄ストライク"
+    3799743268: {
+      name: 'Classified'
     },
-    4175179546: {
-      activityName: "週間英雄ストライク"
+    3806583577: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    4178645458: {
-      activityName: "埋もれた都市"
+    3834639884: {
+      name: 'Misja analizacyjna/n'
     },
-    4181273223: {
-      activityName: "フォールン・サーベル"
+    3836086286: {
+      name: 'Nieoczekiwani goście'
     },
-    4183157062: {
-      activityName: "最後の儀式"
+    3839751954: {
+      name: 'Ołtarz Płomienia'
     },
-    4187524452: {
-      activityName: "不滅のマインド"
+    3872525353: {
+      name: 'Stop i start'
     },
-    4196724507: {
-      activityName: "インフェルノ: ランブル"
+    3879860661: {
+      name: 'Lewiatan'
     },
-    4200263342: {
-      activityName: "バスティオン"
+    3903562779: {
+      name: 'Wieża'
     },
-    4203094490: {
-      activityName: "鉄の神殿"
+    3916343513: {
+      name: 'Lewiatan'
     },
-    4215168114: {
-      activityName: "クロタの意思"
+    3920643231: {
+      name: 'Nocny szturm: Handlarz bronią'
     },
-    4217181091: {
-      activityName: "スカーミッシュ"
+    3958400416: {
+      name: 'Misja badawcza'
     },
-    4222208550: {
-      activityName: "スパローレース"
+    3966792859: {
+      name: 'Nessus, niestabilny centaur'
     },
-    4227723344: {
-      activityName: "デビルズ・レイヤー"
+    3978357488: {
+      name: 'Misja ratunkowa'
     },
-    4227723347: {
-      activityName: "クロタの意思"
+    3982474534: {
+      name: 'Zemsta'
     },
-    4239017990: {
-      activityName: "待ち受ける鍵"
+    4034557395: {
+      name: 'Powrót do domu'
     },
-    4240750267: {
-      activityName: "プロメテウス・コード"
+    4039317196: {
+      name: 'Lewiatan'
     },
-    4242282035: {
-      activityName: "コントロール"
+    4043714237: {
+      name: 'Misja badawcza'
     },
-    4252752792: {
-      activityName: "塵の宮殿"
+    4047570705: {
+      name: 'Misja bojowa'
     },
-    4253541885: {
-      activityName: "ウィンター・ラン"
+    4050886070: {
+      name: 'Misja badawcza'
     },
-    4254149014: {
-      activityName: "影に生きる盗賊"
+    4054968718: {
+      name: 'Nocny szturm: Odwrócona Iglica'
     },
-    4260139097: {
-      activityName: "パンテオン"
+    4095207117: {
+      name: 'Misja ratunkowa'
     },
-    4272344899: {
-      activityName: "アーカイブ"
+    4103844069: {
+      name: 'Misja związana z zabójstwem/n'
     },
-    4277539497: {
-      activityName: "アイアンバナー: クラッシュ"
+    4159221189: {
+      name: 'Io'
     },
-    4287936726: {
-      activityName: "エクソダスブルー"
+    4166562681: {
+      name: 'Tytan'
+    },
+    4174103238: {
+      name: 'Misja ratunkowa'
+    },
+    4209774794: {
+      name: 'Misja ratunkowa'
+    },
+    4216926874: {
+      name: 'Misja ratunkowa'
+    },
+    4231544111: {
+      name: 'Misja badawcza'
+    },
+    4239233351: {
+      name: 'Medytacja: „Iskra”'
+    },
+    4254776501: {
+      name: 'Misja ratunkowa'
+    },
+    4283649349: {
+      name: 'Misja związana z zabójstwem/n'
+    },
+    4291922223: {
+      name: 'Nadzieja'
     },
   },
   ptbr: {
-    8055542: {
-      activityName: "As muralhas ruem"
+    19982784: {
+      name: 'Missão de Combate'
     },
-    9885984: {
-      activityName: "Câmara da Noite"
+    30240416: {
+      name: 'Missão de Assassinato'
     },
-    10551956: {
-      activityName: "Rei da montanha"
+    37050217: {
+      name: 'Missão de pesquisa'
     },
-    18715720: {
-      activityName: "Rei da montanha"
+    51408141: {
+      name: 'Missão de Coleta'
     },
-    24471896: {
-      activityName: "Marte e Vênus"
+    53954174: {
+      name: 'Antiantiaéreas'
     },
-    24471899: {
-      activityName: "Terra e Lua"
+    57103244: {
+      name: 'Missão de pesquisa'
     },
-    28695277: {
-      activityName: "A Espada de Crota"
+    60002467: {
+      name: 'Sacrilégio'
     },
-    34205302: {
-      activityName: "O Nexo"
+    78673128: {
+      name: 'Ladrão de Ladrões'
     },
-    34327100: {
-      activityName: "S.A.B.R.E. Decaído"
+    80726883: {
+      name: 'Ó Capitão'
     },
-    51311972: {
-      activityName: "A Mente Imortal"
+    82913930: {
     },
-    51311973: {
-      activityName: "Cerberus Vae III"
+    89727599: {
+      name: 'Leviatã'
     },
-    51311974: {
-      activityName: "Palácio das Areias"
+    104342360: {
+      name: 'Missão de Combate'
     },
-    64371922: {
-      activityName: "Briga: Supremacia"
+    116352029: {
+      name: 'Missão de Combate'
     },
-    86749741: {
-      activityName: "Bandeira de Ferro: Controle"
+    122988657: {
+      name: 'Legião Vermelha, Óleo Preto'
     },
-    91984044: {
-      activityName: "Um Kell em ascensão"
+    143647473: {
+      name: 'Missão de Coleta'
     },
-    95021281: {
-      activityName: "Dominado pela Luz"
+    145302664: {
+      name: 'Anoitecer: O Traficante de Armas'
     },
-    96237246: {
-      activityName: "6v6 clássico"
+    153537894: {
+      name: 'Uma Nova Fronteira'
     },
-    98710471: {
-      activityName: "Briga"
+    160721490: {
+      name: 'Classified'
     },
-    103493304: {
-      activityName: "Rei da montanha"
+    175598161: {
+      name: 'Missão de Coleta'
     },
-    116560380: {
-      activityName: "O Ladrão das Sombras"
+    189324537: {
+      name: 'Missão de Coleta'
     },
-    116811400: {
-      activityName: "O Ladrão das Sombras"
+    197670945: {
+      name: 'Missão de Assassinato'
     },
-    123652644: {
-      activityName: "Câmara do Eco"
+    204298081: {
+      name: 'Missão de análise'
     },
-    123999179: {
-      activityName: "Sombras no crepúsculo"
+    248066530: {
+      name: 'Missão de Coleta'
     },
-    130631058: {
-      activityName: "3v3 Clássico"
+    255819671: {
+      name: 'Fúria'
     },
-    134979141: {
-      activityName: "A Última Matriz"
+    261349035: {
+      name: 'Missão de Coleta'
     },
-    149381097: {
-      activityName: "Patrulhe a Lua"
+    286324446: {
+      name: 'Missão de Coleta'
     },
-    151357230: {
-      activityName: "O Ladrão das Sombras"
+    287649202: {
+      name: 'Leviatã'
     },
-    154683944: {
-      activityName: "Pináculo da entropia"
+    293858112: {
+      name: 'Missão de Combate'
     },
-    157336261: {
-      activityName: "Inferno: Supremacia"
+    298747401: {
+      name: 'Missão de pesquisa'
     },
-    157390236: {
-      activityName: "Palácio das Areias"
+    298793060: {
+      name: 'Missão de Coleta'
     },
-    157980450: {
-      activityName: "O Túmulo de Ferro"
+    313572698: {
+      name: 'Fragmento do Viajante'
     },
-    165850035: {
-      activityName: "A Mente Imortal"
+    320680002: {
+      name: 'Oferta e Procura'
     },
-    167419252: {
-      activityName: "Patrulhe o Cosmódromo"
+    330545737: {
+      name: 'A Chácara'
     },
-    184503944: {
-      activityName: "A Mente Imortal"
+    338662534: {
+      name: 'O Pináculo Invertido'
     },
-    184503945: {
-      activityName: "Cerberus Vae III"
+    355984230: {
+      name: 'Missão de Assassinato'
     },
-    184503946: {
-      activityName: "Palácio das Areias"
+    359488722: {
+      name: 'Hackear o Planetoide'
     },
-    194283519: {
-      activityName: "Palácio das Areias"
+    374818561: {
+      name: 'Descanso do Imperador'
     },
-    202167389: {
-      activityName: "Palácio das Areias"
+    379330092: {
+      name: 'Fragmento do Viajante'
     },
-    209343718: {
-      activityName: "Caminho Invernal"
+    387171436: {
+      name: 'Missão de Coleta'
     },
-    211678003: {
-      activityName: "Bandeira de Ferro: Fissura"
+    388289443: {
+      name: 'Missão de pesquisa'
     },
-    212088538: {
-      activityName: "O Precipício da Convocação"
+    415388387: {
+      name: 'Missão de pesquisa'
     },
-    218006092: {
-      activityName: "As Terras Pestíferas"
+    417231112: {
+      name: 'Leviatã'
     },
-    242777083: {
-      activityName: "O Nexo"
+    429361491: {
+      name: 'Missão de Coleta'
     },
-    252347595: {
-      activityName: "Ousadias no hangar"
+    435989417: {
+      name: 'Missão de análise'
     },
-    259879232: {
-      activityName: "S.A.B.R.E. Decaído"
+    444087412: {
+      name: 'Missão de Combate'
     },
-    260615043: {
-      activityName: "Briga"
+    445417088: {
     },
-    260765522: {
-      activityName: "A ira da máquina"
+    459955094: {
+      name: 'Missão de análise'
     },
-    269981320: {
-      activityName: "O código de Prometeu"
+    461203479: {
+      name: 'Missão de pesquisa'
     },
-    278763462: {
-      activityName: "Palácio das Areias"
+    464789944: {
+      name: 'Escolhido'
     },
-    279121234: {
-      activityName: "Rei da montanha"
+    474380713: {
+      name: 'Missão de Coleta'
     },
-    284635225: {
-      activityName: "O Templo em Chamas"
+    539897061: {
+      name: 'Revertendo a Polaridade'
     },
-    287505866: {
-      activityName: "S.A.B.R.E. Decaído"
+    545240418: {
+      name: 'Missão de pesquisa'
     },
-    291350530: {
-      activityName: "Assalto do Anoitecer Semanal"
+    549123191: {
+      name: 'Missão de pesquisa'
     },
-    300506688: {
-      activityName: "Assalto do Anoitecer Semanal"
+    553537971: {
+      name: 'Escolhido'
     },
-    308091852: {
-      activityName: "Assalto Heróico Semanal"
+    564863404: {
     },
-    308091854: {
-      activityName: "Assalto Heróico Semanal"
+    581323290: {
+      name: 'Missão de pesquisa'
     },
-    308091855: {
-      activityName: "Assalto Heróico Semanal"
+    585071442: {
+      name: 'Anoitecer: Canção de Savathûn'
     },
-    324283916: {
-      activityName: "Uma Maré Ascendente"
+    601540706: {
+      name: 'Anoitecer: O Traficante de Armas'
     },
-    331520418: {
-      activityName: "A Mente Imortal"
+    622895925: {
+      name: 'Arecibo'
     },
-    342909762: {
-      activityName: "Irmãos Escudeiros"
+    632790902: {
+      name: 'Suspense'
     },
-    351460287: {
-      activityName: "A Cela Sem Sol"
+    642256373: {
+      name: 'Anoitecer: Acidente da Êxodo'
     },
-    351673577: {
-      activityName: "Cada um por si clássico"
+    642277473: {
+      name: 'Anoitecer: O Pyramidion'
     },
-    355200465: {
-      activityName: "Irmãos Escudeiros"
+    652598202: {
+      name: 'Ravina da Legião'
     },
-    355605844: {
-      activityName: "Patrulhe as Terras Pestíferas"
+    667604912: {
+      name: 'Meditação: "Enrolado"'
     },
-    360962374: {
-      activityName: "O Ladrão das Sombras"
+    671904429: {
+      name: 'Missão de Coleta'
     },
-    386157877: {
-      activityName: "Irmãos Escudeiros"
+    703311712: {
+      name: 'Fragmento do Viajante'
     },
-    389785553: {
-      activityName: "Campeões Sombrios"
+    715306877: {
+      name: 'Missão de Combate'
     },
-    403726672: {
-      activityName: "Assalto Heróico Semanal"
+    719906507: {
+      name: 'Classified'
     },
-    403726674: {
-      activityName: "Assalto Heróico Semanal"
+    743100125: {
+      name: 'Missão de Coleta'
     },
-    403726675: {
-      activityName: "Assalto Heróico Semanal"
+    750649238: {
+      name: 'Missão de Coleta'
     },
-    406972773: {
-      activityName: "O Golpe à Abominação"
+    757116822: {
+      name: 'Leviatã'
     },
-    410347507: {
-      activityName: "O Ladrão das Sombras"
+    760130722: {
+      name: 'Os Penhascos Mortos'
     },
-    425614025: {
-      activityName: "Os Senhores do Ferro"
+    782175145: {
+      name: 'Missão de Assassinato'
     },
-    428290721: {
-      activityName: "Patrulhe Marte"
+    782290869: {
+      name: 'Missão de pesquisa'
     },
-    430160982: {
-      activityName: "A ira da máquina"
+    789332628: {
+      name: 'Ladrão de Ladrões'
     },
-    430914016: {
-      activityName: "O Túmulo de Ferro"
+    798143184: {
+      name: 'Missão de Combate'
     },
-    431759746: {
-      activityName: "Recuperação"
+    808931822: {
+      name: 'Prometeu pós-moderno'
     },
-    443057682: {
-      activityName: "Impacto Celeste"
+    837763871: {
+      name: 'Missão de Coleta'
     },
-    443707023: {
-      activityName: "A Casa Governante"
+    849242583: {
+      name: 'Missão de análise'
     },
-    455063520: {
-      activityName: "A Invocação"
+    880665770: {
+      name: 'Missão de pesquisa'
     },
-    468325937: {
-      activityName: "Armas Combinadas"
+    919252154: {
+      name: 'Aliança Sombria'
     },
-    469270447: {
-      activityName: "Memento"
+    926012363: {
+      name: 'Missão de Assassinato'
     },
-    474428712: {
-      activityName: "Inimigo do meu inimigo"
+    926940962: {
+      name: 'Anoitecer: O Pyramidion'
     },
-    482017096: {
-      activityName: "Sepiks Aperfeiçoado"
+    938512773: {
+      name: 'Inquebrável'
     },
-    492319725: {
-      activityName: "Caos: Briga"
+    940394831: {
+      name: 'JORNADA: Acidente da Êxodo'
     },
-    493857039: {
-      activityName: "Assalto do Anoitecer Semanal"
+    955852466: {
+      name: '1AU'
     },
-    496237130: {
-      activityName: "Corrida de Pardais"
+    963938931: {
+      name: 'Conversa Profunda'
     },
-    504512661: {
-      activityName: "Posto de Vesta"
+    964196803: {
+      name: 'Missão de Coleta'
     },
-    509411569: {
-      activityName: "Sangue Ruim"
+    969385987: {
+      name: 'Iluminando a Escuridão'
     },
-    547981568: {
-      activityName: "Bandeira de Ferro: Supremacia"
+    993152361: {
+      name: 'Missão de Coleta'
     },
-    550186563: {
-      activityName: "Um Kell em ascensão"
+    1019362992: {
+      name: 'Meditação: "De Volta ao Lar"'
     },
-    572368820: {
-      activityName: "Assalto do Anoitecer Semanal"
+    1035135049: {
+      name: 'O Pyramidion'
     },
-    573077648: {
-      activityName: "S.A.B.R.E. Decaído"
+    1038710420: {
+      name: 'Missão de Assassinato'
     },
-    574483028: {
-      activityName: "A Cidade Enterrada"
+    1053141615: {
+      name: 'Missão de Assassinato'
     },
-    575304694: {
-      activityName: "Um novo covil"
+    1063969232: {
+      name: 'Convite do Imperador'
     },
-    575376446: {
-      activityName: "Câmara do Eco"
+    1075152813: {
+      name: 'Zona Morta Europeia'
     },
-    579700969: {
-      activityName: "O depósito de Cayde"
+    1076851943: {
+      name: 'Missão de Assassinato'
     },
-    579949585: {
-      activityName: "A Presa Silenciosa"
+    1085523978: {
+      name: 'Missão de pesquisa'
     },
-    581858107: {
-      activityName: "A Alvorada"
+    1090267699: {
+      name: 'Missão de Assassinato'
     },
-    603968817: {
-      activityName: "Cerberus Vae III"
+    1101792305: {
+      name: 'Canção de Savathûn'
     },
-    604017503: {
-      activityName: "Prisão dos Anciões: Possuídos"
+    1102824603: {
+      name: 'Missão de Assassinato'
     },
-    614791010: {
-      activityName: "Supremacia"
+    1105211124: {
+      name: 'Missão de análise'
     },
-    632771975: {
-      activityName: "Aspirante ao trono"
+    1107208644: {
+      name: 'Hackear o Planetoide'
     },
-    637046772: {
-      activityName: "Covil dos Ladrões"
+    1129066976: {
+      name: 'Anoitecer: O Pyramidion'
     },
-    645920838: {
-      activityName: "Câmara do Eco"
+    1159314159: {
+      name: 'Sinal Ruim'
     },
-    653380797: {
-      activityName: "Caminho Invernal"
+    1164772243: {
+      name: 'Missão de Coleta'
     },
-    653380798: {
-      activityName: "O Nexo"
+    1206154103: {
+      name: 'Missão de Assassinato'
     },
-    696672649: {
-      activityName: "undefined"
+    1207505828: {
+      name: 'JORNADA: O Traficante de Armas'
     },
-    702170822: {
-      activityName: "O Precipício da Convocação"
+    1225970098: {
+      name: 'Tripulação Perdida'
     },
-    706472064: {
-      activityName: "Assalto Heróico Semanal"
+    1228327586: {
+      name: 'Antiantiaéreas'
     },
-    706472065: {
-      activityName: "Assalto Heróico Semanal"
+    1243390694: {
+      name: 'Furto'
     },
-    706472066: {
-      activityName: "Assalto Heróico Semanal"
+    1249965655: {
+      name: 'Missão de análise'
     },
-    711826167: {
-      activityName: "Inferno: Enfrentamento"
+    1250426564: {
+      name: 'Missão de Assassinato'
     },
-    719193800: {
-      activityName: "Caminho Invernal"
+    1254990192: {
+      name: 'Nenhuma Distância é Segura'
     },
-    719193803: {
-      activityName: "O Nexo"
+    1265390366: {
+      name: 'Sinal Ruim'
     },
-    746864299: {
-      activityName: "Inferno: Duplas"
+    1289867188: {
+      name: 'Indestrutível'
     },
-    757275024: {
-      activityName: "S.A.B.R.E. Decaído"
+    1290744998: {
+      name: 'A Chácara'
     },
-    764916411: {
-      activityName: "A Cidade Enterrada"
+    1309646866: {
+      name: 'A Chácara'
     },
-    782611196: {
-      activityName: "Inferno: Disputa"
+    1331268141: {
+      name: 'Missão de pesquisa'
     },
-    820688209: {
-      activityName: "Sepiks Aperfeiçoado"
+    1357019430: {
+      name: 'Anoitecer: Acidente da Êxodo'
     },
-    826836846: {
-      activityName: "O Olho Maldito"
+    1375839088: {
+      name: 'Missão de análise'
     },
-    832576952: {
-      activityName: "S.A.B.R.E. Decaído"
+    1412142789: {
+      name: ''
     },
-    833873053: {
-      activityName: "A Mente Imortal"
+    1416597166: {
+      name: 'Oferta e Procura'
     },
-    836641517: {
-      activityName: "Olho de um Senhor do Portal"
+    1428050875: {
+      name: 'Classified'
     },
-    853468393: {
-      activityName: "Cooperativa Ishtar"
+    1451946951: {
+      name: 'Missão de Coleta'
     },
-    853774317: {
-      activityName: "A guerra por vir"
+    1466550401: {
+      name: 'Velocidade Máxima'
     },
-    854130400: {
-      activityName: "Cerco da Mente Bélica"
+    1490848577: {
+      name: 'Enrolado'
     },
-    856898338: {
-      activityName: "Câmara de Cristal"
+    1491022087: {
+      name: 'Cerco à Êxodo'
     },
-    860566204: {
-      activityName: "O Farol"
+    1495993294: {
+      name: 'Lago das Sombras'
     },
-    870614351: {
-      activityName: "Crise da SIVA Heroica"
+    1498466193: {
+      name: 'Missão de Coleta'
     },
-    888190220: {
-      activityName: "Inferno: Briga"
+    1521232506: {
+      name: 'Classified'
     },
-    892266083: {
-      activityName: "Torre"
+    1525633702: {
+      name: 'Missão de Coleta'
     },
-    902875868: {
-      activityName: "A Espira do Jardim"
+    1536764325: {
+      name: 'Missão de pesquisa'
     },
-    906989597: {
-      activityName: "O Precipício da Convocação"
+    1557641249: {
+      name: 'Missão de Coleta'
     },
-    932731386: {
-      activityName: "O depósito de Cayde"
+    1563393783: {
+      name: 'Acidente da Êxodo'
     },
-    940573734: {
-      activityName: "A Escuridão Interior"
+    1568750156: {
+      name: 'A Chácara'
     },
-    944638962: {
-      activityName: "Olho de um Senhor do Portal"
+    1581219251: {
+      name: 'Missão de pesquisa'
     },
-    981644933: {
-      activityName: "União de fogo"
+    1614692057: {
+      name: 'Missão de Coleta'
     },
-    982298740: {
-      activityName: "A Tumba do Mundo"
+    1646219807: {
+      name: 'Furto'
     },
-    984759429: {
-      activityName: "O Golpe à Abominação"
+    1651979106: {
+      name: 'Prometeu pós-moderno'
     },
-    985012235: {
-      activityName: "Um novo covil"
+    1658347443: {
+      name: 'De Volta ao Lar'
     },
-    989535795: {
-      activityName: "Inferno: Controle de Zonas"
+    1685065161: {
+      name: 'Leviatã'
     },
-    994743956: {
-      activityName: "A Mente Imortal"
+    1685237649: {
+      name: 'Missão de Assassinato'
     },
-    994743957: {
-      activityName: "Cerberus Vae III"
+    1699948563: {
+      name: 'Leviatã'
     },
-    994743958: {
-      activityName: "Palácio das Areias"
+    1720510574: {
+      name: 'A Fortaleza'
     },
-    1005705920: {
-      activityName: "O Primeiro Firewall"
+    1756055546: {
+      name: 'Missão de Coleta'
     },
-    1016116686: {
-      activityName: "A Mente Imortal"
+    1773400654: {
+      name: 'Convite do Imperador'
     },
-    1016659723: {
-      activityName: "A Queda do Rei"
+    1778450722: {
+      name: 'Missão de análise'
     },
-    1017714251: {
-      activityName: "Rituais Finais"
+    1786054751: {
+      name: 'Premeditação'
     },
-    1019616175: {
-      activityName: "Inferno: Briga"
+    1790343591: {
+      name: 'Fragmento do Viajante'
     },
-    1023542723: {
-      activityName: "A Mente Imortal"
+    1792985204: {
+      name: 'Anoitecer: Acidente da Êxodo'
     },
-    1030188908: {
-      activityName: "Olho de um Senhor do Portal"
+    1824067376: {
+      name: 'Fúria motorizada'
     },
-    1031478181: {
-      activityName: "Assalto Heróico Semanal"
+    1829866365: {
+      name: 'Lenha na Fogueira'
     },
-    1031478182: {
-      activityName: "Assalto Heróico Semanal"
+    1863334927: {
+      name: 'Anoitecer: Canção de Savathûn'
     },
-    1031478183: {
-      activityName: "Assalto Heróico Semanal"
+    1875726950: {
+      name: 'Leviatã'
     },
-    1044883964: {
-      activityName: "Sepiks Aperfeiçoado"
+    1949546348: {
+      name: 'Missão de Assassinato'
     },
-    1045828271: {
-      activityName: "Enfrentamento"
+    1952521609: {
+      name: 'Fragmento do Viajante'
     },
-    1068261034: {
-      activityName: "Sangue no jardim"
+    1956541147: {
+      name: 'Chamando para Casa'
     },
-    1075348150: {
-      activityName: "Era do Triunfo"
+    1969800443: {
+      name: 'Arecibo'
     },
-    1080191247: {
-      activityName: "Sofrimento Invernal"
+    1971154629: {
+      name: 'Velocidade Máxima'
     },
-    1084620606: {
-      activityName: "A Cela Sem Sol"
+    1975064760: {
+      name: 'Anoitecer: Canção de Savathûn'
     },
-    1087052691: {
-      activityName: "Enfrentamento"
+    1981289329: {
+      name: 'Cerco à Êxodo'
     },
-    1112015031: {
-      activityName: "A Invocação"
+    1984315274: {
+      name: 'Assaltos da Vanguarda'
     },
-    1116149777: {
-      activityName: "Regicídio"
+    1988701745: {
+      name: 'Retribuição'
     },
-    1117274478: {
-      activityName: "A Guerra dos Possuídos"
+    2001433484: {
+      name: 'Missão de Assassinato'
     },
-    1122783186: {
-      activityName: "O Túmulo de Ferro"
+    2025057095: {
+      name: 'Missão de Combate'
     },
-    1126759626: {
-      activityName: "Câmara do Eco"
+    2033669713: {
+      name: 'Javelin-4'
     },
-    1141580112: {
-      activityName: "A Vontade de Crota"
+    2052289205: {
+      name: 'Combustão'
     },
-    1142225067: {
-      activityName: "Assalto do Anoitecer Semanal"
+    2079994698: {
+      name: 'Missão de pesquisa'
     },
-    1169187265: {
-      activityName: "O Nexo"
+    2080275457: {
+      name: 'O Traficante de Armas'
     },
-    1174401783: {
-      activityName: "O caminho do Prime"
+    2113712124: {
+      name: 'Sacrilégio'
     },
-    1194342366: {
-      activityName: "Inferno: Recuperação"
+    2151274060: {
+      name: 'Missão de análise'
     },
-    1200628152: {
-      activityName: "O Precipício da Convocação"
+    2174556965: {
+      name: 'Plano Elaborado'
     },
-    1208087916: {
-      activityName: "Fúria da Máquina"
+    2183066491: {
+      name: 'A Chácara'
     },
-    1208087919: {
-      activityName: "Fúria da Máquina"
+    2184866967: {
+      name: 'Missão de análise'
     },
-    1226857472: {
-      activityName: "O depósito de Cayde"
+    2187073261: {
+      name: 'Missão de análise'
     },
-    1227144460: {
-      activityName: "Refém da Rainha"
+    2231840083: {
+      name: 'Canto da Sereia'
     },
-    1228944057: {
-      activityName: "Palácio das Areias"
+    2236648719: {
+      name: 'Eternidade'
     },
-    1234230734: {
-      activityName: "Patrulhe a Lua"
+    2243336789: {
+      name: 'Missão de Combate'
     },
-    1259153650: {
-      activityName: "O Chamado de uma Estranha"
+    2250935166: {
+      name: 'Imortal'
     },
-    1288347893: {
-      activityName: "Briga: Supremacia"
+    2259811067: {
+      name: 'Fragmento do Viajante'
     },
-    1291023759: {
-      activityName: "Inferno: Disputa"
+    2264636552: {
+      name: 'Meditação: "Combustão"'
     },
-    1293005540: {
-      activityName: "Anoitecer da Vanguarda"
+    2266954523: {
+      name: 'A Chácara'
     },
-    1296112978: {
-      activityName: "As Terras Pestíferas"
+    2287222467: {
+      name: 'Missão de análise'
     },
-    1309514270: {
-      activityName: "Jogada dos Lobos"
+    2288260902: {
+      name: 'Missão de Assassinato'
     },
-    1322792020: {
-      activityName: "Inferno: Fissura"
+    2291549972: {
+      name: 'Fortificação'
     },
-    1328326126: {
-      activityName: "Dominado pela Luz"
+    2297638408: {
+      name: 'Fúria'
     },
-    1329840146: {
-      activityName: "O Olho Maldito"
+    2301390667: {
+      name: 'Missão de pesquisa'
     },
-    1378194100: {
-      activityName: "O Farol"
+    2318812547: {
+      name: 'O Pyramidion'
     },
-    1378430574: {
-      activityName: "Inferno: Eliminação"
+    2336998357: {
+      name: 'Estratégia de Longo Prazo'
     },
-    1379511171: {
-      activityName: "A Espada de Crota"
+    2379494367: {
+      name: 'Missão de análise'
     },
-    1387993552: {
-      activityName: "A ira da máquina"
+    2420240009: {
+      name: 'Missão de Coleta'
     },
-    1390160729: {
-      activityName: "Posto de Vesta"
+    2445164291: {
+      name: 'Missão de Assassinato'
     },
-    1398209073: {
-      activityName: "O Covil dos Demônios"
+    2449714930: {
+      name: 'Leviatã'
     },
-    1398209074: {
-      activityName: "A Vontade de Crota"
+    2464834848: {
+      name: 'Centro da Cidade'
     },
-    1398976305: {
-      activityName: "Assalto Heróico Semanal"
+    2468202005: {
+      name: 'Fragmento do Viajante'
     },
-    1398976306: {
-      activityName: "Assalto Heróico Semanal"
+    2478782573: {
+      name: ''
     },
-    1398976307: {
-      activityName: "Assalto Heróico Semanal"
+    2517540332: {
+      name: 'Nenhuma Distância é Segura'
     },
-    1400727968: {
-      activityName: "Fissura"
+    2519458964: {
+      name: 'Vale Sem Fim'
     },
-    1403880576: {
-      activityName: "A Espira do Jardim"
+    2519564410: {
+      name: 'Missão de Assassinato'
     },
-    1403880578: {
-      activityName: "O Jardim Sombrio"
+    2536491635: {
+      name: 'Missão de pesquisa'
     },
-    1403880579: {
-      activityName: "Uma Maré Ascendente"
+    2558926634: {
+      name: 'Missão de pesquisa'
     },
-    1403880580: {
-      activityName: "Zona de Exclusão"
+    2559514952: {
+      name: 'Utopia'
     },
-    1403880582: {
-      activityName: "A Cidade Enterrada"
+    2561308143: {
+      name: 'Missão de pesquisa'
     },
-    1404620600: {
-      activityName: "Prisão dos Anciões"
+    2573702057: {
+      name: 'Missão de Coleta'
     },
-    1415179315: {
-      activityName: "Eliminação"
+    2574607799: {
+      name: 'Péssimos Vizinhos'
     },
-    1419457477: {
-      activityName: "Um patrulheiro perdido"
+    2575990417: {
+      name: 'Missão de Combate'
     },
-    1427585666: {
-      activityName: "Um retorno heroico"
+    2580713007: {
+      name: 'Missão de pesquisa'
     },
-    1431469570: {
-      activityName: "O Golpe à Abominação"
+    2588220738: {
+      name: 'Missão de pesquisa'
     },
-    1438195119: {
-      activityName: "O Jardim Sombrio"
+    2610112492: {
+      name: 'Missão de análise'
     },
-    1439468985: {
-      activityName: "Sinal emitido"
+    2619236227: {
+      name: 'Missão de análise'
     },
-    1441430564: {
-      activityName: "Rancor de Urrox"
+    2629975203: {
+      name: 'Missão de Combate'
     },
-    1441430567: {
-      activityName: "Rancor de Urrox"
+    2629998776: {
+      name: 'Missão de Coleta'
     },
-    1443271657: {
-      activityName: "Duplas Carmesins"
+    2642769170: {
+      name: 'Seis'
     },
-    1443570903: {
-      activityName: "Bandeira de Ferro – Caos: Enfrentamento"
+    2651851341: {
+      name: 'Missão de análise'
     },
-    1448094960: {
-      activityName: "As Masmorras"
+    2665134323: {
+      name: 'Libertação'
     },
-    1478347980: {
-      activityName: "Campus Martius"
+    2667533713: {
+      name: 'Vostok'
     },
-    1491766060: {
-      activityName: "O Ladrão das Sombras"
+    2684479494: {
+      name: 'Missão de Coleta'
     },
-    1501957761: {
-      activityName: "S.A.B.R.E. Decaído"
+    2693136600: {
+      name: 'Leviatã'
     },
-    1516701147: {
-      activityName: "undefined"
+    2693136601: {
+      name: 'Leviatã'
     },
-    1517679997: {
-      activityName: "Crise da SIVA"
+    2693136602: {
+      name: 'Leviatã'
     },
-    1522220810: {
-      activityName: "Torre"
+    2693136603: {
+      name: 'Leviatã'
     },
-    1522422482: {
-      activityName: "A Vontade de Crota"
+    2693136604: {
+      name: 'Leviatã'
     },
-    1526798932: {
-      activityName: "S.A.B.R.E. Decaído"
+    2693136605: {
+      name: 'Leviatã'
     },
-    1533733535: {
-      activityName: "A Cela Sem Sol"
+    2702476101: {
+      name: 'Torre'
     },
-    1551387515: {
-      activityName: "Prisão dos Anciões"
+    2708828207: {
+      name: 'Utopia'
     },
-    1566333829: {
-      activityName: "Irmãos Escudeiros"
+    2737739053: {
+      name: 'Conversa Profunda'
     },
-    1572749251: {
-      activityName: "Controle de Zonas"
+    2759086913: {
+      name: 'Classified'
     },
-    1584566734: {
-      activityName: "Inferno 6v6"
+    2768347363: {
+      name: 'Missão de Assassinato'
     },
-    1604535501: {
-      activityName: "Corrida de Pardais"
+    2773222353: {
+      name: 'Missão de análise'
     },
-    1609488702: {
-      activityName: "Duplas"
+    2776929937: {
+      name: 'Diagnóstico Diferencial'
     },
-    1614355423: {
-      activityName: "Refém da Rainha"
+    2782300570: {
+      name: 'Missão de Coleta'
     },
-    1618960674: {
-      activityName: "Inferno 3v3"
+    2784803584: {
+      name: 'Missão de Combate'
     },
-    1624947721: {
-      activityName: "Irmãos Escudeiros"
+    2798856614: {
+      name: 'Missão de pesquisa'
     },
-    1628212868: {
-      activityName: "Assalto Heróico Semanal"
+    2846775197: {
+      name: 'Missão de Combate'
     },
-    1628212869: {
-      activityName: "Assalto Heróico Semanal"
+    2908287325: {
+      name: 'Missão de pesquisa'
     },
-    1628212871: {
-      activityName: "Assalto Heróico Semanal"
+    2926767881: {
+      name: 'Retaliação'
     },
-    1636082733: {
-      activityName: "Caminho Invernal"
+    2949941834: {
+      name: 'Visitas inesperadas'
     },
-    1636082734: {
-      activityName: "O Nexo"
+    2969403085: {
+      name: 'Missão de pesquisa'
     },
-    1646288223: {
-      activityName: "Câmara do Eco"
+    3002511278: {
+      name: 'Aliança Sombria'
     },
-    1650930548: {
-      activityName: "Acesso restrito"
+    3026637018: {
+      name: 'Missão de pesquisa'
     },
-    1657401676: {
-      activityName: "Assalto Heróico Semanal"
+    3038694763: {
+      name: 'Missão de Assassinato'
     },
-    1657401677: {
-      activityName: "Assalto Heróico Semanal"
+    3049122128: {
+      name: 'Missão de análise'
     },
-    1657401679: {
-      activityName: "Assalto Heróico Semanal"
+    3050465729: {
+      name: 'Anoitecer: O Pináculo Invertido'
     },
-    1659888245: {
-      activityName: "O Golpe à Abominação"
+    3062197616: {
+      name: 'Competitivo'
     },
-    1665631320: {
-      activityName: "Briga"
+    3105090879: {
+      name: 'Adeus'
     },
-    1669262087: {
-      activityName: "Irmãos Escudeiros"
+    3140524926: {
+      name: 'Indestrutível'
     },
-    1673931290: {
-      activityName: "Desafio dos Anciões"
+    3143798436: {
+      name: 'Zona Morta Europeia'
     },
-    1681545807: {
-      activityName: "A Cela Sem Sol"
+    3147707814: {
+      name: 'Correnteza'
     },
-    1685214122: {
-      activityName: "Caos: Supremacia"
+    3148431353: {
+      name: 'Lenha na Fogueira'
     },
-    1685535967: {
-      activityName: "A Vontade de Crota"
+    3150153711: {
+      name: 'Acaso e Escolhas'
     },
-    1686326716: {
-      activityName: "Um novo covil"
+    3172367001: {
+      name: 'Fragmento do Viajante'
     },
-    1686679946: {
-      activityName: "Enfrentamento"
+    3173130826: {
+      name: 'Missão de Combate'
     },
-    1709749894: {
-      activityName: "Panorama"
+    3208779612: {
+      name: 'Missão de Coleta'
     },
-    1714839224: {
-      activityName: "Ritual do Sacrifício"
+    3211303924: {
+      name: 'Missão de Coleta'
     },
-    1719392441: {
-      activityName: "Encruzilhada"
+    3211568383: {
+      name: 'Canto da Sereia'
     },
-    1723226893: {
-      activityName: "A Mente Bélica"
+    3231065327: {
+      name: 'Missão de análise'
     },
-    1727851403: {
-      activityName: "O código de Prometeu"
+    3243161126: {
+      name: 'Jogo Rápido'
     },
-    1728758154: {
-      activityName: "O Precipício da Convocação"
+    3268684190: {
+      name: 'Missão de Coleta'
     },
-    1733556769: {
-      activityName: "A Queda do Rei"
+    3272002712: {
+      name: 'Esperança'
     },
-    1740074530: {
-      activityName: "Cerberus Vae III"
+    3277510674: {
+      name: 'Imortal'
     },
-    1749151224: {
-      activityName: "Anoitecer da Vanguarda"
+    3283790633: {
+      name: 'Plano Elaborado'
     },
-    1771902734: {
-      activityName: "Inferno: Enfrentamento"
+    3289681664: {
+      name: 'Tripulação Perdida'
     },
-    1772839913: {
-      activityName: "Túneis tenebrosos"
+    3298775062: {
+      name: 'Missão de pesquisa'
     },
-    1783047867: {
-      activityName: "Inferno: Controle"
+    3303685562: {
+      name: 'Missão de Coleta'
     },
-    1783107168: {
-      activityName: "Download concluído"
+    3304835347: {
+      name: 'Chamando para Casa'
     },
-    1783564050: {
-      activityName: "A Casa Governante"
+    3336275007: {
+      name: 'Meditação: "Seis"'
     },
-    1794499705: {
-      activityName: "Ascensão do Ferro: Prelúdio"
+    3337731612: {
+      name: 'Missão de Combate'
     },
-    1815860968: {
-      activityName: "Controle de Zonas"
+    3346345105: {
+      name: 'Tratamento Experimental'
     },
-    1816396489: {
-      activityName: "O Ladrão das Sombras"
+    3359466010: {
+      name: 'Faísca'
     },
-    1836141626: {
-      activityName: "Eliminação"
+    3368226533: {
+      name: 'Anoitecer: O Pináculo Invertido'
     },
-    1836893116: {
-      activityName: "O Fim de Crota"
+    3379039897: {
+      name: 'Missão de Coleta'
     },
-    1836893119: {
-      activityName: "O Fim de Crota"
+    3410530777: {
+      name: 'Ação Calculada'
     },
-    1845751534: {
-      activityName: "Cerberus Vae III"
+    3417504239: {
+      name: 'Correnteza'
     },
-    1846390409: {
-      activityName: "O Nascimento de um Guardião"
+    3446541099: {
+      name: 'Leviatã'
     },
-    1851417512: {
-      activityName: "O Derivante"
+    3479544154: {
+      name: 'Missão de Combate'
     },
-    1856964953: {
-      activityName: "O Nascimento de um Guardião"
+    3481058226: {
+      name: 'Missão de pesquisa'
     },
-    1882836298: {
-      activityName: "A Invocação"
+    3485876484: {
+      name: 'Fúria motorizada'
     },
-    1889399773: {
-      activityName: "Assalto do Anoitecer Semanal"
+    3487576414: {
+      name: 'Missão de pesquisa'
     },
-    1912940269: {
-      activityName: "Restauração"
+    3489692681: {
+      name: 'Missão de pesquisa'
     },
-    1917735347: {
-      activityName: "Caminho Invernal"
+    3500791146: {
+      name: 'Suspense'
     },
-    1918823817: {
-      activityName: "A Mente Imortal"
+    3515770727: {
+      name: 'Missão de análise'
     },
-    1924778540: {
-      activityName: "A Casa Governante"
+    3580793473: {
+      name: 'Meditação: "1UA"'
     },
-    1940432142: {
-      activityName: "Zona de Exclusão"
+    3612741503: {
+      name: 'Missão de pesquisa'
     },
-    1973631991: {
-      activityName: "A Última Matriz"
+    3627094182: {
+      name: 'Missão de Combate'
     },
-    1974138312: {
-      activityName: "Cálice Maculado"
+    3631476566: {
+      name: 'A Chácara'
     },
-    1985034593: {
-      activityName: "Assalto do Anoitecer Semanal"
+    3645117987: {
+      name: 'Péssimos Vizinhos'
     },
-    2008529245: {
-      activityName: "Reis da Ruína"
+    3652531274: {
+      name: 'Fragmento do Viajante'
     },
-    2010056644: {
-      activityName: "Precipício de Haakon"
+    3662124488: {
+      name: 'Missão de pesquisa'
     },
-    2022189692: {
-      activityName: "Cálice Maculado"
+    3664915501: {
+      name: 'Legião Vermelha, Óleo Preto'
     },
-    2037022373: {
-      activityName: "Vertigem"
+    3669054326: {
+      name: 'Missão de Coleta'
     },
-    2045385030: {
-      activityName: "Patrulhe Vênus"
+    3688464794: {
+      name: 'É Importante Manter o Contato'
     },
-    2051444910: {
-      activityName: "A Escuridão Além"
+    3700722865: {
+      name: 'Libertação'
     },
-    2061368111: {
-      activityName: "Caos: Supremacia"
+    3702064261: {
+      name: 'Requisição de dados'
     },
-    2063852581: {
-      activityName: "Caos: Enfrentamento"
+    3738159218: {
+      name: 'Inquebrável'
     },
-    2072729921: {
-      activityName: "Cálice Maculado"
+    3752039537: {
+      name: 'Revertendo a Polaridade'
     },
-    2074618692: {
-      activityName: "O Comedor do Sempre"
+    3780356141: {
+      name: 'Blecaute'
     },
-    2074618695: {
-      activityName: "O Comedor do Sempre"
+    3792746061: {
+      name: 'Missão de Combate'
     },
-    2082069870: {
-      activityName: "A Anomalia"
+    3799743268: {
+      name: 'Classified'
     },
-    2084208305: {
-      activityName: "A Cela Sem Sol"
+    3806583577: {
+      name: 'Missão de Assassinato'
     },
-    2084307227: {
-      activityName: "Patrulha do medo"
+    3834639884: {
+      name: 'Missão de análise'
     },
-    2095588685: {
-      activityName: "A Vontade de Crota"
+    3836086286: {
+      name: 'Visitas inesperadas'
     },
-    2105028197: {
-      activityName: "Câmara do Eco"
+    3839751954: {
+      name: 'Altar da Chama'
     },
-    2129294976: {
-      activityName: "A Escuridão Interior"
+    3872525353: {
+      name: 'Blecaute'
     },
-    2151413729: {
-      activityName: "Torre"
+    3879860661: {
+      name: 'Leviatã'
     },
-    2176272408: {
-      activityName: "O Ladrão das Sombras"
+    3903562779: {
+      name: 'Torre'
     },
-    2178968385: {
-      activityName: "O Olho Maldito"
+    3916343513: {
+      name: 'Leviatã'
     },
-    2184393955: {
-      activityName: "Cerberus Vae III"
+    3920643231: {
+      name: 'Anoitecer: O Traficante de Armas'
     },
-    2186849909: {
-      activityName: "Caminho Invernal"
+    3958400416: {
+      name: 'Missão de pesquisa'
     },
-    2190039885: {
-      activityName: "Cada um por si clássico"
+    3966792859: {
+      name: 'Nesso, Centauro Instável'
     },
-    2197680969: {
-      activityName: "Reis da Ruína"
+    3978357488: {
+      name: 'Missão de Coleta'
     },
-    2198347919: {
-      activityName: "Torre"
+    3982474534: {
+      name: 'Retaliação'
     },
-    2200634811: {
-      activityName: "Cerco da Mente Bélica"
+    4034557395: {
+      name: 'De Volta ao Lar'
     },
-    2201622127: {
-      activityName: "Desafio dos Anciões"
+    4039317196: {
+      name: 'Leviatã'
     },
-    2213151771: {
-      activityName: "Cooperativa Ishtar"
+    4043714237: {
+      name: 'Missão de pesquisa'
     },
-    2217862439: {
-      activityName: "Controle"
+    4047570705: {
+      name: 'Missão de Combate'
     },
-    2221365740: {
-      activityName: "Sepiks Aperfeiçoado"
+    4050886070: {
+      name: 'Missão de pesquisa'
     },
-    2234107290: {
-      activityName: "A Cela Sem Sol"
+    4054968718: {
+      name: 'Anoitecer: O Pináculo Invertido'
     },
-    2243240710: {
-      activityName: "Descida Infinita"
+    4095207117: {
+      name: 'Missão de Coleta'
     },
-    2244550959: {
-      activityName: "Torre"
+    4103844069: {
+      name: 'Missão de Assassinato'
     },
-    2244943676: {
-      activityName: "O nascimento de um Khvostov"
+    4159221189: {
+      name: 'Io'
     },
-    2245079334: {
-      activityName: "Cálice Maculado"
+    4166562681: {
+      name: 'Titã'
     },
-    2263964303: {
-      activityName: "Eliminação"
+    4174103238: {
+      name: 'Missão de Coleta'
     },
-    2268273279: {
-      activityName: "Sepiks Aperfeiçoado"
+    4209774794: {
+      name: 'Missão de Coleta'
     },
-    2270816053: {
-      activityName: "Refém da Rainha"
+    4216926874: {
+      name: 'Missão de Coleta'
     },
-    2270968444: {
-      activityName: "Assalto Heróico Semanal"
+    4231544111: {
+      name: 'Missão de pesquisa'
     },
-    2270968445: {
-      activityName: "Assalto Heróico Semanal"
+    4239233351: {
+      name: 'Meditação: "Faísca"'
     },
-    2270968446: {
-      activityName: "Assalto Heróico Semanal"
+    4254776501: {
+      name: 'Missão de Coleta'
     },
-    2275772174: {
-      activityName: "O Ladrão das Sombras"
+    4283649349: {
+      name: 'Missão de Assassinato'
     },
-    2286628407: {
-      activityName: "Paradoxo"
-    },
-    2303355724: {
-      activityName: "O Covil dos Demônios"
-    },
-    2303355727: {
-      activityName: "A Vontade de Crota"
-    },
-    2316484115: {
-      activityName: "O Farol"
-    },
-    2319702946: {
-      activityName: "Templo de Ferro"
-    },
-    2321224098: {
-      activityName: "O Chamado de uma Estranha"
-    },
-    2324706853: {
-      activityName: "O Fim de Crota"
-    },
-    2326253031: {
-      activityName: "Vingança de Skolas"
-    },
-    2327910410: {
-      activityName: "Câmara da Noite"
-    },
-    2330516073: {
-      activityName: "Torre"
-    },
-    2332037858: {
-      activityName: "Corte da Viúva"
-    },
-    2333767699: {
-      activityName: "Abraço do medo"
-    },
-    2344229082: {
-      activityName: "A Mente Imortal"
-    },
-    2344622554: {
-      activityName: "Câmara do Eco"
-    },
-    2356723745: {
-      activityName: "A guerra por vir"
-    },
-    2364610626: {
-      activityName: "O caminho do Prime"
-    },
-    2369296916: {
-      activityName: "A guerra por vir"
-    },
-    2374186202: {
-      activityName: "Inferno: Controle"
-    },
-    2374784693: {
-      activityName: "Sofrimento Invernal"
-    },
-    2374899718: {
-      activityName: "O Ladrão das Sombras"
-    },
-    2375659247: {
-      activityName: "Desafio dos Anciões"
-    },
-    2380726447: {
-      activityName: "O Encouraçado"
-    },
-    2381859905: {
-      activityName: "O Ladrão das Sombras"
-    },
-    2388860485: {
-      activityName: "Fissura"
-    },
-    2391040454: {
-      activityName: "Sepiks Aperfeiçoado"
-    },
-    2393458461: {
-      activityName: "Pináculo da entropia"
-    },
-    2396741855: {
-      activityName: "Cerberus Vae III"
-    },
-    2398459666: {
-      activityName: "Patrulhe Marte"
-    },
-    2401705359: {
-      activityName: "Guerra dos Possuídos"
-    },
-    2422821510: {
-      activityName: "Reis da Ruína"
-    },
-    2430076725: {
-      activityName: "Observatório Cego"
-    },
-    2437373043: {
-      activityName: "A Mente Imortal"
-    },
-    2445476122: {
-      activityName: "6v6 clássico"
-    },
-    2446491566: {
-      activityName: "As Terras Pestíferas"
-    },
-    2449230902: {
-      activityName: "O Encouraçado"
-    },
-    2450352219: {
-      activityName: "A Cela Sem Sol"
-    },
-    2473173917: {
-      activityName: "A Presa Silenciosa"
-    },
-    2474598319: {
-      activityName: "Patrulhe Vênus"
-    },
-    2486047606: {
-      activityName: "O Jardim Sombrio"
-    },
-    2488292787: {
-      activityName: "3v3 Autônomo"
-    },
-    2500396686: {
-      activityName: "Templo de Ferro"
-    },
-    2503808507: {
-      activityName: "Rituais Finais"
-    },
-    2507231345: {
-      activityName: "Fronteira"
-    },
-    2507671226: {
-      activityName: "Sinal emitido"
-    },
-    2522686639: {
-      activityName: "6v6 Autônomo"
-    },
-    2532582309: {
-      activityName: "S.A.B.R.E. Decaído"
-    },
-    2546962221: {
-      activityName: "A Cela Sem Sol"
-    },
-    2553967924: {
-      activityName: "As muralhas ruem"
-    },
-    2577060487: {
-      activityName: "Paradoxo"
-    },
-    2582525652: {
-      activityName: "Santuário de Oryx"
-    },
-    2586575560: {
-      activityName: "Caos: Briga"
-    },
-    2591739000: {
-      activityName: "Os Despertos"
-    },
-    2604992012: {
-      activityName: "Dominado pela Luz"
-    },
-    2605106985: {
-      activityName: "Uma Maré Ascendente"
-    },
-    2616429373: {
-      activityName: "Abraço do medo"
-    },
-    2624694148: {
-      activityName: "Conventículo Maculado"
-    },
-    2624916786: {
-      activityName: "Cerberus Vae III"
-    },
-    2626477216: {
-      activityName: "Sinal emitido"
-    },
-    2632260907: {
-      activityName: "Câmara do Eco"
-    },
-    2638978649: {
-      activityName: ""
-    },
-    2641355370: {
-      activityName: "A Espira do Jardim"
-    },
-    2643956095: {
-      activityName: "3v3 Autônomo"
-    },
-    2658160549: {
-      activityName: "Conventículo Maculado"
-    },
-    2659248068: {
-      activityName: "Câmara de Cristal"
-    },
-    2659248069: {
-      activityName: "Câmara de Cristal"
-    },
-    2659248071: {
-      activityName: "Câmara de Cristal"
-    },
-    2662709104: {
-      activityName: "Engarrafe o arco"
-    },
-    2664207554: {
-      activityName: "O Olho Maldito"
-    },
-    2666433880: {
-      activityName: "O Nexo"
-    },
-    2669189613: {
-      activityName: "Palácio das Areias"
-    },
-    2678657479: {
-      activityName: "O Golpe à Abominação"
-    },
-    2680821721: {
-      activityName: "O Caldeirão"
-    },
-    2693077237: {
-      activityName: "Anoitecer da Vanguarda"
-    },
-    2695324124: {
-      activityName: "Cálice Maculado"
-    },
-    2697160954: {
-      activityName: "Era do Triunfo"
-    },
-    2697969178: {
-      activityName: "Assalto do Anoitecer Semanal"
-    },
-    2701768038: {
-      activityName: "Punho de Crota"
-    },
-    2704098598: {
-      activityName: "O Covil dos Demônios"
-    },
-    2708547287: {
-      activityName: "Uma marcha de fogo"
-    },
-    2717791362: {
-      activityName: "A Vontade de Crota"
-    },
-    2719526771: {
-      activityName: "Palácio das Areias"
-    },
-    2726977290: {
-      activityName: "A Última Matriz"
-    },
-    2737751857: {
-      activityName: "Beleza na entrega"
-    },
-    2739987894: {
-      activityName: "Um símbolo de honra"
-    },
-    2743106708: {
-      activityName: "Palácio das Areias"
-    },
-    2747031950: {
-      activityName: "3v3 Clássico"
-    },
-    2764426556: {
-      activityName: "Paradoxo"
-    },
-    2764561765: {
-      activityName: "Dominado pela Luz"
-    },
-    2775184694: {
-      activityName: "O Precipício da Convocação"
-    },
-    2776273577: {
-      activityName: "Cerberus Vae III"
-    },
-    2790114296: {
-      activityName: "A Casa Governante"
-    },
-    2795444912: {
-      activityName: "Disputa"
-    },
-    2799122060: {
-      activityName: "O Nexo"
-    },
-    2819394450: {
-      activityName: "Clássicos da Vanguarda"
-    },
-    2828456290: {
-      activityName: "Areias Reluzentes"
-    },
-    2839046506: {
-      activityName: "undefined"
-    },
-    2840876929: {
-      activityName: "Irmãos Escudeiros"
-    },
-    2846350970: {
-      activityName: "A Cela Sem Sol"
-    },
-    2853745856: {
-      activityName: "O Jardim Sombrio"
-    },
-    2861777810: {
-      activityName: "Caminho Invernal"
-    },
-    2873833515: {
-      activityName: "A Cela Sem Sol"
-    },
-    2873913519: {
-      activityName: "A Mente Bélica"
-    },
-    2877811433: {
-      activityName: "Caos: Briga"
-    },
-    2895301046: {
-      activityName: "Zona de Exclusão"
-    },
-    2896357417: {
-      activityName: "Caminho Invernal"
-    },
-    2896357418: {
-      activityName: "O Nexo"
-    },
-    2897641944: {
-      activityName: "Cálice Maculado"
-    },
-    2910883293: {
-      activityName: "Rituais Finais"
-    },
-    2918909691: {
-      activityName: "Círculo do Invocador"
-    },
-    2926133958: {
-      activityName: "Arsenal"
-    },
-    2931947534: {
-      activityName: "Um Kell em ascensão"
-    },
-    2938090611: {
-      activityName: "A guerra por vir"
-    },
-    2938118424: {
-      activityName: "A Mente Imortal"
-    },
-    2938118425: {
-      activityName: "Cerberus Vae III"
-    },
-    2938118426: {
-      activityName: "Palácio das Areias"
-    },
-    2945511915: {
-      activityName: "6v6 Autônomo"
-    },
-    2947742498: {
-      activityName: "Inferno: Duplas"
-    },
-    2981424914: {
-      activityName: "O código de Prometeu"
-    },
-    2989915775: {
-      activityName: "A Mente Imortal"
-    },
-    3005484445: {
-      activityName: "O código de Prometeu"
-    },
-    3010573436: {
-      activityName: "O Ladrão das Sombras"
-    },
-    3011954788: {
-      activityName: "Download concluído"
-    },
-    3025411906: {
-      activityName: "O Caçador de Arcontes"
-    },
-    3027976182: {
-      activityName: "Irmãos Escudeiros"
-    },
-    3030879879: {
-      activityName: "O Olho Maldito"
-    },
-    3041179010: {
-      activityName: "Cerberus Vae III"
-    },
-    3044479892: {
-      activityName: "O Ladrão das Sombras"
-    },
-    3047788493: {
-      activityName: "Palácio das Areias"
-    },
-    3047788494: {
-      activityName: "Cerberus Vae III"
-    },
-    3047788495: {
-      activityName: "A Mente Imortal"
-    },
-    3051527960: {
-      activityName: "A Cela Sem Sol"
-    },
-    3053288711: {
-      activityName: "Jardins Suspensos"
-    },
-    3056582947: {
-      activityName: "Uma Maré Ascendente"
-    },
-    3070937708: {
-      activityName: "S.A.B.R.E. Decaído"
-    },
-    3077860924: {
-      activityName: "O Covil dos Demônios"
-    },
-    3077860927: {
-      activityName: "A Vontade de Crota"
-    },
-    3097191720: {
-      activityName: "O Ladrão das Sombras"
-    },
-    3098008841: {
-      activityName: "A Vontade de Crota"
-    },
-    3101475152: {
-      activityName: "Acampamento Delphi"
-    },
-    3101766066: {
-      activityName: "O Olho Maldito"
-    },
-    3102291176: {
-      activityName: "O caminho do Prime"
-    },
-    3102295231: {
-      activityName: "Recuperação"
-    },
-    3120201278: {
-      activityName: "Caminho Invernal"
-    },
-    3120351937: {
-      activityName: "A Mente Bélica"
-    },
-    3120351938: {
-      activityName: "A Escuridão Interior"
-    },
-    3120351939: {
-      activityName: "Restauração"
-    },
-    3120351941: {
-      activityName: "Cerco da Mente Bélica"
-    },
-    3120351943: {
-      activityName: "A Última Matriz"
-    },
-    3125074504: {
-      activityName: "Assalto Heróico Semanal"
-    },
-    3125074505: {
-      activityName: "Assalto Heróico Semanal"
-    },
-    3125074507: {
-      activityName: "Assalto Heróico Semanal"
-    },
-    3132533708: {
-      activityName: "Cálice Maculado"
-    },
-    3135856650: {
-      activityName: "Sofrimento Invernal"
-    },
-    3156370656: {
-      activityName: "Setor 618"
-    },
-    3162176634: {
-      activityName: "Câmara do Eco"
-    },
-    3183184449: {
-      activityName: "Irmãos Escudeiros"
-    },
-    3187607216: {
-      activityName: "A Mente Imortal"
-    },
-    3190434637: {
-      activityName: "O Encouraçado"
-    },
-    3192378548: {
-      activityName: "A Escuridão Além"
-    },
-    3196929644: {
-      activityName: "O Golpe à Abominação"
-    },
-    3200293401: {
-      activityName: "Inimigo do meu inimigo"
-    },
-    3207122440: {
-      activityName: "O Arquivo"
-    },
-    3209623958: {
-      activityName: "Assalto do Anoitecer Semanal"
-    },
-    3210106079: {
-      activityName: "Patrulhe o Encouraçado"
-    },
-    3220294246: {
-      activityName: "As muralhas ruem"
-    },
-    3234259779: {
-      activityName: "Desafios de Osíris"
-    },
-    3242509473: {
-      activityName: "A Vontade de Crota"
-    },
-    3252534714: {
-      activityName: "Duplas"
-    },
-    3263216023: {
-      activityName: "Regicídio"
-    },
-    3277621970: {
-      activityName: "Chronos"
-    },
-    3277929848: {
-      activityName: "Irmãos Escudeiros"
-    },
-    3292305209: {
-      activityName: "Caminho Invernal"
-    },
-    3292305210: {
-      activityName: "O Nexo"
-    },
-    3292667877: {
-      activityName: "Sanatório"
-    },
-    3315158082: {
-      activityName: "Um brilho nas sombras"
-    },
-    3322717977: {
-      activityName: "Bandeira de Ferro: Controle"
-    },
-    3335571405: {
-      activityName: "Supremacia"
-    },
-    3343284688: {
-      activityName: "Sinal emitido"
-    },
-    3343503784: {
-      activityName: "Cálice Maculado"
-    },
-    3345352981: {
-      activityName: "Ritual do Sacrifício"
-    },
-    3346215145: {
-      activityName: "O Farol"
-    },
-    3349918649: {
-      activityName: "O Encouraçado"
-    },
-    3356249023: {
-      activityName: "A ira da máquina"
-    },
-    3373044013: {
-      activityName: "Cálice Maculado"
-    },
-    3384143875: {
-      activityName: "Cálice Maculado"
-    },
-    3392709953: {
-      activityName: "O Golpe à Abominação"
-    },
-    3393673804: {
-      activityName: "Prisão dos Anciões"
-    },
-    3394418729: {
-      activityName: "Palácio das Areias"
-    },
-    3398049753: {
-      activityName: "A Espira do Jardim"
-    },
-    3398752148: {
-      activityName: "Caminho Invernal"
-    },
-    3399843400: {
-      activityName: "O Chamado de uma Estranha"
-    },
-    3399843403: {
-      activityName: "Cooperativa Ishtar"
-    },
-    3399843404: {
-      activityName: "O Arquivo"
-    },
-    3399843406: {
-      activityName: "Olho de um Senhor do Portal"
-    },
-    3399843407: {
-      activityName: "Sofrimento Invernal"
-    },
-    3403438134: {
-      activityName: "Câmara do Eco"
-    },
-    3406669964: {
-      activityName: "Sepiks Aperfeiçoado"
-    },
-    3412406993: {
-      activityName: "Catedral da Penumbra"
-    },
-    3415949693: {
-      activityName: "O Nexo"
-    },
-    3422670336: {
-      activityName: "O Covil dos Demônios"
-    },
-    3422670339: {
-      activityName: "A Vontade de Crota"
-    },
-    3422924470: {
-      activityName: "Conventículo Maculado"
-    },
-    3427115544: {
-      activityName: "S.A.B.R.E. Decaído"
-    },
-    3428378490: {
-      activityName: "Caos: Enfrentamento"
-    },
-    3434275681: {
-      activityName: "Câmara da Noite"
-    },
-    3464398659: {
-      activityName: "Santuário de Oryx"
-    },
-    3473815980: {
-      activityName: "Punho de Crota"
-    },
-    3476387771: {
-      activityName: "Guerra dos Possuídos Heroica"
-    },
-    3492173922: {
-      activityName: "Posto de Vesta"
-    },
-    3493774909: {
-      activityName: "O Rei dos Possuídos: Prelúdio"
-    },
-    3508129769: {
-      activityName: "Culto Vermicular"
-    },
-    3508129770: {
-      activityName: "Culto Vermicular"
-    },
-    3509128672: {
-      activityName: "Templo de Ferro"
-    },
-    3527709396: {
-      activityName: "Disputa"
-    },
-    3534581229: {
-      activityName: "A Queda do Rei"
-    },
-    3543525727: {
-      activityName: "Refém da Rainha"
-    },
-    3549856929: {
-      activityName: "Cerco da Mente Bélica"
-    },
-    3555113730: {
-      activityName: "O Olho Maldito"
-    },
-    3565777280: {
-      activityName: "Toc toc"
-    },
-    3568014988: {
-      activityName: "Regicídio"
-    },
-    3573972337: {
-      activityName: "O Nexo"
-    },
-    3575520714: {
-      activityName: "Irmãos Escudeiros"
-    },
-    3575840788: {
-      activityName: "Jogada dos Lobos"
-    },
-    3582451805: {
-      activityName: "O Ladrão das Sombras"
-    },
-    3582577776: {
-      activityName: "A Presa Silenciosa"
-    },
-    3593950004: {
-      activityName: "Créditos de Destiny"
-    },
-    3602734434: {
-      activityName: "Queda da Bandeira"
-    },
-    3609927430: {
-      activityName: "Inferno: Supremacia"
-    },
-    3612436612: {
-      activityName: "A guerra por vir"
-    },
-    3619606113: {
-      activityName: "Caos: Enfrentamento"
-    },
-    3621292155: {
-      activityName: "Recuperação"
-    },
-    3635588435: {
-      activityName: "O Porta-Voz"
-    },
-    3645675142: {
-      activityName: "Controle"
-    },
-    3645919501: {
-      activityName: "Patrulhe o Cosmódromo"
-    },
-    3650545911: {
-      activityName: "Jogada dos Lobos"
-    },
-    3670262295: {
-      activityName: "Desafios de Osíris"
-    },
-    3670861271: {
-      activityName: "Inimigo do meu inimigo"
-    },
-    3670968271: {
-      activityName: "A Vontade de Crota"
-    },
-    3671763238: {
-      activityName: "Cerberus Vae III"
-    },
-    3674885127: {
-      activityName: "Regicídio"
-    },
-    3676594097: {
-      activityName: "Caminho Invernal"
-    },
-    3691405620: {
-      activityName: "Anoitecer da Vanguarda"
-    },
-    3700036317: {
-      activityName: "Oryx triunfante"
-    },
-    3705341715: {
-      activityName: "Um patrulheiro encontrado"
-    },
-    3708806801: {
-      activityName: "Pináculo da entropia"
-    },
-    3711414560: {
-      activityName: "Câmara da Noite"
-    },
-    3711414561: {
-      activityName: "A Espada de Crota"
-    },
-    3711414562: {
-      activityName: "A Invocação"
-    },
-    3711414563: {
-      activityName: "Santuário de Oryx"
-    },
-    3711414564: {
-      activityName: "A Escuridão Além"
-    },
-    3711414566: {
-      activityName: "A Tumba do Mundo"
-    },
-    3715085142: {
-      activityName: "O chamado das sombras"
-    },
-    3731091063: {
-      activityName: "Assalto do Anoitecer Semanal"
-    },
-    3741914742: {
-      activityName: "Caminho Invernal"
-    },
-    3743955707: {
-      activityName: "Torre"
-    },
-    3750289192: {
-      activityName: "Punho de Crota"
-    },
-    3778091466: {
-      activityName: "Download concluído"
-    },
-    3784570118: {
-      activityName: "O Arquivo"
-    },
-    3799336128: {
-      activityName: "A Vontade de Crota"
-    },
-    3817155567: {
-      activityName: "Fenda do Crepúsculo"
-    },
-    3837170670: {
-      activityName: "A Tumba do Mundo"
-    },
-    3842976518: {
-      activityName: "A Cela Sem Sol"
-    },
-    3848655103: {
-      activityName: "Escudo Negro"
-    },
-    3856562046: {
-      activityName: "Dominado pela Luz"
-    },
-    3856604751: {
-      activityName: "Primeira Luz"
-    },
-    3860793576: {
-      activityName: "Sepiks Aperfeiçoado"
-    },
-    3878867172: {
-      activityName: "Controle de Zonas"
-    },
-    3896699662: {
-      activityName: "Caminho Invernal"
-    },
-    3910288239: {
-      activityName: "Bandeira de Ferro: Fissura"
-    },
-    3918359338: {
-      activityName: "Ícaro"
-    },
-    3920061741: {
-      activityName: "Santuário de Oryx"
-    },
-    3921931055: {
-      activityName: "A Vontade de Crota"
-    },
-    3936153046: {
-      activityName: "Inferno 3v3"
-    },
-    3941998864: {
-      activityName: "Cerberus Vae III"
-    },
-    3945328236: {
-      activityName: "Templo de Ferro"
-    },
-    3948474766: {
-      activityName: "A Espada de Crota"
-    },
-    3974631085: {
-      activityName: "Inimigo do meu inimigo"
-    },
-    3978884648: {
-      activityName: "A Queda do Rei"
-    },
-    4000873610: {
-      activityName: "O Fim de Crota"
-    },
-    4027720491: {
-      activityName: "Irmãos Escudeiros"
-    },
-    4038697181: {
-      activityName: "Câmara de Cristal"
-    },
-    4046346128: {
-      activityName: "Abraço do medo"
-    },
-    4055903037: {
-      activityName: "Fissura"
-    },
-    4060895971: {
-      activityName: "Torre"
-    },
-    4079642013: {
-      activityName: "Legião Quebrada"
-    },
-    4079642014: {
-      activityName: "Legião Quebrada"
-    },
-    4087776066: {
-      activityName: "O depósito de Cayde"
-    },
-    4099604100: {
-      activityName: "A Vontade de Crota"
-    },
-    4101329072: {
-      activityName: "O Olho Maldito"
-    },
-    4105918304: {
-      activityName: "Última Saída"
-    },
-    4107311671: {
-      activityName: "Terras Ferrugíneas"
-    },
-    4129878327: {
-      activityName: "Inferno: Recuperação"
-    },
-    4131978369: {
-      activityName: "O Golpe à Abominação"
-    },
-    4141063459: {
-      activityName: "O Ladrão das Sombras"
-    },
-    4153423016: {
-      activityName: "Desafio dos Anciões"
-    },
-    4163254808: {
-      activityName: "Margens do Tempo"
-    },
-    4168247421: {
-      activityName: "Bandeira de Ferro: Enfrentamento"
-    },
-    4171584130: {
-      activityName: "Inferno 6v6"
-    },
-    4175179544: {
-      activityName: "Assalto Heróico Semanal"
-    },
-    4175179545: {
-      activityName: "Assalto Heróico Semanal"
-    },
-    4175179546: {
-      activityName: "Assalto Heróico Semanal"
-    },
-    4178645458: {
-      activityName: "A Cidade Enterrada"
-    },
-    4181273223: {
-      activityName: "S.A.B.R.E. Decaído"
-    },
-    4183157062: {
-      activityName: "Rituais Finais"
-    },
-    4187524452: {
-      activityName: "A Mente Imortal"
-    },
-    4196724507: {
-      activityName: "Inferno: Briga"
-    },
-    4200263342: {
-      activityName: "Bastião"
-    },
-    4203094490: {
-      activityName: "Templo de Ferro"
-    },
-    4215168114: {
-      activityName: "A Vontade de Crota"
-    },
-    4217181091: {
-      activityName: "Disputa"
-    },
-    4222208550: {
-      activityName: "Corrida de Pardais"
-    },
-    4227723344: {
-      activityName: "O Covil dos Demônios"
-    },
-    4227723347: {
-      activityName: "A Vontade de Crota"
-    },
-    4239017990: {
-      activityName: "Uma Chave Espera"
-    },
-    4240750267: {
-      activityName: "O código de Prometeu"
-    },
-    4242282035: {
-      activityName: "Controle"
-    },
-    4252752792: {
-      activityName: "Palácio das Areias"
-    },
-    4253541885: {
-      activityName: "Caminho Invernal"
-    },
-    4254149014: {
-      activityName: "O Ladrão das Sombras"
-    },
-    4260139097: {
-      activityName: "Panteão"
-    },
-    4272344899: {
-      activityName: "O Arquivo"
-    },
-    4277539497: {
-      activityName: "Bandeira de Ferro: Enfrentamento"
-    },
-    4287936726: {
-      activityName: "Êxodo Azul"
+    4291922223: {
+      name: 'Esperança'
     },
   },
-  images: {
-    8055542: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+  ru: {
+    19982784: {
+      name: 'Боевая миссия'
     },
-    9885984: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_4.jpg"
+    30240416: {
+      name: 'Миссия по ликвидации'
     },
-    10551956: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    37050217: {
+      name: 'Разведывательная миссия'
     },
-    18715720: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/king_of_the_mountain.jpg"
+    51408141: {
+      name: 'Миссия по спасению'
     },
-    24471896: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/playlist_a_strangers_call.jpg"
+    53954174: {
+      name: 'Противо-ПВО'
     },
-    24471899: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/playlist_guardian_rises.jpg"
+    57103244: {
+      name: 'Разведывательная миссия'
     },
-    28695277: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_3.jpg"
+    60002467: {
+      name: 'Святотатство'
     },
-    34205302: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_the_nexus.jpg"
+    78673128: {
+      name: 'Вор из воров'
     },
-    34327100: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/fallen_saber.jpg"
+    80726883: {
+      name: 'О капитан'
     },
-    51311972: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
+    82913930: {
     },
-    51311973: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_cerberus_vae_III.jpg"
+    89727599: {
+      name: 'Левиафан'
     },
-    51311974: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_dust_palace.jpg"
+    104342360: {
+      name: 'Боевая миссия'
     },
-    64371922: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    116352029: {
+      name: 'Боевая миссия'
     },
-    86749741: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    122988657: {
+      name: 'Красный Легион, черное масло'
     },
-    91984044: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/wolves_of_winter.jpg"
+    143647473: {
+      name: 'Миссия по спасению'
     },
-    95021281: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/lost_to_light.jpg"
+    145302664: {
+      name: 'Сумрачный налет: "Торговец оружием"'
     },
-    96237246: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    153537894: {
+      name: 'Новый рубеж'
     },
-    98710471: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    160721490: {
+      name: 'Classified'
     },
-    103493304: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/king_of_the_mountain.jpg"
+    175598161: {
+      name: 'Миссия по спасению'
     },
-    116560380: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    189324537: {
+      name: 'Миссия по спасению'
     },
-    116811400: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    197670945: {
+      name: 'Миссия по ликвидации'
     },
-    123652644: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/echo_chamber.jpg"
+    204298081: {
+      name: 'Аналитическая миссия'
     },
-    123999179: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/shadows_at_twilight.jpg"
+    248066530: {
+      name: 'Миссия по спасению'
     },
-    130631058: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    255819671: {
+      name: 'Гнев'
     },
-    134979141: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_cosmo_4.jpg"
+    261349035: {
+      name: 'Миссия по спасению'
     },
-    149381097: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
+    286324446: {
+      name: 'Миссия по спасению'
     },
-    151357230: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    287649202: {
+      name: 'Левиафан'
     },
-    154683944: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/entropys_pinnacle.jpg"
+    293858112: {
+      name: 'Боевая миссия'
     },
-    157336261: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    298747401: {
+      name: 'Разведывательная миссия'
     },
-    157390236: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_dust_palace.jpg"
+    298793060: {
+      name: 'Миссия по спасению'
     },
-    157980450: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_iron_tomb.jpg"
+    313572698: {
+      name: 'Осколок Странника'
     },
-    165850035: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
+    320680002: {
+      name: 'Спрос и предложение'
     },
-    167419252: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_cosmo.jpg"
+    330545737: {
+      name: 'Ферма'
     },
-    184503944: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
+    338662534: {
+      name: 'Вывернутый шпиль'
     },
-    184503945: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_cerberus_vae_III.jpg"
+    355984230: {
+      name: 'Миссия по ликвидации'
     },
-    184503946: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_dust_palace.jpg"
+    359488722: {
+      name: 'Взломать планету'
     },
-    194283519: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_dust_palace.jpg"
+    374818561: {
+      name: 'Отсрочка Императора'
     },
-    202167389: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_dust_palace.jpg"
+    379330092: {
+      name: 'Осколок Странника'
     },
-    209343718: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_winters_run.jpg"
+    387171436: {
+      name: 'Миссия по спасению'
     },
-    211678003: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    388289443: {
+      name: 'Разведывательная миссия'
     },
-    212088538: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_summoning_pits.jpg"
+    415388387: {
+      name: 'Разведывательная миссия'
     },
-    218006092: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_plaguelands.jpg"
+    417231112: {
+      name: 'Левиафан'
     },
-    242777083: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_the_nexus.jpg"
+    429361491: {
+      name: 'Миссия по спасению'
     },
-    252347595: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    435989417: {
+      name: 'Аналитическая миссия'
     },
-    259879232: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/fallen_saber.jpg"
+    444087412: {
+      name: 'Боевая миссия'
     },
-    260615043: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    445417088: {
     },
-    260765522: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/wrath_of_the_machine.jpg"
+    459955094: {
+      name: 'Аналитическая миссия'
     },
-    269981320: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_promethean_code.jpg"
+    461203479: {
+      name: 'Разведывательная миссия'
     },
-    278763462: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_dust_palace.jpg"
+    464789944: {
+      name: 'Избранный'
     },
-    279121234: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/king_of_the_mountain.jpg"
+    474380713: {
+      name: 'Миссия по спасению'
     },
-    284635225: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/crucible_the_burning_shrine.jpg"
+    539897061: {
+      name: 'Смена полярности'
     },
-    287505866: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/fallen_saber.jpg"
+    545240418: {
+      name: 'Разведывательная миссия'
     },
-    291350530: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_cosmo.jpg"
+    549123191: {
+      name: 'Разведывательная миссия'
     },
-    300506688: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
+    553537971: {
+      name: 'Избранный'
     },
-    308091852: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
+    564863404: {
     },
-    308091854: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
+    581323290: {
+      name: 'Разведывательная миссия'
     },
-    308091855: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
+    585071442: {
+      name: 'Сумрачный налет: Песнь Саватуна'
     },
-    324283916: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_4.jpg"
+    601540706: {
+      name: 'Сумрачный налет: "Торговец оружием"'
     },
-    331520418: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
+    622895925: {
+      name: 'Аресибо'
     },
-    342909762: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/shield_brothers.jpg"
+    632790902: {
+      name: 'Скалолаз'
     },
-    351460287: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_sunless_cell.jpg"
+    642256373: {
+      name: 'Сумрачный налет: Место крушения "Исхода"'
     },
-    351673577: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/crucible_twilight_gap_2.jpg"
+    642277473: {
+      name: 'Сумрачный налет: Пирамидион'
     },
-    355200465: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/shield_brothers.jpg"
+    652598202: {
+      name: 'Ущелье Легиона'
     },
-    355605844: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    667604912: {
+      name: 'Медитация: "В петле"'
     },
-    360962374: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    671904429: {
+      name: 'Миссия по спасению'
     },
-    386157877: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/shield_brothers.jpg"
+    703311712: {
+      name: 'Осколок Странника'
     },
-    389785553: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/playlist_dark_below_house_of_wolves.jpg"
+    715306877: {
+      name: 'Боевая миссия'
     },
-    403726672: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_cosmo.jpg"
+    719906507: {
+      name: 'Classified'
     },
-    403726674: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_cosmo.jpg"
+    743100125: {
+      name: 'Миссия по спасению'
     },
-    403726675: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_cosmo.jpg"
+    750649238: {
+      name: 'Миссия по спасению'
     },
-    406972773: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/abomination_heist.jpg"
+    757116822: {
+      name: 'Левиафан'
     },
-    410347507: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    760130722: {
+      name: 'Мертвые скалы'
     },
-    425614025: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/playlist_the_iron_lords.jpg"
+    782175145: {
+      name: 'Миссия по ликвидации'
     },
-    428290721: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_mars.jpg"
+    782290869: {
+      name: 'Разведывательная миссия'
     },
-    430160982: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/wrath_of_the_machine.jpg"
+    789332628: {
+      name: 'Вор из воров'
     },
-    430914016: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_iron_tomb.jpg"
+    798143184: {
+      name: 'Боевая миссия'
     },
-    431759746: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    808931822: {
+      name: 'Прометей эпохи постмодерна'
     },
-    443057682: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/crucible_skyshock.jpg"
+    837763871: {
+      name: 'Миссия по спасению'
     },
-    443707023: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/a_joining_of_houses.jpg"
+    849242583: {
+      name: 'Аналитическая миссия'
     },
-    455063520: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_the_wakening.jpg"
+    880665770: {
+      name: 'Разведывательная миссия'
     },
-    468325937: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    919252154: {
+      name: 'Темный союз'
     },
-    469270447: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/memento.jpg"
+    926012363: {
+      name: 'Миссия по ликвидации'
     },
-    474428712: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/enemy_of_my_enemy.jpg"
+    926940962: {
+      name: 'Сумрачный налет: Пирамидион'
     },
-    482017096: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/sepiks_perfected.jpg"
+    938512773: {
+      name: 'Несломленный'
     },
-    492319725: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    940394831: {
+      name: 'ПОРУЧЕНИЕ: Место крушения "Исхода"'
     },
-    493857039: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
+    955852466: {
+      name: '1 а.е.д.'
     },
-    496237130: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    963938931: {
+      name: 'Серьезный разговор'
     },
-    504512661: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/vestian_outpost.jpg"
+    964196803: {
+      name: 'Миссия по спасению'
     },
-    509411569: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    969385987: {
+      name: 'Свет во тьме'
     },
-    547981568: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    993152361: {
+      name: 'Миссия по спасению'
     },
-    550186563: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1019362992: {
+      name: 'Медитация: "Возвращение домой"'
     },
-    572368820: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
+    1035135049: {
+      name: 'Пирамидион'
     },
-    573077648: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/fallen_saber.jpg"
+    1038710420: {
+      name: 'Миссия по ликвидации'
     },
-    574483028: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_2.jpg"
+    1053141615: {
+      name: 'Миссия по ликвидации'
     },
-    575304694: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/a_new_den.jpg"
+    1063969232: {
+      name: 'Приглашение от императора'
     },
-    575376446: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/echo_chamber.jpg"
+    1075152813: {
+      name: 'Европейская Мертвая зона'
     },
-    579700969: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/caydes_stash.jpg"
+    1076851943: {
+      name: 'Миссия по ликвидации'
     },
-    579949585: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1085523978: {
+      name: 'Разведывательная миссия'
     },
-    581858107: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1090267699: {
+      name: 'Миссия по ликвидации'
     },
-    603968817: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_cerberus_vae_III.jpg"
+    1101792305: {
+      name: 'Песнь Саватуна'
     },
-    604017503: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/TakenPoE.jpg"
+    1102824603: {
+      name: 'Миссия по ликвидации'
     },
-    614791010: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1105211124: {
+      name: 'Аналитическая миссия'
     },
-    632771975: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1107208644: {
+      name: 'Взломать планету'
     },
-    637046772: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/thieves_den.jpg"
+    1129066976: {
+      name: 'Сумрачный налет: Пирамидион'
     },
-    645920838: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/echo_chamber.jpg"
+    1159314159: {
+      name: 'Плохой прием'
     },
-    653380797: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_winters_run.jpg"
+    1164772243: {
+      name: 'Миссия по спасению'
     },
-    653380798: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_the_nexus.jpg"
+    1206154103: {
+      name: 'Миссия по ликвидации'
     },
-    696672649: {
-      pgcrImage: "undefined"
+    1207505828: {
+      name: 'ПОРУЧЕНИЕ: "Торговец оружием"'
     },
-    702170822: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_1.jpg"
+    1225970098: {
+      name: 'Пропавший экипаж'
     },
-    706472064: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_venus.jpg"
+    1228327586: {
+      name: 'Противо-ПВО'
     },
-    706472065: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_venus.jpg"
+    1243390694: {
+      name: 'Кража'
     },
-    706472066: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_venus.jpg"
+    1249965655: {
+      name: 'Аналитическая миссия'
     },
-    711826167: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1250426564: {
+      name: 'Миссия по ликвидации'
     },
-    719193800: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_winters_run.jpg"
+    1254990192: {
+      name: 'Безопасной дистанции нет'
     },
-    719193803: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_the_nexus.jpg"
+    1265390366: {
+      name: 'Плохой прием'
     },
-    746864299: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1289867188: {
+      name: 'Неразрушимость'
     },
-    757275024: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/fallen_saber.jpg"
+    1290744998: {
+      name: 'Ферма'
     },
-    764916411: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_2.jpg"
+    1309646866: {
+      name: 'Ферма'
     },
-    782611196: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1331268141: {
+      name: 'Разведывательная миссия'
     },
-    820688209: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/sepiks_perfected.jpg"
+    1357019430: {
+      name: 'Сумрачный налет: Место крушения "Исхода"'
     },
-    826836846: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/wretched_eye.jpg"
+    1375839088: {
+      name: 'Аналитическая миссия'
     },
-    832576952: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/fallen_saber.jpg"
+    1412142789: {
+      name: ''
     },
-    833873053: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
+    1416597166: {
+      name: 'Спрос и предложение'
     },
-    836641517: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_5.jpg"
+    1428050875: {
+      name: 'Classified'
     },
-    853468393: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_2.jpg"
+    1451946951: {
+      name: 'Миссия по спасению'
     },
-    853774317: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_coming_war.jpg"
+    1466550401: {
+      name: 'Безопасной скорости нет'
     },
-    854130400: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_seige_of_the_warmind.jpg"
+    1490848577: {
+      name: 'В петле'
     },
-    856898338: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/raid_vault_of_glass.jpg"
+    1491022087: {
+      name: 'Осада "Исхода"'
     },
-    860566204: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_lighthouse.jpg"
+    1495993294: {
+      name: 'Озеро теней'
     },
-    870614351: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1498466193: {
+      name: 'Миссия по спасению'
     },
-    888190220: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1521232506: {
+      name: 'Classified'
     },
-    892266083: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/default.jpg"
+    1525633702: {
+      name: 'Миссия по спасению'
     },
-    902875868: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_3.jpg"
+    1536764325: {
+      name: 'Разведывательная миссия'
     },
-    906989597: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_1.jpg"
+    1557641249: {
+      name: 'Миссия по спасению'
     },
-    932731386: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/caydes_stash.jpg"
+    1563393783: {
+      name: 'Место крушения "Исхода"'
     },
-    940573734: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_cosmo_2.jpg"
+    1568750156: {
+      name: 'Ферма'
     },
-    944638962: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_5.jpg"
+    1581219251: {
+      name: 'Разведывательная миссия'
     },
-    981644933: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/bound_by_fire.jpg"
+    1614692057: {
+      name: 'Миссия по спасению'
     },
-    982298740: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_2.jpg"
+    1646219807: {
+      name: 'Кража'
     },
-    984759429: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/abomination_heist.jpg"
+    1651979106: {
+      name: 'Прометей эпохи постмодерна'
     },
-    985012235: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/a_new_den.jpg"
+    1658347443: {
+      name: 'Возвращение домой'
     },
-    989535795: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1685065161: {
+      name: 'Левиафан'
     },
-    994743956: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
+    1685237649: {
+      name: 'Миссия по ликвидации'
     },
-    994743957: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_cerberus_vae_III.jpg"
+    1699948563: {
+      name: 'Левиафан'
     },
-    994743958: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_dust_palace.jpg"
+    1720510574: {
+      name: 'Крепость'
     },
-    1005705920: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_first_firewall.jpg"
+    1756055546: {
+      name: 'Миссия по спасению'
     },
-    1016116686: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
+    1773400654: {
+      name: 'Приглашение от императора'
     },
-    1016659723: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/kings_fall.jpg"
+    1778450722: {
+      name: 'Аналитическая миссия'
     },
-    1017714251: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/last_rites.jpg"
+    1786054751: {
+      name: 'Предумышленность'
     },
-    1019616175: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1790343591: {
+      name: 'Осколок Странника'
     },
-    1023542723: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
+    1792985204: {
+      name: 'Сумрачный налет: Место крушения "Исхода"'
     },
-    1030188908: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_5.jpg"
+    1824067376: {
+      name: 'Дорожная ярость'
     },
-    1031478181: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_cosmo.jpg"
+    1829866365: {
+      name: 'Придется запачкать руки'
     },
-    1031478182: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_cosmo.jpg"
+    1863334927: {
+      name: 'Сумрачный налет: Песнь Саватуна'
     },
-    1031478183: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_cosmo.jpg"
+    1875726950: {
+      name: 'Левиафан'
     },
-    1044883964: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/sepiks_perfected.jpg"
+    1949546348: {
+      name: 'Миссия по ликвидации'
     },
-    1045828271: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1952521609: {
+      name: 'Осколок Странника'
     },
-    1068261034: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/blood_in_the_garden.jpg"
+    1956541147: {
+      name: 'Пора домой'
     },
-    1075348150: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1969800443: {
+      name: 'Аресибо'
     },
-    1080191247: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_4.jpg"
+    1971154629: {
+      name: 'Безопасной скорости нет'
     },
-    1084620606: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_sunless_cell.jpg"
+    1975064760: {
+      name: 'Сумрачный налет: Песнь Саватуна'
     },
-    1087052691: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1981289329: {
+      name: 'Осада "Исхода"'
     },
-    1112015031: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_the_wakening.jpg"
+    1984315274: {
+      name: '"Авангард" наносит удар'
     },
-    1116149777: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/regicide.jpg"
+    1988701745: {
+      name: 'Возмездие'
     },
-    1117274478: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/playlist_the_taken_war.jpg"
+    2001433484: {
+      name: 'Миссия по ликвидации'
     },
-    1122783186: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2025057095: {
+      name: 'Боевая миссия'
     },
-    1126759626: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/echo_chamber.jpg"
+    2033669713: {
+      name: '"Джевелин"-4'
     },
-    1141580112: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
+    2052289205: {
+      name: 'Воспламенение'
     },
-    1142225067: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_cosmo.jpg"
+    2079994698: {
+      name: 'Разведывательная миссия'
     },
-    1169187265: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_the_nexus.jpg"
+    2080275457: {
+      name: 'Торговец оружием'
     },
-    1174401783: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/primes_path.jpg"
+    2113712124: {
+      name: 'Святотатство'
     },
-    1194342366: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2151274060: {
+      name: 'Аналитическая миссия'
     },
-    1200628152: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_1.jpg"
+    2174556965: {
+      name: 'Подстава'
     },
-    1208087916: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/prison_of_elders.jpg"
+    2183066491: {
+      name: 'Ферма'
     },
-    1208087919: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/prison_of_elders.jpg"
+    2184866967: {
+      name: 'Аналитическая миссия'
     },
-    1226857472: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/caydes_stash.jpg"
+    2187073261: {
+      name: 'Аналитическая миссия'
     },
-    1227144460: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_world_ravager.jpg"
+    2231840083: {
+      name: 'Песнь сирены'
     },
-    1228944057: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_dust_palace.jpg"
+    2236648719: {
+      name: 'Вечность'
     },
-    1234230734: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
+    2243336789: {
+      name: 'Боевая миссия'
     },
-    1259153650: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_1.jpg"
+    2250935166: {
+      name: 'Бессмертный'
     },
-    1288347893: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2259811067: {
+      name: 'Осколок Странника'
     },
-    1291023759: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2264636552: {
+      name: 'Медитация: "Воспламенение"'
     },
-    1293005540: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2266954523: {
+      name: 'Ферма'
     },
-    1296112978: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2287222467: {
+      name: 'Аналитическая миссия'
     },
-    1309514270: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/default.jpg"
+    2288260902: {
+      name: 'Миссия по ликвидации'
     },
-    1322792020: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2291549972: {
+      name: 'Улучшение!'
     },
-    1328326126: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/lost_to_light.jpg"
+    2297638408: {
+      name: 'Гнев'
     },
-    1329840146: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/wretched_eye.jpg"
+    2301390667: {
+      name: 'Разведывательная миссия'
     },
-    1378194100: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_lighthouse.jpg"
+    2318812547: {
+      name: 'Пирамидион'
     },
-    1378430574: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2336998357: {
+      name: 'Долгая игра'
     },
-    1379511171: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_3.jpg"
+    2379494367: {
+      name: 'Аналитическая миссия'
     },
-    1387993552: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/wrath_of_the_machine.jpg"
+    2420240009: {
+      name: 'Миссия по спасению'
     },
-    1390160729: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/vestian_outpost.jpg"
+    2445164291: {
+      name: 'Миссия по ликвидации'
     },
-    1398209073: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_devils_lair.jpg"
+    2449714930: {
+      name: 'Левиафан'
     },
-    1398209074: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
+    2464834848: {
+      name: 'Центр города'
     },
-    1398976305: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_cosmo.jpg"
+    2468202005: {
+      name: 'Осколок Странника'
     },
-    1398976306: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_cosmo.jpg"
+    2478782573: {
+      name: ''
     },
-    1398976307: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_cosmo.jpg"
+    2517540332: {
+      name: 'Безопасной дистанции нет'
     },
-    1400727968: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2519458964: {
+      name: 'Бесконечная долина'
     },
-    1403880576: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_3.jpg"
+    2519564410: {
+      name: 'Миссия по ликвидации'
     },
-    1403880578: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_5.jpg"
+    2536491635: {
+      name: 'Разведывательная миссия'
     },
-    1403880579: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_4.jpg"
+    2558926634: {
+      name: 'Разведывательная миссия'
     },
-    1403880580: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_1.jpg"
+    2559514952: {
+      name: 'Утопия'
     },
-    1403880582: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_2.jpg"
+    2561308143: {
+      name: 'Разведывательная миссия'
     },
-    1404620600: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/prison_of_elders.jpg"
+    2573702057: {
+      name: 'Миссия по спасению'
     },
-    1415179315: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2574607799: {
+      name: 'Плохое соседство'
     },
-    1419457477: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/a_ranger_lost.jpg"
+    2575990417: {
+      name: 'Боевая миссия'
     },
-    1427585666: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2580713007: {
+      name: 'Разведывательная миссия'
     },
-    1431469570: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/abomination_heist.jpg"
+    2588220738: {
+      name: 'Разведывательная миссия'
     },
-    1438195119: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_5.jpg"
+    2610112492: {
+      name: 'Аналитическая миссия'
     },
-    1439468985: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/outbound_signal.jpg"
+    2619236227: {
+      name: 'Аналитическая миссия'
     },
-    1441430564: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/prison_of_elders.jpg"
+    2629975203: {
+      name: 'Боевая миссия'
     },
-    1441430567: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/prison_of_elders.jpg"
+    2629998776: {
+      name: 'Миссия по спасению'
     },
-    1443271657: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2642769170: {
+      name: 'Шесть'
     },
-    1443570903: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2651851341: {
+      name: 'Аналитическая миссия'
     },
-    1448094960: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_dungeons.jpg"
+    2665134323: {
+      name: 'Освобождение'
     },
-    1478347980: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/Campus_Martius.jpg"
+    2667533713: {
+      name: 'Восток'
     },
-    1491766060: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    2684479494: {
+      name: 'Миссия по спасению'
     },
-    1501957761: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/fallen_saber.jpg"
+    2693136600: {
+      name: 'Левиафан'
     },
-    1516701147: {
-      pgcrImage: "undefined"
+    2693136601: {
+      name: 'Левиафан'
     },
-    1517679997: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2693136602: {
+      name: 'Левиафан'
     },
-    1522220810: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/default.jpg"
+    2693136603: {
+      name: 'Левиафан'
     },
-    1522422482: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
+    2693136604: {
+      name: 'Левиафан'
     },
-    1526798932: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/fallen_saber.jpg"
+    2693136605: {
+      name: 'Левиафан'
     },
-    1533733535: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_sunless_cell.jpg"
+    2702476101: {
+      name: 'Башня'
     },
-    1551387515: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/prison_of_elders.jpg"
+    2708828207: {
+      name: 'Утопия'
     },
-    1566333829: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/shield_brothers.jpg"
+    2737739053: {
+      name: 'Серьезный разговор'
     },
-    1572749251: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2759086913: {
+      name: 'Classified'
     },
-    1584566734: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2768347363: {
+      name: 'Миссия по ликвидации'
     },
-    1604535501: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2773222353: {
+      name: 'Аналитическая миссия'
     },
-    1609488702: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2776929937: {
+      name: 'Диагностика'
     },
-    1614355423: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_world_ravager.jpg"
+    2782300570: {
+      name: 'Миссия по спасению'
     },
-    1618960674: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2784803584: {
+      name: 'Боевая миссия'
     },
-    1624947721: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/shield_brothers.jpg"
+    2798856614: {
+      name: 'Разведывательная миссия'
     },
-    1628212868: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_venus.jpg"
+    2846775197: {
+      name: 'Боевая миссия'
     },
-    1628212869: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_venus.jpg"
+    2908287325: {
+      name: 'Разведывательная миссия'
     },
-    1628212871: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_venus.jpg"
+    2926767881: {
+      name: 'Расплата'
     },
-    1636082733: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_winters_run.jpg"
+    2949941834: {
+      name: 'Нежданные гости'
     },
-    1636082734: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_the_nexus.jpg"
+    2969403085: {
+      name: 'Разведывательная миссия'
     },
-    1646288223: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/echo_chamber.jpg"
+    3002511278: {
+      name: 'Темный союз'
     },
-    1650930548: {
-      pgcrImage: "undefined"
+    3026637018: {
+      name: 'Разведывательная миссия'
     },
-    1657401676: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_mars.jpg"
+    3038694763: {
+      name: 'Миссия по ликвидации'
     },
-    1657401677: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_mars.jpg"
+    3049122128: {
+      name: 'Аналитическая миссия'
     },
-    1657401679: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_mars.jpg"
+    3050465729: {
+      name: 'Сумрачный налет: Вывернутый шпиль'
     },
-    1659888245: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/abomination_heist.jpg"
+    3062197616: {
+      name: 'Состязательная игра'
     },
-    1665631320: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3105090879: {
+      name: 'Адью'
     },
-    1669262087: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/shield_brothers.jpg"
+    3140524926: {
+      name: 'Неразрушимость'
     },
-    1673931290: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/TakenPoE.jpg"
+    3143798436: {
+      name: 'Европейская Мертвая зона'
     },
-    1681545807: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_sunless_cell.jpg"
+    3147707814: {
+      name: 'Разрывное течение'
     },
-    1685214122: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3148431353: {
+      name: 'Придется запачкать руки'
     },
-    1685535967: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
+    3150153711: {
+      name: 'Возможности и выбор'
     },
-    1686326716: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/a_new_den.jpg"
+    3172367001: {
+      name: 'Осколок Странника'
     },
-    1686679946: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3173130826: {
+      name: 'Боевая миссия'
     },
-    1709749894: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/skyline.jpg"
+    3208779612: {
+      name: 'Миссия по спасению'
     },
-    1714839224: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/quest_ritual_of_sacrifice.jpg"
+    3211303924: {
+      name: 'Миссия по спасению'
     },
-    1719392441: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/crossroads.jpg"
+    3211568383: {
+      name: 'Песнь сирены'
     },
-    1723226893: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_cosmo_3.jpg"
+    3231065327: {
+      name: 'Аналитическая миссия'
     },
-    1727851403: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_promethean_code.jpg"
+    3243161126: {
+      name: 'Быстрая игра'
     },
-    1728758154: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_1.jpg"
+    3268684190: {
+      name: 'Миссия по спасению'
     },
-    1733556769: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/kings_fall.jpg"
+    3272002712: {
+      name: 'Надежда'
     },
-    1740074530: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_cerberus_vae_III.jpg"
+    3277510674: {
+      name: 'Бессмертный'
     },
-    1749151224: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3283790633: {
+      name: 'Подстава'
     },
-    1771902734: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3289681664: {
+      name: 'Пропавший экипаж'
     },
-    1772839913: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/tenebrous_tunnels.jpg"
+    3298775062: {
+      name: 'Разведывательная миссия'
     },
-    1783047867: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3303685562: {
+      name: 'Миссия по спасению'
     },
-    1783107168: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/download_complete.jpg"
+    3304835347: {
+      name: 'Пора домой'
     },
-    1783564050: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/a_joining_of_houses.jpg"
+    3336275007: {
+      name: 'Медитация: "Шесть"'
     },
-    1794499705: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3337731612: {
+      name: 'Боевая миссия'
     },
-    1815860968: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3346345105: {
+      name: 'Экспериментальное лекарство'
     },
-    1816396489: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    3359466010: {
+      name: 'Искра'
     },
-    1836141626: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3368226533: {
+      name: 'Сумрачный налет: Вывернутый шпиль'
     },
-    1836893116: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/raid_crotas_end.jpg"
+    3379039897: {
+      name: 'Миссия по спасению'
     },
-    1836893119: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/raid_crotas_end.jpg"
+    3410530777: {
+      name: 'Выверенные действия'
     },
-    1845751534: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_cerberus_vae_III.jpg"
+    3417504239: {
+      name: 'Разрывное течение'
     },
-    1846390409: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_cosmo_nux.jpg"
+    3446541099: {
+      name: 'Левиафан'
     },
-    1851417512: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_drifter.jpg"
+    3479544154: {
+      name: 'Боевая миссия'
     },
-    1856964953: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_cosmo_nux.jpg"
+    3481058226: {
+      name: 'Разведывательная миссия'
     },
-    1882836298: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_the_wakening.jpg"
+    3485876484: {
+      name: 'Дорожная ярость'
     },
-    1889399773: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
+    3487576414: {
+      name: 'Разведывательная миссия'
     },
-    1912940269: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_cosmo_1.jpg"
+    3489692681: {
+      name: 'Разведывательная миссия'
     },
-    1917735347: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_winters_run.jpg"
+    3500791146: {
+      name: 'Скалолаз'
     },
-    1918823817: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
+    3515770727: {
+      name: 'Аналитическая миссия'
     },
-    1924778540: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/a_joining_of_houses.jpg"
+    3580793473: {
+      name: 'Медитация: "1 а.е.д."'
     },
-    1940432142: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_1.jpg"
+    3612741503: {
+      name: 'Разведывательная миссия'
     },
-    1973631991: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_cosmo_4.jpg"
+    3627094182: {
+      name: 'Боевая миссия'
     },
-    1974138312: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/BlightedChalice.jpg"
+    3631476566: {
+      name: 'Ферма'
     },
-    1985034593: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_venus.jpg"
+    3645117987: {
+      name: 'Плохое соседство'
     },
-    2008529245: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/taken_war_earth.jpg"
+    3652531274: {
+      name: 'Осколок Странника'
     },
-    2010056644: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/Haakon_Precipice.jpg"
+    3662124488: {
+      name: 'Разведывательная миссия'
     },
-    2022189692: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/BlightedChalice.jpg"
+    3664915501: {
+      name: 'Красный Легион, черное масло'
     },
-    2037022373: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/vertigo.jpg"
+    3669054326: {
+      name: 'Миссия по спасению'
     },
-    2045385030: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_venus.jpg"
+    3688464794: {
+      name: 'Значение связей'
     },
-    2051444910: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_1.jpg"
+    3700722865: {
+      name: 'Освобождение'
     },
-    2061368111: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3702064261: {
+      name: 'Конфискация данных'
     },
-    2063852581: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3738159218: {
+      name: 'Несломленный'
     },
-    2072729921: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/BlightedChalice.jpg"
+    3752039537: {
+      name: 'Смена полярности'
     },
-    2074618692: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/prison_of_elders.jpg"
+    3780356141: {
+      name: 'Время не ждет'
     },
-    2074618695: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/prison_of_elders.jpg"
+    3792746061: {
+      name: 'Боевая миссия'
     },
-    2082069870: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/crucible_the_anomaly.jpg"
+    3799743268: {
+      name: 'Classified'
     },
-    2084208305: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_sunless_cell.jpg"
+    3806583577: {
+      name: 'Миссия по ликвидации'
     },
-    2084307227: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/dread_patrol.jpg"
+    3834639884: {
+      name: 'Аналитическая миссия'
     },
-    2095588685: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
+    3836086286: {
+      name: 'Нежданные гости'
     },
-    2105028197: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/echo_chamber.jpg"
+    3839751954: {
+      name: 'Алтарь пламени'
     },
-    2129294976: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_cosmo_2.jpg"
+    3872525353: {
+      name: 'Время не ждет'
     },
-    2151413729: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/default.jpg"
+    3879860661: {
+      name: 'Левиафан'
     },
-    2176272408: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    3903562779: {
+      name: 'Башня'
     },
-    2178968385: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/wretched_eye.jpg"
+    3916343513: {
+      name: 'Левиафан'
     },
-    2184393955: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_cerberus_vae_III.jpg"
+    3920643231: {
+      name: 'Сумрачный налет: "Торговец оружием"'
     },
-    2186849909: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/TakenWintersRun.jpg"
+    3958400416: {
+      name: 'Разведывательная миссия'
     },
-    2190039885: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/crucible_twilight_gap_2.jpg"
+    3966792859: {
+      name: 'Несс, нестабильный кентавр'
     },
-    2197680969: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/taken_war_earth.jpg"
+    3978357488: {
+      name: 'Миссия по спасению'
     },
-    2198347919: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/default.jpg"
+    3982474534: {
+      name: 'Расплата'
     },
-    2200634811: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_seige_of_the_warmind.jpg"
+    4034557395: {
+      name: 'Возвращение домой'
     },
-    2201622127: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/TakenPoE.jpg"
+    4039317196: {
+      name: 'Левиафан'
     },
-    2213151771: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_2.jpg"
+    4043714237: {
+      name: 'Разведывательная миссия'
     },
-    2217862439: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    4047570705: {
+      name: 'Боевая миссия'
     },
-    2221365740: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/sepiks_perfected.jpg"
+    4050886070: {
+      name: 'Разведывательная миссия'
     },
-    2234107290: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    4054968718: {
+      name: 'Сумрачный налет: Вывернутый шпиль'
     },
-    2243240710: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/Infinite_Descent.jpg"
+    4095207117: {
+      name: 'Миссия по спасению'
     },
-    2244550959: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/default.jpg"
+    4103844069: {
+      name: 'Миссия по ликвидации'
     },
-    2244943676: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    4159221189: {
+      name: 'Ио'
     },
-    2245079334: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/BlightedChalice.jpg"
+    4166562681: {
+      name: 'Титан'
     },
-    2263964303: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    4174103238: {
+      name: 'Миссия по спасению'
     },
-    2268273279: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/sepiks_perfected.jpg"
+    4209774794: {
+      name: 'Миссия по спасению'
     },
-    2270816053: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_world_ravager.jpg"
+    4216926874: {
+      name: 'Миссия по спасению'
     },
-    2270968444: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
+    4231544111: {
+      name: 'Разведывательная миссия'
     },
-    2270968445: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
+    4239233351: {
+      name: 'Медитация: "Искра"'
     },
-    2270968446: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
+    4254776501: {
+      name: 'Миссия по спасению'
     },
-    2275772174: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    4283649349: {
+      name: 'Миссия по ликвидации'
     },
-    2286628407: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/paradox.jpg"
+    4291922223: {
+      name: 'Надежда'
     },
-    2303355724: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_devils_lair.jpg"
+  },
+  zhcht: {
+    19982784: {
+      name: 'Combat Mission'
     },
-    2303355727: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
+    30240416: {
+      name: 'Assassination Mission'
     },
-    2316484115: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_lighthouse.jpg"
+    37050217: {
+      name: 'Survey mission'
     },
-    2319702946: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    51408141: {
+      name: 'Salvage Mission'
     },
-    2321224098: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_1.jpg"
+    53954174: {
+      name: 'Anti-Anti-Air'
     },
-    2324706853: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/raid_crotas_end.jpg"
+    57103244: {
+      name: 'Survey mission'
     },
-    2326253031: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/prison_of_elders.jpg"
+    60002467: {
+      name: 'Sacrilege'
     },
-    2327910410: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_4.jpg"
+    78673128: {
+      name: 'Thief of Thieves'
     },
-    2330516073: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/default.jpg"
+    80726883: {
+      name: 'O Captain'
     },
-    2332037858: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/widows_court.jpg"
+    82913930: {
     },
-    2333767699: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/taken_war_mars.jpg"
+    89727599: {
+      name: 'Leviathan'
     },
-    2344229082: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
+    104342360: {
+      name: 'Combat Mission'
     },
-    2344622554: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/echo_chamber.jpg"
+    116352029: {
+      name: 'Combat Mission'
     },
-    2356723745: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_coming_war.jpg"
+    122988657: {
+      name: 'Red Legion, Black Oil'
     },
-    2364610626: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/primes_path.jpg"
+    143647473: {
+      name: 'Salvage Mission'
     },
-    2369296916: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_coming_war.jpg"
+    145302664: {
+      name: 'Nightfall: The Arms Dealer'
     },
-    2374186202: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    153537894: {
+      name: 'A New Frontier'
     },
-    2374784693: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_4.jpg"
+    160721490: {
+      name: 'Classified'
     },
-    2374899718: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    175598161: {
+      name: 'Salvage Mission'
     },
-    2375659247: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/TakenPoE.jpg"
+    189324537: {
+      name: 'Salvage Mission'
     },
-    2380726447: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_dreadnaught.jpg"
+    197670945: {
+      name: 'Assassination Mission'
     },
-    2381859905: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    204298081: {
+      name: 'Analysis Mission'
     },
-    2388860485: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    248066530: {
+      name: 'Salvage Mission'
     },
-    2391040454: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/sepiks_perfected.jpg"
+    255819671: {
+      name: 'Fury'
     },
-    2393458461: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/entropys_pinnacle.jpg"
+    261349035: {
+      name: 'Salvage Mission'
     },
-    2396741855: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_cerberus_vae_III.jpg"
+    286324446: {
+      name: 'Salvage Mission'
     },
-    2398459666: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_mars.jpg"
+    287649202: {
+      name: 'Leviathan'
     },
-    2401705359: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    293858112: {
+      name: 'Combat Mission'
     },
-    2422821510: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/taken_war_earth.jpg"
+    298747401: {
+      name: 'Survey mission'
     },
-    2430076725: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/crucible_blind_watch.jpg"
+    298793060: {
+      name: 'Salvage Mission'
     },
-    2437373043: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
+    313572698: {
+      name: 'Shard of the Traveler'
     },
-    2445476122: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    320680002: {
+      name: 'Supply and Demand'
     },
-    2446491566: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_plaguelands.jpg"
+    330545737: {
+      name: 'The Farm'
     },
-    2449230902: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_dreadnaught.jpg"
+    338662534: {
+      name: 'The Inverted Spire'
     },
-    2450352219: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_sunless_cell.jpg"
+    355984230: {
+      name: 'Assassination Mission'
     },
-    2473173917: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    359488722: {
+      name: 'Hack the Planet'
     },
-    2474598319: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_venus.jpg"
+    374818561: {
+      name: 'Emperor\'s Respite'
     },
-    2486047606: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_5.jpg"
+    379330092: {
+      name: 'Shard of the Traveler'
     },
-    2488292787: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    387171436: {
+      name: 'Salvage Mission'
     },
-    2500396686: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    388289443: {
+      name: 'Survey mission'
     },
-    2503808507: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/last_rites.jpg"
+    415388387: {
+      name: 'Survey mission'
     },
-    2507231345: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/frontier.jpg"
+    417231112: {
+      name: 'Leviathan'
     },
-    2507671226: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/outbound_signal.jpg"
+    429361491: {
+      name: 'Salvage Mission'
     },
-    2522686639: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    435989417: {
+      name: 'Analysis Mission'
     },
-    2532582309: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/fallen_saber.jpg"
+    444087412: {
+      name: 'Combat Mission'
     },
-    2546962221: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_sunless_cell.jpg"
+    445417088: {
     },
-    2553967924: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_walls_come_down.jpg"
+    459955094: {
+      name: 'Analysis Mission'
     },
-    2577060487: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/paradox.jpg"
+    461203479: {
+      name: 'Survey mission'
     },
-    2582525652: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_5.jpg"
+    464789944: {
+      name: 'Chosen'
     },
-    2586575560: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    474380713: {
+      name: 'Salvage Mission'
     },
-    2591739000: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_1.jpg"
+    539897061: {
+      name: 'Reversing the Polarity'
     },
-    2604992012: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/lost_to_light.jpg"
+    545240418: {
+      name: 'Survey mission'
     },
-    2605106985: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_4.jpg"
+    549123191: {
+      name: 'Survey mission'
     },
-    2616429373: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/taken_war_mars.jpg"
+    553537971: {
+      name: 'Chosen'
     },
-    2624694148: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/blighted_coven.jpg"
+    564863404: {
     },
-    2624916786: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_cerberus_vae_III.jpg"
+    581323290: {
+      name: 'Survey mission'
     },
-    2626477216: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/outbound_signal.jpg"
+    585071442: {
+      name: 'Nightfall: Savathûn\'s Song'
     },
-    2632260907: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/echo_chamber.jpg"
+    601540706: {
+      name: 'Nightfall: The Arms Dealer'
     },
-    2638978649: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/prison_of_elders.jpg"
+    622895925: {
+      name: 'Arecibo'
     },
-    2641355370: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_3.jpg"
+    632790902: {
+      name: 'Cliffhanger'
     },
-    2643956095: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    642256373: {
+      name: 'Nightfall: Exodus Crash'
     },
-    2658160549: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/blighted_coven.jpg"
+    642277473: {
+      name: 'Nightfall: The Pyramidion'
     },
-    2659248068: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/raid_vault_of_glass.jpg"
+    652598202: {
+      name: 'Legion\'s Gulch'
     },
-    2659248069: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/raid_vault_of_glass.jpg"
+    667604912: {
+      name: 'Meditation: "Looped"'
     },
-    2659248071: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/raid_vault_of_glass.jpg"
+    671904429: {
+      name: 'Salvage Mission'
     },
-    2662709104: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/bottle_the_arc.jpg"
+    703311712: {
+      name: 'Shard of the Traveler'
     },
-    2664207554: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/wretched_eye.jpg"
+    715306877: {
+      name: 'Combat Mission'
     },
-    2666433880: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_the_nexus.jpg"
+    719906507: {
+      name: 'Classified'
     },
-    2669189613: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_dust_palace.jpg"
+    743100125: {
+      name: 'Salvage Mission'
     },
-    2678657479: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/abomination_heist.jpg"
+    750649238: {
+      name: 'Salvage Mission'
     },
-    2680821721: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/crucible_cauldron.jpg"
+    757116822: {
+      name: 'Leviathan'
     },
-    2693077237: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    760130722: {
+      name: 'The Dead Cliffs'
     },
-    2695324124: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/BlightedChalice.jpg"
+    782175145: {
+      name: 'Assassination Mission'
     },
-    2697160954: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    782290869: {
+      name: 'Survey mission'
     },
-    2697969178: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_cosmo.jpg"
+    789332628: {
+      name: 'Thief of Thieves'
     },
-    2701768038: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_rise_of_crota.jpg"
+    798143184: {
+      name: 'Combat Mission'
     },
-    2704098598: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_devils_lair.jpg"
+    808931822: {
+      name: 'Postmodern Prometheus'
     },
-    2708547287: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/a_march_of_fire.jpg"
+    837763871: {
+      name: 'Salvage Mission'
     },
-    2717791362: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
+    849242583: {
+      name: 'Analysis Mission'
     },
-    2719526771: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_dust_palace.jpg"
+    880665770: {
+      name: 'Survey mission'
     },
-    2726977290: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_cosmo_4.jpg"
+    919252154: {
+      name: 'Dark Alliance'
     },
-    2737751857: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/beauty_in_destruction.jpg"
+    926012363: {
+      name: 'Assassination Mission'
     },
-    2739987894: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    926940962: {
+      name: 'Nightfall: The Pyramidion'
     },
-    2743106708: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_dust_palace.jpg"
+    938512773: {
+      name: 'Unbroken'
     },
-    2747031950: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    940394831: {
+      name: 'QUEST: Exodus Crash'
     },
-    2764426556: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/paradox.jpg"
+    955852466: {
+      name: '1AU'
     },
-    2764561765: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/lost_to_light.jpg"
+    963938931: {
+      name: 'Deep Conversation'
     },
-    2775184694: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_1.jpg"
+    964196803: {
+      name: 'Salvage Mission'
     },
-    2776273577: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_cerberus_vae_III.jpg"
+    969385987: {
+      name: 'Lighting the Dark'
     },
-    2790114296: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/a_joining_of_houses.jpg"
+    993152361: {
+      name: 'Salvage Mission'
     },
-    2795444912: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1019362992: {
+      name: 'Meditation: "Homecoming"'
     },
-    2799122060: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_the_nexus.jpg"
+    1035135049: {
+      name: 'The Pyramidion'
     },
-    2819394450: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1038710420: {
+      name: 'Assassination Mission'
     },
-    2828456290: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/Shining_Sands.jpg"
+    1053141615: {
+      name: 'Assassination Mission'
     },
-    2839046506: {
-      pgcrImage: "undefined"
+    1063969232: {
+      name: 'Invitation from the Emperor'
     },
-    2840876929: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/shield_brothers.jpg"
+    1075152813: {
+      name: 'European Dead Zone'
     },
-    2846350970: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_sunless_cell.jpg"
+    1076851943: {
+      name: 'Assassination Mission'
     },
-    2853745856: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_5.jpg"
+    1085523978: {
+      name: 'Survey mission'
     },
-    2861777810: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/TakenWintersRun.jpg"
+    1090267699: {
+      name: 'Assassination Mission'
     },
-    2873833515: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_sunless_cell.jpg"
+    1101792305: {
+      name: 'Savathûn\'s Song'
     },
-    2873913519: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_cosmo_3.jpg"
+    1102824603: {
+      name: 'Assassination Mission'
     },
-    2877811433: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1105211124: {
+      name: 'Analysis Mission'
     },
-    2895301046: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_1.jpg"
+    1107208644: {
+      name: 'Hack the Planet'
     },
-    2896357417: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_winters_run.jpg"
+    1129066976: {
+      name: 'Nightfall: The Pyramidion'
     },
-    2896357418: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_the_nexus.jpg"
+    1159314159: {
+      name: 'Poor Reception'
     },
-    2897641944: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/BlightedChalice.jpg"
+    1164772243: {
+      name: 'Salvage Mission'
     },
-    2910883293: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/last_rites.jpg"
+    1206154103: {
+      name: 'Assassination Mission'
     },
-    2918909691: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/road_to_kings_fall.jpg"
+    1207505828: {
+      name: 'QUEST: The Arms Dealer'
     },
-    2926133958: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1225970098: {
+      name: 'Lost Crew'
     },
-    2931947534: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/wolves_of_winter.jpg"
+    1228327586: {
+      name: 'Anti-Anti-Air'
     },
-    2938090611: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_coming_war.jpg"
+    1243390694: {
+      name: 'Larceny'
     },
-    2938118424: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
+    1249965655: {
+      name: 'Analysis Mission'
     },
-    2938118425: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_cerberus_vae_III.jpg"
+    1250426564: {
+      name: 'Assassination Mission'
     },
-    2938118426: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_dust_palace.jpg"
+    1254990192: {
+      name: 'No Safe Distance'
     },
-    2945511915: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1265390366: {
+      name: 'Poor Reception'
     },
-    2947742498: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1289867188: {
+      name: 'Unbreakable'
     },
-    2981424914: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_promethean_code.jpg"
+    1290744998: {
+      name: 'The Farm'
     },
-    2989915775: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
+    1309646866: {
+      name: 'The Farm'
     },
-    3005484445: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_promethean_code.jpg"
+    1331268141: {
+      name: 'Survey mission'
     },
-    3010573436: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    1357019430: {
+      name: 'Nightfall: Exodus Crash'
     },
-    3011954788: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1375839088: {
+      name: 'Analysis Mission'
     },
-    3025411906: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/default.jpg"
+    1412142789: {
+      name: ''
     },
-    3027976182: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/shield_brothers.jpg"
+    1416597166: {
+      name: 'Supply and Demand'
     },
-    3030879879: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/wretched_eye.jpg"
+    1428050875: {
+      name: 'Classified'
     },
-    3041179010: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_cerberus_vae_III.jpg"
+    1451946951: {
+      name: 'Salvage Mission'
     },
-    3044479892: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    1466550401: {
+      name: 'Unsafe at Any Speed'
     },
-    3047788493: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_dust_palace.jpg"
+    1490848577: {
+      name: 'Looped'
     },
-    3047788494: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_cerberus_vae_III.jpg"
+    1491022087: {
+      name: 'Exodus Siege'
     },
-    3047788495: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
+    1495993294: {
+      name: 'Lake of Shadows'
     },
-    3051527960: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_sunless_cell.jpg"
+    1498466193: {
+      name: 'Salvage Mission'
     },
-    3053288711: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/floating_gardens.jpg"
+    1521232506: {
+      name: 'Classified'
     },
-    3056582947: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_4.jpg"
+    1525633702: {
+      name: 'Salvage Mission'
     },
-    3070937708: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/fallen_saber.jpg"
+    1536764325: {
+      name: 'Survey mission'
     },
-    3077860924: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_devils_lair.jpg"
+    1557641249: {
+      name: 'Salvage Mission'
     },
-    3077860927: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
+    1563393783: {
+      name: 'Exodus Crash'
     },
-    3097191720: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    1568750156: {
+      name: 'The Farm'
     },
-    3098008841: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
+    1581219251: {
+      name: 'Survey mission'
     },
-    3101475152: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/crucible_firebase_delphi.jpg"
+    1614692057: {
+      name: 'Salvage Mission'
     },
-    3101766066: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/wretched_eye.jpg"
+    1646219807: {
+      name: 'Larceny'
     },
-    3102291176: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/primes_path.jpg"
+    1651979106: {
+      name: 'Postmodern Prometheus'
     },
-    3102295231: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    1658347443: {
+      name: 'Homecoming'
     },
-    3120201278: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/TakenWintersRun.jpg"
+    1685065161: {
+      name: 'Leviathan'
     },
-    3120351937: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_cosmo_3.jpg"
+    1685237649: {
+      name: 'Assassination Mission'
     },
-    3120351938: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_cosmo_2.jpg"
+    1699948563: {
+      name: 'Leviathan'
     },
-    3120351939: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_cosmo_1.jpg"
+    1720510574: {
+      name: 'The Fortress'
     },
-    3120351941: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_seige_of_the_warmind.jpg"
+    1756055546: {
+      name: 'Salvage Mission'
     },
-    3120351943: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_cosmo_4.jpg"
+    1773400654: {
+      name: 'Invitation from the Emperor'
     },
-    3125074504: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_venus.jpg"
+    1778450722: {
+      name: 'Analysis Mission'
     },
-    3125074505: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_venus.jpg"
+    1786054751: {
+      name: 'Premeditation'
     },
-    3125074507: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_venus.jpg"
+    1790343591: {
+      name: 'Shard of the Traveler'
     },
-    3132533708: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/BlightedChalice.jpg"
+    1792985204: {
+      name: 'Nightfall: Exodus Crash'
     },
-    3135856650: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_4.jpg"
+    1824067376: {
+      name: 'Road Rage'
     },
-    3156370656: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/sector_618.jpg"
+    1829866365: {
+      name: 'Getting Your Hands Dirty'
     },
-    3162176634: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/echo_chamber.jpg"
+    1863334927: {
+      name: 'Nightfall: Savathûn\'s Song'
     },
-    3183184449: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/shield_brothers.jpg"
+    1875726950: {
+      name: 'Leviathan'
     },
-    3187607216: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
+    1949546348: {
+      name: 'Assassination Mission'
     },
-    3190434637: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_dreadnaught.jpg"
+    1952521609: {
+      name: 'Shard of the Traveler'
     },
-    3192378548: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_1.jpg"
+    1956541147: {
+      name: 'Calling Them Home'
     },
-    3196929644: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/abomination_heist.jpg"
+    1969800443: {
+      name: 'Arecibo'
     },
-    3200293401: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/enemy_of_my_enemy.jpg"
+    1971154629: {
+      name: 'Unsafe at Any Speed'
     },
-    3207122440: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_3.jpg"
+    1975064760: {
+      name: 'Nightfall: Savathûn\'s Song'
     },
-    3209623958: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_mars.jpg"
+    1981289329: {
+      name: 'Exodus Siege'
     },
-    3210106079: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_the_dreadnaught.jpg"
+    1984315274: {
+      name: 'Vanguard Strikes'
     },
-    3220294246: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_walls_come_down.jpg"
+    1988701745: {
+      name: 'Retribution'
     },
-    3234259779: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/TrialsDefault.jpg"
+    2001433484: {
+      name: 'Assassination Mission'
     },
-    3242509473: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
+    2025057095: {
+      name: 'Combat Mission'
     },
-    3252534714: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2033669713: {
+      name: 'Javelin-4'
     },
-    3263216023: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/regicide.jpg"
+    2052289205: {
+      name: 'Combustion'
     },
-    3277621970: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/timekeeper.jpg"
+    2079994698: {
+      name: 'Survey mission'
     },
-    3277929848: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/shield_brothers.jpg"
+    2080275457: {
+      name: 'The Arms Dealer'
     },
-    3292305209: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_winters_run.jpg"
+    2113712124: {
+      name: 'Sacrilege'
     },
-    3292305210: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_the_nexus.jpg"
+    2151274060: {
+      name: 'Analysis Mission'
     },
-    3292667877: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/crucible_asylum.jpg"
+    2174556965: {
+      name: 'A Frame Job'
     },
-    3315158082: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/a_spark_in_shadow.jpg"
+    2183066491: {
+      name: 'The Farm'
     },
-    3322717977: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2184866967: {
+      name: 'Analysis Mission'
     },
-    3335571405: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2187073261: {
+      name: 'Analysis Mission'
     },
-    3343284688: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/outbound_signal.jpg"
+    2231840083: {
+      name: 'Siren Song'
     },
-    3343503784: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/BlightedChalice.jpg"
+    2236648719: {
+      name: 'Eternity'
     },
-    3345352981: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/quest_ritual_of_sacrifice.jpg"
+    2243336789: {
+      name: 'Combat Mission'
     },
-    3346215145: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_lighthouse.jpg"
+    2250935166: {
+      name: 'Deathless'
     },
-    3349918649: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_dreadnaught.jpg"
+    2259811067: {
+      name: 'Shard of the Traveler'
     },
-    3356249023: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2264636552: {
+      name: 'Meditation: "Combustion"'
     },
-    3373044013: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/BlightedChalice.jpg"
+    2266954523: {
+      name: 'The Farm'
     },
-    3384143875: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/BlightedChalice.jpg"
+    2287222467: {
+      name: 'Analysis Mission'
     },
-    3392709953: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/abomination_heist.jpg"
+    2288260902: {
+      name: 'Assassination Mission'
     },
-    3393673804: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/prison_of_elders.jpg"
+    2291549972: {
+      name: 'Enhance!'
     },
-    3394418729: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_dust_palace.jpg"
+    2297638408: {
+      name: 'Fury'
     },
-    3398049753: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_3.jpg"
+    2301390667: {
+      name: 'Survey mission'
     },
-    3398752148: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_winters_run.jpg"
+    2318812547: {
+      name: 'The Pyramidion'
     },
-    3399843400: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_1.jpg"
+    2336998357: {
+      name: 'The Long Play'
     },
-    3399843403: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_2.jpg"
+    2379494367: {
+      name: 'Analysis Mission'
     },
-    3399843404: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_3.jpg"
+    2420240009: {
+      name: 'Salvage Mission'
     },
-    3399843406: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_5.jpg"
+    2445164291: {
+      name: 'Assassination Mission'
     },
-    3399843407: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_4.jpg"
+    2449714930: {
+      name: 'Leviathan'
     },
-    3403438134: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/echo_chamber.jpg"
+    2464834848: {
+      name: 'Midtown'
     },
-    3406669964: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/sepiks_perfected.jpg"
+    2468202005: {
+      name: 'Shard of the Traveler'
     },
-    3412406993: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/cathedral_of_dusk.jpg"
+    2478782573: {
+      name: ''
     },
-    3415949693: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_the_nexus.jpg"
+    2517540332: {
+      name: 'No Safe Distance'
     },
-    3422670336: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_devils_lair.jpg"
+    2519458964: {
+      name: 'Endless Vale'
     },
-    3422670339: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
+    2519564410: {
+      name: 'Assassination Mission'
     },
-    3422924470: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/blighted_coven.jpg"
+    2536491635: {
+      name: 'Survey mission'
     },
-    3427115544: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/fallen_saber.jpg"
+    2558926634: {
+      name: 'Survey mission'
     },
-    3428378490: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2559514952: {
+      name: 'Utopia'
     },
-    3434275681: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_4.jpg"
+    2561308143: {
+      name: 'Survey mission'
     },
-    3464398659: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_5.jpg"
+    2573702057: {
+      name: 'Salvage Mission'
     },
-    3473815980: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_rise_of_crota.jpg"
+    2574607799: {
+      name: 'Bad Neighbors'
     },
-    3476387771: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/weekly_heroic.jpg"
+    2575990417: {
+      name: 'Combat Mission'
     },
-    3492173922: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/vestian_outpost.jpg"
+    2580713007: {
+      name: 'Survey mission'
     },
-    3493774909: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2588220738: {
+      name: 'Survey mission'
     },
-    3508129769: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/prison_of_elders.jpg"
+    2610112492: {
+      name: 'Analysis Mission'
     },
-    3508129770: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/prison_of_elders.jpg"
+    2619236227: {
+      name: 'Analysis Mission'
     },
-    3509128672: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2629975203: {
+      name: 'Combat Mission'
     },
-    3527709396: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2629998776: {
+      name: 'Salvage Mission'
     },
-    3534581229: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/kings_fall.jpg"
+    2642769170: {
+      name: 'Six'
     },
-    3543525727: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_world_ravager.jpg"
+    2651851341: {
+      name: 'Analysis Mission'
     },
-    3549856929: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_seige_of_the_warmind.jpg"
+    2665134323: {
+      name: 'Release'
     },
-    3555113730: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/wretched_eye.jpg"
+    2667533713: {
+      name: 'Vostok'
     },
-    3565777280: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/knock_knock.jpg"
+    2684479494: {
+      name: 'Salvage Mission'
     },
-    3568014988: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/regicide.jpg"
+    2693136600: {
+      name: 'Leviathan'
     },
-    3573972337: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_the_nexus.jpg"
+    2693136601: {
+      name: 'Leviathan'
     },
-    3575520714: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/shield_brothers.jpg"
+    2693136602: {
+      name: 'Leviathan'
     },
-    3575840788: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/default.jpg"
+    2693136603: {
+      name: 'Leviathan'
     },
-    3582451805: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    2693136604: {
+      name: 'Leviathan'
     },
-    3582577776: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2693136605: {
+      name: 'Leviathan'
     },
-    3593950004: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2702476101: {
+      name: 'Tower'
     },
-    3602734434: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/bannerfall.jpg"
+    2708828207: {
+      name: 'Utopia'
     },
-    3609927430: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2737739053: {
+      name: 'Deep Conversation'
     },
-    3612436612: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_coming_war.jpg"
+    2759086913: {
+      name: 'Classified'
     },
-    3619606113: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2768347363: {
+      name: 'Assassination Mission'
     },
-    3621292155: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2773222353: {
+      name: 'Analysis Mission'
     },
-    3635588435: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2776929937: {
+      name: 'Differential Diagnosis'
     },
-    3645675142: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2782300570: {
+      name: 'Salvage Mission'
     },
-    3645919501: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_cosmo.jpg"
+    2784803584: {
+      name: 'Combat Mission'
     },
-    3650545911: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    2798856614: {
+      name: 'Survey mission'
     },
-    3670262295: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/TrialsDefault.jpg"
+    2846775197: {
+      name: 'Combat Mission'
     },
-    3670861271: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/enemy_of_my_enemy.jpg"
+    2908287325: {
+      name: 'Survey mission'
     },
-    3670968271: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
+    2926767881: {
+      name: 'Payback'
     },
-    3671763238: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_cerberus_vae_III.jpg"
+    2949941834: {
+      name: 'Unexpected Guests'
     },
-    3674885127: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/regicide.jpg"
+    2969403085: {
+      name: 'Survey mission'
     },
-    3676594097: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_winters_run.jpg"
+    3002511278: {
+      name: 'Dark Alliance'
     },
-    3691405620: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3026637018: {
+      name: 'Survey mission'
     },
-    3700036317: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3038694763: {
+      name: 'Assassination Mission'
     },
-    3705341715: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/a_ranger_found.jpg"
+    3049122128: {
+      name: 'Analysis Mission'
     },
-    3708806801: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/entropys_pinnacle.jpg"
+    3050465729: {
+      name: 'Nightfall: The Inverted Spire'
     },
-    3711414560: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_4.jpg"
+    3062197616: {
+      name: 'Competitive'
     },
-    3711414561: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_3.jpg"
+    3105090879: {
+      name: 'Adieu'
     },
-    3711414562: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_the_wakening.jpg"
+    3140524926: {
+      name: 'Unbreakable'
     },
-    3711414563: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_5.jpg"
+    3143798436: {
+      name: 'European Dead Zone'
     },
-    3711414564: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_1.jpg"
+    3147707814: {
+      name: 'Riptide'
     },
-    3711414566: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_2.jpg"
+    3148431353: {
+      name: 'Getting Your Hands Dirty'
     },
-    3715085142: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/shadow_call.jpg"
+    3150153711: {
+      name: 'Chances and Choices'
     },
-    3731091063: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_venus.jpg"
+    3172367001: {
+      name: 'Shard of the Traveler'
     },
-    3741914742: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_winters_run.jpg"
+    3173130826: {
+      name: 'Combat Mission'
     },
-    3743955707: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/default.jpg"
+    3208779612: {
+      name: 'Salvage Mission'
     },
-    3750289192: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_rise_of_crota.jpg"
+    3211303924: {
+      name: 'Salvage Mission'
     },
-    3778091466: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/download_complete.jpg"
+    3211568383: {
+      name: 'Siren Song'
     },
-    3784570118: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_3.jpg"
+    3231065327: {
+      name: 'Analysis Mission'
     },
-    3799336128: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
+    3243161126: {
+      name: 'Quickplay'
     },
-    3817155567: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/crucible_twilight_gap_2.jpg"
+    3268684190: {
+      name: 'Salvage Mission'
     },
-    3837170670: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_2.jpg"
+    3272002712: {
+      name: 'Hope'
     },
-    3842976518: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_sunless_cell.jpg"
+    3277510674: {
+      name: 'Deathless'
     },
-    3848655103: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/black_shield.jpg"
+    3283790633: {
+      name: 'A Frame Job'
     },
-    3856562046: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/lost_to_light.jpg"
+    3289681664: {
+      name: 'Lost Crew'
     },
-    3856604751: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/crucible_first_light.jpg"
+    3298775062: {
+      name: 'Survey mission'
     },
-    3860793576: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/sepiks_perfected.jpg"
+    3303685562: {
+      name: 'Salvage Mission'
     },
-    3878867172: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3304835347: {
+      name: 'Calling Them Home'
     },
-    3896699662: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_winters_run.jpg"
+    3336275007: {
+      name: 'Meditation: "Six"'
     },
-    3910288239: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3337731612: {
+      name: 'Combat Mission'
     },
-    3918359338: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/icarus.jpg"
+    3346345105: {
+      name: 'Experimental Treatment'
     },
-    3920061741: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_5.jpg"
+    3359466010: {
+      name: 'Spark'
     },
-    3921931055: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
+    3368226533: {
+      name: 'Nightfall: The Inverted Spire'
     },
-    3936153046: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3379039897: {
+      name: 'Salvage Mission'
     },
-    3941998864: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_cerberus_vae_III.jpg"
+    3410530777: {
+      name: 'Calculated Action'
     },
-    3945328236: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3417504239: {
+      name: 'Riptide'
     },
-    3948474766: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_moon_3.jpg"
+    3446541099: {
+      name: 'Leviathan'
     },
-    3974631085: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/enemy_of_my_enemy.jpg"
+    3479544154: {
+      name: 'Combat Mission'
     },
-    3978884648: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/kings_fall.jpg"
+    3481058226: {
+      name: 'Survey mission'
     },
-    4000873610: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/raid_crotas_end.jpg"
+    3485876484: {
+      name: 'Road Rage'
     },
-    4027720491: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/shield_brothers.jpg"
+    3487576414: {
+      name: 'Survey mission'
     },
-    4038697181: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/raid_vault_of_glass.jpg"
+    3489692681: {
+      name: 'Survey mission'
     },
-    4046346128: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/taken_war_mars.jpg"
+    3500791146: {
+      name: 'Cliffhanger'
     },
-    4055903037: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3515770727: {
+      name: 'Analysis Mission'
     },
-    4060895971: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/default.jpg"
+    3580793473: {
+      name: 'Meditation: "1AU"'
     },
-    4079642013: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/prison_of_elders.jpg"
+    3612741503: {
+      name: 'Survey mission'
     },
-    4079642014: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/prison_of_elders.jpg"
+    3627094182: {
+      name: 'Combat Mission'
     },
-    4087776066: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/caydes_stash.jpg"
+    3631476566: {
+      name: 'The Farm'
     },
-    4099604100: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
+    3645117987: {
+      name: 'Bad Neighbors'
     },
-    4101329072: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/wretched_eye.jpg"
+    3652531274: {
+      name: 'Shard of the Traveler'
     },
-    4105918304: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/last_exit.jpg"
+    3662124488: {
+      name: 'Survey mission'
     },
-    4107311671: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/crucible_the_rusted_lands.jpg"
+    3664915501: {
+      name: 'Red Legion, Black Oil'
     },
-    4129878327: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3669054326: {
+      name: 'Salvage Mission'
     },
-    4131978369: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/abomination_heist.jpg"
+    3688464794: {
+      name: 'The Importance of Networking'
     },
-    4141063459: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    3700722865: {
+      name: 'Release'
     },
-    4153423016: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/TakenPoE.jpg"
+    3702064261: {
+      name: 'Data Requisition'
     },
-    4163254808: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/crucible_shores_of_time.jpg"
+    3738159218: {
+      name: 'Unbroken'
     },
-    4168247421: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3752039537: {
+      name: 'Reversing the Polarity'
     },
-    4171584130: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3780356141: {
+      name: 'Stop and Go'
     },
-    4175179544: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
+    3792746061: {
+      name: 'Combat Mission'
     },
-    4175179545: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
+    3799743268: {
+      name: 'Classified'
     },
-    4175179546: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/patrol_moon.jpg"
+    3806583577: {
+      name: 'Assassination Mission'
     },
-    4178645458: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_mars_2.jpg"
+    3834639884: {
+      name: 'Analysis Mission'
     },
-    4181273223: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/fallen_saber.jpg"
+    3836086286: {
+      name: 'Unexpected Guests'
     },
-    4183157062: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/last_rites.jpg"
+    3839751954: {
+      name: 'Altar of Flame'
     },
-    4187524452: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_undying_mind.jpg"
+    3872525353: {
+      name: 'Stop and Go'
     },
-    4196724507: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3879860661: {
+      name: 'Leviathan'
     },
-    4200263342: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/crucible_bastion.jpg"
+    3903562779: {
+      name: 'Tower'
     },
-    4203094490: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3916343513: {
+      name: 'Leviathan'
     },
-    4215168114: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
+    3920643231: {
+      name: 'Nightfall: The Arms Dealer'
     },
-    4217181091: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3958400416: {
+      name: 'Survey mission'
     },
-    4222208550: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    3966792859: {
+      name: 'Nessus, Unstable Centaur'
     },
-    4227723344: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_devils_lair.jpg"
+    3978357488: {
+      name: 'Salvage Mission'
     },
-    4227723347: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_will_of_crota.jpg"
+    3982474534: {
+      name: 'Payback'
     },
-    4239017990: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_5.jpg"
+    4034557395: {
+      name: 'Homecoming'
     },
-    4240750267: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_promethean_code.jpg"
+    4039317196: {
+      name: 'Leviathan'
     },
-    4242282035: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    4043714237: {
+      name: 'Survey mission'
     },
-    4252752792: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_dust_palace.jpg"
+    4047570705: {
+      name: 'Combat Mission'
     },
-    4253541885: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/strike_winters_run.jpg"
+    4050886070: {
+      name: 'Survey mission'
     },
-    4254149014: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/the_shadow_thief.jpg"
+    4054968718: {
+      name: 'Nightfall: The Inverted Spire'
     },
-    4260139097: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/crucible_pantheon.jpg"
+    4095207117: {
+      name: 'Salvage Mission'
     },
-    4272344899: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/story_venus_3.jpg"
+    4103844069: {
+      name: 'Assassination Mission'
     },
-    4277539497: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/placeholder.jpg"
+    4159221189: {
+      name: 'Io'
     },
-    4287936726: {
-      pgcrImage: "/img/theme/destiny/bgs/pgcrs/crucible_exodus_blue.jpg"
+    4166562681: {
+      name: 'Titan'
+    },
+    4174103238: {
+      name: 'Salvage Mission'
+    },
+    4209774794: {
+      name: 'Salvage Mission'
+    },
+    4216926874: {
+      name: 'Salvage Mission'
+    },
+    4231544111: {
+      name: 'Survey mission'
+    },
+    4239233351: {
+      name: 'Meditation: "Spark"'
+    },
+    4254776501: {
+      name: 'Salvage Mission'
+    },
+    4283649349: {
+      name: 'Assassination Mission'
+    },
+    4291922223: {
+      name: 'Hope'
+    },
+  },
+  data: {
+    19982784: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    30240416: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    37050217: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    51408141: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    53954174: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    57103244: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    60002467: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_sacrilege.jpg'
+    },
+    78673128: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    80726883: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    82913930: {
+      icon: '/img/misc/missing_icon_d2.png',
+      pgcrImage: 'undefined'
+    },
+    89727599: {
+      icon: '/common/destiny2_content/icons/9b934cd37c9b12594524421f0bb6593a.png',
+      pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
+    },
+    104342360: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    116352029: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    122988657: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    143647473: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    145302664: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_the_arms_dealer.jpg'
+    },
+    153537894: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    160721490: {
+      icon: 'undefined',
+      pgcrImage: 'undefined'
+    },
+    175598161: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    189324537: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    197670945: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    204298081: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    248066530: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    255819671: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_fury.jpg'
+    },
+    261349035: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    286324446: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    287649202: {
+      icon: '/common/destiny2_content/icons/9b934cd37c9b12594524421f0bb6593a.png',
+      pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
+    },
+    293858112: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    298747401: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    298793060: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    313572698: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
+    },
+    320680002: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    330545737: {
+      icon: '/common/destiny2_content/icons/89a1588f717e9bd2076f6e1bbbcb7282.png',
+      pgcrImage: '/img/destiny_content/pgcr/social_farm.jpg'
+    },
+    338662534: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_inverted_spire.jpg'
+    },
+    355984230: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    359488722: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    374818561: {
+      icon: '/common/destiny2_content/icons/12333241509bdb758ff3a5b7baa5ec85.png',
+      pgcrImage: '/img/destiny_content/pgcr/crucible_katana.jpg'
+    },
+    379330092: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
+    },
+    387171436: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    388289443: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    415388387: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    417231112: {
+      icon: '/common/destiny2_content/icons/9b934cd37c9b12594524421f0bb6593a.png',
+      pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
+    },
+    429361491: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    435989417: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    444087412: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    445417088: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: 'undefined'
+    },
+    459955094: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    461203479: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    464789944: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_chosen.jpg'
+    },
+    474380713: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    539897061: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    545240418: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    549123191: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    553537971: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_chosen.jpg'
+    },
+    564863404: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: 'undefined'
+    },
+    581323290: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    585071442: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_savanthuns_song.jpg'
+    },
+    601540706: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_the_arms_dealer.jpg'
+    },
+    622895925: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    632790902: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    642256373: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_exodus_crash.jpg'
+    },
+    642277473: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_the_pyramdion.jpg'
+    },
+    652598202: {
+      icon: '/common/destiny2_content/icons/12333241509bdb758ff3a5b7baa5ec85.png',
+      pgcrImage: '/img/destiny_content/pgcr/crucible_slag.jpg'
+    },
+    667604912: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_looped.jpg'
+    },
+    671904429: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    703311712: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
+    },
+    715306877: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    719906507: {
+      icon: 'undefined',
+      pgcrImage: 'undefined'
+    },
+    743100125: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    750649238: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    757116822: {
+      icon: '/common/destiny2_content/icons/9b934cd37c9b12594524421f0bb6593a.png',
+      pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
+    },
+    760130722: {
+      icon: '/common/destiny2_content/icons/12333241509bdb758ff3a5b7baa5ec85.png',
+      pgcrImage: '/img/destiny_content/pgcr/crucible_cliffside.jpg'
+    },
+    782175145: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    782290869: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    789332628: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    798143184: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    808931822: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    837763871: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    849242583: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    880665770: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    919252154: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    926012363: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    926940962: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_the_pyramdion.jpg'
+    },
+    938512773: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_unbroken.jpg'
+    },
+    940394831: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_exodus_crash.jpg'
+    },
+    955852466: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_1AU.jpg'
+    },
+    963938931: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    964196803: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    969385987: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    993152361: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    1019362992: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_homecoming.jpg'
+    },
+    1035135049: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_the_pyramdion.jpg'
+    },
+    1038710420: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    1053141615: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    1063969232: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    1075152813: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    1076851943: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    1085523978: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    1090267699: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    1101792305: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_savanthuns_song.jpg'
+    },
+    1102824603: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    1105211124: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    1107208644: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    1129066976: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_the_pyramdion.jpg'
+    },
+    1159314159: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    1164772243: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    1206154103: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    1207505828: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_the_arms_dealer.jpg'
+    },
+    1225970098: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    1228327586: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    1243390694: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_larceny.jpg'
+    },
+    1249965655: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    1250426564: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    1254990192: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    1265390366: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    1289867188: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    1290744998: {
+      icon: '/common/destiny2_content/icons/89a1588f717e9bd2076f6e1bbbcb7282.png',
+      pgcrImage: '/img/destiny_content/pgcr/social_farm.jpg'
+    },
+    1309646866: {
+      icon: '/common/destiny2_content/icons/89a1588f717e9bd2076f6e1bbbcb7282.png',
+      pgcrImage: '/img/destiny_content/pgcr/social_farm.jpg'
+    },
+    1331268141: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    1357019430: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_exodus_crash.jpg'
+    },
+    1375839088: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    1412142789: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
+    },
+    1416597166: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    1428050875: {
+      icon: 'undefined',
+      pgcrImage: 'undefined'
+    },
+    1451946951: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    1466550401: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    1490848577: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_looped.jpg'
+    },
+    1491022087: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    1495993294: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_lake_of_shadows.jpg'
+    },
+    1498466193: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    1521232506: {
+      icon: 'undefined',
+      pgcrImage: 'undefined'
+    },
+    1525633702: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    1536764325: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    1557641249: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    1563393783: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_exodus_crash.jpg'
+    },
+    1568750156: {
+      icon: '/common/destiny2_content/icons/89a1588f717e9bd2076f6e1bbbcb7282.png',
+      pgcrImage: '/img/destiny_content/pgcr/social_farm.jpg'
+    },
+    1581219251: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    1614692057: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    1646219807: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_larceny.jpg'
+    },
+    1651979106: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    1658347443: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_homecoming.jpg'
+    },
+    1685065161: {
+      icon: '/common/destiny2_content/icons/9b934cd37c9b12594524421f0bb6593a.png',
+      pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
+    },
+    1685237649: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    1699948563: {
+      icon: '/common/destiny2_content/icons/9b934cd37c9b12594524421f0bb6593a.png',
+      pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
+    },
+    1720510574: {
+      icon: '/common/destiny2_content/icons/12333241509bdb758ff3a5b7baa5ec85.png',
+      pgcrImage: '/img/destiny_content/pgcr/crucible_hull.jpg'
+    },
+    1756055546: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    1773400654: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    1778450722: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    1786054751: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    1790343591: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
+    },
+    1792985204: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_exodus_crash.jpg'
+    },
+    1824067376: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    1829866365: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    1863334927: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_savanthuns_song.jpg'
+    },
+    1875726950: {
+      icon: '/common/destiny2_content/icons/9b934cd37c9b12594524421f0bb6593a.png',
+      pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
+    },
+    1949546348: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    1952521609: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
+    },
+    1956541147: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    1969800443: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    1971154629: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    1975064760: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_savanthuns_song.jpg'
+    },
+    1981289329: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    1984315274: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_exodus_crash.jpg'
+    },
+    1988701745: {
+      icon: '/common/destiny2_content/icons/12333241509bdb758ff3a5b7baa5ec85.png',
+      pgcrImage: '/img/destiny_content/pgcr/crucible_elevator.jpg'
+    },
+    2001433484: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    2025057095: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    2033669713: {
+      icon: '/common/destiny2_content/icons/12333241509bdb758ff3a5b7baa5ec85.png',
+      pgcrImage: '/img/destiny_content/pgcr/crucible_shaft.jpg'
+    },
+    2052289205: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_combustion.jpg'
+    },
+    2079994698: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    2080275457: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_the_arms_dealer.jpg'
+    },
+    2113712124: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_sacrilege.jpg'
+    },
+    2151274060: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    2174556965: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    2183066491: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/social_farm.jpg'
+    },
+    2184866967: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    2187073261: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    2231840083: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    2236648719: {
+      icon: '/common/destiny2_content/icons/12333241509bdb758ff3a5b7baa5ec85.png',
+      pgcrImage: '/img/destiny_content/pgcr/crucible_glaive.jpg'
+    },
+    2243336789: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    2250935166: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    2259811067: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
+    },
+    2264636552: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_combustion.jpg'
+    },
+    2266954523: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/social_farm.jpg'
+    },
+    2287222467: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    2288260902: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    2291549972: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    2297638408: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_fury.jpg'
+    },
+    2301390667: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    2318812547: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_the_pyramdion.jpg'
+    },
+    2336998357: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    2379494367: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    2420240009: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    2445164291: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    2449714930: {
+      icon: '/common/destiny2_content/icons/9b934cd37c9b12594524421f0bb6593a.png',
+      pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
+    },
+    2464834848: {
+      icon: '/common/destiny2_content/icons/12333241509bdb758ff3a5b7baa5ec85.png',
+      pgcrImage: '/img/destiny_content/pgcr/crucible_midtown.jpg'
+    },
+    2468202005: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
+    },
+    2478782573: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
+    },
+    2517540332: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    2519458964: {
+      icon: '/common/destiny2_content/icons/12333241509bdb758ff3a5b7baa5ec85.png',
+      pgcrImage: '/img/destiny_content/pgcr/crucible_grove.jpg'
+    },
+    2519564410: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    2536491635: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    2558926634: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    2559514952: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_utopia.jpg'
+    },
+    2561308143: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    2573702057: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    2574607799: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    2575990417: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    2580713007: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    2588220738: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    2610112492: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    2619236227: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    2629975203: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    2629998776: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    2642769170: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_six.jpg'
+    },
+    2651851341: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    2665134323: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    2667533713: {
+      icon: '/common/destiny2_content/icons/12333241509bdb758ff3a5b7baa5ec85.png',
+      pgcrImage: '/img/destiny_content/pgcr/crucible_observatory.jpg'
+    },
+    2684479494: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    2693136600: {
+      icon: '/common/destiny2_content/icons/9b934cd37c9b12594524421f0bb6593a.png',
+      pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
+    },
+    2693136601: {
+      icon: '/common/destiny2_content/icons/9b934cd37c9b12594524421f0bb6593a.png',
+      pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
+    },
+    2693136602: {
+      icon: '/common/destiny2_content/icons/9b934cd37c9b12594524421f0bb6593a.png',
+      pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
+    },
+    2693136603: {
+      icon: '/common/destiny2_content/icons/9b934cd37c9b12594524421f0bb6593a.png',
+      pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
+    },
+    2693136604: {
+      icon: '/common/destiny2_content/icons/9b934cd37c9b12594524421f0bb6593a.png',
+      pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
+    },
+    2693136605: {
+      icon: '/common/destiny2_content/icons/9b934cd37c9b12594524421f0bb6593a.png',
+      pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
+    },
+    2702476101: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/social_traveler.jpg'
+    },
+    2708828207: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_utopia.jpg'
+    },
+    2737739053: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    2759086913: {
+      icon: 'undefined',
+      pgcrImage: 'undefined'
+    },
+    2768347363: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    2773222353: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    2776929937: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    2782300570: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    2784803584: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    2798856614: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    2846775197: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    2908287325: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    2926767881: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_payback.jpg'
+    },
+    2949941834: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    2969403085: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    3002511278: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    3026637018: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    3038694763: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    3049122128: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    3050465729: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_inverted_spire.jpg'
+    },
+    3062197616: {
+      icon: '/common/destiny2_content/icons/4da56368c75146e26812580577d1e9dd.png',
+      pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
+    },
+    3105090879: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_adieu.jpg'
+    },
+    3140524926: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    3143798436: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    3147707814: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_riptide.jpg'
+    },
+    3148431353: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    3150153711: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    3172367001: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
+    },
+    3173130826: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    3208779612: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    3211303924: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    3211568383: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    3231065327: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    3243161126: {
+      icon: '/common/destiny2_content/icons/86ba5943ee5c20455869412ae28c5c59.png',
+      pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
+    },
+    3268684190: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    3272002712: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_hope.jpg'
+    },
+    3277510674: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    3283790633: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    3289681664: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    3298775062: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    3303685562: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    3304835347: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    3336275007: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_six.jpg'
+    },
+    3337731612: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    3346345105: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    3359466010: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_spark.jpg'
+    },
+    3368226533: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_inverted_spire.jpg'
+    },
+    3379039897: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    3410530777: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    3417504239: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_riptide.jpg'
+    },
+    3446541099: {
+      icon: '/common/destiny2_content/icons/9b934cd37c9b12594524421f0bb6593a.png',
+      pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
+    },
+    3479544154: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    3481058226: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    3485876484: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    3487576414: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    3489692681: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    3500791146: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    3515770727: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    3580793473: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_1AU.jpg'
+    },
+    3612741503: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    3627094182: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    3631476566: {
+      icon: '/common/destiny2_content/icons/89a1588f717e9bd2076f6e1bbbcb7282.png',
+      pgcrImage: '/img/destiny_content/pgcr/social_farm.jpg'
+    },
+    3645117987: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    3652531274: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
+    },
+    3662124488: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    3664915501: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    3669054326: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    3688464794: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    3700722865: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    3702064261: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    3738159218: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_unbroken.jpg'
+    },
+    3752039537: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    3780356141: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    3792746061: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    3799743268: {
+      icon: 'undefined',
+      pgcrImage: 'undefined'
+    },
+    3806583577: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    3834639884: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    3836086286: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    3839751954: {
+      icon: '/common/destiny2_content/icons/12333241509bdb758ff3a5b7baa5ec85.png',
+      pgcrImage: '/img/destiny_content/pgcr/crucible_ness.jpg'
+    },
+    3872525353: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    3879860661: {
+      icon: '/common/destiny2_content/icons/9b934cd37c9b12594524421f0bb6593a.png',
+      pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
+    },
+    3903562779: {
+      icon: '/common/destiny2_content/icons/89a1588f717e9bd2076f6e1bbbcb7282.png',
+      pgcrImage: '/img/destiny_content/pgcr/social_traveler.jpg'
+    },
+    3916343513: {
+      icon: '/common/destiny2_content/icons/9b934cd37c9b12594524421f0bb6593a.png',
+      pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
+    },
+    3920643231: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_the_arms_dealer.jpg'
+    },
+    3958400416: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    3966792859: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    3978357488: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    3982474534: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_payback.jpg'
+    },
+    4034557395: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_homecoming.jpg'
+    },
+    4039317196: {
+      icon: '/common/destiny2_content/icons/9b934cd37c9b12594524421f0bb6593a.png',
+      pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
+    },
+    4043714237: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    4047570705: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    4050886070: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    4054968718: {
+      icon: '/common/destiny2_content/icons/4448fdbd02c4ba9f3428ac267497b43b.png',
+      pgcrImage: '/img/destiny_content/pgcr/strike_inverted_spire.jpg'
+    },
+    4095207117: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    4103844069: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    4159221189: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    4166562681: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    4174103238: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    4209774794: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
+    },
+    4216926874: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
+    },
+    4231544111: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    4239233351: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_spark.jpg'
+    },
+    4254776501: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
+    },
+    4283649349: {
+      icon: '/common/destiny2_content/icons/f1067794bf6b1305c926ec719b9bb4c2.png',
+      pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
+    },
+    4291922223: {
+      icon: '/common/destiny2_content/icons/bdb68b386d975e8ca5f60e596f943015.png',
+      pgcrImage: '/img/destiny_content/pgcr/campaign_hope.jpg'
     },
   },
 };

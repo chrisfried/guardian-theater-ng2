@@ -1,79 +1,123 @@
 export const DestinyRaceDefinition = {
   de: {
     898834093: {
-      raceName: 'Exo'
+      name: 'Exo'
     },
     2803282938: {
-      raceName: 'Erwachte'
+      name: 'Erwachte'
     },
     3887404748: {
-      raceName: 'Mensch'
+      name: 'Mensch'
     },
   },
   en: {
     898834093: {
-      raceName: 'Exo'
+      name: 'Exo'
     },
     2803282938: {
-      raceName: 'Awoken'
+      name: 'Awoken'
     },
     3887404748: {
-      raceName: 'Human'
+      name: 'Human'
     },
   },
   es: {
     898834093: {
-      raceName: 'Exo'
+      name: 'Exo'
     },
     2803282938: {
-      raceName: 'Insomne'
+      name: 'Insomne'
     },
     3887404748: {
-      raceName: 'Humano'
+      name: 'Humano'
+    },
+  },
+  esmx: {
+    898834093: {
+      name: 'Exo'
+    },
+    2803282938: {
+      name: 'Insomne'
+    },
+    3887404748: {
+      name: 'Humano'
     },
   },
   fr: {
     898834093: {
-      raceName: 'Exos'
+      name: 'Exos'
     },
     2803282938: {
-      raceName: 'Éveillés'
+      name: 'Éveillés'
     },
     3887404748: {
-      raceName: 'Humains'
+      name: 'Humains'
     },
   },
   it: {
     898834093: {
-      raceName: 'Exo'
+      name: 'Exo'
     },
     2803282938: {
-      raceName: 'Insonne'
+      name: 'Insonne'
     },
     3887404748: {
-      raceName: 'Umano'
+      name: 'Umano'
     },
   },
   ja: {
     898834093: {
-      raceName: 'エクソ'
+      name: 'エクソ'
     },
     2803282938: {
-      raceName: 'アウォークン'
+      name: 'アウォークン'
     },
     3887404748: {
-      raceName: '人間'
+      name: '人間'
+    },
+  },
+  pl: {
+    898834093: {
+      name: 'Egzo'
+    },
+    2803282938: {
+      name: 'Przebudzeni'
+    },
+    3887404748: {
+      name: 'Człowiek'
     },
   },
   ptbr: {
     898834093: {
-      raceName: 'Exo'
+      name: 'Exo'
     },
     2803282938: {
-      raceName: 'Desperto'
+      name: 'Desperto'
     },
     3887404748: {
-      raceName: 'Humano'
+      name: 'Humano'
+    },
+  },
+  ru: {
+    898834093: {
+      name: 'Экзо'
+    },
+    2803282938: {
+      name: 'Пробудившийся'
+    },
+    3887404748: {
+      name: 'Человек'
+    },
+  },
+  zhcht: {
+    898834093: {
+      name: 'Exo'
+    },
+    2803282938: {
+      name: 'Awoken'
+    },
+    3887404748: {
+      name: 'Human'
     },
   },
 };

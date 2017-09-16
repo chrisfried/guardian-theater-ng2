@@ -3,7 +3,7 @@ var path = require('path');
 
 fs.readdir('./utils/defs', function (err, languages) {
   if (err) {
-    console.error("Could not list the directory.", err);
+    console.error('Could not list the directory.', err);
     process.exit(1);
   }
 
@@ -18,22 +18,25 @@ fs.readdir('./utils/defs', function (err, languages) {
 
     for (let property in defs) {
       activity += '    ' + property + ': {\n';
-      activity += '      activityName: "' + defs[property].activityName + '"\n';
+      try {
+        activity += '      name: \'' + defs[property].displayProperties.name.replace(/'/g, "\\'").replace(/[\n\r]/g, '') + '\'\n';
+      } catch (e) {}
       activity += '    },\n';
     }
 
     activity += '  },\n';
   });
 
-  console.log('processing activity images');
-  activity += '  images: {\n';
+  console.log('processing activity data');
+  activity += '  data: {\n';
 
   let definitionFile = fs.readFileSync('./utils/defs/en/DestinyActivityDefinition.json');
   let defs = JSON.parse(definitionFile);
 
   for (let property in defs) {
     activity += '    ' + property + ': {\n';
-    activity += '      pgcrImage: "' + defs[property].pgcrImage + '"\n';
+    activity += '      icon: \'' + defs[property].displayProperties.icon + '\',\n'
+    activity += '      pgcrImage: \'' + defs[property].pgcrImage + '\'\n';
     activity += '    },\n';
   }
 
@@ -46,7 +49,7 @@ fs.readdir('./utils/defs', function (err, languages) {
   });
 
 
-  
+
   let mode = 'export const DestinyActivityModeDefinition = {\n'
 
   languages.forEach((language, index) => {
@@ -56,14 +59,39 @@ fs.readdir('./utils/defs', function (err, languages) {
     let definitionFile = fs.readFileSync('./utils/defs/' + language + '/DestinyActivityModeDefinition.json');
     let defs = JSON.parse(definitionFile);
 
+    let zeroFound = false;
     for (let property in defs) {
+      if (defs[property].modeType === 0) {
+        if (zeroFound) {
+          continue;
+        }
+        zeroFound = true;
+      }
       mode += '    ' + defs[property].modeType + ': {\n';
-      mode += '      modeName: "' + defs[property].modeName + '"\n';
+      try {
+        mode += '      name: \'' + defs[property].displayProperties.name.replace(/'/g, "\\'").replace(/[\n\r]/g, '') + '\'\n';
+      } catch (e) {}
       mode += '    },\n';
     }
 
     mode += '  },\n';
   });
+
+  console.log('processing mode data');
+  mode += '  data: {\n';
+
+  let modeDefinitionFile = fs.readFileSync('./utils/defs/en/DestinyActivityModeDefinition.json');
+  let modeDefs = JSON.parse(modeDefinitionFile);
+
+  for (let property in modeDefs) {
+    mode += '    ' + property + ': {\n';
+    mode += '      icon: \'' + modeDefs[property].displayProperties.icon + '\',\n'
+    mode += '      pgcrImage: \'' + modeDefs[property].pgcrImage + '\',\n'
+    mode += '      category: \'' + modeDefs[property].activityModeCategory + '\'\n'
+    mode += '    },\n';
+  }
+
+  mode += '  },\n';
 
   mode += '};\n';
 
@@ -72,11 +100,11 @@ fs.readdir('./utils/defs', function (err, languages) {
   });
 
 
-  
+
   let dclass = 'export const DestinyClassDefinition = {\n';
 
   languages.forEach((language, index) => {
-    console.log('processing mode', language);
+    console.log('processing class', language);
     dclass += '  ' + language + ': {\n';
 
     let definitionFile = fs.readFileSync('./utils/defs/' + language + '/DestinyClassDefinition.json');
@@ -84,7 +112,7 @@ fs.readdir('./utils/defs', function (err, languages) {
 
     for (let property in defs) {
       dclass += '    ' + property + ': {\n';
-      dclass += '      className: \'' + defs[property].className + '\'\n';
+      dclass += '      name: \'' + defs[property].displayProperties.name.replace(/'/g, "\\'").replace(/[\n\r]/g, '') + '\'\n';
       dclass += '    },\n';
     }
 
@@ -98,11 +126,11 @@ fs.readdir('./utils/defs', function (err, languages) {
   });
 
 
-  
+
   let race = 'export const DestinyRaceDefinition = {\n';
 
   languages.forEach((language, index) => {
-    console.log('processing mode', language);
+    console.log('processing race', language);
     race += '  ' + language + ': {\n';
 
     let definitionFile = fs.readFileSync('./utils/defs/' + language + '/DestinyRaceDefinition.json');
@@ -110,7 +138,7 @@ fs.readdir('./utils/defs', function (err, languages) {
 
     for (let property in defs) {
       race += '    ' + property + ': {\n';
-      race += '      raceName: \'' + defs[property].raceName + '\'\n';
+      race += '      name: \'' + defs[property].displayProperties.name.replace(/'/g, "\\'").replace(/[\n\r]/g, '') + '\'\n';
       race += '    },\n';
     }
 

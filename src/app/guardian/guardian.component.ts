@@ -19,7 +19,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
 
   public membershipType: number;
   public displayName: string;
-  public needToSelectPlatform: boolean;
+  public searchResults: bungie.SearchDestinyPlayerResult[];
   public characters: bungie.Character[];
   public activeCharacter: bungie.Character;
   public activities: gt.Activity[];
@@ -43,9 +43,9 @@ export class GuardianComponent implements OnInit, OnDestroy {
         this.displayName = name;
       }));
 
-    this.subs.push(this.guardianService.selectPlatform
-      .subscribe(bool => {
-        this.needToSelectPlatform = bool;
+    this.subs.push(this.guardianService.searchResults
+      .subscribe(results => {
+        this.searchResults = results;
       }));
 
     this.subs.push(this.guardianService.membershipType

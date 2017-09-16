@@ -1,79 +1,123 @@
 export const DestinyClassDefinition = {
   de: {
     671679327: {
-      className: 'Jäger'
+      name: 'Jäger'
     },
     2271682572: {
-      className: 'Warlock'
+      name: 'Warlock'
     },
     3655393761: {
-      className: 'Titan'
+      name: 'Titan'
     },
   },
   en: {
     671679327: {
-      className: 'Hunter'
+      name: 'Hunter'
     },
     2271682572: {
-      className: 'Warlock'
+      name: 'Warlock'
     },
     3655393761: {
-      className: 'Titan'
+      name: 'Titan'
     },
   },
   es: {
     671679327: {
-      className: 'Cazador'
+      name: 'Cazador'
     },
     2271682572: {
-      className: 'Hechicero'
+      name: 'Hechicero'
     },
     3655393761: {
-      className: 'Titán'
+      name: 'Titán'
+    },
+  },
+  esmx: {
+    671679327: {
+      name: 'Cazador'
+    },
+    2271682572: {
+      name: 'Hechicero'
+    },
+    3655393761: {
+      name: 'Titán'
     },
   },
   fr: {
     671679327: {
-      className: 'Chasseurs'
+      name: 'Chasseurs'
     },
     2271682572: {
-      className: 'Arcanistes'
+      name: 'Arcanistes'
     },
     3655393761: {
-      className: 'Titans'
+      name: 'Titans'
     },
   },
   it: {
     671679327: {
-      className: 'Cacciatori'
+      name: 'Cacciatori'
     },
     2271682572: {
-      className: 'Stregoni'
+      name: 'Stregoni'
     },
     3655393761: {
-      className: 'Titani'
+      name: 'Titani'
     },
   },
   ja: {
     671679327: {
-      className: 'ハンター'
+      name: 'ハンター'
     },
     2271682572: {
-      className: 'ウォーロック'
+      name: 'ウォーロック'
     },
     3655393761: {
-      className: 'タイタン'
+      name: 'タイタン'
+    },
+  },
+  pl: {
+    671679327: {
+      name: 'Łowca'
+    },
+    2271682572: {
+      name: 'Czarownik'
+    },
+    3655393761: {
+      name: 'Tytan'
     },
   },
   ptbr: {
     671679327: {
-      className: 'Caçador'
+      name: 'Caçador'
     },
     2271682572: {
-      className: 'Arcano'
+      name: 'Arcano'
     },
     3655393761: {
-      className: 'Titã'
+      name: 'Titã'
+    },
+  },
+  ru: {
+    671679327: {
+      name: 'Охотник'
+    },
+    2271682572: {
+      name: 'Варлок'
+    },
+    3655393761: {
+      name: 'Титан'
+    },
+  },
+  zhcht: {
+    671679327: {
+      name: 'Hunter'
+    },
+    2271682572: {
+      name: 'Warlock'
+    },
+    3655393761: {
+      name: 'Titan'
     },
   },
 };

@@ -1,772 +1,644 @@
 export const DestinyActivityModeDefinition = {
   de: {
-    23: {
-      modeName: "Eliminierung"
-    },
-    25: {
-      modeName: "Hexenkessel"
-    },
-    6: {
-      modeName: "Patrouille"
-    },
-    3: {
-      modeName: "Normale Strikes"
-    },
-    17: {
-      modeName: "Heroische Strikes"
-    },
-    19: {
-      modeName: "Eisenbanner"
-    },
-    16: {
-      modeName: "Dämmerung-Strikes"
-    },
-    32: {
-      modeName: "Privatmatches"
-    },
-    4: {
-      modeName: "Raid"
-    },
-    8: {
-      modeName: "Einleitung"
-    },
-    12: {
-      modeName: "Konflikt"
-    },
-    22: {
-      modeName: "Arena-Herausforderung"
-    },
-    24: {
-      modeName: "Rift"
-    },
-    36: {
-      modeName: "Hexenkessel: Vorherrschaft"
-    },
-    27: {
-      modeName: "Hexenkessel: Rumble"
-    },
     0: {
-      modeName: "Alle"
-    },
-    30: {
-      modeName: "Herausforderung der Ältesten"
-    },
-    18: {
-      modeName: "Strikes"
-    },
-    21: {
-      modeName: "Arena"
-    },
-    28: {
-      modeName: "Zonenkontrolle"
-    },
-    9: {
-      modeName: "Gefecht"
-    },
-    29: {
-      modeName: "Sparrow-Rennen"
-    },
-    11: {
-      modeName: "Bergung"
-    },
-    20: {
-      modeName: "Gefängnis der Alten"
-    },
-    34: {
-      modeName: "Vorherrschaft"
-    },
-    13: {
-      modeName: "Rumble"
+      name: 'Alle'
     },
     31: {
-      modeName: "Vorherrschaft"
+      name: 'Vorherrschaft'
     },
     7: {
-      modeName: "PVE"
-    },
-    26: {
-      modeName: "Hexenkessel: Konflikt"
-    },
-    2: {
-      modeName: "Story"
-    },
-    14: {
-      modeName: "Prüfungen von Osiris"
+      name: 'PVE'
     },
     5: {
-      modeName: "Schmelztiegel"
+      name: 'Schmelztiegel'
+    },
+    17: {
+      name: 'Nightfall'
+    },
+    38: {
+      name: 'Countdown'
+    },
+    12: {
+      name: 'Clash'
+    },
+    40: {
+      name: 'Social'
+    },
+    2: {
+      name: 'Story'
+    },
+    4: {
+      name: 'Raid'
+    },
+    37: {
+      name: 'Survival'
+    },
+    18: {
+      name: 'Strikes'
     },
     10: {
-      modeName: "Kontrolle"
+      name: 'Kontrolle'
     },
-    35: {
-      modeName: "Inferno: Vorherrschaft"
+    6: {
+      name: 'Patrouille'
     },
-    33: {
-      modeName: "Rumble: Vorherrschaft"
+    16: {
+      name: 'Dämmerung-Strikes'
     },
-    15: {
-      modeName: "Doppel"
+    3: {
+      name: 'Normale Strikes'
     },
   },
   en: {
-    23: {
-      modeName: "Elimination"
-    },
-    25: {
-      modeName: "Mayhem"
-    },
-    6: {
-      modeName: "Patrol"
-    },
-    3: {
-      modeName: "Normal Strikes"
-    },
-    17: {
-      modeName: "Heroic Strikes"
-    },
-    19: {
-      modeName: "Iron Banner"
-    },
-    16: {
-      modeName: "Nightfall Strikes"
-    },
-    32: {
-      modeName: "Private Matches"
-    },
-    4: {
-      modeName: "Raid"
-    },
-    8: {
-      modeName: "Introduction"
-    },
-    12: {
-      modeName: "Clash"
-    },
-    22: {
-      modeName: "Arena Challenge"
-    },
-    24: {
-      modeName: "Rift"
-    },
-    36: {
-      modeName: "Mayhem Supremacy"
-    },
-    27: {
-      modeName: "Mayhem Rumble"
-    },
     0: {
-      modeName: "All"
-    },
-    30: {
-      modeName: "Challenge of the Elders"
-    },
-    18: {
-      modeName: "Strikes"
-    },
-    21: {
-      modeName: "Arena"
-    },
-    28: {
-      modeName: "Zone Control"
-    },
-    9: {
-      modeName: "Skirmish"
-    },
-    29: {
-      modeName: "Sparrow Racing"
-    },
-    11: {
-      modeName: "Salvage"
-    },
-    20: {
-      modeName: "Prison of Elders"
-    },
-    34: {
-      modeName: "Supremacy"
-    },
-    13: {
-      modeName: "Rumble"
+      name: 'All'
     },
     31: {
-      modeName: "Supremacy"
+      name: 'Supremacy'
     },
     7: {
-      modeName: "PvE"
-    },
-    26: {
-      modeName: "Mayhem Clash"
-    },
-    2: {
-      modeName: "Story"
-    },
-    14: {
-      modeName: "Trials of Osiris"
+      name: 'PvE'
     },
     5: {
-      modeName: "Crucible"
+      name: 'Crucible'
+    },
+    17: {
+      name: 'Nightfall'
+    },
+    38: {
+      name: 'Countdown'
+    },
+    12: {
+      name: 'Clash'
+    },
+    40: {
+      name: 'Social'
+    },
+    2: {
+      name: 'Story'
+    },
+    4: {
+      name: 'Raid'
+    },
+    37: {
+      name: 'Survival'
+    },
+    18: {
+      name: 'Strikes'
     },
     10: {
-      modeName: "Control"
+      name: 'Control'
     },
-    35: {
-      modeName: "Inferno Supremacy"
+    6: {
+      name: 'Patrol'
     },
-    33: {
-      modeName: "Rumble Supremacy"
+    16: {
+      name: 'Nightfall Strikes'
     },
-    15: {
-      modeName: "Doubles"
+    3: {
+      name: 'Normal Strikes'
     },
   },
   es: {
-    23: {
-      modeName: "Eliminación"
-    },
-    25: {
-      modeName: "Caos"
-    },
-    6: {
-      modeName: "Patrulla"
-    },
-    3: {
-      modeName: "Asaltos normales"
-    },
-    17: {
-      modeName: "Asaltos heroicos"
-    },
-    19: {
-      modeName: "Estandarte de Hierro"
-    },
-    16: {
-      modeName: "Asaltos de Ocaso"
-    },
-    32: {
-      modeName: "Partidas privadas"
-    },
-    4: {
-      modeName: "Incursión"
-    },
-    8: {
-      modeName: "Introducción"
-    },
-    12: {
-      modeName: "Enfrentamiento"
-    },
-    22: {
-      modeName: "Desafío de la Arena"
-    },
-    24: {
-      modeName: "Grieta"
-    },
-    36: {
-      modeName: "Supremacía Caos"
-    },
-    27: {
-      modeName: "Disputa Caos"
-    },
     0: {
-      modeName: "Todo"
-    },
-    30: {
-      modeName: "Desafío de los Ancianos"
-    },
-    18: {
-      modeName: "Asaltos"
-    },
-    21: {
-      modeName: "Arena"
-    },
-    28: {
-      modeName: "Control de zonas"
-    },
-    9: {
-      modeName: "Escaramuza"
-    },
-    29: {
-      modeName: "Carreras de Colibríes"
-    },
-    11: {
-      modeName: "Rescate"
-    },
-    20: {
-      modeName: "Presidio de los Ancianos"
-    },
-    34: {
-      modeName: "Supremacía"
-    },
-    13: {
-      modeName: "Disputa"
+      name: 'Todo'
     },
     31: {
-      modeName: "Supremacía"
+      name: 'Supremacía'
     },
     7: {
-      modeName: "PvE"
-    },
-    26: {
-      modeName: "Enfrentamiento Caos"
-    },
-    2: {
-      modeName: "Historia"
-    },
-    14: {
-      modeName: "Pruebas de Osiris"
+      name: 'PvE'
     },
     5: {
-      modeName: "Crisol"
+      name: 'Crisol'
+    },
+    17: {
+      name: 'Nightfall'
+    },
+    38: {
+      name: 'Countdown'
+    },
+    12: {
+      name: 'Clash'
+    },
+    40: {
+      name: 'Social'
+    },
+    2: {
+      name: 'Historia'
+    },
+    4: {
+      name: 'Incursión'
+    },
+    37: {
+      name: 'Survival'
+    },
+    18: {
+      name: 'Asaltos'
     },
     10: {
-      modeName: "Control"
+      name: 'Control'
     },
-    35: {
-      modeName: "Supremacía infernal"
+    6: {
+      name: 'Patrulla'
     },
-    33: {
-      modeName: "Supremacía Disputa"
+    16: {
+      name: 'Asaltos de Ocaso'
     },
-    15: {
-      modeName: "Dobles"
+    3: {
+      name: 'Asaltos normales'
+    },
+  },
+  esmx: {
+    0: {
+      name: 'Todo'
+    },
+    31: {
+      name: 'Supremacía'
+    },
+    7: {
+      name: 'PvE'
+    },
+    5: {
+      name: 'Crisol'
+    },
+    17: {
+      name: 'Nightfall'
+    },
+    38: {
+      name: 'Countdown'
+    },
+    12: {
+      name: 'Clash'
+    },
+    40: {
+      name: 'Social'
+    },
+    2: {
+      name: 'Historia'
+    },
+    4: {
+      name: 'Incursión'
+    },
+    37: {
+      name: 'Survival'
+    },
+    18: {
+      name: 'Asaltos'
+    },
+    10: {
+      name: 'Control'
+    },
+    6: {
+      name: 'Patrulla'
+    },
+    16: {
+      name: 'Asaltos de Ocaso'
+    },
+    3: {
+      name: 'Asaltos normales'
     },
   },
   fr: {
-    23: {
-      modeName: "Élimination"
-    },
-    25: {
-      modeName: "Pagaille"
-    },
-    6: {
-      modeName: "Patrouille"
-    },
-    3: {
-      modeName: "Assauts normaux"
-    },
-    17: {
-      modeName: "Assauts « Épiques »"
-    },
-    19: {
-      modeName: "Bannière de Fer"
-    },
-    16: {
-      modeName: "Assauts « Nuit noire »"
-    },
-    32: {
-      modeName: "Parties privées"
-    },
-    4: {
-      modeName: "Raid"
-    },
-    8: {
-      modeName: "Introduction au JcJ"
-    },
-    12: {
-      modeName: "Choc"
-    },
-    22: {
-      modeName: "Défis de l'Arène"
-    },
-    24: {
-      modeName: "Faille"
-    },
-    36: {
-      modeName: "Pagaille – Suprématie"
-    },
-    27: {
-      modeName: "Pagaille – Carnage"
-    },
     0: {
-      modeName: "Toutes les activités"
-    },
-    30: {
-      modeName: "Défi des vétérans"
-    },
-    18: {
-      modeName: "Assauts"
-    },
-    21: {
-      modeName: "Arène"
-    },
-    28: {
-      modeName: "Contrôle de zone"
-    },
-    9: {
-      modeName: "Escarmouche"
-    },
-    29: {
-      modeName: "Course de Passereaux"
-    },
-    11: {
-      modeName: "Défense"
-    },
-    20: {
-      modeName: "Prison des vétérans"
-    },
-    34: {
-      modeName: "Suprématie"
-    },
-    13: {
-      modeName: "Carnage"
+      name: 'Toutes les activités'
     },
     31: {
-      modeName: "Suprématie"
+      name: 'Suprématie'
     },
     7: {
-      modeName: "JcE"
-    },
-    26: {
-      modeName: "Pagaille – Choc"
-    },
-    2: {
-      modeName: "Histoire"
-    },
-    14: {
-      modeName: "Jugement d'Osiris"
+      name: 'JcE'
     },
     5: {
-      modeName: "L'Épreuve"
+      name: 'L\'Épreuve'
+    },
+    17: {
+      name: 'Nightfall'
+    },
+    38: {
+      name: 'Countdown'
+    },
+    12: {
+      name: 'Clash'
+    },
+    40: {
+      name: 'Social'
+    },
+    2: {
+      name: 'Histoire'
+    },
+    4: {
+      name: 'Raid'
+    },
+    37: {
+      name: 'Survival'
+    },
+    18: {
+      name: 'Assauts'
     },
     10: {
-      modeName: "Domination"
+      name: 'Domination'
     },
-    35: {
-      modeName: "Infernal – Suprématie"
+    6: {
+      name: 'Patrouille'
     },
-    33: {
-      modeName: "Carnage – Suprématie"
+    16: {
+      name: 'Nuit noire'
     },
-    15: {
-      modeName: "En tandem"
+    3: {
+      name: 'Assauts normaux'
     },
   },
   it: {
-    23: {
-      modeName: "Eliminazione"
-    },
-    25: {
-      modeName: "Pandemonio"
-    },
-    6: {
-      modeName: "Pattuglia"
-    },
-    3: {
-      modeName: "Assalti normali"
-    },
-    17: {
-      modeName: "Assalti Eroici"
-    },
-    19: {
-      modeName: "Stendardo di Ferro"
-    },
-    16: {
-      modeName: "Assalti Cala la Notte"
-    },
-    32: {
-      modeName: "Partite private"
-    },
-    4: {
-      modeName: "Incursione"
-    },
-    8: {
-      modeName: "Introduzione"
-    },
-    12: {
-      modeName: "Scontro"
-    },
-    22: {
-      modeName: "Sfide dell'Arena"
-    },
-    24: {
-      modeName: "Frattura"
-    },
-    36: {
-      modeName: "Pandemonio: Supremazia"
-    },
-    27: {
-      modeName: "Pandemonio: Rissa"
-    },
     0: {
-      modeName: "Globale"
-    },
-    30: {
-      modeName: "Sfida degli Anziani"
-    },
-    18: {
-      modeName: "Assalti"
-    },
-    21: {
-      modeName: "Arena"
-    },
-    28: {
-      modeName: "Zone di Controllo"
-    },
-    9: {
-      modeName: "Schermaglia"
-    },
-    29: {
-      modeName: "Gare di Astori"
-    },
-    11: {
-      modeName: "Recupero"
-    },
-    20: {
-      modeName: "Prigione degli Anziani"
-    },
-    34: {
-      modeName: "Supremazia"
-    },
-    13: {
-      modeName: "Rissa"
+      name: 'Globale'
     },
     31: {
-      modeName: "Supremazia"
+      name: 'Supremazia'
     },
     7: {
-      modeName: "PvE"
-    },
-    26: {
-      modeName: "Pandemonio: Scontro"
-    },
-    2: {
-      modeName: "Storia"
-    },
-    14: {
-      modeName: "Prove di Osiride"
+      name: 'PvE'
     },
     5: {
-      modeName: "Crogiolo"
+      name: 'Crogiolo'
+    },
+    17: {
+      name: 'Nightfall'
+    },
+    38: {
+      name: 'Countdown'
+    },
+    12: {
+      name: 'Clash'
+    },
+    40: {
+      name: 'Social'
+    },
+    2: {
+      name: 'Storia'
+    },
+    4: {
+      name: 'Incursione'
+    },
+    37: {
+      name: 'Survival'
+    },
+    18: {
+      name: 'Assalti'
     },
     10: {
-      modeName: "Controllo"
+      name: 'Controllo'
     },
-    35: {
-      modeName: "Inferno: Supremazia"
+    6: {
+      name: 'Pattuglia'
     },
-    33: {
-      modeName: "Supremazia: Rissa"
+    16: {
+      name: 'Assalti Cala la Notte'
     },
-    15: {
-      modeName: "Doppietta"
+    3: {
+      name: 'Assalti normali'
     },
   },
   ja: {
-    23: {
-      modeName: "サバイバル"
-    },
-    25: {
-      modeName: "カオス"
-    },
-    6: {
-      modeName: "パトロール"
-    },
-    3: {
-      modeName: "普通のストライク"
-    },
-    17: {
-      modeName: "英雄ストライク"
-    },
-    19: {
-      modeName: "アイアンバナー"
-    },
-    16: {
-      modeName: "ナイトフォールストライク"
-    },
-    32: {
-      modeName: "非公開対戦"
-    },
-    4: {
-      modeName: "レイド"
-    },
-    8: {
-      modeName: "イントロ"
-    },
-    12: {
-      modeName: "クラッシュ"
-    },
-    22: {
-      modeName: "アリーナの挑戦"
-    },
-    24: {
-      modeName: "暁光"
-    },
-    36: {
-      modeName: "カオス: 闘魂"
-    },
-    27: {
-      modeName: "カオス: ランブル"
-    },
     0: {
-      modeName: "全て"
-    },
-    30: {
-      modeName: "エルダーの挑戦"
-    },
-    18: {
-      modeName: "ストライク"
-    },
-    21: {
-      modeName: "アリーナ"
-    },
-    28: {
-      modeName: "エリアコントロール"
-    },
-    9: {
-      modeName: "スカーミッシュ"
-    },
-    29: {
-      modeName: "スパローレース"
-    },
-    11: {
-      modeName: "サルベージ"
-    },
-    20: {
-      modeName: "エルダーズ・プリズン"
-    },
-    34: {
-      modeName: "闘魂"
-    },
-    13: {
-      modeName: "ランブル"
+      name: '全て'
     },
     31: {
-      modeName: "闘魂"
+      name: '闘魂'
     },
     7: {
-      modeName: "PvE"
-    },
-    26: {
-      modeName: "カオス: クラッシュ"
-    },
-    2: {
-      modeName: "ストーリー"
-    },
-    14: {
-      modeName: "オシリスの試練"
+      name: 'PvE'
     },
     5: {
-      modeName: "クルーシブル"
+      name: 'クルーシブル'
+    },
+    17: {
+      name: 'Nightfall'
+    },
+    38: {
+      name: 'Countdown'
+    },
+    12: {
+      name: 'Clash'
+    },
+    40: {
+      name: 'Social'
+    },
+    2: {
+      name: 'ストーリー'
+    },
+    4: {
+      name: 'レイド'
+    },
+    37: {
+      name: 'Survival'
+    },
+    18: {
+      name: 'ストライク'
     },
     10: {
-      modeName: "コントロール"
+      name: 'コントロール'
     },
-    35: {
-      modeName: "インフェルノ: 闘魂"
+    6: {
+      name: 'パトロール'
     },
-    33: {
-      modeName: "ランブル: 闘魂"
+    16: {
+      name: 'ナイトフォールストライク'
     },
-    15: {
-      modeName: "ダブル"
+    3: {
+      name: '普通のストライク'
+    },
+  },
+  pl: {
+    0: {
+      name: 'All'
+    },
+    31: {
+      name: 'Supremacy'
+    },
+    7: {
+      name: 'PvE'
+    },
+    5: {
+      name: 'Crucible'
+    },
+    17: {
+      name: 'Nightfall'
+    },
+    38: {
+      name: 'Countdown'
+    },
+    12: {
+      name: 'Clash'
+    },
+    40: {
+      name: 'Social'
+    },
+    2: {
+      name: 'Story'
+    },
+    4: {
+      name: 'Raid'
+    },
+    37: {
+      name: 'Survival'
+    },
+    18: {
+      name: 'Strikes'
+    },
+    10: {
+      name: 'Control'
+    },
+    6: {
+      name: 'Patrol'
+    },
+    16: {
+      name: 'Nightfall Strikes'
+    },
+    3: {
+      name: 'Normal Strikes'
     },
   },
   ptbr: {
-    23: {
-      modeName: "Eliminação"
-    },
-    25: {
-      modeName: "Caos"
-    },
-    6: {
-      modeName: "Patrulha"
-    },
-    3: {
-      modeName: "Assaltos normais"
-    },
-    17: {
-      modeName: "Assaltos Heroicos"
-    },
-    19: {
-      modeName: "Bandeira de Ferro"
-    },
-    16: {
-      modeName: "Assaltos do Anoitecer"
-    },
-    32: {
-      modeName: "Partidas privadas"
-    },
-    4: {
-      modeName: "Incursão"
-    },
-    8: {
-      modeName: "Introdução"
-    },
-    12: {
-      modeName: "Enfrentamento"
-    },
-    22: {
-      modeName: "Desafio da Arena"
-    },
-    24: {
-      modeName: "Fissura"
-    },
-    36: {
-      modeName: "Caos: Supremacia"
-    },
-    27: {
-      modeName: "Caos: Briga"
-    },
     0: {
-      modeName: "Tudo"
-    },
-    30: {
-      modeName: "Desafio dos Anciões"
-    },
-    18: {
-      modeName: "Assaltos"
-    },
-    21: {
-      modeName: "Arena"
-    },
-    28: {
-      modeName: "Controle de zonas"
-    },
-    9: {
-      modeName: "Disputa"
-    },
-    29: {
-      modeName: "Corridas de Pardais"
-    },
-    11: {
-      modeName: "Recuperação"
-    },
-    20: {
-      modeName: "Prisão dos Anciões"
-    },
-    34: {
-      modeName: "Supremacia"
-    },
-    13: {
-      modeName: "Briga"
+      name: 'Tudo'
     },
     31: {
-      modeName: "Supremacia"
+      name: 'Supremacia'
     },
     7: {
-      modeName: "PvE"
-    },
-    26: {
-      modeName: "Caos: Enfrentamento"
-    },
-    2: {
-      modeName: "História"
-    },
-    14: {
-      modeName: "Desafios de Osíris"
+      name: 'PvE'
     },
     5: {
-      modeName: "Crisol"
+      name: 'Crisol'
+    },
+    17: {
+      name: 'Nightfall'
+    },
+    38: {
+      name: 'Countdown'
+    },
+    12: {
+      name: 'Clash'
+    },
+    40: {
+      name: 'Social'
+    },
+    2: {
+      name: 'História'
+    },
+    4: {
+      name: 'Incursão'
+    },
+    37: {
+      name: 'Survival'
+    },
+    18: {
+      name: 'Assaltos'
     },
     10: {
-      modeName: "Controle"
+      name: 'Controle'
     },
-    35: {
-      modeName: "Inferno: Supremacia"
+    6: {
+      name: 'Patrulha'
     },
-    33: {
-      modeName: "Briga: Supremacia"
+    16: {
+      name: 'Assaltos do Anoitecer'
     },
-    15: {
-      modeName: "Duplas"
+    3: {
+      name: 'Assaltos normais'
+    },
+  },
+  ru: {
+    0: {
+      name: 'All'
+    },
+    31: {
+      name: 'Supremacy'
+    },
+    7: {
+      name: 'PvE'
+    },
+    5: {
+      name: 'Crucible'
+    },
+    17: {
+      name: 'Nightfall'
+    },
+    38: {
+      name: 'Countdown'
+    },
+    12: {
+      name: 'Clash'
+    },
+    40: {
+      name: 'Social'
+    },
+    2: {
+      name: 'Story'
+    },
+    4: {
+      name: 'Raid'
+    },
+    37: {
+      name: 'Survival'
+    },
+    18: {
+      name: 'Strikes'
+    },
+    10: {
+      name: 'Control'
+    },
+    6: {
+      name: 'Patrol'
+    },
+    16: {
+      name: 'Nightfall Strikes'
+    },
+    3: {
+      name: 'Normal Strikes'
+    },
+  },
+  zhcht: {
+    0: {
+      name: '全部'
+    },
+    31: {
+      name: '至尊模式'
+    },
+    7: {
+      name: 'PvE'
+    },
+    5: {
+      name: '熔爐競技場'
+    },
+    17: {
+      name: 'Nightfall'
+    },
+    38: {
+      name: 'Countdown'
+    },
+    12: {
+      name: 'Clash'
+    },
+    40: {
+      name: 'Social'
+    },
+    2: {
+      name: '主線'
+    },
+    4: {
+      name: '掠奪任務'
+    },
+    37: {
+      name: 'Survival'
+    },
+    18: {
+      name: '突擊任務'
+    },
+    10: {
+      name: '攻佔模式'
+    },
+    6: {
+      name: '巡邏任務'
+    },
+    16: {
+      name: '日暮突擊任務'
+    },
+    3: {
+      name: '普通突擊任務'
+    },
+  },
+  data: {
+    748895195: {
+      icon: '/img/theme/destiny/icons/game_modes/allmodes.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_allmodes.jpg',
+      category: '0'
+    },
+    910991990: {
+      icon: '/img/theme/destiny/icons/game_modes/crucible_supremacy.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
+      category: '2'
+    },
+    1164760493: {
+      icon: '/img/theme/destiny/icons/game_modes/story.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_story_1.jpg',
+      category: '1'
+    },
+    1164760504: {
+      icon: '/img/theme/destiny/icons/game_modes/crucible_default.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
+      category: '2'
+    },
+    1350109474: {
+      icon: '/img/theme/destiny/icons/game_modes/strike_heroic.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_strikes_1.jpg',
+      category: '1'
+    },
+    1370326378: {
+      icon: 'undefined',
+      pgcrImage: 'undefined',
+      category: '0'
+    },
+    1505888634: {
+      icon: '/img/theme/destiny/icons/game_modes/allmodes.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
+      category: '2'
+    },
+    1585787840: {
+      icon: '/img/theme/destiny/icons/game_modes/crucible_default.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
+      category: '2'
+    },
+    1589650888: {
+      icon: '/img/theme/destiny/icons/game_modes/allmodes.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
+      category: '0'
+    },
+    1686739444: {
+      icon: '/img/theme/destiny/icons/game_modes/story.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_story_1.jpg',
+      category: '1'
+    },
+    1826469369: {
+      icon: 'undefined',
+      pgcrImage: 'undefined',
+      category: '0'
+    },
+    2043403989: {
+      icon: '/img/theme/destiny/icons/game_modes/raid.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_raid_1.jpg',
+      category: '1'
+    },
+    2239249083: {
+      icon: '/img/theme/destiny/icons/game_modes/allmodes.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
+      category: '2'
+    },
+    2394616003: {
+      icon: '/img/theme/destiny/icons/game_modes/strike_default.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_strikes_1.jpg',
+      category: '1'
+    },
+    3199098480: {
+      icon: '/img/theme/destiny/icons/game_modes/crucible_control.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
+      category: '2'
+    },
+    3497767639: {
+      icon: '/img/theme/destiny/icons/game_modes/patrol.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_patrol_1.jpg',
+      category: '1'
+    },
+    3789021730: {
+      icon: '/img/theme/destiny/icons/game_modes/strike_nightfall.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_strikes_1.jpg',
+      category: '1'
+    },
+    4110605575: {
+      icon: '/img/theme/destiny/icons/game_modes/strike_default.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_strikes_1.jpg',
+      category: '1'
     },
   },
 };

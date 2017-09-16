@@ -110,19 +110,28 @@
       text-shadow: 0 0 0 white;
   }
 }
-.mode-selected-AllPvP, .mode-selected-Control, .mode-selected-Team, .mode-selected-ThreeVsThree, .mode-selected-Lockdown, .mode-selected-FreeForAll, .mode-selected-Elimination, .mode-selected-Rift, .mode-selected-ZoneControl, .mode-selected-IronBanner, .mode-selected-TrialsOfOsiris, .mode-selected-MayhemClash, .mode-selected-MayhemRumble, .mode-selected-Racing, .mode-selected-Supremacy, .mode-selected-PrivateMatchesAll, .mode-selected-Mayhem {
+.mode-selected-AllPvP,
+.mode-selected-Control,
+.mode-selected-Team,
+.mode-selected-Survival,
+.mode-selected-Countdown {
   @include background-hover-darken($crucible-red);
 }
 .mode-selected-Story {
   @include background-hover-darken($story-orange);
 }
-.mode-selected-Strike, .mode-selected-Nightfall, .mode-selected-Heroic, .mode-selected-AllStrikes {
+.mode-selected-Strike,
+.mode-selected-Nightfall,
+.mode-selected-Heroic,
+.mode-selected-AllStrikes {
   @include background-hover-darken($strike-blue);
 }
-.mode-selected-AllPvE, .mode-selected-Raid, .mode-selected-AllArena, .mode-selected-Arena, .mode-selected-ArenaChallenge {
+.mode-selected-AllPvE,
+.mode-selected-Raid {
   @include background-hover-darken($raid-blue);
 }
-.mode-selected-Patrol {
+.mode-selected-Patrol,
+.mode-selected-Social {
   @include background-hover-darken($patrol-green);
 }
 

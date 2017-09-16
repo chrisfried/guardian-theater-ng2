@@ -104,29 +104,8 @@ export class ActivityService implements OnDestroy {
             try {
               let period = new Date(pgcr.period);
               pgcr.entries.forEach(entry => {
-                let remainingSeconds = 0;
-                let secondsPlayed = 0;
-                let activityDurationSeconds = 0;
-                try {
-                  remainingSeconds = entry.extended.values.remainingTimeAfterQuitSeconds.basic.value;
-                } catch (e) { }
-                try {
-                  secondsPlayed = entry.extended.values.secondsPlayed.basic.value;
-                } catch (e) { }
-                try {
-                  activityDurationSeconds = entry.values.activityDurationSeconds.basic.value;
-                } catch (e) { }
-                if (secondsPlayed) {
-                  entry.startTime = period.getTime() / 1000
-                    + activityDurationSeconds
-                    - remainingSeconds
-                    - secondsPlayed;
-                } else {
-                  entry.startTime = period.getTime() / 1000;
-                }
-                entry.stopTime = period.getTime() / 1000
-                  + activityDurationSeconds
-                  - remainingSeconds;
+                entry.startTime = period.getTime() / 1000 + entry.values.startSeconds.basic.value;
+                entry.stopTime = entry.startTime + entry.values.timePlayedSeconds.basic.value;
               });
             } catch (e) {
               console.log(e);
@@ -338,14 +317,10 @@ export class ActivityService implements OnDestroy {
               if (entry.player.destinyUserInfo.displayName === activeName) {
                 pgcr.active.entry = entry;
                 try {
-                  if (entry.values.team) {
-                    pgcr.active.team = entry.values.team.basic.value;
-                  }
+                  pgcr.active.team = entry.values.team.basic.value;
                 } catch (e) { }
                 try {
-                  if (entry.extended.values.fireTeamId) {
-                    pgcr.active.fireteam = entry.extended.values.fireTeamId.basic.value;
-                  }
+                  pgcr.active.fireteam = entry.values.fireteamId.basic.value;
                 } catch (e) { }
                 return true;
               }
@@ -374,21 +349,21 @@ export class ActivityService implements OnDestroy {
                     }
                     if (!limiter.fireteam
                       && clip.entry.player.destinyUserInfo.displayName !== pgcr.active.entry.player.destinyUserInfo.displayName
-                      && clip.entry.extended.values.fireTeamId
-                      && clip.entry.extended.values.fireTeamId.basic.value === pgcr.active.fireteam) {
+                      && clip.entry.values.fireteamId
+                      && clip.entry.values.fireteamId.basic.value === pgcr.active.fireteam) {
                       return;
                     }
                     if (!limiter.team
                       && clip.entry.player.destinyUserInfo.displayName !== pgcr.active.entry.player.destinyUserInfo.displayName
-                      && (!clip.entry.extended.values.fireTeamId
-                        || (clip.entry.extended.values.fireTeamId
-                          && clip.entry.extended.values.fireTeamId.basic.value !== pgcr.active.fireteam))
+                      && (!clip.entry.values.fireteamId
+                        || (clip.entry.values.fireteamId
+                          && clip.entry.values.fireteamId.basic.value !== pgcr.active.fireteam))
                       && clip.entry.values.team && clip.entry.values.team.basic.value === pgcr.active.team) {
                       return;
                     }
                     if (!limiter.opponents
                       && clip.entry.player.destinyUserInfo.displayName !== pgcr.active.entry.player.destinyUserInfo.displayName
-                      && (!clip.entry.values.team && !clip.entry.extended.values.fireTeamId
+                      && (!clip.entry.values.team && !clip.entry.values.fireteamId
                         || (clip.entry.values.team && clip.entry.values.team.basic.value !== pgcr.active.team))) {
                       return;
                     }

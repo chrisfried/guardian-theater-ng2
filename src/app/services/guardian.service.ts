@@ -16,7 +16,7 @@ export class GuardianService implements OnDestroy {
   private _membershipId: BehaviorSubject<string>;
 
   public searchName: BehaviorSubject<string>;
-  public selectPlatform: BehaviorSubject<boolean>;
+  public searchResults: BehaviorSubject<bungie.SearchDestinyPlayerResult[]>
   public membershipType: BehaviorSubject<number>;
   public displayName: BehaviorSubject<string>;
   public characters: BehaviorSubject<bungie.Character[]>;
@@ -40,7 +40,7 @@ export class GuardianService implements OnDestroy {
     this.activityPage = new BehaviorSubject(0);
 
     this.searchName = new BehaviorSubject('');
-    this.selectPlatform = new BehaviorSubject(false);
+    this.searchResults = new BehaviorSubject([]);
     this.membershipType = new BehaviorSubject(-1);
     this.displayName = new BehaviorSubject('');
     this.characters = new BehaviorSubject([]);
@@ -98,7 +98,6 @@ export class GuardianService implements OnDestroy {
       .distinctUntilChanged()
       .switchMap((url) => {
         this._membershipId.next('');
-        this.selectPlatform.next(false);
         this.noResults.next(false);
         if (url.length) {
           return this.bHttp.get(url)
@@ -111,18 +110,18 @@ export class GuardianService implements OnDestroy {
       .subscribe((res: bungie.SearchDestinyPlayerResponse) => {
         console.log('SearchDestinyPlayer', res);
         try {
-          let Response = res.Response;
+          let Results = res.Response;
           this.settingsService.activeName.next('');
-          if (Response.length === 1) {
-            this._membershipId.next(Response[0].membershipId);
-            this.displayName.next(Response[0].displayName);
-            this.settingsService.activeName.next(Response[0].displayName);
-            this.membershipType.next(Response[0].membershipType);
+          if (Results.length === 1) {
+            this._membershipId.next(Results[0].membershipId);
+            this.displayName.next(Results[0].displayName);
+            this.settingsService.activeName.next(Results[0].displayName);
+            this.membershipType.next(Results[0].membershipType);
           }
-          if (Response.length > 1) {
-            this.selectPlatform.next(true);
+          if (Results.length > 1) {
+            this.searchResults.next(Results);
           }
-          if (Response.length < 1) {
+          if (Results.length < 1) {
             this.noResults.next(true);
           }
         } catch (e) {

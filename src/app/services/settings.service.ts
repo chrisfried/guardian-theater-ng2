@@ -87,9 +87,21 @@ export class SettingsService {
         case 'ja':
           this.userLang.language = 'ja';
           break;
+        case 'pl':
+          this.userLang.language = 'pl';
+          break;
         case 'pt':
           this.userLang.language = 'ptbr';
           break;
+        case 'ru':
+          this.userLang.language = 'ru';
+          break;
+        case 'zh':
+          this.userLang.language = 'zhcht';
+          break;
+      }
+      if (navigator.language === 'es-mx') {
+        this.userLang.language = 'esmx';
       }
     }
   }

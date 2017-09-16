@@ -216,38 +216,25 @@ declare namespace bungie {
     },
     characterId: string,
     values: {
-      assists: BasicStat,
-      score: BasicStat,
-      kills: BasicStat,
-      averageScorePerKill: BasicStat,
-      deaths: BasicStat,
-      averageScorePerLife: BasicStat,
-      completed: BasicStat,
-      killsDeathsRatio: BasicStat,
-      killsDeathsAssists: BasicStat,
       activityDurationSeconds: BasicStat,
+      assists: BasicStat,
+      completed: BasicStat,
+      completionReason: BasicStat,
+      deaths: BasicStat,
+      fireteamId: BasicStat,
+      kills: BasicStat,
+      killsDeathsAssists: BasicStat,
+      killsDeathsRatio: BasicStat,
+      playerCount: BasicStat,
+      startSeconds: BasicStat,
+      timePlayedSeconds: BasicStat,
+      score: BasicStat,
+      averageScorePerKill: BasicStat,
+      averageScorePerLife: BasicStat,
       standing: BasicStat,
       team: BasicStat,
-      completionReason: BasicStat,
-      fireTeamId: BasicStat,
-      playerCount: BasicStat,
       teamScore: BasicStat,
       leaveRemainingSeconds: BasicStat
-    },
-    extended: {
-      weapons?: {
-        referenceId: number,
-        values: {
-          uniqueWeaponKills: BasicStat,
-          uniqueWeaponPrecisionKills: BasicStat,
-          uniqueWeaponKillsPrecissionKills: BasicStat
-        }
-      }[],
-      values: {
-        secondsPlayed?: BasicStat,
-        remainingTimeAfterQuitSeconds?: BasicStat,
-        fireTeamId: BasicStat
-      }
-    },
+    }
   }
 }

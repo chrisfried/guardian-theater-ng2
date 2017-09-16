@@ -9,7 +9,7 @@
   height: 28px;
   line-height: 28px;
 }
-.mode-5, .mode-8, .mode-9, .mode-10, .mode-11, .mode-12, .mode-13, .mode-14, .mode-15, .mode-19, .mode-23, .mode-24, .mode-26, .mode-27, .mode-28, .mode-29, .mode-31, .mode-32, .mode-34, .mode-35 {
+.mode-5, .mode-8, .mode-9, .mode-10, .mode-11, .mode-12, .mode-13, .mode-14, .mode-15, .mode-19, .mode-23, .mode-24, .mode-26, .mode-27, .mode-28, .mode-29, .mode-31, .mode-32, .mode-34, .mode-35, .mode-37, .mode-38 {
   background-color: $crucible-red;
   &.spinner-block, .activity-info {
     @include background-hover-darken($crucible-red);

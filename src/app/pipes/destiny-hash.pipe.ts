@@ -18,13 +18,13 @@ export class DestinyHashPipe implements PipeTransform {
     try {
       switch (type) {
         case 'race':
-          return DestinyRaceDefinition[this.settingsService.userLang.language][hash].raceName;
+          return DestinyRaceDefinition[this.settingsService.userLang.language][hash].name;
         case 'class':
-          return DestinyClassDefinition[this.settingsService.userLang.language][hash].className;
+          return DestinyClassDefinition[this.settingsService.userLang.language][hash].name;
         case 'activityName':
-          return DestinyActivityDefinition[this.settingsService.userLang.language][hash].activityName;
+          return DestinyActivityDefinition[this.settingsService.userLang.language][hash].name;
         case 'activityMode':
-          return DestinyActivityModeDefinition[this.settingsService.userLang.language][hash].modeName;
+          return DestinyActivityModeDefinition[this.settingsService.userLang.language][hash].name;
         default:
           return '';
       }
