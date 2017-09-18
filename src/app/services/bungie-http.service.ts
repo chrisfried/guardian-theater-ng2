@@ -15,7 +15,7 @@ export class BungieHttpService {
         this._apiKey = '4da0bc9d76774c5696ea2703b129a2cd';
         break;
 
-      case 'https://beta.guardian.theater':
+      case 'https://d1.guardian.theater':
         this._apiKey = '97c176d9f0f144f0b70bb69a455234a6';
         break;
 
