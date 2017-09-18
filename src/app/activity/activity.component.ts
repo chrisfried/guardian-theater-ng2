@@ -25,7 +25,6 @@ export class ActivityComponent implements OnInit, OnDestroy {
 
   constructor(
     private activityService: ActivityService,
-    private bHttp: BungieHttpService,
     public twitchService: TwitchService,
     private xboxService: XboxService,
     private router: Router,

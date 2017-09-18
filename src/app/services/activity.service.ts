@@ -90,6 +90,9 @@ export class ActivityService implements OnDestroy {
         .subscribe((res: bungie.PostGameCarnageReportResponse) => {
           console.log(res);
           try {
+            if (res.ErrorCode !== 1) {
+              this.bHttp.error.next(res);
+            }
             this.pgcr.next(res.Response);
           } catch (e) {
             console.log(e);
@@ -180,25 +183,30 @@ export class ActivityService implements OnDestroy {
                         }
                       })
                       .subscribe((res: bungie.PartnershipResponse) => {
-                        if (res.Response.length) {
-                          this.twitchService.twitch[membershipId].next({
-                            displayName: displayName,
-                            checkedId: true,
-                            twitchId: res.Response[0].name,
-                            bungieId: membershipId,
-                            checkedResponse: false,
-                            response: null
-                          });
-                        } else {
-                          this.twitchService.twitch[membershipId].next({
-                            displayName: displayName,
-                            checkedId: true,
-                            twitchId: '',
-                            bungieId: membershipId,
-                            checkedResponse: true,
-                            response: null
-                          });
-                        }
+                        try {
+                          if (res.ErrorCode !== 1) {
+                            this.bHttp.error.next(res);
+                          }
+                          if (res.Response.length) {
+                            this.twitchService.twitch[membershipId].next({
+                              displayName: displayName,
+                              checkedId: true,
+                              twitchId: res.Response[0].name,
+                              bungieId: membershipId,
+                              checkedResponse: false,
+                              response: null
+                            });
+                          } else {
+                            this.twitchService.twitch[membershipId].next({
+                              displayName: displayName,
+                              checkedId: true,
+                              twitchId: '',
+                              bungieId: membershipId,
+                              checkedResponse: true,
+                              response: null
+                            });
+                          }
+                        } catch (e) { console.log(e); }
                       })
                   );
 

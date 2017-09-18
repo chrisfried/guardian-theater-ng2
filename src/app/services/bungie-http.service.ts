@@ -1,14 +1,18 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers } from '@angular/http';
+import { BehaviorSubject } from 'rxjs/Rx';
 
 @Injectable()
 export class BungieHttpService {
   private _origin: string;
   private _apiKey: string;
+  public error: BehaviorSubject<bungie.Response>;
 
   constructor(
     private http: Http
   ) {
+    this.error = new BehaviorSubject(null);
+    this.error.subscribe(res => console.log(res));
     this._origin = window.location.protocol + '//' + window.location.hostname;
     switch (this._origin) {
       case 'http://dev.guardian.theater':

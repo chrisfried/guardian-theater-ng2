@@ -110,6 +110,9 @@ export class GuardianService implements OnDestroy {
       .subscribe((res: bungie.SearchDestinyPlayerResponse) => {
         console.log('SearchDestinyPlayer', res);
         try {
+          if (res.ErrorCode !== 1) {
+            this.bHttp.error.next(res);
+          }
           let Results = res.Response;
           this.settingsService.activeName.next('');
           if (Results.length === 1) {
@@ -158,6 +161,9 @@ export class GuardianService implements OnDestroy {
       .subscribe((res: bungie.AccountResponse) => {
         console.log('Profile', res);
         try {
+          if (res.ErrorCode !== 1) {
+            this.bHttp.error.next(res);
+          }
           this.characters.next(res.Response.characters.data);
         } catch (e) {
           console.log(e);
@@ -222,6 +228,9 @@ export class GuardianService implements OnDestroy {
       .subscribe((res: bungie.ActivityHistoryResponse) => {
         console.log('Activities', res);
         try {
+          if (res.ErrorCode !== 1) {
+            this.bHttp.error.next(res);
+          }
           if (!res.Response || !res.Response.activities || !res.Response.activities.length) {
             this.noActivities.next(true);
           }

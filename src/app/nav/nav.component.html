@@ -27,7 +27,7 @@
      <img class="logo" src="/assets/images/travelereel.png">
     </a>
   </div>
-  <div class="small-10 medium-12 columns order-4 medium-order-2">
+  <div class="small-10 medium-12 columns order-4 medium-order-4">
     <form class="row search-form" (ngSubmit)="search()">
       <div class="small-12 columns input-group search-bar">
         <input [(ngModel)]="searchString" name="searchString" text="quick-links" class="input-group-field search-box" type="search" placeholder="Guardian" autofocus="true">
@@ -36,5 +36,9 @@
         </div>
       </div>
     </form>
+  </div>
+  <div *ngIf="errorRes && errorRes.ErrorCode && errorRes.Message" class="small-12 columns order-5 medium-order-5 callout warning">
+    <h5>Bungie API Error Code {{ errorRes.ErrorCode }}</h5>
+    <p>{{ errorRes.Message }}</p>
   </div>
 </div>

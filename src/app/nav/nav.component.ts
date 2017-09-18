@@ -1,6 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
 import { LocalStorageService } from 'angular-2-local-storage';
+import { BungieHttpService } from '../services/bungie-http.service';
+import { Subscription } from 'rxjs/Rx';
 
 @Component({
   selector: 'app-nav',
@@ -15,13 +17,17 @@ export class NavComponent implements OnInit, OnDestroy {
   public betaTextHidden: {
     hidden?: boolean
   };
+  public errorRes: bungie.Response;
+  private _errorRes$: Subscription;
 
   constructor(
     private router: Router,
-    private localStorageService: LocalStorageService
+    private localStorageService: LocalStorageService,
+    private bHttp: BungieHttpService
   ) {}
 
   ngOnInit() {
+    this._errorRes$ = this.bHttp.error.subscribe(res => this.errorRes = res);
     this.searchString = '';
       this.ad = true;
     this.adInterval = setInterval(() => {
@@ -37,6 +43,7 @@ export class NavComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
+    this._errorRes$.unsubscribe();
     clearInterval(this.adInterval);
     clearTimeout(this.adTimeout);
   }
