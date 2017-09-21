@@ -41,7 +41,7 @@
 
             <div *ngIf="pgcr.loading && !pgcr.loading.twitch && !pgcr.loading.bungie && !pgcr.loading.xbox">
               <span *ngIf="pgcr.clips && pgcr.clips.length">{{ (pgcr.clips$ | async).length }}</span>
-              <span class="fi-x" *ngIf="!pgcr.clips || !pgcr.clips.length"></span>
+              <span *ngIf="!pgcr.clips || !pgcr.clips.length">0</span>
             </div>
           </div>
         </div>

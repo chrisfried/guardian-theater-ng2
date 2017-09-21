@@ -114,10 +114,10 @@ export const DestinyRaceDefinition = {
       name: 'Exo'
     },
     2803282938: {
-      name: 'Awoken'
+      name: '覺醒者'
     },
     3887404748: {
-      name: 'Human'
+      name: '人類'
     },
   },
 };

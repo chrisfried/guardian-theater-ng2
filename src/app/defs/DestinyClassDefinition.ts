@@ -111,13 +111,13 @@ export const DestinyClassDefinition = {
   },
   zhcht: {
     671679327: {
-      name: 'Hunter'
+      name: '獵人'
     },
     2271682572: {
-      name: 'Warlock'
+      name: '術士'
     },
     3655393761: {
-      name: 'Titan'
+      name: '泰坦'
     },
   },
 };

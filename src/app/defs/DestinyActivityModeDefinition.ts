@@ -13,7 +13,10 @@ export const DestinyActivityModeDefinition = {
       name: 'Schmelztiegel'
     },
     17: {
-      name: 'Nightfall'
+      name: 'Heroic Nightfall'
+    },
+    39: {
+      name: 'Trials of the Nine'
     },
     38: {
       name: 'Countdown'
@@ -63,7 +66,10 @@ export const DestinyActivityModeDefinition = {
       name: 'Crucible'
     },
     17: {
-      name: 'Nightfall'
+      name: 'Heroic Nightfall'
+    },
+    39: {
+      name: 'Trials of the Nine'
     },
     38: {
       name: 'Countdown'
@@ -113,7 +119,10 @@ export const DestinyActivityModeDefinition = {
       name: 'Crisol'
     },
     17: {
-      name: 'Nightfall'
+      name: 'Heroic Nightfall'
+    },
+    39: {
+      name: 'Trials of the Nine'
     },
     38: {
       name: 'Countdown'
@@ -163,7 +172,10 @@ export const DestinyActivityModeDefinition = {
       name: 'Crisol'
     },
     17: {
-      name: 'Nightfall'
+      name: 'Heroic Nightfall'
+    },
+    39: {
+      name: 'Trials of the Nine'
     },
     38: {
       name: 'Countdown'
@@ -213,7 +225,10 @@ export const DestinyActivityModeDefinition = {
       name: 'L\'Épreuve'
     },
     17: {
-      name: 'Nightfall'
+      name: 'Heroic Nightfall'
+    },
+    39: {
+      name: 'Trials of the Nine'
     },
     38: {
       name: 'Countdown'
@@ -263,7 +278,10 @@ export const DestinyActivityModeDefinition = {
       name: 'Crogiolo'
     },
     17: {
-      name: 'Nightfall'
+      name: 'Heroic Nightfall'
+    },
+    39: {
+      name: 'Trials of the Nine'
     },
     38: {
       name: 'Countdown'
@@ -313,7 +331,10 @@ export const DestinyActivityModeDefinition = {
       name: 'クルーシブル'
     },
     17: {
-      name: 'Nightfall'
+      name: 'Heroic Nightfall'
+    },
+    39: {
+      name: 'Trials of the Nine'
     },
     38: {
       name: 'Countdown'
@@ -363,7 +384,10 @@ export const DestinyActivityModeDefinition = {
       name: 'Crucible'
     },
     17: {
-      name: 'Nightfall'
+      name: 'Heroic Nightfall'
+    },
+    39: {
+      name: 'Trials of the Nine'
     },
     38: {
       name: 'Countdown'
@@ -413,7 +437,10 @@ export const DestinyActivityModeDefinition = {
       name: 'Crisol'
     },
     17: {
-      name: 'Nightfall'
+      name: 'Heroic Nightfall'
+    },
+    39: {
+      name: 'Trials of the Nine'
     },
     38: {
       name: 'Countdown'
@@ -463,7 +490,10 @@ export const DestinyActivityModeDefinition = {
       name: 'Crucible'
     },
     17: {
-      name: 'Nightfall'
+      name: 'Heroic Nightfall'
+    },
+    39: {
+      name: 'Trials of the Nine'
     },
     38: {
       name: 'Countdown'
@@ -501,19 +531,22 @@ export const DestinyActivityModeDefinition = {
   },
   zhcht: {
     0: {
-      name: '全部'
+      name: 'All'
     },
     31: {
-      name: '至尊模式'
+      name: 'Supremacy'
     },
     7: {
       name: 'PvE'
     },
     5: {
-      name: '熔爐競技場'
+      name: 'Crucible'
     },
     17: {
-      name: 'Nightfall'
+      name: 'Heroic Nightfall'
+    },
+    39: {
+      name: 'Trials of the Nine'
     },
     38: {
       name: 'Countdown'
@@ -525,28 +558,28 @@ export const DestinyActivityModeDefinition = {
       name: 'Social'
     },
     2: {
-      name: '主線'
+      name: 'Story'
     },
     4: {
-      name: '掠奪任務'
+      name: 'Raid'
     },
     37: {
       name: 'Survival'
     },
     18: {
-      name: '突擊任務'
+      name: 'Strikes'
     },
     10: {
-      name: '攻佔模式'
+      name: 'Control'
     },
     6: {
-      name: '巡邏任務'
+      name: 'Patrol'
     },
     16: {
-      name: '日暮突擊任務'
+      name: 'Nightfall Strikes'
     },
     3: {
-      name: '普通突擊任務'
+      name: 'Normal Strikes'
     },
   },
   data: {
@@ -576,9 +609,9 @@ export const DestinyActivityModeDefinition = {
       category: '1'
     },
     1370326378: {
-      icon: 'undefined',
-      pgcrImage: 'undefined',
-      category: '0'
+      icon: '/img/theme/destiny/icons/game_modes/allmodes.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
+      category: '2'
     },
     1505888634: {
       icon: '/img/theme/destiny/icons/game_modes/allmodes.png',

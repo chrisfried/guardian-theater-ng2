@@ -42,7 +42,6 @@ languages.forEach(language => {
     try {
       let file = fs.createWriteStream('./utils/defs/' + noHyphen + '/' + definition + '.json');
       https.get('https://destiny.plumbing/2/' + language + '/raw/' + definition + '.json', response => {
-        console.log(response);
         response.pipe(file);
       });
     } catch (e) { console.log(e); }
