@@ -1,5 +1,9 @@
 # Guardian Theater
 
+This fork is now host to d1.guardian.theater, the Destiny 1 version of Guardian Theater. It will hopefully change very little from here on out.
+
+For active development of guardian.theater, see: https://github.com/chrisfried/guardian-theater-ng2
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
 
 ## Development server
