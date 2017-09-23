@@ -131,20 +131,22 @@ declare namespace bungie {
   }
 
   interface Account {
-    membershipId: string,
-    membershipType: number,
-    characters: {
+    characters?: {
       data: any
     },
-    inventory: {
-      items: {}[],
-      currencies: {
-        itemHash: number,
-        value: number
-      }[]
-    },
-    grimoireScore: number,
-    versions: number
+    profile?: {
+      data: {
+        characterIds: string[],
+        dateLastPlayed: string,
+        userInfo: {
+          displayName: string,
+          membershipId: string,
+          membershipType: number
+        },
+        versionsOwned: number
+      },
+      privacy: number
+    }
   }
 
   interface ActivityHistory {

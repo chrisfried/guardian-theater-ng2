@@ -38,7 +38,7 @@ export class ActivityService implements OnDestroy {
 
     this.subs.push(this.settingsService.activeName
       .subscribe(
-      displayName => this._activeName = displayName
+        displayName => this._activeName = displayName
       )
     );
 
@@ -88,14 +88,13 @@ export class ActivityService implements OnDestroy {
           }
         })
         .subscribe((res: bungie.PostGameCarnageReportResponse) => {
-          console.log(res);
           try {
             if (res.ErrorCode !== 1) {
               this.bHttp.error.next(res);
             }
             this.pgcr.next(res.Response);
           } catch (e) {
-            console.log(e);
+            console.error(e);
           }
         })
     );
@@ -111,7 +110,7 @@ export class ActivityService implements OnDestroy {
                 entry.stopTime = entry.startTime + entry.values.timePlayedSeconds.basic.value;
               });
             } catch (e) {
-              console.log(e);
+              console.error(e);
             }
 
             try {
@@ -130,7 +129,7 @@ export class ActivityService implements OnDestroy {
                 });
               }
             } catch (e) {
-              console.log(e);
+              console.error(e);
             }
 
             if (!pgcr.clips$) {
@@ -206,7 +205,7 @@ export class ActivityService implements OnDestroy {
                               response: null
                             });
                           }
-                        } catch (e) { console.log(e); }
+                        } catch (e) { console.error(e); }
                       })
                   );
 
@@ -312,7 +311,7 @@ export class ActivityService implements OnDestroy {
                 }
               });
             } catch (e) {
-              console.log(e);
+              console.error(e);
             }
 
             pgcr.active = {
@@ -394,7 +393,7 @@ export class ActivityService implements OnDestroy {
             try {
               this.membershipType.next(pgcr.entries[0].player.destinyUserInfo.membershipType);
             } catch (e) {
-              console.log(e);
+              console.error(e);
             }
           }
           if (type === 1 && pgcr) {
@@ -494,7 +493,7 @@ export class ActivityService implements OnDestroy {
 
               });
             } catch (e) {
-              console.log(e);
+              console.error(e);
             }
           }
         })

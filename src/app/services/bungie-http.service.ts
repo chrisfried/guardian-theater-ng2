@@ -12,7 +12,6 @@ export class BungieHttpService {
     private http: Http
   ) {
     this.error = new BehaviorSubject(null);
-    this.error.subscribe(res => console.log(res));
     this._origin = window.location.protocol + '//' + window.location.hostname;
     switch (this._origin) {
       case 'http://dev.guardian.theater':

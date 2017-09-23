@@ -1,12 +1,5 @@
-<div *ngIf="!searchResults && !displayName && !activeCharacter && !(guardianService.noResults | async)" class="profile-spinner-wrapper">
+<div *ngIf="!displayName && !activeCharacter && !(guardianService.noResults | async)" class="profile-spinner-wrapper">
   <div class="fi-widget spinner profile-spinner" title="Fetching Bungie Profile..."></div>
-</div>
-<div *ngIf="guardianService.noResults | async">Guardian {{ guardianService.searchName | async }} not found.</div>
-
-<div *ngIf="searchResults && !displayName" class="columns small-12 button-group expanded">
-  <button type="button" class="button xbox filter-toggle" (click)="selectPlatform(1)" title="Xbox"><span class="fi-social-xbox"></span></button>
-  <button type="button" class="button playstation filter-toggle" (click)="selectPlatform(2)" title="PlayStation"><span class="fi-social-playstation"></span></button>
-  <!-- <div *ngFor="let result of searchResults">{{ result | json }}</div> -->
 </div>
 
 <div *ngIf="displayName && activeCharacter" class="profile-wrapper">

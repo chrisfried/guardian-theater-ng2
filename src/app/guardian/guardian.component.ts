@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { GuardianService } from '../services/guardian.service';
 import { SettingsService } from '../services/settings.service';
-import { Router, ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Subscription } from 'rxjs/Rx';
 
 @Component({
@@ -18,6 +18,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
   private _guardian: string;
 
   public membershipType: number;
+  public membershipId: string;
   public displayName: string;
   public searchResults: bungie.SearchDestinyPlayerResult[];
   public characters: bungie.Character[];
@@ -29,23 +30,73 @@ export class GuardianComponent implements OnInit, OnDestroy {
 
   constructor(
     private router: Router,
-    private route: ActivatedRoute,
+    private activatedRoute: ActivatedRoute,
     public guardianService: GuardianService,
     private settingsService: SettingsService
   ) { }
 
   ngOnInit() {
 
+    // TO DO: If membershipType !== 1, 2, or 4, redirect to search.
+
     this.subs = [];
+
+    this.subs.push(this.activatedRoute.params
+      .subscribe((params: Params) => {
+        if (!(params['membershipType'] === '1' || params['membershipType'] === '2' || params['membershipType'] === '4')) {
+          this.router.navigate(['/search', params['membershipType']], { replaceUrl: true });
+        }
+        if (params['membershipType'] && params['membershipId'] && !params['characterId']) {
+          this.subs.push(this.guardianService.characters.subscribe(characters => {
+            try {
+              let charactersArray = [];
+              for (let key in characters) {
+                if (characters[key]) {
+                  charactersArray.push(characters[key]);
+                }
+              }
+              if (charactersArray[0].characterId) {
+                this.router.navigate(['/guardian', params['membershipType'], params['membershipId'],
+                  charactersArray[0].characterId, 'None', 0], { replaceUrl: true });
+              }
+            } catch (e) { }
+          }));
+        }
+
+        if (params['membershipType']) {
+          this.guardianService.membershipType.next(+params['membershipType']);
+        } else {
+          this.guardianService.membershipType.next(-1);
+        }
+
+        if (params['membershipId']) {
+          this.guardianService.membershipId.next(params['membershipId']);
+        } else {
+          this.guardianService.membershipId.next('');
+        }
+
+        if (params['characterId']) {
+          this.guardianService.characterId.next(params['characterId']);
+        } else {
+          this.guardianService.characterId.next('');
+        }
+
+        if (params['gamemode']) {
+          this.guardianService.activityMode.next(params['gamemode']);
+        } else {
+          this.guardianService.activityMode.next('None');
+        }
+
+        if (params['page']) {
+          this.guardianService.activityPage.next(+params['page']);
+        } else {
+          this.guardianService.activityPage.next(0);
+        }
+      }));
 
     this.subs.push(this.guardianService.displayName
       .subscribe(name => {
         this.displayName = name;
-      }));
-
-    this.subs.push(this.guardianService.searchResults
-      .subscribe(results => {
-        this.searchResults = results;
       }));
 
     this.subs.push(this.guardianService.membershipType
@@ -53,9 +104,9 @@ export class GuardianComponent implements OnInit, OnDestroy {
         this.membershipType = type;
       }));
 
-    this.subs.push(this.guardianService.searchName
-      .subscribe(name => {
-        this._guardian = name;
+    this.subs.push(this.guardianService.membershipId
+      .subscribe(type => {
+        this.membershipId = type;
       }));
 
     this.subs.push(this.guardianService.characters
@@ -103,28 +154,24 @@ export class GuardianComponent implements OnInit, OnDestroy {
     this.subs.forEach(sub => sub.unsubscribe());
   }
 
-  selectPlatform(platform: string) {
-    this.router.navigate(['/guardian', this._guardian, platform]);
-  }
-
   selectCharacter(characterId: string) {
-    this.router.navigate(['/guardian', this._guardian, this.membershipType, characterId, this.gamemode, 0]);
+    this.router.navigate(['/guardian', this.membershipType, this.membershipId, characterId, this.gamemode, 0]);
   }
 
   selectGamemode(gamemode: string) {
-    this.router.navigate(['/guardian', this._guardian, this.membershipType, this.activeCharacter.characterId, gamemode, 0]);
+    this.router.navigate(['/guardian', this.membershipType, this.membershipId, this.activeCharacter.characterId, gamemode, 0]);
   }
 
   nextPage() {
     this.router.navigate([
-      '/guardian', this._guardian, this.membershipType, this.activeCharacter.characterId, this.gamemode, this.page + 1
+      '/guardian', this.membershipType, this.membershipId, this.activeCharacter.characterId, this.gamemode, this.page + 1
     ]);
   }
 
   prevPage() {
     if (this.page > 0) {
       this.router.navigate([
-        '/guardian', this._guardian, this.membershipType, this.activeCharacter.characterId, this.gamemode, this.page - 1
+        '/guardian', this.membershipType, this.membershipId, this.activeCharacter.characterId, this.gamemode, this.page - 1
       ]);
     }
   }

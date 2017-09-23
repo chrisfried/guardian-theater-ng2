@@ -39,7 +39,6 @@ export class ActivityComponent implements OnInit, OnDestroy {
     );
     this.subs.push(this.activityService.pgcr
       .subscribe((pgcr: gt.PostGameCarnageReport) => {
-        console.log('pgcr', pgcr)
         this.pgcr = pgcr;
         if (pgcr && !pgcr.loading) {
           pgcr.loading = {
@@ -134,9 +133,9 @@ export class ActivityComponent implements OnInit, OnDestroy {
     ]);
   }
 
-  toGuardian(displayName, characterId) {
+  toGuardian(membershipId, characterId) {
     this.router.navigate([
-      '/guardian', displayName, this.membershipType, characterId
+      '/guardian', this.membershipType, membershipId, characterId, 'None', 0
     ]);
   }
 

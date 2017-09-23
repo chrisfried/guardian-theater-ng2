@@ -13,7 +13,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Schmelztiegel'
     },
     17: {
-      name: 'Heroic Nightfall'
+      name: 'Prestige Nightfall'
     },
     39: {
       name: 'Trials of the Nine'
@@ -66,7 +66,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Crucible'
     },
     17: {
-      name: 'Heroic Nightfall'
+      name: 'Prestige Nightfall'
     },
     39: {
       name: 'Trials of the Nine'
@@ -119,7 +119,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Crisol'
     },
     17: {
-      name: 'Heroic Nightfall'
+      name: 'Prestige Nightfall'
     },
     39: {
       name: 'Trials of the Nine'
@@ -172,7 +172,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Crisol'
     },
     17: {
-      name: 'Heroic Nightfall'
+      name: 'Prestige Nightfall'
     },
     39: {
       name: 'Trials of the Nine'
@@ -225,7 +225,7 @@ export const DestinyActivityModeDefinition = {
       name: 'L\'Épreuve'
     },
     17: {
-      name: 'Heroic Nightfall'
+      name: 'Prestige Nightfall'
     },
     39: {
       name: 'Trials of the Nine'
@@ -278,7 +278,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Crogiolo'
     },
     17: {
-      name: 'Heroic Nightfall'
+      name: 'Prestige Nightfall'
     },
     39: {
       name: 'Trials of the Nine'
@@ -331,7 +331,7 @@ export const DestinyActivityModeDefinition = {
       name: 'クルーシブル'
     },
     17: {
-      name: 'Heroic Nightfall'
+      name: 'Prestige Nightfall'
     },
     39: {
       name: 'Trials of the Nine'
@@ -372,19 +372,19 @@ export const DestinyActivityModeDefinition = {
   },
   pl: {
     0: {
-      name: 'All'
+      name: 'Wszystko'
     },
     31: {
-      name: 'Supremacy'
+      name: 'Supremacja'
     },
     7: {
       name: 'PvE'
     },
     5: {
-      name: 'Crucible'
+      name: 'Tygiel'
     },
     17: {
-      name: 'Heroic Nightfall'
+      name: 'Prestige Nightfall'
     },
     39: {
       name: 'Trials of the Nine'
@@ -399,28 +399,28 @@ export const DestinyActivityModeDefinition = {
       name: 'Social'
     },
     2: {
-      name: 'Story'
+      name: 'Fabuła'
     },
     4: {
-      name: 'Raid'
+      name: 'Najazd'
     },
     37: {
       name: 'Survival'
     },
     18: {
-      name: 'Strikes'
+      name: 'Szturmy'
     },
     10: {
-      name: 'Control'
+      name: 'Kontrola'
     },
     6: {
       name: 'Patrol'
     },
     16: {
-      name: 'Nightfall Strikes'
+      name: 'Nocne szturmy'
     },
     3: {
-      name: 'Normal Strikes'
+      name: 'Zwykłe szturmy'
     },
   },
   ptbr: {
@@ -437,7 +437,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Crisol'
     },
     17: {
-      name: 'Heroic Nightfall'
+      name: 'Prestige Nightfall'
     },
     39: {
       name: 'Trials of the Nine'
@@ -478,19 +478,19 @@ export const DestinyActivityModeDefinition = {
   },
   ru: {
     0: {
-      name: 'All'
+      name: 'Все'
     },
     31: {
-      name: 'Supremacy'
+      name: 'Превосходство'
     },
     7: {
       name: 'PvE'
     },
     5: {
-      name: 'Crucible'
+      name: 'Горнило'
     },
     17: {
-      name: 'Heroic Nightfall'
+      name: 'Prestige Nightfall'
     },
     39: {
       name: 'Trials of the Nine'
@@ -505,45 +505,45 @@ export const DestinyActivityModeDefinition = {
       name: 'Social'
     },
     2: {
-      name: 'Story'
+      name: 'Сюжет'
     },
     4: {
-      name: 'Raid'
+      name: 'Рейд'
     },
     37: {
       name: 'Survival'
     },
     18: {
-      name: 'Strikes'
+      name: 'Налеты'
     },
     10: {
-      name: 'Control'
+      name: 'Контроль'
     },
     6: {
-      name: 'Patrol'
+      name: 'Патруль'
     },
     16: {
-      name: 'Nightfall Strikes'
+      name: 'Сумрачные налеты'
     },
     3: {
-      name: 'Normal Strikes'
+      name: 'Обычные налеты'
     },
   },
   zhcht: {
     0: {
-      name: 'All'
+      name: '全部'
     },
     31: {
-      name: 'Supremacy'
+      name: '至尊模式'
     },
     7: {
       name: 'PvE'
     },
     5: {
-      name: 'Crucible'
+      name: '熔爐競技場'
     },
     17: {
-      name: 'Heroic Nightfall'
+      name: 'Prestige Nightfall'
     },
     39: {
       name: 'Trials of the Nine'
@@ -558,28 +558,28 @@ export const DestinyActivityModeDefinition = {
       name: 'Social'
     },
     2: {
-      name: 'Story'
+      name: '主線'
     },
     4: {
-      name: 'Raid'
+      name: '掠奪任務'
     },
     37: {
       name: 'Survival'
     },
     18: {
-      name: 'Strikes'
+      name: '突擊任務'
     },
     10: {
-      name: 'Control'
+      name: '攻佔模式'
     },
     6: {
-      name: 'Patrol'
+      name: '巡邏任務'
     },
     16: {
-      name: 'Nightfall Strikes'
+      name: '日暮突擊任務'
     },
     3: {
-      name: 'Normal Strikes'
+      name: '普通突擊任務'
     },
   },
   data: {

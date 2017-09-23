@@ -3,6 +3,7 @@
 .profile {
   background: $dark-blue;
   background-size: cover;
+  background-position: center;
   color: $light-grey;
   height: 75px;
   margin-bottom: 1rem;
@@ -17,6 +18,7 @@
   }
 
   .emblem {
+    display: none;
     background-color: $dark-blue;
     background-size: cover;
     height: 46px;
@@ -29,7 +31,7 @@
   .active-character {
     font-size: 1.2em;
     height: 50px;
-    padding: 0 0 0 55px;
+    padding: 0 0 0 20%;
   }
 
   .gamertag {
@@ -61,6 +63,7 @@
     display: block;
     height: 25px;
     padding: 2px 5px;
+    text-align: center;
   }
 
   .class-name {

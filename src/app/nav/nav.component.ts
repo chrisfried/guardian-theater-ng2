@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, Event } from '@angular/router';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { BungieHttpService } from '../services/bungie-http.service';
 import { Subscription } from 'rxjs/Rx';
@@ -19,6 +19,7 @@ export class NavComponent implements OnInit, OnDestroy {
   };
   public errorRes: bungie.Response;
   private _errorRes$: Subscription;
+  private _routerEvent$: Subscription;
 
   constructor(
     private router: Router,
@@ -27,6 +28,10 @@ export class NavComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit() {
+    this._routerEvent$ = this.router.events
+      .subscribe((event: Event) => {
+        this.errorRes = null;
+      });
     this._errorRes$ = this.bHttp.error.subscribe(res => this.errorRes = res);
     this.searchString = '';
       this.ad = true;
@@ -43,6 +48,7 @@ export class NavComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
+    this._routerEvent$.unsubscribe();
     this._errorRes$.unsubscribe();
     clearInterval(this.adInterval);
     clearTimeout(this.adTimeout);
