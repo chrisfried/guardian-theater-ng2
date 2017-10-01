@@ -42,7 +42,7 @@ export class GtBadgePipe implements PipeTransform {
       '10969660' // VanessaMagick
     ];
     if (owner.indexOf(membershipId) > -1) {
-      return 'Owner';
+      return 'Ownerer';
     } else if (contributors.indexOf(membershipId) > -1) {
       return 'Contributor';
     } else if (shirt.indexOf(membershipId) > -1) {

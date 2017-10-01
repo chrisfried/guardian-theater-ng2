@@ -3,10 +3,10 @@
 </div>
 
 <div *ngIf="displayName && activeCharacter" class="profile-wrapper">
-  <div class="profile small-12 columns" [ngStyle]="{'background-image': 'url(//www.bungie.net' + activeCharacter.emblemBackgroundPath + ')'}">
+  <div class="profile small-12 columns" [ngStyle]="{'background-image': 'url(//www.bungie.net' + (activeCharacter.emblemHash | destinyHash:'emblemSpecial') + ')'}">
     <div class="row">
       <div class="active-character">
-        <div class="emblem" [ngStyle]="{'background-image': 'url(//www.bungie.net' + activeCharacter.emblemPath + ')'}"></div>
+        <div class="emblem" [ngStyle]="{'background-image': 'url(//www.bungie.net' + (activeCharacter.emblemHash | destinyHash:'emblemOverlay') + ')'}"></div>
         <div class="gamertag">
           {{ displayName }}
         </div>
@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="row characters" *ngIf="characters">
-      <div class="expand columns character" *ngFor="let character of characters" [ngStyle]="{'background-image': character.characterId === activeCharacter.characterId ? '' : 'url(//www.bungie.net' + character.emblemBackgroundPath + ')'}">
+      <div class="expand columns character" *ngFor="let character of characters" [ngStyle]="{'background-image': character.characterId === activeCharacter.characterId ? '' : 'url(//www.bungie.net' + (character.emblemHash | destinyHash:'emblemSpecial') + ')'}">
         <a (click)="selectCharacter(character.characterId)"><span class="class-name">{{ character.classHash | destinyHash:'class' }} </span><span class="power-level">{{ character.light }}</span></a>
       </div>
     </div>
@@ -31,12 +31,15 @@
         <option label="Patrol" value="Patrol">Patrol</option>
         <option label="All PvE" value="AllPvE">All PvE</option>
         <option label="Control" value="Control">Control</option>
-        <option label="Team" value="Team">Team</option>
+        <option label="Clash" value="Clash">Clash</option>
         <option label="Nightfall" value="Nightfall">Nightfall</option>
-        <option label="Heroic" value="Heroic">Heroic</option>
+        <option label="Prestige Nightfall" value="HeroicNightfall">Prestige Nightfall</option>
         <option label="All Strikes" value="AllStrikes">All Strikes</option>
+        <option label="Iron Banner" value="IronBanner">Iron Banner</option>
+        <option label="Supremacy" value="Supremacy">Supremacy</option>
         <option label="Survival" value="Survival">Survival</option>
         <option label="Countdown" value="Countdown">Countdown</option>
+        <option label="Trials of the Nine" value="TrialsOfTheNine">Trials of the Nine</option>
         <option label="Social" value="Social">Social</option>
       </select>
     </label>

@@ -46,4 +46,10 @@ languages.forEach(language => {
       });
     } catch (e) { console.log(e); }
   });
+  try {
+    let file = fs.createWriteStream('./utils/defs/en/Emblem.json');
+    https.get('https://destiny.plumbing/2/en/items/Emblem.json', response => {
+      response.pipe(file);
+    });
+  } catch (e) { console.log(e); }
 })

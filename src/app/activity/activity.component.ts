@@ -52,6 +52,7 @@ export class ActivityComponent implements OnInit, OnDestroy {
           pgcr.showClips = true;
           let loadingArray = [];
           this.pgcr.entries.forEach(entry => {
+            console.log(entry);
             if (entry.player.bungieNetUserInfo && this.twitchService.twitch[entry.player.bungieNetUserInfo.membershipId]) {
               loadingArray.push(this.twitchService.twitch[entry.player.bungieNetUserInfo.membershipId]);
               this.subs.push(

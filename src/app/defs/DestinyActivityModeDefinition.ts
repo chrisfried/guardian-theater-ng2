@@ -1,5 +1,8 @@
 export const DestinyActivityModeDefinition = {
   de: {
+    42: {
+      name: 'Trials of the Nine: Survival'
+    },
     0: {
       name: 'Alle'
     },
@@ -13,7 +16,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Schmelztiegel'
     },
     17: {
-      name: 'Prestige Nightfall'
+      name: 'Nightfall: Prestige'
     },
     39: {
       name: 'Trials of the Nine'
@@ -36,11 +39,20 @@ export const DestinyActivityModeDefinition = {
     37: {
       name: 'Survival'
     },
+    41: {
+      name: 'Trials of the Nine: Countdown'
+    },
     18: {
       name: 'Strikes'
     },
+    43: {
+      name: 'Iron Banner: Control'
+    },
     10: {
       name: 'Kontrolle'
+    },
+    44: {
+      name: 'Iron Banner: Clash'
     },
     6: {
       name: 'Patrouille'
@@ -51,8 +63,14 @@ export const DestinyActivityModeDefinition = {
     3: {
       name: 'Normale Strikes'
     },
+    45: {
+      name: 'Iron Banner: Supremacy'
+    },
   },
   en: {
+    42: {
+      name: 'Trials of the Nine: Survival'
+    },
     0: {
       name: 'All'
     },
@@ -66,7 +84,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Crucible'
     },
     17: {
-      name: 'Prestige Nightfall'
+      name: 'Nightfall: Prestige'
     },
     39: {
       name: 'Trials of the Nine'
@@ -89,11 +107,20 @@ export const DestinyActivityModeDefinition = {
     37: {
       name: 'Survival'
     },
+    41: {
+      name: 'Trials of the Nine: Countdown'
+    },
     18: {
       name: 'Strikes'
     },
+    43: {
+      name: 'Iron Banner: Control'
+    },
     10: {
       name: 'Control'
+    },
+    44: {
+      name: 'Iron Banner: Clash'
     },
     6: {
       name: 'Patrol'
@@ -104,8 +131,14 @@ export const DestinyActivityModeDefinition = {
     3: {
       name: 'Normal Strikes'
     },
+    45: {
+      name: 'Iron Banner: Supremacy'
+    },
   },
   es: {
+    42: {
+      name: 'Trials of the Nine: Survival'
+    },
     0: {
       name: 'Todo'
     },
@@ -119,7 +152,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Crisol'
     },
     17: {
-      name: 'Prestige Nightfall'
+      name: 'Nightfall: Prestige'
     },
     39: {
       name: 'Trials of the Nine'
@@ -142,11 +175,20 @@ export const DestinyActivityModeDefinition = {
     37: {
       name: 'Survival'
     },
+    41: {
+      name: 'Trials of the Nine: Countdown'
+    },
     18: {
       name: 'Asaltos'
     },
+    43: {
+      name: 'Iron Banner: Control'
+    },
     10: {
       name: 'Control'
+    },
+    44: {
+      name: 'Iron Banner: Clash'
     },
     6: {
       name: 'Patrulla'
@@ -156,9 +198,15 @@ export const DestinyActivityModeDefinition = {
     },
     3: {
       name: 'Asaltos normales'
+    },
+    45: {
+      name: 'Iron Banner: Supremacy'
     },
   },
   esmx: {
+    42: {
+      name: 'Trials of the Nine: Survival'
+    },
     0: {
       name: 'Todo'
     },
@@ -172,7 +220,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Crisol'
     },
     17: {
-      name: 'Prestige Nightfall'
+      name: 'Nightfall: Prestige'
     },
     39: {
       name: 'Trials of the Nine'
@@ -195,11 +243,20 @@ export const DestinyActivityModeDefinition = {
     37: {
       name: 'Survival'
     },
+    41: {
+      name: 'Trials of the Nine: Countdown'
+    },
     18: {
       name: 'Asaltos'
     },
+    43: {
+      name: 'Iron Banner: Control'
+    },
     10: {
       name: 'Control'
+    },
+    44: {
+      name: 'Iron Banner: Clash'
     },
     6: {
       name: 'Patrulla'
@@ -210,8 +267,14 @@ export const DestinyActivityModeDefinition = {
     3: {
       name: 'Asaltos normales'
     },
+    45: {
+      name: 'Iron Banner: Supremacy'
+    },
   },
   fr: {
+    42: {
+      name: 'Trials of the Nine: Survival'
+    },
     0: {
       name: 'Toutes les activités'
     },
@@ -225,7 +288,7 @@ export const DestinyActivityModeDefinition = {
       name: 'L\'Épreuve'
     },
     17: {
-      name: 'Prestige Nightfall'
+      name: 'Nightfall: Prestige'
     },
     39: {
       name: 'Trials of the Nine'
@@ -248,11 +311,20 @@ export const DestinyActivityModeDefinition = {
     37: {
       name: 'Survival'
     },
+    41: {
+      name: 'Trials of the Nine: Countdown'
+    },
     18: {
       name: 'Assauts'
     },
+    43: {
+      name: 'Iron Banner: Control'
+    },
     10: {
       name: 'Domination'
+    },
+    44: {
+      name: 'Iron Banner: Clash'
     },
     6: {
       name: 'Patrouille'
@@ -263,8 +335,14 @@ export const DestinyActivityModeDefinition = {
     3: {
       name: 'Assauts normaux'
     },
+    45: {
+      name: 'Iron Banner: Supremacy'
+    },
   },
   it: {
+    42: {
+      name: 'Trials of the Nine: Survival'
+    },
     0: {
       name: 'Globale'
     },
@@ -278,7 +356,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Crogiolo'
     },
     17: {
-      name: 'Prestige Nightfall'
+      name: 'Nightfall: Prestige'
     },
     39: {
       name: 'Trials of the Nine'
@@ -301,11 +379,20 @@ export const DestinyActivityModeDefinition = {
     37: {
       name: 'Survival'
     },
+    41: {
+      name: 'Trials of the Nine: Countdown'
+    },
     18: {
       name: 'Assalti'
     },
+    43: {
+      name: 'Iron Banner: Control'
+    },
     10: {
       name: 'Controllo'
+    },
+    44: {
+      name: 'Iron Banner: Clash'
     },
     6: {
       name: 'Pattuglia'
@@ -316,8 +403,14 @@ export const DestinyActivityModeDefinition = {
     3: {
       name: 'Assalti normali'
     },
+    45: {
+      name: 'Iron Banner: Supremacy'
+    },
   },
   ja: {
+    42: {
+      name: 'Trials of the Nine: Survival'
+    },
     0: {
       name: '全て'
     },
@@ -331,7 +424,7 @@ export const DestinyActivityModeDefinition = {
       name: 'クルーシブル'
     },
     17: {
-      name: 'Prestige Nightfall'
+      name: 'Nightfall: Prestige'
     },
     39: {
       name: 'Trials of the Nine'
@@ -354,11 +447,20 @@ export const DestinyActivityModeDefinition = {
     37: {
       name: 'Survival'
     },
+    41: {
+      name: 'Trials of the Nine: Countdown'
+    },
     18: {
       name: 'ストライク'
     },
+    43: {
+      name: 'Iron Banner: Control'
+    },
     10: {
       name: 'コントロール'
+    },
+    44: {
+      name: 'Iron Banner: Clash'
     },
     6: {
       name: 'パトロール'
@@ -369,8 +471,14 @@ export const DestinyActivityModeDefinition = {
     3: {
       name: '普通のストライク'
     },
+    45: {
+      name: 'Iron Banner: Supremacy'
+    },
   },
   pl: {
+    42: {
+      name: 'Trials of the Nine: Survival'
+    },
     0: {
       name: 'Wszystko'
     },
@@ -384,7 +492,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Tygiel'
     },
     17: {
-      name: 'Prestige Nightfall'
+      name: 'Nightfall: Prestige'
     },
     39: {
       name: 'Trials of the Nine'
@@ -407,11 +515,20 @@ export const DestinyActivityModeDefinition = {
     37: {
       name: 'Survival'
     },
+    41: {
+      name: 'Trials of the Nine: Countdown'
+    },
     18: {
       name: 'Szturmy'
     },
+    43: {
+      name: 'Iron Banner: Control'
+    },
     10: {
       name: 'Kontrola'
+    },
+    44: {
+      name: 'Iron Banner: Clash'
     },
     6: {
       name: 'Patrol'
@@ -422,8 +539,14 @@ export const DestinyActivityModeDefinition = {
     3: {
       name: 'Zwykłe szturmy'
     },
+    45: {
+      name: 'Iron Banner: Supremacy'
+    },
   },
   ptbr: {
+    42: {
+      name: 'Trials of the Nine: Survival'
+    },
     0: {
       name: 'Tudo'
     },
@@ -437,7 +560,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Crisol'
     },
     17: {
-      name: 'Prestige Nightfall'
+      name: 'Nightfall: Prestige'
     },
     39: {
       name: 'Trials of the Nine'
@@ -460,11 +583,20 @@ export const DestinyActivityModeDefinition = {
     37: {
       name: 'Survival'
     },
+    41: {
+      name: 'Trials of the Nine: Countdown'
+    },
     18: {
       name: 'Assaltos'
     },
+    43: {
+      name: 'Iron Banner: Control'
+    },
     10: {
       name: 'Controle'
+    },
+    44: {
+      name: 'Iron Banner: Clash'
     },
     6: {
       name: 'Patrulha'
@@ -475,8 +607,14 @@ export const DestinyActivityModeDefinition = {
     3: {
       name: 'Assaltos normais'
     },
+    45: {
+      name: 'Iron Banner: Supremacy'
+    },
   },
   ru: {
+    42: {
+      name: 'Trials of the Nine: Survival'
+    },
     0: {
       name: 'Все'
     },
@@ -490,7 +628,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Горнило'
     },
     17: {
-      name: 'Prestige Nightfall'
+      name: 'Nightfall: Prestige'
     },
     39: {
       name: 'Trials of the Nine'
@@ -513,11 +651,20 @@ export const DestinyActivityModeDefinition = {
     37: {
       name: 'Survival'
     },
+    41: {
+      name: 'Trials of the Nine: Countdown'
+    },
     18: {
       name: 'Налеты'
     },
+    43: {
+      name: 'Iron Banner: Control'
+    },
     10: {
       name: 'Контроль'
+    },
+    44: {
+      name: 'Iron Banner: Clash'
     },
     6: {
       name: 'Патруль'
@@ -528,8 +675,14 @@ export const DestinyActivityModeDefinition = {
     3: {
       name: 'Обычные налеты'
     },
+    45: {
+      name: 'Iron Banner: Supremacy'
+    },
   },
   zhcht: {
+    42: {
+      name: 'Trials of the Nine: Survival'
+    },
     0: {
       name: '全部'
     },
@@ -543,7 +696,7 @@ export const DestinyActivityModeDefinition = {
       name: '熔爐競技場'
     },
     17: {
-      name: 'Prestige Nightfall'
+      name: 'Nightfall: Prestige'
     },
     39: {
       name: 'Trials of the Nine'
@@ -566,11 +719,20 @@ export const DestinyActivityModeDefinition = {
     37: {
       name: 'Survival'
     },
+    41: {
+      name: 'Trials of the Nine: Countdown'
+    },
     18: {
       name: '突擊任務'
     },
+    43: {
+      name: 'Iron Banner: Control'
+    },
     10: {
       name: '攻佔模式'
+    },
+    44: {
+      name: 'Iron Banner: Clash'
     },
     6: {
       name: '巡邏任務'
@@ -581,8 +743,16 @@ export const DestinyActivityModeDefinition = {
     3: {
       name: '普通突擊任務'
     },
+    45: {
+      name: 'Iron Banner: Supremacy'
+    },
   },
   data: {
+    470484296: {
+      icon: '/img/theme/destiny/icons/game_modes/allmodes.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
+      category: '2'
+    },
     748895195: {
       icon: '/img/theme/destiny/icons/game_modes/allmodes.png',
       pgcrImage: '/img/theme/destiny/bgs/stats/banner_allmodes.jpg',
@@ -648,13 +818,28 @@ export const DestinyActivityModeDefinition = {
       pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
       category: '2'
     },
+    2263766091: {
+      icon: '/img/theme/destiny/icons/game_modes/allmodes.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
+      category: '2'
+    },
     2394616003: {
       icon: '/img/theme/destiny/icons/game_modes/strike_default.png',
       pgcrImage: '/img/theme/destiny/bgs/stats/banner_strikes_1.jpg',
       category: '1'
     },
+    2843684868: {
+      icon: '/img/theme/destiny/icons/game_modes/crucible_control.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
+      category: '2'
+    },
     3199098480: {
       icon: '/img/theme/destiny/icons/game_modes/crucible_control.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
+      category: '2'
+    },
+    3479216388: {
+      icon: '/img/theme/destiny/icons/game_modes/crucible_supremacy.png',
       pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
       category: '2'
     },
@@ -672,6 +857,11 @@ export const DestinyActivityModeDefinition = {
       icon: '/img/theme/destiny/icons/game_modes/strike_default.png',
       pgcrImage: '/img/theme/destiny/bgs/stats/banner_strikes_1.jpg',
       category: '1'
+    },
+    4212882650: {
+      icon: '/img/theme/destiny/icons/game_modes/crucible_supremacy.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
+      category: '2'
     },
   },
 };

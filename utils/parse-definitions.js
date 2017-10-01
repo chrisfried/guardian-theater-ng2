@@ -150,4 +150,27 @@ fs.readdir('./utils/defs', function (err, languages) {
   fs.writeFile('./src/app/defs/DestinyRaceDefinition.ts', race, function (err) {
     if (err) throw err;
   });
+
+
+
+  let emblem = 'export const EmblemDefinition = {\n';
+  
+    console.log('processing emblems');
+
+    let emblemFile = fs.readFileSync('./utils/defs/en/Emblem.json');
+    let emblems = JSON.parse(emblemFile);
+
+    for (let property in emblems) {
+      emblem += '    ' + property + ': {\n';
+      emblem += '      icon: \'' + emblems[property].displayProperties.icon + '\',\n'
+      emblem += '      secondaryOverlay: \'' + emblems[property].secondaryOverlay + '\',\n'
+      emblem += '      secondarySpecial: \'' + emblems[property].secondarySpecial + '\'\n'
+      emblem += '    },\n';
+    }
+    
+    emblem += '};\n';
+  
+    fs.writeFile('./src/app/defs/EmblemDefinition.ts', emblem, function (err) {
+      if (err) throw err;
+    });
 });

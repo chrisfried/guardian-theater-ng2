@@ -4,6 +4,7 @@ import { DestinyRaceDefinition } from '../defs/DestinyRaceDefinition';
 import { DestinyClassDefinition } from '../defs/DestinyClassDefinition';
 import { DestinyActivityDefinition } from '../defs/DestinyActivityDefinition';
 import { DestinyActivityModeDefinition } from '../defs/DestinyActivityModeDefinition';
+import { EmblemDefinition } from '../defs/EmblemDefinition';
 
 @Pipe({
   name: 'destinyHash'
@@ -25,6 +26,10 @@ export class DestinyHashPipe implements PipeTransform {
           return DestinyActivityDefinition[this.settingsService.userLang.language][hash].name;
         case 'activityMode':
           return DestinyActivityModeDefinition[this.settingsService.userLang.language][hash].name;
+        case 'emblemOverlay':
+          return EmblemDefinition[hash].secondaryOverlay;
+        case 'emblemSpecial':
+          return EmblemDefinition[hash].secondarySpecial;
         default:
           return '';
       }
