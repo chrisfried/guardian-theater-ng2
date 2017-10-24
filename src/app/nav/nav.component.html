@@ -37,11 +37,14 @@
       </div>
     </form>
   </div>
-  <div class="small-12 columns order-5 medium-order-5 callout info">
-    Destiny 1 clips can be found at <a href="https://d1.guardian.theater">d1.guardian.theater</a>
+  <div class="small-12 columns order-5 medium-order-5">
+    <div class="callout info">Destiny 1 clips can be found at <a href="https://d1.guardian.theater">d1.guardian.theater</a></div>
   </div>
-  <div *ngIf="errorRes && errorRes.ErrorCode && errorRes.Message" class="small-12 columns order-5 medium-order-5 callout warning">
-    <h5>Bungie API Error Code {{ errorRes.ErrorCode }}</h5>
-    <p>{{ errorRes.Message }}</p>
+  <app-bungie-status class="small-12 columns order-5 medium-order-5"></app-bungie-status>
+  <div *ngIf="errorRes && errorRes.ErrorCode && errorRes.Message" class="small-12 columns order-5 medium-order-5">
+    <div class="callout warning">
+      <h5>Bungie API Error Code {{ errorRes.ErrorCode }}</h5>
+      <p>{{ errorRes.Message }}</p>
+    </div>
   </div>
 </div>

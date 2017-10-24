@@ -34,7 +34,7 @@ export class NavComponent implements OnInit, OnDestroy {
       });
     this._errorRes$ = this.bHttp.error.subscribe(res => this.errorRes = res);
     this.searchString = '';
-      this.ad = true;
+    this.ad = true;
     this.adInterval = setInterval(() => {
       if (window.innerWidth > 704) {
         this.ad = false;

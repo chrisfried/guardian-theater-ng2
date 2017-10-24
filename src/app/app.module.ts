@@ -25,6 +25,7 @@ import { TwitchStampPipe } from './pipes/twitch-stamp.pipe';
 import { GtBadgePipe } from './pipes/gt-badge.pipe';
 import { TakeMyMoneyComponent } from './take-my-money/take-my-money.component';
 import { SearchComponent } from './search/search.component';
+import { BungieStatusComponent } from './bungie-status/bungie-status.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { SearchComponent } from './search/search.component';
     ActivityComponent,
     DestinyHashPipe,
     TakeMyMoneyComponent,
-    SearchComponent
+    SearchComponent,
+    BungieStatusComponent
   ],
   imports: [
     BrowserModule,
