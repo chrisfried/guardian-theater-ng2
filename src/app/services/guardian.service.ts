@@ -1,8 +1,12 @@
 import { Injectable, OnDestroy } from '@angular/core';
-import { Observable, BehaviorSubject, Subscription } from 'rxjs/Rx';
+import { Observable } from 'rxjs/Observable';
+import { Subscription } from 'rxjs/Subscription';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { BungieHttpService } from './bungie-http.service';
 import { SettingsService } from './settings.service';
 import { catchError, map, distinctUntilChanged, switchMap } from 'rxjs/operators';
+import 'rxjs/add/observable/combineLatest';
+import 'rxjs/add/observable/empty';
 
 @Injectable()
 export class GuardianService implements OnDestroy {
@@ -123,7 +127,7 @@ export class GuardianService implements OnDestroy {
           }
         }),
         distinctUntilChanged(),
-        switchMap((url) => {
+        switchMap((url: string) => {
           this.activities.next([]);
           this.noActivities.next(false);
           if (url.length) {

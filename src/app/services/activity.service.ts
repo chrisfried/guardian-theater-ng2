@@ -5,7 +5,12 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { TwitchService } from './twitch.service';
 import { XboxService } from './xbox.service';
 import { SettingsService } from './settings.service';
-import { Observable, BehaviorSubject, Subscription } from 'rxjs/Rx';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/combineLatest';
+import 'rxjs/add/observable/empty';
+import 'rxjs/add/observable/from';
+import { Subscription } from 'rxjs/Subscription';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { catchError, map, distinctUntilChanged, switchMap } from 'rxjs/operators';
 

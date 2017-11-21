@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, Event } from '@angular/router';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { BungieHttpService } from '../services/bungie-http.service';
-import { Subscription } from 'rxjs/Rx';
+import { Subscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'app-nav',

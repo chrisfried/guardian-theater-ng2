@@ -4,7 +4,9 @@ import { BungieHttpService } from '../services/bungie-http.service';
 import { TwitchService } from '../services/twitch.service';
 import { XboxService } from '../services/xbox.service';
 import { SettingsService } from '../services/settings.service';
-import { Subscription, Observable } from 'rxjs/Rx';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/combineLatest';
+import { Subscription } from 'rxjs/Subscription';
 import { Router } from '@angular/router';
 
 @Component({
