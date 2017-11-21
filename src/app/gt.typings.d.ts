@@ -77,28 +77,28 @@ declare namespace gt {
 
   interface Links {
     activity?: {
-      bungie: boolean,
-      tracker: boolean,
-      ggg: boolean,
-      trials: boolean,
-      options: boolean
+      bungie?: boolean,
+      tracker?: boolean,
+      ggg?: boolean,
+      trials?: boolean,
+      options?: boolean
     },
     guardian?: {
-      bungie: boolean,
-      twitch: boolean,
-      tracker: boolean,
-      ggg: boolean,
-      options: boolean,
-      platform: boolean
+      bungie?: boolean,
+      twitch?: boolean,
+      tracker?: boolean,
+      ggg?: boolean,
+      options?: boolean,
+      platform?: boolean
     },
     xbox?: {
-      recordus: boolean,
-      dvr: boolean,
-      clips: boolean,
-      gamedtv: boolean,
-      xbox: boolean,
-      download: boolean,
-      options: boolean
+      recordus?: boolean,
+      dvr?: boolean,
+      clips?: boolean,
+      gamedtv?: boolean,
+      xbox?: boolean,
+      download?: boolean,
+      options?: boolean
     }
   }
 }

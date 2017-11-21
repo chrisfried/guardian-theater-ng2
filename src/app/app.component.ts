@@ -1,4 +1,4 @@
-import { Angulartics2GoogleAnalytics } from 'angulartics2';
+import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { Component } from '@angular/core';
 
 @Component({

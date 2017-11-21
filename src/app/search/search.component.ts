@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Observable, BehaviorSubject, Subscription } from 'rxjs/Rx';
 import { BungieHttpService } from '../services/bungie-http.service';
+import { map, catchError, distinctUntilChanged,switchMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-search',
@@ -35,24 +36,23 @@ export class SearchComponent implements OnInit, OnDestroy {
       });
 
     this.searchResponse = this.searchName
-      .map((searchName) => {
-        this.searching = true;
-        if (searchName.length) {
-          return 'https://www.bungie.net/Platform/Destiny2/SearchDestinyPlayer/-1/' + encodeURIComponent(searchName) + '/';
-        } else {
-          return '';
-        }
-      })
-      .distinctUntilChanged()
-      .switchMap((url) => {
-        if (url.length) {
-          return this.bHttp.get(url)
-            .map((res: any) => res.json())
-            .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
-        } else {
-          return Observable.empty();
-        }
-      })
+      .pipe(
+        map(searchName => {
+          this.searching = true;
+          return searchName.length
+            ? 'https://www.bungie.net/Platform/Destiny2/SearchDestinyPlayer/-1/' + encodeURIComponent(searchName) + '/'
+            : '';
+        }),
+        distinctUntilChanged(),
+        switchMap((url: string) => {
+          if (url.length) {
+            return this.bHttp.get(url);
+          } else {
+            return Observable.empty();
+          }
+        }),
+        catchError((error: any) => Observable.throw(error.json().error || 'Server error'))
+      )
       .subscribe((res: bungie.SearchDestinyPlayerResponse) => {
         this.searchResults = res.Response;
         if (this.searchResults.length === 1) {

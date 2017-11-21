@@ -22,6 +22,9 @@ export class ActivityComponent implements OnInit, OnDestroy {
 
   public pgcr: gt.PostGameCarnageReport;
   public membershipType: number;
+  public clips: gt.Clip[];
+  public filteredClips: gt.Clip[];
+  public links: gt.Links;
 
   constructor(
     private activityService: ActivityService,
@@ -32,11 +35,16 @@ export class ActivityComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit() {
+    this.filteredClips = [];
+    this.clips = [];
+    this.links = {guardian: {}, activity: {}, xbox: {}};
+
     this.activityService.activity = this.activity;
     this.subs = [];
+    this.subs.push(this.settingsService.links
+      .subscribe(links => this.links = links));
     this.subs.push(this.activityService.membershipType
-      .subscribe(membershipType => this.membershipType = membershipType)
-    );
+      .subscribe(membershipType => this.membershipType = membershipType));
     this.subs.push(this.activityService.pgcr
       .subscribe((pgcr: gt.PostGameCarnageReport) => {
         this.pgcr = pgcr;
@@ -49,6 +57,8 @@ export class ActivityComponent implements OnInit, OnDestroy {
           };
         }
         if (this.pgcr) {
+          this.subs.push(this.pgcr.filteredClips$.subscribe(clips => this.filteredClips = clips));
+          this.subs.push(this.pgcr.clips$.subscribe(clips => this.clips = clips));
           pgcr.showClips = true;
           let loadingArray = [];
           this.pgcr.entries.forEach(entry => {

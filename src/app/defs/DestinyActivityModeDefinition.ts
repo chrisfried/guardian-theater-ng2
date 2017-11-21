@@ -58,7 +58,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Eisenbanner: Konflikt'
     },
     6: {
-      name: 'Patrouille'
+      name: 'Free Roam'
     },
     16: {
       name: 'Dämmerung-Strikes'
@@ -129,7 +129,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Iron Banner Clash'
     },
     6: {
-      name: 'Patrol'
+      name: 'Free Roam'
     },
     16: {
       name: 'Nightfall Strikes'
@@ -271,7 +271,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Estandarte de Hierro Enfrentamiento'
     },
     6: {
-      name: 'Patrulla'
+      name: 'Desplazamiento libre'
     },
     16: {
       name: 'Asaltos de Ocaso'
@@ -342,7 +342,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Bannière de Fer - Choc'
     },
     6: {
-      name: 'Patrouille'
+      name: 'Exploration'
     },
     16: {
       name: 'Nuit noire'
@@ -413,7 +413,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Stendardo di Ferro: Scontro'
     },
     6: {
-      name: 'Pattuglia'
+      name: 'Esplorazione'
     },
     16: {
       name: 'Assalti Cala la Notte'
@@ -484,7 +484,7 @@ export const DestinyActivityModeDefinition = {
       name: 'アイアンバナー「クラッシュ」'
     },
     6: {
-      name: 'パトロール'
+      name: 'オープンワールド'
     },
     16: {
       name: 'ナイトフォールストライク'
@@ -569,7 +569,7 @@ export const DestinyActivityModeDefinition = {
   },
   ptbr: {
     42: {
-      name: 'Trials of the Nine Survival'
+      name: 'Desafios dos Nove – Sobrevivência'
     },
     0: {
       name: 'Tudo'
@@ -584,16 +584,16 @@ export const DestinyActivityModeDefinition = {
       name: 'Crisol'
     },
     17: {
-      name: 'Heroic Nightfall'
+      name: 'Anoitecer Heroico'
     },
     39: {
-      name: 'Trials of the Nine'
+      name: 'Desafios dos Nove'
     },
     38: {
-      name: 'Countdown'
+      name: 'Detonação'
     },
     12: {
-      name: 'Clash'
+      name: 'Enfrentamento'
     },
     40: {
       name: 'Social'
@@ -608,25 +608,25 @@ export const DestinyActivityModeDefinition = {
       name: 'Incursão'
     },
     37: {
-      name: 'Survival'
+      name: 'Sobrevivência'
     },
     41: {
-      name: 'Trials of the Nine Countdown'
+      name: 'Desafios dos Nove – Detonação'
     },
     18: {
       name: 'Assaltos'
     },
     43: {
-      name: 'Iron Banner Control'
+      name: 'Bandeira de Ferro – Controle'
     },
     10: {
       name: 'Controle'
     },
     44: {
-      name: 'Iron Banner Clash'
+      name: 'Bandeira de Ferro – Enfrentamento'
     },
     6: {
-      name: 'Patrulha'
+      name: 'Exploração livre'
     },
     16: {
       name: 'Assaltos do Anoitecer'
@@ -635,7 +635,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Assaltos normais'
     },
     45: {
-      name: 'Iron Banner Supremacy'
+      name: 'Bandeira de Ferro – Supremacia'
     },
   },
   ru: {
@@ -697,7 +697,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Железное знамя: Столкновение'
     },
     6: {
-      name: 'Патруль'
+      name: 'Режим свободного исследования'
     },
     16: {
       name: 'Сумрачные налеты'
@@ -782,7 +782,7 @@ export const DestinyActivityModeDefinition = {
   },
   data: {
     470484296: {
-      icon: '/img/theme/destiny/icons/game_modes/allmodes.png',
+      icon: '/img/theme/destiny/icons/game_modes/trials_of_the_nine.png',
       pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
       category: '2'
     },
@@ -812,12 +812,12 @@ export const DestinyActivityModeDefinition = {
       category: '1'
     },
     1370326378: {
-      icon: '/img/theme/destiny/icons/game_modes/allmodes.png',
+      icon: '/img/theme/destiny/icons/game_modes/trials_of_the_nine.png',
       pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
       category: '2'
     },
     1505888634: {
-      icon: '/img/theme/destiny/icons/game_modes/allmodes.png',
+      icon: '/img/theme/destiny/icons/game_modes/crucible_default.png',
       pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
       category: '2'
     },
@@ -847,12 +847,12 @@ export const DestinyActivityModeDefinition = {
       category: '1'
     },
     2239249083: {
-      icon: '/img/theme/destiny/icons/game_modes/allmodes.png',
+      icon: '/img/theme/destiny/icons/game_modes/crucible_default.png',
       pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
       category: '2'
     },
     2263766091: {
-      icon: '/img/theme/destiny/icons/game_modes/allmodes.png',
+      icon: '/img/theme/destiny/icons/game_modes/trials_of_the_nine.png',
       pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
       category: '2'
     },
@@ -877,7 +877,7 @@ export const DestinyActivityModeDefinition = {
       category: '2'
     },
     3497767639: {
-      icon: '/img/theme/destiny/icons/game_modes/patrol.png',
+      icon: '/img/theme/destiny/icons/game_modes/free_roam.png',
       pgcrImage: '/img/theme/destiny/bgs/stats/banner_patrol_1.jpg',
       category: '1'
     },

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Headers } from '@angular/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { BehaviorSubject } from 'rxjs/Rx';
 
 @Injectable()
@@ -9,7 +9,7 @@ export class BungieHttpService {
   public error: BehaviorSubject<bungie.Response>;
 
   constructor(
-    private http: Http
+    private http: HttpClient
   ) {
     this.error = new BehaviorSubject(null);
     this._origin = window.location.protocol + '//' + window.location.hostname;
@@ -28,15 +28,10 @@ export class BungieHttpService {
     }
   }
 
-  createAuthorizationHeader(headers: Headers) {
-    headers.append('x-api-key', this._apiKey);
-  }
-
   get(url) {
     let headers = new Headers();
-    this.createAuthorizationHeader(headers);
     return this.http.get(url, {
-      headers: headers
+      headers: new HttpHeaders().set('x-api-key', this._apiKey)
     });
   }
 }

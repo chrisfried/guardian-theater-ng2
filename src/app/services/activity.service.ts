@@ -1,13 +1,13 @@
 import { Injectable, OnDestroy } from '@angular/core';
 import { BungieHttpService } from './bungie-http.service';
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { DomSanitizer } from '@angular/platform-browser';
 import { TwitchService } from './twitch.service';
 import { XboxService } from './xbox.service';
 import { SettingsService } from './settings.service';
 import { Observable, BehaviorSubject, Subscription } from 'rxjs/Rx';
-import { Response } from '@angular/http';
 import { Router, ActivatedRoute, Params } from '@angular/router';
+import { catchError, map, distinctUntilChanged, switchMap } from 'rxjs/operators';
 
 @Injectable()
 export class ActivityService implements OnDestroy {
@@ -21,7 +21,7 @@ export class ActivityService implements OnDestroy {
   public pgcr: BehaviorSubject<gt.PostGameCarnageReport>;
 
   constructor(
-    private http: Http,
+    private http: HttpClient,
     private bHttp: BungieHttpService,
     private twitchService: TwitchService,
     private sanitizer: DomSanitizer,
@@ -69,24 +69,23 @@ export class ActivityService implements OnDestroy {
 
     this.subs.push(
       this._activityId
-        .map((activityId) => {
-          if (activityId) {
-            return 'https://www.bungie.net/Platform/Destiny2/Stats/PostGameCarnageReport/' + activityId + '/';
-          } else {
-            return '';
-          }
-        })
-        .distinctUntilChanged()
-        .switchMap((url) => {
-          this.pgcr.next(null);
-          if (url.length) {
-            return this.bHttp.get(url)
-              .map((res: Response) => res.json())
-              .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
-          } else {
-            return Observable.empty();
-          }
-        })
+        .pipe(
+          map((activityId) => {
+            return activityId
+              ? 'https://www.bungie.net/Platform/Destiny2/Stats/PostGameCarnageReport/' + activityId + '/'
+              : '';
+          }),
+          distinctUntilChanged(),
+          switchMap((url) => {
+            this.pgcr.next(null);
+            if (url.length) {
+              return this.bHttp.get(url)
+                .pipe(catchError((error: any) => Observable.throw(error.json().error || 'Server error')));
+            } else {
+              return Observable.empty();
+            }
+          })
+        )
         .subscribe((res: bungie.PostGameCarnageReportResponse) => {
           try {
             if (res.ErrorCode !== 1) {
@@ -157,30 +156,29 @@ export class ActivityService implements OnDestroy {
 
                   this.subs.push(
                     this.twitchService.twitch[membershipId]
-                      .map((subject: {
-                        displayName: string,
-                        checkedId: boolean,
-                        twitchId: string,
-                        bungieId: string,
-                        checkedResponse: boolean,
-                        response: {}
-                      }) => {
-                        if (!subject.checkedId) {
-                          return 'https://www.bungie.net/Platform/User/' + subject.bungieId + '/Partnerships/';
-                        } else {
-                          return '';
-                        }
-                      })
-                      .distinctUntilChanged()
-                      .switchMap(url => {
-                        if (url.length) {
-                          return this.bHttp.get(url)
-                            .map((res: Response) => res.json())
-                            .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
-                        } else {
-                          return Observable.empty();
-                        }
-                      })
+                      .pipe(
+                        map((subject: {
+                          displayName: string,
+                          checkedId: boolean,
+                          twitchId: string,
+                          bungieId: string,
+                          checkedResponse: boolean,
+                          response: {}
+                        }) => {
+                          return subject.checkedId
+                            ? ''
+                            : 'https://www.bungie.net/Platform/User/' + subject.bungieId + '/Partnerships/';
+                        }),
+                        distinctUntilChanged(),
+                        switchMap((url: string) => {
+                          if (url.length) {
+                            return this.bHttp.get(url)
+                              .pipe(catchError((error: any) => Observable.throw(error.json().error || 'Server error')));
+                          } else {
+                            return Observable.empty();
+                          }
+                        })
+                      )
                       .subscribe((res: bungie.PartnershipResponse) => {
                         try {
                           if (res.ErrorCode !== 1) {
@@ -213,33 +211,33 @@ export class ActivityService implements OnDestroy {
 
                   this.subs.push(
                     this.twitchService.twitch[membershipId]
-                      .map((subject: {
-                        displayName: string,
-                        checkedId: boolean,
-                        twitchId: string,
-                        bungieId: string,
-                        checkedResponse: boolean,
-                        response: {}
-                      }) => {
-                        if (subject.twitchId && !subject.checkedResponse) {
+                      .pipe(
+                        map((subject: {
+                          displayName: string,
+                          checkedId: boolean,
+                          twitchId: string,
+                          bungieId: string,
+                          checkedResponse: boolean,
+                          response: {}
+                        }) => {
                           twitchId = subject.twitchId;
-                          return 'https://api.twitch.tv/kraken/channels/' + twitchId + '/videos'
-                            + '?client_id=o8cuwhl23x5ways7456xhitdm0f4th0&limit=100&offset=0&broadcast_type=archive,highlight';
-                        } else {
-                          return '';
-                        }
-                      })
-                      .distinctUntilChanged()
-                      .switchMap(url => {
-                        if (url.length) {
-                          return this.http.get(url)
-                            .map((res: Response) => res.json())
-                            .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
-                        } else {
-                          return Observable.empty();
-                        }
-                      })
+                          return (subject.twitchId && !subject.checkedResponse)
+                            ? 'https://api.twitch.tv/kraken/channels/' + subject.twitchId + '/videos'
+                            + '?client_id=o8cuwhl23x5ways7456xhitdm0f4th0&limit=100&offset=0&broadcast_type=archive,highlight'
+                            : '';
+                        }),
+                        distinctUntilChanged(),
+                        switchMap((url: string) => {
+                          if (url.length) {
+                            return this.http.get(url)
+                              .pipe(catchError((error: any) => Observable.throw(error.json().error || 'Server error')));
+                          } else {
+                            return Observable.empty();
+                          }
+                        })
+                      )
                       .subscribe((res) => {
+                        console.log(displayName, res);
                         if (res) {
                           this.twitchService.twitch[membershipId].next({
                             displayName: displayName,
@@ -338,47 +336,49 @@ export class ActivityService implements OnDestroy {
               this.settingsService.clipLimiter,
               this.membershipType
             )
-              .map(([clips, limiter, membershipType]: [
-                gt.Clip[],
-                gt.ClipLimiter,
-                number
-              ]) => {
-                let filteredClips = [];
-                clips.forEach(clip => {
-                  if (pgcr.active.entry) {
-                    if (membershipType === 1
-                      && ((!limiter.xbox && clip.type === 'xbox') || (!limiter.twitch && clip.type === 'twitch'))) {
-                      return;
+              .pipe(
+                map(([clips, limiter, membershipType]: [
+                  gt.Clip[],
+                  gt.ClipLimiter,
+                  number
+                ]) => {
+                  let filteredClips = [];
+                  clips.forEach(clip => {
+                    if (pgcr.active.entry) {
+                      if (membershipType === 1
+                        && ((!limiter.xbox && clip.type === 'xbox') || (!limiter.twitch && clip.type === 'twitch'))) {
+                        return;
+                      }
+                      if (!limiter.self
+                        && clip.entry.player.destinyUserInfo.displayName === pgcr.active.entry.player.destinyUserInfo.displayName) {
+                        return;
+                      }
+                      if (!limiter.fireteam
+                        && clip.entry.player.destinyUserInfo.displayName !== pgcr.active.entry.player.destinyUserInfo.displayName
+                        && clip.entry.values.fireteamId
+                        && clip.entry.values.fireteamId.basic.value === pgcr.active.fireteam) {
+                        return;
+                      }
+                      if (!limiter.team
+                        && clip.entry.player.destinyUserInfo.displayName !== pgcr.active.entry.player.destinyUserInfo.displayName
+                        && (!clip.entry.values.fireteamId
+                          || (clip.entry.values.fireteamId
+                            && clip.entry.values.fireteamId.basic.value !== pgcr.active.fireteam))
+                        && clip.entry.values.team && clip.entry.values.team.basic.value === pgcr.active.team) {
+                        return;
+                      }
+                      if (!limiter.opponents
+                        && clip.entry.player.destinyUserInfo.displayName !== pgcr.active.entry.player.destinyUserInfo.displayName
+                        && (!clip.entry.values.team && !clip.entry.values.fireteamId
+                          || (clip.entry.values.team && clip.entry.values.team.basic.value !== pgcr.active.team))) {
+                        return;
+                      }
                     }
-                    if (!limiter.self
-                      && clip.entry.player.destinyUserInfo.displayName === pgcr.active.entry.player.destinyUserInfo.displayName) {
-                      return;
-                    }
-                    if (!limiter.fireteam
-                      && clip.entry.player.destinyUserInfo.displayName !== pgcr.active.entry.player.destinyUserInfo.displayName
-                      && clip.entry.values.fireteamId
-                      && clip.entry.values.fireteamId.basic.value === pgcr.active.fireteam) {
-                      return;
-                    }
-                    if (!limiter.team
-                      && clip.entry.player.destinyUserInfo.displayName !== pgcr.active.entry.player.destinyUserInfo.displayName
-                      && (!clip.entry.values.fireteamId
-                        || (clip.entry.values.fireteamId
-                          && clip.entry.values.fireteamId.basic.value !== pgcr.active.fireteam))
-                      && clip.entry.values.team && clip.entry.values.team.basic.value === pgcr.active.team) {
-                      return;
-                    }
-                    if (!limiter.opponents
-                      && clip.entry.player.destinyUserInfo.displayName !== pgcr.active.entry.player.destinyUserInfo.displayName
-                      && (!clip.entry.values.team && !clip.entry.values.fireteamId
-                        || (clip.entry.values.team && clip.entry.values.team.basic.value !== pgcr.active.team))) {
-                      return;
-                    }
-                  }
-                  filteredClips.push(clip);
-                });
-                return filteredClips;
-              });
+                    filteredClips.push(clip);
+                  });
+                  return filteredClips;
+                })
+              );
           }
         })
     );
@@ -415,27 +415,26 @@ export class ActivityService implements OnDestroy {
 
                 this.subs.push(
                   this.xboxService.xbox[gamertag]
-                    .map((gamer: {
-                      checked: boolean,
-                      gamertag: string,
-                      response: {}
-                    }) => {
-                      if (!gamer.checked && gamer.gamertag) {
-                        return 'https://api.xboxrecord.us/gameclips/gamertag/' + gamertag + '/titleid/144389848';
-                      } else {
-                        return '';
-                      }
-                    })
-                    .distinctUntilChanged()
-                    .switchMap(url => {
-                      if (url.length) {
-                        return this.http.get(url)
-                          .map((res: Response) => res.json())
-                          .catch((error: any) => Observable.from(error.error || 'Server error'));
-                      } else {
-                        return Observable.empty();
-                      }
-                    })
+                    .pipe(
+                      map((gamer: {
+                        checked: boolean,
+                        gamertag: string,
+                        response: {}
+                      }) => {
+                        return !gamer.checked && gamer.gamertag
+                          ? 'https://api.xboxrecord.us/gameclips/gamertag/' + gamertag + '/titleid/144389848'
+                          : '';
+                      }),
+                      distinctUntilChanged(),
+                      switchMap((url: string) => {
+                        if (url.length) {
+                          return this.http.get(url)
+                            .pipe(catchError((error: any) => Observable.from(error.error || 'Server error')));
+                        } else {
+                          return Observable.empty();
+                        }
+                      })
+                    )
                     .subscribe((res) => {
                       if (res) {
                         this.xboxService.xbox[gamertag].next({

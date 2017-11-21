@@ -1,8 +1,8 @@
 import { Injectable, OnDestroy } from '@angular/core';
 import { Observable, BehaviorSubject, Subscription } from 'rxjs/Rx';
-import { Response } from '@angular/http';
 import { BungieHttpService } from './bungie-http.service';
 import { SettingsService } from './settings.service';
+import { catchError, map, distinctUntilChanged, switchMap } from 'rxjs/operators';
 
 @Injectable()
 export class GuardianService implements OnDestroy {
@@ -45,28 +45,29 @@ export class GuardianService implements OnDestroy {
       this.membershipType,
       this.membershipId
     )
-      .map(([membershipType, membershipId]) => {
-        try {
-          if (membershipType && membershipId) {
-            return 'https://www.bungie.net/Platform/Destiny2/' + membershipType + '/Profile/' + membershipId + '/?components=100,200';
-          } else {
+      .pipe(
+        map(([membershipType, membershipId]) => {
+          try {
+            if (membershipType && membershipId) {
+              return 'https://www.bungie.net/Platform/Destiny2/' + membershipType + '/Profile/' + membershipId + '/?components=100,200';
+            } else {
+              return '';
+            }
+          } catch (e) {
             return '';
           }
-        } catch (e) {
-          return '';
-        }
-      })
-      .distinctUntilChanged()
-      .switchMap((url) => {
-        this.characters.next(null);
-        if (url.length) {
-          return this.bHttp.get(url)
-            .map((res: Response) => res.json())
-            .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
-        } else {
-          return Observable.empty();
-        }
-      })
+        }),
+        distinctUntilChanged(),
+        switchMap((url) => {
+          this.characters.next(null);
+          if (url.length) {
+            return this.bHttp.get(url)
+              .pipe(catchError((error: any) => Observable.throw(error.json().error || 'Server error')));
+          } else {
+            return Observable.empty();
+          }
+        })
+      )
       .subscribe((res: bungie.AccountResponse) => {
         try {
           if (res.ErrorCode !== 1) {
@@ -85,18 +86,20 @@ export class GuardianService implements OnDestroy {
       this.characters,
       this.characterId
     )
-      .map(([characters, characterId]) => {
-        let character = null;
-        if (characters) {
-          if (characterId) {
-            character = characters[characterId]
-          } else {
-            character = characters[Object.keys(characters)[0]];
+      .pipe(
+        map(([characters, characterId]) => {
+          let character = null;
+          if (characters) {
+            if (characterId) {
+              character = characters[characterId]
+            } else {
+              character = characters[Object.keys(characters)[0]];
+            }
           }
-        }
-        return character;
-      })
-      .distinctUntilChanged()
+          return character;
+        }),
+        distinctUntilChanged()
+      )
       .subscribe((character: bungie.Character) => {
         this.activeCharacter.next(character);
       });
@@ -106,30 +109,31 @@ export class GuardianService implements OnDestroy {
       this.activityMode,
       this.activityPage
     )
-      .map(([character, mode, page]) => {
-        try {
-          let membershipType = character.membershipType;
-          let membershipId = character.membershipId;
-          let characterId = character.characterId;
-          this.characterId.next(characterId);
-          return 'https://www.bungie.net/Platform/Destiny2/' + membershipType + '/Account/' + membershipId
-                  + '/Character/' + characterId + '/Stats/Activities/?mode=' + mode + '&count=7&page=' + page;
-        } catch (e) {
-          return '';
-        }
-      })
-      .distinctUntilChanged()
-      .switchMap((url) => {
-        this.activities.next([]);
-        this.noActivities.next(false);
-        if (url.length) {
-          return this.bHttp.get(url)
-            .map((res: Response) => res.json())
-            .catch((error: any) => Observable.throw(error.json().error || 'Server error'));
-        } else {
-          return Observable.empty();
-        }
-      })
+      .pipe(
+        map(([character, mode, page]) => {
+          try {
+            let membershipType = character.membershipType;
+            let membershipId = character.membershipId;
+            let characterId = character.characterId;
+            this.characterId.next(characterId);
+            return 'https://www.bungie.net/Platform/Destiny2/' + membershipType + '/Account/' + membershipId
+                    + '/Character/' + characterId + '/Stats/Activities/?mode=' + mode + '&count=7&page=' + page;
+          } catch (e) {
+            return '';
+          }
+        }),
+        distinctUntilChanged(),
+        switchMap((url) => {
+          this.activities.next([]);
+          this.noActivities.next(false);
+          if (url.length) {
+            return this.bHttp.get(url)
+              .pipe(catchError((error: any) => Observable.throw(error.json().error || 'Server error')));
+          } else {
+            return Observable.empty();
+          }
+        })
+      )
       .subscribe((res: bungie.ActivityHistoryResponse) => {
         try {
           if (res.ErrorCode !== 1) {
