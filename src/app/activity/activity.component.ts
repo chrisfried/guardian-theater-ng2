@@ -79,7 +79,7 @@ export class ActivityComponent implements OnInit, OnDestroy {
               );
             }
           });
-          if (pgcr.activityDetails.mode === 14) {
+          if (pgcr.activityDetails.mode === 39 || pgcr.activityDetails.mode === 41 || pgcr.activityDetails.mode === 42) {
             this.pgcr.teams.forEach(team => {
               team.trialsLink = 'https://trials.report/' + (team.entries[0].player.destinyUserInfo.membershipType === 1 ? 'xbox' : 'ps');
               team.entries.forEach(entry => {

@@ -38,6 +38,11 @@
     line-height: 40px;
   }
 
+  .tag {
+    color: $details-grey;
+    font-weight: normal; 
+  }
+
   .character-details {
     color: $details-grey;
     font-size: 10px;

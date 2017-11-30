@@ -20,6 +20,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
   public membershipType: number;
   public membershipId: string;
   public displayName: string;
+  public displayTag: string;
   public searchResults: bungie.SearchDestinyPlayerResult[];
   public characters: bungie.Character[];
   public activeCharacter: bungie.Character;
@@ -96,7 +97,8 @@ export class GuardianComponent implements OnInit, OnDestroy {
 
     this.subs.push(this.guardianService.displayName
       .subscribe(name => {
-        this.displayName = name;
+        this.displayName = name.split('#')[0];
+        this.displayTag = ' #' + name.split('#')[1];
       }));
 
     this.subs.push(this.guardianService.membershipType

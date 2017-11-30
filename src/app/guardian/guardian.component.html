@@ -8,7 +8,7 @@
       <div class="active-character">
         <div class="emblem" [ngStyle]="{'background-image': 'url(//www.bungie.net' + (activeCharacter.emblemHash | destinyHash:'emblemOverlay') + ')'}"></div>
         <div class="gamertag">
-          {{ displayName }}
+          <span class="name">{{ displayName }}</span><span class="tag">{{ displayTag }}</span>
         </div>
         <div class="character-details" *ngIf="activeCharacter"><span class="power-level">{{ activeCharacter.light }} </span><span>// {{ activeCharacter.classHash | destinyHash:'class' }} // {{ activeCharacter.raceHash | destinyHash:'race' }}</span></div>
       </div>

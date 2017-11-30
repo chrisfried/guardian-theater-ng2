@@ -242,7 +242,6 @@ export class ActivityService implements OnDestroy {
                         })
                       )
                       .subscribe((res) => {
-                        console.log(displayName, res);
                         if (res) {
                           this.twitchService.twitch[membershipId].next({
                             displayName: displayName,
@@ -324,6 +323,9 @@ export class ActivityService implements OnDestroy {
             };
             let activeName = this._activeName;
             pgcr.entries.some(function (entry) {
+              if (entry.player.destinyUserInfo.membershipType === 4) {
+                activeName = activeName.split('#')[0];
+              }
               if (entry.player.destinyUserInfo.displayName === activeName) {
                 pgcr.active.entry = entry;
                 try {
