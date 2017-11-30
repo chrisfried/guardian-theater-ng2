@@ -64,6 +64,7 @@ declare namespace gt {
       response: {}
     },
     clips?: Clip[],
+    trn?: string
   }
 
   interface Clip {

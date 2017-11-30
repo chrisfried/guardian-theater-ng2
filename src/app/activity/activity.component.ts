@@ -78,6 +78,17 @@ export class ActivityComponent implements OnInit, OnDestroy {
                   .subscribe(xbox => entry.xbox = xbox)
               );
             }
+            switch (entry.player.destinyUserInfo.membershipType) {
+              case 1:
+                entry.trn = 'xbl';
+                break;
+              case 2:
+                entry.trn = 'psn';
+                break;
+              case 4:
+                entry.trn = 'pc';
+                break;
+            }
           });
           if (pgcr.activityDetails.mode === 39 || pgcr.activityDetails.mode === 41 || pgcr.activityDetails.mode === 42) {
             this.pgcr.teams.forEach(team => {
