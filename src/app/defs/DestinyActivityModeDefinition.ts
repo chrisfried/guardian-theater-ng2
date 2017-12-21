@@ -15,6 +15,9 @@ export const DestinyActivityModeDefinition = {
     5: {
       name: 'Schmelztiegel'
     },
+    25: {
+      name: 'Hexenkessel'
+    },
     17: {
       name: 'Heroische Dämmerung'
     },
@@ -58,7 +61,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Eisenbanner: Konflikt'
     },
     6: {
-      name: 'Free Roam'
+      name: 'Erkunden'
     },
     16: {
       name: 'Dämmerung-Strikes'
@@ -85,6 +88,9 @@ export const DestinyActivityModeDefinition = {
     },
     5: {
       name: 'Crucible'
+    },
+    25: {
+      name: 'Mayhem'
     },
     17: {
       name: 'Heroic Nightfall'
@@ -129,7 +135,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Iron Banner Clash'
     },
     6: {
-      name: 'Free Roam'
+      name: 'Explore'
     },
     16: {
       name: 'Nightfall Strikes'
@@ -143,7 +149,7 @@ export const DestinyActivityModeDefinition = {
   },
   es: {
     42: {
-      name: 'Trials of the Nine Survival'
+      name: 'Pruebas de los Nueve: Supervivencia'
     },
     0: {
       name: 'Todo'
@@ -157,17 +163,20 @@ export const DestinyActivityModeDefinition = {
     5: {
       name: 'Crisol'
     },
+    25: {
+      name: 'Caos'
+    },
     17: {
-      name: 'Heroic Nightfall'
+      name: 'Ocaso heroico'
     },
     39: {
-      name: 'Trials of the Nine'
+      name: 'Pruebas de los Nueve'
     },
     38: {
-      name: 'Countdown'
+      name: 'Cuenta atrás'
     },
     12: {
-      name: 'Clash'
+      name: 'Enfrentamiento'
     },
     40: {
       name: 'Social'
@@ -182,25 +191,25 @@ export const DestinyActivityModeDefinition = {
       name: 'Incursión'
     },
     37: {
-      name: 'Survival'
+      name: 'Supervivencia'
     },
     41: {
-      name: 'Trials of the Nine Countdown'
+      name: 'Pruebas de los Nueve: Cuenta atrás'
     },
     18: {
       name: 'Asaltos'
     },
     43: {
-      name: 'Iron Banner Control'
+      name: 'Estandarte de Hierro: Control'
     },
     10: {
       name: 'Control'
     },
     44: {
-      name: 'Iron Banner Clash'
+      name: 'Estandarte de Hierro: Enfrentamiento'
     },
     6: {
-      name: 'Patrulla'
+      name: 'Explorar'
     },
     16: {
       name: 'Asaltos de Ocaso'
@@ -209,7 +218,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Asaltos normales'
     },
     45: {
-      name: 'Iron Banner Supremacy'
+      name: 'Estandarte de Hierro: Supremacía'
     },
   },
   esmx: {
@@ -227,6 +236,9 @@ export const DestinyActivityModeDefinition = {
     },
     5: {
       name: 'Crisol'
+    },
+    25: {
+      name: 'Caos'
     },
     17: {
       name: 'Ocaso Heroico'
@@ -271,7 +283,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Estandarte de Hierro Enfrentamiento'
     },
     6: {
-      name: 'Desplazamiento libre'
+      name: 'Exploración'
     },
     16: {
       name: 'Asaltos de Ocaso'
@@ -298,6 +310,9 @@ export const DestinyActivityModeDefinition = {
     },
     5: {
       name: 'L\'Épreuve'
+    },
+    25: {
+      name: 'Pagaille'
     },
     17: {
       name: 'Nuit noire Épique'
@@ -370,6 +385,9 @@ export const DestinyActivityModeDefinition = {
     5: {
       name: 'Crogiolo'
     },
+    25: {
+      name: 'Pandemonio'
+    },
     17: {
       name: 'Cala la Notte Autorevole'
     },
@@ -413,7 +431,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Stendardo di Ferro: Scontro'
     },
     6: {
-      name: 'Esplorazione'
+      name: 'Esplora'
     },
     16: {
       name: 'Assalti Cala la Notte'
@@ -440,6 +458,9 @@ export const DestinyActivityModeDefinition = {
     },
     5: {
       name: 'クルーシブル'
+    },
+    25: {
+      name: 'カオス'
     },
     17: {
       name: 'ナイトフォール(威光)'
@@ -484,7 +505,7 @@ export const DestinyActivityModeDefinition = {
       name: 'アイアンバナー「クラッシュ」'
     },
     6: {
-      name: 'オープンワールド'
+      name: '探索'
     },
     16: {
       name: 'ナイトフォールストライク'
@@ -498,7 +519,7 @@ export const DestinyActivityModeDefinition = {
   },
   pl: {
     42: {
-      name: 'Trials of the Nine Survival'
+      name: 'Przetrwanie – Próby Dziewiątki'
     },
     0: {
       name: 'Wszystko'
@@ -512,20 +533,23 @@ export const DestinyActivityModeDefinition = {
     5: {
       name: 'Tygiel'
     },
+    25: {
+      name: 'Jatka'
+    },
     17: {
-      name: 'Heroic Nightfall'
+      name: 'Heroiczne nocne szturmy'
     },
     39: {
-      name: 'Trials of the Nine'
+      name: 'Próby Dziewiątki'
     },
     38: {
-      name: 'Countdown'
+      name: 'Odliczanie'
     },
     12: {
-      name: 'Clash'
+      name: 'Starcie'
     },
     40: {
-      name: 'Social'
+      name: 'Społecznościowe'
     },
     2: {
       name: 'Fabuła'
@@ -537,25 +561,25 @@ export const DestinyActivityModeDefinition = {
       name: 'Najazd'
     },
     37: {
-      name: 'Survival'
+      name: 'Przetrwanie'
     },
     41: {
-      name: 'Trials of the Nine Countdown'
+      name: 'Próby Dziewiątki – Odliczanie'
     },
     18: {
       name: 'Szturmy'
     },
     43: {
-      name: 'Iron Banner Control'
+      name: 'Żelazna Chorągiew – Kontrola'
     },
     10: {
       name: 'Kontrola'
     },
     44: {
-      name: 'Iron Banner Clash'
+      name: 'Starcie – Żelazna Chorągiew'
     },
     6: {
-      name: 'Patrol'
+      name: 'Odkrywaj'
     },
     16: {
       name: 'Nocne szturmy'
@@ -564,7 +588,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Zwykłe szturmy'
     },
     45: {
-      name: 'Iron Banner Supremacy'
+      name: 'Supremacja – Żelazna Chorągiew'
     },
   },
   ptbr: {
@@ -582,6 +606,9 @@ export const DestinyActivityModeDefinition = {
     },
     5: {
       name: 'Crisol'
+    },
+    25: {
+      name: 'Caos'
     },
     17: {
       name: 'Anoitecer Heroico'
@@ -626,7 +653,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Bandeira de Ferro – Enfrentamento'
     },
     6: {
-      name: 'Exploração livre'
+      name: 'Explore'
     },
     16: {
       name: 'Assaltos do Anoitecer'
@@ -653,6 +680,9 @@ export const DestinyActivityModeDefinition = {
     },
     5: {
       name: 'Горнило'
+    },
+    25: {
+      name: 'Хаос'
     },
     17: {
       name: 'Героические Сумрачные налеты'
@@ -697,7 +727,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Железное знамя: Столкновение'
     },
     6: {
-      name: 'Режим свободного исследования'
+      name: 'Режим исследования'
     },
     16: {
       name: 'Сумрачные налеты'
@@ -711,13 +741,13 @@ export const DestinyActivityModeDefinition = {
   },
   zhcht: {
     42: {
-      name: 'Trials of the Nine Survival'
+      name: '九巨頭試煉生存模式'
     },
     0: {
       name: '全部'
     },
     31: {
-      name: '至尊模式'
+      name: '奪寶模式'
     },
     7: {
       name: 'PvE'
@@ -725,23 +755,26 @@ export const DestinyActivityModeDefinition = {
     5: {
       name: '熔爐競技場'
     },
+    25: {
+      name: '激戰模式'
+    },
     17: {
-      name: 'Heroic Nightfall'
+      name: '英雄日暮任務'
     },
     39: {
-      name: 'Trials of the Nine'
+      name: '九巨頭試煉'
     },
     38: {
-      name: 'Countdown'
+      name: '定時炸彈'
     },
     12: {
-      name: 'Clash'
+      name: '死鬥模式'
     },
     40: {
-      name: 'Social'
+      name: '社交'
     },
     2: {
-      name: '主線'
+      name: '故事'
     },
     19: {
       name: '鋼鐵旗幟'
@@ -750,25 +783,25 @@ export const DestinyActivityModeDefinition = {
       name: '掠奪任務'
     },
     37: {
-      name: 'Survival'
+      name: '生存'
     },
     41: {
-      name: 'Trials of the Nine Countdown'
+      name: '九巨頭試煉分秒必爭模式'
     },
     18: {
       name: '突擊任務'
     },
     43: {
-      name: 'Iron Banner Control'
+      name: '鋼鐵旗幟佔領模式'
     },
     10: {
-      name: '攻佔模式'
+      name: '佔領模式'
     },
     44: {
-      name: 'Iron Banner Clash'
+      name: '鋼鐵旗幟死鬥模式'
     },
     6: {
-      name: '巡邏任務'
+      name: '探索'
     },
     16: {
       name: '日暮突擊任務'
@@ -777,7 +810,7 @@ export const DestinyActivityModeDefinition = {
       name: '普通突擊任務'
     },
     45: {
-      name: 'Iron Banner Supremacy'
+      name: '鋼鐵旗幟奪寶模式'
     },
   },
   data: {
@@ -796,12 +829,22 @@ export const DestinyActivityModeDefinition = {
       pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
       category: '2'
     },
+    946648766: {
+      icon: 'undefined',
+      pgcrImage: 'undefined',
+      category: '0'
+    },
     1164760493: {
       icon: '/img/theme/destiny/icons/game_modes/story.png',
       pgcrImage: '/img/theme/destiny/bgs/stats/banner_story_1.jpg',
       category: '1'
     },
     1164760504: {
+      icon: '/img/theme/destiny/icons/game_modes/crucible_default.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
+      category: '2'
+    },
+    1264443021: {
       icon: '/img/theme/destiny/icons/game_modes/crucible_default.png',
       pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
       category: '2'
