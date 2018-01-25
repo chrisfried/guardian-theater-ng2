@@ -1,4 +1,4 @@
-core-js@2.5.1
+core-js@2.5.3
 MIT
 Copyright (c) 2014-2017 Denis Pushkarev
 
@@ -20,11 +20,15 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
+angulartics2@4.6.3
+MIT
+MIT
+
 angular-2-local-storage@1.0.1
 MIT
 MIT
 
-@angular/core@5.0.2
+@angular/core@5.2.2
 MIT
 MIT
 
@@ -96,7 +100,19 @@ Unicode and the Unicode logo are trademarks of Unicode, Inc. in the United
 States and other countries. All third party trademarks referenced herein are
 the property of their respective owners.
 
-webpack@3.8.1
+@angular/platform-browser@5.2.2
+MIT
+MIT
+
+@angular/router@5.2.2
+MIT
+MIT
+
+@angular/common@5.2.2
+MIT
+MIT
+
+webpack@3.10.0
 MIT
 Copyright JS Foundation and other contributors
 
@@ -119,7 +135,7 @@ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-zone.js@0.8.18
+zone.js@0.8.20
 MIT
 The MIT License
 
