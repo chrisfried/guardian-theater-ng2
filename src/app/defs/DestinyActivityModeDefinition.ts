@@ -9,6 +9,9 @@ export const DestinyActivityModeDefinition = {
     31: {
       name: 'Vorherrschaft'
     },
+    15: {
+      name: 'Scharlach-Woche'
+    },
     7: {
       name: 'PVE'
     },
@@ -82,6 +85,9 @@ export const DestinyActivityModeDefinition = {
     },
     31: {
       name: 'Supremacy'
+    },
+    15: {
+      name: 'Crimson Doubles'
     },
     7: {
       name: 'PvE'
@@ -157,6 +163,9 @@ export const DestinyActivityModeDefinition = {
     31: {
       name: 'Supremacía'
     },
+    15: {
+      name: 'Crimson Doubles'
+    },
     7: {
       name: 'PvE'
     },
@@ -230,6 +239,9 @@ export const DestinyActivityModeDefinition = {
     },
     31: {
       name: 'Supremacía'
+    },
+    15: {
+      name: 'Dobles Carmesí.'
     },
     7: {
       name: 'PvE'
@@ -305,6 +317,9 @@ export const DestinyActivityModeDefinition = {
     31: {
       name: 'Suprématie'
     },
+    15: {
+      name: 'Jours Garance'
+    },
     7: {
       name: 'JcE'
     },
@@ -378,6 +393,9 @@ export const DestinyActivityModeDefinition = {
     },
     31: {
       name: 'Supremazia'
+    },
+    15: {
+      name: 'Giorni Scarlatti'
     },
     7: {
       name: 'PvE'
@@ -453,6 +471,9 @@ export const DestinyActivityModeDefinition = {
     31: {
       name: '闘魂'
     },
+    15: {
+      name: '真紅の日々'
+    },
     7: {
       name: 'PvE'
     },
@@ -527,6 +548,9 @@ export const DestinyActivityModeDefinition = {
     31: {
       name: 'Supremacja'
     },
+    15: {
+      name: 'Karmazynowe Dni'
+    },
     7: {
       name: 'PvE'
     },
@@ -579,7 +603,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Starcie – Żelazna Chorągiew'
     },
     6: {
-      name: 'Odkrywaj'
+      name: 'Eksploracja'
     },
     16: {
       name: 'Nocne szturmy'
@@ -600,6 +624,9 @@ export const DestinyActivityModeDefinition = {
     },
     31: {
       name: 'Supremacia'
+    },
+    15: {
+      name: 'Dias Carmesins'
     },
     7: {
       name: 'PvE'
@@ -675,6 +702,9 @@ export const DestinyActivityModeDefinition = {
     31: {
       name: 'Превосходство'
     },
+    15: {
+      name: 'Багряные дни '
+    },
     7: {
       name: 'PvE'
     },
@@ -748,6 +778,9 @@ export const DestinyActivityModeDefinition = {
     },
     31: {
       name: '奪寶模式'
+    },
+    15: {
+      name: 'Crimson Doubles'
     },
     7: {
       name: 'PvE'
@@ -830,9 +863,9 @@ export const DestinyActivityModeDefinition = {
       category: '2'
     },
     946648766: {
-      icon: 'undefined',
-      pgcrImage: 'undefined',
-      category: '0'
+      icon: '/img/theme/destiny/icons/game_modes/Crimson_Playlist.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
+      category: '2'
     },
     1164760493: {
       icon: '/img/theme/destiny/icons/game_modes/story.png',

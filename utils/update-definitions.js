@@ -22,6 +22,10 @@ let definitions = [
   'DestinyRaceDefinition'
 ]
 
+try {
+  fs.mkdirSync('./utils/defs');
+} catch (e) { console.log('error creating folder'); }
+
 languages.forEach(language => {
   noHyphen = language;
   if (language[2]) {

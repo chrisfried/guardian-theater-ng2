@@ -631,7 +631,7 @@ export const DestinyActivityDefinition = {
       name: 'Der Waffenhändler'
     },
     2081576589: {
-      name: 'Klassifiziert'
+      name: 'Der Burnout'
     },
     2113712124: {
       name: 'Sakrileg'
@@ -730,7 +730,7 @@ export const DestinyActivityDefinition = {
       name: 'Bergungsmission'
     },
     2444890541: {
-      name: 'Klassifiziert'
+      name: 'Scharlach-Woche'
     },
     2445164291: {
       name: 'Attentatsmission'
@@ -1845,7 +1845,7 @@ export const DestinyActivityDefinition = {
       name: 'The Arms Dealer'
     },
     2081576589: {
-      name: 'Classified'
+      name: 'The Burnout'
     },
     2113712124: {
       name: 'Sacrilege'
@@ -1944,7 +1944,7 @@ export const DestinyActivityDefinition = {
       name: 'Salvage Mission'
     },
     2444890541: {
-      name: 'Classified'
+      name: 'Crimson Days'
     },
     2445164291: {
       name: 'Assassination Mission'
@@ -3059,7 +3059,7 @@ export const DestinyActivityDefinition = {
       name: 'El contrabandista de armas'
     },
     2081576589: {
-      name: 'Clasificado'
+      name: 'Las Cenizas'
     },
     2113712124: {
       name: 'Sacrilegio'
@@ -3158,7 +3158,7 @@ export const DestinyActivityDefinition = {
       name: 'Misión de salvamento'
     },
     2444890541: {
-      name: 'Clasificado'
+      name: 'Días Escarlata'
     },
     2445164291: {
       name: 'Misión de asesinato'
@@ -4273,7 +4273,7 @@ export const DestinyActivityDefinition = {
       name: 'Traficante de armas'
     },
     2081576589: {
-      name: 'Confidencial'
+      name: 'Combustión'
     },
     2113712124: {
       name: 'Sacrilegio'
@@ -4372,7 +4372,7 @@ export const DestinyActivityDefinition = {
       name: 'Misión de salvamento'
     },
     2444890541: {
-      name: 'Confidencial'
+      name: 'Días Carmesí'
     },
     2445164291: {
       name: 'Misión de asesinato'
@@ -5487,7 +5487,7 @@ export const DestinyActivityDefinition = {
       name: 'Le Trafiquant d\'armes'
     },
     2081576589: {
-      name: 'Confidentiel'
+      name: 'Calciné'
     },
     2113712124: {
       name: 'Sacrilège'
@@ -5586,7 +5586,7 @@ export const DestinyActivityDefinition = {
       name: 'Mission de récupération'
     },
     2444890541: {
-      name: 'Confidentiel'
+      name: 'Jours Garance'
     },
     2445164291: {
       name: 'Mission d\'assassinat'
@@ -6701,7 +6701,7 @@ export const DestinyActivityDefinition = {
       name: 'Trafficante d\'armi'
     },
     2081576589: {
-      name: 'Classificato'
+      name: 'Combustione'
     },
     2113712124: {
       name: 'Sacrilegio'
@@ -6800,7 +6800,7 @@ export const DestinyActivityDefinition = {
       name: 'Missione di recupero'
     },
     2444890541: {
-      name: 'Classificato'
+      name: 'Giorni Scarlatti'
     },
     2445164291: {
       name: 'Missione di esecuzione'
@@ -7915,7 +7915,7 @@ export const DestinyActivityDefinition = {
       name: '武器商人'
     },
     2081576589: {
-      name: '機密'
+      name: '灼熱'
     },
     2113712124: {
       name: '冒涜'
@@ -8014,7 +8014,7 @@ export const DestinyActivityDefinition = {
       name: '回収ミッション'
     },
     2444890541: {
-      name: '機密'
+      name: '真紅の日々'
     },
     2445164291: {
       name: '暗殺ミッション'
@@ -9129,7 +9129,7 @@ export const DestinyActivityDefinition = {
       name: 'Handlarz bronią'
     },
     2081576589: {
-      name: 'Tajne'
+      name: 'Wypalenie'
     },
     2113712124: {
       name: 'Świętokradztwo'
@@ -9228,7 +9228,7 @@ export const DestinyActivityDefinition = {
       name: 'Misja ratunkowa'
     },
     2444890541: {
-      name: 'Tajne'
+      name: 'Karmazynowe Dni'
     },
     2445164291: {
       name: 'Misja likwidacyjna'
@@ -10343,7 +10343,7 @@ export const DestinyActivityDefinition = {
       name: 'O Traficante de Armas'
     },
     2081576589: {
-      name: 'Confidencial'
+      name: 'Combusto'
     },
     2113712124: {
       name: 'Sacrilégio'
@@ -10442,7 +10442,7 @@ export const DestinyActivityDefinition = {
       name: 'Missão de coleta'
     },
     2444890541: {
-      name: 'Confidencial'
+      name: 'Dias Carmesins'
     },
     2445164291: {
       name: 'Missão de assassinato'
@@ -11557,7 +11557,7 @@ export const DestinyActivityDefinition = {
       name: 'Торговец оружием'
     },
     2081576589: {
-      name: 'Засекречено'
+      name: 'Пепелище'
     },
     2113712124: {
       name: 'Святотатство'
@@ -11656,7 +11656,7 @@ export const DestinyActivityDefinition = {
       name: 'Миссия по спасению'
     },
     2444890541: {
-      name: 'Засекречено'
+      name: 'Багряные дни'
     },
     2445164291: {
       name: 'Миссия по ликвидации'
@@ -12771,7 +12771,7 @@ export const DestinyActivityDefinition = {
       name: '軍火商'
     },
     2081576589: {
-      name: '機密'
+      name: '遺落燎原'
     },
     2113712124: {
       name: '褻瀆'
@@ -12870,7 +12870,7 @@ export const DestinyActivityDefinition = {
       name: '搶救任務'
     },
     2444890541: {
-      name: '機密'
+      name: '緋紅之日'
     },
     2445164291: {
       name: '暗殺任務'
@@ -13355,39 +13355,39 @@ export const DestinyActivityDefinition = {
   },
   data: {
     19982784: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     30240416: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     37050217: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     51408141: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     53954174: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     57103244: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     60002467: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_sacrilege.jpg'
     },
     78673128: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     80726883: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     82913930: {
@@ -13395,767 +13395,767 @@ export const DestinyActivityDefinition = {
       pgcrImage: 'undefined'
     },
     89727599: {
-      icon: '/common/destiny2_content/icons/4f6845f1e973d78896c9b3f8748bfb90.png',
+      icon: '/common/destiny2_content/icons/086f98c05ab3a24c63d5093327a40f1f.png',
       pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
     },
     104342360: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     116352029: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     122988657: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     143647473: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     145136689: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     145302664: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_the_arms_dealer.jpg'
     },
     153537894: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     175598161: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     189324537: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     197670945: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     204298081: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     248066530: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     255819671: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_fury.jpg'
     },
     261349035: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     286324446: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     286562305: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     287649202: {
-      icon: '/common/destiny2_content/icons/4f6845f1e973d78896c9b3f8748bfb90.png',
+      icon: '/common/destiny2_content/icons/086f98c05ab3a24c63d5093327a40f1f.png',
       pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
     },
     293858112: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     298747401: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     298793060: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     313572698: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     320680002: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     330545737: {
-      icon: '/common/destiny2_content/icons/c160acbdf3e2af2404c041d3a48490cf.png',
+      icon: '/common/destiny2_content/icons/2af52398d14638677f9e615d64821528.png',
       pgcrImage: '/img/destiny_content/pgcr/social_farm.jpg'
     },
     338662534: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_inverted_spire.jpg'
     },
     355984230: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     359488722: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     373475104: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/rituals_a_garden_world.jpg'
     },
     374818561: {
-      icon: '/common/destiny2_content/icons/0895f4eb755df3af5b15b10c2d9c2211.png',
+      icon: '/common/destiny2_content/icons/fa8cf2c524b9ca7652a1c1cf46ecfbaa.png',
       pgcrImage: '/img/destiny_content/pgcr/crucible_katana.jpg'
     },
     379330092: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     387171436: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     388289443: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     415388387: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     417231112: {
-      icon: '/common/destiny2_content/icons/4f6845f1e973d78896c9b3f8748bfb90.png',
+      icon: '/common/destiny2_content/icons/086f98c05ab3a24c63d5093327a40f1f.png',
       pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
     },
     429361491: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     435989417: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     442671778: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     444087412: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     445417088: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: 'undefined'
     },
     459955094: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     461203479: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     464789944: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_chosen.jpg'
     },
     474380713: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     539897061: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     545240418: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     549123191: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     553537971: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_chosen.jpg'
     },
     564863404: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: 'undefined'
     },
     581323290: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     585071442: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_savanthuns_song.jpg'
     },
     601540706: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_the_arms_dealer.jpg'
     },
     622895925: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     632790902: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     642256373: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_exodus_crash.jpg'
     },
     642277473: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_the_pyramdion.jpg'
     },
     652598202: {
-      icon: '/common/destiny2_content/icons/0895f4eb755df3af5b15b10c2d9c2211.png',
+      icon: '/common/destiny2_content/icons/fa8cf2c524b9ca7652a1c1cf46ecfbaa.png',
       pgcrImage: '/img/destiny_content/pgcr/crucible_slag.jpg'
     },
     656703508: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     661855681: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     667604912: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_looped.jpg'
     },
     671904429: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     689927878: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     703311712: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     715306877: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     719906507: {
-      icon: '/common/destiny2_content/icons/c160acbdf3e2af2404c041d3a48490cf.png',
+      icon: '/common/destiny2_content/icons/2af52398d14638677f9e615d64821528.png',
       pgcrImage: '/img/destiny_content/pgcr/social_spire.jpg'
     },
     723733266: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     743100125: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     750649238: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     757116822: {
-      icon: '/common/destiny2_content/icons/4f6845f1e973d78896c9b3f8748bfb90.png',
+      icon: '/common/destiny2_content/icons/086f98c05ab3a24c63d5093327a40f1f.png',
       pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
     },
     760130722: {
-      icon: '/common/destiny2_content/icons/0895f4eb755df3af5b15b10c2d9c2211.png',
+      icon: '/common/destiny2_content/icons/fa8cf2c524b9ca7652a1c1cf46ecfbaa.png',
       pgcrImage: '/img/destiny_content/pgcr/crucible_cliffside.jpg'
     },
     782175145: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     782290869: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     789332628: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     798143184: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     808931822: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     809170886: {
-      icon: '/common/destiny2_content/icons/4f6845f1e973d78896c9b3f8748bfb90.png',
+      icon: '/common/destiny2_content/icons/086f98c05ab3a24c63d5093327a40f1f.png',
       pgcrImage: '/img/destiny_content/pgcr/raids_leviathan_eater_of_worlds.jpg'
     },
     834864522: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     837763871: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     840678113: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     849242583: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     880665770: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     903584917: {
-      icon: '/common/destiny2_content/icons/98f3cb79d746c8023f5a40a54a30a37d.png',
+      icon: '/common/destiny2_content/icons/4dc4f43cadbbd7ee0f790f2432eb9b1e.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     919252154: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     926012363: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     926940962: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_the_pyramdion.jpg'
     },
     938512773: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_unbroken.jpg'
     },
     940394831: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_exodus_crash.jpg'
     },
     955852466: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_1AU.jpg'
     },
     963938931: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     964196803: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     969385987: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     989294159: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/rituals_tree_of_probabilities.jpg'
     },
     991410404: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/rituals_meditation_hijacked.jpg'
     },
     993152361: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     1002145272: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_tree_of_probabilities.jpg'
     },
     1019362992: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_homecoming.jpg'
     },
     1034805570: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     1035135049: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_the_pyramdion.jpg'
     },
     1038710420: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     1049899965: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     1053141615: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     1057017675: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     1063969232: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     1073289414: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     1075152813: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     1076851943: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     1085523978: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     1090267699: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     1101792305: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_savanthuns_song.jpg'
     },
     1102824603: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     1105211124: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     1107208644: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     1120584691: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     1129066976: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_the_pyramdion.jpg'
     },
     1159314159: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     1164772243: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     1175770231: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     1206154103: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     1207505828: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_the_arms_dealer.jpg'
     },
     1225970098: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     1228327586: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     1243390694: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_larceny.jpg'
     },
     1249965655: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     1250426564: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     1254990192: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     1265390366: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     1278641935: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_a_garden_world.jpg'
     },
     1279862229: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     1289867188: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     1290744998: {
-      icon: '/common/destiny2_content/icons/c160acbdf3e2af2404c041d3a48490cf.png',
+      icon: '/common/destiny2_content/icons/2af52398d14638677f9e615d64821528.png',
       pgcrImage: '/img/destiny_content/pgcr/social_farm.jpg'
     },
     1309646866: {
-      icon: '/common/destiny2_content/icons/c160acbdf3e2af2404c041d3a48490cf.png',
+      icon: '/common/destiny2_content/icons/2af52398d14638677f9e615d64821528.png',
       pgcrImage: '/img/destiny_content/pgcr/social_farm.jpg'
     },
     1331268141: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     1357019430: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_exodus_crash.jpg'
     },
     1375839088: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     1412142789: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     1416597166: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     1418217191: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     1426391278: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     1428050875: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     1451946951: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     1466550401: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     1490848577: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_looped.jpg'
     },
     1491022087: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     1495993294: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_lake_of_shadows.jpg'
     },
     1498466193: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     1512980468: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_the_gateway.jpg'
     },
     1521232506: {
-      icon: 'undefined',
+      icon: '/img/misc/missing_icon_d2.png',
       pgcrImage: 'undefined'
     },
     1525633702: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     1536764325: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     1549614516: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     1557641249: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     1563393783: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_exodus_crash.jpg'
     },
     1568750156: {
-      icon: '/common/destiny2_content/icons/c160acbdf3e2af2404c041d3a48490cf.png',
+      icon: '/common/destiny2_content/icons/2af52398d14638677f9e615d64821528.png',
       pgcrImage: '/img/destiny_content/pgcr/social_farm.jpg'
     },
     1570598249: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     1581219251: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     1603374112: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     1614692057: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     1646219807: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_larceny.jpg'
     },
     1651979106: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     1658347443: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_homecoming.jpg'
     },
     1685065161: {
-      icon: '/common/destiny2_content/icons/4f6845f1e973d78896c9b3f8748bfb90.png',
+      icon: '/common/destiny2_content/icons/086f98c05ab3a24c63d5093327a40f1f.png',
       pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
     },
     1685237649: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     1699948563: {
-      icon: '/common/destiny2_content/icons/4f6845f1e973d78896c9b3f8748bfb90.png',
+      icon: '/common/destiny2_content/icons/086f98c05ab3a24c63d5093327a40f1f.png',
       pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
     },
     1720510574: {
-      icon: '/common/destiny2_content/icons/0895f4eb755df3af5b15b10c2d9c2211.png',
+      icon: '/common/destiny2_content/icons/fa8cf2c524b9ca7652a1c1cf46ecfbaa.png',
       pgcrImage: '/img/destiny_content/pgcr/crucible_hull.jpg'
     },
     1725302079: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     1740310101: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     1755484011: {
-      icon: 'undefined',
+      icon: '/img/misc/missing_icon_d2.png',
       pgcrImage: 'undefined'
     },
     1756055546: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     1773400654: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     1773567660: {
-      icon: '/common/destiny2_content/icons/0895f4eb755df3af5b15b10c2d9c2211.png',
+      icon: '/common/destiny2_content/icons/fa8cf2c524b9ca7652a1c1cf46ecfbaa.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     1778450722: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     1786054751: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     1790343591: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     1792985204: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_exodus_crash.jpg'
     },
     1802930364: {
-      icon: '/common/destiny2_content/icons/0895f4eb755df3af5b15b10c2d9c2211.png',
+      icon: '/common/destiny2_content/icons/fa8cf2c524b9ca7652a1c1cf46ecfbaa.png',
       pgcrImage: '/img/destiny_content/pgcr/pvp_wormhaven.jpg'
     },
     1823921651: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     1824067376: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     1829866365: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     1863334927: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_savanthuns_song.jpg'
     },
     1874578888: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     1875726950: {
-      icon: '/common/destiny2_content/icons/4f6845f1e973d78896c9b3f8748bfb90.png',
+      icon: '/common/destiny2_content/icons/086f98c05ab3a24c63d5093327a40f1f.png',
       pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
     },
     1949546348: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     1952521609: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     1956541147: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     1969800443: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     1971154629: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     1975064760: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_savanthuns_song.jpg'
     },
     1981289329: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     1984315274: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_exodus_crash.jpg'
     },
     1987624188: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     1988701745: {
-      icon: '/common/destiny2_content/icons/0895f4eb755df3af5b15b10c2d9c2211.png',
+      icon: '/common/destiny2_content/icons/fa8cf2c524b9ca7652a1c1cf46ecfbaa.png',
       pgcrImage: '/img/destiny_content/pgcr/crucible_elevator.jpg'
     },
     2001433484: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     2014552458: {
@@ -14163,139 +14163,139 @@ export const DestinyActivityDefinition = {
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     2025057095: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     2026037412: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     2033669713: {
-      icon: '/common/destiny2_content/icons/0895f4eb755df3af5b15b10c2d9c2211.png',
+      icon: '/common/destiny2_content/icons/fa8cf2c524b9ca7652a1c1cf46ecfbaa.png',
       pgcrImage: '/img/destiny_content/pgcr/crucible_shaft.jpg'
     },
     2046332536: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/rituals_tree_of_probabilities.jpg'
     },
     2052289205: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_combustion.jpg'
     },
     2056035210: {
-      icon: 'undefined',
+      icon: '/img/misc/missing_icon_d2.png',
       pgcrImage: 'undefined'
     },
     2067233851: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     2079994698: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     2080275457: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_the_arms_dealer.jpg'
     },
     2081576589: {
-      icon: 'undefined',
-      pgcrImage: 'undefined'
+      icon: '/common/destiny2_content/icons/fa8cf2c524b9ca7652a1c1cf46ecfbaa.png',
+      pgcrImage: '/img/destiny_content/pgcr/pvp_the_burnout.jpg'
     },
     2113712124: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_sacrilege.jpg'
     },
     2151274060: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     2164432138: {
-      icon: '/common/destiny2_content/icons/4f6845f1e973d78896c9b3f8748bfb90.png',
+      icon: '/common/destiny2_content/icons/086f98c05ab3a24c63d5093327a40f1f.png',
       pgcrImage: '/img/destiny_content/pgcr/raids_leviathan_eater_of_worlds.jpg'
     },
     2174556965: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     2183066491: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/social_farm.jpg'
     },
     2184866967: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     2187073261: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     2199986157: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     2231840083: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     2236648719: {
-      icon: '/common/destiny2_content/icons/0895f4eb755df3af5b15b10c2d9c2211.png',
+      icon: '/common/destiny2_content/icons/fa8cf2c524b9ca7652a1c1cf46ecfbaa.png',
       pgcrImage: '/img/destiny_content/pgcr/crucible_glaive.jpg'
     },
     2243336789: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     2250935166: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     2259811067: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     2264636552: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_combustion.jpg'
     },
     2266954523: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/social_farm.jpg'
     },
     2276204547: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_omega.jpg'
     },
     2279197206: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     2287222467: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     2288260902: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     2291549972: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     2297638408: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_fury.jpg'
     },
     2301390667: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     2307090074: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     2318812547: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_the_pyramdion.jpg'
     },
     2319065780: {
@@ -14303,471 +14303,471 @@ export const DestinyActivityDefinition = {
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     2322829199: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/rituals_a_garden_world.jpg'
     },
     2336998357: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     2351745587: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     2379494367: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     2416546450: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/rituals_tree_of_probabilities.jpg'
     },
     2417088417: {
-      icon: '/common/destiny2_content/icons/0895f4eb755df3af5b15b10c2d9c2211.png',
+      icon: '/common/destiny2_content/icons/fa8cf2c524b9ca7652a1c1cf46ecfbaa.png',
       pgcrImage: '/img/destiny_content/pgcr/pvp_pacifica.jpg'
     },
     2420240009: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     2444890541: {
-      icon: 'undefined',
-      pgcrImage: 'undefined'
+      icon: '/common/destiny2_content/icons/48a788e2d6e0cbda6d8ed37dd549da6f.png',
+      pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     2445164291: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     2449714930: {
-      icon: '/common/destiny2_content/icons/4f6845f1e973d78896c9b3f8748bfb90.png',
+      icon: '/common/destiny2_content/icons/086f98c05ab3a24c63d5093327a40f1f.png',
       pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
     },
     2464834848: {
-      icon: '/common/destiny2_content/icons/0895f4eb755df3af5b15b10c2d9c2211.png',
+      icon: '/common/destiny2_content/icons/fa8cf2c524b9ca7652a1c1cf46ecfbaa.png',
       pgcrImage: '/img/destiny_content/pgcr/crucible_midtown.jpg'
     },
     2468202005: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     2478782573: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     2517540332: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     2519458964: {
-      icon: '/common/destiny2_content/icons/0895f4eb755df3af5b15b10c2d9c2211.png',
+      icon: '/common/destiny2_content/icons/fa8cf2c524b9ca7652a1c1cf46ecfbaa.png',
       pgcrImage: '/img/destiny_content/pgcr/crucible_grove.jpg'
     },
     2519564410: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     2536491635: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     2558926634: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     2559514952: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_utopia.jpg'
     },
     2561308143: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     2573702057: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     2574607799: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     2575990417: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     2580713007: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     2588220738: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     2610112492: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     2619236227: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     2629975203: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     2629998776: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     2642769170: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_six.jpg'
     },
     2651851341: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     2665134323: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     2667533713: {
-      icon: '/common/destiny2_content/icons/0895f4eb755df3af5b15b10c2d9c2211.png',
+      icon: '/common/destiny2_content/icons/fa8cf2c524b9ca7652a1c1cf46ecfbaa.png',
       pgcrImage: '/img/destiny_content/pgcr/crucible_observatory.jpg'
     },
     2675435236: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     2678510381: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     2684479494: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     2688061647: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/rituals_a_garden_world.jpg'
     },
     2693136600: {
-      icon: '/common/destiny2_content/icons/4f6845f1e973d78896c9b3f8748bfb90.png',
+      icon: '/common/destiny2_content/icons/086f98c05ab3a24c63d5093327a40f1f.png',
       pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
     },
     2693136601: {
-      icon: '/common/destiny2_content/icons/4f6845f1e973d78896c9b3f8748bfb90.png',
+      icon: '/common/destiny2_content/icons/086f98c05ab3a24c63d5093327a40f1f.png',
       pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
     },
     2693136602: {
-      icon: '/common/destiny2_content/icons/4f6845f1e973d78896c9b3f8748bfb90.png',
+      icon: '/common/destiny2_content/icons/086f98c05ab3a24c63d5093327a40f1f.png',
       pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
     },
     2693136603: {
-      icon: '/common/destiny2_content/icons/4f6845f1e973d78896c9b3f8748bfb90.png',
+      icon: '/common/destiny2_content/icons/086f98c05ab3a24c63d5093327a40f1f.png',
       pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
     },
     2693136604: {
-      icon: '/common/destiny2_content/icons/4f6845f1e973d78896c9b3f8748bfb90.png',
+      icon: '/common/destiny2_content/icons/086f98c05ab3a24c63d5093327a40f1f.png',
       pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
     },
     2693136605: {
-      icon: '/common/destiny2_content/icons/4f6845f1e973d78896c9b3f8748bfb90.png',
+      icon: '/common/destiny2_content/icons/086f98c05ab3a24c63d5093327a40f1f.png',
       pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
     },
     2702476101: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/social_traveler.jpg'
     },
     2708828207: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_utopia.jpg'
     },
     2737739053: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     2759086913: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     2768347363: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     2773222353: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     2776929937: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     2782300570: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     2784803584: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     2798856614: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     2846775197: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     2867288098: {
-      icon: 'undefined',
+      icon: '/img/misc/missing_icon_d2.png',
       pgcrImage: 'undefined'
     },
     2908287325: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     2926767881: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_payback.jpg'
     },
     2934103434: {
-      icon: 'undefined',
+      icon: '/img/misc/missing_icon_d2.png',
       pgcrImage: 'undefined'
     },
     2949941834: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     2969403085: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     3002511278: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     3011963288: {
-      icon: '/common/destiny2_content/icons/0621451a8e20295e9dae8a3554f4ee93.png',
+      icon: '/common/destiny2_content/icons/139cebe45f33921d655455ef11db87fb.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     3026637018: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     3038694763: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     3049122128: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     3050465729: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_inverted_spire.jpg'
     },
     3062197616: {
-      icon: '/common/destiny2_content/icons/36b1dd909687ae76e37d7be6775a8ec1.png',
+      icon: '/common/destiny2_content/icons/48a788e2d6e0cbda6d8ed37dd549da6f.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     3089205900: {
-      icon: '/common/destiny2_content/icons/4f6845f1e973d78896c9b3f8748bfb90.png',
+      icon: '/common/destiny2_content/icons/086f98c05ab3a24c63d5093327a40f1f.png',
       pgcrImage: '/img/destiny_content/pgcr/raids_leviathan_eater_of_worlds.jpg'
     },
     3105090879: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_adieu.jpg'
     },
     3140524926: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     3143798436: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     3147707814: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_riptide.jpg'
     },
     3148431353: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     3150153711: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     3172367001: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     3173130826: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     3191123858: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     3206026167: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     3208779612: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     3211303924: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     3211568383: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     3215844014: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     3226632017: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/rituals_a_deadly_trial.jpg'
     },
     3231065327: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     3243161126: {
-      icon: '/common/destiny2_content/icons/0621451a8e20295e9dae8a3554f4ee93.png',
+      icon: '/common/destiny2_content/icons/139cebe45f33921d655455ef11db87fb.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     3248193378: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     3268684190: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     3272002712: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_hope.jpg'
     },
     3277510674: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     3283790633: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     3289681664: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     3289842296: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     3292523719: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     3298775062: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     3303685562: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     3304835347: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     3306366908: {
-      icon: '/common/destiny2_content/icons/0895f4eb755df3af5b15b10c2d9c2211.png',
+      icon: '/common/destiny2_content/icons/fa8cf2c524b9ca7652a1c1cf46ecfbaa.png',
       pgcrImage: '/img/destiny_content/pgcr/pvp_radiant_cliffs.jpg'
     },
     3336275007: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_six.jpg'
     },
     3337731612: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     3346345105: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     3359466010: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_spark.jpg'
     },
     3368226533: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_inverted_spire.jpg'
     },
     3370527053: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     3376869257: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     3379039897: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     3410530777: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     3417504239: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_riptide.jpg'
     },
     3446541099: {
-      icon: '/common/destiny2_content/icons/4f6845f1e973d78896c9b3f8748bfb90.png',
+      icon: '/common/destiny2_content/icons/086f98c05ab3a24c63d5093327a40f1f.png',
       pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
     },
     3479544154: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     3481058226: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     3485876484: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     3487576414: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     3489692681: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     3500791146: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     3515770727: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     3580793473: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_1AU.jpg'
     },
     3612741503: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     3616746132: {
@@ -14775,63 +14775,63 @@ export const DestinyActivityDefinition = {
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     3627094182: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     3631476566: {
-      icon: '/common/destiny2_content/icons/c160acbdf3e2af2404c041d3a48490cf.png',
+      icon: '/common/destiny2_content/icons/2af52398d14638677f9e615d64821528.png',
       pgcrImage: '/img/destiny_content/pgcr/social_farm.jpg'
     },
     3642412717: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     3645117987: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     3652531274: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     3662124488: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     3664915501: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     3669054326: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     3688464794: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     3700722865: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     3702064261: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     3738159218: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_unbroken.jpg'
     },
     3752039537: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     3780356141: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     3792746061: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     3799743268: {
@@ -14839,139 +14839,139 @@ export const DestinyActivityDefinition = {
       pgcrImage: '/img/destiny_content/pgcr/conceptual_trials_of_the_nine.jpg'
     },
     3806583577: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     3834639884: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     3836086286: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     3839751954: {
-      icon: '/common/destiny2_content/icons/0895f4eb755df3af5b15b10c2d9c2211.png',
+      icon: '/common/destiny2_content/icons/fa8cf2c524b9ca7652a1c1cf46ecfbaa.png',
       pgcrImage: '/img/destiny_content/pgcr/crucible_ness.jpg'
     },
     3872525353: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     3879860661: {
-      icon: '/common/destiny2_content/icons/4f6845f1e973d78896c9b3f8748bfb90.png',
+      icon: '/common/destiny2_content/icons/086f98c05ab3a24c63d5093327a40f1f.png',
       pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
     },
     3903562779: {
-      icon: '/common/destiny2_content/icons/c160acbdf3e2af2404c041d3a48490cf.png',
+      icon: '/common/destiny2_content/icons/2af52398d14638677f9e615d64821528.png',
       pgcrImage: '/img/destiny_content/pgcr/social_traveler.jpg'
     },
     3906001398: {
-      icon: '/common/destiny2_content/icons/36b1dd909687ae76e37d7be6775a8ec1.png',
+      icon: '/common/destiny2_content/icons/48a788e2d6e0cbda6d8ed37dd549da6f.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     3916343513: {
-      icon: '/common/destiny2_content/icons/4f6845f1e973d78896c9b3f8748bfb90.png',
+      icon: '/common/destiny2_content/icons/086f98c05ab3a24c63d5093327a40f1f.png',
       pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
     },
     3920569453: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     3920643231: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_the_arms_dealer.jpg'
     },
     3958400416: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     3966792859: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     3978357488: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     3982474534: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_payback.jpg'
     },
     4034557395: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_homecoming.jpg'
     },
     4039317196: {
-      icon: '/common/destiny2_content/icons/4f6845f1e973d78896c9b3f8748bfb90.png',
+      icon: '/common/destiny2_content/icons/086f98c05ab3a24c63d5093327a40f1f.png',
       pgcrImage: '/img/destiny_content/pgcr/raid_gluttony.jpg'
     },
     4043714237: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     4047570705: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     4050886070: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     4054968718: {
-      icon: '/common/destiny2_content/icons/7383139644d9ee2cfdc63378d295025a.png',
+      icon: '/common/destiny2_content/icons/c16bc0e720bc53fe2e99769dbe1d9cf8.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_inverted_spire.jpg'
     },
     4095207117: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     4103844069: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     4119522487: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/rituals_deep_storage.jpg'
     },
     4159221189: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     4166562681: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     4174103238: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     4209774794: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     4216926874: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_titan.jpg'
     },
     4231544111: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     4239233351: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_spark.jpg'
     },
     4254776501: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     4283649349: {
-      icon: '/common/destiny2_content/icons/a66df4d3aa56a89bf52af1ec7e35ae4f.png',
+      icon: '/common/destiny2_content/icons/41263baa86d8d1559228357dc191790b.png',
       pgcrImage: '/img/destiny_content/pgcr/patrol_Io.jpg'
     },
     4291922223: {
-      icon: '/common/destiny2_content/icons/eab6f6d2c970e6f08e97b9636ac4a7b9.png',
+      icon: '/common/destiny2_content/icons/88d4211a817a984cc8f0852e36ec1025.png',
       pgcrImage: '/img/destiny_content/pgcr/campaign_hope.jpg'
     },
   },
