@@ -52,7 +52,7 @@ languages.forEach(language => {
   });
   try {
     let file = fs.createWriteStream('./utils/defs/en/Emblem.json');
-    https.get('https://destiny.plumbing/en/items/Emblem.json', response => {
+    https.get('https://destiny.plumbing/en/reducedCollectableInventoryItems.json', response => {
       response.pipe(file);
     });
   } catch (e) { console.log(e); }

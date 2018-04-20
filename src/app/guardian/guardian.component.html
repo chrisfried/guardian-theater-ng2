@@ -3,18 +3,18 @@
 </div>
 
 <div *ngIf="displayName && activeCharacter" class="profile-wrapper">
-  <div class="profile small-12 columns" [ngStyle]="{'background-image': 'url(//www.bungie.net' + (activeCharacter.emblemHash | destinyHash:'emblemSpecial') + ')'}">
+  <div class="profile small-12 columns" [ngStyle]="{'background-color': 'rgba(' + activeCharacter.emblemColor.red + ',' + activeCharacter.emblemColor.green + ',' + activeCharacter.emblemColor.blue + ',' + activeCharacter.emblemColor.alpha + ')'}">
     <div class="row">
       <div class="active-character">
-        <div class="emblem" [ngStyle]="{'background-image': 'url(//www.bungie.net' + (activeCharacter.emblemHash | destinyHash:'emblemOverlay') + ')'}"></div>
+        <div class="emblem" [ngStyle]="{'background-image': 'url(//www.bungie.net' + activeCharacter.emblemPath + ')'}"></div>
         <div class="gamertag">
-          <span class="name">{{ displayName }}</span><span class="tag">{{ displayTag }}</span>
+          <span class="name">{{ displayName }}</span><span *ngIf="displayTag" class="tag">{{ displayTag }}</span>
         </div>
         <div class="character-details" *ngIf="activeCharacter"><span class="power-level">{{ activeCharacter.light }} </span><span>// {{ activeCharacter.classHash | destinyHash:'class' }} // {{ activeCharacter.raceHash | destinyHash:'race' }}</span></div>
       </div>
     </div>
     <div class="row characters" *ngIf="characters">
-      <div class="expand columns character" *ngFor="let character of characters" [ngStyle]="{'background-image': character.characterId === activeCharacter.characterId ? '' : 'url(//www.bungie.net' + (character.emblemHash | destinyHash:'emblemSpecial') + ')'}">
+      <div class="expand columns character" *ngFor="let character of characters" [ngStyle]="{'background-color': character.characterId === activeCharacter.characterId ? '' : 'rgba(' + character.emblemColor.red + ',' + character.emblemColor.green + ',' + character.emblemColor.blue + ',' + character.emblemColor.alpha + ')'}">
         <a (click)="selectCharacter(character.characterId)"><span class="class-name">{{ character.classHash | destinyHash:'class' }} </span><span class="power-level">{{ character.light }}</span></a>
       </div>
     </div>

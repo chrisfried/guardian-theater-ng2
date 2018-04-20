@@ -98,7 +98,9 @@ export class GuardianComponent implements OnInit, OnDestroy {
     this.subs.push(this.guardianService.displayName
       .subscribe(name => {
         this.displayName = name.split('#')[0];
-        this.displayTag = ' #' + name.split('#')[1];
+        if (name.split('#')[1]) {
+          this.displayTag = ' #' + name.split('#')[1];
+        }
       }));
 
     this.subs.push(this.guardianService.membershipType
@@ -128,6 +130,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
 
     this.subs.push(this.guardianService.activeCharacter
       .subscribe(character => {
+        console.log(character);
         this.activeCharacter = character;
       }));
 

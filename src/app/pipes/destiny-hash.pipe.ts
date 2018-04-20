@@ -30,6 +30,10 @@ export class DestinyHashPipe implements PipeTransform {
           return EmblemDefinition[hash].secondaryOverlay;
         case 'emblemSpecial':
           return EmblemDefinition[hash].secondarySpecial;
+        case 'emblemIcon':
+          return EmblemDefinition[hash].icon;
+        case 'emblemSecondaryIcon':
+          return EmblemDefinition[hash].secondaryIcon;
         default:
           return '';
       }

@@ -1,7 +1,16 @@
 export const DestinyActivityModeDefinition = {
   de: {
+    48: {
+      name: 'Rumble'
+    },
     42: {
       name: 'Prüfungen der Neun: Überleben'
+    },
+    47: {
+      name: 'Score-Prestige-Dämmerung'
+    },
+    46: {
+      name: 'Score-Dämmerungs-Strikes'
     },
     0: {
       name: 'Alle'
@@ -22,7 +31,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Hexenkessel'
     },
     17: {
-      name: 'Heroische Dämmerung'
+      name: 'Prestige-Dämmerung'
     },
     39: {
       name: 'Prüfungen der Neun'
@@ -38,6 +47,9 @@ export const DestinyActivityModeDefinition = {
     },
     2: {
       name: 'Story'
+    },
+    49: {
+      name: 'Alle Doppel'
     },
     19: {
       name: 'Eisenbanner'
@@ -69,6 +81,9 @@ export const DestinyActivityModeDefinition = {
     16: {
       name: 'Dämmerung-Strikes'
     },
+    50: {
+      name: 'Doppel'
+    },
     3: {
       name: 'Normale Strikes'
     },
@@ -77,8 +92,17 @@ export const DestinyActivityModeDefinition = {
     },
   },
   en: {
+    48: {
+      name: 'Rumble'
+    },
     42: {
       name: 'Trials of the Nine Survival'
+    },
+    47: {
+      name: 'Scored Prestige Nightfall'
+    },
+    46: {
+      name: 'Scored Nightfall Strikes'
     },
     0: {
       name: 'All'
@@ -99,7 +123,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Mayhem'
     },
     17: {
-      name: 'Heroic Nightfall'
+      name: 'Prestige Nightfall'
     },
     39: {
       name: 'Trials of the Nine'
@@ -115,6 +139,9 @@ export const DestinyActivityModeDefinition = {
     },
     2: {
       name: 'Story'
+    },
+    49: {
+      name: 'All Doubles'
     },
     19: {
       name: 'Iron Banner'
@@ -146,6 +173,9 @@ export const DestinyActivityModeDefinition = {
     16: {
       name: 'Nightfall Strikes'
     },
+    50: {
+      name: 'Doubles'
+    },
     3: {
       name: 'Normal Strikes'
     },
@@ -154,8 +184,17 @@ export const DestinyActivityModeDefinition = {
     },
   },
   es: {
+    48: {
+      name: 'Disputa'
+    },
     42: {
       name: 'Pruebas de los Nueve: Supervivencia'
+    },
+    47: {
+      name: 'Ocaso Prestigio con puntuación'
+    },
+    46: {
+      name: 'Asaltos Ocaso con puntuación'
     },
     0: {
       name: 'Todo'
@@ -164,7 +203,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Supremacía'
     },
     15: {
-      name: 'Crimson Doubles'
+      name: 'Días Escarlata'
     },
     7: {
       name: 'PvE'
@@ -176,7 +215,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Caos'
     },
     17: {
-      name: 'Ocaso heroico'
+      name: 'Ocaso Prestigio'
     },
     39: {
       name: 'Pruebas de los Nueve'
@@ -192,6 +231,9 @@ export const DestinyActivityModeDefinition = {
     },
     2: {
       name: 'Historia'
+    },
+    49: {
+      name: 'Todo dobles'
     },
     19: {
       name: 'Estandarte de Hierro'
@@ -223,6 +265,9 @@ export const DestinyActivityModeDefinition = {
     16: {
       name: 'Asaltos de Ocaso'
     },
+    50: {
+      name: 'Dobles'
+    },
     3: {
       name: 'Asaltos normales'
     },
@@ -231,8 +276,17 @@ export const DestinyActivityModeDefinition = {
     },
   },
   esmx: {
+    48: {
+      name: 'Disputa'
+    },
     42: {
       name: 'Pruebas de los Nueve Supervivencia'
+    },
+    47: {
+      name: 'Ocaso Prestigio con puntuación'
+    },
+    46: {
+      name: 'Asaltos Ocaso con puntuación'
     },
     0: {
       name: 'Todo'
@@ -253,7 +307,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Caos'
     },
     17: {
-      name: 'Ocaso Heroico'
+      name: 'Ocaso Prestigio'
     },
     39: {
       name: 'Pruebas de los Nueve'
@@ -269,6 +323,9 @@ export const DestinyActivityModeDefinition = {
     },
     2: {
       name: 'Historia'
+    },
+    49: {
+      name: 'Todos los Dobles'
     },
     19: {
       name: 'Estandarte de Hierro'
@@ -300,6 +357,9 @@ export const DestinyActivityModeDefinition = {
     16: {
       name: 'Asaltos de Ocaso'
     },
+    50: {
+      name: 'Dobles'
+    },
     3: {
       name: 'Asaltos normales'
     },
@@ -308,8 +368,17 @@ export const DestinyActivityModeDefinition = {
     },
   },
   fr: {
+    48: {
+      name: 'Carnage'
+    },
     42: {
       name: 'Jugement des Neuf - Survie'
+    },
+    47: {
+      name: 'Nuit noire Prestige avec score'
+    },
+    46: {
+      name: 'Nuit noire avec score'
     },
     0: {
       name: 'Toutes les activités'
@@ -330,7 +399,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Pagaille'
     },
     17: {
-      name: 'Nuit noire Épique'
+      name: 'Nuit noire Prestige'
     },
     39: {
       name: 'Jugement des Neuf'
@@ -346,6 +415,9 @@ export const DestinyActivityModeDefinition = {
     },
     2: {
       name: 'Histoire'
+    },
+    49: {
+      name: 'Tous les modes En tandem'
     },
     19: {
       name: 'Bannière de Fer'
@@ -377,6 +449,9 @@ export const DestinyActivityModeDefinition = {
     16: {
       name: 'Nuit noire'
     },
+    50: {
+      name: 'En tandem'
+    },
     3: {
       name: 'Assauts normaux'
     },
@@ -385,8 +460,17 @@ export const DestinyActivityModeDefinition = {
     },
   },
   it: {
+    48: {
+      name: 'Rissa'
+    },
     42: {
       name: 'Prove dei Nove: Sopravvivenza'
+    },
+    47: {
+      name: 'Cala la Notte autorevole a punti'
+    },
+    46: {
+      name: 'Cala la Notte a punti'
     },
     0: {
       name: 'Tutte'
@@ -407,7 +491,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Pandemonio'
     },
     17: {
-      name: 'Cala la Notte Autorevole'
+      name: 'Cala la Notte autorevole'
     },
     39: {
       name: 'Prove dei Nove'
@@ -423,6 +507,9 @@ export const DestinyActivityModeDefinition = {
     },
     2: {
       name: 'Storia'
+    },
+    49: {
+      name: 'Tutte le Doppiette'
     },
     19: {
       name: 'Stendardo di Ferro'
@@ -454,6 +541,9 @@ export const DestinyActivityModeDefinition = {
     16: {
       name: 'Assalti Cala la Notte'
     },
+    50: {
+      name: 'Doppietta'
+    },
     3: {
       name: 'Assalti normali'
     },
@@ -462,8 +552,17 @@ export const DestinyActivityModeDefinition = {
     },
   },
   ja: {
+    48: {
+      name: 'ランブル'
+    },
     42: {
       name: 'ナインの試練「ライフリミット」'
+    },
+    47: {
+      name: 'スコア付きナイトフォール(威光)'
+    },
+    46: {
+      name: 'スコア付きナイトフォールストライク'
     },
     0: {
       name: '全て'
@@ -501,6 +600,9 @@ export const DestinyActivityModeDefinition = {
     2: {
       name: 'ストーリー'
     },
+    49: {
+      name: '全ダブル'
+    },
     19: {
       name: 'アイアンバナー'
     },
@@ -531,6 +633,9 @@ export const DestinyActivityModeDefinition = {
     16: {
       name: 'ナイトフォールストライク'
     },
+    50: {
+      name: 'ダブル'
+    },
     3: {
       name: '普通のストライク'
     },
@@ -539,8 +644,17 @@ export const DestinyActivityModeDefinition = {
     },
   },
   pl: {
+    48: {
+      name: 'Jazgot'
+    },
     42: {
       name: 'Przetrwanie – Próby Dziewiątki'
+    },
+    47: {
+      name: 'Punktowany prestiżowy nocny szturm'
+    },
+    46: {
+      name: 'Punktowane nocne szturmy'
     },
     0: {
       name: 'Wszystko'
@@ -561,7 +675,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Jatka'
     },
     17: {
-      name: 'Heroiczne nocne szturmy'
+      name: 'Prestiżowy nocny szturm'
     },
     39: {
       name: 'Próby Dziewiątki'
@@ -577,6 +691,9 @@ export const DestinyActivityModeDefinition = {
     },
     2: {
       name: 'Fabuła'
+    },
+    49: {
+      name: 'Wszystkie Deble'
     },
     19: {
       name: 'Żelazna Chorągiew'
@@ -608,6 +725,9 @@ export const DestinyActivityModeDefinition = {
     16: {
       name: 'Nocne szturmy'
     },
+    50: {
+      name: 'Debel'
+    },
     3: {
       name: 'Zwykłe szturmy'
     },
@@ -616,8 +736,17 @@ export const DestinyActivityModeDefinition = {
     },
   },
   ptbr: {
+    48: {
+      name: 'Briga'
+    },
     42: {
       name: 'Desafios dos Nove – Sobrevivência'
+    },
+    47: {
+      name: 'Anoitecer Prestígio Pontuado'
+    },
+    46: {
+      name: 'Assaltos do Anoitecer Pontuados'
     },
     0: {
       name: 'Tudo'
@@ -638,7 +767,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Caos'
     },
     17: {
-      name: 'Anoitecer Heroico'
+      name: 'Anoitecer Prestígio'
     },
     39: {
       name: 'Desafios dos Nove'
@@ -654,6 +783,9 @@ export const DestinyActivityModeDefinition = {
     },
     2: {
       name: 'História'
+    },
+    49: {
+      name: 'Todas Duplas'
     },
     19: {
       name: 'Bandeira de Ferro'
@@ -685,6 +817,9 @@ export const DestinyActivityModeDefinition = {
     16: {
       name: 'Assaltos do Anoitecer'
     },
+    50: {
+      name: 'Duplas'
+    },
     3: {
       name: 'Assaltos normais'
     },
@@ -693,8 +828,17 @@ export const DestinyActivityModeDefinition = {
     },
   },
   ru: {
+    48: {
+      name: 'Стычка'
+    },
     42: {
       name: 'Испытания Девяти: Выживание'
+    },
+    47: {
+      name: 'Сумрачные налеты "Престиж" с подсчетом очков'
+    },
+    46: {
+      name: 'Сумрачные налеты с подсчетом очков'
     },
     0: {
       name: 'Все'
@@ -715,7 +859,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Хаос'
     },
     17: {
-      name: 'Героические Сумрачные налеты'
+      name: 'Сумрачные налеты "Престиж"'
     },
     39: {
       name: 'Испытания Девяти'
@@ -732,11 +876,14 @@ export const DestinyActivityModeDefinition = {
     2: {
       name: 'Сюжет'
     },
+    49: {
+      name: 'Все "Напарники"'
+    },
     19: {
       name: 'Железное знамя'
     },
     4: {
-      name: 'Рейд'
+      name: 'Рейды'
     },
     37: {
       name: 'Выживание'
@@ -762,6 +909,9 @@ export const DestinyActivityModeDefinition = {
     16: {
       name: 'Сумрачные налеты'
     },
+    50: {
+      name: 'Напарники'
+    },
     3: {
       name: 'Обычные налеты'
     },
@@ -770,8 +920,17 @@ export const DestinyActivityModeDefinition = {
     },
   },
   zhcht: {
+    48: {
+      name: '混戰模式'
+    },
     42: {
       name: '九巨頭試煉生存模式'
+    },
+    47: {
+      name: '計分榮耀日暮任務'
+    },
+    46: {
+      name: '計分日暮突擊任務'
     },
     0: {
       name: '全部'
@@ -780,7 +939,7 @@ export const DestinyActivityModeDefinition = {
       name: '奪寶模式'
     },
     15: {
-      name: 'Crimson Doubles'
+      name: '腥紅雙打'
     },
     7: {
       name: 'PvE'
@@ -792,7 +951,7 @@ export const DestinyActivityModeDefinition = {
       name: '激戰模式'
     },
     17: {
-      name: '英雄日暮任務'
+      name: '榮耀日暮任務'
     },
     39: {
       name: '九巨頭試煉'
@@ -808,6 +967,9 @@ export const DestinyActivityModeDefinition = {
     },
     2: {
       name: '故事'
+    },
+    49: {
+      name: '所有雙打'
     },
     19: {
       name: '鋼鐵旗幟'
@@ -839,6 +1001,9 @@ export const DestinyActivityModeDefinition = {
     16: {
       name: '日暮突擊任務'
     },
+    50: {
+      name: '雙打'
+    },
     3: {
       name: '普通突擊任務'
     },
@@ -847,10 +1012,25 @@ export const DestinyActivityModeDefinition = {
     },
   },
   data: {
+    157639802: {
+      icon: '/img/theme/destiny/icons/game_modes/crucible_default.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
+      category: '2'
+    },
     470484296: {
       icon: '/img/theme/destiny/icons/game_modes/trials_of_the_nine.png',
       pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
       category: '2'
+    },
+    532484583: {
+      icon: '/img/theme/destiny/icons/game_modes/strike_heroic.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_strikes_1.jpg',
+      category: '1'
+    },
+    547513715: {
+      icon: '/img/theme/destiny/icons/game_modes/strike_nightfall.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_strikes_1.jpg',
+      category: '1'
     },
     748895195: {
       icon: '/img/theme/destiny/icons/game_modes/allmodes.png',
@@ -912,6 +1092,11 @@ export const DestinyActivityModeDefinition = {
       pgcrImage: '/img/theme/destiny/bgs/stats/banner_story_1.jpg',
       category: '1'
     },
+    1703282980: {
+      icon: '/img/theme/destiny/icons/game_modes/Crimson_Playlist.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
+      category: '2'
+    },
     1826469369: {
       icon: '/img/theme/destiny/icons/game_modes/crucible_ironbanner.png',
       pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
@@ -961,6 +1146,11 @@ export const DestinyActivityModeDefinition = {
       icon: '/img/theme/destiny/icons/game_modes/strike_nightfall.png',
       pgcrImage: '/img/theme/destiny/bgs/stats/banner_strikes_1.jpg',
       category: '1'
+    },
+    3821502017: {
+      icon: '/img/theme/destiny/icons/game_modes/Crimson_Playlist.png',
+      pgcrImage: '/img/theme/destiny/bgs/stats/banner_crucible_1.jpg',
+      category: '2'
     },
     4110605575: {
       icon: '/img/theme/destiny/icons/game_modes/strike_default.png',
