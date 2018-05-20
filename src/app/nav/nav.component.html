@@ -1,9 +1,9 @@
 <div class="row align-middle">
-  <div *ngIf="ad" class="columns small-12 ad order-1 medium-order-6">
-    <ng2-adsense></ng2-adsense>
+  <div class="columns small-12 order-1 medium-order-6">
+    <div class="callout info">No more ads! Like the site? <a title="Take My Money" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8GLMLFEGR5TFU" target="_blank" angulartics2On="click" angularticsEvent="NavBarLink" angularticsCategory="DonateLink">Donate!</a></div>
   </div>
   <div class="columns small-12 icon-menu align-right order-2 medium-order-3">
-    <a class="donate" title="Take My Money" (click)="route(['/donate'])" angulartics2On="click" angularticsEvent="NavBarLink" angularticsCategory="DonateLink">
+    <a class="donate" title="Take My Money" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8GLMLFEGR5TFU" target="_blank" angulartics2On="click" angularticsEvent="NavBarLink" angularticsCategory="DonateLink">
       <span>Donate</span>
     </a>
     <a title="Guardian Theater on Twitter" href="https://twitter.com/guardtheater" target="_blank" class="twitter" angulartics2On="click" angularticsEvent="NavBarLink" angularticsCategory="TwitterLink">
@@ -38,7 +38,7 @@
     </form>
   </div>
   <div class="small-12 columns order-5 medium-order-5">
-    <div class="callout info">Destiny 1 clips can be found at <a href="https://d1.guardian.theater">d1.guardian.theater</a></div>
+    <a href="https://d1.guardian.theater"><button class="button small expanded">Switch to Destiny 1</button></a>
   </div>
   <app-bungie-status class="small-12 columns order-5 medium-order-5"></app-bungie-status>
   <div *ngIf="errorRes && errorRes.ErrorCode && errorRes.Message" class="small-12 columns order-5 medium-order-5">

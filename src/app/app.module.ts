@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LocalStorageModule } from 'angular-2-local-storage';
-import { AdsenseModule } from 'ng2-adsense';
 import { Angulartics2Module } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 
@@ -52,10 +51,6 @@ import { BungieStatusComponent } from './bungie-status/bungie-status.component';
     LocalStorageModule.withConfig({
       prefix: 'gt',
       storageType: 'localStorage'
-    }),
-    AdsenseModule.forRoot({
-      adClient: 'ca-pub-7822250090731539',
-      adSlot: 9694174006
     }),
     Angulartics2Module.forRoot([Angulartics2GoogleAnalytics])
   ],
