@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Location } from '@angular/common';
 import { SettingsService } from '../services/settings.service';
 import { Subscription } from 'rxjs/Subscription';
+import { gt } from '../gt.typings';
 
 @Component({
   selector: 'app-settings',

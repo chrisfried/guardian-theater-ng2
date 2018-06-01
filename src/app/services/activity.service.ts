@@ -13,6 +13,9 @@ import { Subscription } from 'rxjs/Subscription';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { catchError, map, distinctUntilChanged, switchMap } from 'rxjs/operators';
+import { ServerResponse, DestinyPostGameCarnageReportData } from 'bungie-api-ts/destiny2';
+import { PublicPartnershipDetail } from 'bungie-api-ts/user'
+import { gt } from '../gt.typings';
 
 @Injectable()
 export class ActivityService implements OnDestroy {
@@ -91,7 +94,7 @@ export class ActivityService implements OnDestroy {
             }
           })
         )
-        .subscribe((res: bungie.PostGameCarnageReportResponse) => {
+        .subscribe((res: ServerResponse<DestinyPostGameCarnageReportData>) => {
           try {
             if (res.ErrorCode !== 1) {
               this.bHttp.error.next(res);
@@ -184,7 +187,7 @@ export class ActivityService implements OnDestroy {
                           }
                         })
                       )
-                      .subscribe((res: bungie.PartnershipResponse) => {
+                      .subscribe((res: ServerResponse<PublicPartnershipDetail[]>) => {
                         try {
                           if (res.ErrorCode !== 1) {
                             this.bHttp.error.next(res);

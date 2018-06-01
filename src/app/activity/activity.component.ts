@@ -8,6 +8,7 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/combineLatest';
 import { Subscription } from 'rxjs/Subscription';
 import { Router } from '@angular/router';
+import { gt } from '../gt.typings';
 
 @Component({
   selector: 'app-activity',

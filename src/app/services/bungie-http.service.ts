@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { ServerResponse } from 'bungie-api-ts/destiny2';
 
 @Injectable()
 export class BungieHttpService {
   private _origin: string;
   private _apiKey: string;
-  public error: BehaviorSubject<bungie.Response>;
+  public error: BehaviorSubject<ServerResponse<any>>;
 
   constructor(
     private http: HttpClient

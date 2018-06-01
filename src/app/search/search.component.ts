@@ -6,6 +6,7 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Subscription } from 'rxjs/Subscription';
 import { BungieHttpService } from '../services/bungie-http.service';
 import { map, catchError, distinctUntilChanged, switchMap } from 'rxjs/operators';
+import { UserInfoCard, ServerResponse } from 'bungie-api-ts/user';
 
 @Component({
   selector: 'app-search',
@@ -14,7 +15,7 @@ import { map, catchError, distinctUntilChanged, switchMap } from 'rxjs/operators
 })
 export class SearchComponent implements OnInit, OnDestroy {
   public searching: boolean;
-  public searchResults: bungie.SearchDestinyPlayerResult[];
+  public searchResults: UserInfoCard[];
 
   private searchName: BehaviorSubject<string>;
   private searchResponse: Subscription;
@@ -56,7 +57,7 @@ export class SearchComponent implements OnInit, OnDestroy {
         }),
         catchError((error: any) => Observable.throw(error.json().error || 'Server error'))
       )
-      .subscribe((res: bungie.SearchDestinyPlayerResponse) => {
+      .subscribe((res: ServerResponse<UserInfoCard[]>) => {
         this.searchResults = res.Response;
         if (this.searchResults.length === 1) {
           const result = this.searchResults[0];

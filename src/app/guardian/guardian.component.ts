@@ -3,6 +3,9 @@ import { GuardianService } from '../services/guardian.service';
 import { SettingsService } from '../services/settings.service';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Subscription } from 'rxjs/Subscription';
+import { GeneralUser } from 'bungie-api-ts/user';
+import { DestinyCharacterComponent } from 'bungie-api-ts/destiny2';
+import { gt } from '../gt.typings';
 
 @Component({
   selector: 'app-guardian',
@@ -21,9 +24,9 @@ export class GuardianComponent implements OnInit, OnDestroy {
   public membershipId: string;
   public displayName: string;
   public displayTag: string;
-  public searchResults: bungie.SearchDestinyPlayerResult[];
-  public characters: bungie.Character[];
-  public activeCharacter: bungie.Character;
+  public searchResults: GeneralUser[];
+  public characters: DestinyCharacterComponent[];
+  public activeCharacter: DestinyCharacterComponent;
   public activities: gt.Activity[];
   public gamemode: string;
   public page: number;

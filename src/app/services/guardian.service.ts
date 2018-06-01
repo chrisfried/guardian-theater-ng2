@@ -7,6 +7,8 @@ import { SettingsService } from './settings.service';
 import { catchError, map, distinctUntilChanged, switchMap } from 'rxjs/operators';
 import 'rxjs/add/observable/combineLatest';
 import 'rxjs/add/observable/empty';
+import { gt } from '../gt.typings';
+import { ServerResponse, DestinyActivityHistoryResults, DestinyCharacterComponent, DestinyProfileResponse } from 'bungie-api-ts/destiny2';
 
 @Injectable()
 export class GuardianService implements OnDestroy {
@@ -17,9 +19,9 @@ export class GuardianService implements OnDestroy {
   public membershipType: BehaviorSubject<number>;
   public membershipId: BehaviorSubject<string>;
   public displayName: BehaviorSubject<string>;
-  public characters: BehaviorSubject<bungie.Character[]>;
+  public characters: BehaviorSubject<{ [key: string]: DestinyCharacterComponent }>;
   public characterId: BehaviorSubject<string>;
-  public activeCharacter: BehaviorSubject<bungie.Character>;
+  public activeCharacter: BehaviorSubject<DestinyCharacterComponent>;
   public activities: BehaviorSubject<gt.Activity[]>;
   public activityMode: BehaviorSubject<string>;
   public activityPage: BehaviorSubject<number>;
@@ -37,7 +39,7 @@ export class GuardianService implements OnDestroy {
 
     this.membershipType = new BehaviorSubject(-1);
     this.displayName = new BehaviorSubject('');
-    this.characters = new BehaviorSubject([]);
+    this.characters = new BehaviorSubject({});
     this.characterId = new BehaviorSubject('');
     this.activeCharacter = new BehaviorSubject(null);
     this.activities = new BehaviorSubject([]);
@@ -72,7 +74,7 @@ export class GuardianService implements OnDestroy {
           }
         })
       )
-      .subscribe((res: bungie.AccountResponse) => {
+      .subscribe((res: ServerResponse<DestinyProfileResponse>) => {
         try {
           if (res.ErrorCode !== 1) {
             this.bHttp.error.next(res);
@@ -104,7 +106,7 @@ export class GuardianService implements OnDestroy {
         }),
         distinctUntilChanged()
       )
-      .subscribe((character: bungie.Character) => {
+      .subscribe((character: DestinyCharacterComponent) => {
         this.activeCharacter.next(character);
       });
 
@@ -138,7 +140,8 @@ export class GuardianService implements OnDestroy {
           }
         })
       )
-      .subscribe((res: bungie.ActivityHistoryResponse) => {
+      .subscribe((res: ServerResponse<DestinyActivityHistoryResults>) => {
+        console.log(res);
         try {
           if (res.ErrorCode !== 1) {
             this.bHttp.error.next(res);

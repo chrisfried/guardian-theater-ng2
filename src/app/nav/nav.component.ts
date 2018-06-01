@@ -3,6 +3,7 @@ import { Router, Event } from '@angular/router';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { BungieHttpService } from '../services/bungie-http.service';
 import { Subscription } from 'rxjs/Subscription';
+import { ServerResponse } from 'bungie-api-ts/destiny2';
 
 @Component({
   selector: 'app-nav',
@@ -17,7 +18,7 @@ export class NavComponent implements OnInit, OnDestroy {
   public betaTextHidden: {
     hidden?: boolean
   };
-  public errorRes: bungie.Response;
+  public errorRes: ServerResponse<any>;
   private _errorRes$: Subscription;
   private _routerEvent$: Subscription;
 

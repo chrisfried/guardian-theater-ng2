@@ -6,8 +6,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --aot --host dev.guardian.theater --port 3000",
-    "lint": "tslint \"src/**/*.ts\"",
+    "lint": "tslint \"src/**/*.ts\" --fix",
     "test": "ng test",
+    "prod": "ng build --prod",
     "pree2e": "webdriver-manager update --standalone false --gecko false",
     "e2e": "protractor",
     "ngh": "ng build --prod && cp dist/index.html dist/404.html && cp ghp/CNAME dist/CNAME && ngh",
@@ -24,6 +25,7 @@
     "@angular/router": "^5.2.10",
     "angular-2-local-storage": "^1.0.1",
     "angulartics2": "^5.3.0",
+    "bungie-api-ts": "^1.8.0",
     "core-js": "^2.5.5",
     "intl": "^1.2.5",
     "rxjs": "^5.5.10",

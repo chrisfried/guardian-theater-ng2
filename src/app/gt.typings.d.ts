@@ -1,3 +1,10 @@
+import {
+  DestinyPostGameCarnageReportData,
+  DestinyPostGameCarnageReportEntry,
+  DestinyPostGameCarnageReportTeamEntry,
+  DestinyHistoricalStatsPeriodGroup
+} from 'bungie-api-ts/destiny2';
+
 declare namespace gt {
   interface ClipLimiter {
     self?: boolean,
@@ -8,19 +15,19 @@ declare namespace gt {
     twitch?: boolean
   }
 
-  interface Activity extends bungie.Activity {
+  interface Activity extends DestinyHistoricalStatsPeriodGroup {
     pgcr?: PostGameCarnageReport,
     loadingPgcr?: boolean
   }
 
-  interface Team extends bungie.Team {
+  interface Team extends DestinyPostGameCarnageReportTeamEntry {
     entries?: Entry[],
     trialsLink?: string
   }
 
-  interface PostGameCarnageReport extends bungie.PostGameCarnageReport {
+  interface PostGameCarnageReport extends DestinyPostGameCarnageReportData {
     entries: Entry[],
-    
+
     teams: Team[],
 
     clips$?: any,
@@ -44,7 +51,7 @@ declare namespace gt {
     }
   }
 
-  interface Entry extends bungie.Entry {
+  interface Entry extends DestinyPostGameCarnageReportEntry {
     twitchId?: string,
     startTime?: number,
     stopTime?: number,
