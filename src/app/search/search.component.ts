@@ -1,11 +1,19 @@
+import {
+  throwError as observableThrowError,
+  empty as observableEmpty,
+  Observable,
+  BehaviorSubject,
+  Subscription
+} from 'rxjs';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/observable/empty';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { Subscription } from 'rxjs/Subscription';
 import { BungieHttpService } from '../services/bungie-http.service';
-import { map, catchError, distinctUntilChanged, switchMap } from 'rxjs/operators';
+import {
+  map,
+  catchError,
+  distinctUntilChanged,
+  switchMap
+} from 'rxjs/operators';
 import { UserInfoCard, ServerResponse } from 'bungie-api-ts/user';
 
 @Component({
@@ -25,26 +33,27 @@ export class SearchComponent implements OnInit, OnDestroy {
     private bHttp: BungieHttpService,
     private router: Router,
     private activatedRoute: ActivatedRoute
-  ) { }
+  ) {}
 
   ngOnInit() {
     this.searchName = new BehaviorSubject('');
     this.searching = true;
 
-    this.params$ = this.activatedRoute.params
-      .subscribe((params: Params) => {
-        this.searchResults = null;
-        if (params['guardian']) {
-          this.searchName.next(params['guardian']);
-        }
-      });
+    this.params$ = this.activatedRoute.params.subscribe((params: Params) => {
+      this.searchResults = null;
+      if (params['guardian']) {
+        this.searchName.next(params['guardian']);
+      }
+    });
 
     this.searchResponse = this.searchName
       .pipe(
         map(searchName => {
           this.searching = true;
           return searchName.length
-            ? 'https://www.bungie.net/Platform/Destiny2/SearchDestinyPlayer/-1/' + encodeURIComponent(searchName) + '/'
+            ? 'https://www.bungie.net/Platform/Destiny2/SearchDestinyPlayer/-1/' +
+                encodeURIComponent(searchName) +
+                '/'
             : '';
         }),
         distinctUntilChanged(),
@@ -52,16 +61,22 @@ export class SearchComponent implements OnInit, OnDestroy {
           if (url.length) {
             return this.bHttp.get(url);
           } else {
-            return Observable.empty();
+            return observableEmpty();
           }
         }),
-        catchError((error: any) => Observable.throw(error.json().error || 'Server error'))
+        catchError((error: any) =>
+          observableThrowError(error.json().error || 'Server error')
+        )
       )
       .subscribe((res: ServerResponse<UserInfoCard[]>) => {
         this.searchResults = res.Response;
         if (this.searchResults.length === 1) {
           const result = this.searchResults[0];
-          this.router.navigate(['/guardian', result.membershipType, result.membershipId]);
+          this.router.navigate([
+            '/guardian',
+            result.membershipType,
+            result.membershipId
+          ]);
         }
         this.searching = false;
       });
@@ -75,5 +90,4 @@ export class SearchComponent implements OnInit, OnDestroy {
   route(route: any[]) {
     this.router.navigate(route);
   }
-
 }

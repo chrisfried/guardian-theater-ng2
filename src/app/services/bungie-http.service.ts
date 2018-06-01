@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { ServerResponse } from 'bungie-api-ts/destiny2';
 
 @Injectable()
@@ -9,9 +9,7 @@ export class BungieHttpService {
   private _apiKey: string;
   public error: BehaviorSubject<ServerResponse<any>>;
 
-  constructor(
-    private http: HttpClient
-  ) {
+  constructor(private http: HttpClient) {
     this.error = new BehaviorSubject(null);
     this._origin = window.location.protocol + '//' + window.location.hostname;
     switch (this._origin) {
@@ -29,9 +27,9 @@ export class BungieHttpService {
     }
   }
 
-  get(url) {
+  get(url): Observable<ServerResponse<any>> {
     let headers = new Headers();
-    return this.http.get(url, {
+    return <Observable<ServerResponse<any>>>this.http.get(url, {
       headers: new HttpHeaders().set('x-api-key', this._apiKey)
     });
   }

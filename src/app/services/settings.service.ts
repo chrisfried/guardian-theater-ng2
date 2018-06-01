@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { BehaviorSubject } from 'rxjs';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { gt } from '../gt.typings';
 
@@ -12,12 +12,10 @@ export class SettingsService {
   public links: BehaviorSubject<gt.Links>;
   public activeName: BehaviorSubject<string>;
   public userLang: {
-    language?: string
+    language?: string;
   };
 
-  constructor(
-    private localStorageService: LocalStorageService
-  ) {
+  constructor(private localStorageService: LocalStorageService) {
     this._clipLimiter = this.localStorageService.get('CLIP_LIMITER') || {
       self: true,
       fireteam: true,

@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, Event } from '@angular/router';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { BungieHttpService } from '../services/bungie-http.service';
-import { Subscription } from 'rxjs/Subscription';
+import { Subscription } from 'rxjs';
 import { ServerResponse } from 'bungie-api-ts/destiny2';
 
 @Component({
@@ -16,7 +16,7 @@ export class NavComponent implements OnInit, OnDestroy {
   private adInterval;
   private adTimeout;
   public betaTextHidden: {
-    hidden?: boolean
+    hidden?: boolean;
   };
   public errorRes: ServerResponse<any>;
   private _errorRes$: Subscription;
@@ -29,11 +29,10 @@ export class NavComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit() {
-    this._routerEvent$ = this.router.events
-      .subscribe((event: Event) => {
-        this.errorRes = null;
-      });
-    this._errorRes$ = this.bHttp.error.subscribe(res => this.errorRes = res);
+    this._routerEvent$ = this.router.events.subscribe((event: Event) => {
+      this.errorRes = null;
+    });
+    this._errorRes$ = this.bHttp.error.subscribe(res => (this.errorRes = res));
     this.searchString = '';
     this.ad = true;
     this.adInterval = setInterval(() => {
@@ -43,9 +42,11 @@ export class NavComponent implements OnInit, OnDestroy {
           this.ad = true;
         }, 50);
       }
-    }, 30000)
+    }, 30000);
 
-    this.betaTextHidden = this.localStorageService.get('hideBetaText') || { hidden: false };
+    this.betaTextHidden = this.localStorageService.get('hideBetaText') || {
+      hidden: false
+    };
   }
 
   ngOnDestroy() {
@@ -69,5 +70,4 @@ export class NavComponent implements OnInit, OnDestroy {
   //   this.betaTextHidden.hidden = true;
   //   this.localStorageService.set('hideBetaText', this.betaTextHidden);
   // }
-
 }

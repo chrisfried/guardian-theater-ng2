@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Location } from '@angular/common';
 import { SettingsService } from '../services/settings.service';
-import { Subscription } from 'rxjs/Subscription';
+import { Subscription } from 'rxjs';
 import { gt } from '../gt.typings';
 
 @Component({
@@ -17,13 +17,12 @@ export class SettingsComponent implements OnInit, OnDestroy {
   constructor(
     public settingsService: SettingsService,
     private location: Location
-  ) { }
+  ) {}
 
   ngOnInit() {
-    this._subLinks = this.settingsService.links
-      .subscribe(links => {
-        this.links = links;
-      });
+    this._subLinks = this.settingsService.links.subscribe(links => {
+      this.links = links;
+    });
   }
 
   ngOnDestroy() {
@@ -49,5 +48,4 @@ export class SettingsComponent implements OnInit, OnDestroy {
   back() {
     this.location.back();
   }
-
 }

@@ -1,12 +1,11 @@
+
+import {combineLatest as observableCombineLatest,  Observable ,  Subscription } from 'rxjs';
 import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 import { ActivityService } from '../services/activity.service';
 import { BungieHttpService } from '../services/bungie-http.service';
 import { TwitchService } from '../services/twitch.service';
 import { XboxService } from '../services/xbox.service';
 import { SettingsService } from '../services/settings.service';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/observable/combineLatest';
-import { Subscription } from 'rxjs/Subscription';
 import { Router } from '@angular/router';
 import { gt } from '../gt.typings';
 
@@ -100,7 +99,7 @@ export class ActivityComponent implements OnInit, OnDestroy {
             });
           }
           this.subs.push(
-            Observable.combineLatest(loadingArray)
+            observableCombineLatest(loadingArray)
               .subscribe(
                 array => {
                   let loading = {

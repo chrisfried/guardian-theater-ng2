@@ -1,14 +1,28 @@
+import {
+  combineLatest as observableCombineLatest,
+  empty as observableEmpty,
+  throwError as observableThrowError,
+  Observable,
+  Subscription,
+  BehaviorSubject
+} from 'rxjs';
 import { Injectable, OnDestroy } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-import { Subscription } from 'rxjs/Subscription';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { BungieHttpService } from './bungie-http.service';
 import { SettingsService } from './settings.service';
-import { catchError, map, distinctUntilChanged, switchMap } from 'rxjs/operators';
-import 'rxjs/add/observable/combineLatest';
-import 'rxjs/add/observable/empty';
+import {
+  catchError,
+  map,
+  distinctUntilChanged,
+  switchMap
+} from 'rxjs/operators';
+
 import { gt } from '../gt.typings';
-import { ServerResponse, DestinyActivityHistoryResults, DestinyCharacterComponent, DestinyProfileResponse } from 'bungie-api-ts/destiny2';
+import {
+  ServerResponse,
+  DestinyActivityHistoryResults,
+  DestinyCharacterComponent,
+  DestinyProfileResponse
+} from 'bungie-api-ts/destiny2';
 
 @Injectable()
 export class GuardianService implements OnDestroy {
@@ -19,7 +33,9 @@ export class GuardianService implements OnDestroy {
   public membershipType: BehaviorSubject<number>;
   public membershipId: BehaviorSubject<string>;
   public displayName: BehaviorSubject<string>;
-  public characters: BehaviorSubject<{ [key: string]: DestinyCharacterComponent }>;
+  public characters: BehaviorSubject<{
+    [key: string]: DestinyCharacterComponent;
+  }>;
   public characterId: BehaviorSubject<string>;
   public activeCharacter: BehaviorSubject<DestinyCharacterComponent>;
   public activities: BehaviorSubject<gt.Activity[]>;
@@ -47,7 +63,7 @@ export class GuardianService implements OnDestroy {
     this.noResults = new BehaviorSubject(false);
     this.noActivities = new BehaviorSubject(false);
 
-    this.subAccount = Observable.combineLatest(
+    this.subAccount = observableCombineLatest(
       this.membershipType,
       this.membershipId
     )
@@ -55,7 +71,13 @@ export class GuardianService implements OnDestroy {
         map(([membershipType, membershipId]) => {
           try {
             if (membershipType && membershipId) {
-              return 'https://www.bungie.net/Platform/Destiny2/' + membershipType + '/Profile/' + membershipId + '/?components=100,200';
+              return (
+                'https://www.bungie.net/Platform/Destiny2/' +
+                membershipType +
+                '/Profile/' +
+                membershipId +
+                '/?components=100,200'
+              );
             } else {
               return '';
             }
@@ -64,13 +86,18 @@ export class GuardianService implements OnDestroy {
           }
         }),
         distinctUntilChanged(),
-        switchMap((url) => {
+        switchMap(url => {
           this.characters.next(null);
           if (url.length) {
-            return this.bHttp.get(url)
-              .pipe(catchError((error: any) => Observable.throw(error.json().error || 'Server error')));
+            return this.bHttp
+              .get(url)
+              .pipe(
+                catchError((error: any) =>
+                  observableThrowError(error.json().error || 'Server error')
+                )
+              );
           } else {
-            return Observable.empty();
+            return observableEmpty();
           }
         })
       )
@@ -80,7 +107,9 @@ export class GuardianService implements OnDestroy {
             this.bHttp.error.next(res);
           }
           this.displayName.next(res.Response.profile.data.userInfo.displayName);
-          this.settingsService.activeName.next(res.Response.profile.data.userInfo.displayName);
+          this.settingsService.activeName.next(
+            res.Response.profile.data.userInfo.displayName
+          );
           this.characters.next(res.Response.characters.data);
         } catch (e) {
           this.noResults.next(true);
@@ -88,7 +117,7 @@ export class GuardianService implements OnDestroy {
         }
       });
 
-    this.subCharacter = Observable.combineLatest(
+    this.subCharacter = observableCombineLatest(
       this.characters,
       this.characterId
     )
@@ -97,7 +126,7 @@ export class GuardianService implements OnDestroy {
           let character = null;
           if (characters) {
             if (characterId) {
-              character = characters[characterId]
+              character = characters[characterId];
             } else {
               character = characters[Object.keys(characters)[0]];
             }
@@ -110,7 +139,7 @@ export class GuardianService implements OnDestroy {
         this.activeCharacter.next(character);
       });
 
-    this.subActivityHistory = Observable.combineLatest(
+    this.subActivityHistory = observableCombineLatest(
       this.activeCharacter,
       this.activityMode,
       this.activityPage
@@ -122,8 +151,18 @@ export class GuardianService implements OnDestroy {
             let membershipId = character.membershipId;
             let characterId = character.characterId;
             this.characterId.next(characterId);
-            return 'https://www.bungie.net/Platform/Destiny2/' + membershipType + '/Account/' + membershipId
-                    + '/Character/' + characterId + '/Stats/Activities/?mode=' + mode + '&count=7&page=' + page;
+            return (
+              'https://www.bungie.net/Platform/Destiny2/' +
+              membershipType +
+              '/Account/' +
+              membershipId +
+              '/Character/' +
+              characterId +
+              '/Stats/Activities/?mode=' +
+              mode +
+              '&count=7&page=' +
+              page
+            );
           } catch (e) {
             return '';
           }
@@ -133,10 +172,15 @@ export class GuardianService implements OnDestroy {
           this.activities.next([]);
           this.noActivities.next(false);
           if (url.length) {
-            return this.bHttp.get(url)
-              .pipe(catchError((error: any) => Observable.throw(error.json().error || 'Server error')));
+            return this.bHttp
+              .get(url)
+              .pipe(
+                catchError((error: any) =>
+                  observableThrowError(error.json().error || 'Server error')
+                )
+              );
           } else {
-            return Observable.empty();
+            return observableEmpty();
           }
         })
       )
@@ -146,7 +190,11 @@ export class GuardianService implements OnDestroy {
           if (res.ErrorCode !== 1) {
             this.bHttp.error.next(res);
           }
-          if (!res.Response || !res.Response.activities || !res.Response.activities.length) {
+          if (
+            !res.Response ||
+            !res.Response.activities ||
+            !res.Response.activities.length
+          ) {
             this.noActivities.next(true);
           }
           this.activities.next(res.Response.activities);
@@ -162,5 +210,4 @@ export class GuardianService implements OnDestroy {
     this.subCharacter.unsubscribe();
     this.subActivityHistory.unsubscribe();
   }
-
 }

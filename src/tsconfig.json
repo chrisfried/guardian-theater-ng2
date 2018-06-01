@@ -14,5 +14,8 @@
     "typeRoots": [
       "../node_modules/@types"
     ]
+  },
+  "angularCompilerOptions": {
+    "preserveWhitespaces": false
   }
 }
