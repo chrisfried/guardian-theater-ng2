@@ -1,4 +1,4 @@
 <div class="callout warning" *ngFor="let alert of (bungieStatus | async)">
   <h5>Bungie API Status</h5>
-  {{ alert.AlertHtml }}
+  <a [innerHtml]="alert.AlertHtml" [href]="alert.AlertLink" target="_blank"></a>
 </div>

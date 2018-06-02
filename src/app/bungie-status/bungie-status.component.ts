@@ -23,11 +23,6 @@ export class BungieStatusComponent implements OnInit {
     this.bungieStatus = new BehaviorSubject([]);
     this.bungieSub = this.bHttp
       .get('https://www.bungie.net/Platform/GlobalAlerts/')
-      .pipe(
-        catchError((error: any) =>
-          observableThrowError(error.json().error || 'Server error')
-        )
-      )
       .subscribe(res => {
         try {
           this.bungieStatus.next(res.Response);
