@@ -8,6 +8,7 @@ import {
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { BungieHttpService } from '../services/bungie-http.service';
+import { GuardianService } from '../services/guardian.service';
 import {
   map,
   catchError,
@@ -15,11 +16,13 @@ import {
   switchMap
 } from 'rxjs/operators';
 import { UserInfoCard, ServerResponse } from 'bungie-api-ts/user';
+import { link } from 'fs';
 
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
-  styleUrls: ['./search.component.scss']
+  styleUrls: ['./search.component.scss'],
+  providers: [GuardianService]
 })
 export class SearchComponent implements OnInit, OnDestroy {
   public searching: boolean;
@@ -32,6 +35,7 @@ export class SearchComponent implements OnInit, OnDestroy {
   constructor(
     private bHttp: BungieHttpService,
     private router: Router,
+    private guardianService: GuardianService,
     private activatedRoute: ActivatedRoute
   ) {}
 
@@ -70,13 +74,50 @@ export class SearchComponent implements OnInit, OnDestroy {
       )
       .subscribe((res: ServerResponse<UserInfoCard[]>) => {
         this.searchResults = res.Response;
+        const result = this.searchResults[0];
         if (this.searchResults.length === 1) {
-          const result = this.searchResults[0];
-          this.router.navigate([
-            '/guardian',
-            result.membershipType,
-            result.membershipId
-          ]);
+          this.router.navigate(
+            ['/guardian', result.membershipType, result.membershipId],
+            {
+              skipLocationChange: true
+            }
+          );
+        }
+        if (this.searchResults.length > 1) {
+          this.guardianService
+            .getLinkedAccounts(result.membershipType, result.membershipId)
+            .subscribe(linkedAccounts => {
+              const matches = [];
+              this.searchResults.forEach(searchResult => {
+                linkedAccounts.Response.profiles.some(profile => {
+                  if (
+                    searchResult.membershipType === profile.membershipType &&
+                    searchResult.membershipId === profile.membershipId
+                  ) {
+                    matches.push(profile);
+                    return true;
+                  }
+                });
+                linkedAccounts.Response.profilesWithErrors.some(profile => {
+                  if (
+                    searchResult.membershipType ===
+                      profile.infoCard.membershipType &&
+                    searchResult.membershipId === profile.infoCard.membershipId
+                  ) {
+                    matches.push(profile);
+                    return true;
+                  }
+                });
+              });
+              if (matches.length === this.searchResults.length) {
+                this.router.navigate(
+                  ['/guardian', result.membershipType, result.membershipId],
+                  {
+                    skipLocationChange: true
+                  }
+                );
+              }
+            });
         }
         this.searching = false;
       });

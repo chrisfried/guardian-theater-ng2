@@ -33,9 +33,6 @@ import { Server } from 'net';
 
 @Injectable()
 export class GuardianService implements OnDestroy {
-  private subAccount: Subscription;
-  private subActivityHistory: Subscription;
-
   public memberships: BehaviorSubject<
     {
       membershipType: number;
@@ -68,40 +65,36 @@ export class GuardianService implements OnDestroy {
     this.activityId = new BehaviorSubject('');
     this.noResults = new BehaviorSubject(false);
     this.noActivities = new BehaviorSubject(false);
+  }
 
-    this.subAccount = observableCombineLatest(
-      this.membershipType,
-      this.membershipId
-    )
-      .pipe(
-        distinctUntilChanged(),
-        switchMap(([membershipType, membershipId]) => {
-          if (membershipType && membershipId) {
-            return this.getLinkedAccounts(membershipType, membershipId).pipe(
-              map(res => res.Response.profiles)
-            );
-          } else {
-            return observableEmpty();
-          }
-        }),
-        distinctUntilChanged(),
-        switchMap((profiles: UserInfoCard[]) => {
-          this.settingsService.activeProfiles.next(profiles);
-          if (
-            profiles[0] &&
-            profiles[0].membershipType &&
+  startAccountObservable() {
+    return observableCombineLatest(this.membershipType, this.membershipId).pipe(
+      distinctUntilChanged(),
+      switchMap(([membershipType, membershipId]) => {
+        if (membershipType && membershipId) {
+          return this.getLinkedAccounts(membershipType, membershipId).pipe(
+            map(res => res.Response.profiles)
+          );
+        } else {
+          return observableEmpty();
+        }
+      }),
+      switchMap((profiles: UserInfoCard[]) => {
+        this.settingsService.activeProfiles.next(profiles);
+        if (
+          profiles[0] &&
+          profiles[0].membershipType &&
+          profiles[0].membershipId
+        ) {
+          return this.getProfile(
+            profiles[0].membershipType,
             profiles[0].membershipId
-          ) {
-            return this.getProfile(
-              profiles[0].membershipType,
-              profiles[0].membershipId
-            );
-          } else {
-            return observableEmpty();
-          }
-        })
-      )
-      .subscribe((res: ServerResponse<DestinyProfileResponse>) => {
+          );
+        } else {
+          return observableEmpty();
+        }
+      }),
+      map((res: ServerResponse<DestinyProfileResponse>) => {
         try {
           if (res.ErrorCode !== 1) {
             this.bHttp.error.next(res);
@@ -111,29 +104,30 @@ export class GuardianService implements OnDestroy {
           this.noResults.next(true);
           console.error(e);
         }
-      });
+      })
+    );
+  }
 
-    this.subActivityHistory = observableCombineLatest(
+  startActivityHistoryObservable() {
+    return observableCombineLatest(
       this.membershipType,
       this.membershipId,
       this.activityMode,
       this.activityPage
-    )
-      .pipe(
-        distinctUntilChanged(),
-        switchMap(([membershipType, membershipId, mode, page]) => {
-          try {
-            return this.getActivitiesForAccount(
-              membershipType,
-              membershipId,
-              mode
-            ).pipe(map(res => res.slice(0 + page * 7, 7 + page * 7)));
-          } catch (e) {
-            return observableEmpty();
-          }
-        })
-      )
-      .subscribe(res => {
+    ).pipe(
+      distinctUntilChanged(),
+      switchMap(([membershipType, membershipId, mode, page]) => {
+        try {
+          return this.getActivitiesForAccount(
+            membershipType,
+            membershipId,
+            mode
+          ).pipe(map(res => res.slice(0 + page * 7, 7 + page * 7)));
+        } catch (e) {
+          return observableEmpty();
+        }
+      }),
+      map(res => {
         try {
           if (!res || !res.length) {
             this.noActivities.next(true);
@@ -144,7 +138,8 @@ export class GuardianService implements OnDestroy {
         } catch (e) {
           console.error(e);
         }
-      });
+      })
+    );
   }
 
   getLinkedAccounts(
@@ -257,7 +252,5 @@ export class GuardianService implements OnDestroy {
 
   ngOnDestroy() {
     this.settingsService.activeProfiles.next([]);
-    this.subAccount.unsubscribe();
-    this.subActivityHistory.unsubscribe();
   }
 }

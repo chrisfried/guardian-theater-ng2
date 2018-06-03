@@ -37,8 +37,12 @@ export class GuardianComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     // TO DO: If membershipType !== 1, 2, or 4, redirect to search.
-
     this.subs = [];
+
+    this.subs.push(this.guardianService.startAccountObservable().subscribe());
+    this.subs.push(
+      this.guardianService.startActivityHistoryObservable().subscribe()
+    );
 
     this.subs.push(
       this.activatedRoute.params.subscribe((params: Params) => {
