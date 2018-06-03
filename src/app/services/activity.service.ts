@@ -471,6 +471,18 @@ export class ActivityService implements OnDestroy {
                           return true;
                         }
                       });
+                      res.Response.profilesWithErrors.some(profile => {
+                        if (profile.infoCard.membershipType === 1) {
+                          gamertag = profile.infoCard.displayName;
+                          this.getXboxClips(
+                            pgcr,
+                            entry,
+                            gamertag,
+                            entry.player.destinyUserInfo.displayName
+                          );
+                          return true;
+                        }
+                      });
                     })
                 );
               }
