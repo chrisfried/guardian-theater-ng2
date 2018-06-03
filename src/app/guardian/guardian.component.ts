@@ -26,6 +26,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
   public page: number;
   public clipLimiter: gt.ClipLimiter;
   public loadingActivities: boolean;
+  public loadingAccounts: boolean;
 
   constructor(
     private router: Router,
@@ -62,6 +63,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
         }
 
         if (this.membershipType && this.membershipId) {
+          this.loadingAccounts = true;
           this.subs.push(
             this.guardianService
               .getLinkedAccounts(
@@ -69,6 +71,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
                 params['membershipId']
               )
               .subscribe(res => {
+                this.loadingAccounts = false;
                 this.settingsService.activeProfiles.next(res.Response.profiles);
               })
           );

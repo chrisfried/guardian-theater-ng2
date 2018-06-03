@@ -1,4 +1,4 @@
-<div *ngIf="!displayName && !(guardianService.noResults | async)" class="profile-spinner-wrapper">
+<div *ngIf="!displayName && loadingAccounts" class="profile-spinner-wrapper">
   <div class="fi-widget spinner profile-spinner" title="Fetching Bungie Profile..."></div>
 </div>
 
