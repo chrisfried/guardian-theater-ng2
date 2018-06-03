@@ -1,7 +1,6 @@
 import {
   throwError as observableThrowError,
   empty as observableEmpty,
-  Observable,
   BehaviorSubject,
   Subscription
 } from 'rxjs';
@@ -16,7 +15,6 @@ import {
   switchMap
 } from 'rxjs/operators';
 import { UserInfoCard, ServerResponse } from 'bungie-api-ts/user';
-import { link } from 'fs';
 
 @Component({
   selector: 'app-search',

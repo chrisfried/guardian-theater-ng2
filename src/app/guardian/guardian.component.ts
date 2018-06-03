@@ -1,11 +1,10 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { ActivatedRoute, Params, Router } from '@angular/router';
+import { GeneralUser } from 'bungie-api-ts/user';
+import { Subscription } from 'rxjs';
+import { gt } from '../gt.typings';
 import { GuardianService } from '../services/guardian.service';
 import { SettingsService } from '../services/settings.service';
-import { Router, ActivatedRoute, Params } from '@angular/router';
-import { Subscription } from 'rxjs';
-import { GeneralUser } from 'bungie-api-ts/user';
-import { DestinyCharacterComponent } from 'bungie-api-ts/destiny2';
-import { gt } from '../gt.typings';
 
 @Component({
   selector: 'app-guardian',
@@ -15,8 +14,6 @@ import { gt } from '../gt.typings';
 })
 export class GuardianComponent implements OnInit, OnDestroy {
   private subs: Subscription[];
-
-  private _guardian: string;
 
   public membershipType: number;
   public membershipId: string;
@@ -85,11 +82,14 @@ export class GuardianComponent implements OnInit, OnDestroy {
     );
 
     this.subs.push(
-      this.guardianService.displayName.subscribe(name => {
-        this.displayName = name.split('#')[0];
-        if (name.split('#')[1]) {
-          this.displayTag = ' #' + name.split('#')[1];
-        }
+      this.settingsService.activeProfiles.subscribe(profiles => {
+        this.displayName = '';
+        profiles.forEach(profile => {
+          this.displayName.length
+            ? (this.displayName += ' // ')
+            : (this.displayName += '');
+          this.displayName += profile.displayName;
+        });
       })
     );
 

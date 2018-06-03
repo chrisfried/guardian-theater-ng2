@@ -3,7 +3,6 @@ import {
   combineLatest as observableCombineLatest,
   throwError as observableThrowError,
   empty as observableEmpty,
-  Observable,
   Subscription,
   BehaviorSubject
 } from 'rxjs';
@@ -14,7 +13,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { TwitchService } from './twitch.service';
 import { XboxService } from './xbox.service';
 import { SettingsService } from './settings.service';
-import { Router, ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params } from '@angular/router';
 import {
   catchError,
   map,
@@ -45,7 +44,6 @@ export class ActivityService implements OnDestroy {
     private twitchService: TwitchService,
     private sanitizer: DomSanitizer,
     private xboxService: XboxService,
-    private router: Router,
     private route: ActivatedRoute,
     private settingsService: SettingsService
   ) {
@@ -106,9 +104,6 @@ export class ActivityService implements OnDestroy {
         )
         .subscribe((res: ServerResponse<DestinyPostGameCarnageReportData>) => {
           try {
-            if (res.ErrorCode !== 1) {
-              this.bHttp.error.next(res);
-            }
             this.pgcr.next(res.Response);
           } catch (e) {
             console.error(e);
@@ -217,9 +212,6 @@ export class ActivityService implements OnDestroy {
                     .subscribe(
                       (res: ServerResponse<PublicPartnershipDetail[]>) => {
                         try {
-                          if (res.ErrorCode !== 1) {
-                            this.bHttp.error.next(res);
-                          }
                           if (res.Response.length) {
                             this.twitchService.twitch[membershipId].next({
                               displayName: displayName,

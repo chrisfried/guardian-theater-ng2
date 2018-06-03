@@ -1,49 +1,28 @@
-import {
-  combineLatest as observableCombineLatest,
-  empty as observableEmpty,
-  of as observableOf,
-  Observable,
-  Subscription,
-  BehaviorSubject,
-  forkJoin as observableForkJoin
-} from 'rxjs';
 import { Injectable, OnDestroy } from '@angular/core';
-import { BungieHttpService } from './bungie-http.service';
-import { SettingsService } from './settings.service';
 import {
-  catchError,
-  map,
-  distinctUntilChanged,
-  switchMap,
-  mergeMap
-} from 'rxjs/operators';
-
-import { gt } from '../gt.typings';
-import {
-  ServerResponse,
   DestinyActivityHistoryResults,
   DestinyCharacterComponent,
+  DestinyHistoricalStatsPeriodGroup,
   DestinyProfileResponse,
-  DestinyLinkedGraphDefinition,
-  DestinyCharacterResponse,
-  DestinyHistoricalStatsPeriodGroup
+  ServerResponse
 } from 'bungie-api-ts/destiny2';
 import { UserInfoCard } from 'bungie-api-ts/user';
-import { Server } from 'net';
+import {
+  BehaviorSubject,
+  Observable,
+  combineLatest as observableCombineLatest,
+  empty as observableEmpty,
+  forkJoin as observableForkJoin
+} from 'rxjs';
+import { distinctUntilChanged, map, switchMap } from 'rxjs/operators';
+import { gt } from '../gt.typings';
+import { BungieHttpService } from './bungie-http.service';
+import { SettingsService } from './settings.service';
 
 @Injectable()
 export class GuardianService implements OnDestroy {
-  public memberships: BehaviorSubject<
-    {
-      membershipType: number;
-      membershipId: string;
-      displayName: string;
-    }[]
-  >;
-
   public membershipType: BehaviorSubject<number>;
   public membershipId: BehaviorSubject<string>;
-  public displayName: BehaviorSubject<string>;
   public activities: BehaviorSubject<gt.Activity[]>;
   public activityMode: BehaviorSubject<string>;
   public activityPage: BehaviorSubject<number>;
@@ -60,7 +39,6 @@ export class GuardianService implements OnDestroy {
     this.activityPage = new BehaviorSubject(0);
 
     this.membershipType = new BehaviorSubject(-1);
-    this.displayName = new BehaviorSubject('');
     this.activities = new BehaviorSubject([]);
     this.activityId = new BehaviorSubject('');
     this.noResults = new BehaviorSubject(false);
@@ -92,17 +70,6 @@ export class GuardianService implements OnDestroy {
           );
         } else {
           return observableEmpty();
-        }
-      }),
-      map((res: ServerResponse<DestinyProfileResponse>) => {
-        try {
-          if (res.ErrorCode !== 1) {
-            this.bHttp.error.next(res);
-          }
-          this.displayName.next(res.Response.profile.data.userInfo.displayName);
-        } catch (e) {
-          this.noResults.next(true);
-          console.error(e);
         }
       })
     );

@@ -6,7 +6,7 @@ import {
   throwError as observableThrowError
 } from 'rxjs';
 import { ServerResponse } from 'bungie-api-ts/destiny2';
-import { catchError } from 'rxjs/operators';
+import { catchError, map } from 'rxjs/operators';
 
 @Injectable()
 export class BungieHttpService {
@@ -33,11 +33,22 @@ export class BungieHttpService {
   }
 
   get(url): Observable<ServerResponse<any>> {
-    let headers = new Headers();
     return <Observable<ServerResponse<any>>>this.http
       .get(url, {
         headers: new HttpHeaders().set('x-api-key', this._apiKey)
       })
-      .pipe(catchError(err => observableThrowError(err || 'Server error')));
+      .pipe(
+        map((res: ServerResponse<any>) => {
+          if (
+            res.Response &&
+            res.Response.ErrorCode &&
+            res.Response.ErrorCode !== 1
+          ) {
+            this.error.next(res);
+          }
+          return res;
+        }),
+        catchError(err => observableThrowError(err || 'Server error'))
+      );
   }
 }

@@ -1,12 +1,9 @@
 import {
-  throwError as observableThrowError,
-  Observable,
   BehaviorSubject,
   Subscription
 } from 'rxjs';
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BungieHttpService } from '../services/bungie-http.service';
-import { catchError } from 'rxjs/operators';
 
 @Component({
   selector: 'app-bungie-status',

@@ -1,11 +1,9 @@
 import {
   combineLatest as observableCombineLatest,
-  Observable,
   Subscription
 } from 'rxjs';
 import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 import { ActivityService } from '../services/activity.service';
-import { BungieHttpService } from '../services/bungie-http.service';
 import { TwitchService } from '../services/twitch.service';
 import { XboxService } from '../services/xbox.service';
 import { SettingsService } from '../services/settings.service';
