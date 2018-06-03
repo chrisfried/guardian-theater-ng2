@@ -47,6 +47,14 @@ export const EmblemDefinition = {
       icon: '/common/destiny2_content/icons/5da4b767849d639577e85a3337d98d89.jpg',
       secondaryIcon: '/common/destiny2_content/icons/f92c3c985ac5b9a96f8ce85b0ef9f297.jpg'
     },
+    338612265: {
+      icon: '/common/destiny2_content/icons/309bfe5e5babae2d2d60ceda661e15f8.jpg',
+      secondaryIcon: '/common/destiny2_content/icons/379b5ffb07b84d7530e1c6e344c71d3d.jpg'
+    },
+    414672658: {
+      icon: '/common/destiny2_content/icons/74c02a9b28b5fc25bb47814f36c4a83c.jpg',
+      secondaryIcon: '/common/destiny2_content/icons/c3610ff63c6ea0b484040c4581efd375.jpg'
+    },
     426147374: {
       icon: '/common/destiny2_content/icons/e035921c09b7dc48f50549fbc1c0109f.jpg',
       secondaryIcon: '/common/destiny2_content/icons/e30363b17355ebbfb9a1c3b353f5fde8.jpg'
@@ -79,6 +87,10 @@ export const EmblemDefinition = {
       icon: '/common/destiny2_content/icons/57e909902b1957747052202efff00371.jpg',
       secondaryIcon: '/common/destiny2_content/icons/a09c1fcc7e06a57ad604f981abf6d877.jpg'
     },
+    738873646: {
+      icon: '/common/destiny2_content/icons/44510ddf0aeee60273801c2eac56a49e.png',
+      secondaryIcon: '/common/destiny2_content/icons/324df99be573be1b92c8dad00193c17b.jpg'
+    },
     745759692: {
       icon: '/common/destiny2_content/icons/7d8a738153e934bec78a9fe855eb49df.jpg',
       secondaryIcon: '/common/destiny2_content/icons/5da5e5ad0b98a1b2c649037be184e658.jpg'
@@ -102,18 +114,6 @@ export const EmblemDefinition = {
     769740915: {
       icon: '/common/destiny2_content/icons/9f84734ee93c9650f877785fbb021e62.jpg',
       secondaryIcon: '/common/destiny2_content/icons/8deb5feb678c2e8d6f1c90b3fb142b62.jpg'
-    },
-    776529032: {
-      icon: '/common/destiny2_content/icons/cac90c9305e29d15ad184ed1fc4734b6.jpg',
-      secondaryIcon: '/common/destiny2_content/icons/bcbe792f2723c302002ef4eff8373483.jpg'
-    },
-    776529033: {
-      icon: '/common/destiny2_content/icons/a668159664de05231d498db107e4a34c.jpg',
-      secondaryIcon: '/common/destiny2_content/icons/2e1f4c73b41d528d781015975f866d96.jpg'
-    },
-    776529034: {
-      icon: '/common/destiny2_content/icons/cac90c9305e29d15ad184ed1fc4734b6.jpg',
-      secondaryIcon: '/common/destiny2_content/icons/bcbe792f2723c302002ef4eff8373483.jpg'
     },
     776878384: {
       icon: '/common/destiny2_content/icons/9f5ed0667aa1451b4d196985f34bd55d.jpg',
@@ -166,18 +166,6 @@ export const EmblemDefinition = {
     844563491: {
       icon: '/common/destiny2_content/icons/8515b933e6c1e799ed9104c2b04212ee.jpg',
       secondaryIcon: '/common/destiny2_content/icons/00836c62f46b3fff6bae07fbf39dd2b2.jpg'
-    },
-    855333069: {
-      icon: '/common/destiny2_content/icons/caeb9274b6f68f8a59a1dd8b155ba605.jpg',
-      secondaryIcon: '/common/destiny2_content/icons/1f2734492c4fdcae50080c5b9d0a9d0b.jpg'
-    },
-    855333070: {
-      icon: '/common/destiny2_content/icons/caeb9274b6f68f8a59a1dd8b155ba605.jpg',
-      secondaryIcon: '/common/destiny2_content/icons/1f2734492c4fdcae50080c5b9d0a9d0b.jpg'
-    },
-    855333071: {
-      icon: '/common/destiny2_content/icons/0697fd42c3933bd900d48fe607f09f0b.jpg',
-      secondaryIcon: '/common/destiny2_content/icons/7f1a524a2f59c2f398dfc5c4f8434a67.jpg'
     },
     893502917: {
       icon: '/common/destiny2_content/icons/7073087ee04a4806f009a66af68aab7b.jpg',
@@ -263,6 +251,10 @@ export const EmblemDefinition = {
       icon: '/common/destiny2_content/icons/78fd9588698070ff3a11c0218b84948e.jpg',
       secondaryIcon: '/common/destiny2_content/icons/34dbcfbf8c07e47f3b734720fe652c46.jpg'
     },
+    1312626341: {
+      icon: '/common/destiny2_content/icons/efacab655c6e4d4ee36752b75d5c3166.jpg',
+      secondaryIcon: '/common/destiny2_content/icons/2823ac446c79a06f4b258706d7e51929.jpg'
+    },
     1321546045: {
       icon: '/common/destiny2_content/icons/4a2b11982f3008b72e13d667db71c09c.jpg',
       secondaryIcon: '/common/destiny2_content/icons/d6184239b18ed62f6634e03e7f37457f.jpg'
@@ -344,7 +336,7 @@ export const EmblemDefinition = {
       secondaryIcon: '/common/destiny2_content/icons/f7d33e07d28c4f0926b2cf49fa49df24.jpg'
     },
     1608119540: {
-      icon: '/common/destiny2_content/icons/50f45d040a1a38ac1ea626b46adf42f5.png',
+      icon: '/common/destiny2_content/icons/e8313068b20d33d385dc55d34e76b57f.png',
       secondaryIcon: 'undefined'
     },
     1625974211: {
@@ -354,18 +346,6 @@ export const EmblemDefinition = {
     1667199810: {
       icon: '/common/destiny2_content/icons/b051625528a83d9ccbf0584f6e74c3f7.jpg',
       secondaryIcon: '/common/destiny2_content/icons/bac5e16454d6050d135e8a487f4fd9d8.jpg'
-    },
-    1723894000: {
-      icon: '/common/destiny2_content/icons/e098bbd0d2304b04fb1afff00a93689d.jpg',
-      secondaryIcon: '/common/destiny2_content/icons/c631b18989a9f31ecfe07f5b3432fc0b.jpg'
-    },
-    1723894001: {
-      icon: '/common/destiny2_content/icons/a147cb2f800be8668a0624cc8144a3e9.jpg',
-      secondaryIcon: '/common/destiny2_content/icons/5200e836febb92caf7a7cdd39ac16828.jpg'
-    },
-    1723894003: {
-      icon: '/common/destiny2_content/icons/e098bbd0d2304b04fb1afff00a93689d.jpg',
-      secondaryIcon: '/common/destiny2_content/icons/c631b18989a9f31ecfe07f5b3432fc0b.jpg'
     },
     1724152704: {
       icon: '/common/destiny2_content/icons/71287fab2bb828546fc29d2bc94959c3.jpg',
@@ -603,10 +583,6 @@ export const EmblemDefinition = {
       icon: '/common/destiny2_content/icons/b75abe275591dce7899e6183ebcb4551.jpg',
       secondaryIcon: '/common/destiny2_content/icons/42105867d08072a31f182921bf7727d8.jpg'
     },
-    2769834047: {
-      icon: '/common/destiny2_content/icons/cd8c50e558bc69a07bff8cb95df7815e.jpg',
-      secondaryIcon: '/common/destiny2_content/icons/9daec456835299f8defa8c83e3ad3dd1.jpg'
-    },
     2890977363: {
       icon: '/common/destiny2_content/icons/e0fba22f2d4618590994e96507155f66.jpg',
       secondaryIcon: '/common/destiny2_content/icons/9f7759255405ae817374e1f451eb87c8.jpg'
@@ -675,10 +651,6 @@ export const EmblemDefinition = {
       icon: '/common/destiny2_content/icons/0f478894cdc64b0bd977a589b22e297a.jpg',
       secondaryIcon: '/common/destiny2_content/icons/9fc87194709d4f0eb67b2c7fdaf89d56.jpg'
     },
-    3334815691: {
-      icon: '/common/destiny2_content/icons/906a294e068059c586fd20c30e4425e2.jpg',
-      secondaryIcon: '/common/destiny2_content/icons/5be4d737ef0867029c10313b57df4bd2.jpg'
-    },
     3338748564: {
       icon: '/common/destiny2_content/icons/45318af5e0140ca3d9b71f03776674e3.jpg',
       secondaryIcon: '/common/destiny2_content/icons/a11eacb0d20137600c0e3bcb10ff2a8b.jpg'
@@ -743,10 +715,6 @@ export const EmblemDefinition = {
       icon: '/common/destiny2_content/icons/11b551916c2c11e8ef058e4ee7984b17.jpg',
       secondaryIcon: '/common/destiny2_content/icons/96dee23194fbc1a5864443db5620265a.jpg'
     },
-    3754910498: {
-      icon: '/common/destiny2_content/icons/0e8b226d35dfd136b07f695a03bd043a.jpg',
-      secondaryIcon: '/common/destiny2_content/icons/da7a934ede744061809a9057e8fbd1e2.jpg'
-    },
     3778092977: {
       icon: '/common/destiny2_content/icons/b3b70e490cf749667a1dd5abcb39741c.jpg',
       secondaryIcon: '/common/destiny2_content/icons/2d7a897bdd79bff2a404f4d031cc268d.jpg'
@@ -787,10 +755,6 @@ export const EmblemDefinition = {
       icon: '/common/destiny2_content/icons/d316fa414f16795f5f0674a35d2bdae7.jpg',
       secondaryIcon: '/common/destiny2_content/icons/499204adca01083d78780887a3d27042.jpg'
     },
-    4059318875: {
-      icon: '/common/destiny2_content/icons/6f671bb548eee398a21adf8436c67928.jpg',
-      secondaryIcon: '/common/destiny2_content/icons/b6a0f60e779fa23fa60b599b627e6757.jpg'
-    },
     4077939641: {
       icon: '/common/destiny2_content/icons/60530e4d21f5a32bebdca82cb178c4bf.jpg',
       secondaryIcon: '/common/destiny2_content/icons/c06afc4c698fbec7ee17e9d21496e192.jpg'
@@ -818,10 +782,6 @@ export const EmblemDefinition = {
     4077939647: {
       icon: '/common/destiny2_content/icons/730e9302cdd4e8d8c08776c93bf866f7.jpg',
       secondaryIcon: '/common/destiny2_content/icons/aaca6252f13a969b8185d747e4dc5e7c.jpg'
-    },
-    4114707355: {
-      icon: '/common/destiny2_content/icons/a1ef6291ab39a313671993d6003954c2.jpg',
-      secondaryIcon: '/common/destiny2_content/icons/0630441338ae2369e72467e9517f23f5.jpg'
     },
     4132147344: {
       icon: '/common/destiny2_content/icons/7bb44c194b65167f7988ef94cf09651f.jpg',
@@ -883,17 +843,9 @@ export const EmblemDefinition = {
       icon: '/common/destiny2_content/icons/3cf7d16f507849e868b8c1f7912b5033.jpg',
       secondaryIcon: '/common/destiny2_content/icons/5d302a8e92714ec7b20b32f359e5bef0.jpg'
     },
-    4182480238: {
-      icon: '/common/destiny2_content/icons/309bfe5e5babae2d2d60ceda661e15f8.jpg',
-      secondaryIcon: '/common/destiny2_content/icons/379b5ffb07b84d7530e1c6e344c71d3d.jpg'
-    },
     4182480239: {
       icon: '/common/destiny2_content/icons/7b0caba31ffd3c5b6dade104d8fab449.jpg',
       secondaryIcon: '/common/destiny2_content/icons/b1254bddd20f86b37a8f3a4d681d46cc.jpg'
-    },
-    4212410112: {
-      icon: '/img/misc/missing_icon_d2.png',
-      secondaryIcon: '/img/misc/missing_icon_d2.png'
     },
     4238775804: {
       icon: '/common/destiny2_content/icons/f2c73866273e609de61baef2aa9454a4.jpg',
