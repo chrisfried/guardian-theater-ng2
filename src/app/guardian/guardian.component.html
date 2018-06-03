@@ -80,10 +80,10 @@
     </div>
   </div>
 
-  <div *ngIf="(!activities || !activities.length) &&  !(guardianService.noActivities | async)" class="profile-spinner-wrapper">
+  <div *ngIf="(!activities || !activities.length) && loadingActivities" class="profile-spinner-wrapper">
     <div class="fi-widget spinner profile-spinner" title="Fetching Bungie Activities..."></div>
   </div>
-  <div *ngIf="guardianService.noActivities | async">No activities found.</div>
+  <div *ngIf="(!activities || !activities.length) && !loadingActivities">No activities found.</div>
 
   <app-activity *ngFor="let activity of activities" [activity]="activity"></app-activity>
 

@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { GeneralUser } from 'bungie-api-ts/user';
 import { Subscription } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { gt } from '../gt.typings';
 import { GuardianService } from '../services/guardian.service';
 import { SettingsService } from '../services/settings.service';
@@ -24,6 +25,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
   public gamemode: string;
   public page: number;
   public clipLimiter: gt.ClipLimiter;
+  public loadingActivities: boolean;
 
   constructor(
     private router: Router,
@@ -36,47 +38,55 @@ export class GuardianComponent implements OnInit, OnDestroy {
     // TO DO: If membershipType !== 1, 2, or 4, redirect to search.
     this.subs = [];
 
-    this.subs.push(this.guardianService.startAccountObservable().subscribe());
-    this.subs.push(
-      this.guardianService.startActivityHistoryObservable().subscribe()
-    );
-
     this.subs.push(
       this.activatedRoute.params.subscribe((params: Params) => {
+        this.membershipType = params['membershipType']
+          ? +params['membershipType']
+          : -1;
+        this.membershipId = params['membershipId']
+          ? params['membershipId']
+          : '';
+        this.gamemode = params['gamemode'] ? params['gamemode'] : 'None';
+        this.page = params['page'] ? +params['page'] : 0;
+
         if (
           !(
-            params['membershipType'] === '1' ||
-            params['membershipType'] === '2' ||
-            params['membershipType'] === '4'
+            this.membershipType === 1 ||
+            this.membershipType === 2 ||
+            this.membershipType === 4
           )
         ) {
-          this.router.navigate(['/search', params['membershipType']], {
+          this.router.navigate(['/search', this.membershipType], {
             replaceUrl: true
           });
         }
 
-        if (params['membershipType']) {
-          this.guardianService.membershipType.next(+params['membershipType']);
-        } else {
-          this.guardianService.membershipType.next(-1);
-        }
+        if (this.membershipType && this.membershipId) {
+          this.subs.push(
+            this.guardianService
+              .getLinkedAccounts(
+                +params['membershipType'],
+                params['membershipId']
+              )
+              .subscribe(res => {
+                this.settingsService.activeProfiles.next(res.Response.profiles);
+              })
+          );
 
-        if (params['membershipId']) {
-          this.guardianService.membershipId.next(params['membershipId']);
-        } else {
-          this.guardianService.membershipId.next('');
-        }
-
-        if (params['gamemode']) {
-          this.guardianService.activityMode.next(params['gamemode']);
-        } else {
-          this.guardianService.activityMode.next('None');
-        }
-
-        if (params['page']) {
-          this.guardianService.activityPage.next(+params['page']);
-        } else {
-          this.guardianService.activityPage.next(0);
+          this.loadingActivities = true;
+          this.subs.push(
+            this.guardianService
+              .getActivitiesForAccount(
+                this.membershipType,
+                this.membershipId,
+                this.gamemode
+              )
+              .pipe(map(res => res.slice(0 + this.page * 7, 7 + this.page * 7)))
+              .subscribe(res => {
+                this.loadingActivities = false;
+                this.activities = res;
+              })
+          );
         }
       })
     );
@@ -90,36 +100,6 @@ export class GuardianComponent implements OnInit, OnDestroy {
             : (this.displayName += '');
           this.displayName += profile.displayName;
         });
-      })
-    );
-
-    this.subs.push(
-      this.guardianService.membershipType.subscribe(type => {
-        this.membershipType = type;
-      })
-    );
-
-    this.subs.push(
-      this.guardianService.membershipId.subscribe(type => {
-        this.membershipId = type;
-      })
-    );
-
-    this.subs.push(
-      this.guardianService.activities.subscribe(activities => {
-        this.activities = activities;
-      })
-    );
-
-    this.subs.push(
-      this.guardianService.activityMode.subscribe(gamemode => {
-        this.gamemode = gamemode;
-      })
-    );
-
-    this.subs.push(
-      this.guardianService.activityPage.subscribe(page => {
-        this.page = page;
       })
     );
 

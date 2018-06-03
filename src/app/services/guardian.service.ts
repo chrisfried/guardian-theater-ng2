@@ -7,107 +7,17 @@ import {
   ServerResponse
 } from 'bungie-api-ts/destiny2';
 import { UserInfoCard } from 'bungie-api-ts/user';
-import {
-  BehaviorSubject,
-  Observable,
-  combineLatest as observableCombineLatest,
-  empty as observableEmpty,
-  forkJoin as observableForkJoin
-} from 'rxjs';
-import { distinctUntilChanged, map, switchMap } from 'rxjs/operators';
-import { gt } from '../gt.typings';
+import { Observable, forkJoin as observableForkJoin } from 'rxjs';
+import { map, switchMap } from 'rxjs/operators';
 import { BungieHttpService } from './bungie-http.service';
 import { SettingsService } from './settings.service';
 
 @Injectable()
 export class GuardianService implements OnDestroy {
-  public membershipType: BehaviorSubject<number>;
-  public membershipId: BehaviorSubject<string>;
-  public activities: BehaviorSubject<gt.Activity[]>;
-  public activityMode: BehaviorSubject<string>;
-  public activityPage: BehaviorSubject<number>;
-  public activityId: BehaviorSubject<string>;
-  public noResults: BehaviorSubject<boolean>;
-  public noActivities: BehaviorSubject<boolean>;
-
   constructor(
     private bHttp: BungieHttpService,
     private settingsService: SettingsService
-  ) {
-    this.membershipId = new BehaviorSubject('');
-    this.activityMode = new BehaviorSubject('None');
-    this.activityPage = new BehaviorSubject(0);
-
-    this.membershipType = new BehaviorSubject(-1);
-    this.activities = new BehaviorSubject([]);
-    this.activityId = new BehaviorSubject('');
-    this.noResults = new BehaviorSubject(false);
-    this.noActivities = new BehaviorSubject(false);
-  }
-
-  startAccountObservable() {
-    return observableCombineLatest(this.membershipType, this.membershipId).pipe(
-      distinctUntilChanged(),
-      switchMap(([membershipType, membershipId]) => {
-        if (membershipType && membershipId) {
-          return this.getLinkedAccounts(membershipType, membershipId).pipe(
-            map(res => res.Response.profiles)
-          );
-        } else {
-          return observableEmpty();
-        }
-      }),
-      switchMap((profiles: UserInfoCard[]) => {
-        this.settingsService.activeProfiles.next(profiles);
-        if (
-          profiles[0] &&
-          profiles[0].membershipType &&
-          profiles[0].membershipId
-        ) {
-          return this.getProfile(
-            profiles[0].membershipType,
-            profiles[0].membershipId
-          );
-        } else {
-          return observableEmpty();
-        }
-      })
-    );
-  }
-
-  startActivityHistoryObservable() {
-    return observableCombineLatest(
-      this.membershipType,
-      this.membershipId,
-      this.activityMode,
-      this.activityPage
-    ).pipe(
-      distinctUntilChanged(),
-      switchMap(([membershipType, membershipId, mode, page]) => {
-        try {
-          return this.getActivitiesForAccount(
-            membershipType,
-            membershipId,
-            mode
-          ).pipe(map(res => res.slice(0 + page * 7, 7 + page * 7)));
-        } catch (e) {
-          return observableEmpty();
-        }
-      }),
-      map(res => {
-        try {
-          if (!res || !res.length) {
-            this.noActivities.next(true);
-          } else {
-            this.noActivities.next(false);
-          }
-          this.activities.next(res);
-        } catch (e) {
-          console.error(e);
-        }
-      })
-    );
-  }
+  ) {}
 
   getLinkedAccounts(
     membershipType: number,

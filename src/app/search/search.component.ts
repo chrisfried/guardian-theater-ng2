@@ -1,15 +1,10 @@
-import {
-  throwError as observableThrowError,
-  empty as observableEmpty,
-  BehaviorSubject,
-  Subscription
-} from 'rxjs';
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Router, ActivatedRoute, Params } from '@angular/router';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { ActivatedRoute, Params, Router } from '@angular/router';
+import { ServerResponse, UserInfoCard } from 'bungie-api-ts/user';
+import { BehaviorSubject, Subscription, empty as observableEmpty } from 'rxjs';
+import { distinctUntilChanged, map, switchMap } from 'rxjs/operators';
 import { BungieHttpService } from '../services/bungie-http.service';
 import { GuardianService } from '../services/guardian.service';
-import { map, distinctUntilChanged, switchMap } from 'rxjs/operators';
-import { UserInfoCard, ServerResponse } from 'bungie-api-ts/user';
 
 @Component({
   selector: 'app-search',
@@ -69,7 +64,7 @@ export class SearchComponent implements OnInit, OnDestroy {
           this.router.navigate(
             ['/guardian', result.membershipType, result.membershipId],
             {
-              skipLocationChange: true
+              replaceUrl: true
             }
           );
         }
@@ -103,7 +98,7 @@ export class SearchComponent implements OnInit, OnDestroy {
                 this.router.navigate(
                   ['/guardian', result.membershipType, result.membershipId],
                   {
-                    skipLocationChange: true
+                    replaceUrl: true
                   }
                 );
               }
