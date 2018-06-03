@@ -1,4 +1,4 @@
-import { Injectable, OnDestroy } from '@angular/core';
+import { Injectable } from '@angular/core';
 import {
   DestinyActivityHistoryResults,
   DestinyCharacterComponent,
@@ -10,14 +10,10 @@ import { UserInfoCard } from 'bungie-api-ts/user';
 import { Observable, forkJoin as observableForkJoin } from 'rxjs';
 import { map, switchMap } from 'rxjs/operators';
 import { BungieHttpService } from './bungie-http.service';
-import { SettingsService } from './settings.service';
 
 @Injectable()
 export class GuardianService {
-  constructor(
-    private bHttp: BungieHttpService,
-    private settingsService: SettingsService
-  ) {}
+  constructor(private bHttp: BungieHttpService) {}
 
   getLinkedAccounts(
     membershipType: number,

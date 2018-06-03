@@ -1,7 +1,4 @@
-import {
-  combineLatest as observableCombineLatest,
-  Subscription
-} from 'rxjs';
+import { combineLatest as observableCombineLatest, Subscription } from 'rxjs';
 import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 import { ActivityService } from '../services/activity.service';
 import { TwitchService } from '../services/twitch.service';
@@ -9,12 +6,13 @@ import { XboxService } from '../services/xbox.service';
 import { SettingsService } from '../services/settings.service';
 import { Router } from '@angular/router';
 import { gt } from '../gt.typings';
+import { GuardianService } from '../services/guardian.service';
 
 @Component({
   selector: 'app-activity',
   templateUrl: './activity.component.html',
   styleUrls: ['./activity.component.scss'],
-  providers: [ActivityService]
+  providers: [ActivityService, GuardianService]
 })
 export class ActivityComponent implements OnInit, OnDestroy {
   @Input() activity: gt.Activity;
@@ -97,6 +95,21 @@ export class ActivityComponent implements OnInit, OnDestroy {
                 ].subscribe(xbox => (entry.xbox = xbox))
               );
             }
+            if (
+              entry.player.destinyUserInfo.membershipType === 4 &&
+              this.xboxService.xboxPC[entry.player.destinyUserInfo.displayName]
+            ) {
+              loadingArray.push(
+                this.xboxService.xboxPC[
+                  entry.player.destinyUserInfo.displayName
+                ]
+              );
+              this.subs.push(
+                this.xboxService.xboxPC[
+                  entry.player.destinyUserInfo.displayName
+                ].subscribe(xbox => (entry.xbox = xbox))
+              );
+            }
             switch (entry.player.destinyUserInfo.membershipType) {
               case 1:
                 entry.trn = 'xbl';
@@ -115,8 +128,10 @@ export class ActivityComponent implements OnInit, OnDestroy {
                 message: '',
                 bungie: false,
                 xbox: false,
+                xboxPC: false,
                 twitch: false
               };
+              console.log(array);
               array.some(function(item) {
                 if (item.bungieId && !item.checkedId) {
                   loading.message =
@@ -149,6 +164,7 @@ export class ActivityComponent implements OnInit, OnDestroy {
                   return (loading.xbox = true);
                 }
               });
+              console.log(loading);
               pgcr.loading = loading;
             })
           );

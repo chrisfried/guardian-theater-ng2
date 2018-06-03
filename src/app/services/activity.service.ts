@@ -25,6 +25,7 @@ import { BungieHttpService } from './bungie-http.service';
 import { SettingsService } from './settings.service';
 import { TwitchService } from './twitch.service';
 import { XboxService } from './xbox.service';
+import { GuardianService } from '../services/guardian.service';
 
 @Injectable()
 export class ActivityService implements OnDestroy {
@@ -43,7 +44,8 @@ export class ActivityService implements OnDestroy {
     private sanitizer: DomSanitizer,
     private xboxService: XboxService,
     private route: ActivatedRoute,
-    private settingsService: SettingsService
+    private settingsService: SettingsService,
+    private guardianService: GuardianService
   ) {
     this._activity = new BehaviorSubject(null);
     this._activityId = new BehaviorSubject('');
@@ -442,112 +444,34 @@ export class ActivityService implements OnDestroy {
           }
           try {
             pgcr.entries.forEach(entry => {
+              let gamertag;
+
               if (entry.player.destinyUserInfo.membershipType === 1) {
-                let gamertag = entry.player.destinyUserInfo.displayName;
+                gamertag = entry.player.destinyUserInfo.displayName;
+                this.getXboxClips(pgcr, entry, gamertag);
+              }
 
-                if (!this.xboxService.xbox[gamertag]) {
-                  this.xboxService.xbox[gamertag] = new BehaviorSubject({
-                    checked: false,
-                    gamertag: gamertag,
-                    response: null
-                  });
-                }
-
+              if (entry.player.destinyUserInfo.membershipType === 4) {
                 this.subs.push(
-                  this.xboxService.xbox[gamertag]
-                    .pipe(
-                      map(
-                        (gamer: {
-                          checked: boolean;
-                          gamertag: string;
-                          response: {};
-                        }) => {
-                          return !gamer.checked && gamer.gamertag
-                            ? 'https://api.xboxrecord.us/gameclips/gamertag/' +
-                                gamertag +
-                                '/titleid/144389848'
-                            : '';
-                        }
-                      ),
-                      distinctUntilChanged(),
-                      switchMap((url: string) => {
-                        if (url.length) {
-                          return this.http
-                            .get(url)
-                            .pipe(
-                              catchError(err =>
-                                observableThrowError(
-                                  err || 'Xbox Clip Server error'
-                                )
-                              )
-                            );
-                        } else {
-                          return observableEmpty();
-                        }
-                      })
+                  this.guardianService
+                    .getLinkedAccounts(
+                      entry.player.destinyUserInfo.membershipType,
+                      entry.player.destinyUserInfo.membershipId
                     )
                     .subscribe(res => {
-                      if (res) {
-                        this.xboxService.xbox[gamertag].next({
-                          checked: true,
-                          gamertag: gamertag,
-                          response: res
-                        });
-                      }
+                      res.Response.profiles.some(profile => {
+                        if (profile.membershipType === 1) {
+                          gamertag = profile.displayName;
+                          this.getXboxClips(
+                            pgcr,
+                            entry,
+                            gamertag,
+                            entry.player.destinyUserInfo.displayName
+                          );
+                          return true;
+                        }
+                      });
                     })
-                );
-
-                this.subs.push(
-                  this.xboxService.xbox[gamertag].subscribe(
-                    (subject: {
-                      checked: boolean;
-                      gamertag: string;
-                      response: xbox.Response;
-                    }) => {
-                      if (
-                        subject.response &&
-                        subject.response.gameClips &&
-                        subject.response.gameClips.length
-                      ) {
-                        subject.response.gameClips.forEach(
-                          (video: xbox.Video) => {
-                            let recordedStart =
-                              new Date(video.dateRecorded).getTime() / 1000;
-                            let recordedStop =
-                              recordedStart + video.durationInSeconds;
-                            if (recordedStart > entry.stopTime) {
-                              return;
-                            }
-                            if (recordedStop < entry.startTime) {
-                              return;
-                            }
-                            if (!pgcr.clips) {
-                              pgcr.clips = [];
-                            }
-                            if (!entry.clips) {
-                              entry.clips = [];
-                            }
-                            entry.clips.push({
-                              type: 'xbox',
-                              start: recordedStart,
-                              entry: entry,
-                              video: video
-                            });
-                            pgcr.clips.push({
-                              type: 'xbox',
-                              start: recordedStart,
-                              entry: entry,
-                              video: video
-                            });
-                            pgcr.clips.sort(function(a, b) {
-                              return a.start - b.start;
-                            });
-                            pgcr.clips$.next(pgcr.clips);
-                          }
-                        );
-                      }
-                    }
-                  )
                 );
               }
             });
@@ -556,6 +480,106 @@ export class ActivityService implements OnDestroy {
           }
         }
       })
+    );
+  }
+
+  getXboxClips(pgcr, entry, gamertag, displayName?) {
+    let titleId = displayName ? 1762047744 : 144389848;
+    let cache = displayName ? 'xboxPC' : 'xbox';
+    displayName = displayName ? displayName : gamertag;
+    if (!this.xboxService[cache][gamertag]) {
+      this.xboxService[cache][gamertag] = new BehaviorSubject({
+        checked: false,
+        gamertag: gamertag,
+        response: null
+      });
+    }
+
+    this.subs.push(
+      this.xboxService[cache][gamertag]
+        .pipe(
+          map((gamer: { checked: boolean; gamertag: string; response: {} }) => {
+            return !gamer.checked && gamer.gamertag
+              ? 'https://api.xboxrecord.us/gameclips/gamertag/' +
+                  gamertag +
+                  '/titleid/' +
+                  titleId
+              : '';
+          }),
+          distinctUntilChanged(),
+          switchMap((url: string) => {
+            if (url.length) {
+              return this.http
+                .get(url)
+                .pipe(
+                  catchError(err =>
+                    observableThrowError(err || 'Xbox Clip Server error')
+                  )
+                );
+            } else {
+              return observableEmpty();
+            }
+          })
+        )
+        .subscribe(res => {
+          console.log(res);
+          if (res) {
+            this.xboxService[cache][gamertag].next({
+              checked: true,
+              gamertag: gamertag,
+              response: res
+            });
+          }
+        })
+    );
+
+    this.subs.push(
+      this.xboxService[cache][gamertag].subscribe(
+        (subject: {
+          checked: boolean;
+          gamertag: string;
+          response: xbox.Response;
+        }) => {
+          if (
+            subject.response &&
+            subject.response.gameClips &&
+            subject.response.gameClips.length
+          ) {
+            subject.response.gameClips.forEach((video: xbox.Video) => {
+              let recordedStart = new Date(video.dateRecorded).getTime() / 1000;
+              let recordedStop = recordedStart + video.durationInSeconds;
+              if (recordedStart > entry.stopTime) {
+                return;
+              }
+              if (recordedStop < entry.startTime) {
+                return;
+              }
+              if (!pgcr.clips) {
+                pgcr.clips = [];
+              }
+              if (!entry.clips) {
+                entry.clips = [];
+              }
+              entry.clips.push({
+                type: 'xbox',
+                start: recordedStart,
+                entry: entry,
+                video: video
+              });
+              pgcr.clips.push({
+                type: 'xbox',
+                start: recordedStart,
+                entry: entry,
+                video: video
+              });
+              pgcr.clips.sort(function(a, b) {
+                return a.start - b.start;
+              });
+              pgcr.clips$.next(pgcr.clips);
+            });
+          }
+        }
+      )
     );
   }
 
