@@ -534,7 +534,6 @@ export class ActivityService implements OnDestroy {
           })
         )
         .subscribe(res => {
-          console.log(res);
           if (res) {
             this.xboxService[cache][gamertag].next({
               checked: true,

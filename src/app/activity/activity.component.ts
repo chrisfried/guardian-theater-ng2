@@ -131,7 +131,6 @@ export class ActivityComponent implements OnInit, OnDestroy {
                 xboxPC: false,
                 twitch: false
               };
-              console.log(array);
               array.some(function(item) {
                 if (item.bungieId && !item.checkedId) {
                   loading.message =
@@ -164,7 +163,6 @@ export class ActivityComponent implements OnInit, OnDestroy {
                   return (loading.xbox = true);
                 }
               });
-              console.log(loading);
               pgcr.loading = loading;
             })
           );
