@@ -115,6 +115,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.subs.forEach(sub => sub.unsubscribe());
+    this.settingsService.activeProfiles.next([]);
   }
 
   selectGamemode(gamemode: string) {

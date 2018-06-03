@@ -13,7 +13,7 @@ import { BungieHttpService } from './bungie-http.service';
 import { SettingsService } from './settings.service';
 
 @Injectable()
-export class GuardianService implements OnDestroy {
+export class GuardianService {
   constructor(
     private bHttp: BungieHttpService,
     private settingsService: SettingsService
@@ -125,9 +125,5 @@ export class GuardianService implements OnDestroy {
         return activities;
       })
     );
-  }
-
-  ngOnDestroy() {
-    this.settingsService.activeProfiles.next([]);
   }
 }
