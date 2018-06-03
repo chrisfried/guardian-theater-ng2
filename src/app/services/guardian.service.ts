@@ -239,7 +239,6 @@ export class GuardianService implements OnDestroy {
         );
       }),
       map(res => {
-        console.log(res);
         const activities: DestinyHistoricalStatsPeriodGroup[] = [];
         res.forEach(activitiesArray => {
           try {

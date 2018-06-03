@@ -118,7 +118,6 @@ export class ActivityService implements OnDestroy {
 
     this.subs.push(
       this.pgcr.subscribe(pgcr => {
-        console.log(pgcr);
         if (pgcr) {
           try {
             let period = new Date(pgcr.period);
