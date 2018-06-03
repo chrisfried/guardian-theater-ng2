@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { LocalStorageService } from 'angular-2-local-storage';
 import { gt } from '../gt.typings';
+import { UserInfoCard } from 'bungie-api-ts/user';
 
 @Injectable()
 export class SettingsService {
@@ -10,7 +11,7 @@ export class SettingsService {
 
   public clipLimiter: BehaviorSubject<gt.ClipLimiter>;
   public links: BehaviorSubject<gt.Links>;
-  public activeName: BehaviorSubject<string>;
+  public activeProfiles: BehaviorSubject<UserInfoCard[]>;
   public userLang: {
     language?: string;
   };
@@ -62,7 +63,7 @@ export class SettingsService {
 
     this.clipLimiter = new BehaviorSubject(this._clipLimiter);
     this.links = new BehaviorSubject(this._links);
-    this.activeName = new BehaviorSubject('');
+    this.activeProfiles = new BehaviorSubject([]);
 
     this.userLang = {
       language: 'en'

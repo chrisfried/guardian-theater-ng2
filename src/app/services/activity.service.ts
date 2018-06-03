@@ -27,6 +27,7 @@ import {
 } from 'bungie-api-ts/destiny2';
 import { PublicPartnershipDetail } from 'bungie-api-ts/user';
 import { gt } from '../gt.typings';
+import { UserInfoCard } from 'bungie-api-ts/user';
 
 @Injectable()
 export class ActivityService implements OnDestroy {
@@ -34,9 +35,8 @@ export class ActivityService implements OnDestroy {
 
   private _activityId: BehaviorSubject<string>;
   private _activity: BehaviorSubject<gt.Activity>;
-  private _activeName: string;
+  private _activeProfiles: UserInfoCard[];
 
-  public membershipType: BehaviorSubject<number>;
   public pgcr: BehaviorSubject<gt.PostGameCarnageReport>;
 
   constructor(
@@ -53,22 +53,15 @@ export class ActivityService implements OnDestroy {
     this._activityId = new BehaviorSubject('');
     this.pgcr = new BehaviorSubject(null);
     this.subs = [];
-    this.membershipType = new BehaviorSubject(-1);
 
     this.subs.push(
-      this.settingsService.activeName.subscribe(
-        displayName => (this._activeName = displayName)
+      this.settingsService.activeProfiles.subscribe(
+        profiles => (this._activeProfiles = profiles)
       )
     );
 
     this.subs.push(
       this.route.params.subscribe((params: Params) => {
-        if (params['membershipType']) {
-          this.membershipType.next(+params['membershipType']);
-        } else {
-          this.membershipType.next(-1);
-        }
-
         if (params['activityId']) {
           this._activityId.next(params['activityId']);
         } else {
@@ -125,6 +118,7 @@ export class ActivityService implements OnDestroy {
 
     this.subs.push(
       this.pgcr.subscribe(pgcr => {
+        console.log(pgcr);
         if (pgcr) {
           try {
             let period = new Date(pgcr.period);
@@ -378,115 +372,102 @@ export class ActivityService implements OnDestroy {
             team: -1,
             fireteam: -1
           };
-          let activeName = this._activeName;
+          let activeProfiles = this._activeProfiles;
           pgcr.entries.some(function(entry) {
-            if (entry.player.destinyUserInfo.membershipType === 4) {
-              activeName = activeName.split('#')[0];
-            }
-            if (entry.player.destinyUserInfo.displayName === activeName) {
-              pgcr.active.entry = entry;
-              try {
-                pgcr.active.team = entry.values.team.basic.value;
-              } catch (e) {}
-              try {
-                pgcr.active.fireteam = entry.values.fireteamId.basic.value;
-              } catch (e) {}
-              return true;
-            }
+            return activeProfiles.some(profile => {
+              if (
+                profile.membershipType ===
+                  entry.player.destinyUserInfo.membershipType &&
+                profile.membershipId ===
+                  entry.player.destinyUserInfo.membershipId
+              ) {
+                pgcr.active.entry = entry;
+                try {
+                  pgcr.active.team = entry.values.team.basic.value;
+                } catch (e) {}
+                try {
+                  pgcr.active.fireteam = entry.values.fireteamId.basic.value;
+                } catch (e) {}
+                return true;
+              }
+            });
           });
 
           pgcr.filteredClips$ = observableCombineLatest(
             pgcr.clips$,
-            this.settingsService.clipLimiter,
-            this.membershipType
+            this.settingsService.clipLimiter
           ).pipe(
-            map(
-              ([clips, limiter, membershipType]: [
-                gt.Clip[],
-                gt.ClipLimiter,
-                number
-              ]) => {
-                let filteredClips = [];
-                clips.forEach(clip => {
-                  if (pgcr.active.entry) {
-                    if (
-                      membershipType === 1 &&
-                      ((!limiter.xbox && clip.type === 'xbox') ||
-                        (!limiter.twitch && clip.type === 'twitch'))
-                    ) {
-                      return;
-                    }
-                    if (
-                      !limiter.self &&
-                      clip.entry.player.destinyUserInfo.displayName ===
-                        pgcr.active.entry.player.destinyUserInfo.displayName
-                    ) {
-                      return;
-                    }
-                    if (
-                      !limiter.fireteam &&
-                      clip.entry.player.destinyUserInfo.displayName !==
-                        pgcr.active.entry.player.destinyUserInfo.displayName &&
-                      clip.entry.values.fireteamId &&
-                      clip.entry.values.fireteamId.basic.value ===
-                        pgcr.active.fireteam
-                    ) {
-                      return;
-                    }
-                    if (
-                      !limiter.team &&
-                      clip.entry.player.destinyUserInfo.displayName !==
-                        pgcr.active.entry.player.destinyUserInfo.displayName &&
-                      (!clip.entry.values.fireteamId ||
-                        (clip.entry.values.fireteamId &&
-                          clip.entry.values.fireteamId.basic.value !==
-                            pgcr.active.fireteam)) &&
-                      clip.entry.values.team &&
-                      clip.entry.values.team.basic.value === pgcr.active.team
-                    ) {
-                      return;
-                    }
-                    if (
-                      !limiter.opponents &&
-                      clip.entry.player.destinyUserInfo.displayName !==
-                        pgcr.active.entry.player.destinyUserInfo.displayName &&
-                      ((!clip.entry.values.team &&
-                        !clip.entry.values.fireteamId) ||
-                        (clip.entry.values.team &&
-                          clip.entry.values.team.basic.value !==
-                            pgcr.active.team))
-                    ) {
-                      return;
-                    }
+            map(([clips, limiter]: [gt.Clip[], gt.ClipLimiter]) => {
+              let filteredClips = [];
+              clips.forEach(clip => {
+                if (pgcr.active.entry) {
+                  if (
+                    (!limiter.xbox && clip.type === 'xbox') ||
+                    (!limiter.twitch && clip.type === 'twitch')
+                  ) {
+                    return;
                   }
-                  filteredClips.push(clip);
-                });
-                return filteredClips;
-              }
-            )
+                  if (
+                    !limiter.self &&
+                    clip.entry.player.destinyUserInfo.displayName ===
+                      pgcr.active.entry.player.destinyUserInfo.displayName
+                  ) {
+                    return;
+                  }
+                  if (
+                    !limiter.fireteam &&
+                    clip.entry.player.destinyUserInfo.displayName !==
+                      pgcr.active.entry.player.destinyUserInfo.displayName &&
+                    clip.entry.values.fireteamId &&
+                    clip.entry.values.fireteamId.basic.value ===
+                      pgcr.active.fireteam
+                  ) {
+                    return;
+                  }
+                  if (
+                    !limiter.team &&
+                    clip.entry.player.destinyUserInfo.displayName !==
+                      pgcr.active.entry.player.destinyUserInfo.displayName &&
+                    (!clip.entry.values.fireteamId ||
+                      (clip.entry.values.fireteamId &&
+                        clip.entry.values.fireteamId.basic.value !==
+                          pgcr.active.fireteam)) &&
+                    clip.entry.values.team &&
+                    clip.entry.values.team.basic.value === pgcr.active.team
+                  ) {
+                    return;
+                  }
+                  if (
+                    !limiter.opponents &&
+                    clip.entry.player.destinyUserInfo.displayName !==
+                      pgcr.active.entry.player.destinyUserInfo.displayName &&
+                    ((!clip.entry.values.team &&
+                      !clip.entry.values.fireteamId) ||
+                      (clip.entry.values.team &&
+                        clip.entry.values.team.basic.value !==
+                          pgcr.active.team))
+                  ) {
+                    return;
+                  }
+                }
+                filteredClips.push(clip);
+              });
+              return filteredClips;
+            })
           );
         }
       })
     );
 
     this.subs.push(
-      observableCombineLatest(this.membershipType, this.pgcr).subscribe(
-        ([type, pgcr]) => {
-          if (type === -1 && pgcr) {
-            try {
-              this.membershipType.next(
-                pgcr.entries[0].player.destinyUserInfo.membershipType
-              );
-            } catch (e) {
-              console.error(e);
-            }
+      this.pgcr.subscribe(pgcr => {
+        if (pgcr) {
+          if (!pgcr.clips$) {
+            pgcr.clips$ = new BehaviorSubject([]);
           }
-          if (type === 1 && pgcr) {
-            if (!pgcr.clips$) {
-              pgcr.clips$ = new BehaviorSubject([]);
-            }
-            try {
-              pgcr.entries.forEach(entry => {
+          try {
+            pgcr.entries.forEach(entry => {
+              if (entry.player.destinyUserInfo.membershipType === 1) {
                 let gamertag = entry.player.destinyUserInfo.displayName;
 
                 if (!this.xboxService.xbox[gamertag]) {
@@ -591,13 +572,13 @@ export class ActivityService implements OnDestroy {
                     }
                   )
                 );
-              });
-            } catch (e) {
-              console.error(e);
-            }
+              }
+            });
+          } catch (e) {
+            console.error(e);
           }
         }
-      )
+      })
     );
   }
 

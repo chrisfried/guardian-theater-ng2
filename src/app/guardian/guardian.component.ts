@@ -23,8 +23,6 @@ export class GuardianComponent implements OnInit, OnDestroy {
   public displayName: string;
   public displayTag: string;
   public searchResults: GeneralUser[];
-  public characters: DestinyCharacterComponent[];
-  public activeCharacter: DestinyCharacterComponent;
   public activities: gt.Activity[];
   public gamemode: string;
   public page: number;
@@ -55,37 +53,6 @@ export class GuardianComponent implements OnInit, OnDestroy {
             replaceUrl: true
           });
         }
-        if (
-          params['membershipType'] &&
-          params['membershipId'] &&
-          !params['characterId']
-        ) {
-          this.subs.push(
-            this.guardianService.characters.subscribe(characters => {
-              try {
-                let charactersArray = [];
-                for (let key in characters) {
-                  if (characters[key]) {
-                    charactersArray.push(characters[key]);
-                  }
-                }
-                if (charactersArray[0].characterId) {
-                  this.router.navigate(
-                    [
-                      '/guardian',
-                      params['membershipType'],
-                      params['membershipId'],
-                      charactersArray[0].characterId,
-                      'None',
-                      0
-                    ],
-                    { replaceUrl: true }
-                  );
-                }
-              } catch (e) {}
-            })
-          );
-        }
 
         if (params['membershipType']) {
           this.guardianService.membershipType.next(+params['membershipType']);
@@ -97,12 +64,6 @@ export class GuardianComponent implements OnInit, OnDestroy {
           this.guardianService.membershipId.next(params['membershipId']);
         } else {
           this.guardianService.membershipId.next('');
-        }
-
-        if (params['characterId']) {
-          this.guardianService.characterId.next(params['characterId']);
-        } else {
-          this.guardianService.characterId.next('');
         }
 
         if (params['gamemode']) {
@@ -141,29 +102,6 @@ export class GuardianComponent implements OnInit, OnDestroy {
     );
 
     this.subs.push(
-      this.guardianService.characters.subscribe(characters => {
-        if (characters) {
-          let charactersArray = [];
-          for (let key in characters) {
-            if (characters[key]) {
-              charactersArray.push(characters[key]);
-            }
-          }
-          this.characters = charactersArray;
-        } else {
-          this.characters = [];
-        }
-      })
-    );
-
-    this.subs.push(
-      this.guardianService.activeCharacter.subscribe(character => {
-        console.log(character);
-        this.activeCharacter = character;
-      })
-    );
-
-    this.subs.push(
       this.guardianService.activities.subscribe(activities => {
         this.activities = activities;
       })
@@ -192,23 +130,11 @@ export class GuardianComponent implements OnInit, OnDestroy {
     this.subs.forEach(sub => sub.unsubscribe());
   }
 
-  selectCharacter(characterId: string) {
-    this.router.navigate([
-      '/guardian',
-      this.membershipType,
-      this.membershipId,
-      characterId,
-      this.gamemode,
-      0
-    ]);
-  }
-
   selectGamemode(gamemode: string) {
     this.router.navigate([
       '/guardian',
       this.membershipType,
       this.membershipId,
-      this.activeCharacter.characterId,
       gamemode,
       0
     ]);
@@ -219,7 +145,6 @@ export class GuardianComponent implements OnInit, OnDestroy {
       '/guardian',
       this.membershipType,
       this.membershipId,
-      this.activeCharacter.characterId,
       this.gamemode,
       this.page + 1
     ]);
@@ -231,7 +156,6 @@ export class GuardianComponent implements OnInit, OnDestroy {
         '/guardian',
         this.membershipType,
         this.membershipId,
-        this.activeCharacter.characterId,
         this.gamemode,
         this.page - 1
       ]);

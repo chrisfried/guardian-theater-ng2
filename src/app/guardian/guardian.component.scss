@@ -1,14 +1,12 @@
 @import '../../variables';
-
 .profile {
   background: $dark-blue;
   background-size: cover;
   background-position: center;
   color: $light-grey;
-  height: 75px;
+  height: 2.5em;
   margin-bottom: 1rem;
   position: relative;
-
   .supporter-tag {
     animation: spin 15s infinite linear;
     display: inline-block;
@@ -16,7 +14,6 @@
     margin-bottom: 5px;
     margin-left: 5px;
   }
-
   .emblem {
     background-size: cover;
     height: 44px;
@@ -25,24 +22,19 @@
     top: 3px;
     width: 44px;
   }
-
   .active-character {
     font-size: 1.2em;
-    height: 50px;
-    padding: 0 0 0 50px;
+    padding: 0 0 0 .5em;
   }
-
   .gamertag {
     font-weight: bold;
     height: 30px;
     line-height: 40px;
   }
-
   .tag {
     color: $details-grey;
-    font-weight: normal; 
+    font-weight: normal;
   }
-
   .character-details {
     color: $details-grey;
     font-size: 10px;
@@ -61,14 +53,12 @@
   background-size: cover;
   font-size: .9em;
   padding: 0;
-
   a {
     display: block;
     height: 25px;
     padding: 2px 5px;
     text-align: center;
   }
-
   .class-name {
     color: white;
   }
@@ -76,7 +66,6 @@
 
 .power-level {
   color: $power-level-yellow;
-
   &::before {
     content: '\2726';
     display: inline-block;
@@ -85,21 +74,22 @@
   }
 }
 
-.mode-selector-wrapper { // Down arrow
-    height: 40px;
-    &:after {
-      width: 0;
-      height: 0;
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      border-top: 12px solid white;
-      content: '';
-      display: inline-block;
-      top: -38px;
-      left: calc(100% - 30px);
-      position: relative;
-      pointer-events: none;
-    }
+.mode-selector-wrapper {
+  // Down arrow
+  height: 40px;
+  &:after {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 12px solid white;
+    content: '';
+    display: inline-block;
+    top: -38px;
+    left: calc(100% - 30px);
+    position: relative;
+    pointer-events: none;
+  }
 }
 
 .mode-selector {
@@ -109,13 +99,13 @@
   border: none;
   cursor: pointer;
   outline: none;
-  padding-right: 8px;
-  // Hack to remove annoying firefox focus outline. May be solved by an autoprefixer or reset css at some point.
+  padding-right: 8px; // Hack to remove annoying firefox focus outline. May be solved by an autoprefixer or reset css at some point.
   &:-moz-focusring {
-      color: transparent;
-      text-shadow: 0 0 0 white;
+    color: transparent;
+    text-shadow: 0 0 0 white;
   }
 }
+
 .mode-selected-AllPvP,
 .mode-selected-Control,
 .mode-selected-Team,
@@ -123,19 +113,23 @@
 .mode-selected-Countdown {
   @include background-hover-darken($crucible-red);
 }
+
 .mode-selected-Story {
   @include background-hover-darken($story-orange);
 }
+
 .mode-selected-Strike,
 .mode-selected-Nightfall,
 .mode-selected-Heroic,
 .mode-selected-AllStrikes {
   @include background-hover-darken($strike-blue);
 }
+
 .mode-selected-AllPvE,
 .mode-selected-Raid {
   @include background-hover-darken($raid-blue);
 }
+
 .mode-selected-Patrol,
 .mode-selected-Social {
   @include background-hover-darken($patrol-green);
@@ -145,9 +139,11 @@
   -webkit-animation: spin 3s infinite linear;
   animation: spin 3s infinite linear;
 }
+
 .profile-spinner-wrapper {
   text-align: center;
 }
+
 .profile-spinner {
   display: inline-block;
   width: 75px;
@@ -166,7 +162,8 @@
   &.enemy {
     @include background-hover-darken($opponent-red, $crucible-red);
   }
-  &.player, &.fireteam {
+  &.player,
+  &.fireteam {
     @include background-hover-darken($fireteam-green);
   }
   &.xbox {
@@ -179,7 +176,8 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  &.playstation { // TODO: Is it possible to have a hollow playstation button?
+  &.playstation {
+    // TODO: Is it possible to have a hollow playstation button?
     @include background-hover-darken($playstation-blue);
     background-image: url('/assets/images/ps.png');
     background-size: 1em;
@@ -188,18 +186,22 @@
   }
   &.hollow {
     background: none;
-    @include color-border-hover-darken($light-purple, $dark-purple);
-    &:focus, &:hover {
+    @include color-border-hover-darken($light-purple,
+    $dark-purple);
+    &:focus,
+    &:hover {
       background: none;
     }
     &.blueberry {
       @include color-border-hover-darken($blueberry-blue);
     }
     &.enemy {
-      @include color-border-hover-darken($opponent-red, $crucible-red);
+      @include color-border-hover-darken($opponent-red,
+      $crucible-red);
     }
-    &.player, &.fireteam {
-      @include color-border-hover-darken($fireteam-green);   
+    &.player,
+    &.fireteam {
+      @include color-border-hover-darken($fireteam-green);
     }
     &.xbox {
       @include color-border-hover-darken($xbox-green);
@@ -218,14 +220,13 @@
   }
   &.paging {
     font-size: 1.75em;
-    padding: .25em;  
+    padding: .25em;
   }
 }
 
 .mode-column {
   height: 40px;
   margin-bottom: 1rem;
-
   .select {
     height: 40px;
   }

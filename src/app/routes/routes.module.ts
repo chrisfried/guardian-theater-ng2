@@ -10,29 +10,49 @@ import { ActivityComponent } from '../activity/activity.component';
 import { TakeMyMoneyComponent } from '../take-my-money/take-my-money.component';
 
 const appRoutes: Routes = [
-  { path: 'activity/:membershipType/:activityId/:characterId/:clipId', component: ActivityComponent },
-  { path: 'activity/:membershipType/:activityId', component: ActivityComponent },
+  {
+    path: 'activity/:activityId/:clipId',
+    component: ActivityComponent
+  },
+  {
+    path: 'activity/:activityId',
+    component: ActivityComponent
+  },
   { path: 'settings', component: SettingsComponent },
   { path: 'about', component: AboutComponent },
   { path: 'donate', component: TakeMyMoneyComponent },
   { path: 'search/:guardian', component: SearchComponent },
-  { path: 'guardian/:membershipType/:membershipId/:characterId/:gamemode/:page', component: GuardianComponent },
-  { path: 'guardian/:membershipType/:membershipId', component: GuardianComponent },
-  { path: 'guardian/:guardian/:membershipType/:characterId/:gamemode/:page', redirectTo: 'search/:guardian' },
-  { path: 'guardian/:guardian/:membershipType/:characterId/:gamemode', redirectTo: 'search/:guardian' },
-  { path: 'guardian/:guardian/:membershipType/:characterId', redirectTo: 'search/:guardian' },
-  { path: 'guardian/:guardian/:membershipType', redirectTo: 'search/:guardian' },
+  {
+    path: 'guardian/:membershipType/:membershipId/:gamemode/:page',
+    component: GuardianComponent
+  },
+  {
+    path: 'guardian/:membershipType/:membershipId',
+    component: GuardianComponent
+  },
+  {
+    path: 'guardian/:guardian/:membershipType/:gamemode/:page',
+    redirectTo: 'search/:guardian'
+  },
+  {
+    path: 'guardian/:guardian/:membershipType/:gamemode',
+    redirectTo: 'search/:guardian'
+  },
+  {
+    path: 'guardian/:guardian/:membershipType',
+    redirectTo: 'search/:guardian'
+  },
+  {
+    path: 'guardian/:guardian/:membershipType',
+    redirectTo: 'search/:guardian'
+  },
   { path: 'guardian/:guardian', redirectTo: 'search/:guardian' },
   { path: '', component: FrontPageComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(appRoutes)
-  ],
-  exports: [
-    RouterModule
-  ]
+  imports: [RouterModule.forRoot(appRoutes)],
+  exports: [RouterModule]
 })
-export class RoutesModule { }
+export class RoutesModule {}
