@@ -48,7 +48,7 @@ export class BungieHttpService {
           }
           return res;
         }),
-        catchError(err => observableThrowError(err || 'Server error'))
+        catchError(err => observableThrowError(err || 'Bungie Server error'))
       );
   }
 }

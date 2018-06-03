@@ -1,32 +1,30 @@
-import {
-  from as observableFrom,
-  combineLatest as observableCombineLatest,
-  throwError as observableThrowError,
-  empty as observableEmpty,
-  Subscription,
-  BehaviorSubject
-} from 'rxjs';
-import { Injectable, OnDestroy } from '@angular/core';
-import { BungieHttpService } from './bungie-http.service';
 import { HttpClient } from '@angular/common/http';
+import { Injectable, OnDestroy } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { TwitchService } from './twitch.service';
-import { XboxService } from './xbox.service';
-import { SettingsService } from './settings.service';
 import { ActivatedRoute, Params } from '@angular/router';
 import {
-  catchError,
-  map,
-  distinctUntilChanged,
-  switchMap
-} from 'rxjs/operators';
-import {
-  ServerResponse,
-  DestinyPostGameCarnageReportData
+  DestinyPostGameCarnageReportData,
+  ServerResponse
 } from 'bungie-api-ts/destiny2';
-import { PublicPartnershipDetail } from 'bungie-api-ts/user';
+import { PublicPartnershipDetail, UserInfoCard } from 'bungie-api-ts/user';
+import {
+  BehaviorSubject,
+  Subscription,
+  combineLatest as observableCombineLatest,
+  empty as observableEmpty,
+  throwError as observableThrowError
+} from 'rxjs';
+import {
+  distinctUntilChanged,
+  map,
+  switchMap,
+  catchError
+} from 'rxjs/operators';
 import { gt } from '../gt.typings';
-import { UserInfoCard } from 'bungie-api-ts/user';
+import { BungieHttpService } from './bungie-http.service';
+import { SettingsService } from './settings.service';
+import { TwitchService } from './twitch.service';
+import { XboxService } from './xbox.service';
 
 @Injectable()
 export class ActivityService implements OnDestroy {
@@ -90,13 +88,7 @@ export class ActivityService implements OnDestroy {
           switchMap(url => {
             this.pgcr.next(null);
             if (url.length) {
-              return this.bHttp
-                .get(url)
-                .pipe(
-                  catchError((error: any) =>
-                    observableThrowError(error.json().error || 'Server error')
-                  )
-                );
+              return this.bHttp.get(url);
             } else {
               return observableEmpty();
             }
@@ -195,15 +187,7 @@ export class ActivityService implements OnDestroy {
                       distinctUntilChanged(),
                       switchMap((url: string) => {
                         if (url.length) {
-                          return this.bHttp
-                            .get(url)
-                            .pipe(
-                              catchError((error: any) =>
-                                observableThrowError(
-                                  error.json().error || 'Server error'
-                                )
-                              )
-                            );
+                          return this.bHttp.get(url);
                         } else {
                           return observableEmpty();
                         }
@@ -267,9 +251,9 @@ export class ActivityService implements OnDestroy {
                           return this.http
                             .get(url)
                             .pipe(
-                              catchError((error: any) =>
+                              catchError(err =>
                                 observableThrowError(
-                                  error.json().error || 'Server error'
+                                  err || 'Twitch Server error'
                                 )
                               )
                             );
@@ -491,8 +475,10 @@ export class ActivityService implements OnDestroy {
                           return this.http
                             .get(url)
                             .pipe(
-                              catchError((error: any) =>
-                                observableFrom(error.error || 'Server error')
+                              catchError(err =>
+                                observableThrowError(
+                                  err || 'Xbox Clip Server error'
+                                )
                               )
                             );
                         } else {

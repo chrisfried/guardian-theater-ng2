@@ -8,12 +8,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { BungieHttpService } from '../services/bungie-http.service';
 import { GuardianService } from '../services/guardian.service';
-import {
-  map,
-  catchError,
-  distinctUntilChanged,
-  switchMap
-} from 'rxjs/operators';
+import { map, distinctUntilChanged, switchMap } from 'rxjs/operators';
 import { UserInfoCard, ServerResponse } from 'bungie-api-ts/user';
 
 @Component({
@@ -65,10 +60,7 @@ export class SearchComponent implements OnInit, OnDestroy {
           } else {
             return observableEmpty();
           }
-        }),
-        catchError((error: any) =>
-          observableThrowError(error.json().error || 'Server error')
-        )
+        })
       )
       .subscribe((res: ServerResponse<UserInfoCard[]>) => {
         this.searchResults = res.Response;
