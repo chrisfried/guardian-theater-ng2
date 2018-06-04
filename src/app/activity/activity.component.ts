@@ -220,6 +220,10 @@ export class PgcrEntryComponent {
     this.router.navigate(['/guardian', membershipType, membershipId]);
   }
 
+  stopPropagation(event) {
+    event.stopPropagation();
+  }
+
   route(route: any[]) {
     this.router.navigate(route);
   }
