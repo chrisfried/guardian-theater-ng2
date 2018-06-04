@@ -448,10 +448,31 @@ export class ActivityService implements OnDestroy {
 
               if (entry.player.destinyUserInfo.membershipType === 1) {
                 gamertag = entry.player.destinyUserInfo.displayName;
-                this.getXboxClips(pgcr, entry, gamertag);
+                if (!this.xboxService.xbox[gamertag]) {
+                  this.xboxService.xbox[gamertag] = new BehaviorSubject({
+                    checked: false,
+                    gamertag: gamertag,
+                    response: null
+                  });
+                }
+                this.loadXboxClips(pgcr, entry, gamertag);
               }
 
               if (entry.player.destinyUserInfo.membershipType === 4) {
+                if (
+                  !this.xboxService.xboxPC[
+                    entry.player.destinyUserInfo.displayName
+                  ]
+                ) {
+                  this.xboxService.xboxPC[
+                    entry.player.destinyUserInfo.displayName
+                  ] = new BehaviorSubject({
+                    checked: false,
+                    gamertag: entry.player.destinyUserInfo.displayName,
+                    response: null
+                  });
+                }
+
                 this.subs.push(
                   this.guardianService
                     .getLinkedAccounts(
@@ -462,27 +483,31 @@ export class ActivityService implements OnDestroy {
                       res.Response.profiles.some(profile => {
                         if (profile.membershipType === 1) {
                           gamertag = profile.displayName;
-                          this.getXboxClips(
-                            pgcr,
-                            entry,
-                            gamertag,
-                            entry.player.destinyUserInfo.displayName
-                          );
                           return true;
                         }
                       });
                       res.Response.profilesWithErrors.some(profile => {
                         if (profile.infoCard.membershipType === 1) {
                           gamertag = profile.infoCard.displayName;
-                          this.getXboxClips(
-                            pgcr,
-                            entry,
-                            gamertag,
-                            entry.player.destinyUserInfo.displayName
-                          );
                           return true;
                         }
                       });
+                      if (gamertag) {
+                        this.loadXboxClips(
+                          pgcr,
+                          entry,
+                          gamertag,
+                          entry.player.destinyUserInfo.displayName
+                        );
+                      } else {
+                        this.xboxService.xboxPC[
+                          entry.player.destinyUserInfo.displayName
+                        ].next({
+                          checked: true,
+                          gamertag: entry.player.destinyUserInfo.displayName,
+                          response: null
+                        });
+                      }
                     })
                 );
               }
@@ -495,23 +520,16 @@ export class ActivityService implements OnDestroy {
     );
   }
 
-  getXboxClips(pgcr, entry, gamertag, displayName?) {
+  loadXboxClips(pgcr, entry, gamertag, displayName?): void {
     let titleId = displayName ? 1762047744 : 144389848;
     let cache = displayName ? 'xboxPC' : 'xbox';
     displayName = displayName ? displayName : gamertag;
-    if (!this.xboxService[cache][gamertag]) {
-      this.xboxService[cache][gamertag] = new BehaviorSubject({
-        checked: false,
-        gamertag: gamertag,
-        response: null
-      });
-    }
 
     this.subs.push(
-      this.xboxService[cache][gamertag]
+      this.xboxService[cache][displayName]
         .pipe(
           map((gamer: { checked: boolean; gamertag: string; response: {} }) => {
-            return !gamer.checked && gamer.gamertag
+            return !gamer.checked
               ? 'https://api.xboxrecord.us/gameclips/gamertag/' +
                   gamertag +
                   '/titleid/' +
@@ -535,9 +553,9 @@ export class ActivityService implements OnDestroy {
         )
         .subscribe(res => {
           if (res) {
-            this.xboxService[cache][gamertag].next({
+            this.xboxService[cache][displayName].next({
               checked: true,
-              gamertag: gamertag,
+              gamertag: displayName,
               response: res
             });
           }
@@ -545,7 +563,7 @@ export class ActivityService implements OnDestroy {
     );
 
     this.subs.push(
-      this.xboxService[cache][gamertag].subscribe(
+      this.xboxService[cache][displayName].subscribe(
         (subject: {
           checked: boolean;
           gamertag: string;
