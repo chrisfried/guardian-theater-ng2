@@ -23,6 +23,7 @@ export class ActivityComponent implements OnInit, OnDestroy {
   public clips: gt.Clip[];
   public filteredClips: gt.Clip[];
   public links: gt.Links;
+  public mini: boolean;
 
   constructor(
     private activityService: ActivityService,
@@ -36,6 +37,7 @@ export class ActivityComponent implements OnInit, OnDestroy {
     this.filteredClips = [];
     this.clips = [];
     this.links = { guardian: {}, activity: {}, xbox: {} };
+    this.mini = false;
 
     this.activityService.activity = this.activity;
     this.subs = [];
@@ -195,6 +197,27 @@ export class ActivityComponent implements OnInit, OnDestroy {
 
   stopPropagation(event) {
     event.stopPropagation();
+  }
+
+  route(route: any[]) {
+    this.router.navigate(route);
+  }
+}
+
+@Component({
+  selector: 'app-pgcr-entry',
+  templateUrl: './pgcr-entry.component.html',
+  styleUrls: ['./activity.component.scss']
+})
+export class PgcrEntryComponent {
+  @Input() pgcr: gt.PostGameCarnageReport;
+  @Input() entry: gt.Entry;
+  @Input() links: gt.Links;
+
+  constructor(private router: Router) {}
+
+  toGuardian(membershipType, membershipId) {
+    this.router.navigate(['/guardian', membershipType, membershipId]);
   }
 
   route(route: any[]) {

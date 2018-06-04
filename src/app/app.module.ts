@@ -19,7 +19,10 @@ import { FrontPageComponent } from './front-page/front-page.component';
 import { AboutComponent } from './about/about.component';
 import { SettingsComponent } from './settings/settings.component';
 import { GuardianComponent } from './guardian/guardian.component';
-import { ActivityComponent } from './activity/activity.component';
+import {
+  ActivityComponent,
+  PgcrEntryComponent
+} from './activity/activity.component';
 import { DestinyHashPipe } from './pipes/destiny-hash.pipe';
 import { TwitchStampPipe } from './pipes/twitch-stamp.pipe';
 import { GtBadgePipe } from './pipes/gt-badge.pipe';
@@ -38,6 +41,7 @@ import { BungieStatusComponent } from './bungie-status/bungie-status.component';
     TwitchStampPipe,
     GtBadgePipe,
     ActivityComponent,
+    PgcrEntryComponent,
     DestinyHashPipe,
     TakeMyMoneyComponent,
     SearchComponent,
@@ -54,12 +58,7 @@ import { BungieStatusComponent } from './bungie-status/bungie-status.component';
     }),
     Angulartics2Module.forRoot([Angulartics2GoogleAnalytics])
   ],
-  providers: [
-    BungieHttpService,
-    TwitchService,
-    XboxService,
-    SettingsService
-  ],
+  providers: [BungieHttpService, TwitchService, XboxService, SettingsService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

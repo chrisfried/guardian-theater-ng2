@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable, OnDestroy } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute, Params } from '@angular/router';
@@ -250,15 +250,25 @@ export class ActivityService implements OnDestroy {
                       distinctUntilChanged(),
                       switchMap((url: string) => {
                         if (url.length) {
-                          return this.http
-                            .get(url)
-                            .pipe(
-                              catchError(err =>
-                                observableThrowError(
-                                  err || 'Twitch Server error'
-                                )
-                              )
-                            );
+                          return this.http.get(url).pipe(
+                            catchError((err: HttpErrorResponse) => {
+                              if (err.status === 404) {
+                                console.log('not found');
+                                this.twitchService.twitch[membershipId].next({
+                                  displayName: displayName,
+                                  checkedId: true,
+                                  twitchId: twitchId,
+                                  bungieId: membershipId,
+                                  checkedResponse: true,
+                                  notFound: true,
+                                  response: null
+                                });
+                              }
+                              return observableThrowError(
+                                err || 'Twitch Server error'
+                              );
+                            })
+                          );
                         } else {
                           return observableEmpty();
                         }

@@ -6,7 +6,7 @@
 .mode {
   background: rgba(48, 56, 65, 1);
   color: white;
-  padding: 0 .5em;
+  padding: 0 0.5em;
   height: 28px;
   line-height: 28px;
 }
@@ -89,9 +89,9 @@
 
 .activity-time {
   font-weight: 200;
-  font-size: .75em;
+  font-size: 0.75em;
   text-align: right;
-  padding-right: .5em;
+  padding-right: 0.5em;
   flex-shrink: 3;
 }
 
@@ -140,12 +140,12 @@
 
 .clip-wrapper:before {
   display: block;
-  content: "";
+  content: '';
   width: 100%;
   padding-top: 56.25%;
 }
 
-.clip-wrapper>div,
+.clip-wrapper > div,
 .twitch-embed,
 .xbox-embed {
   position: absolute;
@@ -186,7 +186,7 @@
 }
 
 .mode.loading {
-  margin-left: .9375rem;
+  margin-left: 0.9375rem;
 }
 
 .spinner-block {
@@ -214,7 +214,7 @@
 
 .pgcr {
   max-height: 85px;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .pgcr.pgcr-full {
@@ -311,7 +311,7 @@
   display: flex;
   padding: 0;
   .no-clips & {
-    opacity: .75;
+    opacity: 0.75;
   }
 }
 
@@ -332,8 +332,8 @@
   overflow: hidden;
   text-overflow: ellipsis;
   flex-grow: 1;
-  padding-left: .5em;
-  padding-right: .5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   cursor: pointer;
 }
 
@@ -343,12 +343,12 @@
 
 .pgcr-team-name,
 .pgcr-team-score {
-  padding-right: .5em;
+  padding-right: 0.5em;
   cursor: initial;
 }
 
 .pgcr-team-name {
-  padding-left: .5em;
+  padding-left: 0.5em;
   flex-grow: 1;
 }
 
@@ -397,6 +397,10 @@
   background-color: $twitch-purple;
 }
 
+.profile-link.twitch.not-found {
+  background-color: $no-clips-grey;
+}
+
 .profile-link.tracker,
 .activity-link.tracker {
   background-image: url('/assets/images/tracker-white.png');
@@ -437,53 +441,48 @@
 
 .Alpha {
   background-color: $alpha-blue;
-  &.pgcr-entry .pgcr-entry-name {
+  &.pgcr-entry /deep/ .pgcr-entry-name {
     @include background-hover-darken($alpha-blue);
   }
 }
 
 .Bravo {
   background-color: $bravo-orange;
-  &.pgcr-entry .pgcr-entry-name {
+  &.pgcr-entry /deep/ .pgcr-entry-name {
     @include background-hover-darken($bravo-orange);
   }
 }
 
 .Team {
   background-color: $blueberry-blue;
-  &.pgcr-entry .pgcr-entry-name {
+  &.pgcr-entry /deep/ .pgcr-entry-name {
     @include background-hover-darken($blueberry-blue);
   }
 }
 
 .Opponent {
   background-color: $opponent-red;
-  &.pgcr-entry .pgcr-entry-name {
-    @include background-hover-darken($opponent-red,
-    $crucible-red);
+  &.pgcr-entry /deep/ .pgcr-entry-name {
+    @include background-hover-darken($opponent-red, $crucible-red);
   }
 }
-
 .Fireteam {
   background-color: $fireteam-green;
-  &.pgcr-entry .pgcr-entry-name {
+  &.pgcr-entry /deep/ .pgcr-entry-name {
     @include background-hover-darken($fireteam-green);
   }
 }
-
 .Player {
   background-color: $fireteam-green;
-  &.pgcr-entry .pgcr-entry-name {
+  &.pgcr-entry /deep/ .pgcr-entry-name {
     @include background-hover-darken($fireteam-green);
   }
 }
-
 .twitch-banner {
   border-top: 1px solid white;
   display: flex;
   @include background-hover-darken($twitch-purple);
 }
-
 .xbox-banner {
   border-top: 1px solid white;
   display: flex;
@@ -491,56 +490,46 @@
   padding-right: 0;
   cursor: initial;
 }
-
 .twitch-clip-name,
 .xbox-clip-name {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   flex-grow: 1;
-  padding-right: .5em;
+  padding-right: 0.5em;
 }
-
 .xbox-clip-link {
   color: white;
   text-align: center;
   @include background-hover-darken($xbox-green);
 }
-
 .xbox-clip-link.xboxdvr {
   background-image: url('/assets/images/xdvr.png');
 }
-
 .xbox-clip-link.gamedtv {
   background-image: url('/assets/images/gamed.png');
 }
-
 .player-label {
   background: white;
-  border-radius: .25em;
+  border-radius: 0.25em;
   line-height: 1.2em;
-  padding: 0 .3em;
-  font-size: .6rem;
+  padding: 0 0.3em;
+  font-size: 0.6rem;
   cursor: inherit;
   vertical-align: middle;
 }
-
 .player-label.Patron {
   color: $patreon-orange;
 }
-
 .player-label.Donor {
   color: $donor-blue;
 }
-
 .player-label.Shirt.Haver {
   color: $light-purple;
 }
-
 .player-label.Contributor {
   color: $contributor-purple;
 }
-
 .player-label.Ownerer {
   color: $owner-purple;
 }
