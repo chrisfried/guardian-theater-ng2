@@ -22,6 +22,18 @@
   transition-timing-function: ease-out;
 }
 
+.mode-no-clips {
+  background-color: $no-clips-grey;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+
+  &.spinner-block,
+  .activity-info,
+  .activity-count {
+    @include background-hover-darken($no-clips-grey);
+  }
+}
+
 .mode-5,
 .mode-8,
 .mode-9,
@@ -44,6 +56,7 @@
 .mode-35,
 .mode-37,
 .mode-38 {
+  transition-duration: 600ms;
   background-color: $crucible-red;
   &.spinner-block,
   .activity-info,
@@ -53,6 +66,7 @@
 }
 
 .mode-2 {
+  transition-duration: 600ms;
   background-color: $story-orange;
   &.spinner-block,
   .activity-info,
@@ -65,6 +79,7 @@
 .mode-16,
 .mode-17,
 .mode-18 {
+  transition-duration: 600ms;
   background-color: $strike-blue;
   &.spinner-block,
   .activity-info,
@@ -78,6 +93,7 @@
 .mode-21,
 .mode-22,
 .mode-30 {
+  transition-duration: 600ms;
   background-color: $raid-blue;
   &.spinner-block,
   .activity-info,
@@ -87,23 +103,12 @@
 }
 
 .mode-6 {
+  transition-duration: 600ms;
   background-color: $patrol-green;
   &.spinner-block,
   .activity-info,
   .activity-count {
     @include background-hover-darken($patrol-green);
-  }
-}
-
-.mode-no-clips {
-  background-color: $no-clips-grey;
-  transition-duration: 300ms;
-  transition-timing-function: ease-in;
-
-  &.spinner-block,
-  .activity-info,
-  .activity-count {
-    @include background-hover-darken($no-clips-grey);
   }
 }
 
@@ -219,7 +224,7 @@
 }
 
 .mini-spinner {
-  margin-left: 0.5em;
+  display: inline-block;
 }
 
 .spinner-block {

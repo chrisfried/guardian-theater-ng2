@@ -2,11 +2,11 @@
 
   <div class="columns small-12 activity-header" (click)="pgcr ? toActivity(pgcr.activityDetails.instanceId) : null" [ngClass]="pgcr ? 'clickable' : ''">
     <div class="row">
-      <div class="mode columns small-12 activity-title-bar" [ngClass]="pgcr && filteredClips.length ? 'mode-' + pgcr.activityDetails.mode : 'mode-no-clips'">
-        <span class="fi-widget spinner mini-spinner" *ngIf="mini && pgcr && pgcr.loading.message"></span>
-        <span class="activity-count" *ngIf="mini && pgcr && !pgcr.loading.message">
-          <span *ngIf="pgcr.clips && pgcr.clips.length">{{ clips.length }}</span>
-          <span *ngIf="!pgcr.clips || !pgcr.clips.length">0</span>
+      <div class="mode columns small-12 activity-title-bar mode-no-clips" [ngClass]="pgcr && filteredClips.length ? 'mode-' + pgcr.activityDetails.mode : ''">
+        <span class="activity-count" *ngIf="mini">
+          <span class="fi-widget spinner mini-spinner" *ngIf="!pgcr || pgcr.loading.message"></span>
+          <span *ngIf="pgcr && !pgcr.loading.message && pgcr.clips && pgcr.clips.length">{{ clips.length }}</span>
+          <span *ngIf="pgcr && !pgcr.loading.message && (!pgcr.clips || !pgcr.clips.length)">0</span>
         </span>
         <span class="activity-info">
           <span *ngIf="!pgcr" class="activity-name">Fetching PGCR from Bungie...</span>
