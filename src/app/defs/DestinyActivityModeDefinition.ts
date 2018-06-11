@@ -692,7 +692,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Assalti'
     },
     59: {
-      name: 'Showdown'
+      name: 'Prova di forza'
     },
     57: {
       name: 'Partite private: Rissa'

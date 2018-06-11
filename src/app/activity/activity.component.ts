@@ -1,19 +1,19 @@
-import { combineLatest as observableCombineLatest, Subscription } from 'rxjs';
-import { Component, OnInit, OnDestroy, Input } from '@angular/core';
+import { animate, style, transition, trigger } from '@angular/animations';
+import {
+  Component,
+  HostListener,
+  Input,
+  OnDestroy,
+  OnInit
+} from '@angular/core';
+import { Router } from '@angular/router';
+import { Subscription, combineLatest as observableCombineLatest } from 'rxjs';
+import { gt } from '../gt.typings';
 import { ActivityService } from '../services/activity.service';
+import { GuardianService } from '../services/guardian.service';
+import { SettingsService } from '../services/settings.service';
 import { TwitchService } from '../services/twitch.service';
 import { XboxService } from '../services/xbox.service';
-import { SettingsService } from '../services/settings.service';
-import { Router } from '@angular/router';
-import { gt } from '../gt.typings';
-import { GuardianService } from '../services/guardian.service';
-import {
-  trigger,
-  state,
-  style,
-  animate,
-  transition
-} from '@angular/animations';
 
 @Component({
   selector: 'app-activity',
@@ -44,6 +44,12 @@ export class ActivityComponent implements OnInit, OnDestroy {
   public links: gt.Links;
   public mini: boolean;
   public animationState;
+  public innerWidth: number;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    window.innerWidth < 640 ? (this.mini = true) : (this.mini = false);
+  }
 
   constructor(
     private activityService: ActivityService,
@@ -54,10 +60,11 @@ export class ActivityComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit() {
+    window.innerWidth < 640 ? (this.mini = true) : (this.mini = false);
+
     this.filteredClips = [];
     this.clips = [];
     this.links = { guardian: {}, activity: {}, xbox: {} };
-    this.mini = false;
     this.animationState = 'in';
 
     this.activityService.activity = this.activity;

@@ -88,7 +88,7 @@ export const EmblemDefinition = {
       secondaryIcon: '/common/destiny2_content/icons/a09c1fcc7e06a57ad604f981abf6d877.jpg'
     },
     738873646: {
-      icon: '/common/destiny2_content/icons/44510ddf0aeee60273801c2eac56a49e.png',
+      icon: '/common/destiny2_content/icons/8aa1094f909ae8175489e17223b18d41.png',
       secondaryIcon: '/common/destiny2_content/icons/324df99be573be1b92c8dad00193c17b.jpg'
     },
     745759692: {
@@ -336,7 +336,7 @@ export const EmblemDefinition = {
       secondaryIcon: '/common/destiny2_content/icons/f7d33e07d28c4f0926b2cf49fa49df24.jpg'
     },
     1608119540: {
-      icon: '/common/destiny2_content/icons/e8313068b20d33d385dc55d34e76b57f.png',
+      icon: '/common/destiny2_content/icons/69e05b6758327bbfab02469c13386bd6.png',
       secondaryIcon: 'undefined'
     },
     1625974211: {
