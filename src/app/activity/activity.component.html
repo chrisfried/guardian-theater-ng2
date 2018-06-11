@@ -1,50 +1,41 @@
 <div class="activity">
 
-  <div class="columns small-12">
-    <div *ngIf="!pgcr" class="row">
-      <div class="mode columns small-12 mode-no-clips">
-        <span>Fetching PGCR from Bungie...</span>
-      </div>
-    </div>
-
-    <div *ngIf="pgcr" class="row" (click)="toActivity(pgcr.activityDetails.instanceId)">
-      <div class="mode columns activity-title-bar small-12" [ngClass]="filteredClips.length ? 'mode-' + pgcr.activityDetails.mode : 'mode-no-clips'">
-        <span class="activity-info">
-          <span class="activity-name" [title]="pgcr.loading.message || (pgcr.activityDetails.mode | destinyHash:'activityMode') + ': ' + (pgcr.activityDetails.referenceId | destinyHash:'activityName')">{{ pgcr.loading.message || (pgcr.activityDetails.mode | destinyHash:'activityMode') + ': ' + (pgcr.activityDetails.referenceId
-            | destinyHash:'activityName') }}</span>
-          <span class="activity-time" [title]="pgcr.period | date:'short'">{{ pgcr.period | date:'short' }}</span>
+  <div class="columns small-12 activity-header" (click)="pgcr ? toActivity(pgcr.activityDetails.instanceId) : null" [ngClass]="pgcr ? 'clickable' : ''">
+    <div class="row">
+      <div class="mode columns small-12 activity-title-bar" [ngClass]="pgcr && filteredClips.length ? 'mode-' + pgcr.activityDetails.mode : 'mode-no-clips'">
+        <span class="fi-widget spinner mini-spinner" *ngIf="mini && pgcr && pgcr.loading.message"></span>
+        <span class="activity-count" *ngIf="mini && pgcr && !pgcr.loading.message">
+          <span *ngIf="pgcr.clips && pgcr.clips.length">{{ clips.length }}</span>
+          <span *ngIf="!pgcr.clips || !pgcr.clips.length">0</span>
         </span>
-        <a class="activity-link tracker" title="View Activity on Destiny Tracker" (click)="stopPropagation($event)" *ngIf="links.activity.tracker"
+        <span class="activity-info">
+          <span *ngIf="!pgcr" class="activity-name">Fetching PGCR from Bungie...</span>
+          <span *ngIf="pgcr" class="activity-name" [title]="pgcr.loading.message || (pgcr.activityDetails.mode | destinyHash:'activityMode') + ': ' + (pgcr.activityDetails.referenceId | destinyHash:'activityName')">{{ pgcr.loading.message || (pgcr.activityDetails.mode | destinyHash:'activityMode') + ': ' + (pgcr.activityDetails.referenceId
+            | destinyHash:'activityName') }}</span>
+          <span *ngIf="pgcr" class="activity-time" [title]="pgcr.period | date:'short'">{{ pgcr.period | date:'short' }}</span>
+        </span>
+        <a class="activity-link tracker" title="View Activity on Destiny Tracker" (click)="stopPropagation($event)" *ngIf="pgcr && links.activity.tracker"
           [href]="'http://destinytracker.com/d2/pgcr/' + pgcr.activityDetails.instanceId" target="_blank" angulartics2On="click"
           angularticsEvent="ActivityLink" angularticsCategory="DestinyTrackerLink"></a>
-        <a class="activity-link ggg" title="View Activity on Guardian.gg" (click)="stopPropagation($event)" *ngIf="links.activity.ggg"
+        <a class="activity-link ggg" title="View Activity on Guardian.gg" (click)="stopPropagation($event)" *ngIf="pgcr && links.activity.ggg"
           [href]="'http://guardian.gg/2/pgcr/' + pgcr.activityDetails.instanceId" target="_blank" angulartics2On="click" angularticsEvent="ActivityLink"
           angularticsCategory="GuardianGgLink"></a>
-        <a class="activity-link options fi-wrench" title="Configure Activity Links" (click)="route(['/settings'])" *ngIf="links.activity.options"
+        <a class="activity-link options fi-wrench" title="Configure Activity Links" (click)="route(['/settings'])" *ngIf="pgcr && links.activity.options"
           angulartics2On="click" angularticsEvent="ActivityLink" angularticsCategory="SettingsLink"></a>
       </div>
     </div>
 
 
-    <div *ngIf="!mini" class="row info-row">
-      <div *ngIf="!pgcr" class="columns small-2">
-        <div class="row">
-          <div class="columns small-12 spinner-block mode mode-no-clips">
-            <div class="player-spinner">
-              <span class="fi-widget spinner bungie-spinner" title="Fetching data from Bungie..."></span>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div *ngIf="!mini || (pgcr && (!pgcr.active || !pgcr.active.entry))" class="row info-row">
 
-      <div *ngIf="pgcr" class="columns small-2" (click)="toActivity(pgcr.activityDetails.instanceId)">
+      <div class="columns small-2">
         <div class="row">
-          <div class="columns small-12 spinner-block mode" [ngClass]="filteredClips.length ? 'mode-' + pgcr.activityDetails.mode : 'mode-no-clips'">
-            <div class="player-spinner" *ngIf="pgcr.loading && (pgcr.loading.twitch || pgcr.loading.bungie || pgcr.loading.xbox)">
+          <div class="columns small-12 spinner-block mode" [ngClass]="pgcr && filteredClips.length ? 'mode-' + pgcr.activityDetails.mode : 'mode-no-clips'">
+            <div class="player-spinner" *ngIf="!pgcr || (pgcr.loading && (pgcr.loading.twitch || pgcr.loading.bungie || pgcr.loading.xbox))">
               <span class="fi-widget spinner bungie-spinner" title="Fetching data..."></span>
             </div>
 
-            <div *ngIf="pgcr.loading && !pgcr.loading.twitch && !pgcr.loading.bungie && !pgcr.loading.xbox">
+            <div *ngIf="pgcr && pgcr.loading && !pgcr.loading.twitch && !pgcr.loading.bungie && !pgcr.loading.xbox">
               <span *ngIf="pgcr.clips && pgcr.clips.length">{{ clips.length }}</span>
               <span *ngIf="!pgcr.clips || !pgcr.clips.length">0</span>
             </div>
@@ -52,10 +43,16 @@
         </div>
       </div>
 
-      <span class="columns small-10 pgcr pgcr-full pgcr-no-teams" *ngIf="pgcr && (!pgcr.teams || !pgcr.teams.length)" [ngClass]="filteredClips.length ? '' : 'no-clips'">
+      <span [@growInShrinkOut]="animationState" class="pgcr-block columns pgcr pgcr-full pgcr-no-teams" *ngIf="pgcr && (!pgcr.teams || !pgcr.teams.length)"
+        [ngClass]="{ 
+        'no-clips': !filteredClips.length,
+        'small-10': !mini,
+        'small-12': mini
+     }">
         <div class="row">
-          <app-pgcr-entry *ngFor="let entry of pgcr.entries" [pgcr]="pgcr" [entry]="entry" [links]="links" (click)="toGuardian(entry.player.destinyUserInfo.membershipType, entry.player.destinyUserInfo.membershipId)"
-            class="columns small-6 mode pgcr-entry" [ngClass]="{
+          <app-pgcr-entry [@growInShrinkOut]="animationState" *ngFor="let entry of pgcr.entries" [pgcr]="pgcr" [entry]="entry" [links]="links"
+            (click)="toGuardian(entry.player.destinyUserInfo.membershipType, entry.player.destinyUserInfo.membershipId)" class="columns small-6 mode pgcr-entry"
+            [ngClass]="{
             'Opponent': pgcr.active.entry && (pgcr.activityDetails.mode === 13 || pgcr.activityDetails.mode === 27 || pgcr.activityDetails.mode === 29 || pgcr.activityDetails.mode === 33),
             'Team': pgcr.active.entry && pgcr.activityDetails.mode !== 13 && pgcr.activityDetails.mode !== 27 && pgcr.activityDetails.mode !== 29 && pgcr.activityDetails.mode !== 33,
             'Fireteam': pgcr.active && pgcr.active.fireteam && entry.values.fireteamId && pgcr.active.fireteam === entry.values.fireteamId.basic.value,
@@ -64,7 +61,8 @@
         </div>
       </span>
 
-      <span class="columns small-10" *ngIf="pgcr && pgcr.teams && pgcr.teams.length">
+      <span [@growInShrinkOut]="animationState" class="pgcr-block columns" *ngIf="pgcr && pgcr.teams && pgcr.teams.length" [ngClass]="{'small-10': !mini,
+      'small-12': mini}">
         <span class="row">
           <span class="columns small-6 pgcr pgcr-full pgcr-teams" *ngFor="let team of pgcr.teams; let i = index;" [ngClass]="filteredClips.length ? '' : 'no-clips'">
             <div class="row">
@@ -72,7 +70,8 @@
                 <span class="pgcr-team-name">{{ team.standing.basic.displayValue }}</span>
                 <span class="pgcr-team-score">{{ team.score.basic.displayValue }}</span>
               </div>
-              <app-pgcr-entry *ngFor="let entry of team.entries" [pgcr]="pgcr" [entry]="entry" [links]="links" (click)="toGuardian(entry.player.destinyUserInfo.membershipType, entry.player.destinyUserInfo.membershipId)"
+              <app-pgcr-entry [@growInShrinkOut]="animationState" *ngFor="let entry of team.entries" [pgcr]="pgcr" [entry]="entry" [links]="links"
+                (click)="toGuardian(entry.player.destinyUserInfo.membershipType, entry.player.destinyUserInfo.membershipId)"
                 class="columns small-12 mode pgcr-entry" [ngClass]="{
                   'Alpha': team.teamName === 'Alpha',
                   'Bravo': team.teamName === 'Bravo',
@@ -88,11 +87,12 @@
     </div>
   </div>
 
-  <div *ngIf="pgcr" class="columns small-12 clips">
-    <div *ngFor="let clip of filteredClips" class="clip-item">
-      <div class="row">
-        <app-pgcr-entry [pgcr]="pgcr" [entry]="clip.entry" [links]="links" (click)="toGuardian(clip.entry.player.destinyUserInfo.membershipType, clip.entry.player.destinyUserInfo.membershipId)"
-          class="columns small-12 mode pgcr-entry" [ngClass]="{
+  <div [@growInShrinkOut]="animationState" *ngIf="pgcr" class="columns small-12 clips" [ngClass]="!filteredClips.length ? 'no-clips' : ''">
+    <div [@growInShrinkOut]="animationState" *ngFor="let clip of filteredClips" class="clip-item-wrapper">
+      <div class="clip-item">
+        <div class="row">
+          <app-pgcr-entry [pgcr]="pgcr" [entry]="clip.entry" [links]="links" (click)="toGuardian(clip.entry.player.destinyUserInfo.membershipType, clip.entry.player.destinyUserInfo.membershipId)"
+            class="columns small-12 mode pgcr-entry" [ngClass]="{
           'Alpha': clip.entry.values.team && clip.entry.values.team.basic.displayValue === 'Alpha',
           'Bravo': clip.entry.values.team && clip.entry.values.team.basic.displayValue === 'Bravo',
           'Team': (pgcr.active && pgcr.active.team > -1 && clip.entry.values.team && pgcr.active.team === clip.entry.values.team.basic.value) || (pgcr.active.entry && !pgcr.teams.length && pgcr.activityDetails.mode !== 13 && pgcr.activityDetails.mode !== 27 && pgcr.activityDetails.mode !== 29 && pgcr.activityDetails.mode !== 33),
@@ -100,50 +100,51 @@
           'Fireteam': pgcr.active && pgcr.active.fireteam && clip.entry.values.fireteamId && pgcr.active.fireteam === clip.entry.values.fireteamId.basic.value,
           'Player': pgcr.active && pgcr.active.entry && pgcr.active.entry.characterId === clip.entry.characterId
         }">
-        </app-pgcr-entry>
-      </div>
-      <div class="row" *ngIf="clip.type === 'twitch' && clip.video">
-        <a class="columns small-12 mode twitch-banner" target="_blank" [href]="clip.video.url + '?t=' + clip.hhmmss" angulartics2On="click"
-          angularticsEvent="TwitchClipLink" angularticsCategory="TwitchLink">
-          <span class="twitch-clip-name">{{ clip.video.title }}</span>
-          <span class="twitch-timestamp">{{ clip.start | twitchStamp:clip.entry.startTime }}</span>
-        </a>
-        <div class="columns small-12 clip-wrapper" *ngIf="!clip.play">
-          <img *ngIf="clip.video.thumbnails[0]" class="clip-thumbnail" (click)="clip.play = !clip.play" [src]="clip.video.thumbnails[0].url">
-          <span *ngIf="!clip.video.thumbnails[0]" (click)="clip.play = !clip.play" class="clip-play-button"></span>
+          </app-pgcr-entry>
         </div>
-        <div class="columns small-12 clip-wrapper" *ngIf="clip.play">
-          <iframe class="twitch-embed" [src]="clip.embedUrl" frameborder="0" scrolling="no" allowfullscreen="true">
-          </iframe>
-        </div>
-      </div>
-      <div class="row" *ngIf="clip.type === 'xbox'">
-        <div class="columns small-12 mode xbox-banner" target="_blank">
-          <span class="xbox-clip-name">{{ clip.video.clipName || 'Xbox Game DVR Clip' }}</span>
-          <a class="xbox-clip-link xboxrecordus" title="View Clip on xboxrecord.us" (click)="stopPropagation($event)" *ngIf="links.xbox.recordus"
-            [href]="'https://xboxrecord.us/gamer/' + clip.entry.player.destinyUserInfo.displayName + '/clip/' + clip.video.gameClipId"
-            target="_blank" angulartics2On="click" angularticsEvent="XboxClipLink" angularticsCategory="XboxRecordUsLink">.us</a>
-          <a class="xbox-clip-link xboxdvr" title="View Clip on Xbox DVR" (click)="stopPropagation($event)" *ngIf="links.xbox.dvr"
-            [href]="'http://xboxdvr.com/gamer/' + clip.entry.player.destinyUserInfo.displayName + '/video/' + clip.video.gameClipId + '/' + clip.video.scid"
-            target="_blank" angulartics2On="click" angularticsEvent="XboxClipLink" angularticsCategory="XboxDvrLink"></a>
-          <a class="xbox-clip-link gamedtv" title="View Clip on Gamed.TV" (click)="stopPropagation($event)" *ngIf="links.xbox.gamedtv"
-            [href]="'http://gamed.tv/GT/' + clip.entry.player.destinyUserInfo.displayName + '/' + clip.video.gameClipId" target="_blank"
-            angulartics2On="click" angularticsEvent="XboxClipLink" angularticsCategory="GamedTvLink"></a>
-          <a class="xbox-clip-link xbox" title="View Clip on Xbox" (click)="stopPropagation($event)" *ngIf="links.xbox.xbox" [href]="'https://account.xbox.com/en-US/gameclip/' + clip.video.gameClipId + '?gamertag=' + clip.entry.player.destinyUserInfo.displayName + '&scid=' + clip.video.scid"
-            target="_blank" angulartics2On="click" angularticsEvent="XboxClipLink" angularticsCategory="XboxLink">
-            <span class="fi-social-xbox"></span>
+        <div class="row" *ngIf="clip.type === 'twitch' && clip.video">
+          <a class="columns small-12 mode twitch-banner" target="_blank" [href]="clip.video.url + '?t=' + clip.hhmmss" angulartics2On="click"
+            angularticsEvent="TwitchClipLink" angularticsCategory="TwitchLink">
+            <span class="twitch-clip-name">{{ clip.video.title }}</span>
+            <span class="twitch-timestamp">{{ clip.start | twitchStamp:clip.entry.startTime }}</span>
           </a>
-          <a class="xbox-clip-link download fi-download" download title="Download clip" (click)="stopPropagation($event)" *ngIf="links.xbox.download"
-            [href]="clip.video.gameClipUris[0].uri" target="_blank" angulartics2On="click" angularticsEvent="XboxClipLink"
-            angularticsCategory="DownloadXboxClip"></a>
-          <a class="xbox-clip-link options fi-wrench" title="Configure Clip Links" (click)="route(['/settings'])" *ngIf="links.xbox.options"
-            angulartics2On="click" angularticsEvent="XboxClipLink" angularticsCategory="SettingsLink"></a>
+          <div class="columns small-12 clip-wrapper" *ngIf="!clip.play">
+            <img *ngIf="clip.video.thumbnails[0]" class="clip-thumbnail" (click)="clip.play = !clip.play" [src]="clip.video.thumbnails[0].url">
+            <span *ngIf="!clip.video.thumbnails[0]" (click)="clip.play = !clip.play" class="clip-play-button"></span>
+          </div>
+          <div class="columns small-12 clip-wrapper" *ngIf="clip.play">
+            <iframe class="twitch-embed" [src]="clip.embedUrl" frameborder="0" scrolling="no" allowfullscreen="true">
+            </iframe>
+          </div>
         </div>
-        <div class="columns small-12 clip-wrapper">
-          <video id="my-video" class="video-js xbox-embed" controls preload="none" [poster]="clip.video.thumbnails[0].uri" data-setup="{}"
-            (click)="$event.srcElement.paused ? $event.srcElement.play() : $event.srcElement.pause()">
-            <source [src]="clip.video.gameClipUris[0].uri" type="video/mp4">
-          </video>
+        <div class="row" *ngIf="clip.type === 'xbox'">
+          <div class="columns small-12 mode xbox-banner" target="_blank">
+            <span class="xbox-clip-name">{{ clip.video.clipName || 'Xbox Game DVR Clip' }}</span>
+            <a class="xbox-clip-link xboxrecordus" title="View Clip on xboxrecord.us" (click)="stopPropagation($event)" *ngIf="links.xbox.recordus"
+              [href]="'https://xboxrecord.us/gamer/' + clip.entry.player.destinyUserInfo.displayName + '/clip/' + clip.video.gameClipId"
+              target="_blank" angulartics2On="click" angularticsEvent="XboxClipLink" angularticsCategory="XboxRecordUsLink">.us</a>
+            <a class="xbox-clip-link xboxdvr" title="View Clip on Xbox DVR" (click)="stopPropagation($event)" *ngIf="links.xbox.dvr"
+              [href]="'http://xboxdvr.com/gamer/' + clip.entry.player.destinyUserInfo.displayName + '/video/' + clip.video.gameClipId + '/' + clip.video.scid"
+              target="_blank" angulartics2On="click" angularticsEvent="XboxClipLink" angularticsCategory="XboxDvrLink"></a>
+            <a class="xbox-clip-link gamedtv" title="View Clip on Gamed.TV" (click)="stopPropagation($event)" *ngIf="links.xbox.gamedtv"
+              [href]="'http://gamed.tv/GT/' + clip.entry.player.destinyUserInfo.displayName + '/' + clip.video.gameClipId"
+              target="_blank" angulartics2On="click" angularticsEvent="XboxClipLink" angularticsCategory="GamedTvLink"></a>
+            <a class="xbox-clip-link xbox" title="View Clip on Xbox" (click)="stopPropagation($event)" *ngIf="links.xbox.xbox" [href]="'https://account.xbox.com/en-US/gameclip/' + clip.video.gameClipId + '?gamertag=' + clip.entry.player.destinyUserInfo.displayName + '&scid=' + clip.video.scid"
+              target="_blank" angulartics2On="click" angularticsEvent="XboxClipLink" angularticsCategory="XboxLink">
+              <span class="fi-social-xbox"></span>
+            </a>
+            <a class="xbox-clip-link download fi-download" download title="Download clip" (click)="stopPropagation($event)" *ngIf="links.xbox.download"
+              [href]="clip.video.gameClipUris[0].uri" target="_blank" angulartics2On="click" angularticsEvent="XboxClipLink"
+              angularticsCategory="DownloadXboxClip"></a>
+            <a class="xbox-clip-link options fi-wrench" title="Configure Clip Links" (click)="route(['/settings'])" *ngIf="links.xbox.options"
+              angulartics2On="click" angularticsEvent="XboxClipLink" angularticsCategory="SettingsLink"></a>
+          </div>
+          <div class="columns small-12 clip-wrapper">
+            <video id="my-video" class="video-js xbox-embed" controls preload="none" [poster]="clip.video.thumbnails[0].uri" data-setup="{}"
+              (click)="$event.srcElement.paused ? $event.srcElement.play() : $event.srcElement.pause()">
+              <source [src]="clip.video.gameClipUris[0].uri" type="video/mp4">
+            </video>
+          </div>
         </div>
       </div>
     </div>

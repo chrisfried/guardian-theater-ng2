@@ -28,7 +28,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'guardian/:membershipType/:membershipId',
-    component: GuardianComponent
+    redirectTo: 'guardian/:membershipType/:membershipId/None/0'
   },
   {
     path: 'guardian/:guardian/:membershipType/:gamemode/:page',

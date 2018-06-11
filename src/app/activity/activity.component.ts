@@ -7,12 +7,31 @@ import { SettingsService } from '../services/settings.service';
 import { Router } from '@angular/router';
 import { gt } from '../gt.typings';
 import { GuardianService } from '../services/guardian.service';
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition
+} from '@angular/animations';
 
 @Component({
   selector: 'app-activity',
   templateUrl: './activity.component.html',
   styleUrls: ['./activity.component.scss'],
-  providers: [ActivityService, GuardianService]
+  providers: [ActivityService, GuardianService],
+  animations: [
+    trigger('growInShrinkOut', [
+      transition('void => *', [
+        style({ height: 0 }),
+        animate('600ms ease-out', style({ height: '*' }))
+      ]),
+      transition('* => void', [
+        style({ height: '*' }),
+        animate('300ms ease-in', style({ height: 0 }))
+      ])
+    ])
+  ]
 })
 export class ActivityComponent implements OnInit, OnDestroy {
   @Input() activity: gt.Activity;
@@ -24,6 +43,7 @@ export class ActivityComponent implements OnInit, OnDestroy {
   public filteredClips: gt.Clip[];
   public links: gt.Links;
   public mini: boolean;
+  public animationState;
 
   constructor(
     private activityService: ActivityService,
@@ -38,6 +58,7 @@ export class ActivityComponent implements OnInit, OnDestroy {
     this.clips = [];
     this.links = { guardian: {}, activity: {}, xbox: {} };
     this.mini = false;
+    this.animationState = 'in';
 
     this.activityService.activity = this.activity;
     this.subs = [];
@@ -174,6 +195,7 @@ export class ActivityComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
+    this.animationState = '';
     this.subs.forEach(sub => sub.unsubscribe());
   }
 
@@ -182,7 +204,13 @@ export class ActivityComponent implements OnInit, OnDestroy {
   }
 
   toGuardian(membershipType, membershipId) {
-    this.router.navigate(['/guardian', membershipType, membershipId]);
+    this.router.navigate([
+      '/guardian',
+      membershipType,
+      membershipId,
+      'None',
+      0
+    ]);
   }
 
   toClip(pgcr: gt.PostGameCarnageReport, clip) {
@@ -217,7 +245,13 @@ export class PgcrEntryComponent {
   constructor(private router: Router) {}
 
   toGuardian(membershipType, membershipId) {
-    this.router.navigate(['/guardian', membershipType, membershipId]);
+    this.router.navigate([
+      '/guardian',
+      membershipType,
+      membershipId,
+      'None',
+      0
+    ]);
   }
 
   stopPropagation(event) {

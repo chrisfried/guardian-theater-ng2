@@ -3,12 +3,23 @@
   margin-bottom: 1em;
 }
 
+.activity-header {
+  cursor: initial;
+
+  &.clickable {
+    cursor: pointer;
+  }
+}
+
 .mode {
   background: rgba(48, 56, 65, 1);
   color: white;
   padding: 0 0.5em;
   height: 28px;
   line-height: 28px;
+  transition-property: background-color;
+  transition-duration: 600ms;
+  transition-timing-function: ease-out;
 }
 
 .mode-5,
@@ -35,7 +46,8 @@
 .mode-38 {
   background-color: $crucible-red;
   &.spinner-block,
-  .activity-info {
+  .activity-info,
+  .activity-count {
     @include background-hover-darken($crucible-red);
   }
 }
@@ -43,7 +55,8 @@
 .mode-2 {
   background-color: $story-orange;
   &.spinner-block,
-  .activity-info {
+  .activity-info,
+  .activity-count {
     @include background-hover-darken($story-orange);
   }
 }
@@ -54,7 +67,8 @@
 .mode-18 {
   background-color: $strike-blue;
   &.spinner-block,
-  .activity-info {
+  .activity-info,
+  .activity-count {
     @include background-hover-darken($strike-blue);
   }
 }
@@ -66,7 +80,8 @@
 .mode-30 {
   background-color: $raid-blue;
   &.spinner-block,
-  .activity-info {
+  .activity-info,
+  .activity-count {
     @include background-hover-darken($raid-blue);
   }
 }
@@ -74,15 +89,20 @@
 .mode-6 {
   background-color: $patrol-green;
   &.spinner-block,
-  .activity-info {
+  .activity-info,
+  .activity-count {
     @include background-hover-darken($patrol-green);
   }
 }
 
 .mode-no-clips {
   background-color: $no-clips-grey;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+
   &.spinner-block,
-  .activity-info {
+  .activity-info,
+  .activity-count {
     @include background-hover-darken($no-clips-grey);
   }
 }
@@ -122,10 +142,19 @@
 
 .clips {
   margin-top: 1em;
+  overflow: hidden;
+
+  &.no-clips {
+    margin: 0;
+  }
 }
 
 .clip-item {
-  margin: 0 1em 1em;
+  margin: 0 1em;
+}
+.clip-item-wrapper {
+  overflow: hidden;
+  margin: 0 0 1em;
 }
 
 .clip-item:nth-last-child(1) {
@@ -189,6 +218,10 @@
   margin-left: 0.9375rem;
 }
 
+.mini-spinner {
+  margin-left: 0.5em;
+}
+
 .spinner-block {
   border-top: 1px solid white;
   border-right: 1px solid white;
@@ -196,7 +229,6 @@
   text-align: center;
   font-size: 3em;
   font-weight: bold;
-  cursor: pointer;
   max-height: 84px;
   height: 84px;
   line-height: 84px;
@@ -214,6 +246,10 @@
 
 .pgcr {
   max-height: 85px;
+  overflow: hidden;
+}
+
+.pgcr-block {
   overflow: hidden;
 }
 
@@ -334,7 +370,6 @@
   flex-grow: 1;
   padding-left: 0.5em;
   padding-right: 0.5em;
-  cursor: pointer;
 }
 
 .pgcr-entry-name {
@@ -344,7 +379,6 @@
 .pgcr-team-name,
 .pgcr-team-score {
   padding-right: 0.5em;
-  cursor: initial;
 }
 
 .pgcr-team-name {
@@ -358,7 +392,8 @@
 
 .profile-link,
 .activity-link,
-.xbox-clip-link {
+.xbox-clip-link,
+.activity-count {
   background-size: 1em;
   width: 28px;
   min-width: 28px;
@@ -369,6 +404,12 @@
   border-left: 1px solid white;
   color: white;
   text-align: center;
+  font-weight: bold;
+}
+
+.activity-count {
+  border-left: none;
+  border-right: 1px solid white;
 }
 
 .profile-link.bungie,

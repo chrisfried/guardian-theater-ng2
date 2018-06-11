@@ -62,7 +62,13 @@ export class SearchComponent implements OnInit, OnDestroy {
         const result = this.searchResults[0];
         if (this.searchResults.length === 1) {
           this.router.navigate(
-            ['/guardian', result.membershipType, result.membershipId],
+            [
+              '/guardian',
+              result.membershipType,
+              result.membershipId,
+              'None',
+              0
+            ],
             {
               replaceUrl: true
             }
@@ -96,7 +102,13 @@ export class SearchComponent implements OnInit, OnDestroy {
               });
               if (matches.length === this.searchResults.length) {
                 this.router.navigate(
-                  ['/guardian', result.membershipType, result.membershipId],
+                  [
+                    '/guardian',
+                    result.membershipType,
+                    result.membershipId,
+                    'None',
+                    0
+                  ],
                   {
                     replaceUrl: true
                   }
