@@ -30,7 +30,7 @@
 
       <div class="columns small-2">
         <div class="row">
-          <div class="columns small-12 spinner-block mode" [ngClass]="pgcr && filteredClips.length ? 'mode-' + pgcr.activityDetails.mode : 'mode-no-clips'">
+          <div class="columns small-12 spinner-block mode mode-no-clips" [ngClass]="pgcr && filteredClips.length ? 'mode-' + pgcr.activityDetails.mode : ''">
             <div class="player-spinner" *ngIf="!pgcr || (pgcr.loading && (pgcr.loading.twitch || pgcr.loading.bungie || pgcr.loading.xbox))">
               <span class="fi-widget spinner bungie-spinner" title="Fetching data..."></span>
             </div>
