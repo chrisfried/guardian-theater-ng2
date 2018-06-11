@@ -28,7 +28,7 @@
 
     <div *ngIf="!mini || (pgcr && (!pgcr.active || !pgcr.active.entry))" class="row info-row">
 
-      <div class="columns small-2">
+      <div *ngIf="!mini" class="columns small-2">
         <div class="row">
           <div class="columns small-12 spinner-block mode mode-no-clips" [ngClass]="pgcr && filteredClips.length ? 'mode-' + pgcr.activityDetails.mode : ''">
             <div class="player-spinner" *ngIf="!pgcr || (pgcr.loading && (pgcr.loading.twitch || pgcr.loading.bungie || pgcr.loading.xbox))">
@@ -42,7 +42,6 @@
           </div>
         </div>
       </div>
-
       <span [@growInShrinkOut]="animationState" class="pgcr-block columns pgcr pgcr-full pgcr-no-teams" *ngIf="pgcr && (!pgcr.teams || !pgcr.teams.length)"
         [ngClass]="{ 
         'no-clips': !filteredClips.length,
