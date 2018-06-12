@@ -15,6 +15,7 @@ import { GuardianService } from '../services/guardian.service';
 export class SearchComponent implements OnInit, OnDestroy {
   public searching: boolean;
   public searchResults: UserInfoCard[];
+  public checkingDuplicates: boolean;
 
   private searchName: BehaviorSubject<string>;
   private searchResponse: Subscription;
@@ -30,6 +31,7 @@ export class SearchComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.searchName = new BehaviorSubject('');
     this.searching = true;
+    this.checkingDuplicates = true;
 
     this.params$ = this.activatedRoute.params.subscribe((params: Params) => {
       this.searchResults = null;
@@ -114,7 +116,10 @@ export class SearchComponent implements OnInit, OnDestroy {
                   }
                 );
               }
+              this.checkingDuplicates = false;
             });
+        } else {
+          this.checkingDuplicates = false;
         }
         this.searching = false;
       });
