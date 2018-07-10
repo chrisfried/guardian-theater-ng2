@@ -1,13 +1,15 @@
-<div *ngIf="!displayName && loadingAccounts" class="profile-spinner-wrapper">
+<div *ngIf="!profiles.length && loadingAccounts" class="profile-spinner-wrapper">
   <div class="fi-widget spinner profile-spinner" title="Fetching Bungie Profile..."></div>
 </div>
 
-<div *ngIf="displayName" class="profile-wrapper">
+<div *ngIf="profiles.length" class="profile-wrapper">
   <div class="profile small-12 columns">
     <div class="row">
       <div class="active-character">
         <div class="gamertag">
-          <span class="name">{{ displayName }}</span>
+          <span class="name" *ngFor="let profile of profiles">{{ profile.displayName }}
+            <span class="label" [ngClass]="{'xbox': profile.membershipType === 1, 'psn': profile.membershipType === 2, 'blizzard': profile.membershipType === 4}">{{ profile.membershipType | platformAbbr }}</span>
+          </span>
         </div>
       </div>
     </div>
@@ -42,7 +44,7 @@
   <div class="row">
     <div class="columns small-12 button-group expanded">
       <button type="button" class="button filter-toggle player" [ngClass]="{ 'hollow': !clipLimiter.self }" (click)="toggleLimiter('self')"
-        [title]="displayName">
+        title="Player">
         <span class="fi-torso"></span>
       </button>
       <button type="button" class="button filter-toggle fireteam" [ngClass]="{ 'hollow': !clipLimiter.fireteam }" (click)="toggleLimiter('fireteam')"

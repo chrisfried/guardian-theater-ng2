@@ -253,7 +253,6 @@ export class ActivityService implements OnDestroy {
                           return this.http.get(url).pipe(
                             catchError((err: HttpErrorResponse) => {
                               if (err.status === 404) {
-                                console.log('not found');
                                 this.twitchService.twitch[membershipId].next({
                                   displayName: displayName,
                                   checkedId: true,

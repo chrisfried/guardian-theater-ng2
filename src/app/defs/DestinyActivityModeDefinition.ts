@@ -326,7 +326,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Asaltos'
     },
     59: {
-      name: 'Showdown'
+      name: 'Duelo'
     },
     57: {
       name: 'Partidas privadas Disputa'
@@ -448,7 +448,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Asaltos'
     },
     59: {
-      name: 'Showdown'
+      name: 'Duelo'
     },
     57: {
       name: 'Partidas privadas Disputa'
@@ -814,7 +814,7 @@ export const DestinyActivityModeDefinition = {
       name: 'ストライク'
     },
     59: {
-      name: 'Showdown'
+      name: 'ショーダウン'
     },
     57: {
       name: 'プライベート対戦(ランブル)'
@@ -1058,7 +1058,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Assaltos'
     },
     59: {
-      name: 'Showdown'
+      name: 'Confronto'
     },
     57: {
       name: 'Partidas privadas – Briga'
@@ -1180,7 +1180,7 @@ export const DestinyActivityModeDefinition = {
       name: 'Налеты'
     },
     59: {
-      name: 'Showdown'
+      name: 'Поединок'
     },
     57: {
       name: 'Закрытые матчи: "Стычка"'
@@ -1272,7 +1272,7 @@ export const DestinyActivityModeDefinition = {
       name: '九巨頭試煉'
     },
     38: {
-      name: '定時炸彈'
+      name: '分秒必爭'
     },
     12: {
       name: '死鬥模式'
@@ -1281,7 +1281,7 @@ export const DestinyActivityModeDefinition = {
       name: '社交'
     },
     2: {
-      name: '故事'
+      name: '主線'
     },
     49: {
       name: '所有雙打'
@@ -1302,19 +1302,19 @@ export const DestinyActivityModeDefinition = {
       name: '突擊任務'
     },
     59: {
-      name: 'Showdown'
+      name: '正面對決'
     },
     57: {
       name: '私人對戰混戰模式'
     },
     43: {
-      name: '鋼鐵旗幟佔領模式'
+      name: '鋼鐵旗幟攻佔模式'
     },
     52: {
       name: '私人對戰攻佔模式'
     },
     10: {
-      name: '佔領模式'
+      name: '攻佔模式'
     },
     44: {
       name: '鋼鐵旗幟死鬥模式'

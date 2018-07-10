@@ -17,11 +17,9 @@ export class GtBadgePipe implements PipeTransform {
       '168740' // Menos del Oso
     ];
     let patrons = [
-      '9303125', // v DontCare v
       '10213132', // designker
-      '11828236', // cowgod77
-      '13513244', // CHUBS152001
-      '5197148' // lowlines
+      '5197148', // lowlines
+      '10692090' // Danut
     ];
     let donors = [
       '8278779', // QuiscalusMajor
@@ -39,7 +37,10 @@ export class GtBadgePipe implements PipeTransform {
       '167493', // Marruk
       '3836546', // CobraliciouZ
       '14864748', // luckyDUELstars
-      '10969660' // VanessaMagick
+      '10969660', // VanessaMagick
+      '11828236', // cowgod77
+      '13513244', // CHUBS152001
+      '9303125', // v DontCare v
     ];
     if (owner.indexOf(membershipId) > -1) {
       return 'Ownerer';

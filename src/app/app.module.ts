@@ -30,6 +30,7 @@ import { GtBadgePipe } from './pipes/gt-badge.pipe';
 import { TakeMyMoneyComponent } from './take-my-money/take-my-money.component';
 import { SearchComponent } from './search/search.component';
 import { BungieStatusComponent } from './bungie-status/bungie-status.component';
+import { PlatformAbbrPipe } from './pipes/platform-abbr.pipe';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { BungieStatusComponent } from './bungie-status/bungie-status.component';
     DestinyHashPipe,
     TakeMyMoneyComponent,
     SearchComponent,
-    BungieStatusComponent
+    BungieStatusComponent,
+    PlatformAbbrPipe
   ],
   imports: [
     BrowserModule,

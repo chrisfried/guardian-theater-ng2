@@ -24,7 +24,7 @@
   }
   .active-character {
     font-size: 1.2em;
-    padding: 0 0 0 .5em;
+    padding: 0 0 0 0.5em;
   }
   .gamertag {
     font-weight: bold;
@@ -46,12 +46,40 @@
     padding: 0;
     text-transform: uppercase;
   }
+
+  .label {
+    border-radius: 0.25em;
+    line-height: 1.2em;
+    padding: 0 0.3em;
+    font-size: 0.6rem;
+    cursor: inherit;
+    vertical-align: middle;
+
+    text-align: center;
+    background: none;
+    display: inline-block;
+    color: whitesmoke;
+    font-weight: 400;
+    margin-right: 1.5em;
+
+    &.xbox {
+      background: #288145;
+    }
+
+    &.psn {
+      background: #3d2c94;
+    }
+
+    &.blizzard {
+      background: #0b609b;
+    }
+  }
 }
 
 .character {
   background-position: center;
   background-size: cover;
-  font-size: .9em;
+  font-size: 0.9em;
   padding: 0;
   a {
     display: block;
@@ -93,7 +121,7 @@
 }
 
 .mode-selector {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   @include background-hover-darken($all-navy);
   color: white;
   border: none;
@@ -172,7 +200,7 @@
   &.twitch {
     @include background-hover-darken($twitch-purple);
     background-image: url('/assets/images/twitch-white.png');
-    background-size: .75em;
+    background-size: 0.75em;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -186,8 +214,7 @@
   }
   &.hollow {
     background: none;
-    @include color-border-hover-darken($light-purple,
-    $dark-purple);
+    @include color-border-hover-darken($light-purple, $dark-purple);
     &:focus,
     &:hover {
       background: none;
@@ -196,8 +223,7 @@
       @include color-border-hover-darken($blueberry-blue);
     }
     &.enemy {
-      @include color-border-hover-darken($opponent-red,
-      $crucible-red);
+      @include color-border-hover-darken($opponent-red, $crucible-red);
     }
     &.player,
     &.fireteam {
@@ -209,21 +235,20 @@
     &.twitch {
       @include color-border-hover-darken($twitch-purple);
       background-image: url('/assets/images/twitch-purple.png');
-      background-size: .75em;
+      background-size: 0.75em;
       background-repeat: no-repeat;
       background-position: center;
     }
   }
   &.filter-toggle {
     font-size: 1.75em;
-    padding: .25em;
+    padding: 0.25em;
   }
   &.paging {
     font-size: 1.75em;
-    padding: .25em;
+    padding: 0.25em;
   }
 }
-
 .mode-column {
   height: 40px;
   margin-bottom: 1rem;
@@ -231,12 +256,10 @@
     height: 40px;
   }
 }
-
 .previous-column {
   height: 40px;
   padding-right: 0px;
 }
-
 .next-column {
   height: 40px;
   padding-left: 1px;

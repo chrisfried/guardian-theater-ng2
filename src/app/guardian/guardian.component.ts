@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import { GeneralUser } from 'bungie-api-ts/user';
+import { UserInfoCard } from 'bungie-api-ts/user';
 import { Subscription } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { gt } from '../gt.typings';
@@ -18,9 +18,8 @@ export class GuardianComponent implements OnInit, OnDestroy {
 
   public membershipType: number;
   public membershipId: string;
-  public displayName: string;
+  public profiles: UserInfoCard[];
   public displayTag: string;
-  public searchResults: GeneralUser[];
   public activities: gt.Activity[];
   public gamemode: string;
   public page: number;
@@ -95,15 +94,9 @@ export class GuardianComponent implements OnInit, OnDestroy {
     );
 
     this.subs.push(
-      this.settingsService.activeProfiles.subscribe(profiles => {
-        this.displayName = '';
-        profiles.forEach(profile => {
-          this.displayName.length
-            ? (this.displayName += ' // ')
-            : (this.displayName += '');
-          this.displayName += profile.displayName;
-        });
-      })
+      this.settingsService.activeProfiles.subscribe(
+        profiles => (this.profiles = profiles)
+      )
     );
 
     this.subs.push(
