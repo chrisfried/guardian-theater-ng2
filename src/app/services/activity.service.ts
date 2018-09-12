@@ -318,6 +318,13 @@ export class ActivityService implements OnDestroy {
                           let hms = '0h0m0s';
                           if (offset > 0) {
                             let h = Math.floor(offset / 3600);
+                            if (h > 24) {
+                              console.log(
+                                entry.player.destinyUserInfo.displayName,
+                                'stream started more than 24 hours before activity, presumed dead'
+                              );
+                              return;
+                            }
                             let m = Math.floor((offset % 3600) / 60);
                             let s = Math.floor((offset % 3600) % 60);
                             hms = h + 'h' + m + 'm' + s + 's';
