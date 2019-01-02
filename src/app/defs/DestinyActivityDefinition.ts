@@ -2130,7 +2130,7 @@ export const DestinyActivityDefinition = {
       name: 'The Machinist'
     },
     855989781: {
-      name: 'Classified'
+      name: 'Reignite the Izanami Forge'
     },
     856342832: {
       name: '(Heroic) Deep Conversation'
@@ -3155,7 +3155,7 @@ export const DestinyActivityDefinition = {
       name: 'Omega'
     },
     2278374121: {
-      name: 'Classified'
+      name: 'Unknown Space'
     },
     2279197206: {
       name: 'A Deadly Trial'
@@ -3374,7 +3374,7 @@ export const DestinyActivityDefinition = {
       name: 'Analysis Mission'
     },
     2656947700: {
-      name: 'Classified'
+      name: 'Izanami Forge'
     },
     2660895412: {
       name: 'Daily Heroic Story Mission: Ice and Shadow'
@@ -3920,7 +3920,7 @@ export const DestinyActivityDefinition = {
       name: 'Survey mission'
     },
     3614852628: {
-      name: 'Classified'
+      name: 'Repair the Izanami Igniter'
     },
     3616746132: {
       name: 'Iron Banner Control'
@@ -3941,7 +3941,7 @@ export const DestinyActivityDefinition = {
       name: 'Field Assignment: Active Duty'
     },
     3641102502: {
-      name: 'Classified'
+      name: 'Refurbished Izanami Igniter'
     },
     3642412717: {
       name: 'Meditation: "Tree of Probabilities"'
@@ -19658,8 +19658,8 @@ export const DestinyActivityDefinition = {
       pgcrImage: '/img/destiny_content/pgcr/mission_toxic.jpg'
     },
     855989781: {
-      icon: '/img/misc/missing_icon_d2.png',
-      pgcrImage: 'undefined'
+      icon: '/common/destiny2_content/icons/a6ce21a766375f5bcfb6cc01b093a383.png',
+      pgcrImage: '/img/destiny_content/pgcr/black_armory-ba_quests.nux_cinematic.jpg'
     },
     856342832: {
       icon: '/common/destiny2_content/icons/c60303e278aa5fc566a04e98c3d8024c.png',
@@ -21026,8 +21026,8 @@ export const DestinyActivityDefinition = {
       pgcrImage: '/img/destiny_content/pgcr/campaign_omega.jpg'
     },
     2278374121: {
-      icon: '/img/misc/missing_icon_d2.png',
-      pgcrImage: 'undefined'
+      icon: '/common/destiny2_content/icons/a6ce21a766375f5bcfb6cc01b093a383.png',
+      pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     2279197206: {
       icon: '/common/destiny2_content/icons/a6ce21a766375f5bcfb6cc01b093a383.png',
@@ -21318,8 +21318,8 @@ export const DestinyActivityDefinition = {
       pgcrImage: '/img/destiny_content/pgcr/patrol_edz.jpg'
     },
     2656947700: {
-      icon: '/img/misc/missing_icon_d2.png',
-      pgcrImage: 'undefined'
+      icon: '/common/destiny2_content/icons/3d6f2e60f279b7cbf3d55b900b5c7379.png',
+      pgcrImage: 'black_armory-bb13850n235.playlist_sewer_forge.jpg'
     },
     2660895412: {
       icon: '/common/destiny2_content/icons/a6ce21a766375f5bcfb6cc01b093a383.png',
@@ -22046,8 +22046,8 @@ export const DestinyActivityDefinition = {
       pgcrImage: '/img/destiny_content/pgcr/patrol_nessus.jpg'
     },
     3614852628: {
-      icon: '/img/misc/missing_icon_d2.png',
-      pgcrImage: 'undefined'
+      icon: '/common/destiny2_content/icons/a6ce21a766375f5bcfb6cc01b093a383.png',
+      pgcrImage: '/img/destiny_content/pgcr/black_armory-ba_quests.nux_cinematic.jpg'
     },
     3616746132: {
       icon: '/common/destiny2_content/icons/0ee91b79ba1366243832cf810afc3b75.jpg',
@@ -22074,8 +22074,8 @@ export const DestinyActivityDefinition = {
       pgcrImage: '/img/destiny_content/pgcr/free_roam_dreaming_city.jpg'
     },
     3641102502: {
-      icon: '/img/misc/missing_icon_d2.png',
-      pgcrImage: 'undefined'
+      icon: '/common/destiny2_content/icons/a6ce21a766375f5bcfb6cc01b093a383.png',
+      pgcrImage: '/img/destiny_content/pgcr/black_armory-ba_quests.nux_cinematic.jpg'
     },
     3642412717: {
       icon: '/common/destiny2_content/icons/a6ce21a766375f5bcfb6cc01b093a383.png',
