@@ -2038,7 +2038,7 @@ export const DestinyActivityDefinition = {
       name: 'Firewalled Haunted Forest'
     },
     709854835: {
-      name: 'Classified'
+      name: 'Niobe\'s Torment'
     },
     715306877: {
       name: 'Combat Mission'
@@ -2527,6 +2527,9 @@ export const DestinyActivityDefinition = {
     1357019430: {
       name: 'Nightfall: Exodus Crash: Normal'
     },
+    1358255449: {
+      name: 'Crimson Days'
+    },
     1360385764: {
       name: 'Warden of Nothing'
     },
@@ -2537,7 +2540,7 @@ export const DestinyActivityDefinition = {
       name: 'Warden of Nothing'
     },
     1367215417: {
-      name: 'Classified'
+      name: 'Lost Souvenir'
     },
     1375839088: {
       name: 'Analysis Mission'
@@ -2570,7 +2573,7 @@ export const DestinyActivityDefinition = {
       name: 'Unidentified Frame: The Pyramidion'
     },
     1434072700: {
-      name: 'Classified'
+      name: 'Bergusia Forge'
     },
     1435054848: {
       name: 'Midtown'
@@ -19534,8 +19537,8 @@ export const DestinyActivityDefinition = {
       pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
     },
     709854835: {
-      icon: '/img/misc/missing_icon_d2.png',
-      pgcrImage: 'undefined'
+      icon: '/common/destiny2_content/icons/a6ce21a766375f5bcfb6cc01b093a383.png',
+      pgcrImage: '/img/destiny_content/pgcr/black_armory-ba_quests.nux_cinematic.jpg'
     },
     715306877: {
       icon: '/common/destiny2_content/icons/c60303e278aa5fc566a04e98c3d8024c.png',
@@ -20189,6 +20192,10 @@ export const DestinyActivityDefinition = {
       icon: '/common/destiny2_content/icons/f2154b781b36b19760efcb23695c66fe.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_exodus_crash.jpg'
     },
+    1358255449: {
+      icon: '/common/destiny2_content/icons/1c17984345f393e728dc8d2b898eca66.png',
+      pgcrImage: '/img/theme/destiny/bgs/pgcrs/placeholder.jpg'
+    },
     1360385764: {
       icon: '/common/destiny2_content/icons/f2154b781b36b19760efcb23695c66fe.png',
       pgcrImage: '/img/destiny_content/pgcr/strike_aries.jpg'
@@ -20202,8 +20209,8 @@ export const DestinyActivityDefinition = {
       pgcrImage: '/img/destiny_content/pgcr/strike_aries.jpg'
     },
     1367215417: {
-      icon: '/img/misc/missing_icon_d2.png',
-      pgcrImage: 'undefined'
+      icon: '/common/destiny2_content/icons/a6ce21a766375f5bcfb6cc01b093a383.png',
+      pgcrImage: '/img/destiny_content/pgcr/black_armory-ba_quests.nux_cinematic.jpg'
     },
     1375839088: {
       icon: '/common/destiny2_content/icons/c60303e278aa5fc566a04e98c3d8024c.png',
@@ -20246,8 +20253,8 @@ export const DestinyActivityDefinition = {
       pgcrImage: '/img/destiny_content/pgcr/black_armory-ba_quests.nux_cinematic.jpg'
     },
     1434072700: {
-      icon: '/img/misc/missing_icon_d2.png',
-      pgcrImage: 'undefined'
+      icon: '/common/destiny2_content/icons/3d6f2e60f279b7cbf3d55b900b5c7379.png',
+      pgcrImage: 'black_armory-bars.playlist_edz_oldtown_forge-35a17r14q.jpg'
     },
     1435054848: {
       icon: '/common/destiny2_content/icons/843744b6902d8672635e3232984cbe29.png',
