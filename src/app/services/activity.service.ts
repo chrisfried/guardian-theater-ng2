@@ -474,59 +474,59 @@ export class ActivityService implements OnDestroy {
                 this.loadXboxClips(pgcr, entry, gamertag);
               }
 
-              if (entry.player.destinyUserInfo.membershipType === 4) {
-                if (
-                  !this.xboxService.xboxPC[
-                    entry.player.destinyUserInfo.displayName
-                  ]
-                ) {
-                  this.xboxService.xboxPC[
-                    entry.player.destinyUserInfo.displayName
-                  ] = new BehaviorSubject({
-                    checked: false,
-                    gamertag: entry.player.destinyUserInfo.displayName,
-                    response: null
-                  });
-                }
+              // if (entry.player.destinyUserInfo.membershipType === 4) {
+              //   if (
+              //     !this.xboxService.xboxPC[
+              //       entry.player.destinyUserInfo.displayName
+              //     ]
+              //   ) {
+              //     this.xboxService.xboxPC[
+              //       entry.player.destinyUserInfo.displayName
+              //     ] = new BehaviorSubject({
+              //       checked: false,
+              //       gamertag: entry.player.destinyUserInfo.displayName,
+              //       response: null
+              //     });
+              //   }
 
-                this.subs.push(
-                  this.guardianService
-                    .getLinkedAccounts(
-                      entry.player.destinyUserInfo.membershipType,
-                      entry.player.destinyUserInfo.membershipId
-                    )
-                    .subscribe(res => {
-                      res.Response.profiles.some(profile => {
-                        if (profile.membershipType === 1) {
-                          gamertag = profile.displayName;
-                          return true;
-                        }
-                      });
-                      res.Response.profilesWithErrors.some(profile => {
-                        if (profile.infoCard.membershipType === 1) {
-                          gamertag = profile.infoCard.displayName;
-                          return true;
-                        }
-                      });
-                      if (gamertag) {
-                        this.loadXboxClips(
-                          pgcr,
-                          entry,
-                          gamertag,
-                          entry.player.destinyUserInfo.displayName
-                        );
-                      } else {
-                        this.xboxService.xboxPC[
-                          entry.player.destinyUserInfo.displayName
-                        ].next({
-                          checked: true,
-                          gamertag: entry.player.destinyUserInfo.displayName,
-                          response: null
-                        });
-                      }
-                    })
-                );
-              }
+              //   this.subs.push(
+              //     this.guardianService
+              //       .getLinkedAccounts(
+              //         entry.player.destinyUserInfo.membershipType,
+              //         entry.player.destinyUserInfo.membershipId
+              //       )
+              //       .subscribe(res => {
+              //         res.Response.profiles.some(profile => {
+              //           if (profile.membershipType === 1) {
+              //             gamertag = profile.displayName;
+              //             return true;
+              //           }
+              //         });
+              //         res.Response.profilesWithErrors.some(profile => {
+              //           if (profile.infoCard.membershipType === 1) {
+              //             gamertag = profile.infoCard.displayName;
+              //             return true;
+              //           }
+              //         });
+              //         if (gamertag) {
+              //           this.loadXboxClips(
+              //             pgcr,
+              //             entry,
+              //             gamertag,
+              //             entry.player.destinyUserInfo.displayName
+              //           );
+              //         } else {
+              //           this.xboxService.xboxPC[
+              //             entry.player.destinyUserInfo.displayName
+              //           ].next({
+              //             checked: true,
+              //             gamertag: entry.player.destinyUserInfo.displayName,
+              //             response: null
+              //           });
+              //         }
+              //       })
+              //   );
+              // }
             });
           } catch (e) {
             console.error(e);
