@@ -28,7 +28,7 @@ export class GuardianService {
       }[];
     }>
   > {
-    const url = `https://www.bungie.net/Platform/Destiny2/${membershipType}/Profile/${membershipId}/LinkedProfiles/`;
+    const url = `https://stats.bungie.net/Platform/Destiny2/${membershipType}/Profile/${membershipId}/LinkedProfiles/`;
     return this.bHttp.get(url);
   }
 
@@ -36,7 +36,7 @@ export class GuardianService {
     membershipType: number,
     membershipId: string
   ): Observable<ServerResponse<DestinyProfileResponse>> {
-    const url = `https://www.bungie.net/Platform/Destiny2/${membershipType}/Profile/${membershipId}/?components=100,200`;
+    const url = `https://stats.bungie.net/Platform/Destiny2/${membershipType}/Profile/${membershipId}/?components=100,200`;
     return this.bHttp.get(url);
   }
 
@@ -80,7 +80,7 @@ export class GuardianService {
     page = 0
   ): Observable<ServerResponse<DestinyActivityHistoryResults>> {
     // tslint:disable-next-line:max-line-length
-    const url = `https://www.bungie.net/Platform/Destiny2/${membershipType}/Account/${membershipId}/Character/${characterId}/Stats/Activities/?mode=${mode}&count=${count}&page=${page}`;
+    const url = `https://stats.bungie.net/Platform/Destiny2/${membershipType}/Account/${membershipId}/Character/${characterId}/Stats/Activities/?mode=${mode}&count=${count}&page=${page}`;
     return this.bHttp.get(url);
   }
 

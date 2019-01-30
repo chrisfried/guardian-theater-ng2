@@ -81,7 +81,7 @@ export class ActivityService implements OnDestroy {
         .pipe(
           map(activityId => {
             return activityId
-              ? 'https://www.bungie.net/Platform/Destiny2/Stats/PostGameCarnageReport/' +
+              ? 'https://stats.bungie.net/Platform/Destiny2/Stats/PostGameCarnageReport/' +
                   activityId +
                   '/'
               : '';
@@ -181,7 +181,7 @@ export class ActivityService implements OnDestroy {
                         }) => {
                           return subject.checkedId
                             ? ''
-                            : 'https://www.bungie.net/Platform/User/' +
+                            : 'https://stats.bungie.net/Platform/User/' +
                                 subject.bungieId +
                                 '/Partnerships/';
                         }
