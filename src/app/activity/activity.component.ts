@@ -111,6 +111,21 @@ export class ActivityComponent implements OnInit, OnDestroy {
                   entry.player.bungieNetUserInfo.membershipId
                 ].subscribe(twitch => (entry.twitch = twitch))
               );
+            } else if (
+              this.twitchService.twitch[
+                entry.player.destinyUserInfo.membershipId
+              ]
+            ) {
+              loadingArray.push(
+                this.twitchService.twitch[
+                  entry.player.destinyUserInfo.membershipId
+                ]
+              );
+              this.subs.push(
+                this.twitchService.twitch[
+                  entry.player.destinyUserInfo.membershipId
+                ].subscribe(twitch => (entry.twitch = twitch))
+              );
             }
             if (
               entry.player.destinyUserInfo.membershipType === 1 &&
