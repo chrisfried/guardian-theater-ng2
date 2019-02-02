@@ -4,7 +4,6 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'gtBadge'
 })
 export class GtBadgePipe implements PipeTransform {
-
   transform(membershipId: string): string {
     let owner = [
       '375129' // chrisfried
@@ -16,12 +15,10 @@ export class GtBadgePipe implements PipeTransform {
     let shirt = [
       '168740' // Menos del Oso
     ];
-    let patrons = [
+    let donors = [
       '10213132', // designker
       '5197148', // lowlines
-      '10692090' // Danut
-    ];
-    let donors = [
+      '10692090', // Danut
       '8278779', // QuiscalusMajor
       '3885548', // Phyrne
       '4165071', // Benimus
@@ -40,21 +37,18 @@ export class GtBadgePipe implements PipeTransform {
       '10969660', // VanessaMagick
       '11828236', // cowgod77
       '13513244', // CHUBS152001
-      '9303125', // v DontCare v
+      '9303125' // v DontCare v
     ];
     if (owner.indexOf(membershipId) > -1) {
-      return 'Ownerer';
+      return 'Creator';
     } else if (contributors.indexOf(membershipId) > -1) {
       return 'Contributor';
     } else if (shirt.indexOf(membershipId) > -1) {
       return 'Shirt Haver';
-    } else if (patrons.indexOf(membershipId) > -1) {
-      return 'Patron';
     } else if (donors.indexOf(membershipId) > -1) {
       return 'Donor';
     } else {
       return '';
     }
   }
-
 }
