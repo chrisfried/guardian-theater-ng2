@@ -157,6 +157,7 @@ export class ActivityService implements OnDestroy {
                 ? entry.player.bungieNetUserInfo.membershipId
                 : entry.player.destinyUserInfo.membershipId;
               let displayName = entry.player.destinyUserInfo.displayName;
+              let displayNameUndersore = displayName.split(' ').join('_');
 
               entry.iconUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
                 '//www.bungie.net' + entry.player.destinyUserInfo.iconPath
@@ -171,7 +172,7 @@ export class ActivityService implements OnDestroy {
 
               if (!this.mixerService.mixer[membershipId]) {
                 this.mixerService.mixer[membershipId] = new BehaviorSubject({
-                  displayName
+                  displayName: displayNameUndersore
                 });
               }
 
@@ -490,7 +491,7 @@ export class ActivityService implements OnDestroy {
                       let { checkedId } = subject;
                       let url = '';
                       if (!checkedId) {
-                        url = `https://guardiantheater.github.io/d2-stream-name-parser/${displayName}/mixer.json`;
+                        url = `https://guardiantheater.github.io/d2-stream-name-parser/${displayNameUndersore}/mixer.json`;
                       }
                       return url;
                     }),
@@ -500,7 +501,7 @@ export class ActivityService implements OnDestroy {
                           catchError((err: HttpErrorResponse) => {
                             if (err.status === 404) {
                               const next: gt.MixerServiceItem = {
-                                displayName,
+                                displayName: displayNameUndersore,
                                 checkedId: true
                               };
                               this.mixerService.mixer[membershipId].next(next);
@@ -523,7 +524,7 @@ export class ActivityService implements OnDestroy {
                       }
                       if (channelId) {
                         const next: gt.MixerServiceItem = {
-                          displayName,
+                          displayName: displayNameUndersore,
                           channelId,
                           checkedId: true
                         };
@@ -565,7 +566,7 @@ export class ActivityService implements OnDestroy {
                             catchError((err: HttpErrorResponse) => {
                               if (err.status === 404) {
                                 const next: gt.MixerServiceItem = {
-                                  displayName,
+                                  displayName: displayNameUndersore,
                                   channelId: channelIdTemp,
                                   checkedId: true,
                                   checkedResponse: true
@@ -587,7 +588,7 @@ export class ActivityService implements OnDestroy {
                   .subscribe((response: any) => {
                     if (response) {
                       const next: gt.MixerServiceItem = {
-                        displayName,
+                        displayName: displayNameUndersore,
                         channelId: channelIdTemp,
                         checkedId: true,
                         checkedResponse: true,

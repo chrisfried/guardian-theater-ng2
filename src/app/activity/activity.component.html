@@ -109,7 +109,7 @@
           </a>
           <div class="columns small-12 clip-wrapper" *ngIf="!clip.play">
             <img *ngIf="clip.video.thumbnails[0]" class="clip-thumbnail" (click)="clip.play = !clip.play" [src]="clip.video.thumbnails[0].url">
-            <span *ngIf="!clip.video.thumbnails[0]" (click)="clip.play = !clip.play" class="clip-play-button twitch"></span>
+            <span *ngIf="!clip.video.thumbnails[0]" (click)="clip.play = !clip.play" class="clip-play-button twitch"><span class="fi-play"></span></span>
           </div>
           <div class="columns small-12 clip-wrapper" *ngIf="clip.play">
             <iframe class="twitch-embed" [src]="clip.embedUrl" frameborder="0" scrolling="no" allowfullscreen="true">
