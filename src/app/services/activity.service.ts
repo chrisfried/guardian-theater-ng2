@@ -28,6 +28,7 @@ import { gt } from '../gt.typings';
 import { BungieHttpService } from './bungie-http.service';
 import { SettingsService } from './settings.service';
 import { TwitchService } from './twitch.service';
+import { MixerService } from './mixer.service';
 import { XboxService } from './xbox.service';
 import { GuardianService } from '../services/guardian.service';
 import { GtBadgePipe } from 'app/pipes/gt-badge.pipe';
@@ -46,6 +47,7 @@ export class ActivityService implements OnDestroy {
     private http: HttpClient,
     private bHttp: BungieHttpService,
     private twitchService: TwitchService,
+    private mixerService: MixerService,
     private sanitizer: DomSanitizer,
     private xboxService: XboxService,
     private route: ActivatedRoute,
@@ -167,6 +169,13 @@ export class ActivityService implements OnDestroy {
                 });
               }
 
+              if (!this.mixerService.mixer[membershipId]) {
+                this.mixerService.mixer[membershipId] = new BehaviorSubject({
+                  displayName
+                });
+              }
+
+              // Check Bungie API for Twitch ID
               this.subs.push(
                 this.twitchService.twitch[membershipId]
                   .pipe(
@@ -207,6 +216,7 @@ export class ActivityService implements OnDestroy {
 
               let twitchIdTemp = '';
 
+              // Fetch Twitch clips based on Twitch ID from Bungie
               this.subs.push(
                 this.twitchService.twitch[membershipId]
                   .pipe(
@@ -264,6 +274,7 @@ export class ActivityService implements OnDestroy {
                   })
               );
 
+              // Check GT API for Twitch ID
               this.subs.push(
                 this.twitchService.twitch[membershipId]
                   .pipe(
@@ -335,6 +346,7 @@ export class ActivityService implements OnDestroy {
                   .subscribe()
               );
 
+              // Fetch Twitch clips based on Twitch ID from GT API
               this.subs.push(
                 this.twitchService.twitch[membershipId]
                   .pipe(
@@ -408,6 +420,7 @@ export class ActivityService implements OnDestroy {
                   })
               );
 
+              // Check for matching Twtich Clips
               this.subs.push(
                 this.twitchService.twitch[membershipId].subscribe(
                   (subject: gt.TwitchServiceItem) => {
@@ -449,12 +462,195 @@ export class ActivityService implements OnDestroy {
                             '&time=' +
                             hms
                         );
-                        let clip = {
+                        let clip: gt.Clip = {
                           type: 'twitch',
                           start: recordedStart,
                           entry: entry,
                           video: video,
                           embedUrl: embedUrl,
+                          hhmmss: hms
+                        };
+                        entry.clips.push(clip);
+                        pgcr.clips.push(clip);
+                        pgcr.clips.sort(function(a, b) {
+                          return a.start - b.start;
+                        });
+                        pgcr.clips$.next(pgcr.clips);
+                      });
+                    }
+                  }
+                )
+              );
+
+              // Check GT API for Mixer Channel ID
+              this.subs.push(
+                this.mixerService.mixer[membershipId]
+                  .pipe(
+                    map((subject: gt.MixerServiceItem) => {
+                      let { checkedId } = subject;
+                      let url = '';
+                      if (!checkedId) {
+                        url = `https://guardiantheater.github.io/d2-stream-name-parser/${displayName}/mixer.json`;
+                      }
+                      return url;
+                    }),
+                    switchMap(url => {
+                      if (url) {
+                        return this.http.get(url).pipe(
+                          catchError((err: HttpErrorResponse) => {
+                            if (err.status === 404) {
+                              const next: gt.MixerServiceItem = {
+                                displayName,
+                                checkedId: true
+                              };
+                              this.mixerService.mixer[membershipId].next(next);
+                            }
+                            return observableEmpty();
+                          })
+                        );
+                      } else {
+                        return observableEmpty();
+                      }
+                    }),
+                    map((res: { [key: string]: number }) => {
+                      let max = 0;
+                      let channelId = '';
+                      for (let id in res) {
+                        if (res[id] > max) {
+                          channelId = id;
+                          max = res[id];
+                        }
+                      }
+                      if (channelId) {
+                        const next: gt.MixerServiceItem = {
+                          displayName,
+                          channelId,
+                          checkedId: true
+                        };
+                        this.mixerService.mixer[membershipId].next(next);
+                      }
+                    })
+                  )
+                  .subscribe()
+              );
+
+              let channelIdTemp;
+
+              // Fetch Twitch clips based on Mixer Channel ID from GT API
+              this.subs.push(
+                this.mixerService.mixer[membershipId]
+                  .pipe(
+                    map((subject: gt.MixerServiceItem) => {
+                      let { channelId, checkedResponse } = subject;
+                      channelIdTemp = channelId;
+                      const url =
+                        channelId && !checkedResponse
+                          ? 'https://mixer.com/api/v1/channels/' +
+                            channelId +
+                            '/recordings'
+                          : '';
+                      return url;
+                    }),
+                    distinctUntilChanged(),
+                    switchMap((url: string) => {
+                      if (url.length) {
+                        return this.http
+                          .get(url, {
+                            headers: new HttpHeaders().set(
+                              'Client-ID',
+                              '70eaab0506c7699b2c1800b9ce485786273c5db3b65d80c9'
+                            )
+                          })
+                          .pipe(
+                            catchError((err: HttpErrorResponse) => {
+                              if (err.status === 404) {
+                                const next: gt.MixerServiceItem = {
+                                  displayName,
+                                  channelId: channelIdTemp,
+                                  checkedId: true,
+                                  checkedResponse: true
+                                };
+                                this.mixerService.mixer[membershipId].next(
+                                  next
+                                );
+                              }
+                              return observableThrowError(
+                                err || 'Twitch Server error'
+                              );
+                            })
+                          );
+                      } else {
+                        return observableEmpty();
+                      }
+                    })
+                  )
+                  .subscribe((response: any) => {
+                    if (response) {
+                      const next: gt.MixerServiceItem = {
+                        displayName,
+                        channelId: channelIdTemp,
+                        checkedId: true,
+                        checkedResponse: true,
+                        response
+                      };
+                      this.mixerService.mixer[membershipId].next(next);
+                    }
+                  })
+              );
+
+              // Check for matching Mixer Clips
+              this.subs.push(
+                this.mixerService.mixer[membershipId].subscribe(
+                  (subject: gt.MixerServiceItem) => {
+                    if (subject.response && subject.response.length) {
+                      subject.response.forEach(video => {
+                        let recordedStart =
+                          new Date(video.createdAt).getTime() / 1000;
+                        let recordedStop = recordedStart + video.duration;
+                        if (recordedStart > entry.stopTime) {
+                          return;
+                        }
+                        if (recordedStop < entry.startTime) {
+                          return;
+                        }
+                        if (!pgcr.clips) {
+                          pgcr.clips = [];
+                        }
+                        if (!entry.clips) {
+                          entry.clips = [];
+                        }
+                        let offset = entry.startTime - recordedStart;
+                        let hms = '0h0m0s';
+                        if (offset > 0) {
+                          let h = Math.floor(offset / 3600);
+                          if (h > 24) {
+                            console.log(
+                              entry.player.destinyUserInfo.displayName,
+                              'stream started more than 24 hours before activity, presumed dead'
+                            );
+                            return;
+                          }
+                          let m = Math.floor((offset % 3600) / 60);
+                          let s = Math.floor((offset % 3600) % 60);
+                          hms = h + 'h' + m + 'm' + s + 's';
+                        }
+                        let embedUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+                          `https://mixer.com/embed/player/${
+                            subject.displayName
+                          }?vod=${video.id}&t=${offset}&disableLinks=1&hideChannel=1`
+                        );
+                        let vodUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+                          `https://mixer.com/${
+                            subject.displayName
+                          }?vod=${video.id}&t=${offset}`
+                        );
+                        let clip: gt.Clip = {
+                          type: 'mixer',
+                          start: recordedStart,
+                          entry,
+                          video,
+                          embedUrl,
+                          vodUrl,
                           hhmmss: hms
                         };
                         entry.clips.push(clip);

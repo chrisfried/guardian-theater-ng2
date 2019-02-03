@@ -64,6 +64,7 @@ declare namespace gt {
       response: xbox.Response;
     };
     twitch?: TwitchServiceItem;
+    mixer?: MixerServiceItem;
     clips?: Clip[];
     trn?: string;
   }
@@ -80,13 +81,24 @@ declare namespace gt {
     checkedScreenResponse?: boolean;
   }
 
+  interface MixerServiceItem {
+    displayName: string;
+    channelId?: string;
+    response?: mixer.Video[];
+
+    checkedId?: boolean;
+    checkedResponse?: boolean;
+  }
+
   interface Clip {
-    type: string;
+    type: 'xbox' | 'twitch' | 'mixer';
     start: number;
-    video: xbox.Video | twitch.Video;
+    video: xbox.Video | twitch.Video | mixer.Video;
     entry: Entry;
     embedUrl?: any;
+    vodUrl?: any;
     hhmmss?: string;
+    play?: boolean;
   }
 
   interface Links {
@@ -100,6 +112,7 @@ declare namespace gt {
     guardian?: {
       bungie?: boolean;
       twitch?: boolean;
+      mixer?: boolean;
       tracker?: boolean;
       ggg?: boolean;
       options?: boolean;

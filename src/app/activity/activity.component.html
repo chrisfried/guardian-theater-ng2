@@ -109,12 +109,26 @@
           </a>
           <div class="columns small-12 clip-wrapper" *ngIf="!clip.play">
             <img *ngIf="clip.video.thumbnails[0]" class="clip-thumbnail" (click)="clip.play = !clip.play" [src]="clip.video.thumbnails[0].url">
-            <span *ngIf="!clip.video.thumbnails[0]" (click)="clip.play = !clip.play" class="clip-play-button"></span>
+            <span *ngIf="!clip.video.thumbnails[0]" (click)="clip.play = !clip.play" class="clip-play-button twitch"></span>
           </div>
           <div class="columns small-12 clip-wrapper" *ngIf="clip.play">
             <iframe class="twitch-embed" [src]="clip.embedUrl" frameborder="0" scrolling="no" allowfullscreen="true">
             </iframe>
           </div>
+        </div>
+        <div class="row" *ngIf="clip.type === 'mixer' && clip.video">
+          <a class="columns small-12 mode mixer-banner" target="_blank" [href]="clip.vodUrl" angulartics2On="click"
+            angularticsEvent="MixerClipLink" angularticsCategory="MixerLink">
+            <span class="mixer-clip-name">{{ clip.video.name }}</span>
+            <span class="mixer-timestamp">{{ clip.start | twitchStamp:clip.entry.startTime }}</span>
+          </a>
+          <!--<div class="columns small-12 clip-wrapper" *ngIf="!clip.play">
+            <span (click)="clip.play = !clip.play" class="clip-play-button mixer"><span class="fi-play"></span></span>
+          </div>
+          <div class="columns small-12 clip-wrapper" *ngIf="clip.play">
+            <iframe class="mixer-embed" [src]="clip.embedUrl" frameborder="0" scrolling="no" allowfullscreen="true">
+            </iframe>
+          </div> -->
         </div>
         <div class="row" *ngIf="clip.type === 'xbox'">
           <div class="columns small-12 mode xbox-banner" target="_blank">

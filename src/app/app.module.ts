@@ -11,6 +11,7 @@ import { RoutesModule } from './routes/routes.module';
 
 import { BungieHttpService } from './services/bungie-http.service';
 import { TwitchService } from './services/twitch.service';
+import { MixerService } from './services/mixer.service';
 import { XboxService } from './services/xbox.service';
 import { SettingsService } from './services/settings.service';
 
@@ -62,7 +63,13 @@ import { PlatformAbbrPipe } from './pipes/platform-abbr.pipe';
     }),
     Angulartics2Module.forRoot([Angulartics2GoogleAnalytics])
   ],
-  providers: [BungieHttpService, TwitchService, XboxService, SettingsService],
+  providers: [
+    BungieHttpService,
+    TwitchService,
+    MixerService,
+    XboxService,
+    SettingsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

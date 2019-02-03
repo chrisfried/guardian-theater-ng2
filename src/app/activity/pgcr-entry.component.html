@@ -20,10 +20,21 @@
   *ngIf="links.guardian.twitch && entry.twitch && entry.twitch.twitchId"
   [ngClass]="entry.twitch.notFound ? 'not-found' : ''"
   [href]="
-    entry.twitch.response?.videos[0]?.channel?.url
+    (entry.twitch.response?.videos)[0]?.channel?.url
       ? entry.twitch.response.videos[0].channel.url
       : 'https://www.twitch.tv/' + entry.twitch.twitchId
   "
+  target="_blank"
+  angulartics2On="click"
+  angularticsEvent="GuardianLink"
+  angularticsCategory="TwitchLink"
+></a>
+<a
+  class="profile-link mixer"
+  title="View Guardian on Mixer"
+  (click)="stopPropagation($event)"
+  *ngIf="links.guardian.mixer && entry.mixer && entry.mixer.channelId"
+  [href]="'https://mixer.com/' + entry.mixer.displayName"
   target="_blank"
   angulartics2On="click"
   angularticsEvent="GuardianLink"

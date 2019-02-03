@@ -41,10 +41,11 @@ export class SettingsService {
     if (!this._links.guardian) {
       this._links.guardian = {
         bungie: false,
-        twitch: false,
+        twitch: true,
+        mixer: true,
         tracker: false,
         ggg: false,
-        options: true,
+        options: false,
         platform: false
       };
     }
@@ -57,7 +58,7 @@ export class SettingsService {
         gamedtv: false,
         xbox: true,
         download: true,
-        options: true
+        options: false
       };
     }
 
