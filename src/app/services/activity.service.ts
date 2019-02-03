@@ -548,7 +548,7 @@ export class ActivityService implements OnDestroy {
                         channelId && !checkedResponse
                           ? 'https://mixer.com/api/v1/channels/' +
                             channelId +
-                            '/recordings'
+                            '/recordings?limit=100&order=createdAt:DESC'
                           : '';
                       return url;
                     }),
@@ -605,9 +605,9 @@ export class ActivityService implements OnDestroy {
                   (subject: gt.MixerServiceItem) => {
                     if (subject.response && subject.response.length) {
                       subject.response.forEach(video => {
-                        let recordedStart =
+                        let recordedStop =
                           new Date(video.createdAt).getTime() / 1000;
-                        let recordedStop = recordedStart + video.duration;
+                        let recordedStart = recordedStop - video.duration;
                         if (recordedStart > entry.stopTime) {
                           return;
                         }
