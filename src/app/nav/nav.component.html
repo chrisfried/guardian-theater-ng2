@@ -1,38 +1,84 @@
 <div class="row align-middle">
   <div class="columns small-12 icon-menu align-right order-2 medium-order-3">
-    <a class="donate" title="Take My Money" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8GLMLFEGR5TFU"
-      target="_blank" angulartics2On="click" angularticsEvent="NavBarLink" angularticsCategory="DonateLink">
+    <a
+      class="donate"
+      title="Take My Money"
+      href="https://ko-fi.com/chrisfried"
+      target="_blank"
+      angulartics2On="click"
+      angularticsEvent="NavBarLink"
+      angularticsCategory="DonateLink"
+    >
       <span>Donate</span>
     </a>
-    <a title="Guardian Theater on Twitter" href="https://twitter.com/guardtheater" target="_blank" class="twitter" angulartics2On="click"
-      angularticsEvent="NavBarLink" angularticsCategory="TwitterLink">
+    <a
+      title="Guardian Theater on Twitter"
+      href="https://twitter.com/guardtheater"
+      target="_blank"
+      class="twitter"
+      angulartics2On="click"
+      angularticsEvent="NavBarLink"
+      angularticsCategory="TwitterLink"
+    >
       <span class="fi-social-twitter"></span>
     </a>
-    <a class="discord" title="Join our Discord Server" href="https://discord.gg/0lADdhKdnv0jxTNP" target="_blank" angulartics2On="click"
-      angularticsEvent="NavBarLink" angularticsCategory="DiscordLink">
+    <a
+      class="discord"
+      title="Join our Discord Server"
+      href="https://discord.gg/0lADdhKdnv0jxTNP"
+      target="_blank"
+      angulartics2On="click"
+      angularticsEvent="NavBarLink"
+      angularticsCategory="DiscordLink"
+    >
       <span>Discord</span>
     </a>
-    <a title="Github" href="https://github.com/GuardianTheater" target="_blank" angulartics2On="click" angularticsEvent="NavBarLink"
-      angularticsCategory="GithubLink">
+    <a
+      title="Github"
+      href="https://github.com/GuardianTheater"
+      target="_blank"
+      angulartics2On="click"
+      angularticsEvent="NavBarLink"
+      angularticsCategory="GithubLink"
+    >
       <span class="fi-social-github"></span>
     </a>
-    <a title="About Guardian Theater" (click)="route(['/about'])" angulartics2On="click" angularticsEvent="NavBarLink" angularticsCategory="AboutLink">
+    <a
+      title="About Guardian Theater"
+      (click)="route(['/about'])"
+      angulartics2On="click"
+      angularticsEvent="NavBarLink"
+      angularticsCategory="AboutLink"
+    >
       <span class="fi-info"></span>
     </a>
-    <a title="Settings" (click)="route(['/settings'])" angulartics2On="click" angularticsEvent="NavBarLink" angularticsCategory="SettingsLink">
+    <a
+      title="Settings"
+      (click)="route(['/settings'])"
+      angulartics2On="click"
+      angularticsEvent="NavBarLink"
+      angularticsCategory="SettingsLink"
+    >
       <span class="fi-wrench"></span>
     </a>
   </div>
   <div class="logo-wrap small-2 medium-12 columns order-3 medium-order-1">
     <a (click)="route(['/'])" class="home">
-      <img class="logo" src="/assets/images/travelereel.png">
+      <img class="logo" src="/assets/images/travelereel.png" />
     </a>
   </div>
   <div class="small-10 medium-12 columns order-4 medium-order-4">
     <form class="row search-form" (ngSubmit)="search()">
       <div class="small-12 columns input-group search-bar">
-        <input [(ngModel)]="searchString" name="searchString" text="quick-links" class="input-group-field search-box" type="search"
-          placeholder="Guardian" autofocus="true">
+        <input
+          [(ngModel)]="searchString"
+          name="searchString"
+          text="quick-links"
+          class="input-group-field search-box"
+          type="search"
+          placeholder="Guardian"
+          autofocus="true"
+        />
         <div class="input-group-button">
           <button type="submit" class="button search-button">Go</button>
         </div>
@@ -44,8 +90,13 @@
       <button class="button small expanded">Switch to Destiny 1</button>
     </a>
   </div>
-  <app-bungie-status class="small-12 columns order-5 medium-order-5"></app-bungie-status>
-  <div *ngIf="errorRes && errorRes.ErrorCode && errorRes.Message" class="small-12 columns order-5 medium-order-5">
+  <app-bungie-status
+    class="small-12 columns order-5 medium-order-5"
+  ></app-bungie-status>
+  <div
+    *ngIf="errorRes && errorRes.ErrorCode && errorRes.Message"
+    class="small-12 columns order-5 medium-order-5"
+  >
     <div class="callout warning">
       <h5>Bungie API Error Code {{ errorRes.ErrorCode }}</h5>
       <p [innerHTML]="errorRes.Message"></p>

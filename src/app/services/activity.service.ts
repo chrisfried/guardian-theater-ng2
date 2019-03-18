@@ -1,4 +1,8 @@
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import {
+  HttpClient,
+  HttpErrorResponse,
+  HttpHeaders
+} from '@angular/common/http';
 import { Injectable, OnDestroy } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute, Params } from '@angular/router';
@@ -24,8 +28,10 @@ import { gt } from '../gt.typings';
 import { BungieHttpService } from './bungie-http.service';
 import { SettingsService } from './settings.service';
 import { TwitchService } from './twitch.service';
+import { MixerService } from './mixer.service';
 import { XboxService } from './xbox.service';
 import { GuardianService } from '../services/guardian.service';
+import { GtBadgePipe } from 'app/pipes/gt-badge.pipe';
 
 @Injectable()
 export class ActivityService implements OnDestroy {
@@ -41,6 +47,7 @@ export class ActivityService implements OnDestroy {
     private http: HttpClient,
     private bHttp: BungieHttpService,
     private twitchService: TwitchService,
+    private mixerService: MixerService,
     private sanitizer: DomSanitizer,
     private xboxService: XboxService,
     private route: ActivatedRoute,
@@ -81,7 +88,7 @@ export class ActivityService implements OnDestroy {
         .pipe(
           map(activityId => {
             return activityId
-              ? 'https://www.bungie.net/Platform/Destiny2/Stats/PostGameCarnageReport/' +
+              ? 'https://stats.bungie.net/Platform/Destiny2/Stats/PostGameCarnageReport/' +
                   activityId +
                   '/'
               : '';
@@ -146,215 +153,518 @@ export class ActivityService implements OnDestroy {
           }
           try {
             pgcr.entries.forEach(entry => {
-              if (entry.player.bungieNetUserInfo) {
-                let membershipId = entry.player.bungieNetUserInfo.membershipId;
-                let displayName = entry.player.destinyUserInfo.displayName;
+              let membershipId = entry.player.bungieNetUserInfo
+                ? entry.player.bungieNetUserInfo.membershipId
+                : entry.player.destinyUserInfo.membershipId;
+              let displayName = entry.player.destinyUserInfo.displayName;
+              let displayNameUndersore = displayName.split(' ').join('_');
 
-                entry.iconUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-                  '//www.bungie.net' + entry.player.destinyUserInfo.iconPath
-                );
+              entry.iconUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+                '//www.bungie.net' + entry.player.destinyUserInfo.iconPath
+              );
 
-                if (!this.twitchService.twitch[membershipId]) {
-                  this.twitchService.twitch[membershipId] = new BehaviorSubject(
-                    {
-                      displayName: displayName,
-                      checkedId: false,
-                      twitchId: '',
-                      bungieId: membershipId,
-                      checkedResponse: false,
-                      response: null
+              if (!this.twitchService.twitch[membershipId]) {
+                this.twitchService.twitch[membershipId] = new BehaviorSubject({
+                  displayName,
+                  membershipId
+                });
+              }
+
+              if (!this.mixerService.mixer[membershipId]) {
+                this.mixerService.mixer[membershipId] = new BehaviorSubject({
+                  displayName: displayNameUndersore
+                });
+              }
+
+              // Check Bungie API for Twitch ID
+              this.subs.push(
+                this.twitchService.twitch[membershipId]
+                  .pipe(
+                    map((subject: gt.TwitchServiceItem) => {
+                      return subject.checkedId
+                        ? ''
+                        : 'https://stats.bungie.net/Platform/User/' +
+                            subject.membershipId +
+                            '/Partnerships/';
+                    }),
+                    distinctUntilChanged(),
+                    switchMap((url: string) => {
+                      if (url.length) {
+                        return this.bHttp.get(url);
+                      } else {
+                        return observableEmpty();
+                      }
+                    })
+                  )
+                  .subscribe(
+                    (res: ServerResponse<PublicPartnershipDetail[]>) => {
+                      try {
+                        let next: gt.TwitchServiceItem = {
+                          displayName,
+                          membershipId,
+                          checkedId: true
+                        };
+                        if (res.Response.length) {
+                          next.twitchId = res.Response[0].name;
+                        }
+                        this.twitchService.twitch[membershipId].next(next);
+                      } catch (e) {
+                        console.error(e);
+                      }
                     }
-                  );
-                }
+                  )
+              );
 
-                this.subs.push(
-                  this.twitchService.twitch[membershipId]
-                    .pipe(
-                      map(
-                        (subject: {
-                          displayName: string;
-                          checkedId: boolean;
-                          twitchId: string;
-                          bungieId: string;
-                          checkedResponse: boolean;
-                          response: {};
-                        }) => {
-                          return subject.checkedId
-                            ? ''
-                            : 'https://www.bungie.net/Platform/User/' +
-                                subject.bungieId +
-                                '/Partnerships/';
-                        }
-                      ),
-                      distinctUntilChanged(),
-                      switchMap((url: string) => {
-                        if (url.length) {
-                          return this.bHttp.get(url);
-                        } else {
-                          return observableEmpty();
-                        }
-                      })
-                    )
-                    .subscribe(
-                      (res: ServerResponse<PublicPartnershipDetail[]>) => {
-                        try {
-                          if (res.Response.length) {
-                            this.twitchService.twitch[membershipId].next({
-                              displayName: displayName,
-                              checkedId: true,
-                              twitchId: res.Response[0].name,
-                              bungieId: membershipId,
-                              checkedResponse: false,
-                              response: null
-                            });
-                          } else {
-                            this.twitchService.twitch[membershipId].next({
-                              displayName: displayName,
-                              checkedId: true,
-                              twitchId: '',
-                              bungieId: membershipId,
-                              checkedResponse: true,
-                              response: null
-                            });
-                          }
-                        } catch (e) {
-                          console.error(e);
+              let twitchIdTemp = '';
+
+              // Fetch Twitch clips based on Twitch ID from Bungie
+              this.subs.push(
+                this.twitchService.twitch[membershipId]
+                  .pipe(
+                    map((subject: gt.TwitchServiceItem) => {
+                      twitchIdTemp = subject.twitchId;
+                      const url =
+                        subject.twitchId && !subject.checkedResponse
+                          ? 'https://api.twitch.tv/kraken/channels/' +
+                            subject.twitchId +
+                            '/videos' +
+                            '?client_id=o8cuwhl23x5ways7456xhitdm0f4th0&limit=100&offset=0&broadcast_type=archive,highlight'
+                          : '';
+                      return url;
+                    }),
+                    distinctUntilChanged(),
+                    switchMap((url: string) => {
+                      if (url.length) {
+                        return this.http.get(url).pipe(
+                          catchError((err: HttpErrorResponse) => {
+                            if (err.status === 404) {
+                              const next: gt.TwitchServiceItem = {
+                                displayName,
+                                membershipId,
+                                checkedId: true,
+                                twitchId: twitchIdTemp,
+                                checkedResponse: true,
+                                notFound: true
+                              };
+                              this.twitchService.twitch[membershipId].next(
+                                next
+                              );
+                            }
+                            return observableThrowError(
+                              err || 'Twitch Server error'
+                            );
+                          })
+                        );
+                      } else {
+                        return observableEmpty();
+                      }
+                    })
+                  )
+                  .subscribe((response: any) => {
+                    if (response) {
+                      const next: gt.TwitchServiceItem = {
+                        displayName,
+                        membershipId,
+                        checkedId: true,
+                        twitchId: twitchIdTemp,
+                        checkedResponse: true,
+                        response
+                      };
+                      this.twitchService.twitch[membershipId].next(next);
+                    }
+                  })
+              );
+
+              // Check GT API for Twitch ID
+              this.subs.push(
+                this.twitchService.twitch[membershipId]
+                  .pipe(
+                    map((subject: gt.TwitchServiceItem) => {
+                      let {
+                        checkedId,
+                        twitchId,
+                        checkedResponse,
+                        notFound,
+                        checkedScreenAPI
+                      } = subject;
+                      let url = '';
+                      if (
+                        !checkedScreenAPI &&
+                        ((checkedId && !twitchId) ||
+                          (checkedResponse && notFound))
+                      ) {
+                        url = `https://guardiantheater.github.io/d2-stream-name-parser/${displayName}/twitch.json`;
+                      }
+                      return url;
+                    }),
+                    switchMap(url => {
+                      if (url) {
+                        return this.http.get(url).pipe(
+                          catchError((err: HttpErrorResponse) => {
+                            if (err.status === 404) {
+                              const next: gt.TwitchServiceItem = {
+                                displayName,
+                                membershipId,
+                                checkedId: true,
+                                checkedResponse: true,
+                                notFound: true,
+                                checkedScreenAPI: true,
+                                checkedScreenResponse: true
+                              };
+                              this.twitchService.twitch[membershipId].next(
+                                next
+                              );
+                            }
+                            return observableEmpty();
+                          })
+                        );
+                      } else {
+                        return observableEmpty();
+                      }
+                    }),
+                    map((res: { [key: string]: number }) => {
+                      let max = 0;
+                      let twitchId = '';
+                      for (let id in res) {
+                        if (res[id] > max) {
+                          twitchId = id;
+                          max = res[id];
                         }
                       }
-                    )
-                );
+                      if (twitchId) {
+                        const next: gt.TwitchServiceItem = {
+                          displayName,
+                          membershipId,
+                          twitchId,
+                          checkedId: true,
+                          checkedResponse: true,
+                          checkedScreenAPI: true
+                        };
+                        this.twitchService.twitch[membershipId].next(next);
+                      }
+                    })
+                  )
+                  .subscribe()
+              );
 
-                let twitchId = '';
-
-                this.subs.push(
-                  this.twitchService.twitch[membershipId]
-                    .pipe(
-                      map(
-                        (subject: {
-                          displayName: string;
-                          checkedId: boolean;
-                          twitchId: string;
-                          bungieId: string;
-                          checkedResponse: boolean;
-                          response: {};
-                        }) => {
-                          twitchId = subject.twitchId;
-                          return subject.twitchId && !subject.checkedResponse
-                            ? 'https://api.twitch.tv/kraken/channels/' +
-                                subject.twitchId +
-                                '/videos' +
-                                '?client_id=o8cuwhl23x5ways7456xhitdm0f4th0&limit=100&offset=0&broadcast_type=archive,highlight'
-                            : '';
-                        }
-                      ),
-                      distinctUntilChanged(),
-                      switchMap((url: string) => {
-                        if (url.length) {
-                          return this.http.get(url).pipe(
+              // Fetch Twitch clips based on Twitch ID from GT API
+              this.subs.push(
+                this.twitchService.twitch[membershipId]
+                  .pipe(
+                    map((subject: gt.TwitchServiceItem) => {
+                      let {
+                        twitchId,
+                        checkedScreenAPI,
+                        checkedScreenResponse
+                      } = subject;
+                      twitchIdTemp = twitchId;
+                      const url =
+                        twitchId && checkedScreenAPI && !checkedScreenResponse
+                          ? 'https://api.twitch.tv/kraken/channels/' +
+                            twitchId +
+                            '/videos' +
+                            '?client_id=o8cuwhl23x5ways7456xhitdm0f4th0&limit=100&offset=0&broadcast_type=archive,highlight'
+                          : '';
+                      return url;
+                    }),
+                    distinctUntilChanged(),
+                    switchMap((url: string) => {
+                      if (url.length) {
+                        return this.http
+                          .get(url, {
+                            headers: new HttpHeaders().set(
+                              'Accept',
+                              'application/vnd.twitchtv.v5+json'
+                            )
+                          })
+                          .pipe(
                             catchError((err: HttpErrorResponse) => {
                               if (err.status === 404) {
-                                this.twitchService.twitch[membershipId].next({
-                                  displayName: displayName,
+                                const next: gt.TwitchServiceItem = {
+                                  displayName,
+                                  membershipId,
                                   checkedId: true,
-                                  twitchId: twitchId,
-                                  bungieId: membershipId,
+                                  twitchId: twitchIdTemp,
                                   checkedResponse: true,
-                                  notFound: true,
-                                  response: null
-                                });
+                                  checkedScreenAPI: true,
+                                  checkedScreenResponse: true,
+                                  notFound: true
+                                };
+                                this.twitchService.twitch[membershipId].next(
+                                  next
+                                );
                               }
                               return observableThrowError(
                                 err || 'Twitch Server error'
                               );
                             })
                           );
-                        } else {
-                          return observableEmpty();
-                        }
-                      })
-                    )
-                    .subscribe(res => {
-                      if (res) {
-                        this.twitchService.twitch[membershipId].next({
-                          displayName: displayName,
-                          checkedId: true,
-                          twitchId: twitchId,
-                          bungieId: membershipId,
-                          checkedResponse: true,
-                          response: res
-                        });
+                      } else {
+                        return observableEmpty();
                       }
                     })
-                );
-
-                this.subs.push(
-                  this.twitchService.twitch[membershipId].subscribe(
-                    (subject: {
-                      displayName: string;
-                      checkedId: boolean;
-                      twitchId: string;
-                      bungieId: string;
-                      checkedResponse: boolean;
-                      response: twitch.Response;
-                    }) => {
-                      if (subject.response && subject.response._total > 0) {
-                        subject.response.videos.forEach(video => {
-                          let recordedStart =
-                            new Date(video.recorded_at).getTime() / 1000;
-                          let recordedStop = recordedStart + video.length;
-                          if (recordedStart > entry.stopTime) {
-                            return;
-                          }
-                          if (recordedStop < entry.startTime) {
-                            return;
-                          }
-                          if (!pgcr.clips) {
-                            pgcr.clips = [];
-                          }
-                          if (!entry.clips) {
-                            entry.clips = [];
-                          }
-                          let offset = entry.startTime - recordedStart;
-                          let hms = '0h0m0s';
-                          if (offset > 0) {
-                            let h = Math.floor(offset / 3600);
-                            if (h > 24) {
-                              console.log(
-                                entry.player.destinyUserInfo.displayName,
-                                'stream started more than 24 hours before activity, presumed dead'
-                              );
-                              return;
-                            }
-                            let m = Math.floor((offset % 3600) / 60);
-                            let s = Math.floor((offset % 3600) % 60);
-                            hms = h + 'h' + m + 'm' + s + 's';
-                          }
-                          let embedUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-                            '//player.twitch.tv/?video=' +
-                              video._id +
-                              '&time=' +
-                              hms
-                          );
-                          let clip = {
-                            type: 'twitch',
-                            start: recordedStart,
-                            entry: entry,
-                            video: video,
-                            embedUrl: embedUrl,
-                            hhmmss: hms
-                          };
-                          entry.clips.push(clip);
-                          pgcr.clips.push(clip);
-                          pgcr.clips.sort(function(a, b) {
-                            return a.start - b.start;
-                          });
-                          pgcr.clips$.next(pgcr.clips);
-                        });
-                      }
-                    }
                   )
-                );
-              }
+                  .subscribe((response: any) => {
+                    if (response) {
+                      const next: gt.TwitchServiceItem = {
+                        displayName,
+                        membershipId,
+                        checkedId: true,
+                        twitchId: twitchIdTemp,
+                        checkedResponse: true,
+                        checkedScreenAPI: true,
+                        checkedScreenResponse: true,
+                        response
+                      };
+                      this.twitchService.twitch[membershipId].next(next);
+                    }
+                  })
+              );
+
+              // Check for matching Twtich Clips
+              this.subs.push(
+                this.twitchService.twitch[membershipId].subscribe(
+                  (subject: gt.TwitchServiceItem) => {
+                    if (subject.response && subject.response._total > 0) {
+                      subject.response.videos.forEach(video => {
+                        let recordedStart =
+                          new Date(video.recorded_at).getTime() / 1000;
+                        let recordedStop = recordedStart + video.length;
+                        if (recordedStart > entry.stopTime) {
+                          return;
+                        }
+                        if (recordedStop < entry.startTime) {
+                          return;
+                        }
+                        if (!pgcr.clips) {
+                          pgcr.clips = [];
+                        }
+                        if (!entry.clips) {
+                          entry.clips = [];
+                        }
+                        let offset = entry.startTime - recordedStart;
+                        let hms = '0h0m0s';
+                        if (offset > 0) {
+                          let h = Math.floor(offset / 3600);
+                          if (h > 24) {
+                            console.log(
+                              entry.player.destinyUserInfo.displayName,
+                              'stream started more than 24 hours before activity, presumed dead'
+                            );
+                            return;
+                          }
+                          let m = Math.floor((offset % 3600) / 60);
+                          let s = Math.floor((offset % 3600) % 60);
+                          hms = h + 'h' + m + 'm' + s + 's';
+                        }
+                        let embedUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+                          '//player.twitch.tv/?video=' +
+                            video._id +
+                            '&time=' +
+                            hms
+                        );
+                        let clip: gt.Clip = {
+                          type: 'twitch',
+                          start: recordedStart,
+                          entry: entry,
+                          video: video,
+                          embedUrl: embedUrl,
+                          hhmmss: hms
+                        };
+                        entry.clips.push(clip);
+                        pgcr.clips.push(clip);
+                        pgcr.clips.sort(function(a, b) {
+                          return a.start - b.start;
+                        });
+                        pgcr.clips$.next(pgcr.clips);
+                      });
+                    }
+                  }
+                )
+              );
+
+              // Check GT API for Mixer Channel ID
+              this.subs.push(
+                this.mixerService.mixer[membershipId]
+                  .pipe(
+                    map((subject: gt.MixerServiceItem) => {
+                      let { checkedId } = subject;
+                      let url = '';
+                      if (!checkedId) {
+                        url = `https://guardiantheater.github.io/d2-stream-name-parser/${displayNameUndersore}/mixer.json`;
+                      }
+                      return url;
+                    }),
+                    switchMap(url => {
+                      if (url) {
+                        return this.http.get(url).pipe(
+                          catchError((err: HttpErrorResponse) => {
+                            if (err.status === 404) {
+                              const next: gt.MixerServiceItem = {
+                                displayName: displayNameUndersore,
+                                checkedId: true
+                              };
+                              this.mixerService.mixer[membershipId].next(next);
+                            }
+                            return observableEmpty();
+                          })
+                        );
+                      } else {
+                        return observableEmpty();
+                      }
+                    }),
+                    map((res: { [key: string]: number }) => {
+                      let max = 0;
+                      let channelId = '';
+                      for (let id in res) {
+                        if (res[id] > max) {
+                          channelId = id;
+                          max = res[id];
+                        }
+                      }
+                      if (channelId) {
+                        const next: gt.MixerServiceItem = {
+                          displayName: displayNameUndersore,
+                          channelId,
+                          checkedId: true
+                        };
+                        this.mixerService.mixer[membershipId].next(next);
+                      }
+                    })
+                  )
+                  .subscribe()
+              );
+
+              let channelIdTemp;
+
+              // Fetch Twitch clips based on Mixer Channel ID from GT API
+              this.subs.push(
+                this.mixerService.mixer[membershipId]
+                  .pipe(
+                    map((subject: gt.MixerServiceItem) => {
+                      let { channelId, checkedResponse } = subject;
+                      channelIdTemp = channelId;
+                      const url =
+                        channelId && !checkedResponse
+                          ? 'https://mixer.com/api/v1/channels/' +
+                            channelId +
+                            '/recordings?limit=100&order=createdAt:DESC'
+                          : '';
+                      return url;
+                    }),
+                    distinctUntilChanged(),
+                    switchMap((url: string) => {
+                      if (url.length) {
+                        return this.http
+                          .get(url, {
+                            headers: new HttpHeaders().set(
+                              'Client-ID',
+                              '70eaab0506c7699b2c1800b9ce485786273c5db3b65d80c9'
+                            )
+                          })
+                          .pipe(
+                            catchError((err: HttpErrorResponse) => {
+                              if (err.status === 404) {
+                                const next: gt.MixerServiceItem = {
+                                  displayName: displayNameUndersore,
+                                  channelId: channelIdTemp,
+                                  checkedId: true,
+                                  checkedResponse: true
+                                };
+                                this.mixerService.mixer[membershipId].next(
+                                  next
+                                );
+                              }
+                              return observableThrowError(
+                                err || 'Twitch Server error'
+                              );
+                            })
+                          );
+                      } else {
+                        return observableEmpty();
+                      }
+                    })
+                  )
+                  .subscribe((response: any) => {
+                    if (response) {
+                      const next: gt.MixerServiceItem = {
+                        displayName: displayNameUndersore,
+                        channelId: channelIdTemp,
+                        checkedId: true,
+                        checkedResponse: true,
+                        response
+                      };
+                      this.mixerService.mixer[membershipId].next(next);
+                    }
+                  })
+              );
+
+              // Check for matching Mixer Clips
+              this.subs.push(
+                this.mixerService.mixer[membershipId].subscribe(
+                  (subject: gt.MixerServiceItem) => {
+                    if (subject.response && subject.response.length) {
+                      subject.response.forEach(video => {
+                        let recordedStop =
+                          new Date(video.createdAt).getTime() / 1000;
+                        let recordedStart = recordedStop - video.duration;
+                        if (recordedStart > entry.stopTime) {
+                          return;
+                        }
+                        if (recordedStop < entry.startTime) {
+                          return;
+                        }
+                        if (!pgcr.clips) {
+                          pgcr.clips = [];
+                        }
+                        if (!entry.clips) {
+                          entry.clips = [];
+                        }
+                        let offset = entry.startTime - recordedStart;
+                        let hms = '0h0m0s';
+                        if (offset > 0) {
+                          let h = Math.floor(offset / 3600);
+                          if (h > 24) {
+                            console.log(
+                              entry.player.destinyUserInfo.displayName,
+                              'stream started more than 24 hours before activity, presumed dead'
+                            );
+                            return;
+                          }
+                          let m = Math.floor((offset % 3600) / 60);
+                          let s = Math.floor((offset % 3600) % 60);
+                          hms = h + 'h' + m + 'm' + s + 's';
+                        }
+                        let embedUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+                          `https://mixer.com/embed/player/${
+                            subject.displayName
+                          }?vod=${video.id}&t=${offset}&disableLinks=1&hideChannel=1`
+                        );
+                        let vodUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+                          `https://mixer.com/${
+                            subject.displayName
+                          }?vod=${video.id}&t=${offset}`
+                        );
+                        let clip: gt.Clip = {
+                          type: 'mixer',
+                          start: recordedStart,
+                          entry,
+                          video,
+                          embedUrl,
+                          vodUrl,
+                          hhmmss: hms
+                        };
+                        entry.clips.push(clip);
+                        pgcr.clips.push(clip);
+                        pgcr.clips.sort(function(a, b) {
+                          return a.start - b.start;
+                        });
+                        pgcr.clips$.next(pgcr.clips);
+                      });
+                    }
+                  }
+                )
+              );
             });
           } catch (e) {
             console.error(e);
@@ -474,59 +784,59 @@ export class ActivityService implements OnDestroy {
                 this.loadXboxClips(pgcr, entry, gamertag);
               }
 
-              if (entry.player.destinyUserInfo.membershipType === 4) {
-                if (
-                  !this.xboxService.xboxPC[
-                    entry.player.destinyUserInfo.displayName
-                  ]
-                ) {
-                  this.xboxService.xboxPC[
-                    entry.player.destinyUserInfo.displayName
-                  ] = new BehaviorSubject({
-                    checked: false,
-                    gamertag: entry.player.destinyUserInfo.displayName,
-                    response: null
-                  });
-                }
+              // if (entry.player.destinyUserInfo.membershipType === 4) {
+              //   if (
+              //     !this.xboxService.xboxPC[
+              //       entry.player.destinyUserInfo.displayName
+              //     ]
+              //   ) {
+              //     this.xboxService.xboxPC[
+              //       entry.player.destinyUserInfo.displayName
+              //     ] = new BehaviorSubject({
+              //       checked: false,
+              //       gamertag: entry.player.destinyUserInfo.displayName,
+              //       response: null
+              //     });
+              //   }
 
-                this.subs.push(
-                  this.guardianService
-                    .getLinkedAccounts(
-                      entry.player.destinyUserInfo.membershipType,
-                      entry.player.destinyUserInfo.membershipId
-                    )
-                    .subscribe(res => {
-                      res.Response.profiles.some(profile => {
-                        if (profile.membershipType === 1) {
-                          gamertag = profile.displayName;
-                          return true;
-                        }
-                      });
-                      res.Response.profilesWithErrors.some(profile => {
-                        if (profile.infoCard.membershipType === 1) {
-                          gamertag = profile.infoCard.displayName;
-                          return true;
-                        }
-                      });
-                      if (gamertag) {
-                        this.loadXboxClips(
-                          pgcr,
-                          entry,
-                          gamertag,
-                          entry.player.destinyUserInfo.displayName
-                        );
-                      } else {
-                        this.xboxService.xboxPC[
-                          entry.player.destinyUserInfo.displayName
-                        ].next({
-                          checked: true,
-                          gamertag: entry.player.destinyUserInfo.displayName,
-                          response: null
-                        });
-                      }
-                    })
-                );
-              }
+              //   this.subs.push(
+              //     this.guardianService
+              //       .getLinkedAccounts(
+              //         entry.player.destinyUserInfo.membershipType,
+              //         entry.player.destinyUserInfo.membershipId
+              //       )
+              //       .subscribe(res => {
+              //         res.Response.profiles.some(profile => {
+              //           if (profile.membershipType === 1) {
+              //             gamertag = profile.displayName;
+              //             return true;
+              //           }
+              //         });
+              //         res.Response.profilesWithErrors.some(profile => {
+              //           if (profile.infoCard.membershipType === 1) {
+              //             gamertag = profile.infoCard.displayName;
+              //             return true;
+              //           }
+              //         });
+              //         if (gamertag) {
+              //           this.loadXboxClips(
+              //             pgcr,
+              //             entry,
+              //             gamertag,
+              //             entry.player.destinyUserInfo.displayName
+              //           );
+              //         } else {
+              //           this.xboxService.xboxPC[
+              //             entry.player.destinyUserInfo.displayName
+              //           ].next({
+              //             checked: true,
+              //             gamertag: entry.player.destinyUserInfo.displayName,
+              //             response: null
+              //           });
+              //         }
+              //       })
+              //   );
+              // }
             });
           } catch (e) {
             console.error(e);

@@ -13,6 +13,7 @@ import { ActivityService } from '../services/activity.service';
 import { GuardianService } from '../services/guardian.service';
 import { SettingsService } from '../services/settings.service';
 import { TwitchService } from '../services/twitch.service';
+import { MixerService } from '../services/mixer.service';
 import { XboxService } from '../services/xbox.service';
 
 @Component({
@@ -54,6 +55,7 @@ export class ActivityComponent implements OnInit, OnDestroy {
   constructor(
     private activityService: ActivityService,
     public twitchService: TwitchService,
+    public mixerService: MixerService,
     private xboxService: XboxService,
     private router: Router,
     public settingsService: SettingsService
@@ -111,7 +113,54 @@ export class ActivityComponent implements OnInit, OnDestroy {
                   entry.player.bungieNetUserInfo.membershipId
                 ].subscribe(twitch => (entry.twitch = twitch))
               );
+            } else if (
+              this.twitchService.twitch[
+                entry.player.destinyUserInfo.membershipId
+              ]
+            ) {
+              loadingArray.push(
+                this.twitchService.twitch[
+                  entry.player.destinyUserInfo.membershipId
+                ]
+              );
+              this.subs.push(
+                this.twitchService.twitch[
+                  entry.player.destinyUserInfo.membershipId
+                ].subscribe(twitch => (entry.twitch = twitch))
+              );
             }
+
+            if (
+              entry.player.bungieNetUserInfo &&
+              this.mixerService.mixer[
+                entry.player.bungieNetUserInfo.membershipId
+              ]
+            ) {
+              loadingArray.push(
+                this.mixerService.mixer[
+                  entry.player.bungieNetUserInfo.membershipId
+                ]
+              );
+              this.subs.push(
+                this.mixerService.mixer[
+                  entry.player.bungieNetUserInfo.membershipId
+                ].subscribe(mixer => (entry.mixer = mixer))
+              );
+            } else if (
+              this.mixerService.mixer[entry.player.destinyUserInfo.membershipId]
+            ) {
+              loadingArray.push(
+                this.mixerService.mixer[
+                  entry.player.destinyUserInfo.membershipId
+                ]
+              );
+              this.subs.push(
+                this.mixerService.mixer[
+                  entry.player.destinyUserInfo.membershipId
+                ].subscribe(mixer => (entry.mixer = mixer))
+              );
+            }
+
             if (
               entry.player.destinyUserInfo.membershipType === 1 &&
               this.xboxService.xbox[entry.player.destinyUserInfo.displayName]
@@ -159,7 +208,8 @@ export class ActivityComponent implements OnInit, OnDestroy {
                 bungie: false,
                 xbox: false,
                 xboxPC: false,
-                twitch: false
+                twitch: false,
+                mixer: false
               };
               array.some(function(item) {
                 if (item.bungieId && !item.checkedId) {

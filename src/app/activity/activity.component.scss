@@ -1,6 +1,8 @@
 @import '../../variables';
 .activity {
   margin-bottom: 1em;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .activity-header {
@@ -244,6 +246,7 @@
 
 .clip-wrapper > div,
 .twitch-embed,
+.mixer-embed,
 .xbox-embed {
   position: absolute;
   margin-left: 0 !important;
@@ -280,6 +283,21 @@
   bottom: 0;
   width: 100%;
   background-color: #ddd;
+  color: white;
+  font-size: 8em;
+  display: flex;
+
+  .fi-play {
+    margin: auto;
+  }
+
+  &.mixer {
+    background-color: darken($mixer-blue, 25%);
+  }
+
+  &.twitch {
+    background-color: darken($twitch-purple, 25%);
+  }
 }
 
 .mode.loading {
@@ -352,6 +370,13 @@
 }
 
 .twitch-spinner {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  color: white;
+}
+
+.mixer-spinner {
   position: absolute;
   left: 0;
   width: 100%;
@@ -506,8 +531,12 @@
   background-color: $twitch-purple;
 }
 
-.profile-link.twitch.not-found {
-  background-color: $no-clips-grey;
+.profile-link.mixer {
+  background-image: url('/assets/images/mixer-white.png');
+}
+
+.profile-link.mixer:hover {
+  background-color: $mixer-blue;
 }
 
 .profile-link.tracker,
@@ -592,6 +621,11 @@
   display: flex;
   @include background-hover-darken($twitch-purple);
 }
+.mixer-banner {
+  border-top: 1px solid white;
+  display: flex;
+  @include background-hover-darken($mixer-blue);
+}
 .xbox-banner {
   border-top: 1px solid white;
   display: flex;
@@ -600,6 +634,7 @@
   cursor: initial;
 }
 .twitch-clip-name,
+.mixer-clip-name,
 .xbox-clip-name {
   white-space: nowrap;
   overflow: hidden;
@@ -639,6 +674,6 @@
 .player-label.Contributor {
   color: $contributor-purple;
 }
-.player-label.Ownerer {
+.player-label.Creator {
   color: $owner-purple;
 }

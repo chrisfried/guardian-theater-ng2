@@ -1,7 +1,4 @@
-import {
-  BehaviorSubject,
-  Subscription
-} from 'rxjs';
+import { BehaviorSubject, Subscription } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { BungieHttpService } from '../services/bungie-http.service';
 
@@ -19,7 +16,7 @@ export class BungieStatusComponent implements OnInit {
   ngOnInit() {
     this.bungieStatus = new BehaviorSubject([]);
     this.bungieSub = this.bHttp
-      .get('https://www.bungie.net/Platform/GlobalAlerts/')
+      .get('https://stats.bungie.net/Platform/GlobalAlerts/')
       .subscribe(res => {
         try {
           this.bungieStatus.next(res.Response);

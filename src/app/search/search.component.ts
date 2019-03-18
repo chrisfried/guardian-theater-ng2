@@ -45,7 +45,7 @@ export class SearchComponent implements OnInit, OnDestroy {
         map(searchName => {
           this.searching = true;
           return searchName.length
-            ? 'https://www.bungie.net/Platform/Destiny2/SearchDestinyPlayer/-1/' +
+            ? 'https://stats.bungie.net/Platform/Destiny2/SearchDestinyPlayer/-1/' +
                 encodeURIComponent(searchName) +
                 '/'
             : '';

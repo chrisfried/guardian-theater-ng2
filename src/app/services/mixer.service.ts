@@ -3,12 +3,12 @@ import { BehaviorSubject } from 'rxjs';
 import { gt } from '../gt.typings';
 
 @Injectable()
-export class TwitchService {
-  public twitch: {
-    [key: string]: BehaviorSubject<gt.TwitchServiceItem>;
+export class MixerService {
+  public mixer: {
+    [key: string]: BehaviorSubject<gt.MixerServiceItem>;
   };
 
   constructor() {
-    this.twitch = {};
+    this.mixer = {};
   }
 }

@@ -7,106 +7,125 @@ import {
 
 declare namespace gt {
   interface ClipLimiter {
-    self?: boolean,
-    fireteam?: boolean,
-    team?: boolean,
-    opponents?: boolean,
-    xbox?: boolean,
-    twitch?: boolean
+    self?: boolean;
+    fireteam?: boolean;
+    team?: boolean;
+    opponents?: boolean;
+    xbox?: boolean;
+    twitch?: boolean;
   }
 
   interface Activity extends DestinyHistoricalStatsPeriodGroup {
-    pgcr?: PostGameCarnageReport,
-    loadingPgcr?: boolean
+    pgcr?: PostGameCarnageReport;
+    loadingPgcr?: boolean;
   }
 
   interface Team extends DestinyPostGameCarnageReportTeamEntry {
-    entries?: Entry[],
-    trialsLink?: string
+    entries?: Entry[];
+    trialsLink?: string;
   }
 
   interface PostGameCarnageReport extends DestinyPostGameCarnageReportData {
-    entries: Entry[],
+    entries: Entry[];
 
-    teams: Team[],
+    teams: Team[];
 
-    clips$?: any,
-    filteredClips$?: any,
+    clips$?: any;
+    filteredClips$?: any;
 
     loading?: {
-      message: string,
-      twitch: boolean,
-      bungie: boolean,
-      xbox: boolean
-    },
+      message: string;
+      twitch: boolean;
+      bungie: boolean;
+      xbox: boolean;
+    };
 
-    clips?: Clip[],
+    clips?: Clip[];
 
-    showClips?: boolean,
+    showClips?: boolean;
 
     active?: {
-      entry: Entry,
-      team: number,
-      fireteam: number
-    }
+      entry: Entry;
+      team: number;
+      fireteam: number;
+    };
   }
 
   interface Entry extends DestinyPostGameCarnageReportEntry {
-    twitchId?: string,
-    startTime?: number,
-    stopTime?: number,
-    twitchClips?: twitch.Video[],
-    xboxClips?: xbox.Video[],
-    iconUrl?: any,
+    twitchId?: string;
+    startTime?: number;
+    stopTime?: number;
+    twitchClips?: twitch.Video[];
+    xboxClips?: xbox.Video[];
+    iconUrl?: any;
     xbox?: {
-      checked: boolean,
-      gamertag: string,
-      response: xbox.Response
-    }
-    twitch?: {
-      checkedId: boolean,
-      twitchId: string,
-      bungieId: string,
-      checkedResponse: boolean,
-      response: {}
-    },
-    clips?: Clip[],
-    trn?: string
+      checked: boolean;
+      gamertag: string;
+      response: xbox.Response;
+    };
+    twitch?: TwitchServiceItem;
+    mixer?: MixerServiceItem;
+    clips?: Clip[];
+    trn?: string;
+  }
+
+  interface TwitchServiceItem {
+    displayName: string;
+    membershipId: string;
+    checkedId?: boolean;
+    twitchId?: string;
+    checkedResponse?: boolean;
+    response?: twitch.Response;
+    notFound?: boolean;
+    checkedScreenAPI?: boolean;
+    checkedScreenResponse?: boolean;
+  }
+
+  interface MixerServiceItem {
+    displayName: string;
+    channelId?: string;
+    response?: mixer.Video[];
+
+    checkedId?: boolean;
+    checkedResponse?: boolean;
   }
 
   interface Clip {
-    type: string,
-    start: number,
-    video: (xbox.Video | twitch.Video),
-    entry: Entry,
-    embedUrl?: any,
-    hhmmss?: string
+    type: 'xbox' | 'twitch' | 'mixer';
+    start: number;
+    video: xbox.Video | twitch.Video | mixer.Video;
+    entry: Entry;
+    embedUrl?: any;
+    vodUrl?: any;
+    hhmmss?: string;
+    play?: boolean;
   }
 
   interface Links {
     activity?: {
-      bungie?: boolean,
-      tracker?: boolean,
-      ggg?: boolean,
-      trials?: boolean,
-      options?: boolean
-    },
+      bungie?: boolean;
+      tracker?: boolean;
+      ggg?: boolean;
+      trials?: boolean;
+      options?: boolean;
+    };
     guardian?: {
-      bungie?: boolean,
-      twitch?: boolean,
-      tracker?: boolean,
-      ggg?: boolean,
-      options?: boolean,
-      platform?: boolean
-    },
+      bungie?: boolean;
+      twitch?: boolean;
+      mixer?: boolean;
+      tracker?: boolean;
+      ggg?: boolean;
+      options?: boolean;
+      platform?: boolean;
+    };
     xbox?: {
-      recordus?: boolean,
-      dvr?: boolean,
-      clips?: boolean,
-      gamedtv?: boolean,
-      xbox?: boolean,
-      download?: boolean,
-      options?: boolean
-    }
+      recordus?: boolean;
+      dvr?: boolean;
+      clips?: boolean;
+      gamedtv?: boolean;
+      xbox?: boolean;
+      download?: boolean;
+      options?: boolean;
+    };
   }
 }
