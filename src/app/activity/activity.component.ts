@@ -15,6 +15,7 @@ import { SettingsService } from '../services/settings.service';
 import { TwitchService } from '../services/twitch.service';
 import { MixerService } from '../services/mixer.service';
 import { XboxService } from '../services/xbox.service';
+import { checkServerIdentity } from 'tls';
 
 @Component({
   selector: 'app-activity',
@@ -211,7 +212,7 @@ export class ActivityComponent implements OnInit, OnDestroy {
                 twitch: false,
                 mixer: false
               };
-              array.some(function(item) {
+              array.some(function(item: { bungieId, checkedId, displayName, checkedResponse, checked, gamertag}) {
                 if (item.bungieId && !item.checkedId) {
                   loading.message =
                     'Fetching Twitch username for ' + item.displayName + '...';
@@ -228,17 +229,17 @@ export class ActivityComponent implements OnInit, OnDestroy {
                   return true;
                 }
               });
-              array.some(function(item) {
+              array.some(function(item: { bungieId, checkedId }) {
                 if (item.bungieId && !item.checkedId) {
                   return (loading.bungie = true);
                 }
               });
-              array.some(function(item) {
+              array.some(function(item: { bungieId, checkedResponse}) {
                 if (item.bungieId && !item.checkedResponse) {
                   return (loading.twitch = true);
                 }
               });
-              array.some(function(item) {
+              array.some(function(item: {gamertag, checked}) {
                 if (item.gamertag && !item.checked) {
                   return (loading.xbox = true);
                 }

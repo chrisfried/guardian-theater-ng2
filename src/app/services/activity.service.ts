@@ -322,20 +322,37 @@ export class ActivityService implements OnDestroy {
                         return observableEmpty();
                       }
                     }),
-                    map((res: { [key: string]: number }) => {
+                    map((res: { [key: string]: number | any }) => {
                       let max = 0;
                       let twitchId = '';
                       for (let id in res) {
-                        if (res[id] > max) {
+                        if (id === 'confirmed') {
+                          if (res[id][membershipId]) {
+                            twitchId = res[id][membershipId]
+                            break
+                          }
+                        } else if (res[id] > max) {
                           twitchId = id;
                           max = res[id];
                         }
                       }
+                      return twitchId;
+                    }),
+                    switchMap((twitchId) => {
                       if (twitchId) {
+                        return this.http.get(`https://api.twitch.tv/kraken/users/${twitchId}?client_id=o8cuwhl23x5ways7456xhitdm0f4th0`, {
+                          headers: new HttpHeaders().set('Accept', 'application/vnd.twitchtv.v5+json')
+                        })
+                      } else {
+                        return observableEmpty();
+                      }
+                    }),
+                    map((res: { name: string }) => {
+                      if (res && res.name) {
                         const next: gt.TwitchServiceItem = {
                           displayName,
                           membershipId,
-                          twitchId,
+                          twitchId: res.name,
                           checkedId: true,
                           checkedResponse: true,
                           checkedScreenAPI: true
@@ -371,12 +388,14 @@ export class ActivityService implements OnDestroy {
                     switchMap((url: string) => {
                       if (url.length) {
                         return this.http
-                          .get(url, {
-                            headers: new HttpHeaders().set(
-                              'Accept',
-                              'application/vnd.twitchtv.v5+json'
-                            )
-                          })
+                          .get(url
+                          //   , {
+                          //   headers: new HttpHeaders().set(
+                          //     'Accept',
+                          //     'application/vnd.twitchtv.v5+json'
+                          //   )
+                          // }
+                          )
                           .pipe(
                             catchError((err: HttpErrorResponse) => {
                               if (err.status === 404) {

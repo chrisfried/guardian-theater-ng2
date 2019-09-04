@@ -579,40 +579,40 @@
 
 .Alpha {
   background-color: $alpha-blue;
-  &.pgcr-entry /deep/ .pgcr-entry-name {
+  &.pgcr-entry ::ng-deep .pgcr-entry-name {
     @include background-hover-darken($alpha-blue);
   }
 }
 
 .Bravo {
   background-color: $bravo-orange;
-  &.pgcr-entry /deep/ .pgcr-entry-name {
+  &.pgcr-entry ::ng-deep .pgcr-entry-name {
     @include background-hover-darken($bravo-orange);
   }
 }
 
 .Team {
   background-color: $blueberry-blue;
-  &.pgcr-entry /deep/ .pgcr-entry-name {
+  &.pgcr-entry ::ng-deep .pgcr-entry-name {
     @include background-hover-darken($blueberry-blue);
   }
 }
 
 .Opponent {
   background-color: $opponent-red;
-  &.pgcr-entry /deep/ .pgcr-entry-name {
+  &.pgcr-entry ::ng-deep .pgcr-entry-name {
     @include background-hover-darken($opponent-red, $crucible-red);
   }
 }
 .Fireteam {
   background-color: $fireteam-green;
-  &.pgcr-entry /deep/ .pgcr-entry-name {
+  &.pgcr-entry ::ng-deep .pgcr-entry-name {
     @include background-hover-darken($fireteam-green);
   }
 }
 .Player {
   background-color: $fireteam-green;
-  &.pgcr-entry /deep/ .pgcr-entry-name {
+  &.pgcr-entry ::ng-deep .pgcr-entry-name {
     @include background-hover-darken($fireteam-green);
   }
 }

@@ -57,11 +57,11 @@ import { PlatformAbbrPipe } from './pipes/platform-abbr.pipe';
     FormsModule,
     HttpClientModule,
     RoutesModule,
-    LocalStorageModule.withConfig({
+    LocalStorageModule.forRoot({
       prefix: 'gt',
       storageType: 'localStorage'
     }),
-    Angulartics2Module.forRoot([Angulartics2GoogleAnalytics])
+    Angulartics2Module.forRoot()
   ],
   providers: [
     BungieHttpService,
