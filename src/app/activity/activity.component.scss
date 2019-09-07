@@ -1,4 +1,5 @@
 @import '../../variables';
+
 .activity {
   margin-bottom: 1em;
   max-width: 100%;
@@ -29,10 +30,20 @@
   transition-duration: 300ms;
   transition-timing-function: ease-in;
 
+  :host-context(.dark) & {
+    background-color: $dark-mode-no-clips-grey;
+  }
+
   &.spinner-block,
   .activity-info,
   .activity-count {
     @include background-hover-darken($no-clips-grey);
+  }
+
+  :host-context(.dark) &.spinner-block,
+  .activity-info,
+  .activity-count {
+    @include background-hover-darken($dark-mode-no-clips-grey);
   }
 }
 
@@ -52,6 +63,7 @@
 .mode-30 {
   transition-duration: 600ms;
   background-color: rgba(48, 56, 65, 1);
+
   &.spinner-block,
   .activity-info,
   .activity-count {
@@ -63,6 +75,7 @@
 .mode-2 {
   transition-duration: 600ms;
   background-color: $story-orange;
+
   &.spinner-block,
   .activity-info,
   .activity-count {
@@ -79,6 +92,7 @@
 .mode-47 {
   transition-duration: 600ms;
   background-color: $strike-blue;
+
   &.spinner-block,
   .activity-info,
   .activity-count {
@@ -90,6 +104,7 @@
 .mode-4 {
   transition-duration: 600ms;
   background-color: $raid-blue;
+
   &.spinner-block,
   .activity-info,
   .activity-count {
@@ -104,6 +119,7 @@
 .mode-58 {
   transition-duration: 600ms;
   background-color: $patrol-green;
+
   &.spinner-block,
   .activity-info,
   .activity-count {
@@ -125,6 +141,7 @@
 .mode-50 {
   transition-duration: 600ms;
   background-color: $crucible-red;
+
   &.spinner-block,
   .activity-info,
   .activity-count {
@@ -138,6 +155,7 @@
 .mode-42 {
   transition-duration: 600ms;
   background-color: $crucible-red;
+
   &.spinner-block,
   .activity-info,
   .activity-count {
@@ -152,6 +170,7 @@
 .mode-45 {
   transition-duration: 600ms;
   background-color: $crucible-red;
+
   &.spinner-block,
   .activity-info,
   .activity-count {
@@ -170,6 +189,7 @@
 .mode-57 {
   transition-duration: 600ms;
   background-color: $crucible-red;
+
   &.spinner-block,
   .activity-info,
   .activity-count {
@@ -222,6 +242,7 @@
 .clip-item {
   margin: 0 1em;
 }
+
 .clip-item-wrapper {
   overflow: hidden;
   margin: 0 0 1em;
@@ -235,6 +256,10 @@
   position: relative;
   overflow: hidden;
   border-top: 1px solid white;
+
+  :host-context(.dark) & {
+    border-color: $dark-mode-background;
+  }
 }
 
 .clip-wrapper:before {
@@ -244,7 +269,7 @@
   padding-top: 56.25%;
 }
 
-.clip-wrapper > div,
+.clip-wrapper>div,
 .twitch-embed,
 .mixer-embed,
 .xbox-embed {
@@ -319,11 +344,19 @@
   height: 84px;
   line-height: 84px;
   padding: 0;
+
+  :host-context(.dark) & {
+    border-color: $dark-mode-background;
+  }
 }
 
 .date-block {
   border-top: 1px solid white;
   border-right: 1px solid white;
+
+  :host-context(.dark) & {
+    border-color: $dark-mode-background;
+  }
 }
 
 .spinner-block.pgcr {
@@ -341,6 +374,11 @@
 
 .pgcr.pgcr-full {
   max-height: none;
+  border-right: 1px solid white;
+
+  :host-context(.dark) & {
+    border-color: $dark-mode-background;
+  }
 }
 
 .spinner {
@@ -414,6 +452,7 @@
   0% {
     -webkit-transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
   }
@@ -423,6 +462,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -439,6 +479,11 @@
   border-right: 1px solid white;
   display: flex;
   padding: 0;
+
+  :host-context(.dark) & {
+    border-color: $dark-mode-background;
+  }
+
   .no-clips & {
     opacity: 0.75;
   }
@@ -498,11 +543,19 @@
   color: white;
   text-align: center;
   font-weight: bold;
+
+  :host-context(.dark) & {
+    border-color: $dark-mode-background;
+  }
 }
 
 .activity-count {
   border-left: none;
   border-right: 1px solid white;
+
+  :host-context(.dark) & {
+    border-color: $dark-mode-background;
+  }
 }
 
 .profile-link.bungie,
@@ -561,6 +614,7 @@
 
 .profile-link.platform.ps {
   background-image: url('/assets/images/ps.png');
+
   &:hover {
     background-color: $playstation-blue;
   }
@@ -579,6 +633,7 @@
 
 .Alpha {
   background-color: $alpha-blue;
+
   &.pgcr-entry ::ng-deep .pgcr-entry-name {
     @include background-hover-darken($alpha-blue);
   }
@@ -586,6 +641,7 @@
 
 .Bravo {
   background-color: $bravo-orange;
+
   &.pgcr-entry ::ng-deep .pgcr-entry-name {
     @include background-hover-darken($bravo-orange);
   }
@@ -593,6 +649,7 @@
 
 .Team {
   background-color: $blueberry-blue;
+
   &.pgcr-entry ::ng-deep .pgcr-entry-name {
     @include background-hover-darken($blueberry-blue);
   }
@@ -600,39 +657,60 @@
 
 .Opponent {
   background-color: $opponent-red;
+
   &.pgcr-entry ::ng-deep .pgcr-entry-name {
     @include background-hover-darken($opponent-red, $crucible-red);
   }
 }
+
 .Fireteam {
   background-color: $fireteam-green;
+
   &.pgcr-entry ::ng-deep .pgcr-entry-name {
     @include background-hover-darken($fireteam-green);
   }
 }
+
 .Player {
   background-color: $fireteam-green;
+
   &.pgcr-entry ::ng-deep .pgcr-entry-name {
     @include background-hover-darken($fireteam-green);
   }
 }
+
 .twitch-banner {
   border-top: 1px solid white;
   display: flex;
   @include background-hover-darken($twitch-purple);
+
+  :host-context(.dark) & {
+    border-color: $dark-mode-background;
+  }
 }
+
 .mixer-banner {
   border-top: 1px solid white;
   display: flex;
   @include background-hover-darken($mixer-blue);
+
+  :host-context(.dark) & {
+    border-color: $dark-mode-background;
+  }
 }
+
 .xbox-banner {
   border-top: 1px solid white;
   display: flex;
   background-color: $xbox-green;
   padding-right: 0;
   cursor: initial;
+
+  :host-context(.dark) & {
+    border-color: $dark-mode-background;
+  }
 }
+
 .twitch-clip-name,
 .mixer-clip-name,
 .xbox-clip-name {
@@ -642,17 +720,21 @@
   flex-grow: 1;
   padding-right: 0.5em;
 }
+
 .xbox-clip-link {
   color: white;
   text-align: center;
   @include background-hover-darken($xbox-green);
 }
+
 .xbox-clip-link.xboxdvr {
   background-image: url('/assets/images/xdvr.png');
 }
+
 .xbox-clip-link.gamedtv {
   background-image: url('/assets/images/gamed.png');
 }
+
 .player-label {
   background: white;
   border-radius: 0.25em;
@@ -662,18 +744,23 @@
   cursor: inherit;
   vertical-align: middle;
 }
+
 .player-label.Patron {
   color: $patreon-orange;
 }
+
 .player-label.Donor {
   color: $donor-blue;
 }
+
 .player-label.Shirt.Haver {
   color: $light-purple;
 }
+
 .player-label.Contributor {
   color: $contributor-purple;
 }
+
 .player-label.Creator {
   color: $owner-purple;
 }

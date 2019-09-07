@@ -8,7 +8,10 @@
   margin-bottom: 5px;
 }
 
-.activeCharacter a, .activeCharacter a:visited, .activeCharacter a:hover, .activeCharacter a:active {
+.activeCharacter a,
+.activeCharacter a:visited,
+.activeCharacter a:hover,
+.activeCharacter a:active {
   display: block;
   color: white;
 }
@@ -16,34 +19,49 @@
 .activity .clip a {
   display: inline-block;
 }
-.activity-link, .activity-link:visited, .activity-link:hover, .activity-link:active {
+
+.activity-link,
+.activity-link:visited,
+.activity-link:hover,
+.activity-link:active {
   color: white;
   display: block;
 }
+
 .player-bar {
   margin-top: .15em;
   margin-bottom: .15em;
   max-height: 36px;
   overflow: hidden;
 }
+
 .player-column {
   padding-right: 0 !important;
 }
+
 .player-stats-column {
   padding: 0 !important;
 }
+
 .activity .player {
   max-height: 36px;
   overflow: hidden;
 }
+
 .activity .player .emblem {
   width: 36px;
   margin-right: .25em;
 }
-.activity .displayName, .activity .clanTag {
+
+.activity .displayName,
+.activity .clanTag {
   position: relative;
 }
-.player-stats, .download, .permalink, .gif {
+
+.player-stats,
+.download,
+.permalink,
+.gif {
   line-height: 36px;
   padding: 0 .25em;
   width: 30px;
@@ -52,9 +70,11 @@
   font-size: 1.35em;
   color: #333; // TODO: I can't find a place where this class is used.
 }
+
 .gif {
   font-size: 1em;
 }
+
 .displayName {
   font-weight: bold;
   line-height: 36px;
@@ -68,7 +88,8 @@
   margin-bottom: .5em;
 }
 
-videogular vg-overlay-play .play:before, [videogular] vg-overlay-play .play:before {
+videogular vg-overlay-play .play:before,
+[videogular] vg-overlay-play .play:before {
   content: ' ' !important;
 }
 
@@ -79,12 +100,13 @@ videogular vg-overlay-play .play:before, [videogular] vg-overlay-play .play:befo
 .home {
   display: block;
 }
+
 .wrapper {
   margin-top: .5em;
 }
 
 .activity-history-end {
-  color: rgba(180,188,197,.75); //TODO: Where is this used?
+  color: rgba(180, 188, 197, .75); //TODO: Where is this used?
   text-align: center;
   margin-bottom: .5em;
 }

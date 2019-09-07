@@ -8,6 +8,7 @@ import { UserInfoCard } from 'bungie-api-ts/user';
 export class SettingsService {
   private _clipLimiter: gt.ClipLimiter;
   private _links: gt.Links;
+  private _dark: boolean;
 
   public clipLimiter: BehaviorSubject<gt.ClipLimiter>;
   public links: BehaviorSubject<gt.Links>;
@@ -15,6 +16,7 @@ export class SettingsService {
   public userLang: {
     language?: string;
   };
+  public dark: BehaviorSubject<boolean>;
 
   constructor(private localStorageService: LocalStorageService) {
     this._clipLimiter = this.localStorageService.get('CLIP_LIMITER') || {
@@ -27,6 +29,8 @@ export class SettingsService {
     };
 
     this._links = this.localStorageService.get('LINKS') || {};
+
+    this._dark = this.localStorageService.get('DARK') || false;
 
     if (!this._links.activity) {
       this._links.activity = {
@@ -65,6 +69,7 @@ export class SettingsService {
     this.clipLimiter = new BehaviorSubject(this._clipLimiter);
     this.links = new BehaviorSubject(this._links);
     this.activeProfiles = new BehaviorSubject([]);
+    this.dark = new BehaviorSubject(this._dark);
 
     this.userLang = {
       language: 'en'
@@ -129,6 +134,12 @@ export class SettingsService {
     this._links.xbox[link] = !this._links.xbox[link];
     this.links.next(this._links);
     this.localStorageService.set('LINKS', this._links);
+  }
+
+  toggleDark() {
+    this._dark = !this._dark;
+    this.dark.next(this._dark);
+    this.localStorageService.set('DARK', this._dark);
   }
 
   set setLanguage(language) {

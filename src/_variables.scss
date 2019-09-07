@@ -29,26 +29,31 @@ $twitch-purple: #6441a4;
 $twitter-blue: #55acee;
 $xbox-green: #5dc21e;
 $mixer-blue: #1fbaed;
+$dark-mode-text: rgba(255, 255, 255, .87);
+$dark-mode-background: rgb(15, 15, 15);
+$dark-mode-no-clips-grey: rgba(180, 188, 197, .25);
+$dark-mode-dark-panel: rgb(30, 30, 30);
 /**** End Color Definitions ****/
 
 $contributor-purple: $light-purple;
 $owner-purple: $dark-purple;
 
 $hover-darken-percentage: 15%;
-$transition-parameters: 0.25s ease-out, color 0.25s ease-out;
+$transition-parameters: 0.25s ease-out,
+color 0.25s ease-out;
 
 // Little hover mixin to reduce boilerplate. $hover-color is an optional
 // second parameter. If absent then a default darken will be used. $properties is
 // a list of properties to apply the transition and darkening to.
-@mixin darken-generic-properties-on-hover(
-  $color,
+@mixin darken-generic-properties-on-hover($color,
   $hover-color: null,
-  $properties...
-) {
+  $properties...) {
   cursor: pointer;
+
   @each $property in $properties {
     transition: $property $transition-parameters;
     #{$property}: $color;
+
     &:hover {
       #{$property}: darken($color, $hover-darken-percentage);
       #{$property}: $hover-color;
@@ -57,17 +62,14 @@ $transition-parameters: 0.25s ease-out, color 0.25s ease-out;
 }
 
 @mixin background-hover-darken($color, $hover-color: null) {
-  @include darken-generic-properties-on-hover(
-    $color,
+  @include darken-generic-properties-on-hover($color,
     $hover-color,
-    background-color
-  );
+    background-color);
 }
+
 @mixin color-border-hover-darken($color, $hover-color: null) {
-  @include darken-generic-properties-on-hover(
-    $color,
+  @include darken-generic-properties-on-hover($color,
     $hover-color,
     color,
-    border-color
-  );
+    border-color);
 }

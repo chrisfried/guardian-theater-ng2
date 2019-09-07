@@ -1,5 +1,19 @@
 @import 'variables';
 
+.dark {
+  background-color: $dark-mode-background;
+  color: $dark-mode-text;
+
+  .callout.warning {
+    background-color: $dark-mode-dark-panel;
+    color: $dark-mode-text;
+
+    a {
+      color: $dark-mode-text;
+    }
+  }
+}
+
 /* You can add global styles to this file, and also import other style files */
 .app-loading-container {
   background: #593373;
@@ -18,6 +32,7 @@
   -webkit-transition: opacity .3s linear;
   transition: opacity .3s linear;
 }
+
 .app-loading-spinner {
   height: 200px;
   width: 200px;
@@ -26,21 +41,32 @@
   display: inline-block;
 }
 
-@-webkit-keyframes spin
-{  
-0%   {-webkit-transform: rotate(0deg);}  
-100% {-webkit-transform: rotate(360deg);}  
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
-@keyframes spin
-{  
-0%   {transform: rotate(0deg);}  
-100% {transform: rotate(360deg);}  
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .button {
   outline: none;
   background-color: $light-purple;
-  &:focus, &:hover {
+
+  &:focus,
+  &:hover {
     background-color: $dark-purple;
   }
 }

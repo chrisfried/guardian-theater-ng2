@@ -11,8 +11,10 @@ import { gt } from '../gt.typings';
 })
 export class SettingsComponent implements OnInit, OnDestroy {
   private _subLinks: Subscription;
+  private _subDark: Subscription;
 
   public links: gt.Links;
+  public dark: boolean;
 
   constructor(
     public settingsService: SettingsService,
@@ -23,10 +25,14 @@ export class SettingsComponent implements OnInit, OnDestroy {
     this._subLinks = this.settingsService.links.subscribe(links => {
       this.links = links;
     });
+    this._subDark = this.settingsService.dark.subscribe(
+      dark => (this.dark = dark)
+    );
   }
 
   ngOnDestroy() {
     this._subLinks.unsubscribe();
+    this._subDark.unsubscribe();
   }
 
   toggleActivityLink(link: string) {
@@ -39,6 +45,10 @@ export class SettingsComponent implements OnInit, OnDestroy {
 
   toggleXboxLink(link: string) {
     this.settingsService.toggleXboxLink = link;
+  }
+
+  toggleDark() {
+    this.settingsService.toggleDark();
   }
 
   setLanguage(language: string) {
