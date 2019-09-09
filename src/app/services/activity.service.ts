@@ -328,8 +328,8 @@ export class ActivityService implements OnDestroy {
                       for (let id in res) {
                         if (id === 'confirmed') {
                           if (res[id][membershipId]) {
-                            twitchId = res[id][membershipId]
-                            break
+                            twitchId = res[id][membershipId];
+                            break;
                           }
                         } else if (res[id] > max) {
                           twitchId = id;
@@ -338,11 +338,17 @@ export class ActivityService implements OnDestroy {
                       }
                       return twitchId;
                     }),
-                    switchMap((twitchId) => {
+                    switchMap(twitchId => {
                       if (twitchId) {
-                        return this.http.get(`https://api.twitch.tv/kraken/users/${twitchId}?client_id=o8cuwhl23x5ways7456xhitdm0f4th0`, {
-                          headers: new HttpHeaders().set('Accept', 'application/vnd.twitchtv.v5+json')
-                        })
+                        return this.http.get(
+                          `https://api.twitch.tv/kraken/users/${twitchId}?client_id=o8cuwhl23x5ways7456xhitdm0f4th0`,
+                          {
+                            headers: new HttpHeaders().set(
+                              'Accept',
+                              'application/vnd.twitchtv.v5+json'
+                            )
+                          }
+                        );
                       } else {
                         return observableEmpty();
                       }
@@ -388,13 +394,14 @@ export class ActivityService implements OnDestroy {
                     switchMap((url: string) => {
                       if (url.length) {
                         return this.http
-                          .get(url
-                          //   , {
-                          //   headers: new HttpHeaders().set(
-                          //     'Accept',
-                          //     'application/vnd.twitchtv.v5+json'
-                          //   )
-                          // }
+                          .get(
+                            url
+                            //   , {
+                            //   headers: new HttpHeaders().set(
+                            //     'Accept',
+                            //     'application/vnd.twitchtv.v5+json'
+                            //   )
+                            // }
                           )
                           .pipe(
                             catchError((err: HttpErrorResponse) => {
@@ -655,14 +662,10 @@ export class ActivityService implements OnDestroy {
                           hms = h + 'h' + m + 'm' + s + 's';
                         }
                         let embedUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-                          `https://mixer.com/embed/player/${
-                            subject.displayName
-                          }?vod=${video.id}&t=${offset}&disableLinks=1&hideChannel=1`
+                          `https://mixer.com/embed/player/${subject.displayName}?vod=${video.id}&t=${hms}`
                         );
                         let vodUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-                          `https://mixer.com/${
-                            subject.displayName
-                          }?vod=${video.id}&t=${offset}`
+                          `https://mixer.com/${subject.displayName}?vod=${video.id}&t=${hms}`
                         );
                         let clip: gt.Clip = {
                           type: 'mixer',
