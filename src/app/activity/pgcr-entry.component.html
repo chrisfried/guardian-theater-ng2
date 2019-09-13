@@ -1,68 +1,32 @@
-<span
-  class="pgcr-entry-name"
-  [title]="entry.player.destinyUserInfo.displayName"
->
+<span class="pgcr-entry-name" [title]="entry.player.destinyUserInfo.displayName">
   {{ entry.player.destinyUserInfo.displayName }}
-  <span
-    *ngIf="
+  <span *ngIf="
       entry.player.bungieNetUserInfo &&
       (entry.player.bungieNetUserInfo.membershipId | gtBadge)
-    "
-    class="label player-label"
-    [ngClass]="entry.player.bungieNetUserInfo.membershipId | gtBadge"
-    >{{ entry.player.bungieNetUserInfo.membershipId | gtBadge }}</span
-  >
+    " class="label player-label"
+    [ngClass]="entry.player.bungieNetUserInfo.membershipId | gtBadge">{{ entry.player.bungieNetUserInfo.membershipId | gtBadge }}</span>
 </span>
-<a
-  class="profile-link twitch"
-  title="View Guardian on Twitch"
-  (click)="stopPropagation($event)"
-  *ngIf="links.guardian.twitch && entry.twitch && entry.twitch.twitchId"
-  [ngClass]="entry.twitch.notFound ? 'not-found' : ''"
-  [href]="
+<a class="profile-link twitch" title="View Guardian on Twitch" (click)="stopPropagation($event)"
+  *ngIf="links.guardian.twitch && entry.twitch && entry.twitch.twitchName"
+  [ngClass]="entry.twitch.notFound ? 'not-found' : ''" [href]="
     (entry.twitch.response?.videos)[0]?.channel?.url
       ? entry.twitch.response.videos[0].channel.url
-      : 'https://www.twitch.tv/' + entry.twitch.twitchId
-  "
-  target="_blank"
-  angulartics2On="click"
-  angularticsEvent="GuardianLink"
-  angularticsCategory="TwitchLink"
-></a>
-<a
-  class="profile-link mixer"
-  title="View Guardian on Mixer"
-  (click)="stopPropagation($event)"
+      : 'https://www.twitch.tv/' + entry.twitch.twitchName
+  " target="_blank" angulartics2On="click" angularticsEvent="GuardianLink" angularticsCategory="TwitchLink"></a>
+<a class="profile-link mixer" title="View Guardian on Mixer" (click)="stopPropagation($event)"
   *ngIf="links.guardian.mixer && entry.mixer && entry.mixer.channelId"
-  [href]="'https://mixer.com/' + entry.mixer.displayName"
-  target="_blank"
-  angulartics2On="click"
-  angularticsEvent="GuardianLink"
-  angularticsCategory="TwitchLink"
-></a>
-<a
-  class="profile-link bungie"
-  title="View Guardian on Bungie"
-  (click)="stopPropagation($event)"
-  *ngIf="links.guardian.bungie"
-  [href]="
+  [href]="'https://mixer.com/' + entry.mixer.displayName" target="_blank" angulartics2On="click"
+  angularticsEvent="GuardianLink" angularticsCategory="TwitchLink"></a>
+<a class="profile-link bungie" title="View Guardian on Bungie" (click)="stopPropagation($event)"
+  *ngIf="links.guardian.bungie" [href]="
     'https://www.bungie.net/en/Profile/' +
     entry.player.destinyUserInfo.membershipType +
     '/' +
     entry.player.destinyUserInfo.membershipId +
     '/'
-  "
-  target="_blank"
-  angulartics2On="click"
-  angularticsEvent="GuardianLink"
-  angularticsCategory="BungieLink"
-></a>
-<a
-  class="profile-link tracker"
-  title="View Guardian on Destiny Tracker"
-  (click)="stopPropagation($event)"
-  *ngIf="links.guardian.tracker"
-  [href]="
+  " target="_blank" angulartics2On="click" angularticsEvent="GuardianLink" angularticsCategory="BungieLink"></a>
+<a class="profile-link tracker" title="View Guardian on Destiny Tracker" (click)="stopPropagation($event)"
+  *ngIf="links.guardian.tracker" [href]="
     'http://destinytracker.com/d2/profile/' +
     entry.trn +
     '/' +
@@ -70,67 +34,29 @@
     (entry.trn === 'pc'
       ? '?mbmid=' + entry.player.destinyUserInfo.membershipId
       : '')
-  "
-  target="_blank"
-  angulartics2On="click"
-  angularticsEvent="GuardianLink"
-  angularticsCategory="DestinyTrackerLink"
-></a>
-<a
-  class="profile-link ggg"
-  title="View Guardian on Guardian.gg"
-  (click)="stopPropagation($event)"
-  *ngIf="links.guardian.ggg"
-  [href]="
+  " target="_blank" angulartics2On="click" angularticsEvent="GuardianLink"
+  angularticsCategory="DestinyTrackerLink"></a>
+<a class="profile-link ggg" title="View Guardian on Guardian.gg" (click)="stopPropagation($event)"
+  *ngIf="links.guardian.ggg" [href]="
     'http://guardian.gg/2/profile/' +
     entry.player.destinyUserInfo.membershipId +
     '/' +
     entry.player.destinyUserInfo.displayName
-  "
-  target="_blank"
-  angulartics2On="click"
-  angularticsEvent="GuardianLink"
-  angularticsCategory="GuardianGgLink"
-></a>
-<a
-  class="profile-link platform xbox"
-  title="View Guardian on Xbox.com"
-  (click)="stopPropagation($event)"
-  *ngIf="
+  " target="_blank" angulartics2On="click" angularticsEvent="GuardianLink" angularticsCategory="GuardianGgLink"></a>
+<a class="profile-link platform xbox" title="View Guardian on Xbox.com" (click)="stopPropagation($event)" *ngIf="
     links.guardian.platform && entry.player.destinyUserInfo.membershipType === 1
-  "
-  [href]="
+  " [href]="
     'https://account.xbox.com/en-US/Profile?GamerTag=' +
     entry.player.destinyUserInfo.displayName
-  "
-  target="_blank"
-  angulartics2On="click"
-  angularticsEvent="GuardianLink"
-  angularticsCategory="XboxProfileLink"
->
+  " target="_blank" angulartics2On="click" angularticsEvent="GuardianLink" angularticsCategory="XboxProfileLink">
   <span class="fi-social-xbox"></span>
 </a>
-<a
-  class="profile-link platform ps"
-  title="View Guardian on PlayStation.com"
-  (click)="stopPropagation($event)"
-  *ngIf="
+<a class="profile-link platform ps" title="View Guardian on PlayStation.com" (click)="stopPropagation($event)" *ngIf="
     links.guardian.platform && entry.player.destinyUserInfo.membershipType === 2
-  "
-  [href]="
+  " [href]="
     'https://my.playstation.com/' + entry.player.destinyUserInfo.displayName
-  "
-  target="_blank"
-  angulartics2On="click"
-  angularticsEvent="GuardianLink"
-  angularticsCategory="PlayStationProfileLink"
-></a>
-<a
-  class="profile-link options fi-wrench"
-  title="Configure Guardian Links"
-  (click)="route(['/settings'])"
-  *ngIf="links.guardian.options"
-  angulartics2On="click"
-  angularticsEvent="GuardianLink"
-  angularticsCategory="SettingsLink"
-></a>
+  " target="_blank" angulartics2On="click" angularticsEvent="GuardianLink"
+  angularticsCategory="PlayStationProfileLink"></a>
+<a class="profile-link options fi-wrench" title="Configure Guardian Links" (click)="route(['/settings'])"
+  *ngIf="links.guardian.options" angulartics2On="click" angularticsEvent="GuardianLink"
+  angularticsCategory="SettingsLink"></a>
