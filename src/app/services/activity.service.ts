@@ -22,7 +22,9 @@ import {
   distinctUntilChanged,
   map,
   switchMap,
-  catchError
+  catchError,
+  withLatestFrom,
+  take
 } from 'rxjs/operators';
 import { gt } from '../gt.typings';
 import { BungieHttpService } from './bungie-http.service';
@@ -176,16 +178,15 @@ export class ActivityService implements OnDestroy {
                 });
               }
 
-              // Check Bungie API for Twitch ID
+              // Check Bungie API for Twitch Name
               this.subs.push(
                 this.twitchService.twitch[membershipId]
                   .pipe(
                     map((subject: gt.TwitchServiceItem) => {
-                      return subject.checkedId
-                        ? ''
-                        : 'https://stats.bungie.net/Platform/User/' +
-                            subject.membershipId +
-                            '/Partnerships/';
+                      let { checkedBungieIdForTwitchName } = subject;
+                      return checkedBungieIdForTwitchName
+                        ? ``
+                        : `https://stats.bungie.net/Platform/User/${subject.membershipId}/Partnerships/`;
                     }),
                     distinctUntilChanged(),
                     switchMap((url: string) => {
@@ -194,85 +195,85 @@ export class ActivityService implements OnDestroy {
                       } else {
                         return observableEmpty();
                       }
+                    }),
+                    withLatestFrom(this.twitchService.twitch[membershipId]),
+                    map(([res, subject]) => {
+                      let next = {
+                        ...subject,
+                        checkedBungieIdForTwitchName: true
+                      };
+                      try {
+                        next.twitchName = res.Response[0].name;
+                      } catch (e) {
+                        next.lookedUpTwitchIdFromTwitchName = true;
+                      }
+                      this.twitchService.twitch[membershipId].next(next);
                     })
                   )
-                  .subscribe(
-                    (res: ServerResponse<PublicPartnershipDetail[]>) => {
-                      try {
-                        let next: gt.TwitchServiceItem = {
-                          displayName,
-                          membershipId,
-                          checkedId: true
-                        };
-                        if (res.Response.length) {
-                          next.twitchId = res.Response[0].name;
-                        }
-                        this.twitchService.twitch[membershipId].next(next);
-                      } catch (e) {
-                        console.error(e);
-                      }
-                    }
-                  )
+                  .subscribe()
               );
 
-              let twitchIdTemp = '';
-
-              // Fetch Twitch clips based on Twitch ID from Bungie
+              // Lookup Twitch ID from Twitch Name
               this.subs.push(
                 this.twitchService.twitch[membershipId]
                   .pipe(
                     map((subject: gt.TwitchServiceItem) => {
-                      twitchIdTemp = subject.twitchId;
-                      const url =
-                        subject.twitchId && !subject.checkedResponse
-                          ? 'https://api.twitch.tv/kraken/channels/' +
-                            subject.twitchId +
-                            '/videos' +
-                            '?client_id=o8cuwhl23x5ways7456xhitdm0f4th0&limit=100&offset=0&broadcast_type=archive,highlight'
-                          : '';
-                      return url;
+                      let {
+                        twitchName,
+                        lookedUpTwitchIdFromTwitchName
+                      } = subject;
+                      return twitchName && !lookedUpTwitchIdFromTwitchName
+                        ? `https://api.twitch.tv/kraken/users?login=${twitchName}&client_id=o8cuwhl23x5ways7456xhitdm0f4th0`
+                        : ``;
                     }),
                     distinctUntilChanged(),
-                    switchMap((url: string) => {
-                      if (url.length) {
-                        return this.http.get(url).pipe(
-                          catchError((err: HttpErrorResponse) => {
-                            if (err.status === 404) {
-                              const next: gt.TwitchServiceItem = {
-                                displayName,
-                                membershipId,
-                                checkedId: true,
-                                twitchId: twitchIdTemp,
-                                checkedResponse: true,
-                                notFound: true
-                              };
-                              this.twitchService.twitch[membershipId].next(
-                                next
-                              );
-                            }
-                            return observableThrowError(
-                              err || 'Twitch Server error'
-                            );
+                    switchMap(url => {
+                      if (url) {
+                        return this.http
+                          .get(url, {
+                            headers: new HttpHeaders().set(
+                              'Accept',
+                              'application/vnd.twitchtv.v5+json'
+                            )
                           })
-                        );
+                          .pipe(
+                            catchError((err: HttpErrorResponse) => {
+                              if (err.status === 404) {
+                                this.twitchService.twitch[membershipId]
+                                  .pipe(
+                                    take(1),
+                                    map(subject => {
+                                      const next = {
+                                        ...subject,
+                                        lookedUpTwitchIdFromTwitchName: true
+                                      };
+                                      this.twitchService.twitch[
+                                        membershipId
+                                      ].next(next);
+                                    })
+                                  )
+                                  .subscribe();
+                              }
+                              return observableEmpty();
+                            })
+                          );
                       } else {
                         return observableEmpty();
                       }
+                    }),
+                    withLatestFrom(this.twitchService.twitch[membershipId]),
+                    map(([res, subject]) => {
+                      let next = {
+                        ...subject,
+                        lookedUpTwitchIdFromTwitchName: true
+                      };
+                      try {
+                        next.twitchId = parseInt((res as any).users[0]._id, 10);
+                      } catch (e) {}
+                      this.twitchService.twitch[membershipId].next(next);
                     })
                   )
-                  .subscribe((response: any) => {
-                    if (response) {
-                      const next: gt.TwitchServiceItem = {
-                        displayName,
-                        membershipId,
-                        checkedId: true,
-                        twitchId: twitchIdTemp,
-                        checkedResponse: true,
-                        response
-                      };
-                      this.twitchService.twitch[membershipId].next(next);
-                    }
-                  })
+                  .subscribe()
               );
 
               // Check GT API for Twitch ID
@@ -281,41 +282,37 @@ export class ActivityService implements OnDestroy {
                   .pipe(
                     map((subject: gt.TwitchServiceItem) => {
                       let {
-                        checkedId,
-                        twitchId,
-                        checkedResponse,
-                        notFound,
-                        checkedScreenAPI
+                        lookedUpTwitchIdFromTwitchName,
+                        checkedScreenAPIForTwitchId,
+                        twitchId
                       } = subject;
-                      let url = '';
-                      if (
-                        !checkedScreenAPI &&
-                        ((checkedId && !twitchId) ||
-                          (checkedResponse && notFound))
-                      ) {
-                        url = `https://guardiantheater.github.io/d2-stream-name-parser/${displayName}/twitch.json`;
-                      }
-                      return url;
+                      return !twitchId &&
+                        lookedUpTwitchIdFromTwitchName &&
+                        !checkedScreenAPIForTwitchId
+                        ? `https://guardiantheater.github.io/d2-stream-name-parser/${displayName}/twitch.json`
+                        : ``;
                     }),
                     switchMap(url => {
                       if (url) {
                         return this.http.get(url).pipe(
                           catchError((err: HttpErrorResponse) => {
                             if (err.status === 404) {
-                              const next: gt.TwitchServiceItem = {
-                                displayName,
-                                membershipId,
-                                checkedId: true,
-                                checkedResponse: true,
-                                notFound: true,
-                                checkedScreenAPI: true,
-                                checkedScreenResponse: true
-                              };
-                              this.twitchService.twitch[membershipId].next(
-                                next
-                              );
+                              this.twitchService.twitch[membershipId]
+                                .pipe(
+                                  take(1),
+                                  map(subject => {
+                                    const next = {
+                                      ...subject,
+                                      checkedScreenAPIForTwitchId: true
+                                    };
+                                    this.twitchService.twitch[
+                                      membershipId
+                                    ].next(next);
+                                  })
+                                )
+                                .subscribe();
+                              return observableEmpty();
                             }
-                            return observableEmpty();
                           })
                         );
                       } else {
@@ -353,72 +350,64 @@ export class ActivityService implements OnDestroy {
                         return observableEmpty();
                       }
                     }),
-                    map((res: { name: string }) => {
-                      if (res && res.name) {
+                    withLatestFrom(this.twitchService.twitch[membershipId]),
+                    map(
+                      ([res, subject]: [
+                        { name: string; _id: string },
+                        gt.TwitchServiceItem
+                      ]) => {
                         const next: gt.TwitchServiceItem = {
-                          displayName,
-                          membershipId,
-                          twitchId: res.name,
-                          checkedId: true,
-                          checkedResponse: true,
-                          checkedScreenAPI: true
+                          ...subject,
+                          checkedScreenAPIForTwitchId: true
                         };
+                        try {
+                          next.twitchName = res.name;
+                          next.twitchId = parseInt(res._id, 10);
+                        } catch (e) {}
                         this.twitchService.twitch[membershipId].next(next);
                       }
-                    })
+                    )
                   )
                   .subscribe()
               );
 
-              // Fetch Twitch clips based on Twitch ID from GT API
+              // Fetch Twitch clips based on Twitch ID
               this.subs.push(
                 this.twitchService.twitch[membershipId]
                   .pipe(
                     map((subject: gt.TwitchServiceItem) => {
-                      let {
-                        twitchId,
-                        checkedScreenAPI,
-                        checkedScreenResponse
-                      } = subject;
-                      twitchIdTemp = twitchId;
-                      const url =
-                        twitchId && checkedScreenAPI && !checkedScreenResponse
-                          ? 'https://api.twitch.tv/kraken/channels/' +
-                            twitchId +
-                            '/videos' +
-                            '?client_id=o8cuwhl23x5ways7456xhitdm0f4th0&limit=100&offset=0&broadcast_type=archive,highlight'
-                          : '';
-                      return url;
+                      let { twitchId } = subject;
+                      return twitchId
+                        ? `https://api.twitch.tv/kraken/channels/${twitchId}/videos?client_id=o8cuwhl23x5ways7456xhitdm0f4th0&limit=100&offset=0&broadcast_type=archive,highlight`
+                        : ``;
                     }),
                     distinctUntilChanged(),
                     switchMap((url: string) => {
                       if (url.length) {
                         return this.http
-                          .get(
-                            url
-                            //   , {
-                            //   headers: new HttpHeaders().set(
-                            //     'Accept',
-                            //     'application/vnd.twitchtv.v5+json'
-                            //   )
-                            // }
-                          )
+                          .get(url, {
+                            headers: new HttpHeaders().set(
+                              'Accept',
+                              'application/vnd.twitchtv.v5+json'
+                            )
+                          })
                           .pipe(
                             catchError((err: HttpErrorResponse) => {
                               if (err.status === 404) {
-                                const next: gt.TwitchServiceItem = {
-                                  displayName,
-                                  membershipId,
-                                  checkedId: true,
-                                  twitchId: twitchIdTemp,
-                                  checkedResponse: true,
-                                  checkedScreenAPI: true,
-                                  checkedScreenResponse: true,
-                                  notFound: true
-                                };
-                                this.twitchService.twitch[membershipId].next(
-                                  next
-                                );
+                                this.twitchService.twitch[membershipId]
+                                  .pipe(
+                                    take(1),
+                                    map(subject => {
+                                      const next = {
+                                        ...subject,
+                                        checkedForClipsForTwitchId: true
+                                      };
+                                      this.twitchService.twitch[
+                                        membershipId
+                                      ].next(next);
+                                    })
+                                  )
+                                  .subscribe();
                               }
                               return observableThrowError(
                                 err || 'Twitch Server error'
@@ -428,23 +417,25 @@ export class ActivityService implements OnDestroy {
                       } else {
                         return observableEmpty();
                       }
-                    })
+                    }),
+                    withLatestFrom(this.twitchService.twitch[membershipId]),
+                    map(
+                      ([res, subject]: [
+                        twitch.Response,
+                        gt.TwitchServiceItem
+                      ]) => {
+                        let next = {
+                          ...subject,
+                          checkedForClipsForTwitchId: true
+                        };
+                        if (res) {
+                          next.response = res;
+                        }
+                        this.twitchService.twitch[membershipId].next(next);
+                      }
+                    )
                   )
-                  .subscribe((response: any) => {
-                    if (response) {
-                      const next: gt.TwitchServiceItem = {
-                        displayName,
-                        membershipId,
-                        checkedId: true,
-                        twitchId: twitchIdTemp,
-                        checkedResponse: true,
-                        checkedScreenAPI: true,
-                        checkedScreenResponse: true,
-                        response
-                      };
-                      this.twitchService.twitch[membershipId].next(next);
-                    }
-                  })
+                  .subscribe()
               );
 
               // Check for matching Twtich Clips

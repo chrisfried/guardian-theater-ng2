@@ -72,13 +72,14 @@ declare namespace gt {
   interface TwitchServiceItem {
     displayName: string;
     membershipId: string;
-    checkedId?: boolean;
-    twitchId?: string;
-    checkedResponse?: boolean;
+    twitchName?: string;
+    twitchId?: number;
+    checkedBungieIdForTwitchName?: boolean;
+    lookedUpTwitchIdFromTwitchName?: boolean;
+    checkedScreenAPIForTwitchId?: boolean;
+    checkedForClipsForTwitchId?: boolean;
     response?: twitch.Response;
     notFound?: boolean;
-    checkedScreenAPI?: boolean;
-    checkedScreenResponse?: boolean;
   }
 
   interface MixerServiceItem {
