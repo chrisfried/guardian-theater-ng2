@@ -10,7 +10,7 @@ import {
   DestinyPostGameCarnageReportData,
   ServerResponse
 } from 'bungie-api-ts/destiny2';
-import { PublicPartnershipDetail, UserInfoCard } from 'bungie-api-ts/user';
+import { UserInfoCard } from 'bungie-api-ts/user';
 import {
   BehaviorSubject,
   Subscription,
@@ -32,8 +32,6 @@ import { SettingsService } from './settings.service';
 import { TwitchService } from './twitch.service';
 import { MixerService } from './mixer.service';
 import { XboxService } from './xbox.service';
-import { GuardianService } from '../services/guardian.service';
-import { GtBadgePipe } from 'app/pipes/gt-badge.pipe';
 
 @Injectable()
 export class ActivityService implements OnDestroy {
@@ -53,8 +51,7 @@ export class ActivityService implements OnDestroy {
     private sanitizer: DomSanitizer,
     private xboxService: XboxService,
     private route: ActivatedRoute,
-    private settingsService: SettingsService,
-    private guardianService: GuardianService
+    private settingsService: SettingsService
   ) {
     this._activity = new BehaviorSubject(null);
     this._activityId = new BehaviorSubject('');
@@ -376,8 +373,8 @@ export class ActivityService implements OnDestroy {
                 this.twitchService.twitch[membershipId]
                   .pipe(
                     map((subject: gt.TwitchServiceItem) => {
-                      let { twitchId } = subject;
-                      return twitchId
+                      let { twitchId, checkedForClipsForTwitchId } = subject;
+                      return twitchId && !checkedForClipsForTwitchId
                         ? `https://api.twitch.tv/kraken/channels/${twitchId}/videos?client_id=o8cuwhl23x5ways7456xhitdm0f4th0&limit=100&offset=0&broadcast_type=archive,highlight`
                         : ``;
                     }),
@@ -438,10 +435,11 @@ export class ActivityService implements OnDestroy {
                   .subscribe()
               );
 
-              // Check for matching Twtich Clips
+              // Check for matching Twitch Clips
               this.subs.push(
-                this.twitchService.twitch[membershipId].subscribe(
-                  (subject: gt.TwitchServiceItem) => {
+                this.twitchService.twitch[membershipId]
+                  .pipe(distinctUntilChanged())
+                  .subscribe((subject: gt.TwitchServiceItem) => {
                     if (subject.response && subject.response._total > 0) {
                       subject.response.videos.forEach(video => {
                         let recordedStart =
@@ -496,8 +494,7 @@ export class ActivityService implements OnDestroy {
                         pgcr.clips$.next(pgcr.clips);
                       });
                     }
-                  }
-                )
+                  })
               );
 
               // Check GT API for Mixer Channel ID
