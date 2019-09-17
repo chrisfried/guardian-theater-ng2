@@ -32,6 +32,8 @@ import { TakeMyMoneyComponent } from './take-my-money/take-my-money.component';
 import { SearchComponent } from './search/search.component';
 import { BungieStatusComponent } from './bungie-status/bungie-status.component';
 import { PlatformAbbrPipe } from './pipes/platform-abbr.pipe';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -61,7 +63,8 @@ import { PlatformAbbrPipe } from './pipes/platform-abbr.pipe';
       prefix: 'gt',
       storageType: 'localStorage'
     }),
-    Angulartics2Module.forRoot()
+    Angulartics2Module.forRoot(),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     BungieHttpService,
