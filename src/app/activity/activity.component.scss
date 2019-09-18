@@ -202,7 +202,26 @@
   font-size: 0.75em;
   text-align: right;
   padding-right: 0.5em;
-  flex-shrink: 3;
+  flex: 1 0 auto;
+}
+
+.activity-icon {
+  height: 28px;
+  width: 28px;
+  border-right: 1px solid white;
+  flex-shrink: 0;
+
+  img {
+    height: 28px;
+    width: 28px;
+    margin-top: -2px;
+    margin-left: 0px;
+    max-width: 28px;
+  }
+
+  :host-context(.dark) & {
+    border-color: $dark-mode-background;
+  }
 }
 
 .activity-permalinks {

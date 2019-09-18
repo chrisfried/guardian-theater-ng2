@@ -1,8 +1,8 @@
 {
   "name": "Guardain Theater",
   "short_name": "Theater",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
+  "theme_color": "#593373",
+  "background_color": "#0f0f0f",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",

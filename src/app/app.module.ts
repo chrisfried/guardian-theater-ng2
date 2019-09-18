@@ -3,9 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { LocalStorageModule } from 'angular-2-local-storage';
 import { Angulartics2Module } from 'angulartics2';
-import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 
 import { RoutesModule } from './routes/routes.module';
 
@@ -34,6 +32,7 @@ import { BungieStatusComponent } from './bungie-status/bungie-status.component';
 import { PlatformAbbrPipe } from './pipes/platform-abbr.pipe';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { ManifestService } from './services/manifest.service';
 
 @NgModule({
   declarations: [
@@ -59,19 +58,19 @@ import { environment } from '../environments/environment';
     FormsModule,
     HttpClientModule,
     RoutesModule,
-    LocalStorageModule.forRoot({
-      prefix: 'gt',
-      storageType: 'localStorage'
-    }),
     Angulartics2Module.forRoot(),
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      registrationStrategy: 'registerWithDelay:5000'
+    })
   ],
   providers: [
     BungieHttpService,
     TwitchService,
     MixerService,
     XboxService,
-    SettingsService
+    SettingsService,
+    ManifestService
   ],
   bootstrap: [AppComponent]
 })

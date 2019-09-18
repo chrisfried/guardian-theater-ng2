@@ -4,7 +4,7 @@
     [ngClass]="pgcr ? 'clickable' : ''">
     <div class="row">
       <div class="mode columns small-12 activity-title-bar mode-no-clips"
-        [ngClass]="pgcr && filteredClips.length ? 'mode-' + pgcr.activityDetails.mode : ''">
+        [ngClass]="pgcr && pgcr.activityDetails && filteredClips.length ? 'mode-' + pgcr.activityDetails.mode : ''">
         <span class="activity-count" *ngIf="mini">
           <span class="fi-widget spinner mini-spinner" *ngIf="!pgcr || pgcr.loading.message"></span>
           <span *ngIf="pgcr && !pgcr.loading.message && pgcr.clips && pgcr.clips.length">{{ clips.length }}</span>
@@ -12,9 +12,13 @@
         </span>
         <span class="activity-info">
           <span *ngIf="!pgcr" class="activity-name">Fetching PGCR from Bungie...</span>
-          <span *ngIf="pgcr" class="activity-name"
-            [title]="pgcr.loading.message || (pgcr.activityDetails.mode | destinyHash:'activityMode') + ': ' + (pgcr.activityDetails.referenceId | destinyHash:'activityName')">{{ pgcr.loading.message || (pgcr.activityDetails.mode | destinyHash:'activityMode') + ': ' + (pgcr.activityDetails.referenceId
-            | destinyHash:'activityName') }}</span>
+          <span
+            *ngIf="pgcr && !pgcr.loading.message && pgcr.activityDetails && (pgcr.activityDetails.directorActivityHash | destinyHash:'activityIcon')"
+            [title]="pgcr.activityDetails.directorActivityHash | destinyHash:'activityMode'" class="activity-icon">
+            <img [src]="pgcr.activityDetails.directorActivityHash | destinyHash:'activityIcon'" /></span>
+          <span *ngIf="pgcr && pgcr.activityDetails" class="activity-name"
+            [title]="pgcr.loading.message || (pgcr.activityDetails.directorActivityHash | destinyHash:'activityMode') + ': ' + (pgcr.activityDetails.referenceId | destinyHash:'activityName')">{{ (pgcr.activityDetails.referenceId
+              | destinyHash:'activityName') }}</span>
           <span *ngIf="pgcr" class="activity-time"
             [title]="pgcr.period | date:'short'">{{ pgcr.period | date:'short' }}</span>
         </span>

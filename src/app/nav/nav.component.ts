@@ -1,6 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, Event } from '@angular/router';
-import { LocalStorageService } from 'angular-2-local-storage';
 import { BungieHttpService } from '../services/bungie-http.service';
 import { Subscription } from 'rxjs';
 import { ServerResponse } from 'bungie-api-ts/destiny2';
@@ -22,11 +21,7 @@ export class NavComponent implements OnInit, OnDestroy {
   private _errorRes$: Subscription;
   private _routerEvent$: Subscription;
 
-  constructor(
-    private router: Router,
-    private localStorageService: LocalStorageService,
-    private bHttp: BungieHttpService
-  ) {}
+  constructor(private router: Router, private bHttp: BungieHttpService) {}
 
   ngOnInit() {
     this._routerEvent$ = this.router.events.subscribe((event: Event) => {
@@ -44,7 +39,9 @@ export class NavComponent implements OnInit, OnDestroy {
       }
     }, 30000);
 
-    this.betaTextHidden = this.localStorageService.get('hideBetaText') || {
+    this.betaTextHidden = JSON.parse(
+      localStorage.getItem('gt.hideBetaText')
+    ) || {
       hidden: false
     };
   }
@@ -66,8 +63,11 @@ export class NavComponent implements OnInit, OnDestroy {
     this.router.navigate(route);
   }
 
-  // hideBetaText() {
-  //   this.betaTextHidden.hidden = true;
-  //   this.localStorageService.set('hideBetaText', this.betaTextHidden);
-  // }
+  hideBetaText() {
+    this.betaTextHidden.hidden = true;
+    localStorage.setItem(
+      'gt.hideBetaText',
+      JSON.stringify(this.betaTextHidden)
+    );
+  }
 }

@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { LocalStorageService } from 'angular-2-local-storage';
 import { gt } from '../gt.typings';
 import { UserInfoCard } from 'bungie-api-ts/user';
 
@@ -16,10 +15,13 @@ export class SettingsService {
   public userLang: {
     language?: string;
   };
+  public userLangObs: BehaviorSubject<{
+    language?: string;
+  }>;
   public dark: BehaviorSubject<boolean>;
 
-  constructor(private localStorageService: LocalStorageService) {
-    this._clipLimiter = this.localStorageService.get('CLIP_LIMITER') || {
+  constructor() {
+    this._clipLimiter = JSON.parse(localStorage.getItem('gt.CLIP_LIMITER')) || {
       self: true,
       fireteam: true,
       team: true,
@@ -28,9 +30,9 @@ export class SettingsService {
       twitch: true
     };
 
-    this._links = this.localStorageService.get('LINKS') || {};
+    this._links = JSON.parse(localStorage.getItem('gt.LINKS')) || {};
 
-    this._dark = this.localStorageService.get('DARK') || false;
+    this._dark = JSON.parse(localStorage.getItem('gt.DARK')) || false;
 
     if (!this._links.activity) {
       this._links.activity = {
@@ -74,8 +76,8 @@ export class SettingsService {
     this.userLang = {
       language: 'en'
     };
-    if (this.localStorageService.get('LANGUAGE')) {
-      this.userLang = this.localStorageService.get('LANGUAGE');
+    if (JSON.parse(localStorage.getItem('gt.LANGUAGE'))) {
+      this.userLang = JSON.parse(localStorage.getItem('gt.LANGUAGE'));
     } else if (navigator.language) {
       switch (navigator.language.substr(0, 2)) {
         case 'de':
@@ -110,40 +112,42 @@ export class SettingsService {
         this.userLang.language = 'esmx';
       }
     }
+    this.userLangObs = new BehaviorSubject(this.userLang);
   }
 
   set toggleLimit(limit) {
     this._clipLimiter[limit] = !this._clipLimiter[limit];
     this.clipLimiter.next(this._clipLimiter);
-    this.localStorageService.set('CLIP_LIMITER', this._clipLimiter);
+    localStorage.setItem('gt.CLIP_LIMITER', JSON.stringify(this._clipLimiter));
   }
 
   set toggleGuardianLink(link) {
     this._links.guardian[link] = !this._links.guardian[link];
     this.links.next(this._links);
-    this.localStorageService.set('LINKS', this._links);
+    localStorage.setItem('gt.LINKS', JSON.stringify(this._links));
   }
 
   set toggleActivityLink(link) {
     this._links.activity[link] = !this._links.activity[link];
     this.links.next(this._links);
-    this.localStorageService.set('LINKS', this._links);
+    localStorage.setItem('gt.LINKS', JSON.stringify(this._links));
   }
 
   set toggleXboxLink(link) {
     this._links.xbox[link] = !this._links.xbox[link];
     this.links.next(this._links);
-    this.localStorageService.set('LINKS', this._links);
+    localStorage.setItem('gt.LINKS', JSON.stringify(this._links));
   }
 
   toggleDark() {
     this._dark = !this._dark;
     this.dark.next(this._dark);
-    this.localStorageService.set('DARK', this._dark);
+    localStorage.setItem('gt.DARK', JSON.stringify(this._dark));
   }
 
   set setLanguage(language) {
     this.userLang.language = language;
-    this.localStorageService.set('LANGUAGE', this.userLang);
+    localStorage.setItem('gt.LANGUAGE', JSON.stringify(this.userLang));
+    this.userLangObs.next(this.userLang);
   }
 }

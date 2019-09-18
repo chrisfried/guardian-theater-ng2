@@ -5,27 +5,42 @@ import { DestinyClassDefinition } from '../defs/DestinyClassDefinition';
 import { DestinyActivityDefinition } from '../defs/DestinyActivityDefinition';
 import { DestinyActivityModeDefinition } from '../defs/DestinyActivityModeDefinition';
 import { EmblemDefinition } from '../defs/EmblemDefinition';
+import { ManifestService } from 'app/services/manifest.service';
 
 @Pipe({
   name: 'destinyHash'
 })
 export class DestinyHashPipe implements PipeTransform {
-
-  constructor (
-    private settingsService: SettingsService
+  constructor(
+    private settingsService: SettingsService,
+    private manifestService: ManifestService
   ) {}
 
   transform(hash: number, type: string): string {
     try {
       switch (type) {
         case 'race':
-          return DestinyRaceDefinition[this.settingsService.userLang.language][hash].name;
+          return DestinyRaceDefinition[this.settingsService.userLang.language][
+            hash
+          ].name;
         case 'class':
-          return DestinyClassDefinition[this.settingsService.userLang.language][hash].name;
+          return DestinyClassDefinition[this.settingsService.userLang.language][
+            hash
+          ].name;
         case 'activityName':
-          return DestinyActivityDefinition[this.settingsService.userLang.language][hash].name;
+          return this.manifestService.defs.Activity.get(hash).displayProperties
+            .name;
         case 'activityMode':
-          return DestinyActivityModeDefinition[this.settingsService.userLang.language][hash].name;
+          return this.manifestService.defs.Activity.get(hash).displayProperties
+            .name;
+        case 'activityIcon':
+          return this.manifestService.defs.Activity.get(hash).displayProperties
+            .hasIcon
+            ? `https://bungie.net${
+                this.manifestService.defs.Activity.get(hash).displayProperties
+                  .icon
+              }`
+            : ``;
         case 'emblemOverlay':
           return EmblemDefinition[hash].secondaryOverlay;
         case 'emblemSpecial':
@@ -38,8 +53,7 @@ export class DestinyHashPipe implements PipeTransform {
           return '';
       }
     } catch (e) {
-      return 'UNDEFINED'
+      return 'UNDEFINED';
     }
   }
-
 }
