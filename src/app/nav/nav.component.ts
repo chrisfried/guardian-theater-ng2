@@ -3,6 +3,7 @@ import { Router, Event } from '@angular/router';
 import { BungieHttpService } from '../services/bungie-http.service';
 import { Subscription } from 'rxjs';
 import { ServerResponse } from 'bungie-api-ts/destiny2';
+import { SettingsService } from '../services/settings.service';
 
 @Component({
   selector: 'app-nav',
@@ -18,12 +19,15 @@ export class NavComponent implements OnInit, OnDestroy {
     hidden?: boolean;
   };
   public errorRes: ServerResponse<any>;
+  public dark: boolean;
   private _errorRes$: Subscription;
   private _routerEvent$: Subscription;
 
-  constructor(private router: Router, private bHttp: BungieHttpService) {}
+  constructor(private settingsService: SettingsService, private router: Router, private bHttp: BungieHttpService) {
+  }
 
   ngOnInit() {
+    this.settingsService.dark.subscribe(dark => this.dark = dark)
     this._routerEvent$ = this.router.events.subscribe((event: Event) => {
       this.errorRes = null;
     });

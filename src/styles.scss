@@ -1,5 +1,17 @@
 @import 'variables';
 
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e4d4ee;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(228,212,238, 0.2);
+}
+
 .dark {
   background-color: $dark-mode-background;
   color: $dark-mode-text;

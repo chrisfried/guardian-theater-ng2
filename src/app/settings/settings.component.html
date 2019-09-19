@@ -2,8 +2,15 @@
 
 <div class="row">
   <div class="columns small-12 button-group expanded">
-    <button type="button" class="button dark-toggle" [ngClass]="{ 'hollow': !dark }" (click)="toggleDark()"
-      title="Dark Mode">Dark Mode</button>
+    <button
+      type="button"
+      class="button dark-toggle"
+      [ngClass]="{ hollow: !dark }"
+      (click)="toggleDark()"
+      title="Dark Mode"
+    >
+      Dark Mode
+    </button>
   </div>
 </div>
 
@@ -11,83 +18,274 @@
 <div class="row">
   <div class="columns small-12 button-group expanded">
     <!-- <button type="button" class="button filter-toggle bungie" [ngClass]="{ 'hollow': !links.activity.bungie }" (click)="toggleActivityLink('bungie')" title="Bungie">Bungie</button> -->
-    <button type="button" class="button filter-toggle trials" [ngClass]="{ 'hollow': !links.activity.trials }"
-      (click)="toggleActivityLink('trials')" title="Trials Report">Trials Report</button>
-    <button type="button" class="button filter-toggle tracker" [ngClass]="{ 'hollow': !links.activity.tracker }"
-      (click)="toggleActivityLink('tracker')" title="Destiny Tracker">Destiny Tracker</button>
-    <button type="button" class="button filter-toggle ggg" [ngClass]="{ 'hollow': !links.activity.ggg }"
-      (click)="toggleActivityLink('ggg')" title="Guardian.gg">Guardian.gg</button>
-    <button type="button" class="button filter-toggle options fi-wrench"
-      [ngClass]="{ 'hollow': !links.activity.options }" (click)="toggleActivityLink('options')"
-      title="Link to Settings page"></button>
+    <button
+      type="button"
+      class="button filter-toggle trials"
+      [ngClass]="{ hollow: !links.activity.trials }"
+      (click)="toggleActivityLink('trials')"
+      title="Trials Report"
+    >
+      Trials Report
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle tracker"
+      [ngClass]="{ hollow: !links.activity.tracker }"
+      (click)="toggleActivityLink('tracker')"
+      title="Destiny Tracker"
+    >
+      Destiny Tracker
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle ggg"
+      [ngClass]="{ hollow: !links.activity.ggg }"
+      (click)="toggleActivityLink('ggg')"
+      title="Guardian.gg"
+    >
+      Guardian.gg
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle options fi-wrench"
+      [ngClass]="{ hollow: !links.activity.options }"
+      (click)="toggleActivityLink('options')"
+      title="Link to Settings page"
+    ></button>
   </div>
 </div>
 
 <h5>Guardian Links</h5>
 <div class="row">
   <div class="columns small-12 button-group expanded">
-    <button type="button" class="button filter-toggle bungie" [ngClass]="{ 'hollow': !links.guardian.bungie }"
-      (click)="toggleGuardianLink('bungie')" title="Bungie">Bungie</button>
-    <button type="button" class="button filter-toggle twitch" [ngClass]="{ 'hollow': !links.guardian.twitch }"
-      (click)="toggleGuardianLink('twitch')" title="Twitch">Twitch</button>
-    <button type="button" class="button filter-toggle mixer" [ngClass]="{ 'hollow': !links.guardian.mixer }"
-      (click)="toggleGuardianLink('mixer')" title="Mixer">Mixer</button>
-    <button type="button" class="button filter-toggle tracker" [ngClass]="{ 'hollow': !links.guardian.tracker }"
-      (click)="toggleGuardianLink('tracker')" title="Destiny Tracker">Destiny Tracker</button>
-    <button type="button" class="button filter-toggle ggg" [ngClass]="{ 'hollow': !links.guardian.ggg }"
-      (click)="toggleGuardianLink('ggg')" title="Guardian.gg">Guardian.gg</button>
-    <button type="button" class="button filter-toggle platform" [ngClass]="{ 'hollow': !links.guardian.platform }"
-      (click)="toggleGuardianLink('platform')" title="Platform">Xbox / PlayStation</button>
-    <button type="button" class="button filter-toggle options fi-wrench"
-      [ngClass]="{ 'hollow': !links.guardian.options }" (click)="toggleGuardianLink('options')"
-      title="Link to Settings page"></button>
+    <button
+      type="button"
+      class="button filter-toggle bungie"
+      [ngClass]="{ hollow: !links.guardian.bungie }"
+      (click)="toggleGuardianLink('bungie')"
+      title="Bungie"
+    >
+      Bungie
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle twitch"
+      [ngClass]="{ hollow: !links.guardian.twitch }"
+      (click)="toggleGuardianLink('twitch')"
+      title="Twitch"
+    >
+      Twitch
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle mixer"
+      [ngClass]="{ hollow: !links.guardian.mixer }"
+      (click)="toggleGuardianLink('mixer')"
+      title="Mixer"
+    >
+      Mixer
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle tracker"
+      [ngClass]="{ hollow: !links.guardian.tracker }"
+      (click)="toggleGuardianLink('tracker')"
+      title="Destiny Tracker"
+    >
+      Destiny Tracker
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle ggg"
+      [ngClass]="{ hollow: !links.guardian.ggg }"
+      (click)="toggleGuardianLink('ggg')"
+      title="Guardian.gg"
+    >
+      Guardian.gg
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle platform"
+      [ngClass]="{ hollow: !links.guardian.platform }"
+      (click)="toggleGuardianLink('platform')"
+      title="Platform"
+    >
+      Xbox / PlayStation
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle options fi-wrench"
+      [ngClass]="{ hollow: !links.guardian.options }"
+      (click)="toggleGuardianLink('options')"
+      title="Link to Settings page"
+    ></button>
   </div>
 </div>
 
 <h5>Xbox Clip Links</h5>
 <div class="row">
   <div class="columns small-12 button-group expanded">
-    <button type="button" class="button filter-toggle xboxrecordus" [ngClass]="{ 'hollow': !links.xbox.recordus }"
-      (click)="toggleXboxLink('recordus')" title="xboxrecord.us">xboxrecord.us</button>
-    <button type="button" class="button filter-toggle xboxdvr" [ngClass]="{ 'hollow': !links.xbox.dvr }"
-      (click)="toggleXboxLink('dvr')" title="Xbox DVR">Xbox DVR</button>
-    <button type="button" class="button filter-toggle gamedtv" [ngClass]="{ 'hollow': !links.xbox.gamedtv }"
-      (click)="toggleXboxLink('gamedtv')" title="Gamed.TV">Gamed.TV</button>
-    <button type="button" class="button filter-toggle xbox" [ngClass]="{ 'hollow': !links.xbox.xbox }"
-      (click)="toggleXboxLink('xbox')" title="Xbox">Xbox</button>
-    <button type="button" class="button filter-toggle download" [ngClass]="{ 'hollow': !links.xbox.download }"
-      (click)="toggleXboxLink('download')" title="Download">Download</button>
-    <button type="button" class="button filter-toggle options fi-wrench" [ngClass]="{ 'hollow': !links.xbox.options }"
-      (click)="toggleXboxLink('options')" title="Link to Settings page"></button>
+    <button
+      type="button"
+      class="button filter-toggle xboxrecordus"
+      [ngClass]="{ hollow: !links.xbox.recordus }"
+      (click)="toggleXboxLink('recordus')"
+      title="xboxrecord.us"
+    >
+      xboxrecord.us
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle xboxdvr"
+      [ngClass]="{ hollow: !links.xbox.dvr }"
+      (click)="toggleXboxLink('dvr')"
+      title="Xbox DVR"
+    >
+      Xbox DVR
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle gamedtv"
+      [ngClass]="{ hollow: !links.xbox.gamedtv }"
+      (click)="toggleXboxLink('gamedtv')"
+      title="Gamed.TV"
+    >
+      Gamed.TV
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle xbox"
+      [ngClass]="{ hollow: !links.xbox.xbox }"
+      (click)="toggleXboxLink('xbox')"
+      title="Xbox"
+    >
+      Xbox
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle download"
+      [ngClass]="{ hollow: !links.xbox.download }"
+      (click)="toggleXboxLink('download')"
+      title="Download"
+    >
+      Download
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle options fi-wrench"
+      [ngClass]="{ hollow: !links.xbox.options }"
+      (click)="toggleXboxLink('options')"
+      title="Link to Settings page"
+    ></button>
   </div>
 </div>
 
 <h5>Language</h5>
 <div class="row">
   <div class="columns small-12 button-group expanded">
-    <button type="button" class="button filter-toggle"
-      [ngClass]="{ 'hollow': settingsService.userLang.language !== 'en' }" (click)="setLanguage('en')">en</button>
-    <button type="button" class="button filter-toggle"
-      [ngClass]="{ 'hollow': settingsService.userLang.language !== 'de' }" (click)="setLanguage('de')">de</button>
-    <button type="button" class="button filter-toggle"
-      [ngClass]="{ 'hollow': settingsService.userLang.language !== 'es' }" (click)="setLanguage('es')">es</button>
-    <button type="button" class="button filter-toggle"
-      [ngClass]="{ 'hollow': settingsService.userLang.language !== 'es' }" (click)="setLanguage('esmx')">es-mx</button>
-    <button type="button" class="button filter-toggle"
-      [ngClass]="{ 'hollow': settingsService.userLang.language !== 'fr' }" (click)="setLanguage('fr')">fr</button>
-    <button type="button" class="button filter-toggle"
-      [ngClass]="{ 'hollow': settingsService.userLang.language !== 'it' }" (click)="setLanguage('it')">it</button>
-    <button type="button" class="button filter-toggle"
-      [ngClass]="{ 'hollow': settingsService.userLang.language !== 'ja' }" (click)="setLanguage('ja')">ja</button>
-    <button type="button" class="button filter-toggle"
-      [ngClass]="{ 'hollow': settingsService.userLang.language !== 'pl' }" (click)="setLanguage('pl')">pl</button>
-    <button type="button" class="button filter-toggle"
-      [ngClass]="{ 'hollow': settingsService.userLang.language !== 'ptbr' }"
-      (click)="setLanguage('ptbr')">pt-br</button>
-    <button type="button" class="button filter-toggle"
-      [ngClass]="{ 'hollow': settingsService.userLang.language !== 'ru' }" (click)="setLanguage('ru')">ru</button>
-    <button type="button" class="button filter-toggle"
-      [ngClass]="{ 'hollow': settingsService.userLang.language !== 'zhcht' }"
-      (click)="setLanguage('zhcht')">zh-cht</button>
+    <button
+      type="button"
+      class="button filter-toggle"
+      [ngClass]="{ hollow: settingsService.userLang.language !== 'en' }"
+      (click)="setLanguage('en')"
+    >
+      en
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle"
+      [ngClass]="{ hollow: settingsService.userLang.language !== 'fr' }"
+      (click)="setLanguage('fr')"
+    >
+      fr
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle"
+      [ngClass]="{ hollow: settingsService.userLang.language !== 'es' }"
+      (click)="setLanguage('es')"
+    >
+      es
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle"
+      [ngClass]="{ hollow: settingsService.userLang.language !== 'es-mx' }"
+      (click)="setLanguage('es-mx')"
+    >
+      es-mx
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle"
+      [ngClass]="{ hollow: settingsService.userLang.language !== 'de' }"
+      (click)="setLanguage('de')"
+    >
+      de
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle"
+      [ngClass]="{ hollow: settingsService.userLang.language !== 'it' }"
+      (click)="setLanguage('it')"
+    >
+      it
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle"
+      [ngClass]="{ hollow: settingsService.userLang.language !== 'ja' }"
+      (click)="setLanguage('ja')"
+    >
+      ja
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle"
+      [ngClass]="{ hollow: settingsService.userLang.language !== 'pt-br' }"
+      (click)="setLanguage('pt-br')"
+    >
+      pt-br
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle"
+      [ngClass]="{ hollow: settingsService.userLang.language !== 'ru' }"
+      (click)="setLanguage('ru')"
+    >
+      ru
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle"
+      [ngClass]="{ hollow: settingsService.userLang.language !== 'pl' }"
+      (click)="setLanguage('pl')"
+    >
+      pl
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle"
+      [ngClass]="{ hollow: settingsService.userLang.language !== 'ko' }"
+      (click)="setLanguage('ko')"
+    >
+      ko
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle"
+      [ngClass]="{ hollow: settingsService.userLang.language !== 'zh-cht' }"
+      (click)="setLanguage('zh-cht')"
+    >
+      zh-cht
+    </button>
+    <button
+      type="button"
+      class="button filter-toggle"
+      [ngClass]="{ hollow: settingsService.userLang.language !== 'zh-chs' }"
+      (click)="setLanguage('zh-chs')"
+    >
+      zh-chs
+    </button>
   </div>
 </div>

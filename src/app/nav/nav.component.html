@@ -64,7 +64,7 @@
   </div>
   <div class="logo-wrap small-2 medium-12 columns order-3 medium-order-1">
     <a (click)="route(['/'])" class="home">
-      <img class="logo" src="/assets/images/travelereel.png" />
+      <img class="logo" [src]="dark ? '/assets/images/travelerwhite.png' : '/assets/images/travelereel.png'" />
     </a>
   </div>
   <div class="small-10 medium-12 columns order-4 medium-order-4">

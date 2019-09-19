@@ -1,7 +1,6 @@
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { Component, Renderer2 } from '@angular/core';
 import { SettingsService } from './services/settings.service';
-import { ManifestService } from './services/manifest.service';
 
 @Component({
   selector: 'app-root',
@@ -12,8 +11,7 @@ export class AppComponent {
   constructor(
     angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics,
     private settingsService: SettingsService,
-    private renderer: Renderer2,
-    manifestService: ManifestService
+    private renderer: Renderer2
   ) {
     angulartics2GoogleAnalytics.startTracking();
     this.settingsService.dark.subscribe(dark => {

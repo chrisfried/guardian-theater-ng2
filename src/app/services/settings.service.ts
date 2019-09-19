@@ -80,14 +80,14 @@ export class SettingsService {
       this.userLang = JSON.parse(localStorage.getItem('gt.LANGUAGE'));
     } else if (navigator.language) {
       switch (navigator.language.substr(0, 2)) {
-        case 'de':
-          this.userLang.language = 'de';
+        case 'fr':
+          this.userLang.language = 'fr';
           break;
         case 'es':
           this.userLang.language = 'es';
           break;
-        case 'fr':
-          this.userLang.language = 'fr';
+        case 'de':
+          this.userLang.language = 'de';
           break;
         case 'it':
           this.userLang.language = 'it';
@@ -95,21 +95,29 @@ export class SettingsService {
         case 'ja':
           this.userLang.language = 'ja';
           break;
-        case 'pl':
-          this.userLang.language = 'pl';
-          break;
         case 'pt':
-          this.userLang.language = 'ptbr';
+          this.userLang.language = 'pt-br';
           break;
         case 'ru':
           this.userLang.language = 'ru';
           break;
+        case 'pl':
+          this.userLang.language = 'pl';
+          break;
+        case 'ko':
+          this.userLang.language = 'pl';
+          break;
         case 'zh':
-          this.userLang.language = 'zhcht';
+          this.userLang.language = 'zh-cht';
           break;
       }
-      if (navigator.language === 'es-mx') {
-        this.userLang.language = 'esmx';
+      switch (navigator.language) {
+        case 'es-mx':
+          this.userLang.language = 'es-mx';
+          break;
+        case 'zh-chs':
+          this.userLang.language = 'zh-chs';
+          break;
       }
     }
     this.userLangObs = new BehaviorSubject(this.userLang);
