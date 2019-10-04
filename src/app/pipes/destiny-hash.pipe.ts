@@ -27,6 +27,8 @@ export class DestinyHashPipe implements PipeTransform {
           return DestinyClassDefinition[this.settingsService.userLang.language][
             hash
           ].name;
+        case 'emblemSecondarySpecial':
+          return `https://bungie.net${this.manifestService.defs.InventoryItem.get(hash).secondarySpecial}`
         case 'activityName':
           return this.manifestService.defs.Activity.get(hash).displayProperties
             .name;

@@ -171,7 +171,8 @@ export class ActivityService implements OnDestroy {
 
               if (!this.mixerService.mixer[membershipId]) {
                 this.mixerService.mixer[membershipId] = new BehaviorSubject({
-                  displayName: displayNameUndersore
+                  displayName,
+                  membershipId
                 });
               }
 
@@ -502,10 +503,10 @@ export class ActivityService implements OnDestroy {
                 this.mixerService.mixer[membershipId]
                   .pipe(
                     map((subject: gt.MixerServiceItem) => {
-                      let { checkedId } = subject;
+                      let { checkedScreenAPIForMixerId } = subject;
                       let url = '';
-                      if (!checkedId) {
-                        url = `https://guardiantheater.github.io/d2-stream-name-parser/${displayNameUndersore}/mixer.json`;
+                      if (!checkedScreenAPIForMixerId) {
+                        url = `https://guardiantheater.github.io/d2-stream-name-parser/${displayName}/mixer.json`;
                       }
                       return url;
                     }),
@@ -514,11 +515,20 @@ export class ActivityService implements OnDestroy {
                         return this.http.get(url).pipe(
                           catchError((err: HttpErrorResponse) => {
                             if (err.status === 404) {
-                              const next: gt.MixerServiceItem = {
-                                displayName: displayNameUndersore,
-                                checkedId: true
-                              };
-                              this.mixerService.mixer[membershipId].next(next);
+                              this.mixerService.mixer[membershipId]
+                                  .pipe(
+                                    take(1),
+                                    map(subject => {
+                                      const next = {
+                                        ...subject,
+                                        checkedScreenAPIForMixerId: true
+                                      };
+                                      this.mixerService.mixer[
+                                        membershipId
+                                      ].next(next);
+                                    })
+                                  )
+                                  .subscribe();
                             }
                             return observableEmpty();
                           })
@@ -531,33 +541,60 @@ export class ActivityService implements OnDestroy {
                       let max = 0;
                       let channelId = '';
                       for (let id in res) {
-                        if (res[id] > max) {
+                        if (id === 'confirmed') {
+                          if (res[id][membershipId]) {
+                            channelId = res[id][membershipId];
+                            break;
+                          }
+                        } else if (res[id] > max) {
                           channelId = id;
                           max = res[id];
                         }
                       }
+                      return channelId;
+                    }),
+                    switchMap(channelId => {
                       if (channelId) {
+                        return this.http.get(
+                          `https://mixer.com/api/v1/channels/${channelId}`,
+                          {
+                            headers: new HttpHeaders().set(
+                              'Client-ID',
+                              '70eaab0506c7699b2c1800b9ce485786273c5db3b65d80c9'
+                            )
+                          }
+                        );
+                      } else {
+                        return observableEmpty();
+                      }
+                    }),
+                    withLatestFrom(this.mixerService.mixer[membershipId]),
+                    map(
+                      ([res, subject]: [
+                        { token: string; id: string },
+                        gt.MixerServiceItem
+                      ]) => {
                         const next: gt.MixerServiceItem = {
-                          displayName: displayNameUndersore,
-                          channelId,
-                          checkedId: true
+                          ...subject,
+                          checkedScreenAPIForMixerId: true
                         };
+                        try {
+                          next.channelName = res.token;
+                          next.channelId = res.id;
+                        } catch (e) {}
                         this.mixerService.mixer[membershipId].next(next);
                       }
-                    })
+                    )
                   )
                   .subscribe()
               );
 
-              let channelIdTemp;
-
-              // Fetch Twitch clips based on Mixer Channel ID from GT API
+              // Fetch Mixer clips based on Mixer Channel ID from GT API
               this.subs.push(
                 this.mixerService.mixer[membershipId]
                   .pipe(
                     map((subject: gt.MixerServiceItem) => {
                       let { channelId, checkedResponse } = subject;
-                      channelIdTemp = channelId;
                       const url =
                         channelId && !checkedResponse
                           ? 'https://mixer.com/api/v1/channels/' +
@@ -579,15 +616,21 @@ export class ActivityService implements OnDestroy {
                           .pipe(
                             catchError((err: HttpErrorResponse) => {
                               if (err.status === 404) {
-                                const next: gt.MixerServiceItem = {
-                                  displayName: displayNameUndersore,
-                                  channelId: channelIdTemp,
-                                  checkedId: true,
-                                  checkedResponse: true
-                                };
-                                this.mixerService.mixer[membershipId].next(
-                                  next
-                                );
+                                this.mixerService.mixer[membershipId]
+                                  .pipe(
+                                    take(1),
+                                    map(subject => {
+                                      const next = {
+                                        ...subject,
+                                        checkedScreenAPIForMixerId: true,
+                                        checkedResponse: true
+                                      };
+                                      this.mixerService.mixer[
+                                        membershipId
+                                      ].next(next);
+                                    })
+                                  )
+                                  .subscribe();
                               }
                               return observableThrowError(
                                 err || 'Twitch Server error'
@@ -597,20 +640,26 @@ export class ActivityService implements OnDestroy {
                       } else {
                         return observableEmpty();
                       }
-                    })
+                    }),
+                  withLatestFrom(this.mixerService.mixer[membershipId]),
+                  map(
+                    ([response, subject]: [
+                      mixer.Video[],
+                      gt.MixerServiceItem
+                    ]) => {
+                        if (response) {
+                          const next: gt.MixerServiceItem = {
+                            ...subject,
+                            checkedId: true,
+                            checkedResponse: true,
+                            response
+                          };
+                          this.mixerService.mixer[membershipId].next(next);
+                        }
+                      }
+                    )
                   )
-                  .subscribe((response: any) => {
-                    if (response) {
-                      const next: gt.MixerServiceItem = {
-                        displayName: displayNameUndersore,
-                        channelId: channelIdTemp,
-                        checkedId: true,
-                        checkedResponse: true,
-                        response
-                      };
-                      this.mixerService.mixer[membershipId].next(next);
-                    }
-                  })
+                  .subscribe()
               );
 
               // Check for matching Mixer Clips
@@ -650,10 +699,10 @@ export class ActivityService implements OnDestroy {
                           hms = h + 'h' + m + 'm' + s + 's';
                         }
                         let embedUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-                          `https://mixer.com/embed/player/${subject.displayName}?vod=${video.id}&t=${hms}`
+                          `https://mixer.com/embed/player/${subject.channelName}?vod=${video.id}&t=${hms}`
                         );
                         let vodUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-                          `https://mixer.com/${subject.displayName}?vod=${video.id}&t=${hms}`
+                          `https://mixer.com/${subject.channelName}?vod=${video.id}&t=${hms}`
                         );
                         let clip: gt.Clip = {
                           type: 'mixer',

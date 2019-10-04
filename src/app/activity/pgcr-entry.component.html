@@ -15,7 +15,7 @@
   " target="_blank" angulartics2On="click" angularticsEvent="GuardianLink" angularticsCategory="TwitchLink"></a>
 <a class="profile-link mixer" title="View Guardian on Mixer" (click)="stopPropagation($event)"
   *ngIf="links.guardian.mixer && entry.mixer && entry.mixer.channelId"
-  [href]="'https://mixer.com/' + entry.mixer.displayName" target="_blank" angulartics2On="click"
+  [href]="'https://mixer.com/' + entry.mixer.channelName" target="_blank" angulartics2On="click"
   angularticsEvent="GuardianLink" angularticsCategory="TwitchLink"></a>
 <a class="profile-link bungie" title="View Guardian on Bungie" (click)="stopPropagation($event)"
   *ngIf="links.guardian.bungie" [href]="

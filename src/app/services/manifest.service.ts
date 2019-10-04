@@ -9,13 +9,10 @@ import {
   switchMap,
   map,
   catchError,
-  distinctUntilChanged,
-  take
 } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 import {
-  DestinyActivityDefinition,
-  DestinyActivityModeDefinition
+  DestinyActivityDefinition, DestinyInventoryItemDefinition
 } from 'bungie-api-ts/destiny2';
 
 @Injectable()
@@ -33,6 +30,9 @@ export class ManifestService {
     Activity?: {
       get(hash: number): DestinyActivityDefinition;
     };
+    InventoryItem?: {
+      get(hash: number): DestinyInventoryItemDefinition;
+    }
   };
 
   private localStorageKey = 'd2-manifest-version';
@@ -43,11 +43,12 @@ export class ManifestService {
     private bHttp: BungieHttpService,
     private http: HttpClient
   ) {
-    const tables = ['Activity'];
+    const tables = ['Activity', 'InventoryItem'];
 
     this.settingsService.userLangObs
       .pipe(
         switchMap(lang => {
+          console.log(lang)
           return this.bHttp.get(
             'https://www.bungie.net/Platform/Destiny2/Manifest/'
           );

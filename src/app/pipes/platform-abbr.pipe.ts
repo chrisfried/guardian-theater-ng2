@@ -10,8 +10,8 @@ export class PlatformAbbrPipe implements PipeTransform {
         return 'XBOX';
       case 2:
         return 'PSN';
-      case 4:
-        return 'BLIZ';
+      case 3:
+        return 'STEAM';
       default:
         return platform + '';
     }

@@ -16,3 +16,40 @@
   height: 75px;
   color: $ocean-blue;
 }
+.profile-button {
+  background: $dark-blue;
+  font-weight: bold;
+  color: white;
+  padding: .5em;
+  margin: .5em;
+
+  cursor: pointer;
+}
+
+.label {
+  border-radius: 0.25em;
+  line-height: 1.2em;
+  padding: 0 0.3em;
+  font-size: 0.6rem;
+  cursor: inherit;
+  vertical-align: middle;
+
+  text-align: center;
+  background: none;
+  display: inline-block;
+  color: whitesmoke;
+  font-weight: 400;
+  margin-left: .5em;
+
+  &.xbox {
+    background: #288145;
+  }
+
+  &.psn {
+    background: #3d2c94;
+  }
+
+  &.steam {
+    background: #000000;
+  }
+}

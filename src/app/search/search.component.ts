@@ -17,7 +17,7 @@ export class SearchComponent implements OnInit, OnDestroy {
   public searchResults: UserInfoCard[];
   public checkingDuplicates: boolean;
 
-  private searchName: BehaviorSubject<string>;
+  public searchName: BehaviorSubject<string>;
   private searchResponse: Subscription;
   private params$: Subscription;
 
@@ -36,6 +36,7 @@ export class SearchComponent implements OnInit, OnDestroy {
     this.params$ = this.activatedRoute.params.subscribe((params: Params) => {
       this.searchResults = null;
       if (params['guardian']) {
+        localStorage.setItem('gt.LAST_SEARCH', params['guardian']);
         this.searchName.next(params['guardian']);
       }
     });

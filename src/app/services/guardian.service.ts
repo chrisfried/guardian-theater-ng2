@@ -40,6 +40,17 @@ export class GuardianService {
     return this.bHttp.get(url);
   }
 
+  getEmblemHash(
+    membershipType: number,
+    membershipId: string
+  ): Observable<number> {
+    return this.getCharactersForAccount(membershipType, membershipId).pipe(
+      map(characters => {
+        return characters[0].emblemHash
+      })
+    )
+  }
+
   getCharactersForAccount(
     membershipType: number,
     membershipId: string
@@ -66,6 +77,9 @@ export class GuardianService {
             characters.push(characterObject[Object.keys(characterObject)[i]]);
           }
         });
+        try {
+          characters.sort((a, b) => new Date(b.dateLastPlayed).getTime() - new Date(a.dateLastPlayed).getTime());
+        } catch (e) {}
         return characters;
       })
     );

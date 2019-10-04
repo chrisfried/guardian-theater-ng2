@@ -84,8 +84,11 @@ declare namespace gt {
 
   interface MixerServiceItem {
     displayName: string;
+    membershipId: string;
+    channelName?: string;
     channelId?: string;
     response?: mixer.Video[];
+    checkedScreenAPIForMixerId?: boolean;
 
     checkedId?: boolean;
     checkedResponse?: boolean;

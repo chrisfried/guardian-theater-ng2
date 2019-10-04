@@ -26,6 +26,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
   public clipLimiter: gt.ClipLimiter;
   public loadingActivities: boolean;
   public loadingAccounts: boolean;
+  public emblemHash: number;
 
   constructor(
     private router: Router,
@@ -53,7 +54,7 @@ export class GuardianComponent implements OnInit, OnDestroy {
           !(
             this.membershipType === 1 ||
             this.membershipType === 2 ||
-            this.membershipType === 4
+            this.membershipType === 3
           )
         ) {
           this.router.navigate(['/search', this.membershipType], {
@@ -74,6 +75,15 @@ export class GuardianComponent implements OnInit, OnDestroy {
                 this.settingsService.activeProfiles.next(res.Response.profiles);
               })
           );
+
+          this.subs.push(
+            this.guardianService.getEmblemHash(
+              +params['membershipType'],
+              params['membershipId']
+            ).subscribe(res => {
+              this.emblemHash = res;
+            })
+          )
 
           this.loadingActivities = true;
           this.subs.push(

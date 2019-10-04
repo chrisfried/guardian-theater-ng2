@@ -13,8 +13,6 @@ import { SettingsService } from '../services/settings.service';
 export class NavComponent implements OnInit, OnDestroy {
   public searchString: string;
   public ad: boolean;
-  private adInterval;
-  private adTimeout;
   public betaTextHidden: {
     hidden?: boolean;
   };
@@ -27,21 +25,13 @@ export class NavComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    this.searchString = localStorage.getItem('gt.LAST_SEARCH') || '';
+
     this.settingsService.dark.subscribe(dark => this.dark = dark)
     this._routerEvent$ = this.router.events.subscribe((event: Event) => {
       this.errorRes = null;
     });
     this._errorRes$ = this.bHttp.error.subscribe(res => (this.errorRes = res));
-    this.searchString = '';
-    this.ad = true;
-    this.adInterval = setInterval(() => {
-      if (window.innerWidth > 704) {
-        this.ad = false;
-        this.adTimeout = setTimeout(() => {
-          this.ad = true;
-        }, 50);
-      }
-    }, 30000);
 
     this.betaTextHidden = JSON.parse(
       localStorage.getItem('gt.hideBetaText')
@@ -53,8 +43,6 @@ export class NavComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     this._routerEvent$.unsubscribe();
     this._errorRes$.unsubscribe();
-    clearInterval(this.adInterval);
-    clearTimeout(this.adTimeout);
   }
 
   search() {

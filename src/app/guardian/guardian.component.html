@@ -3,12 +3,12 @@
 </div>
 
 <div *ngIf="profiles.length" class="profile-wrapper">
-  <div class="profile small-12 columns">
+  <div class="profile small-12 columns" [ngStyle]="{'background-image': emblemHash && (emblemHash | destinyHash:'emblemSecondarySpecial') !== 'UNDEFINED' ? 'url(' + (emblemHash | destinyHash:'emblemSecondarySpecial') + ')' : ''}">
     <div class="row">
       <div class="active-character">
         <div class="gamertag">
           <span class="name" *ngFor="let profile of profiles">{{ profile.displayName }}
-            <span class="label" [ngClass]="{'xbox': profile.membershipType === 1, 'psn': profile.membershipType === 2, 'blizzard': profile.membershipType === 4}">{{ profile.membershipType | platformAbbr }}</span>
+            <span class="label" [ngClass]="{'xbox': profile.membershipType === 1, 'psn': profile.membershipType === 2, 'steam': profile.membershipType === 3}">{{ profile.membershipType | platformAbbr }}</span>
           </span>
         </div>
       </div>
