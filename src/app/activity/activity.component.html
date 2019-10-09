@@ -13,12 +13,12 @@
         <span class="activity-info">
           <span *ngIf="!pgcr" class="activity-name">Fetching PGCR from Bungie...</span>
           <span
-            *ngIf="pgcr && !pgcr.loading.message && pgcr.activityDetails && (pgcr.activityDetails.directorActivityHash | destinyHash:'activityIcon')"
-            [title]="pgcr.activityDetails.directorActivityHash | destinyHash:'activityMode'" class="activity-icon">
-            <img [src]="pgcr.activityDetails.directorActivityHash | destinyHash:'activityIcon'" /></span>
+            *ngIf="pgcr && !pgcr.loading.message && pgcr.activityDetails && (pgcr.activityDetails.directorActivityHash | destinyHash:'activityIcon' | async)"
+            [title]="pgcr.activityDetails.directorActivityHash | destinyHash:'activityMode' | async" class="activity-icon">
+            <img [src]="pgcr.activityDetails.directorActivityHash | destinyHash:'activityIcon' | async" /></span>
           <span *ngIf="pgcr && pgcr.activityDetails" class="activity-name"
-            [title]="pgcr.loading.message || (pgcr.activityDetails.directorActivityHash | destinyHash:'activityMode') + ': ' + (pgcr.activityDetails.referenceId | destinyHash:'activityName')">{{ (pgcr.activityDetails.referenceId
-              | destinyHash:'activityName') }}</span>
+            [title]="pgcr.loading.message || (pgcr.activityDetails.directorActivityHash | destinyHash:'activityMode' | async) + ': ' + (pgcr.activityDetails.referenceId | destinyHash:'activityName' | async)">{{ (pgcr.activityDetails.referenceId
+              | destinyHash:'activityName' | async) }}</span>
           <span *ngIf="pgcr" class="activity-time"
             [title]="pgcr.period | date:'short'">{{ pgcr.period | date:'short' }}</span>
         </span>
@@ -56,7 +56,7 @@
         </div>
       </div>
       <span [@growInShrinkOut]="animationState" class="pgcr-block columns pgcr pgcr-full pgcr-no-teams"
-        *ngIf="pgcr && (!pgcr.teams || !pgcr.teams.length)" [ngClass]="{ 
+        *ngIf="pgcr && (!pgcr.teams || !pgcr.teams.length)" [ngClass]="{
         'no-clips': !filteredClips.length,
         'small-10': !mini,
         'small-12': mini

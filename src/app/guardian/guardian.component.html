@@ -3,7 +3,7 @@
 </div>
 
 <div *ngIf="profiles.length" class="profile-wrapper">
-  <div class="profile small-12 columns" [ngStyle]="{'background-image': emblemHash && (emblemHash | destinyHash:'emblemSecondarySpecial') !== 'UNDEFINED' ? 'url(' + (emblemHash | destinyHash:'emblemSecondarySpecial') + ')' : ''}">
+  <div class="profile small-12 columns" [ngStyle]="{'background-image': emblemHash ? 'url(' + (emblemHash | destinyHash:'emblemSecondarySpecial' | async) + ')' : ''}">
     <div class="row">
       <div class="active-character">
         <div class="gamertag">
@@ -16,28 +16,11 @@
   </div>
 
   <div class="row">
-    <div class="columns small-12 mode-column">
-      <label class="mode-selector-wrapper">
-        <select class="mode-selector" [ngClass]="'mode-selected-' + gamemode" [ngModel]="gamemode" (change)="selectGamemode($event.target.value)">
-          <option label="All" value="None" selected="selected">All</option>
-          <option label="Story" value="Story">Story</option>
-          <option label="Strike" value="Strike">Strike</option>
-          <option label="All PvP" value="AllPvP">All PvP</option>
-          <option label="Patrol" value="Patrol">Patrol</option>
-          <option label="All PvE" value="AllPvE">All PvE</option>
-          <option label="Control" value="Control">Control</option>
-          <option label="Clash" value="Clash">Clash</option>
-          <option label="Nightfall" value="Nightfall">Nightfall</option>
-          <option label="Prestige Nightfall" value="HeroicNightfall">Prestige Nightfall</option>
-          <option label="All Strikes" value="AllStrikes">All Strikes</option>
-          <option label="Iron Banner" value="IronBanner">Iron Banner</option>
-          <option label="Supremacy" value="Supremacy">Supremacy</option>
-          <option label="Survival" value="Survival">Survival</option>
-          <option label="Countdown" value="Countdown">Countdown</option>
-          <option label="Trials of the Nine" value="TrialsOfTheNine">Trials of the Nine</option>
-          <option label="Social" value="Social">Social</option>
-        </select>
-      </label>
+    <div class="columns small-12 button-group expanded">
+      <button *ngFor="let mode of modeFilters" type="button" [class]="'button filter-toggle mode-button mode-button-' + mode.flag + (gamemode === mode.flag ? '' : ' hollow')" (click)="selectGamemode(mode.flag)"
+        [title]="mode.name">
+        <span [ngStyle]="{ '-webkit-mask-box-image': 'url(' + mode.icon + ')' }"></span>
+      </button>
     </div>
   </div>
 
@@ -58,14 +41,6 @@
       <button type="button" class="button filter-toggle enemy" [ngClass]="{ 'hollow': !clipLimiter.opponents }" (click)="toggleLimiter('opponents')"
         title="Opponents">
         <span class="fi-torsos-all"></span>
-      </button>
-      <button *ngIf="membershipType === 1" type="button" class="button filter-toggle xbox" [ngClass]="{ 'hollow': !clipLimiter.xbox }"
-        (click)="toggleLimiter('xbox')" title="Xbox">
-        <span class="fi-social-xbox"></span>
-      </button>
-      <button *ngIf="membershipType === 1" type="button" class="button filter-toggle twitch" [ngClass]="{ 'hollow': !clipLimiter.twitch }"
-        (click)="toggleLimiter('twitch')" title="Twitch">
-        <span class="fi-social-twitch"></span>
       </button>
     </div>
   </div>

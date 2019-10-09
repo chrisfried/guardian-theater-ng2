@@ -12,7 +12,7 @@ import {
 } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 import {
-  DestinyActivityDefinition, DestinyInventoryItemDefinition
+  DestinyActivityDefinition, DestinyInventoryItemDefinition, DestinyActivityModeDefinition,
 } from 'bungie-api-ts/destiny2';
 
 @Injectable()
@@ -32,8 +32,11 @@ export class ManifestService {
     };
     InventoryItem?: {
       get(hash: number): DestinyInventoryItemDefinition;
+    };
+    ActivityMode?: {
+      get(modeType: number): DestinyActivityModeDefinition;
     }
-  };
+  };;
 
   private localStorageKey = 'd2-manifest-version';
   private idbKey = 'd2-manifest';
@@ -43,12 +46,11 @@ export class ManifestService {
     private bHttp: BungieHttpService,
     private http: HttpClient
   ) {
-    const tables = ['Activity', 'InventoryItem'];
+    const tables = ['Activity', 'InventoryItem', 'ActivityMode'];
 
     this.settingsService.userLangObs
       .pipe(
         switchMap(lang => {
-          console.log(lang)
           return this.bHttp.get(
             'https://www.bungie.net/Platform/Destiny2/Manifest/'
           );
@@ -116,18 +118,40 @@ export class ManifestService {
           this.defs = {};
           tables.forEach(tableShort => {
             const table = `Destiny${tableShort}Definition`;
-            this.defs[tableShort] = {
-              get(name: number) {
-                const dbTable = manifest[table];
-                if (!dbTable) {
+            if (tableShort === 'ActivityMode') {
+              this.defs[tableShort] = {
+                get(modeType: number) {
+                  const dbTable = manifest[table];
+                  if (!dbTable) {
+                    throw new Error(
+                      `Table ${table} does not exist in the manifest`
+                    );
+                  }
+                  for (let hash in dbTable) {
+                    if (dbTable[hash].modeType === modeType) {
+                      return dbTable[hash];
+                    }
+                  }
                   throw new Error(
-                    `Table ${table} does not exist in the manifest`
+                    `ModeType ${modeType} does not exist in the manifest`
                   );
                 }
-                return dbTable[name];
-              }
-            };
+              };
+            } else {
+              this.defs[tableShort] = {
+                get(name: number) {
+                  const dbTable = manifest[table];
+                  if (!dbTable) {
+                    throw new Error(
+                      `Table ${table} does not exist in the manifest`
+                    );
+                  }
+                  return dbTable[name];
+                }
+              };
+            }
           });
+          this.loaded = true;
         }),
         catchError((e, caught) => {
           let message = e.message || e;

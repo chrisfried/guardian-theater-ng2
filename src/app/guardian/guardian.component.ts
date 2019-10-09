@@ -6,6 +6,8 @@ import { map } from 'rxjs/operators';
 import { gt } from '../gt.typings';
 import { GuardianService } from '../services/guardian.service';
 import { SettingsService } from '../services/settings.service';
+import { DestinyActivityModeType } from 'bungie-api-ts/destiny2';
+import { ManifestService, ManifestServiceState } from 'app/services/manifest.service';
 
 @Component({
   selector: 'app-guardian',
@@ -27,16 +29,49 @@ export class GuardianComponent implements OnInit, OnDestroy {
   public loadingActivities: boolean;
   public loadingAccounts: boolean;
   public emblemHash: number;
+  public modeFilters: {
+    name: string,
+    flag: string,
+    icon: string
+  }[]
 
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
     public guardianService: GuardianService,
-    private settingsService: SettingsService
-  ) {}
+    private settingsService: SettingsService,
+    private manifestService: ManifestService
+  ) {
+    this.manifestService.state$.pipe(map(state => {
+      if (state.loaded) {
+        this.modeFilters = [
+          {
+            flag: 'None',
+            name: this.manifestService.defs.ActivityMode.get(0).displayProperties.name,
+            icon: `https://bungie.net${this.manifestService.defs.ActivityMode.get(0).displayProperties.icon}`
+          },
+          {
+            flag: 'AllPvE',
+            name: this.manifestService.defs.ActivityMode.get(7).displayProperties.name,
+            icon: `https://bungie.net${this.manifestService.defs.ActivityMode.get(7).displayProperties.icon}`
+          },
+          {
+            flag: 'AllPvP',
+            name: this.manifestService.defs.ActivityMode.get(5).displayProperties.name,
+            icon: `https://bungie.net${this.manifestService.defs.ActivityMode.get(5).displayProperties.icon}`
+          },
+          {
+            flag: 'AllPvECompetitive',
+            name: this.manifestService.defs.ActivityMode.get(64).displayProperties.name,
+            icon: `https://bungie.net${this.manifestService.defs.ActivityMode.get(63).displayProperties.icon}`
+          }
+        ];
+      }
+    })).subscribe();
+  }
 
   ngOnInit() {
-    // TO DO: If membershipType !== 1, 2, or 4, redirect to search.
+
     this.subs = [];
 
     this.subs.push(

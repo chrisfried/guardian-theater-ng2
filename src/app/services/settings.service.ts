@@ -25,9 +25,7 @@ export class SettingsService {
       self: true,
       fireteam: true,
       team: true,
-      opponents: true,
-      xbox: true,
-      twitch: true
+      opponents: true
     };
 
     this._links = JSON.parse(localStorage.getItem('gt.LINKS')) || {};

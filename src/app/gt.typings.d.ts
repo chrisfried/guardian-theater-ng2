@@ -11,8 +11,6 @@ declare namespace gt {
     fireteam?: boolean;
     team?: boolean;
     opponents?: boolean;
-    xbox?: boolean;
-    twitch?: boolean;
   }
 
   interface Activity extends DestinyHistoricalStatsPeriodGroup {

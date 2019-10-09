@@ -85,11 +85,6 @@
       </div>
     </form>
   </div>
-  <div class="small-12 columns order-5 medium-order-5">
-    <a href="https://d1.guardian.theater">
-      <button class="button small expanded">Switch to Destiny 1</button>
-    </a>
-  </div>
   <app-bungie-status
     class="small-12 columns order-5 medium-order-5"
   ></app-bungie-status>
@@ -102,4 +97,19 @@
       <p [innerHTML]="errorRes.Message"></p>
     </div>
   </div>
+
+    <div class="columns small-12 button-group expanded order-5 medium-order-5">
+      <button *ngIf="!(currentMemberId | async)" type="button" class="button" (click)="login(true)"
+        title="Login">
+        Login
+      </button>
+      <button *ngIf="currentMemberId | async" type="button" class="button" (click)="logout()"
+        title="Logout">
+        Logout
+      </button>
+      <button *ngIf="currentMemberId | async" type="button" class="button" (click)="currentProfile()"
+        title="My Profile">
+        My Profile
+      </button>
+    </div>
 </div>

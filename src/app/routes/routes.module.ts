@@ -8,6 +8,7 @@ import { GuardianComponent } from '../guardian/guardian.component';
 import { SearchComponent } from '../search/search.component';
 import { ActivityComponent } from '../activity/activity.component';
 import { TakeMyMoneyComponent } from '../take-my-money/take-my-money.component';
+import { AuthComponent } from 'app/auth/auth.component';
 
 const appRoutes: Routes = [
   {
@@ -19,6 +20,7 @@ const appRoutes: Routes = [
     component: ActivityComponent
   },
   { path: 'settings', component: SettingsComponent },
+  { path: 'auth', component: AuthComponent },
   { path: 'about', component: AboutComponent },
   { path: 'donate', component: TakeMyMoneyComponent },
   { path: 'search/:guardian', component: SearchComponent },

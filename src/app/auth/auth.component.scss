@@ -1,0 +1,18 @@
+@import "../../variables";
+
+.spinner {
+  -webkit-animation: spin 3s infinite linear;
+  animation: spin 3s infinite linear;
+}
+.profile-spinner-wrapper {
+  text-align: center;
+}
+.profile-spinner {
+  display: inline-block;
+  width: 75px;
+  text-align: center;
+  font-size: 75px;
+  line-height: 75px;
+  height: 75px;
+  color: $ocean-blue;
+}

@@ -764,12 +764,6 @@ export class ActivityService implements OnDestroy {
               clips.forEach(clip => {
                 if (pgcr.active.entry) {
                   if (
-                    (!limiter.xbox && clip.type === 'xbox') ||
-                    (!limiter.twitch && clip.type === 'twitch')
-                  ) {
-                    return;
-                  }
-                  if (
                     !limiter.self &&
                     clip.entry.player.destinyUserInfo.displayName ===
                       pgcr.active.entry.player.destinyUserInfo.displayName

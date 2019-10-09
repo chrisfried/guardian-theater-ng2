@@ -4,9 +4,10 @@ import {
   DestinyCharacterComponent,
   DestinyHistoricalStatsPeriodGroup,
   DestinyProfileResponse,
-  ServerResponse
+  ServerResponse,
+  BungieMembershipType
 } from 'bungie-api-ts/destiny2';
-import { UserInfoCard } from 'bungie-api-ts/user';
+import { UserInfoCard, UserMembershipData } from 'bungie-api-ts/user';
 import { Observable, forkJoin as observableForkJoin } from 'rxjs';
 import { map, switchMap } from 'rxjs/operators';
 import { BungieHttpService } from './bungie-http.service';
@@ -16,7 +17,7 @@ export class GuardianService {
   constructor(private bHttp: BungieHttpService) {}
 
   getLinkedAccounts(
-    membershipType: number,
+    membershipType: BungieMembershipType,
     membershipId: string
   ): Observable<
     ServerResponse<{
@@ -46,7 +47,9 @@ export class GuardianService {
   ): Observable<number> {
     return this.getCharactersForAccount(membershipType, membershipId).pipe(
       map(characters => {
-        return characters[0].emblemHash
+        if (characters && characters[0]) {
+          return characters[0].emblemHash
+        }
       })
     )
   }
@@ -73,8 +76,10 @@ export class GuardianService {
       map(res => {
         const characters = [];
         res.forEach(characterObject => {
-          for (let i = 0; i < Object.keys(characterObject).length; i++) {
-            characters.push(characterObject[Object.keys(characterObject)[i]]);
+          if (characterObject) {
+            for (let i = 0; i < Object.keys(characterObject).length; i++) {
+              characters.push(characterObject[Object.keys(characterObject)[i]]);
+            }
           }
         });
         try {

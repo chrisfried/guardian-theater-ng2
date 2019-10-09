@@ -34,6 +34,7 @@ import { PlatformAbbrPipe } from './pipes/platform-abbr.pipe';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { ManifestService } from './services/manifest.service';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { ManifestService } from './services/manifest.service';
     TakeMyMoneyComponent,
     SearchComponent,
     BungieStatusComponent,
-    PlatformAbbrPipe
+    PlatformAbbrPipe,
+    AuthComponent
   ],
   imports: [
     BrowserModule,

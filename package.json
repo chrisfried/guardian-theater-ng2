@@ -5,7 +5,7 @@
   "angular-cli": {},
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --aot --host dev.guardian.theater --port 3000",
+    "start": "ng serve --aot --host dev.guardian.theater --port 3000 --ssl --ssl-key C:\\Users\\cfried\\certificates\\dev.guardian.theater.key --ssl-cert C:\\Users\\cfried\\certificates\\dev.guardian.theater.crt",
     "lint": "tslint --project src/tsconfig.json \"src/**/*.ts\" --fix",
     "test": "ng test",
     "prod": "ng build --prod",
@@ -28,7 +28,7 @@
     "@angular/service-worker": "^8.2.4",
     "angular-2-local-storage": "^3.0.2",
     "angulartics2": "^8.0.0",
-    "bungie-api-ts": "^2.1.0",
+    "bungie-api-ts": "^2.2.0",
     "core-js": "^3.2.1",
     "fast-equals": "^2.0.0",
     "http-server": "^0.11.1",
