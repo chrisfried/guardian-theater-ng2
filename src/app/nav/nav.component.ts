@@ -5,15 +5,23 @@ import { Subscription, from, Observable, BehaviorSubject } from 'rxjs';
 import { ServerResponse, BungieMembershipType } from 'bungie-api-ts/destiny2';
 import { SettingsService } from '../services/settings.service';
 import { AuthService } from 'app/services/auth.service';
-import { map, switchMap, take } from 'rxjs/operators';
+import { map, take } from 'rxjs/operators';
 import { UserMembershipData } from 'bungie-api-ts/user';
-
+import { faTshirt, faCoffee, faInfoCircle, faWrench } from '@fortawesome/free-solid-svg-icons';
+import { faDiscord, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit, OnDestroy {
+  faInfoCircle = faInfoCircle;
+  faWrench = faWrench;
+  faCoffee = faCoffee;
+  faTshirt = faTshirt;
+  faDiscord = faDiscord;
+  faTwitter = faTwitter;
+  faGithub = faGithub;
   public searchString: string;
   public ad: boolean;
   public betaTextHidden: {

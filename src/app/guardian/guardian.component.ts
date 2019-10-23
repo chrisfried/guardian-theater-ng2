@@ -6,8 +6,7 @@ import { map } from 'rxjs/operators';
 import { gt } from '../gt.typings';
 import { GuardianService } from '../services/guardian.service';
 import { SettingsService } from '../services/settings.service';
-import { DestinyActivityModeType } from 'bungie-api-ts/destiny2';
-import { ManifestService, ManifestServiceState } from 'app/services/manifest.service';
+import { ManifestService } from 'app/services/manifest.service';
 
 @Component({
   selector: 'app-guardian',

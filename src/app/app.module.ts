@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { Angulartics2Module } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { RoutesModule } from './routes/routes.module';
 
@@ -65,7 +66,8 @@ import { AuthComponent } from './auth/auth.component';
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       registrationStrategy: 'registerWithDelay:5000'
-    })
+    }),
+    FontAwesomeModule
   ],
   providers: [
     BungieHttpService,

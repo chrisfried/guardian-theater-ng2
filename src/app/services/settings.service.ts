@@ -30,7 +30,11 @@ export class SettingsService {
 
     this._links = JSON.parse(localStorage.getItem('gt.LINKS')) || {};
 
-    this._dark = JSON.parse(localStorage.getItem('gt.DARK')) || false;
+    if (localStorage.getItem('gt.DARK') !== null) {
+      this._dark = JSON.parse(localStorage.getItem('gt.DARK')) || false;
+    } else {
+      this._dark = true;
+    }
 
     if (!this._links.activity) {
       this._links.activity = {

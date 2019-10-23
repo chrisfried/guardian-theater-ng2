@@ -1,29 +1,36 @@
 <div class="row align-middle">
   <div class="columns small-12 icon-menu align-right order-2 medium-order-3">
     <a
-      class="donate"
-      title="Take My Money"
+      title="Buy a shirt"
+      href="https://chrisfried.threadless.com/designs/guardian-theater-3000"
+      target="_blank"
+      angulartics2On="click"
+      angularticsEvent="NavBarLink"
+      angularticsCategory="ShirtLink"
+    >
+    <fa-icon [icon]="faTshirt"></fa-icon>
+    </a>
+    <a
+      title="Buy me a coffee"
       href="https://ko-fi.com/chrisfried"
       target="_blank"
       angulartics2On="click"
       angularticsEvent="NavBarLink"
       angularticsCategory="DonateLink"
     >
-      <span>Donate</span>
+      <fa-icon [icon]="faCoffee"></fa-icon>
     </a>
     <a
       title="Guardian Theater on Twitter"
       href="https://twitter.com/guardtheater"
       target="_blank"
-      class="twitter"
       angulartics2On="click"
       angularticsEvent="NavBarLink"
       angularticsCategory="TwitterLink"
     >
-      <span class="fi-social-twitter"></span>
+      <fa-icon [icon]="faTwitter"></fa-icon>
     </a>
     <a
-      class="discord"
       title="Join our Discord Server"
       href="https://discord.gg/0lADdhKdnv0jxTNP"
       target="_blank"
@@ -31,7 +38,7 @@
       angularticsEvent="NavBarLink"
       angularticsCategory="DiscordLink"
     >
-      <span>Discord</span>
+      <fa-icon [icon]="faDiscord"></fa-icon>
     </a>
     <a
       title="Github"
@@ -41,7 +48,7 @@
       angularticsEvent="NavBarLink"
       angularticsCategory="GithubLink"
     >
-      <span class="fi-social-github"></span>
+      <fa-icon [icon]="faGithub"></fa-icon>
     </a>
     <a
       title="About Guardian Theater"
@@ -50,7 +57,7 @@
       angularticsEvent="NavBarLink"
       angularticsCategory="AboutLink"
     >
-      <span class="fi-info"></span>
+      <fa-icon [icon]="faInfoCircle"></fa-icon>
     </a>
     <a
       title="Settings"
@@ -59,12 +66,12 @@
       angularticsEvent="NavBarLink"
       angularticsCategory="SettingsLink"
     >
-      <span class="fi-wrench"></span>
+      <fa-icon [icon]="faWrench"></fa-icon>
     </a>
   </div>
   <div class="logo-wrap small-2 medium-12 columns order-3 medium-order-1">
     <a (click)="route(['/'])" class="home">
-      <img class="logo" [src]="dark ? '/assets/images/travelerwhite.png' : '/assets/images/travelereel.png'" />
+      <img class="logo" [src]="dark ? '/assets/images/gt3kdark.png' : '/assets/images/gt3klight.png'" />
     </a>
   </div>
   <div class="small-10 medium-12 columns order-4 medium-order-4">
