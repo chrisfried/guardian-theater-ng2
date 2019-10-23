@@ -157,7 +157,7 @@
             <span class="xbox-clip-name">{{ clip.video.clipName || 'Xbox Game DVR Clip' }}</span>
             <a class="xbox-clip-link xboxrecordus" title="View Clip on xboxrecord.us" (click)="stopPropagation($event)"
               *ngIf="links.xbox.recordus"
-              [href]="'https://xboxrecord.us/gamer/' + clip.entry.player.destinyUserInfo.displayName + '/clip/' + clip.video.gameClipId"
+              [href]="'https://xboxrecord.us/gamer/' + clip.entry.player.destinyUserInfo.displayName + '/clip/' + clip.video.gameClipId + '/scid/' + clip.video.gameClipId"
               target="_blank" angulartics2On="click" angularticsEvent="XboxClipLink"
               angularticsCategory="XboxRecordUsLink">.us</a>
             <a class="xbox-clip-link xboxdvr" title="View Clip on Xbox DVR" (click)="stopPropagation($event)"
