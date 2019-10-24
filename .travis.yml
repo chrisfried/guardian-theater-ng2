@@ -3,4 +3,5 @@ node_js:
   - 10
 
 script:
+  - npm install
   - npm test
