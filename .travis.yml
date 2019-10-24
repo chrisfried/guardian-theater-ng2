@@ -1,0 +1,7 @@
+language: node
+
+services:
+  - docker
+
+script:
+  - uptime
