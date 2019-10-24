@@ -2,8 +2,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { SettingsService } from '../services/settings.service';
 import { DestinyRaceDefinition } from '../defs/DestinyRaceDefinition';
 import { DestinyClassDefinition } from '../defs/DestinyClassDefinition';
-import { DestinyActivityDefinition } from '../defs/DestinyActivityDefinition';
-import { DestinyActivityModeDefinition } from '../defs/DestinyActivityModeDefinition';
 import { EmblemDefinition } from '../defs/EmblemDefinition';
 import { ManifestService } from 'app/services/manifest.service';
 import { map } from 'rxjs/operators';

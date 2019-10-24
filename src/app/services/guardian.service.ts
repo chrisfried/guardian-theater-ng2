@@ -7,7 +7,7 @@ import {
   ServerResponse,
   BungieMembershipType
 } from 'bungie-api-ts/destiny2';
-import { UserInfoCard, UserMembershipData } from 'bungie-api-ts/user';
+import { UserInfoCard } from 'bungie-api-ts/user';
 import { Observable, forkJoin as observableForkJoin } from 'rxjs';
 import { map, switchMap } from 'rxjs/operators';
 import { BungieHttpService } from './bungie-http.service';
