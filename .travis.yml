@@ -1,7 +1,6 @@
-language: node
-
-services:
-  - docker
+language: node_js
+node_js:
+  - 10
 
 script:
-  - uptime
+  - npm test
