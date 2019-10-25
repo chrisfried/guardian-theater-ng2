@@ -9,4 +9,5 @@ script:
   # this will fail, as it should because linting fails - npm run lint || exit 1
   - sh ci.sh
   - sleep 5
-  - curl -IX GET https://localhost:3000
+  - echo "127.0.0.1 dev.guardian.theater" >> /etc/hosts
+  - curl -IX GET https://dev.guardian.theater:3000

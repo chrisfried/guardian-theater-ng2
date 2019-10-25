@@ -8,5 +8,17 @@ fi
 
 cd -
 
+if [ ! -f src/environments/keys.ts ]; then
+  cat > src/environments/keys.ts <<EOF
+  export const bungieDev = {
+    apiKey: '$BUNGIE_API_KEY',
+    authUrl: 'https://www.bungie.net/en/OAuth/Authorize',
+    clientId: '$BUNGIE_CLIENT_ID',
+    clientSecret: '$BUNGIE_CLIENT_SECRET'
+  }
+EOF
+fi
+
+
 docker build --no-cache . -t gt
 docker run -d --name gt -p 3000:443 gt
