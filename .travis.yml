@@ -7,7 +7,6 @@ services:
 
 script:
   # this will fail, as it should because linting fails - npm run lint || exit 1
-  - docker build . -t gt-dev
-  - docker run -d -p 3000:3000 gt-dev
-  - sleep 30
-  - curl http://localhost:3000
+  - sh ci.sh
+  - sleep 5
+  - curl -IX GET https://localhost:3000
