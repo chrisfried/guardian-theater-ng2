@@ -15,6 +15,12 @@ if [ ! -f src/environments/keys.ts ]; then
     authUrl: 'https://www.bungie.net/en/OAuth/Authorize',
     clientId: '$BUNGIE_CLIENT_ID',
     clientSecret: '$BUNGIE_CLIENT_SECRET'
+  },
+  export const bungieProd = {
+    apiKey: '$BUNGIE_API_KEY',
+    authUrl: 'https://www.bungie.net/en/OAuth/Authorize',
+    clientId: '$BUNGIE_CLIENT_ID',
+    clientSecret: '$BUNGIE_CLIENT_SECRET'
   }
 EOF
 fi
