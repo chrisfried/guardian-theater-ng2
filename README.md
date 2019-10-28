@@ -34,9 +34,12 @@ Run `npm run ngh` to deploy to Github Pages.
 
 This project supports CI/CD using travis-ci. For it to work you must set the following environment variables in the settings page for your travis-ci.org account:
 
-* BUNGIE_API_KEY
-* BUNGIE_CLIENT_ID
-* BUNGIE_CLIENT_SECRET
+* BUNGIE_DEV_API_KEY
+* BUNGIE_DEV_CLIENT_ID
+* BUNGIE_DEV_CLIENT_SECRET
+* BUNGIE_PROD_API_KEY
+* BUNGIE_PROD_CLIENT_ID
+* BUNGIE_PROD_CLIENT_SECRET
 
 These values are your api key, client id and client secret.
 

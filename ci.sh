@@ -11,16 +11,16 @@ cd -
 if [ ! -f src/environments/keys.ts ]; then
   cat > src/environments/keys.ts <<EOF
   export const bungieDev = {
-    apiKey: '$BUNGIE_API_KEY',
+    apiKey: '$BUNGIE_DEV_API_KEY',
     authUrl: 'https://www.bungie.net/en/OAuth/Authorize',
-    clientId: '$BUNGIE_CLIENT_ID',
-    clientSecret: '$BUNGIE_CLIENT_SECRET'
+    clientId: '$BUNGIE_DEV_CLIENT_ID',
+    clientSecret: '$BUNGIE_DEV_CLIENT_SECRET'
   }
   export const bungieProd = {
-    apiKey: '$BUNGIE_API_KEY',
+    apiKey: '$BUNGIE_PROD_API_KEY',
     authUrl: 'https://www.bungie.net/en/OAuth/Authorize',
-    clientId: '$BUNGIE_CLIENT_ID',
-    clientSecret: '$BUNGIE_CLIENT_SECRET'
+    clientId: '$BUNGIE_PROD_CLIENT_ID',
+    clientSecret: '$BUNGIE_PROD_CLIENT_SECRET'
   }
 EOF
 fi
