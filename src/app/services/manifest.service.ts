@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import _ from 'lodash';
 import { get, set, del } from 'idb-keyval';
 import { deepEqual } from 'fast-equals';
-import { BehaviorSubject, Subject, of, empty, from } from 'rxjs';
+import { BehaviorSubject, Subject, empty } from 'rxjs';
 import { SettingsService } from './settings.service';
 import { BungieHttpService } from './bungie-http.service';
 import {
@@ -36,7 +36,7 @@ export class ManifestService {
     ActivityMode?: {
       get(modeType: number): DestinyActivityModeDefinition;
     }
-  };;
+  }; ;
 
   private localStorageKey = 'd2-manifest-version';
   private idbKey = 'd2-manifest';

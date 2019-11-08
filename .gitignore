@@ -43,3 +43,5 @@ Thumbs.db
 
 /utils/defs/*
 src/environments/keys.ts
+
+docker/ssl/dev*

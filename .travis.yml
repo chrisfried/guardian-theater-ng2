@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - 10
+
+services:
+  - docker
+
+addons:
+  hosts:
+    - dev.guardian.theater
+
+script:
+  # this will fail, as it should because linting fails - npm run lint || exit 1
+  - sh ci.sh
+  - sleep 5
+  - curl -IX GET https://dev.guardian.theater:3000 --insecure

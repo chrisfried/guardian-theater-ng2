@@ -15,7 +15,6 @@ import { SettingsService } from '../services/settings.service';
 import { TwitchService } from '../services/twitch.service';
 import { MixerService } from '../services/mixer.service';
 import { XboxService } from '../services/xbox.service';
-import { checkServerIdentity } from 'tls';
 
 @Component({
   selector: 'app-activity',

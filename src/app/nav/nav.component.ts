@@ -1,8 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, Event } from '@angular/router';
 import { BungieHttpService } from '../services/bungie-http.service';
-import { Subscription, from, Observable, BehaviorSubject } from 'rxjs';
-import { ServerResponse, BungieMembershipType } from 'bungie-api-ts/destiny2';
+import { Subscription, Observable, BehaviorSubject } from 'rxjs';
+import { ServerResponse } from 'bungie-api-ts/destiny2';
 import { SettingsService } from '../services/settings.service';
 import { AuthService } from 'app/services/auth.service';
 import { map, take } from 'rxjs/operators';
