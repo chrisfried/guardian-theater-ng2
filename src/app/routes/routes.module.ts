@@ -26,30 +26,9 @@ const appRoutes: Routes = [
   { path: 'donate', component: TakeMyMoneyComponent },
   { path: 'search/:guardian', component: SearchComponent },
   {
-    path: 'guardian/:membershipType/:membershipId/:gamemode/:page',
+    path: 'guardian/:membershipType/:membershipId',
     component: GuardianComponent
   },
-  {
-    path: 'guardian/:membershipType/:membershipId',
-    redirectTo: 'guardian/:membershipType/:membershipId/None/0'
-  },
-  {
-    path: 'guardian/:guardian/:membershipType/:gamemode/:page',
-    redirectTo: 'search/:guardian'
-  },
-  {
-    path: 'guardian/:guardian/:membershipType/:gamemode',
-    redirectTo: 'search/:guardian'
-  },
-  {
-    path: 'guardian/:guardian/:membershipType',
-    redirectTo: 'search/:guardian'
-  },
-  {
-    path: 'guardian/:guardian/:membershipType',
-    redirectTo: 'search/:guardian'
-  },
-  { path: 'guardian/:guardian', redirectTo: 'search/:guardian' },
   { path: '', component: FrontPageComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];

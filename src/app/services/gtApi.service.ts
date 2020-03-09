@@ -16,6 +16,11 @@ export class GtApiService {
     return this.http.get(url) as Observable<EncounteredClips>;
   }
 
+  getInstance(instanceId: string): Observable<Instance> {
+    const url = `http://localhost:3000/instance/${instanceId}`;
+    return this.http.get(url) as Observable<Instance>;
+  }
+
   getStreamerVsStreamer() {
     const url = `http://localhost:3000/streamervsstreamer`;
     return this.http.get(url) as Observable<Instance[]>;

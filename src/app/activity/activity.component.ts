@@ -6,13 +6,13 @@ import {
   OnDestroy,
   OnInit
 } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Subscription, combineLatest as observableCombineLatest } from 'rxjs';
 import { gt } from '../gt.typings';
 import { ActivityService } from '../services/activity.service';
 import { GuardianService } from '../services/guardian.service';
 import { SettingsService } from '../services/settings.service';
-import { Instance, Video } from 'app/services/gtApi.service';
+import { Instance, Video, GtApiService } from 'app/services/gtApi.service';
 import { DomSanitizer } from '@angular/platform-browser';
 import { HttpClient } from '@angular/common/http';
 
@@ -46,6 +46,8 @@ export class ActivityComponent implements OnInit, OnDestroy {
   public mini: boolean;
   public animationState;
   public innerWidth: number;
+  public instanceId: string;
+  public loadingInstance: boolean;
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
@@ -56,32 +58,75 @@ export class ActivityComponent implements OnInit, OnDestroy {
     private router: Router,
     public settingsService: SettingsService,
     public sanitizer: DomSanitizer,
-    private http: HttpClient
+    private activatedRoute: ActivatedRoute,
+    private http: HttpClient,
+    private gtApiService: GtApiService
   ) {}
 
   ngOnInit() {
+    this.subs = [];
+    this.subs.push(
+      this.activatedRoute.params.subscribe((params: Params) => {
+        this.instanceId = params['activityId'] ? params['activityId'] : '';
+
+        if (this.instanceId) {
+          this.loadingInstance = true;
+
+          this.subs.push(
+            this.gtApiService.getInstance(this.instanceId).subscribe(res => {
+              this.instance = res;
+
+              this.instance.videos.forEach(video => {
+                if (
+                  video.type === 'xbox' &&
+                  video.embedUrl.indexOf('xboxrecord.us') > -1
+                ) {
+                  const fetchEmbedUrl = video.embedUrl;
+                  video.embedUrl = '';
+                  this.subs.push(
+                    this.http.get(fetchEmbedUrl).subscribe((resp: any) => {
+                      try {
+                        video.embedUrl = resp.gameClips[0].gameClipUris[0].uri;
+                      } catch (e) {}
+                    })
+                  );
+                }
+              });
+              this.loadingInstance = false;
+            })
+          );
+        }
+      })
+    );
+
     window.innerWidth < 640 ? (this.mini = true) : (this.mini = false);
-    console.log('init');
     this.filteredClips = [];
     this.clips = [];
     this.links = { guardian: {}, activity: {}, xbox: {} };
     this.animationState = 'in';
 
-    this.subs = [];
     this.subs.push(
       this.settingsService.links.subscribe(links => (this.links = links))
     );
 
-    this.instance.videos.forEach(video => {
-      if (video.type === 'xbox') {
-        const fetchEmbedUrl = video.embedUrl;
-        this.subs.push(
-          this.http.get(fetchEmbedUrl).subscribe((res: any) => {
-            video.embedUrl = res.gameClips.gameClipUris[0].uri;
-          })
-        );
-      }
-    });
+    if (this.instance) {
+      this.instance.videos.forEach(video => {
+        if (
+          video.type === 'xbox' &&
+          video.embedUrl.indexOf('xboxrecord.us') > -1
+        ) {
+          const fetchEmbedUrl = video.embedUrl;
+          video.embedUrl = '';
+          this.subs.push(
+            this.http.get(fetchEmbedUrl).subscribe((res: any) => {
+              try {
+                video.embedUrl = res.gameClips[0].gameClipUris[0].uri;
+              } catch (e) {}
+            })
+          );
+        }
+      });
+    }
   }
 
   ngOnDestroy() {
@@ -94,13 +139,7 @@ export class ActivityComponent implements OnInit, OnDestroy {
   }
 
   toGuardian(membershipType, membershipId) {
-    this.router.navigate([
-      '/guardian',
-      membershipType,
-      membershipId,
-      'None',
-      0
-    ]);
+    this.router.navigate(['/guardian', membershipType, membershipId]);
   }
 
   toClip(pgcr: gt.PostGameCarnageReport, clip) {
@@ -137,13 +176,7 @@ export class PgcrEntryComponent {
   constructor(private router: Router) {}
 
   toGuardian(membershipType, membershipId) {
-    this.router.navigate([
-      '/guardian',
-      membershipType,
-      membershipId,
-      'None',
-      0
-    ]);
+    this.router.navigate(['/guardian', membershipType, membershipId]);
   }
 
   stopPropagation(event) {

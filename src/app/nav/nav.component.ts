@@ -7,8 +7,17 @@ import { SettingsService } from '../services/settings.service';
 import { AuthService } from 'app/services/auth.service';
 import { map, take } from 'rxjs/operators';
 import { UserMembershipData } from 'bungie-api-ts/user';
-import { faTshirt, faCoffee, faInfoCircle, faWrench } from '@fortawesome/free-solid-svg-icons';
-import { faDiscord, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
+import {
+  faTshirt,
+  faCoffee,
+  faInfoCircle,
+  faWrench
+} from '@fortawesome/free-solid-svg-icons';
+import {
+  faDiscord,
+  faTwitter,
+  faGithub
+} from '@fortawesome/free-brands-svg-icons';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
@@ -38,7 +47,7 @@ export class NavComponent implements OnInit, OnDestroy {
     private settingsService: SettingsService,
     private router: Router,
     private bHttp: BungieHttpService,
-    private authService: AuthService,
+    private authService: AuthService
   ) {}
 
   ngOnInit() {
@@ -68,7 +77,7 @@ export class NavComponent implements OnInit, OnDestroy {
 
   search() {
     if (this.searchString.length) {
-      this.router.navigate(['/guardian', this.searchString]);
+      this.router.navigate(['/search', this.searchString]);
     }
   }
 
@@ -85,12 +94,20 @@ export class NavComponent implements OnInit, OnDestroy {
   }
 
   login(force: boolean) {
-    this.authService.getCurrentMemberId(force).pipe(take(1), map((memberId: string) => {
-      this.currentMemberId.next(memberId);
-    })).subscribe()
+    this.authService
+      .getCurrentMemberId(force)
+      .pipe(
+        take(1),
+        map((memberId: string) => {
+          this.currentMemberId.next(memberId);
+        })
+      )
+      .subscribe();
   }
 
-  getMembershipsForCurrentUser(): Observable<ServerResponse<UserMembershipData>> {
+  getMembershipsForCurrentUser(): Observable<
+    ServerResponse<UserMembershipData>
+  > {
     const url = `https://stats.bungie.net/Platform/User/GetMembershipsForCurrentUser/`;
     return this.bHttp.get(url);
   }
@@ -104,16 +121,14 @@ export class NavComponent implements OnInit, OnDestroy {
   currentProfile() {
     this.getMembershipsForCurrentUser().subscribe(res => {
       try {
-        this.router.navigate(
-          [
-            '/guardian',
-            res.Response.destinyMemberships[0].membershipType,
-            res.Response.destinyMemberships[0].membershipId,
-            'None',
-            0
-          ]
-        );
+        this.router.navigate([
+          '/guardian',
+          res.Response.destinyMemberships[0].membershipType,
+          res.Response.destinyMemberships[0].membershipId,
+          'None',
+          0
+        ]);
       } catch (e) {}
-    })
+    });
   }
 }

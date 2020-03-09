@@ -11,12 +11,11 @@ $destiny-tracker-grey: #272727;
 $details-grey: #999;
 $donor-blue: #002f86;
 $fireteam-green: #6d6;
-$gambit-green: #39A97F;
+$gambit-green: #39a97f;
 $guardian-gg-grey: #404040;
 $light-grey: #f5f5f5;
 $light-purple: #806a90;
 $no-clips-grey: rgba(180, 188, 197, 1);
-$ocean-blue: #0096db;
 $opponent-red: #d66;
 $patreon-orange: #e6461a;
 $patrol-green: rgba(80, 124, 65, 1);
@@ -30,9 +29,9 @@ $twitch-purple: #6441a4;
 $twitter-blue: #55acee;
 $xbox-green: #5dc21e;
 $mixer-blue: #1fbaed;
-$dark-mode-text: rgba(255, 255, 255, .87);
+$dark-mode-text: rgba(255, 255, 255, 0.87);
 $dark-mode-background: rgb(15, 15, 15);
-$dark-mode-no-clips-grey: rgba(180, 188, 197, .25);
+$dark-mode-no-clips-grey: rgba(180, 188, 197, 0.25);
 $dark-mode-dark-panel: rgb(30, 30, 30);
 /**** End Color Definitions ****/
 
@@ -40,15 +39,16 @@ $contributor-purple: $light-purple;
 $owner-purple: $dark-purple;
 
 $hover-darken-percentage: 15%;
-$transition-parameters: 0.25s ease-out,
-color 0.25s ease-out;
+$transition-parameters: 0.25s ease-out, color 0.25s ease-out;
 
 // Little hover mixin to reduce boilerplate. $hover-color is an optional
 // second parameter. If absent then a default darken will be used. $properties is
 // a list of properties to apply the transition and darkening to.
-@mixin darken-generic-properties-on-hover($color,
+@mixin darken-generic-properties-on-hover(
+  $color,
   $hover-color: null,
-  $properties...) {
+  $properties...
+) {
   cursor: pointer;
 
   @each $property in $properties {
@@ -63,14 +63,18 @@ color 0.25s ease-out;
 }
 
 @mixin background-hover-darken($color, $hover-color: null) {
-  @include darken-generic-properties-on-hover($color,
+  @include darken-generic-properties-on-hover(
+    $color,
     $hover-color,
-    background-color);
+    background-color
+  );
 }
 
 @mixin color-border-hover-darken($color, $hover-color: null) {
-  @include darken-generic-properties-on-hover($color,
+  @include darken-generic-properties-on-hover(
+    $color,
     $hover-color,
     color,
-    border-color);
+    border-color
+  );
 }

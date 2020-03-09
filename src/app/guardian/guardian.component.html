@@ -38,7 +38,7 @@
       </div>
     </div>
   </div>
-  <!--
+
   <div class="row">
     <div class="columns small-12 button-group expanded">
       <button
@@ -46,10 +46,10 @@
         type="button"
         [class]="
           'button filter-toggle mode-button mode-button-' +
-          mode.flag +
-          (gamemode === mode.flag ? '' : ' hollow')
+          mode.category +
+          ((modeFilter | async).indexOf(mode.category) > -1 ? '' : ' hollow')
         "
-        (click)="selectGamemode(mode.flag)"
+        (click)="toggleModeFilter(mode.category)"
         [title]="mode.name"
       >
         <span
@@ -57,42 +57,42 @@
         ></span>
       </button>
     </div>
-  </div> -->
+  </div>
 
   <div class="row">
     <div class="columns small-12 button-group expanded">
       <button
         type="button"
         class="button filter-toggle player"
-        [ngClass]="{ hollow: !clipLimiter.self }"
-        (click)="toggleLimiter('self')"
-        title="Player"
+        [ngClass]="{
+          hollow: (playerFilter | async).player === -1,
+          dim: (playerFilter | async).player === 0
+        }"
+        (click)="cyclePlayerFilter('player')"
+        title="Guardian"
       >
         <span class="fi-torso"></span>
       </button>
       <button
         type="button"
-        class="button filter-toggle fireteam"
-        [ngClass]="{ hollow: !clipLimiter.fireteam }"
-        (click)="toggleLimiter('fireteam')"
-        title="Fireteam"
+        class="button filter-toggle blueberry"
+        [ngClass]="{
+          hollow: (playerFilter | async).teammates === -1,
+          dim: (playerFilter | async).teammates === 0
+        }"
+        (click)="cyclePlayerFilter('teammates')"
+        title="Teammates"
       >
         <span class="fi-torsos"></span>
       </button>
       <button
         type="button"
-        class="button filter-toggle blueberry"
-        [ngClass]="{ hollow: !clipLimiter.team }"
-        (click)="toggleLimiter('team')"
-        title="Blueberries"
-      >
-        <span class="fi-torsos-all"></span>
-      </button>
-      <button
-        type="button"
         class="button filter-toggle enemy"
-        [ngClass]="{ hollow: !clipLimiter.opponents }"
-        (click)="toggleLimiter('opponents')"
+        [ngClass]="{
+          hollow: (playerFilter | async).opponents === -1,
+          dim: (playerFilter | async).opponents === 0
+        }"
+        (click)="cyclePlayerFilter('opponents')"
         title="Opponents"
       >
         <span class="fi-torsos-all"></span>
@@ -100,13 +100,13 @@
     </div>
   </div>
 
-  <div class="row" *ngIf="instances && instances.length > 7">
+  <div class="row" *ngIf="(filteredInstances | async).length > 7">
     <div class="columns small-12 button-group expanded">
       <button
         type="button"
         class="button paging"
         (click)="prevPage()"
-        [ngClass]="{ disabled: page < 1 }"
+        [ngClass]="{ disabled: (page | async) < 1 }"
         title="Previous"
       >
         <span class="fi-previous"></span>
@@ -115,7 +115,9 @@
         type="button"
         class="button paging"
         (click)="nextPage()"
-        [ngClass]="{ disabled: page >= instances.length / 7 - 1 }"
+        [ngClass]="{
+          disabled: (page | async) >= (filteredInstances | async).length / 7 - 1
+        }"
         title="Next"
       >
         <span class="fi-next"></span>
@@ -123,31 +125,28 @@
     </div>
   </div>
 
-  <div
-    *ngIf="(!instances || !instances.length) && loadingActivities"
-    class="profile-spinner-wrapper"
-  >
+  <div *ngIf="loadingActivities" class="profile-spinner-wrapper">
     <div
       class="fi-widget spinner profile-spinner"
       title="Fetching Bungie Activities..."
     ></div>
   </div>
-  <div *ngIf="(!instances || !instances.length) && !loadingActivities">
-    No activities found.
+  <div *ngIf="!(filteredInstances | async).length && !loadingActivities">
+    No activities with clips found. Check back later!
   </div>
 
   <app-activity
-    *ngFor="let instance of slicedInstances"
+    *ngFor="let instance of slicedInstances | async"
     [instance]="instance"
   ></app-activity>
 
-  <div class="row" *ngIf="instances && instances.length > 7">
+  <div class="row" *ngIf="(filteredInstances | async).length > 7">
     <div class="columns small-12 button-group expanded">
       <button
         type="button"
         class="button paging"
         (click)="prevPage(true)"
-        [ngClass]="{ disabled: page < 1 }"
+        [ngClass]="{ disabled: (page | async) < 1 }"
         title="Previous"
       >
         <span class="fi-previous"></span>
@@ -156,7 +155,9 @@
         type="button"
         class="button paging"
         (click)="nextPage(true)"
-        [ngClass]="{ disabled: page >= instances.length / 7 - 1 }"
+        [ngClass]="{
+          disabled: (page | async) >= (filteredInstances | async).length / 7 - 1
+        }"
         title="Next"
       >
         <span class="fi-next"></span>

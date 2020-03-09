@@ -1,4 +1,4 @@
-@import "../../variables";
+@import '../../variables';
 
 .profile {
   background: $dark-blue;
@@ -103,7 +103,7 @@
   color: $power-level-yellow;
 
   &::before {
-    content: "\2726";
+    content: '\2726';
     display: inline-block;
     font-size: 50%;
     vertical-align: 15%;
@@ -120,7 +120,7 @@
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-top: 12px solid white;
-    content: "";
+    content: '';
     display: inline-block;
     top: -38px;
     left: calc(100% - 30px);
@@ -160,24 +160,20 @@
   }
 }
 
-.button.mode-button-None {
-  &:hover {
-    background-color: $light-purple;
-  }
+.button.mode-button-0 {
+  @include background-hover-darken($light-purple);
 
   &.hollow {
     span {
       @include background-hover-darken($light-purple);
     }
+
+    @include color-border-hover-darken($light-purple);
   }
 }
 
-.button.mode-button-AllPvE {
-  background-color: $strike-blue;
-
-  &:hover {
-    background-color: $strike-blue;
-  }
+.button.mode-button-1 {
+  @include background-hover-darken($strike-blue);
 
   &.hollow {
     span {
@@ -188,12 +184,8 @@
   }
 }
 
-.button.mode-button-AllPvP {
-  background-color: $crucible-red;
-
-  &:hover {
-    background-color: $crucible-red;
-  }
+.button.mode-button-2 {
+  @include background-hover-darken($crucible-red);
 
   &.hollow {
     span {
@@ -204,12 +196,8 @@
   }
 }
 
-.button.mode-button-AllPvECompetitive {
-  background-color: $gambit-green;
-
-  &:hover {
-    background-color: $gambit-green;
-  }
+.button.mode-button-3 {
+  @include background-hover-darken($gambit-green);
 
   &.hollow {
     span {
@@ -265,7 +253,7 @@
   font-size: 75px;
   line-height: 75px;
   height: 75px;
-  color: $ocean-blue;
+  color: $light-purple;
 }
 
 .button {
@@ -274,21 +262,34 @@
   &.disabled {
     &:focus {
       @include background-hover-darken($light-purple, $dark-purple);
-
     }
   }
 
   &.blueberry {
     @include background-hover-darken($blueberry-blue);
+    &.dim {
+      @include background-hover-darken(darken($blueberry-blue, 40%));
+      border-color: $blueberry-blue;
+    }
   }
 
   &.enemy {
     @include background-hover-darken($opponent-red, $crucible-red);
+
+    &.dim {
+      @include background-hover-darken(darken($opponent-red, 40%));
+      border-color: $opponent-red;
+    }
   }
 
   &.player,
   &.fireteam {
     @include background-hover-darken($fireteam-green);
+
+    &.dim {
+      @include background-hover-darken(darken($fireteam-green, 40%));
+      border-color: $fireteam-green;
+    }
   }
 
   &.xbox {
@@ -297,7 +298,7 @@
 
   &.twitch {
     @include background-hover-darken($twitch-purple);
-    background-image: url("/assets/images/twitch-white.png");
+    background-image: url('/assets/images/twitch-white.png');
     background-size: 0.75em;
     background-repeat: no-repeat;
     background-position: center;
@@ -306,7 +307,7 @@
   &.playstation {
     // TODO: Is it possible to have a hollow playstation button?
     @include background-hover-darken($playstation-blue);
-    background-image: url("/assets/images/ps.png");
+    background-image: url('/assets/images/ps.png');
     background-size: 1em;
     background-repeat: no-repeat;
     background-position: center;
@@ -340,7 +341,7 @@
 
     &.twitch {
       @include color-border-hover-darken($twitch-purple);
-      background-image: url("/assets/images/twitch-purple.png");
+      background-image: url('/assets/images/twitch-purple.png');
       background-size: 0.75em;
       background-repeat: no-repeat;
       background-position: center;

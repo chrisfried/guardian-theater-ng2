@@ -14,14 +14,14 @@
   font-size: 75px;
   line-height: 75px;
   height: 75px;
-  color: $ocean-blue;
+  color: $light-purple;
 }
 .profile-button {
   background: $dark-blue;
   font-weight: bold;
   color: white;
-  padding: .5em;
-  margin: .5em;
+  padding: 0.5em;
+  margin: 0.5em;
 
   cursor: pointer;
 }
@@ -39,7 +39,7 @@
   display: inline-block;
   color: whitesmoke;
   font-weight: 400;
-  margin-left: .5em;
+  margin-left: 0.5em;
 
   &.xbox {
     background: #288145;

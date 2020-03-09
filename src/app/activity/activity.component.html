@@ -1,4 +1,11 @@
-<div class="activity">
+<div *ngIf="loadingInstance && !instance" class="pgcr-spinner-wrapper">
+  <div
+    class="fi-widget spinner pgcr-spinner"
+    title="Fetching Activity..."
+  ></div>
+</div>
+
+<div class="activity" *ngIf="instance">
   <div
     class="columns small-12 activity-header clickable"
     (click)="toActivity(instance.instanceId)"
@@ -7,7 +14,7 @@
       <div
         class="mode columns small-12 activity-title-bar"
         [ngClass]="
-          'mode-' +
+          'mode-category-' +
           (instance.activityHash | destinyHash: 'activityModeCategory' | async)
         "
       >
@@ -95,6 +102,7 @@
             (click)="toGuardian(clip.membershipType, clip.membershipId)"
             class="columns small-12 mode pgcr-entry"
             [ngClass]="{
+              Player: clip.team === 16,
               Team: instance.team && clip.team && instance.team === clip.team,
               Opponent:
                 instance.team && clip.team && instance.team !== clip.team
@@ -249,7 +257,11 @@
                   : $event.srcElement.pause()
               "
             >
-              <source [src]="clip.embedUrl" type="video/mp4" />
+              <source
+                *ngIf="clip.embedUrl"
+                [src]="clip.embedUrl"
+                type="video/mp4"
+              />
             </video>
           </div>
         </div>

@@ -1,4 +1,4 @@
-@import "../../variables";
+@import '../../variables';
 
 .spinner {
   -webkit-animation: spin 3s infinite linear;
@@ -14,5 +14,5 @@
   font-size: 75px;
   line-height: 75px;
   height: 75px;
-  color: $ocean-blue;
+  color: $light-purple;
 }
