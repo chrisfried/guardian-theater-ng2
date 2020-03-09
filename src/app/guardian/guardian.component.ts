@@ -7,6 +7,7 @@ import { gt } from '../gt.typings';
 import { GuardianService } from '../services/guardian.service';
 import { SettingsService } from '../services/settings.service';
 import { ManifestService } from 'app/services/manifest.service';
+import { GtApiService, Instance } from 'app/services/gtApi.service';
 
 @Component({
   selector: 'app-guardian',
@@ -22,6 +23,8 @@ export class GuardianComponent implements OnInit, OnDestroy {
   public profiles: UserInfoCard[];
   public displayTag: string;
   public activities: gt.Activity[];
+  public instances: Instance[];
+  public slicedInstances: Instance[];
   public gamemode: string;
   public page: number;
   public clipLimiter: gt.ClipLimiter;
@@ -29,52 +32,78 @@ export class GuardianComponent implements OnInit, OnDestroy {
   public loadingAccounts: boolean;
   public emblemHash: number;
   public modeFilters: {
-    name: string,
-    flag: string,
-    icon: string
-  }[]
+    name: string;
+    flag: string;
+    icon: string;
+  }[];
 
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
     public guardianService: GuardianService,
     private settingsService: SettingsService,
-    private manifestService: ManifestService
+    private manifestService: ManifestService,
+    private gtApiService: GtApiService
   ) {
-    this.manifestService.state$.pipe(map(state => {
-      if (state.loaded) {
-        this.modeFilters = [
-          {
-            flag: 'None',
-            name: this.manifestService.defs.ActivityMode.get(0).displayProperties.name,
-            icon: `https://bungie.net${this.manifestService.defs.ActivityMode.get(0).displayProperties.icon}`
-          },
-          {
-            flag: 'AllPvE',
-            name: this.manifestService.defs.ActivityMode.get(7).displayProperties.name,
-            icon: `https://bungie.net${this.manifestService.defs.ActivityMode.get(7).displayProperties.icon}`
-          },
-          {
-            flag: 'AllPvP',
-            name: this.manifestService.defs.ActivityMode.get(5).displayProperties.name,
-            icon: `https://bungie.net${this.manifestService.defs.ActivityMode.get(5).displayProperties.icon}`
-          },
-          {
-            flag: 'AllPvECompetitive',
-            name: this.manifestService.defs.ActivityMode.get(64).displayProperties.name,
-            icon: `https://bungie.net${this.manifestService.defs.ActivityMode.get(63).displayProperties.icon}`
+    this.manifestService.state$
+      .pipe(
+        map(state => {
+          if (state.loaded) {
+            this.modeFilters = [
+              {
+                flag: 'None',
+                name: this.manifestService.defs.ActivityMode.get(0)
+                  .displayProperties.name,
+                icon: `https://bungie.net${
+                  this.manifestService.defs.ActivityMode.get(0)
+                    .displayProperties.icon
+                }`
+              },
+              {
+                flag: 'AllPvE',
+                name: this.manifestService.defs.ActivityMode.get(7)
+                  .displayProperties.name,
+                icon: `https://bungie.net${
+                  this.manifestService.defs.ActivityMode.get(7)
+                    .displayProperties.icon
+                }`
+              },
+              {
+                flag: 'AllPvP',
+                name: this.manifestService.defs.ActivityMode.get(5)
+                  .displayProperties.name,
+                icon: `https://bungie.net${
+                  this.manifestService.defs.ActivityMode.get(5)
+                    .displayProperties.icon
+                }`
+              },
+              {
+                flag: 'AllPvECompetitive',
+                name: this.manifestService.defs.ActivityMode.get(64)
+                  .displayProperties.name,
+                icon: `https://bungie.net${
+                  this.manifestService.defs.ActivityMode.get(63)
+                    .displayProperties.icon
+                }`
+              }
+            ];
           }
-        ];
-      }
-    })).subscribe();
+        })
+      )
+      .subscribe();
   }
 
   ngOnInit() {
-
+    this.instances = [];
+    this.slicedInstances = [];
     this.subs = [];
 
     this.subs.push(
       this.activatedRoute.params.subscribe((params: Params) => {
+        if (this.membershipId !== params['membershipId']) {
+          this.profiles = null;
+          this.emblemHash = null;
+        }
         this.membershipType = params['membershipType']
           ? +params['membershipType']
           : -1;
@@ -83,17 +112,11 @@ export class GuardianComponent implements OnInit, OnDestroy {
           : '';
         this.gamemode = params['gamemode'] ? params['gamemode'] : 'None';
         this.page = params['page'] ? +params['page'] : 0;
-
-        if (
-          !(
-            this.membershipType === 1 ||
-            this.membershipType === 2 ||
-            this.membershipType === 3
-          )
-        ) {
-          this.router.navigate(['/search', this.membershipType], {
-            replaceUrl: true
-          });
+        if (this.instances) {
+          this.slicedInstances = this.instances.slice(
+            0 + this.page * 7,
+            7 + this.page * 7
+          );
         }
 
         if (this.membershipType && this.membershipId) {
@@ -111,27 +134,33 @@ export class GuardianComponent implements OnInit, OnDestroy {
           );
 
           this.subs.push(
-            this.guardianService.getEmblemHash(
-              +params['membershipType'],
-              params['membershipId']
-            ).subscribe(res => {
-              this.emblemHash = res;
-            })
-          )
+            this.guardianService
+              .getEmblemHash(+params['membershipType'], params['membershipId'])
+              .subscribe(res => {
+                this.emblemHash = res;
+              })
+          );
 
           this.loadingActivities = true;
           this.subs.push(
-            this.guardianService
-              .getActivitiesForAccount(
-                this.membershipType,
-                this.membershipId,
-                this.gamemode
-              )
-              .pipe(map(res => res.slice(0 + this.page * 7, 7 + this.page * 7)))
+            this.gtApiService
+              .getEncounteredClips(this.membershipType, this.membershipId)
               .subscribe(res => {
                 this.loadingActivities = false;
-                this.activities = res;
+                this.instances = res.instances;
+                this.slicedInstances = this.instances.slice(
+                  0 + this.page * 7,
+                  7 + this.page * 7
+                );
               })
+            // this.gtApiService.getStreamerVsStreamer().subscribe(res => {
+            //   this.loadingActivities = false;
+            //   this.instances = res;
+            //   this.slicedInstances = this.instances.slice(
+            //     0 + this.page * 7,
+            //     7 + this.page * 7
+            //   );
+            // })
           );
         }
       })
@@ -165,17 +194,22 @@ export class GuardianComponent implements OnInit, OnDestroy {
     ]);
   }
 
-  nextPage() {
-    this.router.navigate([
-      '/guardian',
-      this.membershipType,
-      this.membershipId,
-      this.gamemode,
-      this.page + 1
-    ]);
+  nextPage(toTop?: boolean) {
+    if (this.page < this.instances.length / 7 - 1) {
+      this.router.navigate([
+        '/guardian',
+        this.membershipType,
+        this.membershipId,
+        this.gamemode,
+        this.page + 1
+      ]);
+      if (toTop) {
+        window.scroll(0, 0);
+      }
+    }
   }
 
-  prevPage() {
+  prevPage(toTop?: boolean) {
     if (this.page > 0) {
       this.router.navigate([
         '/guardian',
@@ -184,6 +218,9 @@ export class GuardianComponent implements OnInit, OnDestroy {
         this.gamemode,
         this.page - 1
       ]);
+      if (toTop) {
+        window.scroll(0, 0);
+      }
     }
   }
 

@@ -20,6 +20,7 @@ const appRoutes: Routes = [
     component: ActivityComponent
   },
   { path: 'settings', component: SettingsComponent },
+  { path: 'login/success/:jwt', component: AuthComponent },
   { path: 'auth', component: AuthComponent },
   { path: 'about', component: AboutComponent },
   { path: 'donate', component: TakeMyMoneyComponent },

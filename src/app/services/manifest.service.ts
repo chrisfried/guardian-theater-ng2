@@ -35,8 +35,8 @@ export class ManifestService {
     };
     ActivityMode?: {
       get(modeType: number): DestinyActivityModeDefinition;
-    }
-  };;
+    };
+  };
 
   private localStorageKey = 'd2-manifest-version';
   private idbKey = 'd2-manifest';

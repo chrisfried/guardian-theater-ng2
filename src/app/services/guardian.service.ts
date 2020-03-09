@@ -11,6 +11,7 @@ import { UserInfoCard, UserMembershipData } from 'bungie-api-ts/user';
 import { Observable, forkJoin as observableForkJoin } from 'rxjs';
 import { map, switchMap } from 'rxjs/operators';
 import { BungieHttpService } from './bungie-http.service';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class GuardianService {
@@ -48,10 +49,10 @@ export class GuardianService {
     return this.getCharactersForAccount(membershipType, membershipId).pipe(
       map(characters => {
         if (characters && characters[0]) {
-          return characters[0].emblemHash
+          return characters[0].emblemHash;
         }
       })
-    )
+    );
   }
 
   getCharactersForAccount(
@@ -83,7 +84,11 @@ export class GuardianService {
           }
         });
         try {
-          characters.sort((a, b) => new Date(b.dateLastPlayed).getTime() - new Date(a.dateLastPlayed).getTime());
+          characters.sort(
+            (a, b) =>
+              new Date(b.dateLastPlayed).getTime() -
+              new Date(a.dateLastPlayed).getTime()
+          );
         } catch (e) {}
         return characters;
       })

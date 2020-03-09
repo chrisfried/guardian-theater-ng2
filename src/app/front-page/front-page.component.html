@@ -1,0 +1,13 @@
+<div *ngIf="loadingActivities" class="profile-spinner-wrapper">
+  <div
+    class="fi-widget spinner profile-spinner"
+    title="Fetching Bungie Activities..."
+  ></div>
+</div>
+<div *ngIf="(!instances || !instances.length) && !loadingActivities">
+  No activities found.
+</div>
+<app-activity
+  *ngFor="let instance of slicedInstances"
+  [instance]="instance"
+></app-activity>

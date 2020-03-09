@@ -12,10 +12,9 @@ import { gt } from '../gt.typings';
 import { ActivityService } from '../services/activity.service';
 import { GuardianService } from '../services/guardian.service';
 import { SettingsService } from '../services/settings.service';
-import { TwitchService } from '../services/twitch.service';
-import { MixerService } from '../services/mixer.service';
-import { XboxService } from '../services/xbox.service';
-import { checkServerIdentity } from 'tls';
+import { Instance, Video } from 'app/services/gtApi.service';
+import { DomSanitizer } from '@angular/platform-browser';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-activity',
@@ -36,7 +35,7 @@ import { checkServerIdentity } from 'tls';
   ]
 })
 export class ActivityComponent implements OnInit, OnDestroy {
-  @Input() activity: gt.Activity;
+  @Input() instance: Instance;
 
   private subs: Subscription[];
 
@@ -54,202 +53,35 @@ export class ActivityComponent implements OnInit, OnDestroy {
   }
 
   constructor(
-    private activityService: ActivityService,
-    public twitchService: TwitchService,
-    public mixerService: MixerService,
-    private xboxService: XboxService,
     private router: Router,
-    public settingsService: SettingsService
+    public settingsService: SettingsService,
+    public sanitizer: DomSanitizer,
+    private http: HttpClient
   ) {}
 
   ngOnInit() {
     window.innerWidth < 640 ? (this.mini = true) : (this.mini = false);
-
+    console.log('init');
     this.filteredClips = [];
     this.clips = [];
     this.links = { guardian: {}, activity: {}, xbox: {} };
     this.animationState = 'in';
 
-    this.activityService.activity = this.activity;
     this.subs = [];
     this.subs.push(
       this.settingsService.links.subscribe(links => (this.links = links))
     );
-    this.subs.push(
-      this.activityService.pgcr.subscribe((pgcr: gt.PostGameCarnageReport) => {
-        this.pgcr = pgcr;
-        if (pgcr && !pgcr.loading) {
-          pgcr.loading = {
-            message: '',
-            xbox: false,
-            twitch: false,
-            bungie: false
-          };
-        }
-        if (this.pgcr) {
-          this.subs.push(
-            this.pgcr.filteredClips$.subscribe(
-              clips => (this.filteredClips = clips)
-            )
-          );
-          this.subs.push(
-            this.pgcr.clips$.subscribe(clips => (this.clips = clips))
-          );
-          pgcr.showClips = true;
-          let loadingArray = [];
-          this.pgcr.entries.forEach(entry => {
-            if (
-              entry.player.bungieNetUserInfo &&
-              this.twitchService.twitch[
-                entry.player.bungieNetUserInfo.membershipId
-              ]
-            ) {
-              loadingArray.push(
-                this.twitchService.twitch[
-                  entry.player.bungieNetUserInfo.membershipId
-                ]
-              );
-              this.subs.push(
-                this.twitchService.twitch[
-                  entry.player.bungieNetUserInfo.membershipId
-                ].subscribe(twitch => (entry.twitch = twitch))
-              );
-            } else if (
-              this.twitchService.twitch[
-                entry.player.destinyUserInfo.membershipId
-              ]
-            ) {
-              loadingArray.push(
-                this.twitchService.twitch[
-                  entry.player.destinyUserInfo.membershipId
-                ]
-              );
-              this.subs.push(
-                this.twitchService.twitch[
-                  entry.player.destinyUserInfo.membershipId
-                ].subscribe(twitch => (entry.twitch = twitch))
-              );
-            }
 
-            if (
-              entry.player.bungieNetUserInfo &&
-              this.mixerService.mixer[
-                entry.player.bungieNetUserInfo.membershipId
-              ]
-            ) {
-              loadingArray.push(
-                this.mixerService.mixer[
-                  entry.player.bungieNetUserInfo.membershipId
-                ]
-              );
-              this.subs.push(
-                this.mixerService.mixer[
-                  entry.player.bungieNetUserInfo.membershipId
-                ].subscribe(mixer => (entry.mixer = mixer))
-              );
-            } else if (
-              this.mixerService.mixer[entry.player.destinyUserInfo.membershipId]
-            ) {
-              loadingArray.push(
-                this.mixerService.mixer[
-                  entry.player.destinyUserInfo.membershipId
-                ]
-              );
-              this.subs.push(
-                this.mixerService.mixer[
-                  entry.player.destinyUserInfo.membershipId
-                ].subscribe(mixer => (entry.mixer = mixer))
-              );
-            }
-
-            if (
-              entry.player.destinyUserInfo.membershipType === 1 &&
-              this.xboxService.xbox[entry.player.destinyUserInfo.displayName]
-            ) {
-              loadingArray.push(
-                this.xboxService.xbox[entry.player.destinyUserInfo.displayName]
-              );
-              this.subs.push(
-                this.xboxService.xbox[
-                  entry.player.destinyUserInfo.displayName
-                ].subscribe(xbox => (entry.xbox = xbox))
-              );
-            }
-            if (
-              entry.player.destinyUserInfo.membershipType === 4 &&
-              this.xboxService.xboxPC[entry.player.destinyUserInfo.displayName]
-            ) {
-              loadingArray.push(
-                this.xboxService.xboxPC[
-                  entry.player.destinyUserInfo.displayName
-                ]
-              );
-              this.subs.push(
-                this.xboxService.xboxPC[
-                  entry.player.destinyUserInfo.displayName
-                ].subscribe(xbox => (entry.xbox = xbox))
-              );
-            }
-            switch (entry.player.destinyUserInfo.membershipType) {
-              case 1:
-                entry.trn = 'xbl';
-                break;
-              case 2:
-                entry.trn = 'psn';
-                break;
-              case 4:
-                entry.trn = 'pc';
-                break;
-            }
-          });
-          this.subs.push(
-            observableCombineLatest(loadingArray).subscribe(array => {
-              let loading = {
-                message: '',
-                bungie: false,
-                xbox: false,
-                xboxPC: false,
-                twitch: false,
-                mixer: false
-              };
-              array.some(function(item: { bungieId, checkedId, displayName, checkedResponse, checked, gamertag}) {
-                if (item.bungieId && !item.checkedId) {
-                  loading.message =
-                    'Fetching Twitch username for ' + item.displayName + '...';
-                  return true;
-                }
-                if (item.bungieId && !item.checkedResponse) {
-                  loading.message =
-                    'Fetching Twitch videos for ' + item.displayName + '...';
-                  return true;
-                }
-                if (item.gamertag && !item.checked) {
-                  loading.message =
-                    'Fetching Xbox clips for ' + item.gamertag + '...';
-                  return true;
-                }
-              });
-              array.some(function(item: { bungieId, checkedId }) {
-                if (item.bungieId && !item.checkedId) {
-                  return (loading.bungie = true);
-                }
-              });
-              array.some(function(item: { bungieId, checkedResponse}) {
-                if (item.bungieId && !item.checkedResponse) {
-                  return (loading.twitch = true);
-                }
-              });
-              array.some(function(item: {gamertag, checked}) {
-                if (item.gamertag && !item.checked) {
-                  return (loading.xbox = true);
-                }
-              });
-              pgcr.loading = loading;
-            })
-          );
-        }
-      })
-    );
+    this.instance.videos.forEach(video => {
+      if (video.type === 'xbox') {
+        const fetchEmbedUrl = video.embedUrl;
+        this.subs.push(
+          this.http.get(fetchEmbedUrl).subscribe((res: any) => {
+            video.embedUrl = res.gameClips.gameClipUris[0].uri;
+          })
+        );
+      }
+    });
   }
 
   ngOnDestroy() {
@@ -296,8 +128,10 @@ export class ActivityComponent implements OnInit, OnDestroy {
   styleUrls: ['./activity.component.scss']
 })
 export class PgcrEntryComponent {
-  @Input() pgcr: gt.PostGameCarnageReport;
-  @Input() entry: gt.Entry;
+  // @Input() pgcr: gt.PostGameCarnageReport;
+  @Input() instance: Instance;
+  // @Input() entry: gt.Entry;
+  @Input() entry: Video;
   @Input() links: gt.Links;
 
   constructor(private router: Router) {}

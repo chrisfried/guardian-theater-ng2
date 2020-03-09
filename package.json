@@ -5,7 +5,7 @@
   "angular-cli": {},
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --aot --host dev.guardian.theater --port 3000 --ssl --ssl-key C:\\Users\\cfried\\certificates\\dev.guardian.theater.key --ssl-cert C:\\Users\\cfried\\certificates\\dev.guardian.theater.crt",
+    "start": "ng serve --aot --port 4200",
     "lint": "tslint --project src/tsconfig.json \"src/**/*.ts\" --fix",
     "test": "ng test",
     "prod": "ng build --prod",
@@ -26,6 +26,7 @@
     "@angular/pwa": "^0.803.4",
     "@angular/router": "^8.2.6",
     "@angular/service-worker": "^8.2.4",
+    "@auth0/angular-jwt": "^4.0.0",
     "@fortawesome/angular-fontawesome": "^0.5.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-brands-svg-icons": "^5.11.2",

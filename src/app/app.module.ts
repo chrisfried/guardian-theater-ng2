@@ -36,6 +36,12 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { ManifestService } from './services/manifest.service';
 import { AuthComponent } from './auth/auth.component';
+import { GtApiService } from './services/gtApi.service';
+import { JwtModule } from '@auth0/angular-jwt';
+
+export function tokenGetter() {
+  return localStorage.getItem('gtapi_access_token');
+}
 
 @NgModule({
   declarations: [
@@ -61,6 +67,17 @@ import { AuthComponent } from './auth/auth.component';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
+    JwtModule.forRoot({
+      config: {
+        tokenGetter: tokenGetter,
+        whitelistedDomains: [
+          'localhost:3000',
+          'api.guardian.theater',
+          'beta.guardian.theater'
+        ],
+        blacklistedRoutes: []
+      }
+    }),
     RoutesModule,
     Angulartics2Module.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', {
@@ -75,7 +92,8 @@ import { AuthComponent } from './auth/auth.component';
     MixerService,
     XboxService,
     SettingsService,
-    ManifestService
+    ManifestService,
+    GtApiService
   ],
   bootstrap: [AppComponent]
 })
