@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BungieMembershipType } from 'bungie-api-ts/user';
 import { Observable } from 'rxjs';
+import { DestinyActivityModeType } from 'bungie-api-ts/destiny2';
 
 @Injectable()
 export class GtApiService {
@@ -41,6 +42,7 @@ export interface Instance {
   instanceId: string;
   activityHash: number;
   directorActivityHash: number;
+  mode: DestinyActivityModeType;
   membershipType: number;
   period: string;
   team: number;

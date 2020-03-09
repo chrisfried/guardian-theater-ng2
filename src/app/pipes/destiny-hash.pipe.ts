@@ -37,9 +37,11 @@ export class DestinyHashPipe implements PipeTransform {
             case 'activityName':
               return this.manifestService.defs.Activity.get(hash)
                 .displayProperties.name;
-            case 'activityMode':
-              return this.manifestService.defs.Activity.get(hash)
-                .displayProperties.name;
+            case 'activityModeCategory':
+              return this.manifestService.defs.ActivityMode.get(
+                this.manifestService.defs.Activity.get(hash)
+                  .directActivityModeType
+              ).activityModeCategory;
             case 'activityDescription':
               return this.manifestService.defs.Activity.get(hash)
                 .displayProperties.description;

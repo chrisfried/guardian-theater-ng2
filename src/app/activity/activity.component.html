@@ -4,7 +4,13 @@
     (click)="toActivity(instance.instanceId)"
   >
     <div class="row">
-      <div class="mode columns small-12 activity-title-bar">
+      <div
+        class="mode columns small-12 activity-title-bar"
+        [ngClass]="
+          'mode-' +
+          (instance.activityHash | destinyHash: 'activityModeCategory' | async)
+        "
+      >
         <span class="activity-info">
           <span
             *ngIf="
