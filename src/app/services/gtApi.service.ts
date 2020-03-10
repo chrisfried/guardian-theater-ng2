@@ -12,17 +12,17 @@ export class GtApiService {
     membershipType: BungieMembershipType,
     membershipId: string
   ): Observable<EncounteredClips> {
-    const url = `http://localhost:3000/encounteredClips/${membershipType}/${membershipId}`;
+    const url = `https://api.guardian.theater/encounteredClips/${membershipType}/${membershipId}`;
     return this.http.get(url) as Observable<EncounteredClips>;
   }
 
   getInstance(instanceId: string): Observable<Instance> {
-    const url = `http://localhost:3000/instance/${instanceId}`;
+    const url = `https://api.guardian.theater/instance/${instanceId}`;
     return this.http.get(url) as Observable<Instance>;
   }
 
   getStreamerVsStreamer() {
-    const url = `http://localhost:3000/streamervsstreamer`;
+    const url = `https://api.guardian.theater/streamervsstreamer`;
     return this.http.get(url) as Observable<Instance[]>;
   }
 }
